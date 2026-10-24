@@ -30,11 +30,11 @@ flowchart TB
 
 | Phase | Làm gì |
 |---|---|
-| 32 · Test collector bằng fixture | ghi lại phản hồi thật của từng nguồn, test chạy trên bản ghi, đo độ phủ |
-| 33 · Test giao diện (E2E) | Playwright chạy luồng chính trên bản Web + so ảnh chụp |
-| 34 · Canary nguồn thật | mỗi ngày gọi thật 1 lượt nhỏ từng nguồn, báo khi nguồn đổi / bị chặn |
-| 35 · Review kết quả | bộ niche chuẩn + đáp án tay, chấm tự động, phiếu review mỗi bản |
-| 35b · Test chức năng + chụp kết quả *(tùy chọn)* | search thật trên bản Web, chụp lại màn kết quả để xem tận mắt |
+| [32 · Test collector bằng fixture](phase-32-fixture-tests.md) | ghi lại phản hồi thật của từng nguồn, test chạy trên bản ghi, đo độ phủ |
+| [33 · Test giao diện (E2E)](phase-33-e2e-tests.md) | Playwright chạy luồng chính trên bản Web + so ảnh chụp |
+| [34 · Canary nguồn thật](phase-34-source-canary.md) | mỗi ngày gọi thật 1 lượt nhỏ từng nguồn, báo khi nguồn đổi / bị chặn |
+| [35 · Review kết quả](phase-35-review-results.md) | bộ niche chuẩn + đáp án tay, chấm tự động, phiếu review mỗi bản |
+| [35b · Test chức năng + chụp kết quả *(tùy chọn)*](phase-35b-functest-screenshots.md) | search thật trên bản Web, chụp lại màn kết quả để xem tận mắt |
 
 ## Phase 32 · Test collector bằng fixture
 

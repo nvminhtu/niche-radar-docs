@@ -92,18 +92,47 @@ nav:
           - Phase 27 · Review + Local App 4.0: phase-27-local-app-4.md
       - "Version 5 (Performance)":
           - Tổng quan Version 5: version-5.md
+          - "Phase 28 · Đo mốc": phase-28-benchmark.md
+          - "Phase 29 · Collector nhanh hơn": phase-29-fast-collector.md
+          - "Phase 30 · UI + DB nhanh": phase-30-fast-ui-db.md
+          - "Phase 31 · App Mac nhẹ": phase-31-light-mac-app.md
       - "Version 6 (Automation Test + Review Results)":
           - Tổng quan Version 6: version-6.md
+          - "Phase 32 · Test collector bằng fixture": phase-32-fixture-tests.md
+          - "Phase 33 · Test giao diện (E2E)": phase-33-e2e-tests.md
+          - "Phase 34 · Canary nguồn thật": phase-34-source-canary.md
+          - "Phase 35 · Review kết quả": phase-35-review-results.md
+          - "Phase 35b · Test chức năng + chụp kết quả (tùy chọn)": phase-35b-functest-screenshots.md
       - "Version 7 (CI/CD)":
           - Tổng quan Version 7: version-7.md
+          - "Phase 36 · CI cho pull request": phase-36-ci-pull-request.md
+          - "Phase 37 · Build app Mac trên CI": phase-37-mac-build-ci.md
+          - "Phase 38 · Release + auto-update": phase-38-release-auto-update.md
+          - "Phase 39 · Quy trình nhánh": phase-39-branch-flow.md
       - "Version 8 (Security & Account & Refactor Code)":
           - Tổng quan Version 8: version-8.md
+          - "Phase 40 · Kiểm + vá bảo mật": phase-40-security-audit.md
+          - "Phase 41 · Lớp tài khoản trên máy": phase-41-local-account.md
+          - "Phase 42 · Refactor": phase-42-refactor.md
+          - "Phase 43 · Review bảo mật + 8.0": phase-43-security-review-8.md
       - "Version 9 (Firebase, Analytics, Account)":
           - Tổng quan Version 9: version-9.md
+          - "Phase 44 · Firebase Auth": phase-44-firebase-auth.md
+          - "Phase 45 · Sync project": phase-45-project-sync.md
+          - "Phase 46 · Analytics + báo lỗi": phase-46-analytics-errors.md
+          - "Phase 47 · Riêng tư + xoá tài khoản": phase-47-privacy-delete.md
       - "Version 10 (Sell Pro — Lifetime / Subscriptions)":
           - Tổng quan Version 10: version-10.md
+          - "Phase 48 · Mô hình tiền": phase-48-money-model.md
+          - "Phase 49 · Thanh toán": phase-49-payments.md
+          - "Phase 50 · Paywall + dùng thử": phase-50-paywall-trial.md
+          - "Phase 51 · Chi phí AI theo gói": phase-51-ai-cost-plans.md
       - "Version 11 (Marketing Plan)":
           - Tổng quan Version 11: version-11.md
+          - "Phase 52 · Định vị + landing + email": phase-52-positioning-landing.md
+          - "Phase 53 · Chọn 2 kênh": phase-53-two-channels.md
+          - "Phase 54 · Dogfood làm nội dung": phase-54-dogfood-content.md
+          - "Phase 55 · Lịch 6 tuần + ra mắt": phase-55-six-week-launch.md
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md

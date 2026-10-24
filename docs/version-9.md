@@ -31,10 +31,10 @@ flowchart TB
 
 | Phase | Làm gì |
 |---|---|
-| 44 · Firebase Auth | đăng nhập Google / Apple / email link, nối hồ sơ trên máy với tài khoản |
-| 45 · Sync project | project, ghi chú, kết luận, bộ so sánh lên Firestore; dữ liệu cào thô ở lại máy |
-| 46 · Analytics + báo lỗi | sự kiện phễu lên GA4, báo lỗi tự động, có hỏi đồng ý |
-| 47 · Riêng tư + xoá tài khoản | xoá tài khoản xoá cả cloud, trang Privacy, quy tắc bảo mật Firestore |
+| [44 · Firebase Auth](phase-44-firebase-auth.md) | đăng nhập Google / Apple / email link, nối hồ sơ trên máy với tài khoản |
+| [45 · Sync project](phase-45-project-sync.md) | project, ghi chú, kết luận, bộ so sánh lên Firestore; dữ liệu cào thô ở lại máy |
+| [46 · Analytics + báo lỗi](phase-46-analytics-errors.md) | sự kiện phễu lên GA4, báo lỗi tự động, có hỏi đồng ý |
+| [47 · Riêng tư + xoá tài khoản](phase-47-privacy-delete.md) | xoá tài khoản xoá cả cloud, trang Privacy, quy tắc bảo mật Firestore |
 
 ## Phase 44 · Firebase Auth
 

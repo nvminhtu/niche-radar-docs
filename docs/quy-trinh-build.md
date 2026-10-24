@@ -97,6 +97,8 @@ flowchart TB
 - **Plan luôn khớp code.** Đọc plan là biết code đang ở đâu.
 - **Số đo có ngày + nguồn.** Không đo được ghi `chưa đo`.
 - **Merge `main` cần anh đồng ý.**
+- **UI chưa có tính năng thì disable, không xoá.** Nút / ô / mục thuộc phase chưa làm vẫn hiện nhưng xám, không bấm được,
+  ghi `Phase N` + tooltip "chưa làm" (class `soon-chip`, danh sách ở `src/lib/features.ts`). Làm xong phase thì bật lên.
 </div>
 
 ## Đang ở bước nào

@@ -31,10 +31,10 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| 48 · Mô hình tiền | Free vs Pro, lifetime vs subscription, giá: đo đối thủ + chi phí AI, viết `money.md` qua `/app-money` |
-| 49 · Thanh toán | Lemon Squeezy (lo thuế VAT thay mình), checkout, webhook → quyền Pro trên tài khoản |
-| 50 · Paywall + dùng thử | màn nâng cấp, dùng thử, khôi phục mua, giới hạn số máy |
-| 51 · Chi phí AI theo gói | tự mang key (BYOK) hay gói lượt AI kèm Pro, trần chi phí mỗi người |
+| [48 · Mô hình tiền](phase-48-money-model.md) | Free vs Pro, lifetime vs subscription, giá: đo đối thủ + chi phí AI, viết `money.md` qua `/app-money` |
+| [49 · Thanh toán](phase-49-payments.md) | Lemon Squeezy (lo thuế VAT thay mình), checkout, webhook → quyền Pro trên tài khoản |
+| [50 · Paywall + dùng thử](phase-50-paywall-trial.md) | màn nâng cấp, dùng thử, khôi phục mua, giới hạn số máy |
+| [51 · Chi phí AI theo gói](phase-51-ai-cost-plans.md) | tự mang key (BYOK) hay gói lượt AI kèm Pro, trần chi phí mỗi người |
 
 ## Phase 48 · Mô hình tiền
 

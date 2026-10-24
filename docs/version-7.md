@@ -30,10 +30,10 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| 36 · CI cho pull request | GitHub Actions: lint, typecheck, test, E2E (fixture), `docs:build --strict`, chặn merge khi đỏ |
-| 37 · Build app Mac trên CI | runner macOS build Tauri + sidecar, ký Developer ID, notarize bằng secret |
-| 38 · Release + auto-update | tag → `.dmg` lên Releases, What's New từ commit, Tauri updater |
-| 39 · Quy trình nhánh | `main` có bảo vệ, mỗi phase một nhánh + PR, ghi cách làm vào Quy trình build |
+| [36 · CI cho pull request](phase-36-ci-pull-request.md) | GitHub Actions: lint, typecheck, test, E2E (fixture), `docs:build --strict`, chặn merge khi đỏ |
+| [37 · Build app Mac trên CI](phase-37-mac-build-ci.md) | runner macOS build Tauri + sidecar, ký Developer ID, notarize bằng secret |
+| [38 · Release + auto-update](phase-38-release-auto-update.md) | tag → `.dmg` lên Releases, What's New từ commit, Tauri updater |
+| [39 · Quy trình nhánh](phase-39-branch-flow.md) | `main` có bảo vệ, mỗi phase một nhánh + PR, ghi cách làm vào Quy trình build |
 
 ## Phase 36 · CI cho pull request
 

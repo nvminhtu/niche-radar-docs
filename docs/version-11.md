@@ -29,10 +29,10 @@ flowchart TB
 
 | Phase | Làm gì | Skill App-AI-Skills |
 |---|---|---|
-| 52 · Định vị + landing + email | 1 câu định vị, landing riêng, form email, GA4 sự kiện mua / tải | `/app-gtm`, `/oneclicktool-landing` |
-| 53 · Chọn 2 kênh | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
-| 54 · Dogfood làm nội dung | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
-| 55 · Lịch 6 tuần + ra mắt | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
+| [52 · Định vị + landing + email](phase-52-positioning-landing.md) | 1 câu định vị, landing riêng, form email, GA4 sự kiện mua / tải | `/app-gtm`, `/oneclicktool-landing` |
+| [53 · Chọn 2 kênh](phase-53-two-channels.md) | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
+| [54 · Dogfood làm nội dung](phase-54-dogfood-content.md) | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
+| [55 · Lịch 6 tuần + ra mắt](phase-55-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
 
 ## Phase 52 · Định vị + landing + email
 

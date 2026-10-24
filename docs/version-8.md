@@ -30,10 +30,10 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| 40 · Kiểm + vá bảo mật | API cục bộ, key, XSS từ chữ cào, CSP app Mac, thư viện, secret trong repo |
-| 41 · Lớp tài khoản trên máy | `user_id` trên mọi bảng, hồ sơ, xuất / xoá dữ liệu một người |
-| 42 · Refactor | khuôn collector chung, tách file to, gỡ code chết, kiểu dữ liệu chung |
-| 43 · Review bảo mật + 8.0 | tự tấn công thử theo phiếu, sửa, ra bản qua CI |
+| [40 · Kiểm + vá bảo mật](phase-40-security-audit.md) | API cục bộ, key, XSS từ chữ cào, CSP app Mac, thư viện, secret trong repo |
+| [41 · Lớp tài khoản trên máy](phase-41-local-account.md) | `user_id` trên mọi bảng, hồ sơ, xuất / xoá dữ liệu một người |
+| [42 · Refactor](phase-42-refactor.md) | khuôn collector chung, tách file to, gỡ code chết, kiểu dữ liệu chung |
+| [43 · Review bảo mật + 8.0](phase-43-security-review-8.md) | tự tấn công thử theo phiếu, sửa, ra bản qua CI |
 
 ## Phase 40 · Kiểm + vá bảo mật
 

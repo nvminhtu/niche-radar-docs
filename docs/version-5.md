@@ -31,10 +31,10 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| 28 · Đo mốc | script đo thời gian từng luồng, RAM, dung lượng; bảng mốc lưu trong repo |
-| 29 · Collector nhanh hơn | chạy các nguồn song song (mỗi nguồn giữ giới hạn riêng), đẩy kết quả dần, cache dùng chung giữa niche, chạy tiếp khi lỗi giữa chừng |
-| 30 · UI + DB nhanh | bảng lớn chỉ vẽ phần đang thấy, tách code theo trang, index SQLite, API trả từng trang |
-| 31 · App Mac nhẹ | thời gian mở, RAM khi rảnh, dung lượng sidecar Node, `.dmg` |
+| [28 · Đo mốc](phase-28-benchmark.md) | script đo thời gian từng luồng, RAM, dung lượng; bảng mốc lưu trong repo |
+| [29 · Collector nhanh hơn](phase-29-fast-collector.md) | chạy các nguồn song song (mỗi nguồn giữ giới hạn riêng), đẩy kết quả dần, cache dùng chung giữa niche, chạy tiếp khi lỗi giữa chừng |
+| [30 · UI + DB nhanh](phase-30-fast-ui-db.md) | bảng lớn chỉ vẽ phần đang thấy, tách code theo trang, index SQLite, API trả từng trang |
+| [31 · App Mac nhẹ](phase-31-light-mac-app.md) | thời gian mở, RAM khi rảnh, dung lượng sidecar Node, `.dmg` |
 
 ## Phase 28 · Đo mốc
 
