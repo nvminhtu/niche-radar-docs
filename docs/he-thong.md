@@ -17,7 +17,6 @@ flowchart TB
   COL --> S[App Store<br/>iTunes API]
   COL --> G[Google gợi ý]
   COL --> T[Google Trends]
-  COL --> R[Reddit — tuỳ chọn]
   API <--> DB[(data/niche.db<br/>SQLite)]
 ```
 
@@ -52,7 +51,6 @@ flowchart LR
 | :material-apple: App Store | app, số rating, giá theo nước | ~20 request/phút |
 | :material-google: Google gợi ý | keyword người ta gõ | không công bố |
 | :material-trending-up: Google Trends | độ quan tâm 12 tháng, related | chặt nhất |
-| :material-reddit: Reddit | bài "is there an app…" | cần key cá nhân |
 
 Bộ nhớ đệm: kết quả research 24 giờ · gợi ý tìm kiếm 7 ngày · review 7 ngày.
 
@@ -61,7 +59,7 @@ Bộ nhớ đệm: kết quả research 24 giờ · gợi ý tìm kiếm 7 ngày
 
 ```
 src/client/      trang: HomePage · ExplorePage · RunPage
-src/components/  bảng, bản đồ, cây ngách, Trends, Reddit…
+src/components/  bảng, bản đồ, cây ngách, Trends…
 src/collectors/  gọi từng nguồn
 src/lib/         logic thuần có test (explore, điểm, complaints…)
 src/server/      API Hono

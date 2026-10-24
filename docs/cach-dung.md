@@ -4,7 +4,7 @@
 
 ```bash
 npm install
-cp .env.example .env.local   # điền key Reddit (tuỳ chọn — không có thì 3 nguồn kia vẫn chạy)
+cp .env.example .env.local   # tuỳ chọn: key Claude cho Feature Gap tuyến A
 npm run dev                  # mở http://localhost:3200
 ```
 

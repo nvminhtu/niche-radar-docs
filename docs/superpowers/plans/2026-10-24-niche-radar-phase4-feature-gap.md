@@ -63,7 +63,7 @@
 ### Task 5: UI + chạy thật
 - [x] `GapMatrixBlock`: nút dựng, bảng hàng × app (chip Có/Không/Trả phí/?, rê chuột xem câu nguồn, link), cột Khoảng
       trống, nút AI / tải job / nhập kết quả, thêm hàng.
-- [~] Chạy thật 3 niche + tuyến B 1 lần (≤ 20% `?` chưa đạt — xem kết quả) → bảng kết quả cuối file. Screenshot 1280 + 375.
+- [x] Chạy thật 3 niche + tuyến B (30 trang store) — 0% `?` sau khi thêm “Không nói” → bảng kết quả cuối file. Screenshot 1280 + 375.
 
 ## Tiến độ
 
@@ -87,3 +87,15 @@
 mục tiêu ≤ 20% `?` **không đạt được chỉ từ trang store**. Cần anh chốt: (a) thêm trạng thái "Không nói" (trang store đã
 đọc hết mà không quảng cáo) — chính nó là khoảng trống *định vị*; hoặc (b) cho tuyến B đọc thêm web/help center của app;
 hoặc (c) hạ mục tiêu. Tuyến A chưa chạy thật (chưa có key).
+
+**Anh chốt 2026-10-24: thêm “Không nói”.** Sau khi tuyến B đọc hết trang store của cả 3 niche:
+
+| Run | Có | Trả phí | Không | Không nói | `?` | Khoảng trống định vị |
+|---|---|---|---|---|---|---|
+| budget tracker (#14) | 27 | 7 | 2 | 64 | 0% | Offline · Widget · Không cần tài khoản |
+| habit tracker (#13) | 24 | 2 | 5 | 69 | 0% | Offline · Dùng thử · AI · Xuất dữ liệu · Không cần tài khoản |
+| pomodoro timer (#15) | 19 | 2 | 4 | 75 | 0% | Offline · Mua một lần · Dùng thử · AI · Xuất dữ liệu · Không cần tài khoản |
+
+**Đọc:** cả 3 niche, không app top nào quảng cáo **offline** và **không cần tài khoản** — wedge định vị lặp lại. Chưa có khoảng trống *tính năng* (đối thủ nói rõ không có) ở niche nào.
+
+Sửa luật thêm khi đọc 20 trang sau: "without creating an account" · tiêu đề VIẾT HOA ("STRUCTURED PRO") · "removes ads".

@@ -13,7 +13,7 @@ Tool nội bộ để chọn niche cho app của mình. Tra Google Play, App Sto
 <div class="nr-stats" markdown>
 <div><b>100</b><span>keyword mỗi lần explore</span></div>
 <div><b>~6 phút</b><span>cho 100 keyword đủ số liệu</span></div>
-<div><b>3 + 1</b><span>nguồn: Play · App Store · Trends (+ Reddit)</span></div>
+<div><b>3</b><span>nguồn: Play · App Store · Trends</span></div>
 <div><b>0 đ</b><span>Phase 1–5: không AI, không API trả phí</span></div>
 </div>
 
@@ -59,7 +59,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">1</span>
 <div class="step__body">
-<h3>Google Play <span class="chip chip--doing">Code xong · làm thêm UI Loading + Flow niche</span></h3>
+<h3>Google Play <span class="chip chip--done">Xong · có UI Loading + Flow niche</span></h3>
 <p>Mở niche thành cây keyword, chấm điểm cơ hội, bản đồ ngách, đối thủ bị chê gì.</p>
 <a class="go" href="phase-1-google-play/">Xem chi tiết →</a>
 </div>
@@ -67,7 +67,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">2</span>
 <div class="step__body">
-<h3>App Store <span class="chip chip--doing">Code xong · đạt Xong khi · chờ merge</span></h3>
+<h3>App Store <span class="chip chip--done">Xong</span></h3>
 <p>Keyword + đối thủ iOS, review 1–2★ iOS, giá / gói mua trong app, khoảng trống Play ↔ iOS.</p>
 <a class="go" href="phase-2-app-store/">Xem chi tiết →</a>
 </div>
@@ -75,7 +75,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">3</span>
 <div class="step__body">
-<h3>Google Trends <span class="chip chip--doing">Có cơ bản</span></h3>
+<h3>Google Trends <span class="chip chip--done">Xong</span></h3>
 <p>Nhu cầu lên hay xuống, so 5 keyword, theo nước, mùa vụ 5 năm.</p>
 <a class="go" href="phase-3-google-trends/">Xem chi tiết →</a>
 </div>
@@ -83,7 +83,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">4</span>
 <div class="step__body">
-<h3>Feature Gap Matrix <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Feature Gap Matrix <span class="chip chip--done">Xong · tuyến A chờ key</span></h3>
 <p>Bảng tính năng × top 5 app, mỗi ô có câu nguồn — tìm chỗ đối thủ còn thiếu.</p>
 <a class="go" href="phase-4-feature-gap/">Xem chi tiết →</a>
 </div>
@@ -158,7 +158,7 @@ rồi một phase **AI đọc chữ**. Vẫn **làm bản Web trước**, xong v
 <span class="step__n">12</span>
 <div class="step__body">
 <h3>YouTube Search <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Cào gợi ý YouTube + top video mỗi keyword: view, độ mới, kênh nhỏ thắng kênh to — không AI.</p>
+<p>Cào gợi ý YouTube + top video mỗi keyword: view, độ mới, kênh nhỏ thắng kênh to — không AI. Tuỳ chọn: MCP bên thứ 3 (vidIQ…) cho lượt tìm + độ cạnh tranh.</p>
 <a class="go" href="phase-12-youtube-search/">Xem chi tiết →</a>
 </div>
 </div>
@@ -296,6 +296,78 @@ Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Ch
 <h3>Review + Local App 4.0 <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Chọn niche thật 3 lần có kệ Google + kệ AI, gói vào app Mac 4.0.</p>
 <a class="go" href="phase-27-local-app-4/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
+## Version 5–12 · Từ tool riêng thành sản phẩm bán được
+
+Mỗi version một trang tổng quan, các phase nằm trong trang đó. Thứ tự: nhanh → test → CI/CD → bảo mật → tài khoản
+mạng → bán → marketing → tính năng mới.
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">V5</span>
+<div class="step__body">
+<h3>Performance <span class="chip chip--todo">Phase 28–31</span></h3>
+<p>Nhanh và nhẹ: đo mốc trước, kết quả đầu ≤ 30 giây, collector song song giữ giới hạn từng nguồn, bảng lớn mượt, app Mac mở ≤ 3 giây.</p>
+<a class="go" href="version-5/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V6</span>
+<div class="step__body">
+<h3>Automation Test + Review Results <span class="chip chip--todo">Phase 32–35</span></h3>
+<p>Test chạy không cần mạng (fixture), E2E Playwright, canary nguồn thật hằng ngày, bộ niche chuẩn + phiếu review kết quả.</p>
+<a class="go" href="version-6/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V7</span>
+<div class="step__body">
+<h3>CI/CD <span class="chip chip--todo">Phase 36–39</span></h3>
+<p>GitHub Actions chặn PR đỏ, build + ký + notarize app Mac trên CI, tag là ra bản, app tự cập nhật.</p>
+<a class="go" href="version-7/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V8</span>
+<div class="step__body">
+<h3>Security & Account & Refactor Code <span class="chip chip--todo">Phase 40–43</span></h3>
+<p>Vá bảo mật API cục bộ / key / XSS, lớp tài khoản trên máy (xuất / xoá dữ liệu), khuôn collector chung — hành vi không đổi.</p>
+<a class="go" href="version-8/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V9</span>
+<div class="step__body">
+<h3>Firebase, Analytics, Account <span class="chip chip--todo">Phase 44–47</span></h3>
+<p>Đăng nhập Firebase, sync project (dữ liệu cào thô ở lại máy), phễu GA4 có hỏi đồng ý, xoá tài khoản.</p>
+<a class="go" href="version-9/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V10</span>
+<div class="step__body">
+<h3>Sell Pro — Lifetime / Subscriptions <span class="chip chip--todo">Phase 48–51</span></h3>
+<p>money.md bằng số đo, Lemon Squeezy + webhook → quyền Pro, paywall + dùng thử, chi phí AI theo gói (BYOK / lượt).</p>
+<a class="go" href="version-10/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V11</span>
+<div class="step__body">
+<h3>Marketing Plan <span class="chip chip--todo">Phase 52–55</span></h3>
+<p>Định vị + landing + email, 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng.</p>
+<a class="go" href="version-11/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V12</span>
+<div class="step__body">
+<h3>New Features — Just Planned <span class="chip chip--todo">chưa đánh số</span></h3>
+<p>Danh sách ứng viên + cách chấm điểm; chọn ≤ 3 mỗi đợt, anh duyệt mới tách thành phase.</p>
+<a class="go" href="version-12/">Xem chi tiết →</a>
 </div>
 </div>
 </div>

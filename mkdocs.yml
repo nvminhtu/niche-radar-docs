@@ -90,6 +90,22 @@ nav:
           - Phase 25 · Chỗ trống AI + SEO: phase-25-ai-seo-gap.md
           - Phase 26 · Gói GEO + trang cần viết: phase-26-geo-pack.md
           - Phase 27 · Review + Local App 4.0: phase-27-local-app-4.md
+      - "Version 5 (Performance)":
+          - Tổng quan Version 5: version-5.md
+      - "Version 6 (Automation Test + Review Results)":
+          - Tổng quan Version 6: version-6.md
+      - "Version 7 (CI/CD)":
+          - Tổng quan Version 7: version-7.md
+      - "Version 8 (Security & Account & Refactor Code)":
+          - Tổng quan Version 8: version-8.md
+      - "Version 9 (Firebase, Analytics, Account)":
+          - Tổng quan Version 9: version-9.md
+      - "Version 10 (Sell Pro — Lifetime / Subscriptions)":
+          - Tổng quan Version 10: version-10.md
+      - "Version 11 (Marketing Plan)":
+          - Tổng quan Version 11: version-11.md
+      - "Version 12 (New Features — Just Planned)":
+          - Tổng quan Version 12: version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md
   - Hệ thống chạy thế nào: he-thong.md
   - Cách dùng: cach-dung.md

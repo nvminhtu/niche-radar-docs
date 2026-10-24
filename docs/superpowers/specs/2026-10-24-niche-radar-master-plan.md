@@ -254,6 +254,7 @@ trang cần đăng nhập bằng script**.
 - **Làm:** gợi ý YouTube (autocomplete `ds=yt`) làm nguồn keyword thứ 4 · top 20 video mỗi keyword Top 10 (view, ngày
   đăng, độ dài, kênh) · độ đông YouTube · độ mới (video top trong 12 tháng) · "video vượt kênh" (view ÷ sub cao) · CSV.
 - **Thư viện:** `youtubei.js` (InnerTube, không key) làm chính; YouTube Data API v3 (quota 10.000/ngày, 1 lần tìm = 100) dự phòng có key; `yt-dlp` nếu cần bền hơn. Đo endpoint trước khi code.
+- **MCP bên thứ 3 (tuỳ chọn, tắt mặc định):** vidIQ (`mcp.vidiq.com/mcp`: `keyword_research` lượt tìm + cạnh tranh, `outliers`, `trending_videos`; có gói Free, trừ credit mỗi lần gọi) thử trước · Apify YouTube MCP · MCP cộng đồng trên YouTube Data API. Tuyến job `.json` qua Claude đã nối MCP (chính) hoặc app gọi thẳng bằng API key chỉ đọc. Số MCP = ước tính bên thứ 3, cột riêng, không trộn vào điểm cơ hội, trần credit mỗi niche.
 - **Xong khi:** 3 niche thật có cây keyword YouTube + bảng top video + cột video vượt kênh, một lần chạy không bị chặn.
 - Chi tiết: `docs/phase-12-youtube-search.md`.
 
@@ -370,6 +371,50 @@ Chi tiết: `docs/version-4.md`.
 - **Làm:** 3 lần chọn niche thật có kệ Google + kệ AI → sửa lỗi → gói Phase 23–26 vào app Mac (key trong Keychain, engine `codex`/`claude` có thì dùng) → migration DB (ULID) → `.dmg` 4.0 ký + notarize.
 - **Xong khi:** 3 lần chọn có gói GEO chạy mốc, dưới trần · 3.x → 4.0 không mất dòng · test xanh, bản Web vẫn chạy.
 - Chi tiết: `docs/phase-27-local-app-4.md`.
+
+---
+
+**Version 5–12 · thành sản phẩm bán được.** Mỗi version một trang `docs/version-N.md`, phase nằm trong trang.
+
+### Version 5 — Performance (Phase 28–31)
+
+- Đo mốc (`npm run bench`, 3 niche chuẩn) → collector song song theo nguồn + stream + cache dùng chung + chạy tiếp khi lỗi → virtualize bảng, lazy load, index SQLite, WAL → app Mac mở ≤ 3 giây. **Không:** tính năng mới · vượt giới hạn nguồn · viết lại bằng Rust · server cloud.
+- Chi tiết: `docs/version-5.md`.
+
+### Version 6 — Automation Test + Review Results (Phase 32–35)
+
+- Fixture ghi lại từ nguồn thật, `npm test` xanh khi tắt mạng → Playwright 5 luồng chính + so ảnh → canary launchd hằng ngày báo nguồn đổi dạng → bộ 5 niche chuẩn đáp án tay + `npm run review` ra phiếu review. **Không:** CI (Version 7) · coverage 100% · test tải.
+- Chi tiết: `docs/version-6.md`.
+
+### Version 7 — CI/CD (Phase 36–39)
+
+- GitHub Actions cho PR (lint, type, test, E2E fixture, docs strict) → build + ký + notarize trên runner macOS (secret anh nhập) → tag → GitHub Releases + What's New + Tauri updater → bảo vệ `main`. **Không:** Windows · Mac App Store · deploy Web · canary trên CI · auto-merge.
+- Chi tiết: `docs/version-7.md`.
+
+### Version 8 — Security & Account & Refactor Code (Phase 40–43)
+
+- Phiếu bảo mật (token API cục bộ, chặn Origin lạ, key Keychain, chữ cào không render HTML, CSP Tauri, npm audit, quét secret) → `user_id` mọi bảng, nhiều hồ sơ, xuất / xoá dữ liệu → khuôn `Collector` chung, tách file > 400 dòng, hành vi không đổi (phiếu review giữ điểm) → tự tấn công thử + 8.0. **Không:** đăng nhập mạng · thanh toán · đổi framework · pentest thuê.
+- Chi tiết: `docs/version-8.md`.
+
+### Version 9 — Firebase, Analytics, Account (Phase 44–47)
+
+- Firebase Auth (Google, Apple, email link; deep link app Mac) → Firestore chỉ project / ghi chú / kết luận / so sánh, dữ liệu cào thô ở lại SQLite, quy tắc chỉ chủ → GA4 sự kiện phễu không gửi chữ người gõ, hỏi đồng ý + báo lỗi → xoá tài khoản xoá cả cloud + Privacy Policy. **Không:** dữ liệu thô lên cloud · team · server riêng.
+- Chi tiết: `docs/version-9.md`.
+
+### Version 10 — Sell Pro — Lifetime / Subscriptions (Phase 48–51)
+
+- `money.md` qua `/app-money` (giá đối thủ có nguồn + chi phí AI đo thật + phễu GA4) → Lemon Squeezy + webhook Cloud Functions → quyền Pro, license key mẫu RAM Rescue → paywall, dùng thử, khôi phục, giới hạn máy → BYOK hay gói lượt AI có trần. Thước đo: 1 đơn thật có nguồn. **Không:** Mac App Store IAP · tự xử lý thẻ · gói team · crypto.
+- Chi tiết: `docs/version-10.md`.
+
+### Version 11 — Marketing Plan (Phase 52–55)
+
+- `/app-gtm`: định vị + landing riêng (`/oneclicktool-landing`) + email + GA4 → 2 kênh chọn bằng ICE → dogfood: báo cáo niche công khai hằng tuần + Version 4 cho chính niche-radar → lịch 6 tuần + ra mắt + bảng số + luật dừng. Claude soạn, anh đăng. **Không:** quảng cáo trả tiền trước 10 đơn · mua review · > 2 kênh.
+- Chi tiết: `docs/version-11.md`.
+
+### Version 12 — New Features — Just Planned
+
+- Chỉ lên plan: danh sách ứng viên (theo dõi định kỳ, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 56.
+- Chi tiết: `docs/version-12.md`.
 
 ### Appendix — chưa xếp phase / không làm
 
