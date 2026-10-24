@@ -91,7 +91,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">5</span>
 <div class="step__body">
-<h3>Verified Sites <span class="chip chip--doing">Đang làm · TrustMRR bản đầu</span></h3>
+<h3>Verified Sites <span class="chip chip--todo">Tạm dừng · dời sang Claude in Chrome (Phase 6)</span></h3>
 <p>Doanh thu thật từ TrustMRR và các trang tương tự — ai đang thu tiền trong ngách.</p>
 <a class="go" href="phase-5-verified/">Xem chi tiết →</a>
 </div>
@@ -99,7 +99,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">6</span>
 <div class="step__body">
-<h3>Tích hợp AI (bản Web) <span class="chip chip--todo">Chưa làm · có phần thử</span></h3>
+<h3>Tích hợp AI (bản Web) <span class="chip chip--done">Xong · tuyến A chờ key</span></h3>
 <p>API key, extension miễn phí, AI chạy trong trình duyệt / trên máy — thử từng đường rồi chọn.</p>
 <a class="go" href="phase-6-ai-web/">Xem chi tiết →</a>
 </div>

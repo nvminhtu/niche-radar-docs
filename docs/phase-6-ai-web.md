@@ -3,7 +3,28 @@
 > Để AI **đọc thay mình** review, Reddit, trang listing — có nguồn, tắt được, và **thử cả đường miễn phí**
 > (AI chạy ngay trong trình duyệt / trên máy) trước khi bắt trả tiền theo lượt.
 
-<span class="chip chip--todo">Chưa làm · có phần thử nghiệm, chưa chắc làm được hết</span>
+<span class="chip chip--done">Xong 2026-10-24 · tuyến B (job Claude) chạy thật · tuyến A chờ key</span>
+
+## Kết quả Bước 0 (đo 2026-10-24, MacBook M1 Pro 16 GB)
+
+Bài thử: 110 review 1–2★ của `budget tracker` (6 app top) → chủ đề than + câu nguyên văn, kiểm bằng cùng một hàm.
+
+| Tuyến | Chạy được? | Chất lượng | Thời gian | Tiền | Quyết |
+|---|---|---|---|---|---|
+| A · Claude API | chưa chạy — máy chưa có key | — | — | ước ~$0.05/lần (5,8k token vào, Opus 5.5) | **xây** (bật ở Cài đặt khi có key) |
+| B · Job cho Claude (Chrome / Code) | ✅ | 10 chủ đề, 22/22 câu khớp nguyên văn | vài phút, cần người đưa file | 0 đ thêm (gói Claude đang có) | **xây** |
+| C · AI trong Chrome (Gemini Nano) | Prompt API có, model ở trạng thái `downloadable` | — | — | 0 đ | chưa thử — cần tải model, chờ anh đồng ý |
+| D · Ollama llama3.1 8B (bản 0.3.10) | ✅ chạy | ❌ 1 chủ đề / 110 review, chép nhãn ví dụ | 30–53 giây | 0 đ | **bỏ** — thử lại khi có model mới hơn |
+
+## Đã chạy thật (tuyến B)
+
+| Niche | Chủ đề than | Câu nguồn khớp | Tóm tắt 5 câu | Tiền thật |
+|---|---|---|---|---|
+| budget tracker (#14) | 10 | 22/22 | 5/5 câu có trích dẫn | — |
+| habit tracker (#13) | 10 | 19/19 | 5/5 | nutrIA $18,073 MRR (RevenueCat, khớp gần đúng) |
+| pomodoro timer (#15) | 10 | 19/19 | 5/5 | — |
+
+TrustMRR không có ô tìm chữ cho người dùng — job hướng dẫn lọc Category + mở trang startup theo tên đối thủ.
 
 ## Chạy thế nào
 
@@ -48,6 +69,7 @@ Tuyến nào không chạy được thì ghi lý do và bỏ, không cố.
 | :material-emoticon-angry: **Chủ đề than** | gom review 1–2★ thành chủ đề (quảng cáo, mất dữ liệu, ép đăng ký…) + số lần + câu nguyên văn |
 | :material-reddit: **Phân loại Reddit** | xin app · than app đang dùng · hỏi alternative · không liên quan |
 | :material-table-check: **Feature Gap Matrix tự động** | nâng tuyến A [Phase 4](phase-4-feature-gap.md) lên lớp AI chung, đọc thêm What's New + review |
+| :material-cash-check: **Tiền thật qua Claude in Chrome** | (dời từ [Phase 5](phase-5-verified.md)) job `.json` → Claude mở TrustMRR, tìm theo tên đối thủ / niche, trả MRR · 30 ngày · provider · ngày sync · link; nhập lại thành dòng `verified` kèm "khớp gần đúng" |
 | :material-text-box-check: **Tóm tắt niche** | ai đau gì · đối thủ yếu ở đâu · ai đang thu tiền — mọi câu kèm nguồn |
 
 <div class="box box--rules" markdown>

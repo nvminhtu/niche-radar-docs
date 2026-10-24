@@ -103,10 +103,25 @@ flowchart TB
 
 ## Đang ở bước nào
 
-| Phase | Đang ở bước | Việc tiếp |
-|---|---|---|
-| 1 · Google Play Research | ✅ **6 · Test** — code xong, commit `6a5954b` | merge `main` khi anh đồng ý |
-| 2 · App Store + Tiền thật | 📄 **1 · Spec** xong (master plan §3) | 🗺️🎨 viết plan code + mockup cột tiền / review iOS / khối TrustMRR |
-| 3 · Trends + Feature Gap Matrix | 📄 Spec có trong master plan | — |
-| 4 · Tích hợp AI | 📄 Spec có trong master plan | bắt đầu bằng 1–2 tuần dùng thật |
-| 5 · Chấm điểm + Validate | 📄 Spec có trong master plan | — |
+Cập nhật 2026-10-24 theo nhánh `main` (mọi nhánh `phase1` → `phase7` đã merge vào `main`).
+
+- **1 · Google Play** — ✅ **Xong** — có UI Loading + Flow niche (`871589c`)
+- **2 · App Store** — ✅ **Xong** — cột Tiền + Store, câu than 2 store (`59f3d13`)
+- **3 · Google Trends** — ✅ **Xong** — Top 10, so 5 keyword, mùa vụ (`206ff34`, `8622164`)
+- **4 · Feature Gap Matrix** — ✅ **Xong** — tuyến B (job Claude) chạy thật 3 niche (`d47aea5`)  
+  → Tiếp: tuyến A chờ anh tạo key Claude API
+- **5 · Verified Sites** — ⏸️ **Tạm dừng** — trang TrustMRR cấm quét, tìm theo từ khoá cần key (`fee7191`)  
+  → Tiếp: dời sang tuyến Claude in Chrome ở Phase 6
+- **6 · Tích hợp AI (Web)** — ✅ **6 · Test** xong — Cài đặt AI, chủ đề than có trích dẫn, tóm tắt niche (`4ac7098`)  
+  → Tiếp: tuyến A chờ key
+- **7 · Review + Validate** — 📄 **1 · Spec** có trong Master Plan · nhánh `phase7-validate` đã mở, chưa có commit  
+  → Tiếp: 🗺️ viết plan code, chạy 5 niche thật, chấm sức khoẻ niche (nút đang xám trên app)
+- **8 · Local App** — 📄 **1 · Spec** đã duyệt · phần Project làm sớm: Collect niche + trang Projects (`e8a921d`)  
+  → Tiếp: plan code app Mac (Tauri) sau Phase 7
+- **9 · Small Features** — 📄 Spec trong Master Plan  
+  → Tiếp: chốt danh sách ưu tiên
+- **10 · UI / UX** — 📄 Spec · đã làm lẻ: bảng Lịch sử + phân trang, chip nguồn +N (`b2cf354`), trang Hướng dẫn (`3258c0d`)
+- **11 · Account** — 📄 Spec trong Master Plan  
+  → Tiếp: xét lại khi có người dùng ngoài
+- **12–55 · Version 2–11** — 📄 Plan trong docs, chưa code
+- **Version 12** — 📄 Danh sách ứng viên

@@ -2,7 +2,15 @@
 
 > Biết **ai đang thu tiền thật** trong ngách — doanh thu lấy từ cổng thanh toán, không phải ước tính.
 
-<span class="chip chip--doing">Đang làm · TrustMRR bản đầu (trang công khai, chưa API key)</span>
+<span class="chip chip--todo">Tạm dừng 2026-10-24 · dời sang tuyến Claude in Chrome (Phase 6)</span>
+
+!!! warning "Tạm bỏ khỏi app (anh chốt 2026-10-24)"
+    `llms.txt` của TrustMRR ghi **"Do not scrape the website for full marketplace access"** — tìm theo từ khoá,
+    lọc, phân trang phải qua API có key (10 lượt/phút, phải đồng ý Acceptable Use Policy). Bản đầu chỉ đọc top 30
+    mỗi category nên 4/5 niche thật ra rỗng. → Khối "Tiền thật" bị gỡ khỏi trang Research; việc tra "ai đang thu
+    tiền thật" chuyển thành **job cho Claude in Chrome** ở [Phase 6](phase-6-ai-web.md): Claude mở TrustMRR, tìm
+    theo tên đối thủ / niche như người dùng thường, trả file kết quả có link + ngày sync. Code collector cũ giữ lại
+    (`src/lib/trustmrr.ts`) để dùng khi có API key.
 
 ## Chạy thế nào
 
