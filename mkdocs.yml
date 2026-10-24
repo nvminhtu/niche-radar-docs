@@ -1,0 +1,105 @@
+site_name: Niche Radar
+site_description: Gõ một niche — biết keyword nào còn trống, đối thủ yếu ở đâu, nhu cầu lên hay xuống
+site_url: https://nvminhtu.github.io/niche-radar-docs/
+repo_url: https://github.com/nvminhtu/niche-radar-docs
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  language: vi
+  font:
+    text: Figtree
+    code: JetBrains Mono
+  icon:
+    logo: material/radar
+  favicon: images/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-night, name: Chế độ tối }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-sunny, name: Chế độ sáng }
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - content.code.copy
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+  - md_in_html
+  - toc: { permalink: true }
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed: { alternate_style: true }
+  - pymdownx.tasklist: { custom_checkbox: true }
+nav:
+  - Master Plan: index.md
+  - Lộ trình:
+      - Quy trình build: quy-trinh-build.md
+      - MVP Plan (Version 1):
+          - Phase 1 · Google Play: phase-1-google-play.md
+          - Phase 2 · App Store: phase-2-app-store.md
+          - Phase 3 · Google Trends: phase-3-google-trends.md
+          - Phase 4 · Feature Gap Matrix: phase-4-feature-gap.md
+          - Phase 5 · Verified Sites: phase-5-verified.md
+          - Phase 6 · Tích hợp AI (Web): phase-6-ai-web.md
+          - Phase 7 · Review + Validate: phase-7-review-validate.md
+          - Phase 8 · Local App: phase-8-local-app.md
+          - Phase 9 · Small Features Update: phase-9-small-features.md
+          - Phase 10 · UI / UX: phase-10-ui-ux.md
+          - Phase 11 · Account + Flow: phase-11-account.md
+      - Version 2 (sau MVP · Nguồn mới + AI):
+          - Phase 12 · YouTube Search: phase-12-youtube-search.md
+          - Phase 13 · YouTube Research (AI): phase-13-youtube-ai.md
+          - Phase 14 · Amazon Search: phase-14-amazon-search.md
+          - Phase 15 · Amazon Research (AI): phase-15-amazon-ai.md
+          - Phase 16 · Google Maps Research (AI): phase-16-google-maps.md
+          - Phase 17 · Local App 2.0: phase-17-local-app-2.md
+      - Version 3 (New Features · So Sánh + AI Cite):
+          - Tổng quan Version 3: version-3.md
+          - Phase 18 · So sánh niche: phase-18-compare-niche.md
+          - Phase 19 · So sánh đối thủ: phase-19-compare-competitor.md
+          - Phase 20 · Hỏi dữ liệu (AI Cite): phase-20-ai-cite-ask.md
+          - Phase 21 · Báo cáo so sánh (AI Cite): phase-21-ai-cite-report.md
+          - Phase 22 · Review + Local App 3.0: phase-22-local-app-3.md
+      - Version 4 (LLM + AEO, GEO, SEO):
+          - Tổng quan Version 4: version-4.md
+          - Phase 23 · Kệ Google (SEO): phase-23-seo-shelf.md
+          - Phase 24 · Kệ AI (GEO / AEO): phase-24-ai-shelf.md
+          - Phase 25 · Chỗ trống AI + SEO: phase-25-ai-seo-gap.md
+          - Phase 26 · Gói GEO + trang cần viết: phase-26-geo-pack.md
+          - Phase 27 · Review + Local App 4.0: phase-27-local-app-4.md
+      - Appendix · Chưa xếp / Không làm: appendix.md
+  - Hệ thống chạy thế nào: he-thong.md
+  - Cách dùng: cach-dung.md
+  - Skills: skills.md
+  - Tài liệu chi tiết:
+      - Master Plan (bản đầy đủ): superpowers/specs/2026-10-24-niche-radar-master-plan.md
+      - Plan code Phase 1: superpowers/plans/2026-10-24-niche-radar-phase1-explorer.md
+      - Plan code Phase 2: superpowers/plans/2026-10-24-niche-radar-phase2-appstore-money.md
+      - Spec Phase 8 · Local App: superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md
+      - Plan code v1: superpowers/plans/2026-10-23-niche-radar-v1.md
+      - Spec v1: superpowers/specs/2026-10-23-niche-radar-design.md
+      - Nháp Explorer: superpowers/specs/2026-10-24-niche-radar-phase2-explorer.md
+      - Giới hạn nguồn & chia sẻ: superpowers/specs/2026-10-24-niche-radar-limits-and-sharing.md

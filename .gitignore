@@ -1,0 +1,5 @@
+site/
+.venv/
+.DS_Store
+__pycache__/
+scripts/private-words.txt
