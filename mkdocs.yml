@@ -34,6 +34,8 @@ theme:
     - navigation.indexes
     - search.highlight
     - content.code.copy
+hooks:
+  - hooks/nav_status.py
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:

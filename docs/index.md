@@ -107,7 +107,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">7</span>
 <div class="step__body">
-<h3>Review + Validate <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Review + Validate <span class="chip chip--doing">Code xong · chờ anh chạy test bán trước</span></h3>
 <p>Soát lại Phase 1–6 trên 5 niche thật, chấm điểm v2, evidence pack, test bán trước.</p>
 <a class="go" href="phase-7-review-validate/">Xem chi tiết →</a>
 </div>

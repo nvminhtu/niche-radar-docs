@@ -3,7 +3,35 @@
 > **Soát lại Phase 1–6** trên niche thật — từng phase có đạt "Xong khi" không, số có nguồn không — rồi kiểm
 > cả hệ thống bằng một vòng thật: **chấm điểm niche → evidence pack → test bán trước**.
 
-<span class="chip chip--todo">Chưa làm</span>
+<span class="chip chip--doing">Code xong 2026-10-24 · vòng test bán trước chờ anh chạy + nhập số thật</span>
+
+## Kết quả soát (2026-10-24)
+
+| Phase | Soát | Kết quả |
+|---|---|---|
+| 1 · Google Play | 5 niche thật (budget, habit, pomodoro, color by number, bubble shooter) | chạy đủ; nhóm keyword sửa (92/100 dồn "Tính năng" → có nhóm Khác) |
+| 2 · App Store | cột tiền iOS top 5 | đọc đủ 5/5 app iOS ở 3 niche |
+| 3 · Google Trends | chạy 5 niche liền | **chưa soát lại** — Google chặn tạm khi gọi dồn (đã gặp ở Phase 3); bubble shooter thiếu Trends |
+| 4 · Feature Gap | 10 ô ngẫu nhiên | 10/10 có nguồn thật; câu luật lấy từ mô tả 35/36 khớp nguyên văn (1 câu = tiêu đề mục + dòng, ghép có chủ đích) |
+| 5 · Verified Sites | — | tạm tắt, dời sang job Claude in Chrome (Phase 6) |
+| 6 · AI | trích dẫn | 5 niche: 47 chủ đề, mọi câu kiểm khớp nguyên văn bằng code; tóm tắt 15/15 câu có dữ kiện. Lỗi tìm ra + sửa: job/import lệch id khi review tải thêm sau → lưu ảnh chụp lúc tạo job |
+
+## Điểm v2 — back-test (2026-10-24, trọng số mặc định)
+
+| Niche | v2 | Đo | Gợi ý |
+|---|---|---|---|
+| color by number | 5.4 | 100% | cân nhắc |
+| pomodoro timer | 5.4 | 100% | cân nhắc |
+| habit tracker | 5.3 | 100% | cân nhắc |
+| bubble shooter | 4.7 | 70% (thiếu Trends) | cân nhắc |
+| budget tracker | 4.5 | 100% | cân nhắc |
+
+Chưa niche nào ≥ 6 ("đáng test bán trước") — đúng kỳ vọng: cả 5 đều đông (tổng rating top 10 hàng trăm nghìn – triệu).
+
+## Còn lại (cần anh)
+
+- Chọn 1 niche → tải evidence pack → chạy `/app-demand` điền phần nhận định → đăng nháp test bán trước → nhập số thật vào bảng.
+
 
 ## Chạy thế nào
 

@@ -2,7 +2,7 @@
 """Chép tài liệu Niche Radar + skills của App-AI-Skills vào repo public này.
 
 Nguồn (máy anh Tu, mặc định đứng cạnh repo này):
-  ../niche-radar                          → docs/, mkdocs.yml, requirements-docs.txt
+  ../niche-radar                          → docs/, hooks/, mkdocs.yml, requirements-docs.txt
   ../../App-AI-Skills/app-AI-skills/.claude/skills → skills/
 
 Chạy: python3 scripts/sync.py [--docs <dir>] [--skills <dir>]
@@ -97,6 +97,7 @@ def main() -> None:
     docs_src, skills_src = Path(a.docs), Path(a.skills)
 
     copy_tree(docs_src / "docs", ROOT / "docs")
+    copy_tree(docs_src / "hooks", ROOT / "hooks")
     for name in ("mkdocs.yml", "requirements-docs.txt"):
         shutil.copy2(docs_src / name, ROOT / name)
     patch_mkdocs()
