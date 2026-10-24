@@ -22,6 +22,7 @@ flowchart TB
   F[Phase 32<br/>Fixture ghi lại<br/>test collector] --> E[Phase 33<br/>Test giao diện<br/>Playwright]
   F --> K[Phase 34<br/>Canary nguồn thật<br/>hằng ngày]
   G[Phase 35<br/>Bộ niche chuẩn<br/>+ đáp án tay] --> RV[Phiếu review<br/>kết quả]
+  E -.-> FT[Phase 35b · tùy chọn<br/>Test chức năng thật<br/>+ chụp màn kết quả]
   E & K & RV --> OK[Sẵn sàng cho CI<br/>Version 7]
 ```
 
@@ -33,6 +34,7 @@ flowchart TB
 | 33 · Test giao diện (E2E) | Playwright chạy luồng chính trên bản Web + so ảnh chụp |
 | 34 · Canary nguồn thật | mỗi ngày gọi thật 1 lượt nhỏ từng nguồn, báo khi nguồn đổi / bị chặn |
 | 35 · Review kết quả | bộ niche chuẩn + đáp án tay, chấm tự động, phiếu review mỗi bản |
+| 35b · Test chức năng + chụp kết quả *(tùy chọn)* | search thật trên bản Web, chụp lại màn kết quả để xem tận mắt |
 
 ## Phase 32 · Test collector bằng fixture
 
@@ -60,6 +62,22 @@ flowchart TB
   `npm run review` chạy tool trên 5 niche → chấm: trùng bao nhiêu keyword / đối thủ / chủ đề · % trích dẫn qua kiểm ·
   % ô so sánh khớp màn chi tiết → **phiếu review** `.md` so với lần trước.
 - **Xong khi:** phiếu review ra tự động, có điểm từng niche + điểm chung · chạy 2 lần cùng dữ liệu ra cùng điểm.
+
+## Phase 35b · Test chức năng thật + chụp màn kết quả (tùy chọn)
+
+<span class="chip chip--todo">Tùy chọn · chạy tay khi cần</span>
+
+- **Để làm gì:** Phase 33 chạy trên fixture nên không biết **search thật** ra màn hình thế nào. Phase này gõ keyword
+  thật, đợi tool chạy xong, rồi **chụp lại màn kết quả** để anh mở ra xem ngay, không phải tự bấm lại.
+- **Làm:** `npm run functest -- "<keyword>"` (bỏ trống thì lấy 1 keyword trong bộ niche chuẩn Phase 35) · Playwright mở bản
+  Web, gõ keyword → bấm search → đợi run xong (có giới hạn thời gian) · chụp **cả trang** từng màn kết quả: tóm tắt run,
+  bảng keyword, đối thủ, chủ đề than, so sánh niche · chụp ở 1340px và 375px · lưu vào
+  `run/functest/<ngày>-<keyword>/` kèm `report.md`: bước nào qua / hỏng, thời gian từng bước, nguồn nào rỗng, link tới ảnh.
+- **Kiểm tối thiểu trên kết quả thật:** bảng keyword có ≥ 1 dòng · không có ô "lỗi" / trang trắng · console không có lỗi đỏ.
+  Không so ảnh với ảnh chuẩn (dữ liệu thật đổi mỗi ngày) — ảnh là để **người xem**.
+- **Xong khi:** một lệnh ra đủ thư mục ảnh + `report.md` · cố tình tắt 1 nguồn → `report.md` ghi rõ nguồn đó rỗng,
+  ảnh vẫn chụp được phần còn lại.
+- **Không:** chạy tự động hằng ngày (việc của canary Phase 34) · đưa vào `npm test` · chạy trên CI.
 
 <div class="box box--rules" markdown>
 **Luật**

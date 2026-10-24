@@ -383,7 +383,7 @@ Chi tiết: `docs/version-4.md`.
 
 ### Version 6 — Automation Test + Review Results (Phase 32–35)
 
-- Fixture ghi lại từ nguồn thật, `npm test` xanh khi tắt mạng → Playwright 5 luồng chính + so ảnh → canary launchd hằng ngày báo nguồn đổi dạng → bộ 5 niche chuẩn đáp án tay + `npm run review` ra phiếu review. **Không:** CI (Version 7) · coverage 100% · test tải.
+- Fixture ghi lại từ nguồn thật, `npm test` xanh khi tắt mạng → Playwright 5 luồng chính + so ảnh → canary launchd hằng ngày báo nguồn đổi dạng → bộ 5 niche chuẩn đáp án tay + `npm run review` ra phiếu review → (tùy chọn 35b) `npm run functest` search thật + chụp màn kết quả 1340/375 vào `run/functest/`. **Không:** CI (Version 7) · coverage 100% · test tải.
 - Chi tiết: `docs/version-6.md`.
 
 ### Version 7 — CI/CD (Phase 36–39)

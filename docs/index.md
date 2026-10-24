@@ -318,7 +318,7 @@ mạng → bán → marketing → tính năng mới.
 <span class="step__n">V6</span>
 <div class="step__body">
 <h3>Automation Test + Review Results <span class="chip chip--todo">Phase 32–35</span></h3>
-<p>Test chạy không cần mạng (fixture), E2E Playwright, canary nguồn thật hằng ngày, bộ niche chuẩn + phiếu review kết quả.</p>
+<p>Test chạy không cần mạng (fixture), E2E Playwright, canary nguồn thật hằng ngày, bộ niche chuẩn + phiếu review kết quả; tùy chọn: search thật + chụp màn kết quả.</p>
 <a class="go" href="version-6/">Xem chi tiết →</a>
 </div>
 </div>
