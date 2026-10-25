@@ -31,7 +31,7 @@ flowchart LR
 | :material-sword-cross: **Tấn công thử** | chạy từng lần thử trên bản build, không phải bản dev |
 | :material-camera: **Bằng chứng** | mỗi lần thử có ảnh hoặc log, ghi vào `security/checklist.md` |
 | :material-wrench: **Sửa** | lọt chỗ nào → sửa + test → thử lại |
-| :material-apple: **Ra bản 8.0** | gắn tag → CI build, ký, notarize, lên Releases ([Version 7](version-7.md)) |
+| :material-tag: **Ra bản 8.0** | gắn tag `v8.0.0` sau khi CI xanh ([Version 7](version-7.md)) |
 
 <div class="box box--star" markdown>
 **Xong khi**

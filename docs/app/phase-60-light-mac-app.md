@@ -3,7 +3,7 @@
 > Đo và làm nhẹ **app Mac**: mở nhanh, ít RAM khi không làm gì, file cài nhỏ hơn. Đây cũng là lần đo lại cuối của
 > Version 5 so với bảng mốc.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 59 · khi Web xong hết</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 59 · khi xong Version 9</span>
 
 ## Chạy thế nào
 

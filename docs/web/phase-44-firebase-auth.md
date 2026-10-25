@@ -9,24 +9,22 @@
 
 ```mermaid
 flowchart LR
-  U[Bấm Đăng nhập<br/>app Mac · Web] --> B[Trình duyệt<br/>Google · Apple · email link]
+  U[Bấm Đăng nhập<br/>bản Web] --> B[Trình duyệt<br/>Google · Apple · email link]
   B --> FA[Firebase Auth<br/>trả về tài khoản]
-  FA --> DL[Deep link<br/>quay lại app Mac]
-  DL --> L[Gắn hồ sơ trên máy<br/>Phase 41 ↔ tài khoản]
+  FA --> L[Gắn hồ sơ trên máy<br/>Phase 41 ↔ tài khoản]
   L --> OK[Đã đăng nhập<br/>dữ liệu máy vẫn còn]
 ```
 
 **Firebase Auth** (dịch vụ đăng nhập của Google, có gói miễn phí) lo phần mật khẩu, xác minh email. Mình không tự
-giữ mật khẩu. **Deep link** (đường dẫn mở thẳng vào app) đưa người dùng từ trình duyệt về lại app Mac sau khi đăng nhập.
+giữ mật khẩu.
 
 ## Làm gì
 
 | | |
 |---|---|
 | :material-google: **Google** | đăng nhập Google trên bản Web |
-| :material-apple: **Apple** | đăng nhập Apple trên bản Web (app Mac dùng lại ở [Phase 61](../app/phase-61-app-only.md)) |
+| :material-apple: **Apple** | đăng nhập Apple trên bản Web |
 | :material-email-fast: **Email link** | gõ email → bấm link trong thư là vào, không mật khẩu |
-| :material-link-variant: **Deep link app Mac** | → [Phase 61](../app/phase-61-app-only.md), sau khi hết phase Web |
 | :material-account-switch: **Gắn hồ sơ** | lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 41](version-8.md)) với tài khoản, không mất dữ liệu cũ |
 | :material-logout: **Đăng xuất** | đăng xuất vẫn dùng được trên máy, project trên máy còn nguyên |
 | :material-file-code: **File** | mới: lớp đăng nhập phía client trong `web/src/lib/` và route kiểm token trong `web/src/server/` (tên chốt ở plan) |

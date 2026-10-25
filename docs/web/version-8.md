@@ -8,7 +8,7 @@
 
 ## Mục tiêu
 
-- **An toàn:** không trang web nào khác gọi được API trên máy · key (AI, API tìm kiếm) nằm trong Keychain · chữ cào về
+- **An toàn:** không trang web nào khác gọi được API trên máy · key (AI, API tìm kiếm) không nằm trong code hay log · chữ cào về
   (review, comment) không chạy được thành code trên giao diện · thư viện không còn lỗ hổng mức cao.
 - **Sẵn tài khoản:** mọi dữ liệu thuộc về một `user_id`, xuất / xoá được toàn bộ dữ liệu của một người. Vẫn chạy trên
   máy, chưa đăng nhập mạng.
@@ -30,7 +30,7 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| [40 · Kiểm + vá bảo mật](phase-40-security-audit.md) | API cục bộ, key, XSS từ chữ cào, CSP app Mac, thư viện, secret trong repo |
+| [40 · Kiểm + vá bảo mật](phase-40-security-audit.md) | API cục bộ, key, XSS từ chữ cào, thư viện, secret trong repo |
 | [41 · Lớp tài khoản trên máy](phase-41-local-account.md) | `user_id` trên mọi bảng, hồ sơ, xuất / xoá dữ liệu một người |
 | [42 · Refactor](phase-42-refactor.md) | khuôn collector chung, tách file to, gỡ code chết, kiểu dữ liệu chung |
 | [43 · Review bảo mật + 8.0](phase-43-security-review-8.md) | tự tấn công thử theo phiếu, sửa, ra bản qua CI |
@@ -39,9 +39,8 @@ flowchart LR
 
 - **Làm:** phiếu kiểm `security/checklist.md`:
     - **API cục bộ:** chỉ nghe `127.0.0.1` (đã có) + token ngẫu nhiên mỗi lần mở app, chặn trang web khác gọi vào (CSRF, DNS rebinding) · kiểm `Origin`
-    - **Key:** chuyển hết key sang Keychain (app) / `.env.local` (web), không log key
+    - **Key:** key chỉ ở `.env.local` / Cài đặt, không log key
     - **Chữ cào về:** review, comment, mô tả hiện ra dạng chữ, không render HTML; link chỉ `http(s)`
-    - **App Mac:** CSP chặt cho WebView Tauri, chỉ mở quyền Tauri cần
     - **Thư viện:** `npm audit` + Dependabot · quét secret trong lịch sử git
 - **Xong khi:** mọi mục phiếu có kết quả, mục đỏ đã vá kèm test.
 
@@ -79,7 +78,7 @@ flowchart LR
 - **Đăng nhập qua mạng, sync cloud**: [Version 9](version-9.md)
 - **Thanh toán**: [Version 10](version-10.md)
 - **Thuê bên ngoài pentest, chứng nhận bảo mật** (SOC 2…): tool nhỏ, chưa cần
-- **Đổi framework** (React, Hono, Drizzle, Tauri): refactor trong khung đang có
+- **Đổi framework** (React, Hono, Drizzle): refactor trong khung đang có
 - **Viết lại collector bằng ngôn ngữ khác**
 - **Tính năng mới**
 </div>

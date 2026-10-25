@@ -1,7 +1,6 @@
 # Phase 22 · Review Version 3
 
-> Dùng Version 3 **chọn niche thật 3 lần** ở bản Web, sửa lỗi gặp phải. Phần gói vào app Mac tách sang
-> [Phase 58 · Local App 3.0](../app/phase-58-local-app-3.md) — làm ở mục App, **sau khi hết phase Web**.
+> Dùng Version 3 **chọn niche thật 3 lần** ở bản Web, sửa lỗi gặp phải.
 
 <span class="chip chip--todo">Chưa làm · sau Phase 21</span>
 
@@ -20,7 +19,6 @@ flowchart LR
 |---|---|
 | :material-timer-outline: **3 lần chọn thật** | mỗi lần: so 3 niche → so 4 đối thủ → báo cáo → evidence pack. Bấm giờ, mục tiêu ≤ 30 phút |
 | :material-bug-check: **Sửa lỗi** | lỗi gặp khi chọn thật → sửa ở bản Web |
-| :material-database-outline: **Ghi cho app** | liệt kê bảng mới (bộ so sánh, lịch sử hỏi, kết quả kiểm trích dẫn) để Phase 58 viết migration |
 
 <div class="box box--star" markdown>
 **Xong khi**
@@ -33,5 +31,4 @@ flowchart LR
 **Không làm ở phase này**
 
 - Tính năng mới (chỉ soát những gì Phase 19–21 đã xong)
-- Gói app Mac → [Phase 58](../app/phase-58-local-app-3.md)
 </div>

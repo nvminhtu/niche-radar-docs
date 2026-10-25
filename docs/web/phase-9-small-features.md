@@ -79,7 +79,7 @@ Không thêm lại **Reddit** làm nguồn than (đã bỏ 2026-10-24). Comment 
 **Xong khi**
 
 - Có danh sách ưu tiên đã chốt (anh duyệt); 4 mục ưu tiên ở trên có quyết định làm / bỏ kèm lý do — **đã làm cả 4, 2026-10-25**
-- Mỗi tính năng làm xong có trong bản Web, test xanh, screenshot đã Read (app Mac nhận ở [mục App](../app/index.md), sau khi hết phase Web)
+- Mỗi tính năng làm xong có trong bản Web, test xanh, screenshot đã Read
 </div>
 
 <div class="box box--danger" markdown>

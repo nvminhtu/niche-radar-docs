@@ -1,4 +1,4 @@
-# Phase 12.2 · Tutorial trong Web / App
+# Phase 12.2 · Tutorial trong Web
 
 > Mỗi tính năng có nút nhỏ **ⓘ / ?** cạnh tiêu đề. Bấm vào hiện **vài hình đơn giản theo bước** và **một câu ghi chú**
 > tính năng đó làm gì — ngắn, ít chữ, xem 10 giây là hiểu.

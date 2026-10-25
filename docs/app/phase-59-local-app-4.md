@@ -1,9 +1,9 @@
 # Phase 59 · Local App 4.0
 
 > Gói Phase 23–26 (đã soát ở [Phase 27](../web/phase-27-review-4.md)) vào **app Mac** một lần — như
-> [Phase 58](phase-58-local-app-3.md) đã làm cho Version 3. Thuộc mục App: **chỉ làm khi hết phase Web**.
+> [Phase 58](phase-58-local-app-3.md) đã làm cho Version 3. Thuộc mục App: **chỉ làm khi bản Web xong Version 9**.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 58 · khi Web xong hết</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 58 · khi xong Version 9</span>
 
 ## Chạy thế nào
 

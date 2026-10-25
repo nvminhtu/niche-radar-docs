@@ -24,13 +24,13 @@ flowchart LR
 | :material-table-eye: **Bảng dày** | keyword, matrix, đối thủ — đọc được ở cửa sổ app nhỏ không |
 | :material-theme-light-dark: **Sáng / tối** | đủ tương phản cả hai chế độ |
 | :material-keyboard: **Bàn phím + đọc màn hình** | dùng được không cần chuột |
-| :material-monitor-cellphone: **Cỡ màn** | 1280 · 1340 · 375 cho bản Web (cửa sổ app Mac nhỏ nhất soát ở [mục App](../app/index.md)) |
+| :material-monitor-cellphone: **Cỡ màn** | 1280 · 1340 · 375 |
 
 <div class="box box--star" markdown>
 **Xong khi**
 
 - Danh sách chỗ vướng có trạng thái từng mục (sửa / bỏ + lý do)
-- Mỗi màn sửa có screenshot trước / sau đã Read ở bản Web (app Mac nhận khi tới [mục App](../app/index.md))
+- Mỗi màn sửa có screenshot trước / sau đã Read ở bản Web
 </div>
 
 <div class="box box--danger" markdown>

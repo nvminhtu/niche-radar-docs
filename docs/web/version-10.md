@@ -9,7 +9,7 @@
 
 - **Chốt mô hình bằng số:** Free gồm gì, Pro gồm gì, lifetime hay subscription hay cả hai, giá bao nhiêu. Dựa trên giá
   đối thủ đo được và chi phí AI thật mỗi lần tra (đo ở Phase 48).
-- **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên bản Web (app Mac nhận ở [Phase 61](../app/phase-61-app-only.md)).
+- **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên bản Web.
 - **Không lỗ tiền AI:** người dùng Pro không làm chi phí AI vượt tiền họ trả.
 - **Đơn đầu tiên có nguồn:** 1 đơn thật từ người không quen.
 
@@ -47,9 +47,8 @@ flowchart LR
 
 ## Phase 49 · Thanh toán
 
-- **Làm:** sản phẩm trên Lemon Squeezy (anh tạo cửa hàng, nhập ngân hàng, thuế) · checkout mở từ app · webhook
+- **Làm:** sản phẩm trên Lemon Squeezy (anh tạo cửa hàng, nhập ngân hàng, thuế) · checkout mở từ bản Web · webhook
   (Firebase Cloud Functions) nhận đơn / gia hạn / huỷ / hoàn tiền → cập nhật quyền Pro trên tài khoản ·
-  license key cho app Mac theo mẫu RAM Rescue (dùng được khi không đăng nhập).
 - **Xong khi:** mua bằng chế độ test → quyền Pro ≤ 30 giây · huỷ / hoàn tiền → quyền tắt · webhook giả mạo bị từ chối (kiểm chữ ký).
 
 ## Phase 50 · Paywall + dùng thử
@@ -76,7 +75,7 @@ flowchart LR
 ## Không làm ở Version 10
 
 <div class="box box--danger" markdown>
-- **Mac App Store / thanh toán trong app của Apple** (phân phối `.dmg` trực tiếp như Version 7)
+- **Thanh toán trong app của Apple**
 - **Tự xử lý thẻ**, Stripe tự làm phần thuế
 - **Gói team / nhiều chỗ ngồi**: ứng viên [Version 12](version-12.md)
 - **Mã giảm giá phức tạp, affiliate**: xét sau đơn thứ 10

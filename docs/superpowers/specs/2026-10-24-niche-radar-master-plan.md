@@ -1,6 +1,6 @@
 # niche-radar — Master Plan
 
-> Cập nhật 2026-10-24 (11 phase + Appendix: 1 Google Play · 2 App Store · 3 Google Trends · 4 Feature Gap Matrix · 5 Verified Sites · 6 AI bản Web · 7 Review + Validate · 8 Project + dữ liệu · 9 Feature Plan · 10 UI/UX · 11 Account + Flow = MVP; sau MVP: 12 YouTube Search · 13 YouTube AI · 14 Amazon Search · 15 Amazon AI · 16 Google Maps AI … tới 55; cuối cùng Version 13 App Mac 56–63) · Plan gốc của sản phẩm. Plan code chi tiết từng phase ở `docs/superpowers/plans/`.
+> Cập nhật 2026-10-24 (11 phase + Appendix: 1 Google Play · 2 App Store · 3 Google Trends · 4 Feature Gap Matrix · 5 Verified Sites · 6 AI bản Web · 7 Review + Validate · 8 Project + dữ liệu · 9 Feature Plan · 10 UI/UX · 11 Account + Flow = MVP; sau MVP: 12 YouTube Search · 13 YouTube AI · 14 Amazon Search · 15 Amazon AI · 16 Google Maps AI … tới 55; App Mac 56–63 làm khi xong Version 9, trước Version 10) · Plan gốc của sản phẩm. Plan code chi tiết từng phase ở `docs/superpowers/plans/`.
 > Bản đọc nhanh có sơ đồ: trang chủ của site tài liệu (`npm run docs`).
 
 ## 0. Một câu
@@ -20,7 +20,7 @@ việc của Idea Lab (repo App-AI-Skills) — chỉ khi Idea Lab qua test mới
 | Giao diện | React (Vite) | **Dùng lại đúng giao diện Web**, bọc bằng Tauri (không Electron) |
 | Lấy dữ liệu | Server Node (Hono) trong máy | Cùng server Node chạy kèm app (sidecar) |
 | Dữ liệu | `data/niche.db` (SQLite) | Cùng định dạng SQLite, nằm trong thư mục app |
-| Khi nào | Mọi phase tính năng (Version 1–12, Phase 1–55) | **Version 13, phase cuối cùng**: 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63 (Phase 56 đã code sớm — [spec Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
+| Khi nào | Version 1–9 (Phase 1–47), rồi Version 10–12 (Phase 48–55) sau App | **Khi bản Web xong Version 9 (Phase 1–47)**, trước Version 10: 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63 (Phase 56 đã code sớm — [spec Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
 
 Vì App bọc lại Web, mọi tính năng làm ở Web đều có trong App — không viết 2 lần.
 
@@ -52,7 +52,7 @@ v1 nền ─► 1 Google Play ─► 2 App Store ─► 3 Google Trends ─► 4
 
       ─► … Version 2–12 (Phase 13–55, chỉ bản Web) …
 
-Version 13 · App Mac — phase cuối cùng, sau khi hết mọi phase Web:
+App Mac — làm khi bản Web xong Version 9, trước Version 10:
       56 Local App 1.0 ─► 57 ─► 58 ─► 59 ─► 60 App nhẹ ─► 61 Phần riêng app ─► 62 CI ─► 63 Release
       🟡 code sớm
 ```
@@ -72,7 +72,7 @@ Version 13 · App Mac — phase cuối cùng, sau khi hết mọi phase Web:
 | **18 — So sánh niche** (dời lên 2026-10-25) | 2–4 niche cạnh nhau, niche nào đáng chọn? (không AI) | ⚪ Làm ngay sau Phase 9 |
 | **10 — UI / UX Improvement** | chỗ nào dùng còn vướng? | ⚪ |
 | **11 — Account + Flow** | người khác dùng được không cần hỏi? góp ý vào đâu? | ⚪ Xét lại trước khi code (cần người dùng ngoài) |
-| ─── | **Vạch MVP** — Phase 1–12.2 xong mới sang dưới. Từ đây thêm nguồn mới + AI, chỉ bản Web; app Mac làm sau khi hết mọi phase Web | |
+| ─── | **Vạch MVP** — Phase 1–12.2 xong mới sang dưới. Từ đây thêm nguồn mới + AI, chỉ bản Web; app Mac làm khi xong Version 9 | |
 | **12 — YouTube Search** | người ta tìm gì trên YouTube, video nào hút view, kênh nhỏ nào thắng? (không AI) | ⚪ |
 | **13 — YouTube Research (AI)** | người xem than gì, xin gì, dùng tool nào? | ⚪ |
 | **14 — Amazon Search** | tìm gì trên Amazon, top bán chạy, giá, độ đông? (không AI) | ⚪ |
@@ -252,7 +252,7 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 ---
 
 **Vạch MVP.** Phase 1–12.2 là MVP. Từ Phase 13: mỗi nguồn mới một phase **cào số (không AI)** rồi một phase **AI đọc chữ**
-(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 57 ở mục App, sau khi hết mọi phase Web.
+(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 57 ở mục App, khi xong Version 9.
 Luật cào chung: gọi thưa, cache, bị chặn thì dừng nguồn đó và báo — **không vượt captcha, không proxy xoay, không cào
 trang cần đăng nhập bằng script**.
 
@@ -411,10 +411,10 @@ Chi tiết: `docs/version-4.md`.
 - Chỉ lên plan: danh sách ứng viên (Product Brief Export — chỉ khi bán cho người ngoài, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 64 (56–63 là App Mac).
 - Chi tiết: `docs/version-12.md`.
 
-### Version 13 — App Mac (Phase 56–63) — phase cuối cùng
+### App Mac (Phase 56–63) — làm khi xong Version 9, trước Version 10
 
-App bọc lại đúng giao diện Web (Tauri), nên chỉ gói **một lần** khi bản Web đã chín. Phase Web chỉ làm phần Web;
-phần riêng của app gom ở Phase 61. Thứ tự: **56 → 57 → 58 → 59 → 60 → 61 → 62 → 63**. Chi tiết: `docs/app/index.md`.
+App bọc lại đúng giao diện Web (Tauri), nên chỉ gói **một lần** khi bản Web xong Version 9. Trang phase Web không nhắc app;
+phần riêng của app gom ở Phase 61 (phần Pro của 61 làm khi tới Version 10). Thứ tự: **56 → 57 → 58 → 59 → 60 → 61 → 62 → 63**. Chi tiết: `docs/app/index.md`.
 
 #### Phase 56 — Local App 1.0 (trước là phần app của Phase 8; code xong sớm 2026-10-25, thử máy mới khi tới lượt App)
 

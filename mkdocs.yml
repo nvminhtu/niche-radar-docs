@@ -73,7 +73,7 @@ nav:
           - Phase 10 · So sánh niche: web/phase-10-compare-niche.md
           - Phase 11 · UI / UX: web/phase-11-ui-ux.md
           - Phase 12 · Account + Flow: web/phase-12-account.md
-          - Phase 12.1 · Setup trong Web / App: web/phase-12-1-setup.md
+          - Phase 12.1 · Setup trong Web: web/phase-12-1-setup.md
           - Phase 12.2 · Tutorial (nút ?): web/phase-12-2-tutorial.md
       - Version 2 (Nguồn mới + AI):
           - Phase 13 · YouTube Search: web/phase-13-youtube-search.md
@@ -106,7 +106,7 @@ nav:
           - "Phase 34 · Canary nguồn thật": web/phase-34-source-canary.md
           - "Phase 35 · Review kết quả": web/phase-35-review-results.md
           - "Phase 35b · Test chức năng + chụp kết quả (tùy chọn)": web/phase-35b-functest-screenshots.md
-      - "Version 7 (CI/CD)":
+      - "Version 7 (CI cho PR)":
           - Tổng quan Version 7: web/version-7.md
           - "Phase 36 · CI cho pull request": web/phase-36-ci-pull-request.md
           - "Phase 39 · Quy trình nhánh": web/phase-39-branch-flow.md
@@ -137,7 +137,7 @@ nav:
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md
-  - App Mac (Version 13):
+  - App Mac (sau Version 9):
       - app/index.md
       - Phase 56 · Local App 1.0: app/phase-56-local-app-1.md
       - Phase 57 · Local App 2.0: app/phase-57-local-app-2.md

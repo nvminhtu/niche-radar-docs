@@ -23,23 +23,24 @@ Tool nội bộ để chọn niche cho app của mình. Tra Google Play, App Sto
 trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 </div>
 
-## Thứ tự: Web xong hết → mới tới App
+## Thứ tự: Web Version 1–9 → App Mac → Web Version 10–12
 
 <div class="nr-forms" markdown>
 <div class="nr-web" markdown>
 ### :material-web: 1 · Web — làm trước, làm hết
 
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
-- Version 1 → 12: nguồn dữ liệu, AI, so sánh, SEO / GEO, tốc độ, test, CI, bảo mật, tài khoản, bán Pro, marketing
+- Version 1 → 9: nguồn dữ liệu, AI, so sánh, SEO / GEO, tốc độ, test, CI, bảo mật, tài khoản
+- Sau App Mac: Version 10 → 12 — bán Pro, marketing, tính năng mới
 - <span class="chip chip--doing">Đang làm · Phase 7, 9–11.2 tiếp theo</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
-### :material-apple: 2 · App Mac — Version 13, phase cuối cùng
+### :material-apple: 2 · App Mac — làm khi xong Version 9
 
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần · code ở `app/`
-- Gói một lần cho bản Web đã chín, **sau mọi phase tính năng**: Phase 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63
-- <span class="chip chip--todo">Chờ Web xong · Phase 56 đã có .dmg từ trước</span>
+- Gói một lần khi bản Web **xong Version 9** (Phase 1–47): Phase 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63
+- <span class="chip chip--todo">Chờ xong Version 9 · Phase 56 đã có .dmg từ trước</span>
 - [Mở lộ trình App →](app/index.md)
 </div>
 </div>
@@ -74,10 +75,10 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 | Web | 7 | CI cho PR + quy trình nhánh | 36, 39 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 8 | Security, tài khoản trên máy, refactor | 40–43 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 9 | Firebase, Analytics, sync project | 44–47 | <span class="chip chip--todo">Chưa làm</span> |
+| App | sau Version 9 | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 56–63 | <span class="chip chip--todo">Chờ xong Version 9</span> |
 | Web | 10 | Bán Pro: lifetime / subscription | 48–51 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 52–55 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
-| App | 13 · cuối cùng | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 56–63 | <span class="chip chip--todo">Chờ Web xong</span> |
 
 Việc chưa xếp phase hoặc không làm: [Appendix](appendix.md). Mỗi phase đi theo [Quy trình build](quy-trinh-build.md).
 

@@ -3,7 +3,7 @@
 > Khoá `main`: chỉ vào được qua PR có CI xanh. Mỗi phase một **nhánh** (bản sao code để làm riêng), xong mới gộp và
 > gắn tag. Ghi hết cách làm vào [Quy trình build](../quy-trinh-build.md).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 63</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 36</span>
 
 ## Chạy thế nào
 
@@ -13,7 +13,7 @@ flowchart LR
   P --> C[CI xanh<br/>Phase 36]
   C --> M[Merge main<br/>anh đồng ý]
   M --> T[Gắn tag<br/>anh đồng ý]
-  T --> R[Bản mới<br/>Phase 62–38]
+  T --> R[Bản mới<br/>gắn tag]
 ```
 
 ## Làm gì

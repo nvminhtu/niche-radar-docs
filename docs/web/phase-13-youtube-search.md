@@ -28,7 +28,7 @@ flowchart LR
 |---|---|---|---|
 | **`youtubei.js`** (đề xuất) | thư viện Node gọi API nội bộ của YouTube (InnerTube) — không cần key | đủ: tìm, chi tiết video, kênh, comment, phụ đề | không chính thức, YouTube đổi là gãy |
 | YouTube Data API v3 | API chính thức, key miễn phí | ổn định | quota 10.000 đơn vị/ngày, 1 lần tìm = 100 → ~100 lần tìm/ngày |
-| `yt-dlp` | công cụ dòng lệnh (Python) | rất bền, cộng đồng sửa nhanh | phải cài thêm, gói vào app Mac nặng hơn |
+| `yt-dlp` | công cụ dòng lệnh (Python) | rất bền, cộng đồng sửa nhanh | phải cài thêm Python + yt-dlp trên máy |
 
 Đề xuất: `youtubei.js` làm chính; Data API là **dự phòng tuỳ chọn** khi có key. Đo endpoint còn chạy trước khi code
 (như Phase 2).
@@ -59,7 +59,7 @@ Các MCP đã tìm được (2026-10-24, tiền và giới hạn kiểm lại l�
 
 - **Tuyến job (đề xuất, không cần key trong app):** tool xuất file job `.json` (Top 10 keyword YouTube + câu hỏi) →
   Claude Code / Claude Desktop đã nối vidIQ chạy job → ghi kết quả `.json` → nhập lại vào tool.
-- **Tuyến gọi thẳng:** app dùng MCP client gọi `mcp.vidiq.com` bằng API key chỉ đọc (lưu `.env.local`, sau này Keychain)
+- **Tuyến gọi thẳng:** app dùng MCP client gọi `mcp.vidiq.com` bằng API key chỉ đọc (lưu `.env.local`)
   — chỉ làm nếu tuyến job chạy ổn và cần tự động.
 
 **Bài thử trước khi chọn:** 1 niche × Top 10 keyword, so lượt tìm vidIQ với độ đông tự cào + Google Trends

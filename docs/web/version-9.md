@@ -8,7 +8,7 @@
 
 ## Mục tiêu
 
-- **Đăng nhập được** trên app Mac và bản Web: Google, Apple, link email. Không đăng nhập vẫn dùng được như cũ.
+- **Đăng nhập được** trên bản Web: Google, Apple, link email. Không đăng nhập vẫn dùng được như cũ.
 - **Project theo người:** đăng nhập máy khác thấy project, ghi chú, kết luận của mình.
 - **Đo được phễu:** mở app → tra niche đầu tiên → explore → so sánh → xuất / gói GEO. Biết người dùng rơi ở bước nào.
 - **Biết khi app lỗi** trên máy người khác mà không cần họ báo.
@@ -20,7 +20,7 @@ người dùng · có báo lỗi tự động từ app.
 
 ```mermaid
 flowchart TB
-  APP[App Mac · Web] --> AUTH[Phase 44<br/>Firebase Auth<br/>Google · Apple · email link]
+  APP[Bản Web] --> AUTH[Phase 44<br/>Firebase Auth<br/>Google · Apple · email link]
   AUTH --> FS[Phase 45<br/>Firestore<br/>project · ghi chú · kết luận]
   APP --> AN[Phase 46<br/>Analytics + báo lỗi<br/>GA4 · có hỏi đồng ý]
   AUTH & FS & AN --> PV[Phase 47<br/>Riêng tư<br/>xoá tài khoản · chính sách]
@@ -38,10 +38,9 @@ flowchart TB
 
 ## Phase 44 · Firebase Auth
 
-- **Làm:** Firebase Auth với Google, Apple (cần cho app Mac phân phối rộng), link email · app Mac đăng nhập qua trình
-  duyệt rồi quay lại app (deep link) · lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 41](version-8.md)) với tài khoản ·
+- **Làm:** Firebase Auth với Google, Apple, link email · lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 41](version-8.md)) với tài khoản ·
   đăng xuất vẫn dùng được trên máy.
-- **Xong khi:** đăng nhập / đăng xuất cả 3 cách trên app Mac + Web · tắt mạng vẫn mở được project trên máy.
+- **Xong khi:** đăng nhập / đăng xuất cả 3 cách trên bản Web · tắt mạng vẫn mở được project trên máy.
 
 ## Phase 45 · Sync project
 

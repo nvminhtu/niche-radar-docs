@@ -38,7 +38,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Đổi framework (React, Hono, Drizzle, Tauri)
+- Đổi framework (React, Hono, Drizzle)
 - Viết lại collector bằng ngôn ngữ khác
 - Tính năng mới, đổi giao diện
 - Refactor nhiều nguồn trong một PR

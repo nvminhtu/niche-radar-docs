@@ -51,7 +51,6 @@ Dùng đúng lệnh đang có trong `package.json`, không viết lệnh riêng 
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Build app Mac, ký, notarize (Phase 62)
 - Chạy canary nguồn thật trên CI (IP của GitHub dễ bị chặn)
 - Tự động merge PR
 - Bản Windows / Linux

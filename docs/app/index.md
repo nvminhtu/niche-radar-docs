@@ -1,17 +1,19 @@
-# Version 13 · App Mac — phase cuối cùng (56–63)
+# App Mac · làm khi xong Version 9 (Phase 56–63)
 
 > App Mac **bọc lại đúng giao diện Web** bằng Tauri (code ở `app/`), không viết UI lần hai. Vì vậy mục này
-> **chỉ bắt đầu khi mọi phase ở [mục Web](../web/index.md) đã xong** — gói một lần cho cả bản Web đã chín,
-> thay vì gói lại sau mỗi version.
+> **chỉ bắt đầu khi [bản Web](../web/index.md) xong Version 9** (Phase 1–47: đủ nguồn, AI, so sánh, SEO / GEO,
+> tốc độ, test, CI, bảo mật, tài khoản) — gói một lần cho bản Web đã chín, thay vì gói lại sau mỗi version.
+> Mọi việc riêng của app (gói, ký, CSP, Keychain, deep link, license key, CI build, auto-update) chỉ nằm ở mục này.
 
-<span class="chip chip--todo">Chờ Web xong · Phase 56 đã có code từ trước luật này</span>
+<span class="chip chip--todo">Chờ xong Version 9 · Phase 56 đã có code từ trước luật này</span>
 
 <div class="box box--star" markdown>
 **Luật thứ tự**
 
-- Mọi phase tính năng ở mục Web (Version 1–12, tới Phase 55) xong hết → mới làm App, theo thứ tự 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63
-- Phase Web chỉ làm phần Web; phần riêng của app (CSP Tauri, Keychain, deep link, license key…) gom ở Phase 61
-- App là **Version 13, Phase 56–63** — đánh số sau mọi phase Web. Số cũ (trước 2026-10-25) để tra CHANGELOG / commit: 56 = phần app của 8 · 57 = 17 · 58 = 22b · 59 = 27b · 60 = 31 · 61 = 55b · 62 = 37 · 63 = 38
+- Bản Web xong **Version 1–9** (tới Phase 47) → làm App theo thứ tự 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63 → rồi mới làm tiếp Web **Version 10–12** (bán Pro, marketing, tính năng mới); tính năng của Version 10–12 vào app qua bản cập nhật (Phase 63)
+- Trang phase Web **không** nhắc app; việc riêng của app chỉ ghi ở mục này
+- Phần riêng của app (setup trong app, CSP Tauri, Keychain, deep link, license key…) gom ở Phase 61; phần Pro (license key, khôi phục mua, lượt AI) làm khi tới Version 10
+- App là **Phase 56–63** (trước gọi là Version 13) — số giữ nguyên dù làm trước Version 10. Số cũ (trước 2026-10-25) để tra CHANGELOG / commit: 56 = phần app của 8 · 57 = 17 · 58 = 22b · 59 = 27b · 60 = 31 · 61 = 55b · 62 = 37 · 63 = 38
 - Phase 56 (phần app của Phase 8 cũ) đã code xong + có `.dmg` (2026-10-25): giữ nguyên, thử trên máy mới khi tới lượt App
 - Lỗi app phát hiện giữa chừng → sửa ở `web/` nếu là lỗi giao diện / API; lỗi vỏ Tauri ghi vào [Appendix](../appendix.md)
 </div>

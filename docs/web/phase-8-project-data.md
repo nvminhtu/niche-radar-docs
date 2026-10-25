@@ -1,7 +1,6 @@
 # Phase 8 · Project + dữ liệu chuyển máy (Web)
 
 > Gom tra cứu thành **project** có đánh giá, và làm dữ liệu **chuyển được giữa các máy**: xuất / nhập, backup / restore.
-> Phần **vỏ app Mac** (Tauri) làm cùng đợt, nay tách sang [Phase 56 · Local App 1.0](../app/phase-56-local-app-1.md) ở mục App.
 
 <span class="chip chip--done">Xong 2026-10-25</span>
 
