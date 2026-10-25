@@ -2,7 +2,7 @@
 
 > Biết nhu cầu **đang lên hay xuống**, ở **nước nào**, có **mùa vụ** không.
 
-<span class="chip chip--doing">Có cơ bản · 12 tháng + related queries cho 1 keyword (từ v1)</span>
+<span class="chip chip--done">Xong 2026-10-24 · Top 10, so 5 keyword, mùa vụ · đã merge main</span>
 
 ## Chạy thế nào
 

@@ -2,7 +2,7 @@
 
 > Từ một niche, mở ra **mọi keyword người ta gõ trên Play** và chấm điểm từng ngách.
 
-<span class="chip chip--doing">Code xong · đã ở main · đang làm thêm UI Loading + Flow niche</span>
+<span class="chip chip--done">Xong 2026-10-24 · đã ở main · có UI Loading + Flow niche</span>
 
 <div class="nr-stats" markdown>
 <div><b>100</b><span>keyword lần đầu (mở tiếp +50)</span></div>

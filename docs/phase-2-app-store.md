@@ -2,7 +2,7 @@
 
 > Cùng câu hỏi như Phase 1 nhưng cho **iOS** — keyword, đối thủ, bị chê gì, **giá + gói mua trong app**.
 
-<span class="chip chip--doing">Code xong · đạt "Xong khi" 3/3 niche (2026-10-24) · chờ merge</span>
+<span class="chip chip--done">Xong 2026-10-24 · đạt "Xong khi" 3/3 niche · đã merge main</span>
 
 ## Chạy thế nào
 

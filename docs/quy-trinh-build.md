@@ -114,8 +114,8 @@ Cập nhật 2026-10-24 theo nhánh `main` (mọi nhánh `phase1` → `phase7` �
   → Tiếp: dời sang tuyến Claude in Chrome ở Phase 6
 - **6 · Tích hợp AI (Web)** — ✅ **6 · Test** xong — Cài đặt AI, chủ đề than có trích dẫn, tóm tắt niche (`4ac7098`)  
   → Tiếp: tuyến A chờ key
-- **7 · Review + Validate** — 📄 **1 · Spec** có trong Master Plan · nhánh `phase7-validate` đã mở, chưa có commit  
-  → Tiếp: 🗺️ viết plan code, chạy 5 niche thật, chấm sức khoẻ niche (nút đang xám trên app)
+- **7 · Review + Validate** — 🟡 **Code xong** — sức khoẻ niche v2, evidence pack, test bán trước (`55bf8c0`)  
+  → Tiếp: anh chạy vòng test bán trước + nhập số thật
 - **8 · Local App** — 📄 **1 · Spec** đã duyệt · phần Project làm sớm: Collect niche + trang Projects (`e8a921d`)  
   → Tiếp: plan code app Mac (Tauri) sau Phase 7
 - **9 · Small Features** — 📄 Spec trong Master Plan  
