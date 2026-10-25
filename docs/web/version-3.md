@@ -22,26 +22,26 @@ xuất ra `/app-research`), thay vì mở từng niche rồi so tay.
 
 ```mermaid
 flowchart TB
-  DB[(Dữ liệu đã tra<br/>Phase 1–17)] --> N[Phase 10<br/>So sánh niche]
-  DB --> C[Phase 19<br/>So sánh đối thủ]
-  DB --> Q[Phase 20<br/>Hỏi dữ liệu · AI Cite]
-  N & C --> R[Phase 21<br/>Báo cáo so sánh có trích dẫn]
+  DB[(Dữ liệu đã tra<br/>Phase 1–33)] --> N[Phase 26<br/>So sánh niche]
+  DB --> C[Phase 35<br/>So sánh đối thủ]
+  DB --> Q[Phase 36<br/>Hỏi dữ liệu · AI Cite]
+  N & C --> R[Phase 37<br/>Báo cáo so sánh có trích dẫn]
   Q --> V{Kiểm trích dẫn<br/>tự động}
   R --> V
   V -->|đúng| OK[Hiện + xuất<br/>evidence pack]
   V -->|sai / không thấy nguồn| X[Cờ đỏ<br/>không xuất]
-  OK --> L[Phase 22<br/>Local App 3.0]
+  OK --> L[Phase 38<br/>Local App 3.0]
 ```
 
 ## Các phase
 
 | Phase | Làm gì | AI? |
 |---|---|---|
-| [10 · So sánh niche](phase-10-compare-niche.md) | **đã dời lên Version 1, ngay sau Phase 9** — Version 3 dùng lại bảng của nó | không |
-| [19 · So sánh đối thủ](phase-19-compare-competitor.md) | 2–5 app / sản phẩm cạnh nhau: giá, sao, tính năng, bị chê gì | không |
-| [20 · Hỏi dữ liệu (AI Cite)](phase-20-ai-cite-ask.md) | hỏi bằng lời, trả lời chỉ từ DB, mọi câu có trích dẫn + máy kiểm trích dẫn | có |
-| [21 · Báo cáo so sánh (AI Cite)](phase-21-ai-cite-report.md) | AI viết kết luận cho bảng so sánh Phase 10 + 19, xuất evidence pack | có |
-| [22 · Review + Local App 3.0](phase-22-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi | không |
+| [26 · So sánh niche](phase-26-compare-niche.md) | **đã dời lên Version 1, sau Phase 25** — Version 3 dùng lại bảng của nó | không |
+| [35 · So sánh đối thủ](phase-35-compare-competitor.md) | 2–5 app / sản phẩm cạnh nhau: giá, sao, tính năng, bị chê gì | không |
+| [36 · Hỏi dữ liệu (AI Cite)](phase-36-ai-cite-ask.md) | hỏi bằng lời, trả lời chỉ từ DB, mọi câu có trích dẫn + máy kiểm trích dẫn | có |
+| [37 · Báo cáo so sánh (AI Cite)](phase-37-ai-cite-report.md) | AI viết kết luận cho bảng so sánh Phase 26 + 19, xuất evidence pack | có |
+| [38 · Review + Local App 3.0](phase-38-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi | không |
 
 Thứ tự: 18 đã có từ Version 1 → 19 làm **không AI** trước (tắt AI vẫn so được). 20 dựng **lớp kiểm trích dẫn** dùng chung, 21 dùng lại nó.
 
@@ -54,13 +54,13 @@ Thứ tự: 18 đã có từ Version 1 → 19 làm **không AI** trước (tắt
 - Mọi câu nhận định có ≥ 1 trích dẫn: link review / video / listing / keyword, hoặc ô trong bảng so sánh
 - Câu trích nguyên văn phải tìm thấy **đúng chữ** trong nguồn đã lưu. Máy kiểm, không tin lời AI
 - Không đủ dữ liệu → AI nói "chưa có dữ liệu cho X", không đoán
-- Tắt AI → Phase 10 + 19 vẫn chạy đủ, chỉ mất phần lời kết luận
+- Tắt AI → Phase 26 + 19 vẫn chạy đủ, chỉ mất phần lời kết luận
 </div>
 
 ## Không làm ở Version 3
 
 <div class="box box--danger" markdown>
-- **Nguồn dữ liệu mới.** Version 3 chỉ so và hỏi trên dữ liệu Phase 1–17 đã có
+- **Nguồn dữ liệu mới.** Version 3 chỉ so và hỏi trên dữ liệu Phase 1–33 đã có
 - **Đo AI có nhắc app không (AEO / GEO), SEO.** Để [Version 4](version-4.md)
 - **AI tự lên web tìm thêm khi trả lời.** Chỉ đọc DB, nếu không thì không kiểm được nguồn
 - **So theo thời gian / theo dõi định kỳ** (lần tra tuần trước vs tuần này). Vẫn là ứng viên [Phase 9](phase-9-small-features.md)

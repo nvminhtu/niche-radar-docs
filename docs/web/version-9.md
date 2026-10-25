@@ -20,10 +20,10 @@ người dùng · có báo lỗi tự động từ app.
 
 ```mermaid
 flowchart TB
-  APP[Bản Web] --> AUTH[Phase 44<br/>Firebase Auth<br/>Google · Apple · email link]
-  AUTH --> FS[Phase 45<br/>Firestore<br/>project · ghi chú · kết luận]
-  APP --> AN[Phase 46<br/>Analytics + báo lỗi<br/>GA4 · có hỏi đồng ý]
-  AUTH & FS & AN --> PV[Phase 47<br/>Riêng tư<br/>xoá tài khoản · chính sách]
+  APP[Bản Web] --> AUTH[Phase 60<br/>Firebase Auth<br/>Google · Apple · email link]
+  AUTH --> FS[Phase 61<br/>Firestore<br/>project · ghi chú · kết luận]
+  APP --> AN[Phase 62<br/>Analytics + báo lỗi<br/>GA4 · có hỏi đồng ý]
+  AUTH & FS & AN --> PV[Phase 63<br/>Riêng tư<br/>xoá tài khoản · chính sách]
   LOCAL[(SQLite trên máy<br/>dữ liệu cào thô)] -.ở lại máy.- APP
 ```
 
@@ -31,36 +31,36 @@ flowchart TB
 
 | Phase | Làm gì |
 |---|---|
-| [44 · Firebase Auth](phase-44-firebase-auth.md) | đăng nhập Google / Apple / email link, nối hồ sơ trên máy với tài khoản |
-| [45 · Sync project](phase-45-project-sync.md) | project, ghi chú, kết luận, bộ so sánh lên Firestore; dữ liệu cào thô ở lại máy |
-| [46 · Analytics + báo lỗi](phase-46-analytics-errors.md) | sự kiện phễu lên GA4, báo lỗi tự động, có hỏi đồng ý |
-| [47 · Riêng tư + xoá tài khoản](phase-47-privacy-delete.md) | xoá tài khoản xoá cả cloud, trang Privacy, quy tắc bảo mật Firestore |
+| [60 · Firebase Auth](phase-60-firebase-auth.md) | đăng nhập Google / Apple / email link, nối hồ sơ trên máy với tài khoản |
+| [61 · Sync project](phase-61-project-sync.md) | project, ghi chú, kết luận, bộ so sánh lên Firestore; dữ liệu cào thô ở lại máy |
+| [62 · Analytics + báo lỗi](phase-62-analytics-errors.md) | sự kiện phễu lên GA4, báo lỗi tự động, có hỏi đồng ý |
+| [63 · Riêng tư + xoá tài khoản](phase-63-privacy-delete.md) | xoá tài khoản xoá cả cloud, trang Privacy, quy tắc bảo mật Firestore |
 
-## Phase 44 · Firebase Auth
+## Phase 60 · Firebase Auth
 
-- **Làm:** Firebase Auth với Google, Apple, link email · lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 41](version-8.md)) với tài khoản ·
+- **Làm:** Firebase Auth với Google, Apple, link email · lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 57](version-8.md)) với tài khoản ·
   đăng xuất vẫn dùng được trên máy.
 - **Xong khi:** đăng nhập / đăng xuất cả 3 cách trên bản Web · tắt mạng vẫn mở được project trên máy.
 
-## Phase 45 · Sync project
+## Phase 61 · Sync project
 
 - **Làm:** Firestore chỉ giữ thứ **nhỏ và của người dùng**: project, ghi chú, kết luận, bộ so sánh, lịch sử hỏi ·
   dữ liệu cào thô (keyword, review, top 10…) **ở lại SQLite trên máy**, máy khác tra lại hoặc nhập file ·
   sửa trên 2 máy cùng lúc: bản sửa sau thắng, có ghi lại bản cũ · quy tắc Firestore: chỉ chủ đọc / ghi.
 - **Xong khi:** sửa ghi chú máy A → máy B thấy trong ≤ 10 giây · người B không đọc được dữ liệu người A (test quy tắc).
 
-## Phase 46 · Analytics + báo lỗi
+## Phase 62 · Analytics + báo lỗi
 
 - **Làm:** sự kiện GA4: `app_open`, `niche_search`, `explore_done`, `compare_open`, `ask_ai`, `export`, `geo_pack` ·
   **không gửi chữ keyword hay niche** người dùng gõ, chỉ gửi loại sự kiện + số đếm · hỏi đồng ý lần đầu mở, tắt được
   trong cài đặt · báo lỗi tự động (chọn lúc làm: dịch vụ có gói miễn phí hoặc tự ghi lên Firestore).
 - **Xong khi:** bảng phễu GA4 hiện đủ bước · từ chối đồng ý → không có request nào tới GA4 (kiểm bằng network log).
 
-## Phase 47 · Riêng tư + xoá tài khoản
+## Phase 63 · Riêng tư + xoá tài khoản
 
 - **Làm:** nút xoá tài khoản xoá Auth + Firestore + hỏi có xoá dữ liệu trên máy không · trang Privacy Policy ghi đúng
   thứ được gửi đi · xuất dữ liệu cloud của một người.
-- **Xong khi:** xoá tài khoản → Firestore còn 0 tài liệu của người đó · Privacy Policy khớp danh sách sự kiện Phase 46.
+- **Xong khi:** xoá tài khoản → Firestore còn 0 tài liệu của người đó · Privacy Policy khớp danh sách sự kiện Phase 62.
 
 <div class="box box--rules" markdown>
 **Luật**

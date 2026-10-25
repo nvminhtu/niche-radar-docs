@@ -6,9 +6,9 @@
 
 | Mục cũ ở Appendix | Giờ ở |
 |---|---|
-| App Mac (Tauri) | [Phase 56 · Local App 1.0](app/phase-56-local-app-1.md) (mục App, khi xong Version 9) |
+| App Mac (Tauri) | [Phase 72 · Local App 1.0](app/phase-72-local-app-1.md) (mục App, khi xong Version 9) |
 | Cờ đối thủ yếu · MCP có sẵn · MCP của app · Chrome Web Store · giá IAP nhiều nước · theo dõi định kỳ · search volume trả phí | ứng viên [Phase 9 · Small Features Update](web/phase-9-small-features.md) |
-| Host cho nhiều người | [Phase 12 · Account](web/phase-12-account.md) — chỉ khi có quyết định bán |
+| Host cho nhiều người | [Phase 28 · Account](web/phase-28-account.md) — chỉ khi có quyết định bán |
 
 ## Không làm
 

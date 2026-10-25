@@ -123,7 +123,7 @@ Cập nhật 2026-10-24 theo nhánh `main` (mọi nhánh `phase1` → `phase7` �
 - **11 · UI / UX** — 📄 Spec · đã làm lẻ: bảng Lịch sử + phân trang, chip nguồn +N (`b2cf354`), trang Hướng dẫn (`3258c0d`)
 - **12 · Account** — 📄 Spec trong Master Plan  
   → Tiếp: xét lại khi có người dùng ngoài
-- **12.1 · Setup trong Web** — 📄 Plan: [trang Setup + Kiểm tra máy + Hỏi AI](web/phase-12-1-setup.md)
-- **12.2 · Tutorial (nút ?)** — 📄 Plan: [nút ? mỗi tính năng, hình bước ít chữ](web/phase-12-2-tutorial.md)
+- **12.1 · Setup trong Web** — 📄 Plan: [trang Setup + Kiểm tra máy + Hỏi AI](web/phase-28-1-setup.md)
+- **12.2 · Tutorial (nút ?)** — 📄 Plan: [nút ? mỗi tính năng, hình bước ít chữ](web/phase-28-2-tutorial.md)
 - **13–55 · Version 2–11** — 📄 Plan trong docs, chưa code
 - **Version 12** — 📄 Danh sách ứng viên

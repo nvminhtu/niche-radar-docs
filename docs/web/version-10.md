@@ -8,7 +8,7 @@
 ## Mục tiêu
 
 - **Chốt mô hình bằng số:** Free gồm gì, Pro gồm gì, lifetime hay subscription hay cả hai, giá bao nhiêu. Dựa trên giá
-  đối thủ đo được và chi phí AI thật mỗi lần tra (đo ở Phase 48).
+  đối thủ đo được và chi phí AI thật mỗi lần tra (đo ở Phase 64).
 - **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên bản Web.
 - **Không lỗ tiền AI:** người dùng Pro không làm chi phí AI vượt tiền họ trả.
 - **Đơn đầu tiên có nguồn:** 1 đơn thật từ người không quen.
@@ -20,10 +20,10 @@
 
 ```mermaid
 flowchart LR
-  M[Phase 48<br/>money.md<br/>Free vs Pro · giá] --> P[Phase 49<br/>Lemon Squeezy<br/>checkout + webhook]
+  M[Phase 64<br/>money.md<br/>Free vs Pro · giá] --> P[Phase 65<br/>Lemon Squeezy<br/>checkout + webhook]
   P --> E[Quyền Pro<br/>gắn vào tài khoản Firebase]
-  E --> W[Phase 50<br/>Paywall · dùng thử ·<br/>kích hoạt máy]
-  M --> C[Phase 51<br/>Chi phí AI theo gói<br/>BYOK hay gói lượt]
+  E --> W[Phase 66<br/>Paywall · dùng thử ·<br/>kích hoạt máy]
+  M --> C[Phase 67<br/>Chi phí AI theo gói<br/>BYOK hay gói lượt]
   W & C --> S[Bán thật<br/>đơn đầu tiên]
 ```
 
@@ -31,35 +31,35 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| [48 · Mô hình tiền](phase-48-money-model.md) | Free vs Pro, lifetime vs subscription, giá: đo đối thủ + chi phí AI, viết `money.md` qua `/app-money` |
-| [49 · Thanh toán](phase-49-payments.md) | Lemon Squeezy (lo thuế VAT thay mình), checkout, webhook → quyền Pro trên tài khoản |
-| [50 · Paywall + dùng thử](phase-50-paywall-trial.md) | màn nâng cấp, dùng thử, khôi phục mua, giới hạn số máy |
-| [51 · Chi phí AI theo gói](phase-51-ai-cost-plans.md) | tự mang key (BYOK) hay gói lượt AI kèm Pro, trần chi phí mỗi người |
+| [64 · Mô hình tiền](phase-64-money-model.md) | Free vs Pro, lifetime vs subscription, giá: đo đối thủ + chi phí AI, viết `money.md` qua `/app-money` |
+| [65 · Thanh toán](phase-65-payments.md) | Lemon Squeezy (lo thuế VAT thay mình), checkout, webhook → quyền Pro trên tài khoản |
+| [66 · Paywall + dùng thử](phase-66-paywall-trial.md) | màn nâng cấp, dùng thử, khôi phục mua, giới hạn số máy |
+| [67 · Chi phí AI theo gói](phase-67-ai-cost-plans.md) | tự mang key (BYOK) hay gói lượt AI kèm Pro, trần chi phí mỗi người |
 
-## Phase 48 · Mô hình tiền
+## Phase 64 · Mô hình tiền
 
-- **Làm:** đo giá tool nghiên cứu niche / keyword / app (ghi nguồn + ngày) · đo chi phí AI thật mỗi niche từ log Phase 24,
-  20, 21 · đọc phễu GA4 ([Version 9](version-9.md)): người dùng dừng ở tính năng nào · chọn Free / Pro, lifetime và / hoặc
+- **Làm:** đo giá tool nghiên cứu niche / keyword / app (ghi nguồn + ngày) · đo chi phí AI thật mỗi niche từ log Phase 40,
+  36, 37 · đọc phễu GA4 ([Version 9](version-9.md)): người dùng dừng ở tính năng nào · chọn Free / Pro, lifetime và / hoặc
   subscription · ghi `money.md` theo `/app-money` của App-AI-Skills.
 - **Ứng viên chia gói** (chốt ở phase này): Free = Play + App Store + Trends, vài niche mỗi tháng · Pro = mọi nguồn,
   so sánh, AI Cite, kệ AI, gói GEO.
 - **Xong khi:** `money.md` có bảng gói, giá, lý do từng con số kèm nguồn · anh duyệt.
 
-## Phase 49 · Thanh toán
+## Phase 65 · Thanh toán
 
 - **Làm:** sản phẩm trên Lemon Squeezy (anh tạo cửa hàng, nhập ngân hàng, thuế) · checkout mở từ bản Web · webhook
   (Firebase Cloud Functions) nhận đơn / gia hạn / huỷ / hoàn tiền → cập nhật quyền Pro trên tài khoản ·
 - **Xong khi:** mua bằng chế độ test → quyền Pro ≤ 30 giây · huỷ / hoàn tiền → quyền tắt · webhook giả mạo bị từ chối (kiểm chữ ký).
 
-## Phase 50 · Paywall + dùng thử
+## Phase 66 · Paywall + dùng thử
 
-- **Làm:** khoá Pro hiện đúng chỗ (bấm tính năng Pro → màn nâng cấp, nói rõ được gì) · dùng thử N ngày (chốt ở Phase 48) ·
+- **Làm:** khoá Pro hiện đúng chỗ (bấm tính năng Pro → màn nâng cấp, nói rõ được gì) · dùng thử N ngày (chốt ở Phase 64) ·
   "Khôi phục mua" · giới hạn số máy một license · trang giá trên landing ([Version 11](version-11.md)) khớp trong app.
 - **Xong khi:** Free → bấm Pro → mua → dùng ngay, không khởi động lại · hết hạn dùng thử → quay về Free, dữ liệu còn đủ.
 
-## Phase 51 · Chi phí AI theo gói
+## Phase 67 · Chi phí AI theo gói
 
-- **Làm:** chọn 1 trong 2 (hoặc cả hai) bằng số Phase 48: **BYOK** (người dùng tự dán key AI, mình không tốn) hay
+- **Làm:** chọn 1 trong 2 (hoặc cả hai) bằng số Phase 64: **BYOK** (người dùng tự dán key AI, mình không tốn) hay
   **gói lượt AI** kèm Pro (mình trả, có trần mỗi tháng) · hiện số lượt còn lại · hết lượt → báo, không tự trừ tiền thêm.
 - **Xong khi:** 1 người Pro dùng hết trần → AI dừng, phần không AI vẫn chạy · chi phí AI tháng ≤ % doanh thu đã đặt ở `money.md`.
 
