@@ -375,11 +375,14 @@ body {
 .chip--doing { background: var(--sun); color: #1F2A44; }
 .chip--todo { background: var(--paper); color: var(--ink); border-style: dashed; }
 
-/* sidebar: phase đã xong (chip--done) tô xanh — class do hooks/nav_status.py gắn */
+/* sidebar: phase xong (chip--done) xanh, đang làm (chip--doing) vàng nhạt — class do hooks/nav_status.py gắn */
 .md-nav__link.nr-nav--done { background: var(--sage); color: #1F2A44; border-radius: 6px;
   padding: .1rem .45rem; margin-left: -.45rem; font-weight: 700; }
 .md-nav__link.nr-nav--done::after { content: "✓"; margin-left: .35rem; }
 .md-nav__link.nr-nav--done:hover { color: #1F2A44; filter: brightness(1.05); }
+.md-nav__link.nr-nav--doing { background: color-mix(in srgb, var(--sun) 45%, transparent); border-radius: 6px;
+  padding: .1rem .45rem; margin-left: -.45rem; }
+.md-nav__link.nr-nav--doing::after { content: "…"; margin-left: .35rem; }
 
 /* big numbers row */
 .nr-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.2rem 0 .6rem; }
