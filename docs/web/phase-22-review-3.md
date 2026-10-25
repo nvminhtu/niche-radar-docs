@@ -9,7 +9,7 @@
 
 ```mermaid
 flowchart LR
-  W[Bản Web<br/>Phase 18–21 đã xong] --> R[3 lần chọn niche thật<br/>bấm giờ]
+  W[Bản Web<br/>Phase 19–21 đã xong] --> R[3 lần chọn niche thật<br/>bấm giờ]
   R --> F[Sửa lỗi<br/>ghi vào plan]
   F --> D[Ghi lại cho app<br/>bảng mới cần migration]
 ```
@@ -32,6 +32,6 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tính năng mới (chỉ soát những gì Phase 18–21 đã xong)
+- Tính năng mới (chỉ soát những gì Phase 19–21 đã xong)
 - Gói app Mac → [Phase 22b](../app/phase-22b-local-app-3.md)
 </div>

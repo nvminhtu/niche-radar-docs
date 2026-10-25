@@ -1,6 +1,6 @@
 # Phase 22b · Local App 3.0
 
-> Gói Phase 18–21 (đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
+> Gói Phase 19–21 (Phase 18 gói ở Phase 17; đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
 > [Phase 17](phase-17-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi hết phase Web**.
 
 <span class="chip chip--todo">Chưa làm · sau Phase 17 · khi Web xong hết</span>

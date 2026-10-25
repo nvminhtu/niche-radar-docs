@@ -24,9 +24,9 @@ Có thể chọn cả hai cách cùng lúc.
 | | |
 |---|---|
 | :material-scale-balance: **Chọn cách** | BYOK, gói lượt AI, hoặc cả hai, theo số Phase 48 |
-| :material-key-variant: **BYOK** | ô dán key AI, key giữ trên máy (Keychain ở app Mac như Phase 27) |
+| :material-key-variant: **BYOK** | ô dán key AI, key giữ trên máy (`.env.local` / Cài đặt bản Web; Keychain ở app Mac → [Phase 55b](../app/phase-55b-app-only.md)) |
 | :material-counter: **Gói lượt AI** | đếm lượt mỗi người, trần mỗi tháng theo `money.md` |
-| :material-gauge: **Lượt còn lại** | hiện số lượt còn trên app Mac + Web |
+| :material-gauge: **Lượt còn lại** | hiện số lượt còn trên bản Web |
 | :material-hand-back-left: **Hết lượt** | báo, không tự trừ tiền thêm, phần không AI vẫn chạy |
 | :material-file-code: **File** | sửa lớp AI chung hiện có (Phase 6), thêm bộ đếm lượt trong `web/src/lib/` (tên chốt ở plan) |
 

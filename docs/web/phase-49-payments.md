@@ -24,9 +24,9 @@ flowchart LR
 | | |
 |---|---|
 | :material-store: **Sản phẩm** | gói theo `money.md` Phase 48. Anh tạo cửa hàng, nhập ngân hàng, thuế trên Lemon Squeezy |
-| :material-cart-arrow-right: **Checkout** | mở từ app Mac + bản Web, gắn tài khoản người mua |
+| :material-cart-arrow-right: **Checkout** | mở từ bản Web, gắn tài khoản người mua |
 | :material-webhook: **Webhook** | nhận đơn / gia hạn / huỷ / hoàn tiền → cập nhật quyền Pro. Kiểm chữ ký, webhook giả bị từ chối |
-| :material-key: **License key** | cho app Mac theo mẫu RAM Rescue, kích hoạt được khi không đăng nhập |
+| :material-key: **License key** | Lemon Squeezy sinh key khi mua; kích hoạt trong app Mac làm ở [Phase 55b](../app/phase-55b-app-only.md) |
 | :material-file-code: **File** | mới: Cloud Function webhook, lớp kiểm quyền Pro trong `web/src/lib/` (tên chốt ở plan) |
 
 <div class="box box--star" markdown>
@@ -35,8 +35,8 @@ flowchart LR
 - Mua bằng chế độ test → quyền Pro ≤ 30 giây
 - Huỷ / hoàn tiền → quyền tắt
 - Webhook giả mạo bị từ chối (kiểm chữ ký)
-- Mua test → Pro mở trên 2 máy (app Mac + Web)
-- License key test kích hoạt được trên app Mac không đăng nhập
+- Mua test → Pro mở trên bản Web ở 2 trình duyệt
+- Đơn test có license key trong email / webhook (kích hoạt trên app ở Phase 55b)
 </div>
 
 <div class="box box--danger" markdown>

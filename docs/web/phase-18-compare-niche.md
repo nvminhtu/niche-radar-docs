@@ -3,13 +3,19 @@
 > Đặt **2–4 niche đã tra** cạnh nhau trên một màn: niche nào nhiều keyword trống hơn, đối thủ yếu hơn, nhu cầu đang lên,
 > người dùng than nhiều hơn, có người trả tiền thật. **Không AI.**
 
-<span class="chip chip--todo">Chưa làm · sau Phase 17</span>
+<span class="chip chip--todo">Chưa làm · ngay sau Phase 9 (dời lên 2026-10-25)</span>
+
+<div class="box box--goal" markdown>
+**Vì sao dời lên Version 1.** Phase này chỉ đọc DB, không cần nguồn mới hay AI — chạy được ngay với dữ liệu Phase 1–9.
+Chọn giữa vài niche là câu hỏi chính của tool, không nên chờ YouTube / Amazon / Maps (Phase 12–16): nhóm **Nguồn mới**
+ghi "chưa tra" tới khi các phase đó xong. Giữ số 18; app Mac gói ở [Phase 17](../app/phase-17-local-app-2.md), mục App — sau khi hết phase Web.
+</div>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  P[Chọn 2–4 niche<br/>đã tra] --> D[(Đọc DB<br/>Phase 1–16)]
+  P[Chọn 2–4 niche<br/>đã tra] --> D[(Đọc DB<br/>Phase 1–9 · 12–16 khi có)]
   D --> T[Bảng so sánh<br/>mỗi niche 1 cột]
   T --> W[Tô ô thắng<br/>từng hàng]
   T --> X[Xuất CSV / Markdown]

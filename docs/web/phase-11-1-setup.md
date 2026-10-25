@@ -26,8 +26,8 @@ flowchart LR
 | | |
 |---|---|
 | :material-file-document-outline: **Lớp 1 · Trang Setup tĩnh** | nằm trên trang docs / landing — mở được khi máy **chưa cài gì**; tự nhận macOS / Windows, chip Apple / Intel; hiện đúng bộ bước + link gói cài cho máy đó |
-| :material-stethoscope: **Lớp 2 · Kiểm tra máy trong tool** | trang `/setup` trong web + app Mac; server đọc phiên bản thật trên máy và trả từng mục đủ / thiếu |
-| :material-apple: **App Mac (Phase 8)** | Node + SQLite đã gói sẵn → chỉ kiểm phần **tuỳ chọn** (key AI, Ollama, Claude in Chrome) |
+| :material-stethoscope: **Lớp 2 · Kiểm tra máy trong tool** | trang `/setup` trong bản Web; server đọc phiên bản thật trên máy và trả từng mục đủ / thiếu |
+| :material-apple: **App Mac** | làm ở [Phase 55b](../app/phase-55b-app-only.md) (sau khi hết phase Web): Node + SQLite đã gói sẵn → chỉ kiểm phần **tuỳ chọn** (key AI, Ollama, Claude in Chrome) |
 
 ## Mục kiểm
 

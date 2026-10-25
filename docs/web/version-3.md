@@ -37,14 +37,14 @@ flowchart TB
 
 | Phase | Làm gì | AI? |
 |---|---|---|
-| [18 · So sánh niche](phase-18-compare-niche.md) | 2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền | không |
+| [18 · So sánh niche](phase-18-compare-niche.md) | **đã dời lên Version 1, ngay sau Phase 9** — Version 3 dùng lại bảng của nó | không |
 | [19 · So sánh đối thủ](phase-19-compare-competitor.md) | 2–5 app / sản phẩm cạnh nhau: giá, sao, tính năng, bị chê gì | không |
 | [20 · Hỏi dữ liệu (AI Cite)](phase-20-ai-cite-ask.md) | hỏi bằng lời, trả lời chỉ từ DB, mọi câu có trích dẫn + máy kiểm trích dẫn | có |
 | [21 · Báo cáo so sánh (AI Cite)](phase-21-ai-cite-report.md) | AI viết kết luận cho bảng so sánh Phase 18–19, xuất evidence pack | có |
-| [22 · Review + Local App 3.0](phase-22-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi, gói vào app Mac | không |
+| [22 · Review + Local App 3.0](phase-22-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi (gói app Mac → Phase 22b, [mục App](../app/index.md)) | không |
 
-Thứ tự: 18 → 19 làm **không AI** trước (tắt AI vẫn so được). 20 dựng **lớp kiểm trích dẫn** dùng chung, 21 dùng lại nó.
-Vẫn **bản Web trước**, xong 18–21 mới gói một lần vào app Mac ở Phase 22.
+Thứ tự: 18 đã có từ Version 1 → 19 làm **không AI** trước (tắt AI vẫn so được). 20 dựng **lớp kiểm trích dẫn** dùng chung, 21 dùng lại nó.
+Chỉ bản Web. Gói vào app Mac là Phase 22b ở [mục App](../app/index.md), làm sau khi hết phase Web.
 
 ## Luật chung của Version 3
 

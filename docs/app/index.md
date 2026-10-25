@@ -9,7 +9,8 @@
 <div class="box box--star" markdown>
 **Luật thứ tự**
 
-- Web xong hết (Version 1–12) → mới làm App, theo thứ tự 8 → 17 → 22b → 27b → 31 → 37 → 38
+- Mọi phase tính năng ở mục Web (Version 1–12, tới Phase 55) xong hết → mới làm App, theo thứ tự 8 → 17 → 22b → 27b → 31 → 55b → 37 → 38
+- Phase Web chỉ làm phần Web; phần riêng của app (CSP Tauri, Keychain, deep link, license key…) gom ở Phase 55b
 - Số phase giữ như cũ để khớp code (`web/src/lib/features.ts`), CHANGELOG và commit cũ
 - Phase 8 đã code xong + có `.dmg` (2026-10-25): giữ nguyên, phần thử trên máy mới làm khi tới lượt App
 - Lỗi app phát hiện giữa chừng → sửa ở `web/` nếu là lỗi giao diện / API; lỗi vỏ Tauri ghi vào [Appendix](../appendix.md)
@@ -30,7 +31,7 @@
 <span class="step__n">17</span>
 <div class="step__body">
 <h3>Local App 2.0 <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Gói Phase 12–16 (YouTube, Amazon, Google Maps) vào app Mac một lần, migration DB không mất dữ liệu, .dmg mới.</p>
+<p>Gói phần còn lại của Version 1 (Phase 7, 9–11.2, 18) + Version 2 (YouTube, Amazon, Google Maps) vào app Mac một lần, migration DB không mất dữ liệu, .dmg mới.</p>
 <a class="go" href="phase-17-local-app-2/">Xem chi tiết →</a>
 </div>
 </div>
@@ -38,7 +39,7 @@
 <span class="step__n">22b</span>
 <div class="step__body">
 <h3>Local App 3.0 <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Gói so sánh niche / đối thủ + AI Cite (Phase 18–21) vào app, migration DB, .dmg 3.0.</p>
+<p>Gói so sánh đối thủ + AI Cite (Phase 19–21) vào app, migration DB, .dmg 3.0.</p>
 <a class="go" href="phase-22b-local-app-3/">Xem chi tiết →</a>
 </div>
 </div>
@@ -56,6 +57,14 @@
 <h3>App Mac nhẹ <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Mở ≤ 3 giây, ít RAM khi rảnh, sidecar Node + .dmg nhỏ hơn — đo so với mốc Phase 28.</p>
 <a class="go" href="phase-31-light-mac-app/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">55b</span>
+<div class="step__body">
+<h3>Phần riêng của app Mac <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Việc chỉ app mới có, tách từ Phase 11.1, 40, 44, 49–51: setup trong app, CSP + quyền Tauri, Keychain, đăng nhập qua deep link, license key, khôi phục mua, lượt AI.</p>
+<a class="go" href="phase-55b-app-only/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>

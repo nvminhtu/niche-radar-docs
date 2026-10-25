@@ -7,7 +7,7 @@
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
-## Version 1 · MVP (Phase 1–11, trừ Phase 8)
+## Version 1 · MVP (Phase 1–11 + 18, trừ Phase 8)
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -70,8 +70,16 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <span class="step__n">9</span>
 <div class="step__body">
 <h3>Small Features Update <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Các tính năng nhỏ lượm được khi dùng thật, mỗi cái một plan ngắn.</p>
+<p>Các tính năng nhỏ lượm được khi dùng thật, mỗi cái một plan ngắn. Ưu tiên: điểm v2 thêm trục Tiếp cận + Hợp sức mình, mức nặng chủ đề than, nhãn mô hình tiền, theo dõi định kỳ.</p>
 <a class="go" href="phase-9-small-features/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">18</span>
+<div class="step__body">
+<h3>So sánh niche <span class="chip chip--todo">Chưa làm · dời lên sau Phase 9</span></h3>
+<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
+<a class="go" href="phase-18-compare-niche/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
@@ -112,7 +120,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 
 ## Version 2 · nguồn mới + AI (Phase 12–16)
 
-Phase 1–11 (trừ 8) là **MVP bản Web**. Từ đây thêm nguồn YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)**
+Phase 1–11 + 18 (trừ 8) là **MVP bản Web**. Từ đây thêm nguồn YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)**
 rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 17 ở [mục App](../app/index.md) — làm sau khi hết phase Web.
 
 <div class="steps nr-phases" markdown>
@@ -158,20 +166,12 @@ rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 17 ở [mục
 </div>
 </div>
 
-## Version 3 · So sánh + AI Cite (Phase 18–22)
+## Version 3 · So sánh + AI Cite (Phase 19–22)
 
 Chọn giữa nhiều niche / đối thủ trên một màn, hỏi dữ liệu bằng lời — AI chỉ trả lời từ DB, **mọi câu có trích dẫn và
-máy tự kiểm**. Chi tiết: [Tổng quan Version 3](version-3.md).
+máy tự kiểm**. So sánh niche (Phase 18) đã dời lên Version 1. Chi tiết: [Tổng quan Version 3](version-3.md).
 
 <div class="steps nr-phases" markdown>
-<div class="step" markdown>
-<span class="step__n">18</span>
-<div class="step__body">
-<h3>So sánh niche <span class="chip chip--todo">Chưa làm</span></h3>
-<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
-<a class="go" href="phase-18-compare-niche/">Xem chi tiết →</a>
-</div>
-</div>
 <div class="step" markdown>
 <span class="step__n">19</span>
 <div class="step__body">

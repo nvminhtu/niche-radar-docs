@@ -69,6 +69,7 @@ nav:
           - Phase 6 · Tích hợp AI (Web): web/phase-6-ai-web.md
           - Phase 7 · Review + Validate: web/phase-7-review-validate.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
+          - Phase 18 · So sánh niche: web/phase-18-compare-niche.md
           - Phase 10 · UI / UX: web/phase-10-ui-ux.md
           - Phase 11 · Account + Flow: web/phase-11-account.md
           - Phase 11.1 · Setup trong Web / App: web/phase-11-1-setup.md
@@ -81,7 +82,6 @@ nav:
           - Phase 16 · Google Maps Research (AI): web/phase-16-google-maps.md
       - Version 3 (New Features · So Sánh + AI Cite):
           - Tổng quan Version 3: web/version-3.md
-          - Phase 18 · So sánh niche: web/phase-18-compare-niche.md
           - Phase 19 · So sánh đối thủ: web/phase-19-compare-competitor.md
           - Phase 20 · Hỏi dữ liệu (AI Cite): web/phase-20-ai-cite-ask.md
           - Phase 21 · Báo cáo so sánh (AI Cite): web/phase-21-ai-cite-report.md
@@ -143,6 +143,7 @@ nav:
       - Phase 22b · Local App 3.0: app/phase-22b-local-app-3.md
       - Phase 27b · Local App 4.0: app/phase-27b-local-app-4.md
       - "Phase 31 · App Mac nhẹ": app/phase-31-light-mac-app.md
+      - "Phase 55b · Phần riêng của app Mac": app/phase-55b-app-only.md
       - "Phase 37 · Build app Mac trên CI": app/phase-37-mac-build-ci.md
       - "Phase 38 · Release + auto-update": app/phase-38-release-auto-update.md
   - Hệ thống chạy thế nào: he-thong.md

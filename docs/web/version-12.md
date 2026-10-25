@@ -31,7 +31,8 @@ Chấm mỗi ứng viên: **số người xin** (đếm từ góp ý) · **tác 
 
 | Ứng viên | Từ đâu | Ghi chú |
 |---|---|---|
-| **Theo dõi định kỳ** + so niche theo thời gian | Phase 9, Version 3 | tự tra lại niche hằng tuần, báo khi đối thủ mới / keyword mới / rating đổi |
+| ~~Theo dõi định kỳ~~ | Phase 9 | **kéo lên ứng viên ưu tiên [Phase 9](phase-9-small-features.md) (2026-10-25)** |
+| **Product Brief Export** | review 2026-10-25 | từ Feature Gap + evidence pack ra brief: khách · vấn đề · giải pháp khác · MVP · giá thử · cách tìm 10 người đầu, xuất `.md` làm PRD. **Chỉ khi bán cho người ngoài** — dùng nội bộ thì pipeline `/app-research` → `/app-money` → `/app-spec` đã làm ([Appendix](../appendix.md) · Không làm) |
 | **Search volume trả phí** (DataForSEO, Keyword Planner) | Phase 9, Version 4 | chỉ khi review kết quả cho thấy cần số lượt tìm thật |
 | **Nguồn Chrome Web Store** | Phase 9 | cho người làm extension |
 | **Giá IAP nhiều nước** | Phase 9 | so giá theo thị trường |

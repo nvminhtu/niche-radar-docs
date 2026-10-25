@@ -9,7 +9,7 @@
 
 - **Chốt mô hình bằng số:** Free gồm gì, Pro gồm gì, lifetime hay subscription hay cả hai, giá bao nhiêu. Dựa trên giá
   đối thủ đo được và chi phí AI thật mỗi lần tra (đo ở Phase 48).
-- **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên app Mac và bản Web.
+- **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên bản Web (app Mac nhận ở [Phase 55b](../app/phase-55b-app-only.md)).
 - **Không lỗ tiền AI:** người dùng Pro không làm chi phí AI vượt tiền họ trả.
 - **Đơn đầu tiên có nguồn:** 1 đơn thật từ người không quen.
 
