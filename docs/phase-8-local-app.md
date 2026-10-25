@@ -3,7 +3,7 @@
 > Đóng gói **Phase 1–6** thành **app Mac bấm là mở** — không cần Node, không gõ lệnh; gom tra cứu thành project,
 > xuất / nhập được giữa các máy.
 
-<span class="chip chip--todo">Spec đã duyệt 2026-10-24 · làm sau Phase 7</span>
+<span class="chip chip--doing">Code xong 2026-10-25 · chờ thử trên tài khoản macOS mới</span>
 
 ## Chạy thế nào
 
@@ -52,5 +52,14 @@ flowchart LR
 - Đăng nhập, sync cloud, license key — [Phase 11](phase-11-account.md)
 - Bản Windows, auto-update
 </div>
+
+## Kết quả (2026-10-25)
+
+- `.dmg` 45 MB (app 119 MB), ký Developer ID + notarize — build bằng `bash scripts/build-mac.sh`
+- Mở tới khi server sẵn sàng: ~0,14 giây · RAM nghỉ ≈ 200 MB (app + Node)
+- Projects: trạng thái **đang xem / ứng viên / loại**, kết luận, ghi chú · xuất `.niche.json` / `.md` / CSV · nhập lại không nhân đôi
+- Cài đặt → **Dữ liệu**: backup ngay, restore, mở thư mục dữ liệu
+- Dữ liệu app Mac: `~/Library/Application Support/niche-radar/` (bản web vẫn ở `data/`)
+- Còn lại: anh thử `.dmg` trên một tài khoản macOS mới chưa cài Node
 
 [Spec đầy đủ Phase 8 · Local App](superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md)

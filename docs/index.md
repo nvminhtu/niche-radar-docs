@@ -32,7 +32,7 @@ Tool nội bộ để chọn niche cho app của mình. Tra Google Play, App Sto
 
 - Double-click là mở, không cần gõ lệnh
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần
-- <span class="chip chip--todo">Phase 8 · macOS trước</span>
+- <span class="chip chip--doing">Phase 8 · có .dmg, chờ thử máy mới</span>
 </div>
 </div>
 
@@ -115,7 +115,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <div class="step" markdown>
 <span class="step__n">8</span>
 <div class="step__body">
-<h3>Local App <span class="chip chip--todo">Spec đã duyệt</span></h3>
+<h3>Local App <span class="chip chip--doing">Code xong · có .dmg · chờ thử tài khoản mới</span></h3>
 <p>Đóng gói Phase 1–6 thành app Mac (Tauri + Rust), project, xuất / nhập giữa các máy.</p>
 <a class="go" href="phase-8-local-app/">Xem chi tiết →</a>
 </div>
@@ -142,6 +142,22 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 <h3>Account + Flow người dùng <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Tài khoản, luồng người dùng mới, nút góp ý → nhận tính năng mới.</p>
 <a class="go" href="phase-11-account/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">11.1</span>
+<div class="step__body">
+<h3>Setup ngay trong Web / App <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Hướng dẫn cài đúng máy, nút Kiểm tra máy báo thiếu gì + gói cài, nút Hỏi AI (ChatGPT · Gemini · Claude).</p>
+<a class="go" href="phase-11-1-setup/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">11.2</span>
+<div class="step__body">
+<h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
+<a class="go" href="phase-11-2-tutorial/">Xem chi tiết →</a>
 </div>
 </div>
 </div>

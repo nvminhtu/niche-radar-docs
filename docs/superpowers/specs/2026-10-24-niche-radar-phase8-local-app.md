@@ -1,6 +1,6 @@
 # niche-radar — Phase 8: Local App (project · export · app Mac)
 
-> Ngày: 2026-10-24 · Trạng thái: **spec đã duyệt 2026-10-24** (bước 📄 của [Quy trình build](../../quy-trinh-build.md)).
+> Ngày: 2026-10-24 · Trạng thái: **code xong 2026-10-25** (spec duyệt 2026-10-24) (bước 📄 của [Quy trình build](../../quy-trinh-build.md)).
 > Làm **sau Phase 7** (anh chốt 2026-10-24: app trên máy; lộ trình 11 phase đổi số từ Phase 6 → Phase 8, macOS trước, Tauri + Rust). Plan code + mockup viết khi tới phase này.
 > Đầu vào: đề xuất "Với app local, nên thiết kế thế nào?" (local-first, 4 khối: Local Research App · Local database ·
 > Data collectors · Exportable research projects).
@@ -119,13 +119,16 @@ Phase 1 ─► … ─► Phase 7 Review + Validate ─► Phase 8 Local App ─
 
 | Hạng mục "Xong khi" | Số đo | Ngày | Ghi chú |
 |---|---|---|---|
-| L0 spike — phương án chọn | chưa đo | — | — |
-| 1. Mở trên tài khoản mới, Gatekeeper | chưa đo | — | — |
-| 2. Thời gian mở · RAM nghỉ | chưa đo | — | — |
-| 3. Xuất → nhập, nhập lại không nhân đôi | chưa đo | — | — |
-| 4. Backup → restore | chưa đo | — | — |
-| 5. DB cũ lên ULID không mất dòng | chưa đo | — | — |
-| 6. test · typecheck · lint · web dev | chưa đo | — | — |
+| L0 spike — phương án chọn | **A** chạy: Node chính chủ v22.19 (arm64, chỉ dùng thư viện hệ thống) + server gói bằng esbuild + prebuild `better-sqlite3` darwin-arm64 | 2026-10-25 | `.app` 119 MB · `.dmg` 45 MB · `scripts/build-mac.sh` |
+| 1. Mở trên tài khoản mới, Gatekeeper | `spctl`: `accepted · source=Notarized Developer ID` (cả .dmg và .app chép ra từ .dmg) · chạy với `env -i PATH=/usr/bin:/bin` (không có Node của máy): mở + tra "water reminder" từ DB trống xong 3/3 nguồn trong 46 giây · gọi API không token → 403 | 2026-10-25 | **chưa thử trên tài khoản macOS mới** — cần anh tạo tài khoản (Claude không tạo tài khoản máy) |
+| 2. Thời gian mở · RAM nghỉ | server sẵn sàng sau 162 / 143 / 135 ms (trung vị 143 ms) · RAM: vỏ app ~107 MB + Node ~91 MB ≈ **200 MB** (chưa tính tiến trình WebKit của macOS) | 2026-10-25 | đạt ≤ 5 s · ≤ 300 MB |
+| 3. Xuất → nhập, nhập lại không nhân đôi | test: DB rỗng nhập đủ 11 bảng bằng số dòng; nhập lần 2 thêm 0. Dữ liệu thật: gói 304 KB (3 run · 202 app) nhập lại → bỏ qua hết | 2026-10-25 | `tests/portable.test.ts` |
+| 4. Backup → restore | test + server thật: xoá 1 project → restore → 19 run · 12 explore · 2 project như trước; bản trước restore tự backup | 2026-10-25 | restore chỉ nhận file trong `backups/` |
+| 5. DB cũ lên ULID không mất dòng | bản sao DB thật: 30 bảng · 22 run · 12 explore · 1.220 app, schema 12 → 13, mất 0 dòng, mọi dòng có ULID, có backup trước migrate | 2026-10-25 | |
+| 6. test · typecheck · lint · web dev | 214 test xanh · typecheck · lint sạch · `npm run dev` chạy | 2026-10-25 | |
+
+Lỗi tìm ra khi chạy thật: app bị kill (không Cmd+Q) để lại server Node chạy mồ côi → server đọc stdin, app mất thì tự tắt
+(đã kiểm bằng `kill -9`: 1 → 0 tiến trình).
 
 ## 6. Đã chốt (anh, 2026-10-24)
 
