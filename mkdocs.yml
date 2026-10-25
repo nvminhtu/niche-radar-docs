@@ -70,103 +70,104 @@ nav:
           - Phase 7 · Review + Validate: web/phase-7-review-validate.md
           - Phase 8 · Project + dữ liệu: web/phase-8-project-data.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
-          - Phase 9b · Reddit Gap: web/phase-9b-reddit-gap.md
-      - "Version 1 · Làm kỹ tính năng chính (Phase 10–25)":
-          - "Phase 10 · Đối thủ bị chê gì": web/phase-10-competitor-complaints.md
-          - "Phase 11 · Chấm sức khoẻ niche": web/phase-11-niche-health.md
-          - "Phase 12 · Collect niche vào Project": web/phase-12-collect.md
-          - "Phase 13 · Quản lý Project": web/phase-13-project-manage.md
-          - "Phase 14 · Export (CSV, JSON, gói LLM)": web/phase-14-export.md
-          - "Phase 15 · Tóm tắt niche + chủ đề than (AI)": web/phase-15-ai-summary.md
-          - "Phase 16 · Doanh thu thật (TrustMRR + AI)": web/phase-16-revenue.md
-          - "Phase 17 · Backup / restore": web/phase-17-backup-restore.md
-          - "Phase 18 · Trang kết quả Research": web/phase-18-research-page.md
-          - "Phase 19 · Explore: cây keyword + bản đồ ngách": web/phase-19-explore-tree.md
-          - "Phase 20 · Hồ sơ đối thủ + cờ yếu": web/phase-20-competitor-profile.md
-          - "Phase 21 · Theo dõi niche định kỳ": web/phase-21-tracking.md
-          - "Phase 22 · Evidence pack + test bán trước": web/phase-22-evidence-presell.md
-          - "Phase 23 · Cài đặt AI + tuyến miễn phí": web/phase-23-ai-settings.md
-          - "Phase 24 · MCP của app": web/phase-24-mcp.md
-          - "Phase 25 · Review cụm tính năng chính": web/phase-25-review-core.md
-      - "Version 1 · So sánh + UI + Account (Phase 26–28.2)":
-          - Phase 26 · So sánh niche: web/phase-26-compare-niche.md
-          - Phase 27 · UI / UX: web/phase-27-ui-ux.md
-          - Phase 28 · Account + Flow: web/phase-28-account.md
-          - Phase 28.1 · Setup trong Web: web/phase-28-1-setup.md
-          - Phase 28.2 · Tutorial (nút ?): web/phase-28-2-tutorial.md
+          - Phase 10 · Reddit Gap: web/phase-10-reddit-gap.md
+          - Phase 11 · Research nguồn tìm gap: web/phase-11-gap-sources.md
+      - "Version 1 · Làm kỹ tính năng chính (Phase 12–27)":
+          - "Phase 12 · Đối thủ bị chê gì": web/phase-12-competitor-complaints.md
+          - "Phase 13 · Chấm sức khoẻ niche": web/phase-13-niche-health.md
+          - "Phase 14 · Collect niche vào Project": web/phase-14-collect.md
+          - "Phase 15 · Quản lý Project": web/phase-15-project-manage.md
+          - "Phase 16 · Export (CSV, JSON, gói LLM)": web/phase-16-export.md
+          - "Phase 17 · Tóm tắt niche + chủ đề than (AI)": web/phase-17-ai-summary.md
+          - "Phase 18 · Doanh thu thật (TrustMRR + AI)": web/phase-18-revenue.md
+          - "Phase 19 · Backup / restore": web/phase-19-backup-restore.md
+          - "Phase 20 · Trang kết quả Research": web/phase-20-research-page.md
+          - "Phase 21 · Explore: cây keyword + bản đồ ngách": web/phase-21-explore-tree.md
+          - "Phase 22 · Hồ sơ đối thủ + cờ yếu": web/phase-22-competitor-profile.md
+          - "Phase 23 · Theo dõi niche định kỳ": web/phase-23-tracking.md
+          - "Phase 24 · Evidence pack + test bán trước": web/phase-24-evidence-presell.md
+          - "Phase 25 · Cài đặt AI + tuyến miễn phí": web/phase-25-ai-settings.md
+          - "Phase 26 · MCP của app": web/phase-26-mcp.md
+          - "Phase 27 · Review cụm tính năng chính": web/phase-27-review-core.md
+      - "Version 1 · So sánh + UI + Account (Phase 28–30.2)":
+          - Phase 28 · So sánh niche: web/phase-28-compare-niche.md
+          - Phase 29 · UI / UX: web/phase-29-ui-ux.md
+          - Phase 30 · Account + Flow: web/phase-30-account.md
+          - Phase 30.1 · Setup trong Web: web/phase-30-1-setup.md
+          - Phase 30.2 · Tutorial (nút ?): web/phase-30-2-tutorial.md
       - Version 2 (Demo + Nguồn mới + AI):
-          - Phase 29a · Demo Site: web/phase-29a-demo-site.md
-          - Phase 29 · YouTube Search: web/phase-29-youtube-search.md
-          - Phase 30 · YouTube Research (AI): web/phase-30-youtube-ai.md
-          - Phase 31 · Amazon Search: web/phase-31-amazon-search.md
-          - Phase 32 · Amazon Research (AI): web/phase-32-amazon-ai.md
-          - Phase 33 · Google Maps Research (AI): web/phase-33-google-maps.md
+          - Phase 31a · Demo Site: web/phase-31a-demo-site.md
+          - Phase 31 · YouTube Search: web/phase-31-youtube-search.md
+          - Phase 32 · YouTube Research (AI): web/phase-32-youtube-ai.md
+          - Phase 33 · Amazon Search: web/phase-33-amazon-search.md
+          - Phase 34 · Amazon Research (AI): web/phase-34-amazon-ai.md
+          - Phase 35 · Google Maps Research (AI): web/phase-35-google-maps.md
       - Version 3 (New Features · So Sánh + AI Cite):
           - Tổng quan Version 3: web/version-3.md
-          - Phase 35 · So sánh đối thủ: web/phase-35-compare-competitor.md
-          - Phase 36 · Hỏi dữ liệu (AI Cite): web/phase-36-ai-cite-ask.md
-          - Phase 37 · Báo cáo so sánh (AI Cite): web/phase-37-ai-cite-report.md
-          - Phase 38 · Review Version 3: web/phase-38-review-3.md
+          - Phase 37 · So sánh đối thủ: web/phase-37-compare-competitor.md
+          - Phase 38 · Hỏi dữ liệu (AI Cite): web/phase-38-ai-cite-ask.md
+          - Phase 39 · Báo cáo so sánh (AI Cite): web/phase-39-ai-cite-report.md
+          - Phase 40 · Review Version 3: web/phase-40-review-3.md
       - Version 4 (LLM + AEO, GEO, SEO):
           - Tổng quan Version 4: web/version-4.md
-          - Phase 39 · Kệ Google (SEO): web/phase-39-seo-shelf.md
-          - Phase 40 · Kệ AI (GEO / AEO): web/phase-40-ai-shelf.md
-          - Phase 41 · Chỗ trống AI + SEO: web/phase-41-ai-seo-gap.md
-          - Phase 42 · Gói GEO + trang cần viết: web/phase-42-geo-pack.md
-          - Phase 43 · Review Version 4: web/phase-43-review-4.md
+          - Phase 41 · Kệ Google (SEO): web/phase-41-seo-shelf.md
+          - Phase 42 · Kệ AI (GEO / AEO): web/phase-42-ai-shelf.md
+          - Phase 43 · Chỗ trống AI + SEO: web/phase-43-ai-seo-gap.md
+          - Phase 44 · Gói GEO + trang cần viết: web/phase-44-geo-pack.md
+          - Phase 45 · Review Version 4: web/phase-45-review-4.md
       - "Version 5 (Performance)":
           - Tổng quan Version 5: web/version-5.md
-          - "Phase 44 · Đo mốc": web/phase-44-benchmark.md
-          - "Phase 45 · Collector nhanh hơn": web/phase-45-fast-collector.md
-          - "Phase 46 · UI + DB nhanh": web/phase-46-fast-ui-db.md
+          - "Phase 46 · Đo mốc": web/phase-46-benchmark.md
+          - "Phase 47 · Collector nhanh hơn": web/phase-47-fast-collector.md
+          - "Phase 48 · UI + DB nhanh": web/phase-48-fast-ui-db.md
       - "Version 6 (Automation Test + Review Results)":
           - Tổng quan Version 6: web/version-6.md
-          - "Phase 48 · Test collector bằng fixture": web/phase-48-fixture-tests.md
-          - "Phase 49 · Test giao diện (E2E)": web/phase-49-e2e-tests.md
-          - "Phase 50 · Canary nguồn thật": web/phase-50-source-canary.md
-          - "Phase 51 · Review kết quả": web/phase-51-review-results.md
-          - "Phase 51b · Test chức năng + chụp kết quả (tùy chọn)": web/phase-51b-functest-screenshots.md
+          - "Phase 50 · Test collector bằng fixture": web/phase-50-fixture-tests.md
+          - "Phase 51 · Test giao diện (E2E)": web/phase-51-e2e-tests.md
+          - "Phase 52 · Canary nguồn thật": web/phase-52-source-canary.md
+          - "Phase 53 · Review kết quả": web/phase-53-review-results.md
+          - "Phase 53b · Test chức năng + chụp kết quả (tùy chọn)": web/phase-53b-functest-screenshots.md
       - "Version 7 (CI cho PR)":
           - Tổng quan Version 7: web/version-7.md
-          - "Phase 52 · CI cho pull request": web/phase-52-ci-pull-request.md
-          - "Phase 55 · Quy trình nhánh": web/phase-55-branch-flow.md
+          - "Phase 54 · CI cho pull request": web/phase-54-ci-pull-request.md
+          - "Phase 57 · Quy trình nhánh": web/phase-57-branch-flow.md
       - "Version 8 (Security & Account & Refactor Code)":
           - Tổng quan Version 8: web/version-8.md
-          - "Phase 56 · Kiểm + vá bảo mật": web/phase-56-security-audit.md
-          - "Phase 57 · Lớp tài khoản trên máy": web/phase-57-local-account.md
-          - "Phase 58 · Refactor": web/phase-58-refactor.md
-          - "Phase 59 · Review bảo mật + 8.0": web/phase-59-security-review-8.md
+          - "Phase 58 · Kiểm + vá bảo mật": web/phase-58-security-audit.md
+          - "Phase 59 · Lớp tài khoản trên máy": web/phase-59-local-account.md
+          - "Phase 60 · Refactor": web/phase-60-refactor.md
+          - "Phase 61 · Review bảo mật + 8.0": web/phase-61-security-review-8.md
       - "Version 9 (Firebase, Analytics, Account)":
           - Tổng quan Version 9: web/version-9.md
-          - "Phase 60 · Firebase Auth": web/phase-60-firebase-auth.md
-          - "Phase 61 · Sync project": web/phase-61-project-sync.md
-          - "Phase 62 · Analytics + báo lỗi": web/phase-62-analytics-errors.md
-          - "Phase 63 · Riêng tư + xoá tài khoản": web/phase-63-privacy-delete.md
+          - "Phase 62 · Firebase Auth": web/phase-62-firebase-auth.md
+          - "Phase 63 · Sync project": web/phase-63-project-sync.md
+          - "Phase 64 · Analytics + báo lỗi": web/phase-64-analytics-errors.md
+          - "Phase 65 · Riêng tư + xoá tài khoản": web/phase-65-privacy-delete.md
       - "Version 10 (Sell Pro — Lifetime / Subscriptions)":
           - Tổng quan Version 10: web/version-10.md
-          - "Phase 64 · Mô hình tiền": web/phase-64-money-model.md
-          - "Phase 65 · Thanh toán": web/phase-65-payments.md
-          - "Phase 66 · Paywall + dùng thử": web/phase-66-paywall-trial.md
-          - "Phase 67 · Chi phí AI theo gói": web/phase-67-ai-cost-plans.md
+          - "Phase 66 · Mô hình tiền": web/phase-66-money-model.md
+          - "Phase 67 · Thanh toán": web/phase-67-payments.md
+          - "Phase 68 · Paywall + dùng thử": web/phase-68-paywall-trial.md
+          - "Phase 69 · Chi phí AI theo gói": web/phase-69-ai-cost-plans.md
       - "Version 11 (Marketing Plan)":
           - Tổng quan Version 11: web/version-11.md
-          - "Phase 68 · Định vị + landing + email": web/phase-68-positioning-landing.md
-          - "Phase 69 · Chọn 2 kênh": web/phase-69-two-channels.md
-          - "Phase 70 · Dogfood làm nội dung": web/phase-70-dogfood-content.md
-          - "Phase 71 · Lịch 6 tuần + ra mắt": web/phase-71-six-week-launch.md
+          - "Phase 70 · Định vị + landing + email": web/phase-70-positioning-landing.md
+          - "Phase 71 · Chọn 2 kênh": web/phase-71-two-channels.md
+          - "Phase 72 · Dogfood làm nội dung": web/phase-72-dogfood-content.md
+          - "Phase 73 · Lịch 6 tuần + ra mắt": web/phase-73-six-week-launch.md
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md
   - App Mac (sau Version 9):
       - app/index.md
-      - Phase 72 · Local App 1.0: app/phase-72-local-app-1.md
-      - Phase 73 · Local App 2.0: app/phase-73-local-app-2.md
-      - Phase 74 · Local App 3.0: app/phase-74-local-app-3.md
-      - Phase 75 · Local App 4.0: app/phase-75-local-app-4.md
-      - "Phase 76 · App Mac nhẹ": app/phase-76-light-mac-app.md
-      - "Phase 77 · Phần riêng của app Mac": app/phase-77-app-only.md
-      - "Phase 78 · Build app Mac trên CI": app/phase-78-mac-build-ci.md
-      - "Phase 79 · Release + auto-update": app/phase-79-release-auto-update.md
+      - Phase 74 · Local App 1.0: app/phase-74-local-app-1.md
+      - Phase 75 · Local App 2.0: app/phase-75-local-app-2.md
+      - Phase 76 · Local App 3.0: app/phase-76-local-app-3.md
+      - Phase 77 · Local App 4.0: app/phase-77-local-app-4.md
+      - "Phase 78 · App Mac nhẹ": app/phase-78-light-mac-app.md
+      - "Phase 79 · Phần riêng của app Mac": app/phase-79-app-only.md
+      - "Phase 80 · Build app Mac trên CI": app/phase-80-mac-build-ci.md
+      - "Phase 81 · Release + auto-update": app/phase-81-release-auto-update.md
   - Hệ thống chạy thế nào: he-thong.md
   - Cách dùng: cach-dung.md
   - Skills: skills.md

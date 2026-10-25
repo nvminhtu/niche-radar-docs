@@ -16,25 +16,25 @@
 
 ```mermaid
 flowchart LR
-  PR[Pull request] --> CI[Phase 52<br/>CI: lint · type · test ·<br/>E2E · docs]
+  PR[Pull request] --> CI[Phase 54<br/>CI: lint · type · test ·<br/>E2E · docs]
   CI -->|xanh| M[Merge main]
-  M --> T[Phase 55<br/>Gắn tag vX.Y.Z]
+  M --> T[Phase 57<br/>Gắn tag vX.Y.Z]
 ```
 
 ## Các phase
 
 | Phase | Làm gì |
 |---|---|
-| [52 · CI cho pull request](phase-52-ci-pull-request.md) | GitHub Actions: lint, typecheck, test, E2E (fixture), `docs:build --strict`, chặn merge khi đỏ |
-| [55 · Quy trình nhánh](phase-55-branch-flow.md) | `main` có bảo vệ, mỗi phase một nhánh + PR, ghi cách làm vào Quy trình build |
+| [52 · CI cho pull request](phase-54-ci-pull-request.md) | GitHub Actions: lint, typecheck, test, E2E (fixture), `docs:build --strict`, chặn merge khi đỏ |
+| [55 · Quy trình nhánh](phase-57-branch-flow.md) | `main` có bảo vệ, mỗi phase một nhánh + PR, ghi cách làm vào Quy trình build |
 
-## Phase 52 · CI cho pull request
+## Phase 54 · CI cho pull request
 
 - **Làm:** `.github/workflows/ci.yml`: cài Node, cache `node_modules`, chạy `lint` · `typecheck` · `test` · Playwright
   trên fixture · `docs:build --strict` · ảnh chụp E2E lỗi đính kèm vào kết quả.
 - **Xong khi:** PR cố tình làm đỏ 1 test → CI đỏ, không merge được · PR xanh chạy ≤ 10 phút.
 
-## Phase 55 · Quy trình nhánh
+## Phase 57 · Quy trình nhánh
 
 - **Làm:** bảo vệ `main` (phải qua PR + CI xanh) · mỗi phase một nhánh · cập nhật [Quy trình build](../quy-trinh-build.md):
   nhánh, PR, tag, release.

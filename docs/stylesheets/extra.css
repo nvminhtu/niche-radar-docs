@@ -424,3 +424,16 @@ body {
 .md-typeset .step:not(.home *) p { font-size: inherit; }
 
 .md-typeset hr.nr-mvp-line { border: 0; border-top: 3px dashed var(--line); margin: 2.5rem 0 1rem; }
+
+/* Phase Review = điểm dừng: soát xong mới làm tiếp. Dấu đặt ở trang phase (khối .nr-review-stop),
+   hooks/nav_status.py gắn nr-nav--review (sidebar) và step--review (thẻ phase) theo đó. */
+.md-typeset .nr-review-stop { margin: 1rem 0 1.4rem; padding: .7rem 1rem; border: 3px dashed var(--terra);
+  border-radius: var(--radius); background: color-mix(in srgb, var(--coral) 16%, var(--paper)); color: var(--ink); }
+.md-typeset .nr-review-stop p { margin: 0; }
+.md-typeset .nr-phases .step.step--review { margin-top: 2.2rem; border-style: dashed; border-color: var(--terra); }
+.md-typeset .nr-phases .step.step--review::before { content: "── REVIEW Phase · dừng lại soát ──"; position: absolute;
+  left: 0; right: 0; top: -1.75rem; text-align: center; font-weight: 900; font-size: .72rem; letter-spacing: .08em;
+  color: var(--terra); }
+.md-nav__link.nr-nav--review { border-top: 2px dashed var(--terra); padding-top: .25rem; margin-top: .45rem; flex-wrap: wrap; }
+.md-nav__link.nr-nav--review::before { content: "⏸ REVIEW"; flex-basis: 100%; font-size: .58rem; font-weight: 900;
+  letter-spacing: .08em; color: var(--terra); }

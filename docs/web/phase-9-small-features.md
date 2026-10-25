@@ -16,7 +16,7 @@ flowchart LR
 
 Mỗi tính năng: mục tiêu · làm · không làm · xong khi — **1 file plan**, đi đúng [Quy trình build](../quy-trinh-build.md).
 Tính năng to hơn ~1 tuần → tách thành phase riêng, sửa Master Plan trước. Các tính năng chính đã tách thành
-[Phase 10–25 · Làm kỹ tính năng chính](index.md#version-1-lam-ky-tinh-nang-chinh-phase-1025) (2026-10-25).
+[Phase 12–27 · Làm kỹ tính năng chính](index.md#version-1-lam-ky-tinh-nang-chinh-phase-1025) (2026-10-25).
 
 ## Ứng viên ưu tiên (review 2026-10-25)
 
@@ -63,15 +63,15 @@ bán trước của [Phase 7](phase-7-review-validate.md); anh chốt làm luôn
 - Mốc 7 / 30 / 90 ngày tính từ lần chụp đầu, quá hạn thì hiện "đến hạn". Ảnh chụp lưu ở bảng mới `project_snapshots`
   (migration 0013, tự backup trước khi nâng DB) và đi theo gói `.niche.json`.
 
-Không thêm lại Reddit làm nguồn than theo keyword (đã bỏ 2026-10-24) — Reddit quay lại theo cách khác ở [Phase 9b · Reddit Gap](phase-9b-reddit-gap.md). Comment YouTube ở [Phase 30](phase-30-youtube-ai.md).
+Không thêm lại Reddit làm nguồn than theo keyword (đã bỏ 2026-10-24) — Reddit quay lại theo cách khác ở [Phase 10 · Reddit Gap](phase-10-reddit-gap.md). Comment YouTube ở [Phase 32](phase-32-youtube-ai.md).
 
 ## Ứng viên khác (từ Appendix cũ — chưa chốt)
 
 | Tính năng | Ích gì |
 |---|---|
-| **Cờ đối thủ yếu** trên UI → **thành [Phase 20](phase-20-competitor-profile.md)** | `bỏ bê` (update > 12 tháng) · `bị chê` (★ < 4 mà đông người dùng) · `một store` · `thu tiền` |
+| **Cờ đối thủ yếu** trên UI → **thành [Phase 22](phase-22-competitor-profile.md)** | `bỏ bê` (update > 12 tháng) · `bị chê` (★ < 4 mà đông người dùng) · `một store` · `thu tiền` |
 | **MCP có sẵn** | dùng Trends / Search Console / GA MCP trong Claude cùng dữ liệu tool — chỉ viết quy trình |
-| **MCP của app** (`niche-radar-mcp`) → **thành [Phase 24](phase-24-mcp.md)** | Claude tự đọc DB, so nhiều niche, viết báo cáo |
+| **MCP của app** (`niche-radar-mcp`) → **thành [Phase 26](phase-26-mcp.md)** | Claude tự đọc DB, so nhiều niche, viết báo cáo |
 | Nguồn **Chrome Web Store** | cho portfolio extension |
 | **Giá IAP nhiều nước** | so giá theo thị trường |
 | Search volume trả phí (DataForSEO, Keyword Planner) | số lượt tìm thật — chỉ khi Phase 7 cho thấy cần số chắc |
@@ -87,5 +87,5 @@ Không thêm lại Reddit làm nguồn than theo keyword (đã bỏ 2026-10-24) 
 **Không làm**
 
 - Làm tính năng không có trong danh sách đã chốt
-- Thay đổi UI tổng thể — [Phase 27](phase-27-ui-ux.md)
+- Thay đổi UI tổng thể — [Phase 29](phase-29-ui-ux.md)
 </div>

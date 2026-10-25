@@ -32,15 +32,15 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
 - Version 1 → 9: nguồn dữ liệu, AI, so sánh, SEO / GEO, tốc độ, test, CI, bảo mật, tài khoản
 - Sau App Mac: Version 10 → 12 — bán Pro, marketing, tính năng mới
-- <span class="chip chip--doing">Đang làm · Phase 7 · tiếp theo 9b → 10–25</span>
+- <span class="chip chip--doing">Đang làm · Phase 7 · tiếp theo 10 Reddit Gap → 11 Research nguồn gap → 12–27</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
 ### :material-apple: 2 · App Mac — làm khi xong Version 9
 
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần · code ở `app/`
-- Gói một lần khi bản Web **xong Version 9** (Phase 1–63): 72 → 73 → 74 → 75 → 76 → 77 → 78 → 79
-- <span class="chip chip--todo">Chờ xong Version 9 · Phase 72 đã có .dmg từ trước</span>
+- Gói một lần khi bản Web **xong Version 9** (Phase 1–65): 74 → 75 → 76 → 77 → 78 → 79 → 80 → 81
+- <span class="chip chip--todo">Chờ xong Version 9 · Phase 74 đã có .dmg từ trước</span>
 - [Mở lộ trình App →](app/index.md)
 </div>
 </div>
@@ -66,7 +66,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 
 | Mục | Version | Nội dung | Phase | Trạng thái |
 |---|---|---|---|---|
-| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate · làm kỹ tính năng chính (10–25) · so sánh niche, UI, tài khoản, setup, tutorial | 1–9b, 10–25, 26–28.2 | <span class="chip chip--doing">Đang làm</span> |
+| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate · Reddit Gap · research nguồn gap · làm kỹ tính năng chính (12–27) · so sánh niche, UI, tài khoản, setup, tutorial | 1–11, 12–27, 28–30.2 | <span class="chip chip--doing">Đang làm</span> |
 | Web | 2 | Nguồn mới + AI: YouTube, Amazon, Google Maps | 29–33 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 3 | So sánh đối thủ + AI Cite (so sánh niche dời lên V1) | 35–38 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 4 | Kệ Google, kệ AI, gói GEO | 39–43 | <span class="chip chip--todo">Chưa làm</span> |
@@ -75,7 +75,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 | Web | 7 | CI cho PR + quy trình nhánh | 52, 55 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 8 | Security, tài khoản trên máy, refactor | 56–59 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 9 | Firebase, Analytics, sync project | 60–63 | <span class="chip chip--todo">Chưa làm</span> |
-| App | sau Version 9 | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 72–79 | <span class="chip chip--todo">Chờ xong Version 9</span> |
+| App | sau Version 9 | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 74–81 | <span class="chip chip--todo">Chờ xong Version 9</span> |
 | Web | 10 | Bán Pro: lifetime / subscription | 64–67 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 68–71 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
