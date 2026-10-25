@@ -27,7 +27,7 @@ flowchart LR
 | :material-account-group: **Độ đông riêng từng store** | tách cột iOS / Play |
 | :material-emoticon-angry: **Review 1–2★ iOS** | gộp vào "Đối thủ bị chê gì" cùng Play — *đã code* |
 | :material-cash: **Cột tiền** | `Free` · `Trả tiền $X` · `IAP $a–$b` · `Sub ~$X/tháng` · `chưa đo` — *đã code* |
-| :material-swap-horizontal: **Khoảng trống Play ↔ iOS** | keyword / app chỉ có ở một store — *đã code nhãn "chỉ 1 store"* |
+| :material-swap-horizontal: **Khoảng trống Play ↔ iOS** | keyword / app chỉ có ở một store — *đã bỏ 2026-10-25: chỉ ghép trong kết quả quét nên gần như app nào cũng bị tính "chỉ 1 store", số không dùng được* |
 
 Doanh thu **verified** (TrustMRR và các trang tương tự) tách sang [Phase 5](phase-5-verified.md).
 
