@@ -31,7 +31,7 @@
 <span class="step__n">57</span>
 <div class="step__body">
 <h3>Local App 2.0 <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Gói phần còn lại của Version 1 (Phase 7, 9–11.2, 18) + Version 2 (YouTube, Amazon, Google Maps) vào app Mac một lần, migration DB không mất dữ liệu, .dmg mới.</p>
+<p>Gói phần còn lại của Version 1 (Phase 7, 9–12.2) + Version 2 (YouTube, Amazon, Google Maps) vào app Mac một lần, migration DB không mất dữ liệu, .dmg mới.</p>
 <a class="go" href="phase-57-local-app-2/">Xem chi tiết →</a>
 </div>
 </div>
@@ -63,7 +63,7 @@
 <span class="step__n">61</span>
 <div class="step__body">
 <h3>Phần riêng của app Mac <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Việc chỉ app mới có, tách từ Phase 11.1, 40, 44, 49–51: setup trong app, CSP + quyền Tauri, Keychain, đăng nhập qua deep link, license key, khôi phục mua, lượt AI.</p>
+<p>Việc chỉ app mới có, tách từ Phase 12.1, 40, 44, 49–51: setup trong app, CSP + quyền Tauri, Keychain, đăng nhập qua deep link, license key, khôi phục mua, lượt AI.</p>
 <a class="go" href="phase-61-app-only/">Xem chi tiết →</a>
 </div>
 </div>

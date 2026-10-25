@@ -70,17 +70,17 @@ nav:
           - Phase 7 · Review + Validate: web/phase-7-review-validate.md
           - Phase 8 · Project + dữ liệu: web/phase-8-project-data.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
-          - Phase 18 · So sánh niche: web/phase-18-compare-niche.md
-          - Phase 10 · UI / UX: web/phase-10-ui-ux.md
-          - Phase 11 · Account + Flow: web/phase-11-account.md
-          - Phase 11.1 · Setup trong Web / App: web/phase-11-1-setup.md
-          - Phase 11.2 · Tutorial (nút ?): web/phase-11-2-tutorial.md
+          - Phase 10 · So sánh niche: web/phase-10-compare-niche.md
+          - Phase 11 · UI / UX: web/phase-11-ui-ux.md
+          - Phase 12 · Account + Flow: web/phase-12-account.md
+          - Phase 12.1 · Setup trong Web / App: web/phase-12-1-setup.md
+          - Phase 12.2 · Tutorial (nút ?): web/phase-12-2-tutorial.md
       - Version 2 (Nguồn mới + AI):
-          - Phase 12 · YouTube Search: web/phase-12-youtube-search.md
-          - Phase 13 · YouTube Research (AI): web/phase-13-youtube-ai.md
-          - Phase 14 · Amazon Search: web/phase-14-amazon-search.md
-          - Phase 15 · Amazon Research (AI): web/phase-15-amazon-ai.md
-          - Phase 16 · Google Maps Research (AI): web/phase-16-google-maps.md
+          - Phase 13 · YouTube Search: web/phase-13-youtube-search.md
+          - Phase 14 · YouTube Research (AI): web/phase-14-youtube-ai.md
+          - Phase 15 · Amazon Search: web/phase-15-amazon-search.md
+          - Phase 16 · Amazon Research (AI): web/phase-16-amazon-ai.md
+          - Phase 17 · Google Maps Research (AI): web/phase-17-google-maps.md
       - Version 3 (New Features · So Sánh + AI Cite):
           - Tổng quan Version 3: web/version-3.md
           - Phase 19 · So sánh đối thủ: web/phase-19-compare-competitor.md

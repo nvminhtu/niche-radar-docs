@@ -1,7 +1,7 @@
 # Phase 25 · Chỗ trống AI + SEO
 
 > Gộp kệ Google (Phase 23) và kệ AI (Phase 24) thành **điểm "kệ yếu"** theo công thức cố định, rồi thêm vào
-> **bảng so sánh niche** (Phase 18). Niche kệ yếu = người dùng đang hỏi mà chưa ai trả lời tốt. **Không AI.**
+> **bảng so sánh niche** (Phase 10). Niche kệ yếu = người dùng đang hỏi mà chưa ai trả lời tốt. **Không AI.**
 
 <span class="chip chip--todo">Chưa làm · sau Phase 24</span>
 
@@ -11,7 +11,7 @@
 flowchart LR
   S[Phase 23<br/>loại trang top 10] --> F[Công thức<br/>điểm kệ yếu]
   A[Phase 24<br/>nhắc tên · trích trang] --> F
-  F --> C[Cột mới trong<br/>so sánh niche Phase 18]
+  F --> C[Cột mới trong<br/>so sánh niche Phase 10]
   F --> L[Danh sách câu hỏi<br/>chưa ai trả lời tốt]
 ```
 
@@ -22,7 +22,7 @@ flowchart LR
 | :material-google: **Điểm kệ Google** | % top 10 là `forum` + `blog nhỏ` (cao = dễ chen) · có app chính chủ nào đứng top không |
 | :material-robot-outline: **Điểm kệ AI** | % câu trả lời yếu (Phase 24) · độ tập trung: 1 app chiếm > 50% lượt nhắc = khó chen · trang được trích có phải trang mình viết được không (blog / so sánh) |
 | :material-scale-balance: **Công thức** | ghi rõ trên UI (di chuột vào cột), không có điểm bí ẩn. Trọng số chốt sau khi chạy 3 niche thật, ghi vào trang này |
-| :material-table-plus: **Vào so sánh niche** | 2 cột mới **Kệ Google**, **Kệ AI** trong bảng Phase 18, tô ô thắng như các hàng khác |
+| :material-table-plus: **Vào so sánh niche** | 2 cột mới **Kệ Google**, **Kệ AI** trong bảng Phase 10, tô ô thắng như các hàng khác |
 | :material-format-list-bulleted-type: **Câu hỏi chưa ai trả lời tốt** | câu có kệ Google dễ **và** kệ AI yếu → đầu vào cho Phase 26 |
 
 <div class="box box--star" markdown>

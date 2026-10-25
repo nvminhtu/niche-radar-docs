@@ -7,7 +7,7 @@
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
-## Version 1 · MVP (Phase 1–11 + 18)
+## Version 1 · MVP (Phase 1–12.2)
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -83,93 +83,93 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">18</span>
-<div class="step__body">
-<h3>So sánh niche <span class="chip chip--todo">Chưa làm · dời lên sau Phase 9</span></h3>
-<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
-<a class="go" href="phase-18-compare-niche/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
 <span class="step__n">10</span>
 <div class="step__body">
-<h3>UI / UX Improvement <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Sửa chỗ vướng thật: luồng chính, trạng thái tải / lỗi, bảng dày, sáng / tối.</p>
-<a class="go" href="phase-10-ui-ux/">Xem chi tiết →</a>
+<h3>So sánh niche <span class="chip chip--todo">Chưa làm · ngay sau Phase 9</span></h3>
+<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
+<a class="go" href="phase-10-compare-niche/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">11</span>
 <div class="step__body">
-<h3>Account + Flow người dùng <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Tài khoản, luồng người dùng mới, nút góp ý → nhận tính năng mới.</p>
-<a class="go" href="phase-11-account/">Xem chi tiết →</a>
+<h3>UI / UX Improvement <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Sửa chỗ vướng thật: luồng chính, trạng thái tải / lỗi, bảng dày, sáng / tối.</p>
+<a class="go" href="phase-11-ui-ux/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">11.1</span>
+<span class="step__n">12</span>
+<div class="step__body">
+<h3>Account + Flow người dùng <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Tài khoản, luồng người dùng mới, nút góp ý → nhận tính năng mới.</p>
+<a class="go" href="phase-12-account/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">12.1</span>
 <div class="step__body">
 <h3>Setup ngay trong Web / App <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Hướng dẫn cài đúng máy, nút Kiểm tra máy báo thiếu gì + gói cài, nút Hỏi AI (ChatGPT · Gemini · Claude).</p>
-<a class="go" href="phase-11-1-setup/">Xem chi tiết →</a>
+<a class="go" href="phase-12-1-setup/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">11.2</span>
+<span class="step__n">12.2</span>
 <div class="step__body">
 <h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
-<a class="go" href="phase-11-2-tutorial/">Xem chi tiết →</a>
+<a class="go" href="phase-12-2-tutorial/">Xem chi tiết →</a>
 </div>
 </div>
 </div>
 
 <hr class="nr-mvp-line">
 
-## Version 2 · nguồn mới + AI (Phase 12–16)
+## Version 2 · nguồn mới + AI (Phase 13–17)
 
-Phase 1–11 + 18 (trừ 8) là **MVP bản Web**. Từ đây thêm nguồn YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)**
+Phase 1–12.2 (trừ 8) là **MVP bản Web**. Từ đây thêm nguồn YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)**
 rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 57 ở [mục App](../app/index.md) — làm sau khi hết phase Web.
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
-<span class="step__n">12</span>
+<span class="step__n">13</span>
 <div class="step__body">
 <h3>YouTube Search <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Cào gợi ý YouTube + top video mỗi keyword: view, độ mới, kênh nhỏ thắng kênh to — không AI. Tuỳ chọn: MCP bên thứ 3 (vidIQ…) cho lượt tìm + độ cạnh tranh.</p>
-<a class="go" href="phase-12-youtube-search/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">13</span>
-<div class="step__body">
-<h3>YouTube Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
-<p>AI đọc phụ đề + comment: người xem than gì, xin gì, dùng tool nào — trích dẫn kèm mốc giây.</p>
-<a class="go" href="phase-13-youtube-ai/">Xem chi tiết →</a>
+<a class="go" href="phase-13-youtube-search/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">14</span>
 <div class="step__body">
-<h3>Amazon Search <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Cào gợi ý Amazon + top sản phẩm: giá, sao, số review, BSR — không AI, gọi rất thưa.</p>
-<a class="go" href="phase-14-amazon-search/">Xem chi tiết →</a>
+<h3>YouTube Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
+<p>AI đọc phụ đề + comment: người xem than gì, xin gì, dùng tool nào — trích dẫn kèm mốc giây.</p>
+<a class="go" href="phase-14-youtube-ai/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">15</span>
 <div class="step__body">
-<h3>Amazon Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Claude in Chrome đọc review 1–3★: người mua chê gì, ước gì, chỗ một app làm tốt hơn.</p>
-<a class="go" href="phase-15-amazon-ai/">Xem chi tiết →</a>
+<h3>Amazon Search <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Cào gợi ý Amazon + top sản phẩm: giá, sao, số review, BSR — không AI, gọi rất thưa.</p>
+<a class="go" href="phase-15-amazon-search/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">16</span>
 <div class="step__body">
+<h3>Amazon Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Claude in Chrome đọc review 1–3★: người mua chê gì, ước gì, chỗ một app làm tốt hơn.</p>
+<a class="go" href="phase-16-amazon-ai/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">17</span>
+<div class="step__body">
 <h3>Google Maps Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Đếm cửa hàng theo loại × thành phố, AI đọc review → việc chủ quán đang làm tay, app làm thay được.</p>
-<a class="go" href="phase-16-google-maps/">Xem chi tiết →</a>
+<a class="go" href="phase-17-google-maps/">Xem chi tiết →</a>
 </div>
 </div>
 </div>
@@ -177,7 +177,7 @@ rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 57 ở [mục
 ## Version 3 · So sánh + AI Cite (Phase 19–22)
 
 Chọn giữa nhiều niche / đối thủ trên một màn, hỏi dữ liệu bằng lời — AI chỉ trả lời từ DB, **mọi câu có trích dẫn và
-máy tự kiểm**. So sánh niche (Phase 18) đã dời lên Version 1. Chi tiết: [Tổng quan Version 3](version-3.md).
+máy tự kiểm**. So sánh niche (Phase 10) đã dời lên Version 1. Chi tiết: [Tổng quan Version 3](version-3.md).
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>

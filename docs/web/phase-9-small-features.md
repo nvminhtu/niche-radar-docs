@@ -62,7 +62,7 @@ bán trước của [Phase 7](phase-7-review-validate.md); anh chốt làm luôn
 - Mốc 7 / 30 / 90 ngày tính từ lần chụp đầu, quá hạn thì hiện "đến hạn". Ảnh chụp lưu ở bảng mới `project_snapshots`
   (migration 0013, tự backup trước khi nâng DB) và đi theo gói `.niche.json`.
 
-Không thêm lại **Reddit** làm nguồn than (đã bỏ 2026-10-24). Comment YouTube ở [Phase 13](phase-13-youtube-ai.md).
+Không thêm lại **Reddit** làm nguồn than (đã bỏ 2026-10-24). Comment YouTube ở [Phase 14](phase-14-youtube-ai.md).
 
 ## Ứng viên khác (từ Appendix cũ — chưa chốt)
 
@@ -86,5 +86,5 @@ Không thêm lại **Reddit** làm nguồn than (đã bỏ 2026-10-24). Comment 
 **Không làm**
 
 - Làm tính năng không có trong danh sách đã chốt
-- Thay đổi UI tổng thể — [Phase 10](phase-10-ui-ux.md)
+- Thay đổi UI tổng thể — [Phase 11](phase-11-ui-ux.md)
 </div>

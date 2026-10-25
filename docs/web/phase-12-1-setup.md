@@ -1,10 +1,10 @@
-# Phase 11.1 · Setup ngay trong Web / App
+# Phase 12.1 · Setup ngay trong Web / App
 
 > Máy người dùng có thể **thiếu đồ cài** (Node, gói dịch, Ollama, key AI…). Thay vì bắt đọc README, tool có sẵn
 > **trang Setup**: hướng dẫn đúng máy đó, **nút Kiểm tra máy** báo cái gì đủ / thiếu, kèm **gói cài phù hợp**.
 > Kẹt chỗ nào thì có nút nhỏ **Hỏi AI** — xổ ra ChatGPT · Gemini · Claude · Perplexity, câu hỏi soạn sẵn.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 11</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 12</span>
 
 ## Chạy thế nào
 
@@ -61,7 +61,7 @@ flowchart LR
 - Nút nhỏ `Hỏi AI ▾` ở cuối dòng lỗi, không che nội dung.
 - Bấm → menu dọc 4 dòng, mỗi dòng logo + tên. Bấm lại hoặc bấm ra ngoài thì đóng.
 - Câu hỏi mẫu: *"Tôi dùng macOS 15 chip Apple. Cài Niche Radar báo: `<dòng lỗi>`. Node hiện tại 18.20. Sửa thế nào, từng bước?"*
-- Dùng chung một component `AskAi` để Phase 11.2 và các trang lỗi khác gắn lại được.
+- Dùng chung một component `AskAi` để Phase 12.2 và các trang lỗi khác gắn lại được.
 
 <div class="box box--star" markdown>
 **Xong khi**

@@ -19,14 +19,14 @@ nhắc tên hoặc trích link · **LLM** = model AI lớn, ở đây dùng **l�
 - **Nối thẳng sang ra mắt:** niche đã chọn xuất ra **gói GEO** (bộ câu hỏi + regex tên đối thủ + trang cần viết)
   để `/app-geo` đo mốc trước ra mắt, `/oneclicktool-blog` viết bài.
 
-**Thước đo Version 4 xong:** với 3 niche thật, bảng so sánh Phase 18 có thêm cột **Kệ Google** và **Kệ AI**, và ≥ 1 niche
+**Thước đo Version 4 xong:** với 3 niche thật, bảng so sánh Phase 10 có thêm cột **Kệ Google** và **Kệ AI**, và ≥ 1 niche
 xuất được gói GEO mà `scripts/geo.py run` của App-AI-Skills chạy luôn, không sửa tay.
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart TB
-  K[Keyword + niche<br/>Phase 1–16] --> S[Phase 23<br/>Kệ Google · SEO]
+  K[Keyword + niche<br/>Phase 1–17] --> S[Phase 23<br/>Kệ Google · SEO]
   K --> Q[Câu hỏi người dùng<br/>gợi ý dạng hỏi + PAA]
   S --> Q
   Q --> A[Phase 24<br/>Kệ AI · hỏi LLM như người dùng]
@@ -42,7 +42,7 @@ flowchart TB
 |---|---|---|
 | [23 · Kệ Google (SEO)](phase-23-seo-shelf.md) | top 10 Google của keyword chính, loại trang đứng top, câu hỏi người dùng | không |
 | [24 · Kệ AI (GEO / AEO)](phase-24-ai-shelf.md) | hỏi Gemini / ChatGPT / Claude như người dùng, đếm app được nhắc + trang được trích | có (là nguồn) |
-| [25 · Chỗ trống AI + SEO](phase-25-ai-seo-gap.md) | điểm "kệ yếu" theo công thức, thêm cột vào so sánh niche Phase 18 | không |
+| [25 · Chỗ trống AI + SEO](phase-25-ai-seo-gap.md) | điểm "kệ yếu" theo công thức, thêm cột vào so sánh niche Phase 10 | không |
 | [26 · Gói GEO + trang cần viết](phase-26-geo-pack.md) | xuất bộ câu hỏi + regex đối thủ cho `geo.py`, danh sách trang cần viết | AI Cite (Phase 20) |
 | [27 · Review + Local App 4.0](phase-27-review-4.md) | chọn niche thật 3 lần có kệ Google + kệ AI (gói app Mac → Phase 59, [mục App](../app/index.md)) | không |
 

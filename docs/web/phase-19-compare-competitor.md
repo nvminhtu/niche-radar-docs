@@ -3,7 +3,7 @@
 > Đặt **2–5 đối thủ** cạnh nhau (app Play / iOS, sản phẩm Amazon nếu có): giá, sao, tính năng, bị chê gì, ra bản mới
 > lúc nào. Để biết **app mình đánh vào ai và hơn ở đâu**. **Không AI.**
 
-<span class="chip chip--todo">Chưa làm · sau Phase 16 (Phase 18 đã dời lên Version 1)</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 17 (so sánh niche đã dời lên Version 1 thành Phase 10)</span>
 
 ## Chạy thế nào
 

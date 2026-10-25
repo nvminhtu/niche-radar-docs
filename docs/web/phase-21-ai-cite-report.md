@@ -1,6 +1,6 @@
 # Phase 21 · Báo cáo so sánh (AI Cite)
 
-> Từ bảng so sánh niche (Phase 18) hoặc đối thủ (Phase 19), AI viết **một trang kết luận**: nên chọn gì, vì sao,
+> Từ bảng so sánh niche (Phase 10) hoặc đối thủ (Phase 19), AI viết **một trang kết luận**: nên chọn gì, vì sao,
 > rủi ro gì. Mỗi câu có trích dẫn, qua lớp kiểm của Phase 20, rồi xuất **evidence pack** cho `/app-research`.
 
 <span class="chip chip--todo">Chưa làm · sau Phase 20</span>
@@ -9,7 +9,7 @@
 
 ```mermaid
 flowchart LR
-  T[Bảng so sánh<br/>Phase 18 / 19] --> L[Lớp AI chung<br/>Phase 6]
+  T[Bảng so sánh<br/>Phase 10 / 19] --> L[Lớp AI chung<br/>Phase 6]
   L --> R[Báo cáo<br/>khung cố định]
   R --> V{Kiểm trích dẫn<br/>Phase 20}
   V -->|qua hết| E[Xuất evidence pack<br/>.md]
@@ -30,7 +30,7 @@ flowchart LR
 **Luật**
 
 - Kết luận chỉ là **gợi ý có lý do**. Quyết định GO vẫn ở cổng 1 của `/app-research`, không ghi `Verdict` thay người dùng
-- AI không đổi thứ hạng ô thắng ở Phase 18. Khác ý thì ghi ở mục Rủi ro, kèm trích dẫn
+- AI không đổi thứ hạng ô thắng ở Phase 10. Khác ý thì ghi ở mục Rủi ro, kèm trích dẫn
 </div>
 
 <div class="box box--star" markdown>

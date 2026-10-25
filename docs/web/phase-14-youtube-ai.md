@@ -1,15 +1,15 @@
-# Phase 13 · YouTube Research (AI)
+# Phase 14 · YouTube Research (AI)
 
 > Để AI **xem / đọc thay mình** video và comment của niche: người xem than gì, xin gì, đang dùng app / tool nào —
 > có trích dẫn kèm mốc thời gian.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 12</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 13</span>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart TB
-  V[Top video<br/>từ Phase 12] --> TR[Phụ đề<br/>youtubei.js]
+  V[Top video<br/>từ Phase 13] --> TR[Phụ đề<br/>youtubei.js]
   V --> CM[Comment top 200<br/>mỗi video]
   TR & CM --> L[Lớp AI chung<br/>Phase 6]
   V -->|tuỳ chọn| G[Gemini đọc thẳng<br/>link YouTube]
@@ -42,9 +42,9 @@ chất lượng · thời gian · tiền rồi chọn.
 <div class="box box--rules" markdown>
 **Luật AI** (giống Phase 6)
 
-- AI không bịa số — view, sub, số comment lấy từ Phase 12
+- AI không bịa số — view, sub, số comment lấy từ Phase 13
 - Mọi câu kèm link video + mốc giây hoặc link comment
-- Tắt AI → Phase 12 vẫn chạy
+- Tắt AI → Phase 13 vẫn chạy
 </div>
 
 <div class="box box--star" markdown>

@@ -47,7 +47,7 @@ flowchart LR
 **Không làm ở phase này**
 
 - Tính năng tra cứu / chấm điểm mới (đã xong ở Phase 1–7)
-- Đăng nhập, sync cloud, license key — [Phase 11](../web/phase-11-account.md)
+- Đăng nhập, sync cloud, license key — [Phase 12](../web/phase-12-account.md)
 - Bản Windows, auto-update
 </div>
 

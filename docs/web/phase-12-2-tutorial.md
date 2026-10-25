@@ -1,9 +1,9 @@
-# Phase 11.2 · Tutorial trong Web / App
+# Phase 12.2 · Tutorial trong Web / App
 
 > Mỗi tính năng có nút nhỏ **ⓘ / ?** cạnh tiêu đề. Bấm vào hiện **vài hình đơn giản theo bước** và **một câu ghi chú**
 > tính năng đó làm gì — ngắn, ít chữ, xem 10 giây là hiểu.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 11.1</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 12.1</span>
 
 ## Chạy thế nào
 
@@ -31,7 +31,7 @@ flowchart LR
 
 - Câu "làm gì": **1 câu, ≤ 15 chữ** — lấy từ `what` đang có, cắt gọn nếu dài.
 - Chú thích mỗi hình: **≤ 10 chữ**, động từ đầu câu ("Gõ niche", "Tick 5 keyword", "Bấm Chốt").
-- Tối đa **4 hình** mỗi tính năng. Cần nhiều hơn = tính năng đang rối → ghi vào Phase 10 (UI / UX).
+- Tối đa **4 hình** mỗi tính năng. Cần nhiều hơn = tính năng đang rối → ghi vào Phase 11 (UI / UX).
 
 ## Hình
 

@@ -1,9 +1,9 @@
-# Phase 16 · Google Maps Research (AI)
+# Phase 17 · Google Maps Research (AI)
 
 > Cho niche **phục vụ cửa hàng / dịch vụ địa phương** (salon, phòng gym, phòng khám, quán ăn…): ở một thành phố có
 > bao nhiêu chỗ, chủ quán và khách đang than gì — tìm chỗ một app nhỏ giải được.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 15</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 16</span>
 
 ## Chạy thế nào
 

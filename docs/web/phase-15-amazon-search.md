@@ -1,9 +1,9 @@
-# Phase 14 · Amazon Search
+# Phase 15 · Amazon Search
 
 > Gõ một niche → biết **người ta tìm gì trên Amazon**, sản phẩm nào bán chạy, đông tới đâu, giá bao nhiêu —
 > **không dùng AI**, chỉ cào số. Hợp niche sản phẩm số / vật lý đi kèm app (planner, template, journal…).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 13</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 14</span>
 
 ## Chạy thế nào
 
@@ -55,7 +55,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Đọc review bằng AI — [Phase 15](phase-15-amazon-ai.md)
+- Đọc review bằng AI — [Phase 16](phase-16-amazon-ai.md)
 - Ước doanh số từ BSR (chỉ ghi BSR, không quy ra tiền)
 - Dịch vụ trả phí (Jungle Scout, Helium 10, Keepa)
 </div>

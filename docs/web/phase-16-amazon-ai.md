@@ -1,18 +1,18 @@
-# Phase 15 · Amazon Research (AI)
+# Phase 16 · Amazon Research (AI)
 
 > Để AI **đọc review Amazon** thay mình: người mua chê gì, ước gì, so với sản phẩm nào — ra danh sách điểm yếu đối thủ
 > có trích dẫn.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 14</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 15</span>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart TB
-  P[Top 5 sản phẩm<br/>từ Phase 14] --> J[Job .json<br/>link + câu hỏi]
+  P[Top 5 sản phẩm<br/>từ Phase 15] --> J[Job .json<br/>link + câu hỏi]
   J --> CH[Claude in Chrome<br/>trình duyệt của anh]
   CH --> R[Review 1–3★<br/>+ hỏi đáp]
-  P --> D[Mô tả + bullet<br/>đã cào ở Phase 14]
+  P --> D[Mô tả + bullet<br/>đã cào ở Phase 15]
   D --> L[Lớp AI chung<br/>Phase 6]
   R --> L
   L --> O[Chủ đề chê · ước gì<br/>· so với ai]
@@ -44,7 +44,7 @@ Bài thử chuẩn: 5 sản phẩm × review 1–3★ của 1 niche → so chủ
 
 - Claude không đăng nhập thay anh, không nhập mật khẩu — anh tự đăng nhập Amazon trong Chrome nếu muốn đọc nhiều review
 - Chỉ đọc; không viết review, không thêm giỏ hàng, không mua
-- AI không bịa số — giá, sao, BSR lấy từ Phase 14
+- AI không bịa số — giá, sao, BSR lấy từ Phase 15
 </div>
 
 <div class="box box--star" markdown>

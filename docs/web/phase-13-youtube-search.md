@@ -1,10 +1,10 @@
-# Phase 12 · YouTube Search
+# Phase 13 · YouTube Search
 
 > Gõ một niche → biết **người ta tìm gì trên YouTube**, video nào đang hút view, kênh nhỏ nào thắng kênh to —
 > **không dùng AI**, chỉ cào số. Thêm tuỳ chọn lấy số từ **MCP bên thứ 3** (vidIQ…) để có lượt tìm + độ cạnh tranh
 > mà tự cào không có.
 
-<span class="chip chip--todo">Chưa làm · sau MVP (Phase 1–11)</span>
+<span class="chip chip--todo">Chưa làm · sau MVP (Phase 1–12.2)</span>
 
 ## Chạy thế nào
 
@@ -37,7 +37,7 @@ flowchart LR
 
 **MCP** (Model Context Protocol) = cổng chuẩn để Claude / app gọi dữ liệu của dịch vụ khác. Một số tool YouTube đã có
 MCP, cho số mà tự cào **không có**: lượt tìm ước tính, độ cạnh tranh keyword, video outlier, video đang trending.
-Tắt hết MCP thì Phase 12 vẫn chạy đủ bằng `youtubei.js`.
+Tắt hết MCP thì Phase 13 vẫn chạy đủ bằng `youtubei.js`.
 
 Các MCP đã tìm được (2026-10-24, tiền và giới hạn kiểm lại lúc làm):
 
@@ -103,7 +103,7 @@ Các MCP đã tìm được (2026-10-24, tiền và giới hạn kiểm lại l�
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Đọc nội dung video / comment bằng AI — [Phase 13](phase-13-youtube-ai.md)
+- Đọc nội dung video / comment bằng AI — [Phase 14](phase-14-youtube-ai.md)
 - Tải video về máy
 - Ước doanh thu kênh từ view
 - Mua gói trả phí vidIQ / TubeBuddy chỉ để có số — chỉ xét khi bảng thử cho thấy cần

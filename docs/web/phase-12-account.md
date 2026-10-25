@@ -1,4 +1,4 @@
-# Phase 11 · Account + Flow người dùng
+# Phase 12 · Account + Flow người dùng
 
 > Khi có **người khác** dùng tool: tài khoản, luồng từ lúc mở app tới lúc ra quyết định, và **đường nhận tính năng mới**
 > từ người dùng.

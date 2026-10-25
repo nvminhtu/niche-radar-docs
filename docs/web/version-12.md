@@ -15,7 +15,7 @@
 
 ```mermaid
 flowchart LR
-  F[Góp ý trong app<br/>Phase 11] --> L[Danh sách ứng viên<br/>trang này]
+  F[Góp ý trong app<br/>Phase 12] --> L[Danh sách ứng viên<br/>trang này]
   A[Phễu GA4<br/>Version 9] --> L
   O[Mục để sau<br/>các version trước] --> L
   L --> S[Chấm điểm<br/>số người xin · tác động · công]
@@ -42,7 +42,7 @@ Chấm mỗi ứng viên: **số người xin** (đếm từ góp ý) · **tác 
 | **Bản Windows** | Version 3–7 | khi có người dùng thật xin |
 | **Nguồn TikTok / X** | Appendix | hiện không lấy miễn phí ổn định, xét lại khi có API hợp lệ |
 | **Báo cáo niche công khai tự động** (trang SEO) | Version 11 | nếu báo cáo tay ở Phase 54 kéo được người dùng |
-| **Góp ý từ người dùng** | Phase 11 | thêm dòng khi có, ghi số người xin |
+| **Góp ý từ người dùng** | Phase 12 | thêm dòng khi có, ghi số người xin |
 
 <div class="box box--rules" markdown>
 **Luật**

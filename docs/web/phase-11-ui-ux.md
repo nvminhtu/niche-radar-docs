@@ -1,4 +1,4 @@
-# Phase 10 · UI / UX Improvement
+# Phase 11 · UI / UX Improvement
 
 > Làm cho tool **dễ dùng hơn** dựa trên chỗ vướng thật — ít bấm hơn, đọc nhanh hơn, không lạc.
 

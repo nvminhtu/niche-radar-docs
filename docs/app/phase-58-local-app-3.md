@@ -1,6 +1,6 @@
 # Phase 58 · Local App 3.0
 
-> Gói Phase 19–21 (Phase 18 gói ở Phase 57; đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
+> Gói Phase 19–21 (Phase 10 gói ở Phase 57; đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
 > [Phase 57](phase-57-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi hết phase Web**.
 
 <span class="chip chip--todo">Chưa làm · sau Phase 57 · khi Web xong hết</span>
@@ -9,7 +9,7 @@
 
 ```mermaid
 flowchart LR
-  W[Bản Web<br/>Phase 18–22 đã xong] --> P[Gói vào app Mac<br/>Tauri + sidecar Node]
+  W[Bản Web<br/>Phase 19–22 đã xong] --> P[Gói vào app Mac<br/>Tauri + sidecar Node]
   P --> M[Migration DB<br/>bảng so sánh · lịch sử hỏi]
   M --> B[.dmg 3.0<br/>ký + notarize]
 ```
@@ -32,6 +32,6 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tính năng mới (chỉ gói những gì Phase 18–21 đã xong)
+- Tính năng mới (chỉ gói những gì Phase 19–21 đã xong)
 - Auto-update ([Phase 63](phase-63-release-auto-update.md)), bản Windows
 </div>

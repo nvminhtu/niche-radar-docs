@@ -20,7 +20,7 @@ flowchart LR
 
 | Việc | Tách từ |
 |---|---|
-| **Setup trong app** — Node + SQLite đã gói sẵn, chỉ kiểm phần tuỳ chọn (key AI, Ollama, Claude in Chrome) | [Phase 11.1](../web/phase-11-1-setup.md) |
+| **Setup trong app** — Node + SQLite đã gói sẵn, chỉ kiểm phần tuỳ chọn (key AI, Ollama, Claude in Chrome) | [Phase 12.1](../web/phase-12-1-setup.md) |
 | **CSP chặt** cho WebView Tauri · chỉ mở quyền Tauri cần · key AI giữ trong **Keychain** | [Phase 40](../web/phase-40-security-audit.md) |
 | **Đăng nhập trong app** — mở trình duyệt đăng nhập (Google / Apple / email link) rồi quay lại app qua **deep link** | [Phase 44](../web/phase-44-firebase-auth.md) |
 | **License key** mẫu RAM Rescue — kích hoạt khi không đăng nhập · **checkout** mở từ app | [Phase 49](../web/phase-49-payments.md) |
