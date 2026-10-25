@@ -28,7 +28,7 @@ nháp đã chốt trong master plan: có điểm cơ hội, Play + Google trư�
 ## Global Constraints
 
 - Repo `niche-radar`, nhánh `phase1-explorer` cắt từ `main`.
-- Stack hiện tại: Vite + React Router (`src/client/`), Hono (`src/server/app.ts`, mọi route dưới `/api`, giữ `api-guard`).
+- Stack hiện tại: Vite + React Router (`web/src/client/`), Hono (`web/src/server/app.ts`, mọi route dưới `/api`, giữ `api-guard`).
 - Không pop stash vào cây làm việc (xung đột Next.js). Lấy từng file: `git show 'stash@{0}^3:<path>'` (file mới) hoặc
   `git show 'stash@{0}:<path>'` (file đã sửa), rồi sửa import/đường dẫn.
 - Nhịp gọi giữ như v1: Play ≤ 1 req/s, Google suggest ≤ 1 req/s, iTunes 1 req/3s. Mỗi lần "Mở rộng" ≤ 50 keyword mới,
@@ -56,10 +56,10 @@ nháp đã chốt trong master plan: có điểm cơ hội, Play + Google trư�
 
 ### Task 1: Nhánh + lấy logic từ stash
 - [ ] `git switch -c phase1-explorer`
-- [ ] Lấy nguyên: `src/collectors/suggest.ts`, `src/collectors/explore-metrics.ts`, `src/lib/explore.ts`,
-      `src/lib/explore-view.ts`, `src/lib/explore-deps.ts`, `tests/explore*.test.ts`. Sửa import cho khớp main.
+- [ ] Lấy nguyên: `web/src/collectors/suggest.ts`, `web/src/collectors/explore-metrics.ts`, `web/src/lib/explore.ts`,
+      `web/src/lib/explore-view.ts`, `web/src/lib/explore-deps.ts`, `web/tests/explore*.test.ts`. Sửa import cho khớp main.
 - [ ] Ghép phần bảng mới (`explorations`, `explore_nodes`, `node_sources`, `node_metrics`, `node_runs`, `suggest_cache`)
-      từ `db/schema.ts` của stash vào schema main. **Không** lấy `drizzle/0002_harsh_blockbuster.sql`;
+      từ `db/schema.ts` của stash vào schema main. **Không** lấy `web/drizzle/0002_harsh_blockbuster.sql`;
       chạy `npm run db:generate` → `0003_*`.
 - [ ] Sửa `collectors/appstore.ts` / `playstore.ts` nếu stash cần export thêm (`fetchItunes`, `itunesLimit`, `playLimit`).
 - Kiểm: test explore cũ xanh trên main mới.
@@ -71,15 +71,15 @@ nháp đã chốt trong master plan: có điểm cơ hội, Play + Google trư�
 - [ ] Test: 0 rating → độ đông 0, điểm = phổ biến; 1M rating → điểm 0; biên 0.4 / 0.7.
 
 ### Task 3: Route Hono
-- [ ] Trong `src/server/app.ts`: `POST /api/explore` · `GET /api/explore` (danh sách) · `GET /api/explore/:id` ·
+- [ ] Trong `web/src/server/app.ts`: `POST /api/explore` · `GET /api/explore` (danh sách) · `GET /api/explore/:id` ·
       `POST /api/explore/:id/expand` (body `{nodeId}`) · `POST /api/explore/:id/deep` (body `{nodeIds}`, **1–5**) ·
       `GET /api/explore/:id/csv`. Logic lấy từ 5 file `src/app/api/explore/**/route.ts` của stash.
 - [ ] Validate body như route research hiện có; lỗi `ExploreError` → đúng status.
 - [ ] `startDeep`: đổi giới hạn 10 → 5, message "Chọn 1–5 keyword khác nhau".
-- [ ] Test API (port `tests/explore-api.test.ts` sang `app.request()` của Hono).
+- [ ] Test API (port `web/tests/explore-api.test.ts` sang `app.request()` của Hono).
 
 ### Task 4: Trang `/explore` và `/explore/:id`
-- [ ] `src/client/ExplorePage.tsx` + route trong `main.tsx`. Trang chủ thêm lựa chọn "Research 1 keyword" | "Explore niche".
+- [ ] `web/src/client/ExplorePage.tsx` + route trong `main.tsx`. Trang chủ thêm lựa chọn "Research 1 keyword" | "Explore niche".
 - [ ] Lấy `ExploreDashboard`, `ExploreShared`, `NicheMap`, `ExploreButton` từ stash, bỏ phần Next (`next/link`,
       `'use client'`) → React Router `Link`. Polling 2 giây như `RunPage`.
 - [ ] Cây gập/mở theo nhóm (đối tượng / dạng / nền tảng / tính năng), nút "Mở tiếp" mỗi node (ẩn khi depth = 3).
@@ -99,7 +99,7 @@ nháp đã chốt trong master plan: có điểm cơ hội, Play + Google trư�
 - [ ] Nút "Tải CSV" → `GET /api/explore/:id/csv`; thêm cột `opportunity`. Test: escape dấu phẩy/ngoặc kép.
 
 ### Task 8: Đối thủ bị chê gì (review 1–2★ Play)
-- [ ] Collector mới `src/collectors/play-reviews.ts`: `gplay.reviews` cho top 3 app Play của run, sort mới nhất,
+- [ ] Collector mới `web/src/collectors/play-reviews.ts`: `gplay.reviews` cho top 3 app Play của run, sort mới nhất,
       100 review/app, lọc score ≤ 2, qua `playLimit`. Cache theo run.
 - [ ] `lib/complaints.ts` (thuần, có test): tách từ, bỏ stopword, đếm cụm 1–3 từ lặp ≥ 3 lần → top 10 cụm kèm 2 câu trích.
 - [ ] Khối "Đối thủ bị chê gì" trên dashboard run v1. Không AI.

@@ -13,7 +13,7 @@ status_by_url: dict[str, str] = {}
 
 def on_page_markdown(markdown, page, **_):
     m = CHIP.search(markdown)
-    if m and page.file.src_uri.startswith("phase-"):  # chỉ trang phase; Master Plan có chip trong bảng lộ trình
+    if m and posixpath.basename(page.file.src_uri).startswith("phase-"):  # chỉ trang phase (web/, app/); trang mục lục có chip trong bảng
         status_by_url[page.url] = m.group(1)
     return markdown
 

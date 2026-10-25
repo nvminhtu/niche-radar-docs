@@ -72,11 +72,11 @@ niche-radar/
 ### Task 1: Scaffold Next.js + Vitest + dependency
 
 **Files:**
-- Create: toàn bộ khung Next.js (từ `create-next-app`), `next.config.ts`, `vitest.config.ts`, `src/types/vendor.d.ts`, `.claude/launch.json`, `tests/sanity.test.ts`
+- Create: toàn bộ khung Next.js (từ `create-next-app`), `next.config.ts`, `vitest.config.ts`, `web/src/types/vendor.d.ts`, `.claude/launch.json`, `web/tests/sanity.test.ts`
 - Modify: `.gitignore`, `package.json`
 
 **Interfaces:**
-- Produces: alias `@/` → `src/`; script `dev`, `build`, `start`, `test`, `smoke`, `db:generate`.
+- Produces: alias `@/` → `web/src/`; script `dev`, `build`, `start`, `test`, `smoke`, `db:generate`.
 
 - [ ] **Step 1: Sinh khung Next.js vào thư mục tạm rồi chép vào repo** (repo đã có `docs/`, `.git` nên không sinh thẳng được)
 
@@ -123,7 +123,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 5: Ghi `src/types/vendor.d.ts`** (2 thư viện không kèm type)
+- [ ] **Step 5: Ghi `web/src/types/vendor.d.ts`** (2 thư viện không kèm type)
 
 ```ts
 declare module 'google-play-scraper';
@@ -167,7 +167,7 @@ data/
 }
 ```
 
-- [ ] **Step 9: Test sanity** — ghi `tests/sanity.test.ts`
+- [ ] **Step 9: Test sanity** — ghi `web/tests/sanity.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -196,8 +196,8 @@ git commit -m "chore: scaffold Next.js 15 + Vitest + dependency"
 ### Task 2: Database schema + client
 
 **Files:**
-- Create: `src/db/schema.ts`, `src/db/client.ts`, `drizzle.config.ts`, `drizzle/*` (sinh tự động)
-- Test: `tests/db.test.ts`
+- Create: `web/src/db/schema.ts`, `web/src/db/client.ts`, `drizzle.config.ts`, `web/drizzle/*` (sinh tự động)
+- Test: `web/tests/db.test.ts`
 
 **Interfaces:**
 - Produces:
@@ -205,7 +205,7 @@ git commit -m "chore: scaffold Next.js 15 + Vitest + dependency"
   - bảng Drizzle: `runs`, `keywords`, `sourceJobs`, `apps`, `appSnapshots`, `keywordHits`, `trendPoints`, `trendRelated`, `redditPosts`
   - `type Db`, `createDb(file: string): Db`, `getDb(): Db`, `markInterrupted(db: Db): number`
 
-- [ ] **Step 1: Ghi `src/db/schema.ts`**
+- [ ] **Step 1: Ghi `web/src/db/schema.ts`**
 
 ```ts
 import { integer, primaryKey, real, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
@@ -334,9 +334,9 @@ export default defineConfig({
 ```
 
 Run: `npm run db:generate`
-Expected: thư mục `drizzle/` có `0000_*.sql` + `meta/`.
+Expected: thư mục `web/drizzle/` có `0000_*.sql` + `meta/`.
 
-- [ ] **Step 3: Viết test fail** — `tests/db.test.ts`
+- [ ] **Step 3: Viết test fail** — `web/tests/db.test.ts`
 
 ```ts
 import { eq } from 'drizzle-orm';
@@ -388,7 +388,7 @@ describe('db client', () => {
 Run: `npx vitest run tests/db.test.ts`
 Expected: FAIL, `Cannot find module '@/db/client'` hoặc tương đương.
 
-- [ ] **Step 5: Ghi `src/db/client.ts`**
+- [ ] **Step 5: Ghi `web/src/db/client.ts`**
 
 ```ts
 import { mkdirSync } from 'node:fs';
@@ -449,8 +449,8 @@ git commit -m "feat(db): schema SQLite + client có migration và đánh dấu j
 ### Task 3: Lỗi, rate limit, retry
 
 **Files:**
-- Create: `src/lib/errors.ts`, `src/lib/rate-limit.ts`
-- Test: `tests/errors.test.ts`, `tests/rate-limit.test.ts`
+- Create: `web/src/lib/errors.ts`, `web/src/lib/rate-limit.ts`
+- Test: `web/tests/errors.test.ts`, `web/tests/rate-limit.test.ts`
 
 **Interfaces:**
 - Produces:
@@ -460,7 +460,7 @@ git commit -m "feat(db): schema SQLite + client có migration và đánh dấu j
   - `createLimiter(minIntervalMs: number): <T>(fn: () => Promise<T>) => Promise<T>`
   - `withRetry<T>(fn: () => Promise<T>, delays: number[], shouldRetry: (e: unknown) => boolean): Promise<T>`
 
-- [ ] **Step 1: Viết test fail** — `tests/errors.test.ts`
+- [ ] **Step 1: Viết test fail** — `web/tests/errors.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -487,7 +487,7 @@ describe('toCollectorError', () => {
 });
 ```
 
-`tests/rate-limit.test.ts`
+`web/tests/rate-limit.test.ts`
 
 ```ts
 import { describe, expect, it, vi } from 'vitest';
@@ -527,7 +527,7 @@ describe('withRetry', () => {
 Run: `npx vitest run tests/errors.test.ts tests/rate-limit.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 3: Ghi `src/lib/errors.ts`**
+- [ ] **Step 3: Ghi `web/src/lib/errors.ts`**
 
 ```ts
 export type ErrorCode = 'RATE_LIMITED' | 'NETWORK' | 'MISSING_KEYS' | 'PARSE' | 'UNKNOWN';
@@ -551,7 +551,7 @@ export function toCollectorError(err: unknown): CollectorError {
 }
 ```
 
-- [ ] **Step 4: Ghi `src/lib/rate-limit.ts`**
+- [ ] **Step 4: Ghi `web/src/lib/rate-limit.ts`**
 
 ```ts
 export const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -601,8 +601,8 @@ git commit -m "feat(lib): CollectorError, rate limiter, retry"
 ### Task 4: Hàm thống kê thuần
 
 **Files:**
-- Create: `src/lib/stats.ts`
-- Test: `tests/stats.test.ts`
+- Create: `web/src/lib/stats.ts`
+- Test: `web/tests/stats.test.ts`
 
 **Interfaces:**
 - Produces:
@@ -612,7 +612,7 @@ git commit -m "feat(lib): CollectorError, rate limiter, retry"
   - `countBy<T>(items: T[], key: (t: T) => string, order?: string[]): { key: string; count: number }[]`
   - `monthKey(iso: string): string` (dạng `YYYY-MM`), `lastMonths(now: Date, n: number): string[]`
 
-- [ ] **Step 1: Viết test fail** — `tests/stats.test.ts`
+- [ ] **Step 1: Viết test fail** — `web/tests/stats.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -667,7 +667,7 @@ describe('stats', () => {
 Run: `npx vitest run tests/stats.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 3: Ghi `src/lib/stats.ts`**
+- [ ] **Step 3: Ghi `web/src/lib/stats.ts`**
 
 ```ts
 const DAY_MS = 86_400_000;
@@ -740,8 +740,8 @@ git commit -m "feat(lib): hàm thống kê (median, mốc số cài, tuổi upda
 ### Task 5: Kiểu collector chung + Google Play collector
 
 **Files:**
-- Create: `src/collectors/types.ts`, `src/collectors/store-apps.ts`, `src/collectors/playstore.ts`
-- Test: `tests/playstore.test.ts`, `tests/store-apps.test.ts`, `tests/fixtures/playstore/app.json`
+- Create: `web/src/collectors/types.ts`, `web/src/collectors/store-apps.ts`, `web/src/collectors/playstore.ts`
+- Test: `web/tests/playstore.test.ts`, `web/tests/store-apps.test.ts`, `web/tests/fixtures/playstore/app.json`
 
 **Interfaces:**
 - Consumes: `Db`, bảng `apps`/`appSnapshots`/`keywordHits` (Task 2); `createLimiter` (Task 3)
@@ -752,7 +752,7 @@ git commit -m "feat(lib): hàm thống kê (median, mốc số cài, tuổi upda
   - `saveStoreHits(db: Db, runId: number, hits: StoreHit[]): void`
   - `normalizePlayApp(raw: any): StoreApp`, `suggestPlayKeywords(seed: string, country: string, max?: number): Promise<string[]>`, `collectPlaystore: Collector`
 
-- [ ] **Step 1: Ghi `src/collectors/types.ts`**
+- [ ] **Step 1: Ghi `web/src/collectors/types.ts`**
 
 ```ts
 import type { Db } from '@/db/client';
@@ -788,7 +788,7 @@ export type StoreApp = {
 export type StoreHit = { keywordId: number; rank: number; app: StoreApp };
 ```
 
-- [ ] **Step 2: Ghi fixture `tests/fixtures/playstore/app.json`** (rút gọn từ kết quả `gplay.app()`; thay bằng bản ghi thật khi chạy smoke ở Task 15 nếu khác)
+- [ ] **Step 2: Ghi fixture `web/tests/fixtures/playstore/app.json`** (rút gọn từ kết quả `gplay.app()`; thay bằng bản ghi thật khi chạy smoke ở Task 15 nếu khác)
 
 ```json
 {
@@ -809,7 +809,7 @@ export type StoreHit = { keywordId: number; rank: number; app: StoreApp };
 }
 ```
 
-- [ ] **Step 3: Viết test fail** — `tests/playstore.test.ts`
+- [ ] **Step 3: Viết test fail** — `web/tests/playstore.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -845,7 +845,7 @@ describe('normalizePlayApp', () => {
 });
 ```
 
-`tests/store-apps.test.ts`
+`web/tests/store-apps.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -894,7 +894,7 @@ describe('saveStoreHits', () => {
 Run: `npx vitest run tests/playstore.test.ts tests/store-apps.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 5: Ghi `src/collectors/store-apps.ts`**
+- [ ] **Step 5: Ghi `web/src/collectors/store-apps.ts`**
 
 ```ts
 import type { Db } from '@/db/client';
@@ -927,7 +927,7 @@ export function saveStoreHits(db: Db, runId: number, hits: StoreHit[]): void {
 }
 ```
 
-- [ ] **Step 6: Ghi `src/collectors/playstore.ts`**
+- [ ] **Step 6: Ghi `web/src/collectors/playstore.ts`**
 
 ```ts
 import gplay from 'google-play-scraper';
@@ -1016,14 +1016,14 @@ git commit -m "feat(collector): Google Play + lưu app dùng chung cho 2 store"
 ### Task 6: App Store collector
 
 **Files:**
-- Create: `src/collectors/appstore.ts`
-- Test: `tests/appstore.test.ts`, `tests/fixtures/appstore/search.json`
+- Create: `web/src/collectors/appstore.ts`
+- Test: `web/tests/appstore.test.ts`, `web/tests/fixtures/appstore/search.json`
 
 **Interfaces:**
 - Consumes: `Collector`, `StoreApp`, `StoreHit`, `saveStoreHits` (Task 5); `createLimiter` (Task 3); `CollectorError` (Task 3)
 - Produces: `normalizeItunesApp(raw: any): StoreApp`, `fetchItunes(term: string, country: string): Promise<any[]>`, `collectAppstore: Collector`
 
-- [ ] **Step 1: Ghi fixture `tests/fixtures/appstore/search.json`**
+- [ ] **Step 1: Ghi fixture `web/tests/fixtures/appstore/search.json`**
 
 ```json
 {
@@ -1046,7 +1046,7 @@ git commit -m "feat(collector): Google Play + lưu app dùng chung cho 2 store"
 }
 ```
 
-- [ ] **Step 2: Viết test fail** — `tests/appstore.test.ts`
+- [ ] **Step 2: Viết test fail** — `web/tests/appstore.test.ts`
 
 ```ts
 import { afterEach, describe, expect, it, vi } from 'vitest';
@@ -1100,7 +1100,7 @@ describe('fetchItunes', () => {
 Run: `npx vitest run tests/appstore.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 4: Ghi `src/collectors/appstore.ts`**
+- [ ] **Step 4: Ghi `web/src/collectors/appstore.ts`**
 
 ```ts
 import { CollectorError } from '@/lib/errors';
@@ -1166,8 +1166,8 @@ git commit -m "feat(collector): App Store qua iTunes Search API"
 ### Task 7: Google Trends collector
 
 **Files:**
-- Create: `src/collectors/trends.ts`
-- Test: `tests/trends.test.ts`, `tests/fixtures/trends/interest.json`, `tests/fixtures/trends/related.json`
+- Create: `web/src/collectors/trends.ts`
+- Test: `web/tests/trends.test.ts`, `web/tests/fixtures/trends/interest.json`, `web/tests/fixtures/trends/related.json`
 
 **Interfaces:**
 - Consumes: `Collector` (Task 5); `CollectorError`, `toCollectorError`, `withRetry` (Task 3); bảng `trendPoints`, `trendRelated` (Task 2)
@@ -1175,7 +1175,7 @@ git commit -m "feat(collector): App Store qua iTunes Search API"
 
 - [ ] **Step 1: Ghi fixture**
 
-`tests/fixtures/trends/interest.json`
+`web/tests/fixtures/trends/interest.json`
 
 ```json
 {
@@ -1188,7 +1188,7 @@ git commit -m "feat(collector): App Store qua iTunes Search API"
 }
 ```
 
-`tests/fixtures/trends/related.json`
+`web/tests/fixtures/trends/related.json`
 
 ```json
 {
@@ -1201,7 +1201,7 @@ git commit -m "feat(collector): App Store qua iTunes Search API"
 }
 ```
 
-- [ ] **Step 2: Viết test fail** — `tests/trends.test.ts`
+- [ ] **Step 2: Viết test fail** — `web/tests/trends.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -1242,7 +1242,7 @@ describe('trends', () => {
 Run: `npx vitest run tests/trends.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 4: Ghi `src/collectors/trends.ts`**
+- [ ] **Step 4: Ghi `web/src/collectors/trends.ts`**
 
 ```ts
 import googleTrends from 'google-trends-api';
@@ -1319,8 +1319,8 @@ git commit -m "feat(collector): Google Trends có retry và nhận diện bị c
 ### Task 8: Reddit collector
 
 **Files:**
-- Create: `src/collectors/reddit.ts`, `.env.example`
-- Test: `tests/reddit.test.ts`, `tests/fixtures/reddit/search.json`
+- Create: `web/src/collectors/reddit.ts`, `.env.example`
+- Test: `web/tests/reddit.test.ts`, `web/tests/fixtures/reddit/search.json`
 
 **Interfaces:**
 - Consumes: `Collector` (Task 5); `CollectorError` (Task 3); `createLimiter` (Task 3); bảng `redditPosts` (Task 2)
@@ -1332,7 +1332,7 @@ git commit -m "feat(collector): Google Trends có retry và nhận diện bị c
   - `readRedditEnv(env?: NodeJS.ProcessEnv): { clientId: string; clientSecret: string; userAgent: string }`
   - `collectReddit: Collector`
 
-- [ ] **Step 1: Ghi fixture `tests/fixtures/reddit/search.json`**
+- [ ] **Step 1: Ghi fixture `web/tests/fixtures/reddit/search.json`**
 
 ```json
 {
@@ -1367,7 +1367,7 @@ git commit -m "feat(collector): Google Trends có retry và nhận diện bị c
 }
 ```
 
-- [ ] **Step 2: Viết test fail** — `tests/reddit.test.ts`
+- [ ] **Step 2: Viết test fail** — `web/tests/reddit.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -1418,7 +1418,7 @@ describe('reddit', () => {
 Run: `npx vitest run tests/reddit.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 4: Ghi `src/collectors/reddit.ts`**
+- [ ] **Step 4: Ghi `web/src/collectors/reddit.ts`**
 
 ```ts
 import { redditPosts } from '@/db/schema';
@@ -1549,8 +1549,8 @@ git commit -m "feat(collector): Reddit OAuth, đánh dấu bài xin app"
 ### Task 9: Orchestrator — run, keyword, cache, retry
 
 **Files:**
-- Create: `src/lib/run-research.ts`
-- Test: `tests/run-research.test.ts`
+- Create: `web/src/lib/run-research.ts`
+- Test: `web/tests/run-research.test.ts`
 
 **Interfaces:**
 - Consumes: `Db` + bảng (Task 2); `toCollectorError` (Task 3); `Collector` (Task 5); `saveStoreHits` (Task 5, chỉ trong test)
@@ -1560,7 +1560,7 @@ git commit -m "feat(collector): Reddit OAuth, đánh dấu bài xin app"
   - `startResearch(deps, seed: string, country: string, opts?: { force?: boolean }): { runId: number; done: Promise<void> }`
   - `retrySource(deps, runId: number, source: Source): Promise<void>`
 
-- [ ] **Step 1: Viết test fail** — `tests/run-research.test.ts`
+- [ ] **Step 1: Viết test fail** — `web/tests/run-research.test.ts`
 
 ```ts
 import { eq } from 'drizzle-orm';
@@ -1686,7 +1686,7 @@ describe('retrySource', () => {
 Run: `npx vitest run tests/run-research.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 3: Ghi `src/lib/run-research.ts`**
+- [ ] **Step 3: Ghi `web/src/lib/run-research.ts`**
 
 ```ts
 import { and, desc, eq, gte, ne, sql } from 'drizzle-orm';
@@ -1860,8 +1860,8 @@ git commit -m "feat(lib): orchestrator chạy 4 nguồn song song, cache 24h, th
 ### Task 10: run-view + API routes
 
 **Files:**
-- Create: `src/lib/run-view.ts`, `src/lib/countries.ts`, `src/lib/deps.ts`, `src/app/api/research/route.ts`, `src/app/api/research/[id]/route.ts`, `src/app/api/research/[id]/retry/route.ts`
-- Test: `tests/run-view.test.ts`
+- Create: `web/src/lib/run-view.ts`, `web/src/lib/countries.ts`, `web/src/lib/deps.ts`, `src/app/api/research/route.ts`, `src/app/api/research/[id]/route.ts`, `src/app/api/research/[id]/retry/route.ts`
+- Test: `web/tests/run-view.test.ts`
 
 **Interfaces:**
 - Consumes: bảng (Task 2); hàm stats (Task 4); collectors (Task 5–8); `startResearch`, `retrySource`, `ResearchDeps` (Task 9)
@@ -1873,7 +1873,7 @@ git commit -m "feat(lib): orchestrator chạy 4 nguồn song song, cache 24h, th
   - `listRuns(db: Db, limit: number): RunSummary[]`
   - `POST /api/research {seed, country, force?}` → `{ runId }` · `GET /api/research` → `RunSummary[]` · `GET /api/research/[id]` → `RunView` · `POST /api/research/[id]/retry {source}` → `{ ok: true }`
 
-- [ ] **Step 1: Viết test fail** — `tests/run-view.test.ts`
+- [ ] **Step 1: Viết test fail** — `web/tests/run-view.test.ts`
 
 ```ts
 import { describe, expect, it } from 'vitest';
@@ -1978,7 +1978,7 @@ Con số kiểm tay: seed có P1 (play), P2 (play), I1 (appstore) → median rat
 Run: `npx vitest run tests/run-view.test.ts`
 Expected: FAIL, không tìm thấy module.
 
-- [ ] **Step 3: Ghi `src/lib/countries.ts`**
+- [ ] **Step 3: Ghi `web/src/lib/countries.ts`**
 
 ```ts
 export const COUNTRIES = [
@@ -1992,7 +1992,7 @@ export const COUNTRIES = [
 export const isCountry = (code: string) => COUNTRIES.some((c) => c.code === code);
 ```
 
-- [ ] **Step 4: Ghi `src/lib/run-view.ts`**
+- [ ] **Step 4: Ghi `web/src/lib/run-view.ts`**
 
 ```ts
 import { and, desc, eq, inArray } from 'drizzle-orm';
@@ -2165,7 +2165,7 @@ export function listRuns(db: Db, limit: number): RunSummary[] {
 Run: `npx vitest run tests/run-view.test.ts`
 Expected: PASS 6 test.
 
-- [ ] **Step 6: Ghi `src/lib/deps.ts`**
+- [ ] **Step 6: Ghi `web/src/lib/deps.ts`**
 
 ```ts
 import { collectAppstore } from '@/collectors/appstore';
@@ -2264,14 +2264,14 @@ git commit -m "feat(api): getRunView + route tạo run, xem run, thử lại ngu
 ### Task 11: Trang chủ — ô search + lịch sử
 
 **Files:**
-- Create: `src/lib/format.ts`, `src/components/SourceChip.tsx`, `src/components/SearchForm.tsx`, `src/components/RunHistory.tsx`
+- Create: `web/src/lib/format.ts`, `web/src/components/SourceChip.tsx`, `web/src/components/SearchForm.tsx`, `web/src/components/RunHistory.tsx`
 - Modify: `src/app/layout.tsx`, `src/app/page.tsx`, `src/app/globals.css`
 
 **Interfaces:**
 - Consumes: `COUNTRIES` (Task 10), `listRuns`, `RunSummary`, `JobStatus` (Task 10), `POST /api/research`
 - Produces: `fmtInt(n: number | null): string`, `fmtDate(iso: string | null): string`, `fmtRating(r: number | null): string`, `SOURCE_LABEL: Record<Source, string>`; component `<SourceChip source status />`
 
-- [ ] **Step 1: Ghi `src/lib/format.ts`**
+- [ ] **Step 1: Ghi `web/src/lib/format.ts`**
 
 ```ts
 import type { Source } from '@/db/schema';
@@ -2290,7 +2290,7 @@ export const SOURCE_LABEL: Record<Source, string> = {
 };
 ```
 
-- [ ] **Step 2: Ghi `src/components/SourceChip.tsx`**
+- [ ] **Step 2: Ghi `web/src/components/SourceChip.tsx`**
 
 ```tsx
 import type { JobStatus, Source } from '@/db/schema';
@@ -2312,7 +2312,7 @@ export function SourceChip({ source, status }: { source: Source; status: JobStat
 }
 ```
 
-- [ ] **Step 3: Ghi `src/components/SearchForm.tsx`**
+- [ ] **Step 3: Ghi `web/src/components/SearchForm.tsx`**
 
 ```tsx
 'use client';
@@ -2375,7 +2375,7 @@ export function SearchForm() {
 }
 ```
 
-- [ ] **Step 4: Ghi `src/components/RunHistory.tsx`**
+- [ ] **Step 4: Ghi `web/src/components/RunHistory.tsx`**
 
 ```tsx
 import Link from 'next/link';
@@ -2461,7 +2461,7 @@ git commit -m "feat(ui): trang chủ — ô search, chọn nước, lịch sử 
 ### Task 12: Trang kết quả — polling, header, số liệu, bảng keyword
 
 **Files:**
-- Create: `src/app/r/[id]/page.tsx`, `src/components/RunDashboard.tsx`, `src/components/RunHeader.tsx`, `src/components/SourceBlock.tsx`, `src/components/StatTiles.tsx`, `src/components/KeywordTable.tsx`
+- Create: `src/app/r/[id]/page.tsx`, `web/src/components/RunDashboard.tsx`, `web/src/components/RunHeader.tsx`, `web/src/components/SourceBlock.tsx`, `web/src/components/StatTiles.tsx`, `web/src/components/KeywordTable.tsx`
 
 **Interfaces:**
 - Consumes: `RunView`, `JobView`, `RunStats`, `KeywordRow` (Task 10); `fmtInt`, `fmtDate`, `fmtRating`, `SOURCE_LABEL`, `SourceChip` (Task 11); `GET /api/research/[id]`, `POST /api/research/[id]/retry`, `POST /api/research`
@@ -2478,7 +2478,7 @@ export default async function RunPage({ params }: { params: Promise<{ id: string
 }
 ```
 
-- [ ] **Step 2: Ghi `src/components/SourceBlock.tsx`**
+- [ ] **Step 2: Ghi `web/src/components/SourceBlock.tsx`**
 
 ```tsx
 'use client';
@@ -2528,7 +2528,7 @@ export function SourceBlock({ title, jobs, onRetry, children }: {
 }
 ```
 
-- [ ] **Step 3: Ghi `src/components/RunHeader.tsx`**
+- [ ] **Step 3: Ghi `web/src/components/RunHeader.tsx`**
 
 ```tsx
 'use client';
@@ -2572,7 +2572,7 @@ export function RunHeader({ view }: { view: RunView }) {
 }
 ```
 
-- [ ] **Step 4: Ghi `src/components/StatTiles.tsx`**
+- [ ] **Step 4: Ghi `web/src/components/StatTiles.tsx`**
 
 ```tsx
 import { fmtDate, fmtInt, fmtRating } from '@/lib/format';
@@ -2605,7 +2605,7 @@ export function StatTiles({ stats }: { stats: RunStats }) {
 }
 ```
 
-- [ ] **Step 5: Ghi `src/components/KeywordTable.tsx`**
+- [ ] **Step 5: Ghi `web/src/components/KeywordTable.tsx`**
 
 ```tsx
 import { fmtInt } from '@/lib/format';
@@ -2656,7 +2656,7 @@ export function KeywordTable({ rows }: { rows: KeywordRow[] }) {
 }
 ```
 
-- [ ] **Step 6: Ghi `src/components/RunDashboard.tsx`** (Task 13–14 sẽ thay 3 chỗ `{/* … */}` bằng block thật)
+- [ ] **Step 6: Ghi `web/src/components/RunDashboard.tsx`** (Task 13–14 sẽ thay 3 chỗ `{/* … */}` bằng block thật)
 
 ```tsx
 'use client';
@@ -2749,14 +2749,14 @@ git commit -m "feat(ui): trang kết quả — polling, header, số liệu, b�
 ### Task 13: Khối đối thủ — bảng + 3 biểu đồ
 
 **Files:**
-- Create: `src/components/charts/BucketBar.tsx`, `src/components/charts/RatingScatter.tsx`, `src/components/CompetitorBlock.tsx`
-- Modify: `src/components/RunDashboard.tsx`
+- Create: `web/src/components/charts/BucketBar.tsx`, `web/src/components/charts/RatingScatter.tsx`, `web/src/components/CompetitorBlock.tsx`
+- Modify: `web/src/components/RunDashboard.tsx`
 
 **Interfaces:**
 - Consumes: `CompetitorRow`, `Bucket` (Task 10); `fmtInt`, `fmtDate`, `fmtRating` (Task 11); `SourceBlock` (Task 12)
 - Produces: `<BucketBar data color? horizontal? height? />` (Task 14 dùng lại)
 
-- [ ] **Step 1: Ghi `src/components/charts/BucketBar.tsx`**
+- [ ] **Step 1: Ghi `web/src/components/charts/BucketBar.tsx`**
 
 ```tsx
 'use client';
@@ -2794,7 +2794,7 @@ export function BucketBar({ data, color = '#18181b', horizontal = false, height 
 }
 ```
 
-- [ ] **Step 2: Ghi `src/components/charts/RatingScatter.tsx`**
+- [ ] **Step 2: Ghi `web/src/components/charts/RatingScatter.tsx`**
 
 ```tsx
 'use client';
@@ -2838,7 +2838,7 @@ export function RatingScatter({ apps }: { apps: CompetitorRow[] }) {
 }
 ```
 
-- [ ] **Step 3: Ghi `src/components/CompetitorBlock.tsx`**
+- [ ] **Step 3: Ghi `web/src/components/CompetitorBlock.tsx`**
 
 ```tsx
 'use client';
@@ -2947,7 +2947,7 @@ export function CompetitorBlock({ apps, installs, updateAge }: { apps: Competito
 }
 ```
 
-- [ ] **Step 4: Cắm vào `src/components/RunDashboard.tsx`** — thêm import và thay dòng `{/* CompetitorBlock — Task 13 */}`
+- [ ] **Step 4: Cắm vào `web/src/components/RunDashboard.tsx`** — thêm import và thay dòng `{/* CompetitorBlock — Task 13 */}`
 
 ```tsx
 import { CompetitorBlock } from './CompetitorBlock';
@@ -2980,13 +2980,13 @@ git commit -m "feat(ui): khối đối thủ — bảng lọc/sắp xếp + scat
 ### Task 14: Khối Trends + Reddit
 
 **Files:**
-- Create: `src/components/charts/TrendLine.tsx`, `src/components/TrendsBlock.tsx`, `src/components/RedditBlock.tsx`
-- Modify: `src/components/RunDashboard.tsx`
+- Create: `web/src/components/charts/TrendLine.tsx`, `web/src/components/TrendsBlock.tsx`, `web/src/components/RedditBlock.tsx`
+- Modify: `web/src/components/RunDashboard.tsx`
 
 **Interfaces:**
 - Consumes: `RunView['trends']`, `RunView['reddit']`, `RedditPostView` (Task 10); `BucketBar` (Task 13); `fmtDate` (Task 11); `SourceBlock` (Task 12)
 
-- [ ] **Step 1: Ghi `src/components/charts/TrendLine.tsx`**
+- [ ] **Step 1: Ghi `web/src/components/charts/TrendLine.tsx`**
 
 ```tsx
 'use client';
@@ -3008,7 +3008,7 @@ export function TrendLine({ points }: { points: { date: string; value: number }[
 }
 ```
 
-- [ ] **Step 2: Ghi `src/components/TrendsBlock.tsx`**
+- [ ] **Step 2: Ghi `web/src/components/TrendsBlock.tsx`**
 
 ```tsx
 import type { RunView } from '@/lib/run-view';
@@ -3048,7 +3048,7 @@ export function TrendsBlock({ trends }: { trends: RunView['trends'] }) {
 }
 ```
 
-- [ ] **Step 3: Ghi `src/components/RedditBlock.tsx`**
+- [ ] **Step 3: Ghi `web/src/components/RedditBlock.tsx`**
 
 ```tsx
 import { fmtDate } from '@/lib/format';
@@ -3087,7 +3087,7 @@ export function RedditBlock({ reddit }: { reddit: RunView['reddit'] }) {
 }
 ```
 
-- [ ] **Step 4: Cắm vào `src/components/RunDashboard.tsx`** — thêm import và thay 2 dòng `{/* TrendsBlock — Task 14 */}`, `{/* RedditBlock — Task 14 */}`
+- [ ] **Step 4: Cắm vào `web/src/components/RunDashboard.tsx`** — thêm import và thay 2 dòng `{/* TrendsBlock — Task 14 */}`, `{/* RedditBlock — Task 14 */}`
 
 ```tsx
 import { RedditBlock } from './RedditBlock';
@@ -3122,12 +3122,12 @@ git commit -m "feat(ui): khối Google Trends và Reddit"
 ### Task 15: Smoke script, README, kiểm toàn bộ
 
 **Files:**
-- Create: `scripts/smoke.ts`, `README.md`
+- Create: `web/scripts/smoke.ts`, `README.md`
 
 **Interfaces:**
 - Consumes: `createDb` (Task 2); collector thật + `suggestPlayKeywords` (Task 5–8); `startResearch` (Task 9); `getRunView` (Task 10)
 
-- [ ] **Step 1: Ghi `scripts/smoke.ts`**
+- [ ] **Step 1: Ghi `web/scripts/smoke.ts`**
 
 ```ts
 // Gọi thật 4 nguồn với một DB tạm, in kết quả. Chạy: npm run smoke -- "habit tracker" [US]
@@ -3214,7 +3214,7 @@ Database: `data/niche.db` (SQLite, tự tạo). Xoá file này là xoá sạch l
 | `npm run dev` | chạy web ở cổng 3200 |
 | `npm test` | unit test (Vitest) |
 | `npm run smoke -- "<niche>" [US]` | gọi thật 4 nguồn, in số dòng lấy được |
-| `npm run db:generate` | sinh migration sau khi sửa `src/db/schema.ts` |
+| `npm run db:generate` | sinh migration sau khi sửa `web/src/db/schema.ts` |
 
 ## Nguồn dữ liệu
 

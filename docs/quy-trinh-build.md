@@ -30,7 +30,7 @@ flowchart TB
 
 - **Làm:** viết phase vào [Master Plan](superpowers/specs/2026-10-24-niche-radar-master-plan.md) §3: **mục tiêu ·
   làm gì · không làm gì · xong khi** (đo được). Trang tóm tắt `phase-N-*.md` cho site.
-- **Ra file:** master plan §3 Phase N + `docs/phase-N-*.md`.
+- **Ra file:** master plan §3 Phase N + `docs/web/phase-N-*.md` (phase gói / build app Mac: `docs/app/`).
 - **Qua bước khi:** anh chốt phạm vi. Việc ngoài phạm vi → master plan §4 "Đang pending".
 </div>
 
@@ -52,7 +52,7 @@ flowchart TB
 ### 🔨 Implement — làm từng task
 
 - Nhánh `phaseN-<tên>` cắt từ `main`.
-- Mỗi Task: viết test → code → `npm test && npm run typecheck && npm run lint` **xanh** → commit.
+- Mỗi Task: viết test → code → `npm run check` (gốc repo; = test + typecheck + lint trong `web/`) **xanh** → commit.
 - UI bám mockup bước 2.
 </div>
 
@@ -72,7 +72,7 @@ flowchart TB
 
 ### 📦 Build — chạy bản build, không phải bản dev
 
-- `npm run build` → `npm start` (một process, cổng 3200) — mở được, không lỗi console.
+- Trong `web/`: `npm run build` → `npm start` (một process, cổng 3200) — mở được, không lỗi console.
 - `npm run docs:build` (strict) — site tài liệu không gãy link.
 </div>
 
@@ -81,7 +81,7 @@ flowchart TB
 
 ### ✅ Test — đo thật, nhìn tận mắt
 
-- `npm test` + `npm run smoke -- "<niche>" US` (gọi thật các nguồn).
+- Trong `web/`: `npm test` + `npm run smoke -- "<niche>" US` (gọi thật các nguồn).
 - Chạy thật **3 niche**, ghi số đo (số keyword, thời gian, lỗi, ngày) vào mục **Kết quả chạy thật** của plan.
 - Screenshot 1280 + 375 của mọi màn đổi → **mở ra xem**, so với mockup.
 - Đối chiếu từng dòng **Xong khi** ở bước 1. Trượt dòng nào → quay lại 🔨.
@@ -98,7 +98,7 @@ flowchart TB
 - **Số đo có ngày + nguồn.** Không đo được ghi `chưa đo`.
 - **Merge `main` cần anh đồng ý.**
 - **UI chưa có tính năng thì disable, không xoá.** Nút / ô / mục thuộc phase chưa làm vẫn hiện nhưng xám, không bấm được,
-  ghi `Phase N` + tooltip "chưa làm" (class `soon-chip`, danh sách ở `src/lib/features.ts`). Làm xong phase thì bật lên.
+  ghi `Phase N` + tooltip "chưa làm" (class `soon-chip`, danh sách ở `web/src/lib/features.ts`). Làm xong phase thì bật lên.
 </div>
 
 ## Đang ở bước nào
@@ -123,7 +123,7 @@ Cập nhật 2026-10-24 theo nhánh `main` (mọi nhánh `phase1` → `phase7` �
 - **10 · UI / UX** — 📄 Spec · đã làm lẻ: bảng Lịch sử + phân trang, chip nguồn +N (`b2cf354`), trang Hướng dẫn (`3258c0d`)
 - **11 · Account** — 📄 Spec trong Master Plan  
   → Tiếp: xét lại khi có người dùng ngoài
-- **11.1 · Setup trong Web / App** — 📄 Plan: [trang Setup + Kiểm tra máy + Hỏi AI](phase-11-1-setup.md)
-- **11.2 · Tutorial (nút ?)** — 📄 Plan: [nút ? mỗi tính năng, hình bước ít chữ](phase-11-2-tutorial.md)
+- **11.1 · Setup trong Web / App** — 📄 Plan: [trang Setup + Kiểm tra máy + Hỏi AI](web/phase-11-1-setup.md)
+- **11.2 · Tutorial (nút ?)** — 📄 Plan: [nút ? mỗi tính năng, hình bước ít chữ](web/phase-11-2-tutorial.md)
 - **12–55 · Version 2–11** — 📄 Plan trong docs, chưa code
 - **Version 12** — 📄 Danh sách ứng viên

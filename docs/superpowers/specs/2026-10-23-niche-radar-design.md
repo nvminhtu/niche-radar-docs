@@ -63,7 +63,7 @@ riêng. Body có `force: true` (nút "Tra lại") thì bỏ qua cache.
 
 ## Collector
 
-Mỗi nguồn là một module `src/collectors/<source>.ts`, cùng interface:
+Mỗi nguồn là một module `web/src/collectors/<source>.ts`, cùng interface:
 
 ```ts
 type CollectContext = { runId: number; keywords: { id: number; term: string }[]; country: string };
@@ -161,7 +161,7 @@ Khối của nguồn đang chạy hiện skeleton, nguồn lỗi hiện hộp l�
 ## Test
 
 - **Unit (Vitest):** các hàm `normalizeX` của 4 collector với fixture JSON ghi lại từ lần gọi
-  thật (`tests/fixtures/<source>/*.json`); các hàm tính số liệu tổng (median, phân mốc
+  thật (`web/tests/fixtures/<source>/*.json`); các hàm tính số liệu tổng (median, phân mốc
   số cài, phân mốc tuổi update, đếm theo tháng).
 - **Smoke:** `npm run smoke -- "habit tracker"` gọi thật cả 4 nguồn với DB tạm, in số dòng
   mỗi nguồn + lỗi nếu có. Không chạy trong CI.

@@ -17,7 +17,7 @@ flowchart TB
   COL --> S[App Store<br/>iTunes API]
   COL --> G[Google gợi ý]
   COL --> T[Google Trends]
-  API <--> DB[(data/niche.db<br/>SQLite)]
+  API <--> DB[(web/data/niche.db<br/>SQLite)]
 ```
 
 ## Web và App dùng chung
@@ -40,7 +40,7 @@ flowchart LR
 | Lưu trữ | SQLite · better-sqlite3 · Drizzle |
 | Test | Vitest (115 test) · `npm run smoke` gọi thật |
 | Tài liệu | MkDocs Material (trang này) |
-| App Mac (sau) | Tauri — không Electron |
+| App Mac | Tauri — không Electron (`app/`) |
 | AI | không dùng |
 
 ## Nguồn dữ liệu (đều miễn phí)
@@ -58,11 +58,17 @@ Bộ nhớ đệm: kết quả research 24 giờ · gợi ý tìm kiếm 7 ngày
 <summary>Thư mục code</summary>
 
 ```
-src/client/      trang: HomePage · ExplorePage · RunPage
-src/components/  bảng, bản đồ, cây ngách, Trends…
-src/collectors/  gọi từng nguồn
-src/lib/         logic thuần có test (explore, điểm, complaints…)
-src/server/      API Hono
-src/db/          bảng + migration
+web/                   code web (Vite + React + Hono) — chạy được một mình
+  src/client/          trang: HomePage · ExplorePage · RunPage
+  src/components/      bảng, bản đồ, cây ngách, Trends…
+  src/collectors/      gọi từng nguồn
+  src/lib/             logic thuần có test (explore, điểm, complaints…)
+  src/server/          API Hono
+  src/db/              bảng + migration
+  tests/ drizzle/ public/ scripts/
+app/                   app Mac (Tauri) — bọc lại đúng web/, không viết UI lần 2
+  src-tauri/           vỏ Rust: mở server Node chạy kèm + cửa sổ
+  scripts/build-mac.sh build .app → .dmg ký + notarize
+docs/ · design/        tài liệu MkDocs · mockup, logo, icon
 ```
 </details>

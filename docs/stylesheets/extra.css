@@ -402,7 +402,7 @@ body {
 .md-typeset .nr-phases .step:nth-child(4) .step__n { background: var(--sky); }
 
 /* web / app cards */
-.md-typeset .nr-forms { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin: 1rem 0; }
+.md-typeset .nr-forms { display: grid; grid-template-columns: 1fr; gap: 1.2rem; margin: 1rem 0; }
 .md-typeset .nr-forms > div { border: 3px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
   padding: .4rem 1.2rem .8rem; }
 .md-typeset .nr-forms h3 { margin-top: .6rem; }

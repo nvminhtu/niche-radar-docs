@@ -3,12 +3,14 @@
 ## Chạy app
 
 ```bash
+cd web
 npm install
 cp .env.example .env.local   # tuỳ chọn: key Claude cho Feature Gap tuyến A
 npm run dev                  # mở http://localhost:3200
 ```
 
-Dữ liệu nằm ở `data/niche.db`. Xoá file này = xoá sạch lịch sử.
+Đứng ở gốc repo thì `npm run setup` rồi `npm run dev` cũng được (lối tắt sang `web/`).
+Dữ liệu nằm ở `web/data/niche.db` (app Mac: `~/Library/Application Support/niche-radar/`). Xoá file này = xoá sạch lịch sử.
 
 ## Explore một niche (tìm ngách)
 
@@ -48,10 +50,13 @@ Một người, mạng nhà, **vài chục lần tra/ngày là ổn**. Bị ch�
 
 ## Lệnh hay dùng
 
-| Lệnh | Làm gì |
-|---|---|
-| `npm run dev` | chạy app (web 3200 + API 3201) |
-| `npm test` · `npm run typecheck` · `npm run lint` | kiểm code |
-| `npm run smoke -- "<niche>" US` | gọi thật 4 nguồn, in số dòng lấy được |
-| `npm run docs` | mở trang tài liệu này ở http://127.0.0.1:3210 |
-| `npm run docs:build` | build tài liệu ra `site/` |
+Chạy ở gốc repo (lối tắt) hoặc trong `web/` / `app/`:
+
+| Lệnh (gốc repo) | Trong folder | Làm gì |
+|---|---|---|
+| `npm run dev` | `web/` · `npm run dev` | chạy app (web 3200 + API 3201) |
+| `npm run check` | `web/` · `npm test` · `npm run typecheck` · `npm run lint` | kiểm code |
+| — | `web/` · `npm run smoke -- "<niche>" US` | gọi thật 4 nguồn, in số dòng lấy được |
+| `npm run mac` | `app/` · `npm run build` | build app Mac → `app/dist/*.dmg` (ký + notarize) |
+| `npm run docs` | — | mở trang tài liệu này ở http://127.0.0.1:3210 |
+| `npm run docs:build` | — | build tài liệu ra `site/` |
