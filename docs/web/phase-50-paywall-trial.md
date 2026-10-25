@@ -26,7 +26,7 @@ flowchart LR
 | :material-lock: **Khoá Pro đúng chỗ** | bấm tính năng Pro → màn nâng cấp, nói rõ được gì |
 | :material-cash: **Giá hiển thị** | ghi rõ chu kỳ, tự gia hạn, cách huỷ. Không gọi gói trả phí là "quyên góp" |
 | :material-timer-sand: **Dùng thử** | N ngày, N chốt ở Phase 48 |
-| :material-restore: **Khôi phục mua** | nút "Khôi phục mua" trên bản Web (app Mac ở [Phase 55b](../app/phase-55b-app-only.md)) |
+| :material-restore: **Khôi phục mua** | nút "Khôi phục mua" trên bản Web (app Mac ở [Phase 61](../app/phase-61-app-only.md)) |
 | :material-laptop: **Giới hạn số máy** | một license dùng tối đa số máy chốt ở `money.md` |
 | :material-web: **Khớp landing** | trang giá trên landing ([Version 11](version-11.md)) khớp giá trong app |
 

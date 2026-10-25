@@ -1,9 +1,9 @@
-# Phase 22b · Local App 3.0
+# Phase 58 · Local App 3.0
 
-> Gói Phase 19–21 (Phase 18 gói ở Phase 17; đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
-> [Phase 17](phase-17-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi hết phase Web**.
+> Gói Phase 19–21 (Phase 18 gói ở Phase 57; đã soát ở [Phase 22](../web/phase-22-review-3.md)) vào **app Mac** một lần — như
+> [Phase 57](phase-57-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi hết phase Web**.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 17 · khi Web xong hết</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 57 · khi Web xong hết</span>
 
 ## Chạy thế nào
 
@@ -33,5 +33,5 @@ flowchart LR
 **Không làm ở phase này**
 
 - Tính năng mới (chỉ gói những gì Phase 18–21 đã xong)
-- Auto-update ([Phase 38](phase-38-release-auto-update.md)), bản Windows
+- Auto-update ([Phase 63](phase-63-release-auto-update.md)), bản Windows
 </div>

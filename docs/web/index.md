@@ -1,13 +1,13 @@
 # Web — làm hết trước
 
-> Mọi tính năng làm ở **bản Web** (`web/`, chạy `npm run dev` → `localhost:3200`). Đi lần lượt Version 1 → 12.
+> Mọi tính năng làm ở **bản Web** (`web/`, chạy `npm run dev` → `localhost:3200`). Đi lần lượt Version 1 → 12; App Mac là Version 13 (Phase 56–63), làm cuối cùng.
 > **Hết phase Web mới chuyển sang [App Mac](../app/index.md).**
 
 <span class="chip chip--doing">Đang làm · Phase 7, 9–11.2 tiếp theo</span>
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
-## Version 1 · MVP (Phase 1–11 + 18, trừ Phase 8)
+## Version 1 · MVP (Phase 1–11 + 18)
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -67,6 +67,14 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 </div>
 </div>
 <div class="step" markdown>
+<span class="step__n">8</span>
+<div class="step__body">
+<h3>Project + dữ liệu chuyển máy <span class="chip chip--done">Xong</span></h3>
+<p>Project có đánh giá, xuất / nhập .niche.json · .md · CSV, backup / restore. Vỏ app Mac tách sang Phase 56 (Version 13).</p>
+<a class="go" href="phase-8-project-data/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
 <span class="step__n">9</span>
 <div class="step__body">
 <h3>Small Features Update <span class="chip chip--todo">Chưa làm</span></h3>
@@ -121,7 +129,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 ## Version 2 · nguồn mới + AI (Phase 12–16)
 
 Phase 1–11 + 18 (trừ 8) là **MVP bản Web**. Từ đây thêm nguồn YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)**
-rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 17 ở [mục App](../app/index.md) — làm sau khi hết phase Web.
+rồi một phase **AI đọc chữ**. Gói vào app Mac là Phase 57 ở [mục App](../app/index.md) — làm sau khi hết phase Web.
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -200,7 +208,7 @@ máy tự kiểm**. So sánh niche (Phase 18) đã dời lên Version 1. Chi ti�
 <span class="step__n">22</span>
 <div class="step__body">
 <h3>Review Version 3 <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Chọn niche thật 3 lần (≤ 30 phút/lần), sửa lỗi. Gói app → Phase 22b (mục App).</p>
+<p>Chọn niche thật 3 lần (≤ 30 phút/lần), sửa lỗi. Gói app → Phase 58 (mục App).</p>
 <a class="go" href="phase-22-review-3/">Xem chi tiết →</a>
 </div>
 </div>
@@ -248,7 +256,7 @@ Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Ch
 <span class="step__n">27</span>
 <div class="step__body">
 <h3>Review Version 4 <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Chọn niche thật 3 lần có kệ Google + kệ AI, sửa lỗi. Gói app → Phase 27b (mục App).</p>
+<p>Chọn niche thật 3 lần có kệ Google + kệ AI, sửa lỗi. Gói app → Phase 59 (mục App).</p>
 <a class="go" href="phase-27-review-4/">Xem chi tiết →</a>
 </div>
 </div>
@@ -264,7 +272,7 @@ mạng → bán → marketing → tính năng mới.
 <span class="step__n">V5</span>
 <div class="step__body">
 <h3>Performance <span class="chip chip--todo">Phase 28–30</span></h3>
-<p>Nhanh và nhẹ: đo mốc trước, kết quả đầu ≤ 30 giây, collector song song giữ giới hạn từng nguồn, bảng lớn mượt, (app Mac nhẹ → Phase 31, mục App).</p>
+<p>Nhanh và nhẹ: đo mốc trước, kết quả đầu ≤ 30 giây, collector song song giữ giới hạn từng nguồn, bảng lớn mượt, (app Mac nhẹ → Phase 60, mục App).</p>
 <a class="go" href="version-5/">Xem chi tiết →</a>
 </div>
 </div>
@@ -280,7 +288,7 @@ mạng → bán → marketing → tính năng mới.
 <span class="step__n">V7</span>
 <div class="step__body">
 <h3>CI/CD <span class="chip chip--todo">Phase 36, 39</span></h3>
-<p>GitHub Actions chặn PR đỏ, quy trình nhánh (build app trên CI + auto-update → Phase 37–38, mục App).</p>
+<p>GitHub Actions chặn PR đỏ, quy trình nhánh (build app trên CI + auto-update → Phase 62–38, mục App).</p>
 <a class="go" href="version-7/">Xem chi tiết →</a>
 </div>
 </div>

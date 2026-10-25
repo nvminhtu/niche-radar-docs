@@ -8,7 +8,7 @@
 <div class="box box--goal" markdown>
 **Vì sao dời lên Version 1.** Phase này chỉ đọc DB, không cần nguồn mới hay AI — chạy được ngay với dữ liệu Phase 1–9.
 Chọn giữa vài niche là câu hỏi chính của tool, không nên chờ YouTube / Amazon / Maps (Phase 12–16): nhóm **Nguồn mới**
-ghi "chưa tra" tới khi các phase đó xong. Giữ số 18; app Mac gói ở [Phase 17](../app/phase-17-local-app-2.md), mục App — sau khi hết phase Web.
+ghi "chưa tra" tới khi các phase đó xong. Giữ số 18; app Mac gói ở [Phase 57](../app/phase-57-local-app-2.md), mục App — sau khi hết phase Web.
 </div>
 
 ## Chạy thế nào

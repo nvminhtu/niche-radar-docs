@@ -11,7 +11,7 @@
 flowchart LR
   N[3 niche chuẩn] --> B[npm run bench<br/>mới]
   B --> W[Bản Web<br/>explore · mở trang · query]
-  B -.-> A[App Mac · đo ở Phase 31<br/>sau khi hết phase Web]
+  B -.-> A[App Mac · đo ở Phase 60<br/>sau khi hết phase Web]
   W & A --> J[(bench/baseline.json)]
   J --> T[Bảng mốc<br/>trong trang này]
 ```
@@ -26,8 +26,8 @@ flowchart LR
 | Thời gian query chậm nhất | SQLite (cơ sở dữ liệu trên máy) |
 | RAM server | process Node |
 | Dung lượng bundle web | file JS/CSS sau `npm run build` |
-| Thời gian mở app Mac · RAM app khi rảnh | app Mac — đo ở [Phase 31](../app/phase-31-light-mac-app.md), mục App |
-| Dung lượng `.dmg` | file cài app Mac — đo ở [Phase 31](../app/phase-31-light-mac-app.md), mục App |
+| Thời gian mở app Mac · RAM app khi rảnh | app Mac — đo ở [Phase 60](../app/phase-60-light-mac-app.md), mục App |
+| Dung lượng `.dmg` | file cài app Mac — đo ở [Phase 60](../app/phase-60-light-mac-app.md), mục App |
 
 Mục tiêu cụ thể cho từng số: ghi sau khi đo, không đặt trước.
 

@@ -68,6 +68,7 @@ nav:
           - Phase 5 · Verified Sites: web/phase-5-verified.md
           - Phase 6 · Tích hợp AI (Web): web/phase-6-ai-web.md
           - Phase 7 · Review + Validate: web/phase-7-review-validate.md
+          - Phase 8 · Project + dữ liệu: web/phase-8-project-data.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
           - Phase 18 · So sánh niche: web/phase-18-compare-niche.md
           - Phase 10 · UI / UX: web/phase-10-ui-ux.md
@@ -136,16 +137,16 @@ nav:
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md
-  - App Mac:
+  - App Mac (Version 13):
       - app/index.md
-      - Phase 8 · Local App: app/phase-8-local-app.md
-      - Phase 17 · Local App 2.0: app/phase-17-local-app-2.md
-      - Phase 22b · Local App 3.0: app/phase-22b-local-app-3.md
-      - Phase 27b · Local App 4.0: app/phase-27b-local-app-4.md
-      - "Phase 31 · App Mac nhẹ": app/phase-31-light-mac-app.md
-      - "Phase 55b · Phần riêng của app Mac": app/phase-55b-app-only.md
-      - "Phase 37 · Build app Mac trên CI": app/phase-37-mac-build-ci.md
-      - "Phase 38 · Release + auto-update": app/phase-38-release-auto-update.md
+      - Phase 56 · Local App 1.0: app/phase-56-local-app-1.md
+      - Phase 57 · Local App 2.0: app/phase-57-local-app-2.md
+      - Phase 58 · Local App 3.0: app/phase-58-local-app-3.md
+      - Phase 59 · Local App 4.0: app/phase-59-local-app-4.md
+      - "Phase 60 · App Mac nhẹ": app/phase-60-light-mac-app.md
+      - "Phase 61 · Phần riêng của app Mac": app/phase-61-app-only.md
+      - "Phase 62 · Build app Mac trên CI": app/phase-62-mac-build-ci.md
+      - "Phase 63 · Release + auto-update": app/phase-63-release-auto-update.md
   - Hệ thống chạy thế nào: he-thong.md
   - Cách dùng: cach-dung.md
   - Skills: skills.md

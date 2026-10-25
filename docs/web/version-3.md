@@ -4,7 +4,7 @@
 > **"niche A hay niche B?"**, **"app mình đánh vào đối thủ nào?"**. Mọi câu AI viết ra phải **dẫn nguồn**
 > (cite) và được **kiểm tự động**.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 17 (Local App 2.0)</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 57 (Local App 2.0)</span>
 
 ## Mục tiêu
 
@@ -41,10 +41,10 @@ flowchart TB
 | [19 · So sánh đối thủ](phase-19-compare-competitor.md) | 2–5 app / sản phẩm cạnh nhau: giá, sao, tính năng, bị chê gì | không |
 | [20 · Hỏi dữ liệu (AI Cite)](phase-20-ai-cite-ask.md) | hỏi bằng lời, trả lời chỉ từ DB, mọi câu có trích dẫn + máy kiểm trích dẫn | có |
 | [21 · Báo cáo so sánh (AI Cite)](phase-21-ai-cite-report.md) | AI viết kết luận cho bảng so sánh Phase 18–19, xuất evidence pack | có |
-| [22 · Review + Local App 3.0](phase-22-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi (gói app Mac → Phase 22b, [mục App](../app/index.md)) | không |
+| [22 · Review + Local App 3.0](phase-22-review-3.md) | chạy 3 lần chọn niche thật, sửa lỗi (gói app Mac → Phase 58, [mục App](../app/index.md)) | không |
 
 Thứ tự: 18 đã có từ Version 1 → 19 làm **không AI** trước (tắt AI vẫn so được). 20 dựng **lớp kiểm trích dẫn** dùng chung, 21 dùng lại nó.
-Chỉ bản Web. Gói vào app Mac là Phase 22b ở [mục App](../app/index.md), làm sau khi hết phase Web.
+Chỉ bản Web. Gói vào app Mac là Phase 58 ở [mục App](../app/index.md), làm sau khi hết phase Web.
 
 ## Luật chung của Version 3
 

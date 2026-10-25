@@ -48,7 +48,7 @@ Chấm mỗi ứng viên: **số người xin** (đếm từ góp ý) · **tác 
 **Luật**
 
 - Không làm mục nào khi chưa có dòng trong bảng trên + điểm + anh duyệt
-- Mục được chọn → sửa Master Plan, tạo trang phase có số (tiếp sau Phase 55), đi đúng [Quy trình build](../quy-trinh-build.md)
+- Mục được chọn → sửa Master Plan, tạo trang phase có số (tiếp sau Phase 63 — 56–63 là App Mac), đi đúng [Quy trình build](../quy-trinh-build.md)
 - Mục bị loại → chuyển sang [Appendix · Không làm](../appendix.md) kèm lý do
 </div>
 

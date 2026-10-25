@@ -21,9 +21,9 @@ flowchart LR
 | Mục | Kiểm |
 |---|---|
 | **API cục bộ** | chỉ nghe `127.0.0.1` (đã có ở `web/src/server/index.ts`) + token ngẫu nhiên mỗi lần mở app · kiểm `Origin` · chặn trang web khác gọi vào (CSRF — trang lạ mượn trình duyệt gọi API; DNS rebinding — trang lạ giả tên miền trỏ về máy mình) |
-| **Key** | `.env.local` (web) · không log key — Keychain cho app Mac ở [Phase 55b](../app/phase-55b-app-only.md) |
+| **Key** | `.env.local` (web) · không log key — Keychain cho app Mac ở [Phase 61](../app/phase-61-app-only.md) |
 | **Chữ cào về** | review, comment, mô tả hiện dạng chữ, không render HTML (chặn XSS — chèn code chạy trên giao diện) · link chỉ `http(s)` |
-| **App Mac** | CSP (luật trình duyệt chỉ cho chạy code của mình) cho WebView Tauri · quyền Tauri tối thiểu → làm ở [Phase 55b](../app/phase-55b-app-only.md), sau khi hết phase Web |
+| **App Mac** | CSP (luật trình duyệt chỉ cho chạy code của mình) cho WebView Tauri · quyền Tauri tối thiểu → làm ở [Phase 61](../app/phase-61-app-only.md), sau khi hết phase Web |
 | **Thư viện** | `npm audit` + Dependabot (bot báo thư viện có lỗ hổng) |
 | **Secret trong repo** | quét secret trong toàn bộ lịch sử git |
 

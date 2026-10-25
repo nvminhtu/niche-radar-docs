@@ -1,19 +1,19 @@
-# Phase 55b · Phần riêng của app Mac (bảo mật, đăng nhập, Pro)
+# Phase 61 · Phần riêng của app Mac (bảo mật, đăng nhập, Pro)
 
 > Gom mọi việc **chỉ app Mac mới có** mà các phase Web 11.1, 40, 44, 49–51 đã tách ra: bản Web làm phần chung trước,
-> app Mac làm phần riêng ở đây — **sau khi hết mọi phase Web** và sau khi app đã gói đủ tính năng (Phase 8 → 31).
+> app Mac làm phần riêng ở đây — **sau khi hết mọi phase Web** và sau khi app đã gói đủ tính năng (Phase 56 → 60).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 31 · khi Web xong hết</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 60 · khi Web xong hết</span>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  W[Web xong hết<br/>Version 1–12] --> P[App đã gói đủ<br/>Phase 8 → 31]
+  W[Web xong hết<br/>Version 1–12] --> P[App đã gói đủ<br/>Phase 56 → 60]
   P --> S[Bảo mật app<br/>CSP · quyền Tauri · Keychain]
   S --> A[Đăng nhập<br/>deep link]
   A --> K[Pro trên app<br/>license key · khôi phục · lượt]
-  K --> C[Phase 37 · 38<br/>CI + release]
+  K --> C[Phase 62 · 38<br/>CI + release]
 ```
 
 ## Làm gì

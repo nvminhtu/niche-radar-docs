@@ -1,15 +1,15 @@
-# Phase 38 · Release + auto-update
+# Phase 63 · Release + auto-update
 
 > Gắn **tag** (nhãn phiên bản như `v5.0.0`) là CI tự ra bản: `.dmg` lên GitHub Releases kèm What's New. App trên máy
 > người dùng tự thấy bản mới và hỏi trước khi cập nhật.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 37</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 62</span>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  T[Gắn tag v*] --> B[Build + ký + notarize<br/>Phase 37]
+  T[Gắn tag v*] --> B[Build + ký + notarize<br/>Phase 62]
   B --> W[What's New<br/>từ commit feat / fix]
   W --> R[GitHub Release<br/>.dmg + file cập nhật]
   R --> U[App lúc mở<br/>kiểm bản mới]
@@ -20,7 +20,7 @@ flowchart LR
 
 | | |
 |---|---|
-| :material-tag: **Tag ra bản** | workflow chạy khi có tag `v*` → dùng lại bước build Phase 37 |
+| :material-tag: **Tag ra bản** | workflow chạy khi có tag `v*` → dùng lại bước build Phase 62 |
 | :material-text-box-outline: **What's New** | sinh từ commit `feat` / `fix` kể từ tag trước |
 | :material-github: **GitHub Release** | tạo Release, đính `.dmg` + What's New + file cập nhật |
 | :material-update: **Tauri updater** | (bộ tự cập nhật của Tauri) app kiểm bản mới lúc mở, hỏi trước khi cập nhật |

@@ -24,9 +24,9 @@ giữ mật khẩu. **Deep link** (đường dẫn mở thẳng vào app) đưa 
 | | |
 |---|---|
 | :material-google: **Google** | đăng nhập Google trên bản Web |
-| :material-apple: **Apple** | đăng nhập Apple trên bản Web (app Mac dùng lại ở [Phase 55b](../app/phase-55b-app-only.md)) |
+| :material-apple: **Apple** | đăng nhập Apple trên bản Web (app Mac dùng lại ở [Phase 61](../app/phase-61-app-only.md)) |
 | :material-email-fast: **Email link** | gõ email → bấm link trong thư là vào, không mật khẩu |
-| :material-link-variant: **Deep link app Mac** | → [Phase 55b](../app/phase-55b-app-only.md), sau khi hết phase Web |
+| :material-link-variant: **Deep link app Mac** | → [Phase 61](../app/phase-61-app-only.md), sau khi hết phase Web |
 | :material-account-switch: **Gắn hồ sơ** | lần đầu đăng nhập: gắn hồ sơ trên máy ([Phase 41](version-8.md)) với tài khoản, không mất dữ liệu cũ |
 | :material-logout: **Đăng xuất** | đăng xuất vẫn dùng được trên máy, project trên máy còn nguyên |
 | :material-file-code: **File** | mới: lớp đăng nhập phía client trong `web/src/lib/` và route kiểm token trong `web/src/server/` (tên chốt ở plan) |

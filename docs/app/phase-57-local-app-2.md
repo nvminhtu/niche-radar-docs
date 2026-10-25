@@ -1,8 +1,8 @@
-# Phase 17 · Local App 2.0
+# Phase 57 · Local App 2.0
 
-> Sau khi **hết mọi phase Web**, đóng gói phần còn lại của Version 1 (Phase 7, 9–11.2, 18) và Version 2 (Phase 12–16) vào **app Mac** một lần — như Phase 8 đã làm cho Phase 1–6.
+> Sau khi **hết mọi phase Web**, đóng gói phần còn lại của Version 1 (Phase 7, 9–11.2, 18) và Version 2 (Phase 12–16) vào **app Mac** một lần — như Phase 56 đã làm cho Phase 1–6.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 8 · khi Web xong hết</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 56 · khi Web xong hết</span>
 
 ## Chạy thế nào
 

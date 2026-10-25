@@ -1,6 +1,6 @@
 # niche-radar — Master Plan
 
-> Cập nhật 2026-10-24 (11 phase + Appendix: 1 Google Play · 2 App Store · 3 Google Trends · 4 Feature Gap Matrix · 5 Verified Sites · 6 AI bản Web · 7 Review + Validate · 8 Local App · 9 Feature Plan · 10 UI/UX · 11 Account + Flow = MVP; sau MVP: 12 YouTube Search · 13 YouTube AI · 14 Amazon Search · 15 Amazon AI · 16 Google Maps AI · 17 Local App 2.0) · Plan gốc của sản phẩm. Plan code chi tiết từng phase ở `docs/superpowers/plans/`.
+> Cập nhật 2026-10-24 (11 phase + Appendix: 1 Google Play · 2 App Store · 3 Google Trends · 4 Feature Gap Matrix · 5 Verified Sites · 6 AI bản Web · 7 Review + Validate · 8 Project + dữ liệu · 9 Feature Plan · 10 UI/UX · 11 Account + Flow = MVP; sau MVP: 12 YouTube Search · 13 YouTube AI · 14 Amazon Search · 15 Amazon AI · 16 Google Maps AI … tới 55; cuối cùng Version 13 App Mac 56–63) · Plan gốc của sản phẩm. Plan code chi tiết từng phase ở `docs/superpowers/plans/`.
 > Bản đọc nhanh có sơ đồ: trang chủ của site tài liệu (`npm run docs`).
 
 ## 0. Một câu
@@ -20,7 +20,7 @@ việc của Idea Lab (repo App-AI-Skills) — chỉ khi Idea Lab qua test mới
 | Giao diện | React (Vite) | **Dùng lại đúng giao diện Web**, bọc bằng Tauri (không Electron) |
 | Lấy dữ liệu | Server Node (Hono) trong máy | Cùng server Node chạy kèm app (sidecar) |
 | Dữ liệu | `data/niche.db` (SQLite) | Cùng định dạng SQLite, nằm trong thư mục app |
-| Khi nào | Mọi phase tính năng (Version 1–12) | **Sau khi hết mọi phase Web**: 8 → 17 → 22b → 27b → 31 → 55b → 37 → 38 (Phase 8 đã code sớm — [Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
+| Khi nào | Mọi phase tính năng (Version 1–12, Phase 1–55) | **Version 13, phase cuối cùng**: 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63 (Phase 56 đã code sớm — [spec Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
 
 Vì App bọc lại Web, mọi tính năng làm ở Web đều có trong App — không viết 2 lần.
 
@@ -52,8 +52,8 @@ v1 nền ─► 1 Google Play ─► 2 App Store ─► 3 Google Trends ─► 4
 
       ─► … Version 2–12 (Phase 12–55, chỉ bản Web) …
 
-App Mac — sau khi hết mọi phase Web:
-      8 Local App ─► 17 ─► 22b ─► 27b ─► 31 App nhẹ ─► 55b Phần riêng app ─► 37 CI ─► 38 Release
+Version 13 · App Mac — phase cuối cùng, sau khi hết mọi phase Web:
+      56 Local App 1.0 ─► 57 ─► 58 ─► 59 ─► 60 App nhẹ ─► 61 Phần riêng app ─► 62 CI ─► 63 Release
       🟡 code sớm
 ```
 
@@ -67,7 +67,7 @@ App Mac — sau khi hết mọi phase Web:
 | **5 — Verified Sites** | ai đang thu tiền thật (TrustMRR + trang tương tự)? | 🟡 TrustMRR bản đầu (trang công khai, chưa API key) · nguồn tương tự chưa kiểm |
 | **6 — Tích hợp AI (bản Web)** | AI đọc review / Reddit / listing — đường nào rẻ / miễn phí chạy được? | ⚪ Có Bước 0 thử 4 tuyến, chưa chắc làm được hết |
 | **7 — Review + Validate** | Phase 1–6 có đạt thật trên niche thật không? niche nào đáng làm, có người trả tiền không? | ⚪ |
-| **8 — Local App** (mục App — làm sau khi hết phase Web, xem cuối §3) | mở bằng double-click? project, xuất/nhập giữa các máy? | 📄 Spec đã duyệt 2026-10-24 — [chi tiết](2026-10-24-niche-radar-phase8-local-app.md) |
+| **8 — Project + dữ liệu** (Web; vỏ app tách sang Phase 56) | project có đánh giá, xuất/nhập giữa các máy, backup? | ✅ Xong 2026-10-25 — `docs/web/phase-8-project-data.md` |
 | **9 — Small Features Update** | tính năng nhỏ nào đáng làm tiếp? | ⚪ |
 | **18 — So sánh niche** (dời lên 2026-10-25) | 2–4 niche cạnh nhau, niche nào đáng chọn? (không AI) | ⚪ Làm ngay sau Phase 9 |
 | **10 — UI / UX Improvement** | chỗ nào dùng còn vướng? | ⚪ |
@@ -78,7 +78,6 @@ App Mac — sau khi hết mọi phase Web:
 | **14 — Amazon Search** | tìm gì trên Amazon, top bán chạy, giá, độ đông? (không AI) | ⚪ |
 | **15 — Amazon Research (AI)** | người mua chê gì, ước gì, chỗ app làm tốt hơn? | ⚪ |
 | **16 — Google Maps Research (AI)** | cửa hàng địa phương than gì, việc nào app làm thay được? | ⚪ |
-| **17 — Local App 2.0** (mục App — sau khi hết phase Web) | gói phần còn lại Version 1 + Phase 12–16 vào app Mac | ⚪ |
 | Appendix | việc không làm | — |
 
 Mỗi phase đi đúng 6 bước: 📄 Spec → 🗺️ Plan + 🎨 Mockup → 🔨 Implement → 🔁 Update plan & Implement → 📦 Build → ✅ Test.
@@ -226,7 +225,7 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 
 ### Phase 18 — So sánh niche (không AI) · dời lên sau Phase 9 (2026-10-25)
 
-- **Vì sao dời:** chỉ đọc DB, chạy được với dữ liệu Phase 1–9; chọn giữa vài niche là câu hỏi chính, không chờ nguồn mới. Nhóm Nguồn mới ghi "chưa tra" tới Phase 12–16. App Mac gói ở Phase 17 (mục App).
+- **Vì sao dời:** chỉ đọc DB, chạy được với dữ liệu Phase 1–9; chọn giữa vài niche là câu hỏi chính, không chờ nguồn mới. Nhóm Nguồn mới ghi "chưa tra" tới Phase 12–16. App Mac gói ở Phase 57 (mục App).
 
 - **Làm:** chọn 2–4 niche đã tra → bảng mỗi niche 1 cột, nhóm Cơ hội · Đối thủ · Xu hướng · Đau · Tiền · Nguồn mới → tô ô thắng theo luật cố định ghi trên UI · ô thiếu ghi "chưa tra" · xuất CSV + Markdown.
 - **Xong khi:** 3 niche thật đủ nhóm · kiểm tay 10 ô khớp màn chi tiết · đọc được ở 1340px.
@@ -252,7 +251,7 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 ---
 
 **Vạch MVP.** Phase 1–11 + 18 là MVP. Từ Phase 12: mỗi nguồn mới một phase **cào số (không AI)** rồi một phase **AI đọc chữ**
-(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 17 ở mục App, sau khi hết mọi phase Web.
+(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 57 ở mục App, sau khi hết mọi phase Web.
 Luật cào chung: gọi thưa, cache, bị chặn thì dừng nguồn đó và báo — **không vượt captcha, không proxy xoay, không cào
 trang cần đăng nhập bằng script**.
 
@@ -323,7 +322,7 @@ web khi trả lời · so theo thời gian (theo dõi định kỳ, Phase 9) · 
 
 ### Phase 22 — Review Version 3
 
-- **Làm:** 3 lần chọn niche thật ở bản Web (bấm giờ) → sửa lỗi. Gói vào app Mac → Phase 22b (mục App).
+- **Làm:** 3 lần chọn niche thật ở bản Web (bấm giờ) → sửa lỗi. Gói vào app Mac → Phase 58 (mục App).
 - **Xong khi:** ≥ 2/3 lần ≤ 30 phút · test xanh.
 - Chi tiết: `docs/phase-22-local-app-3.md`.
 
@@ -363,7 +362,7 @@ Chi tiết: `docs/version-4.md`.
 
 ### Phase 27 — Review Version 4
 
-- **Làm:** 3 lần chọn niche thật có kệ Google + kệ AI → sửa lỗi. Gói vào app Mac → Phase 27b (mục App).
+- **Làm:** 3 lần chọn niche thật có kệ Google + kệ AI → sửa lỗi. Gói vào app Mac → Phase 59 (mục App).
 - **Xong khi:** 3 lần chọn có gói GEO chạy mốc, dưới trần · test xanh.
 - Chi tiết: `docs/phase-27-local-app-4.md`.
 
@@ -371,9 +370,9 @@ Chi tiết: `docs/version-4.md`.
 
 **Version 5–12 · thành sản phẩm bán được.** Mỗi version một trang `docs/version-N.md`, phase nằm trong trang.
 
-### Version 5 — Performance (Phase 28–31)
+### Version 5 — Performance (Phase 28–30)
 
-- Đo mốc (`npm run bench`, 3 niche chuẩn) → collector song song theo nguồn + stream + cache dùng chung + chạy tiếp khi lỗi → virtualize bảng, lazy load, index SQLite, WAL. App Mac nhẹ → Phase 31 (mục App). **Không:** tính năng mới · vượt giới hạn nguồn · viết lại bằng Rust · server cloud.
+- Đo mốc (`npm run bench`, 3 niche chuẩn) → collector song song theo nguồn + stream + cache dùng chung + chạy tiếp khi lỗi → virtualize bảng, lazy load, index SQLite, WAL. App Mac nhẹ → Phase 60 (mục App). **Không:** tính năng mới · vượt giới hạn nguồn · viết lại bằng Rust · server cloud.
 - Chi tiết: `docs/version-5.md`.
 
 ### Version 6 — Automation Test + Review Results (Phase 32–35)
@@ -383,7 +382,7 @@ Chi tiết: `docs/version-4.md`.
 
 ### Version 7 — CI/CD (Phase 36–39)
 
-- GitHub Actions cho PR (lint, type, test, E2E fixture, docs strict) → bảo vệ `main`. Build app trên CI + release + auto-update → Phase 37–38 (mục App). **Không:** Windows · Mac App Store · deploy Web · canary trên CI · auto-merge.
+- GitHub Actions cho PR (lint, type, test, E2E fixture, docs strict) → bảo vệ `main`. Build app trên CI + release + auto-update → Phase 62–38 (mục App). **Không:** Windows · Mac App Store · deploy Web · canary trên CI · auto-merge.
 - Chi tiết: `docs/version-7.md`.
 
 ### Version 8 — Security & Account & Refactor Code (Phase 40–43)
@@ -398,7 +397,7 @@ Chi tiết: `docs/version-4.md`.
 
 ### Version 10 — Sell Pro — Lifetime / Subscriptions (Phase 48–51)
 
-- `money.md` qua `/app-money` (giá đối thủ có nguồn + chi phí AI đo thật + phễu GA4) → Lemon Squeezy + webhook Cloud Functions → quyền Pro (license key kích hoạt trong app → Phase 55b) → paywall, dùng thử, khôi phục, giới hạn máy → BYOK hay gói lượt AI có trần. Thước đo: 1 đơn thật có nguồn. **Không:** Mac App Store IAP · tự xử lý thẻ · gói team · crypto.
+- `money.md` qua `/app-money` (giá đối thủ có nguồn + chi phí AI đo thật + phễu GA4) → Lemon Squeezy + webhook Cloud Functions → quyền Pro (license key kích hoạt trong app → Phase 61) → paywall, dùng thử, khôi phục, giới hạn máy → BYOK hay gói lượt AI có trần. Thước đo: 1 đơn thật có nguồn. **Không:** Mac App Store IAP · tự xử lý thẻ · gói team · crypto.
 - Chi tiết: `docs/version-10.md`.
 
 ### Version 11 — Marketing Plan (Phase 52–55)
@@ -408,15 +407,15 @@ Chi tiết: `docs/version-4.md`.
 
 ### Version 12 — New Features — Just Planned
 
-- Chỉ lên plan: danh sách ứng viên (Product Brief Export — chỉ khi bán cho người ngoài, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 56.
+- Chỉ lên plan: danh sách ứng viên (Product Brief Export — chỉ khi bán cho người ngoài, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 64 (56–63 là App Mac).
 - Chi tiết: `docs/version-12.md`.
 
-### App Mac — sau khi hết mọi phase tính năng (Web Version 1–12)
+### Version 13 — App Mac (Phase 56–63) — phase cuối cùng
 
 App bọc lại đúng giao diện Web (Tauri), nên chỉ gói **một lần** khi bản Web đã chín. Phase Web chỉ làm phần Web;
-phần riêng của app gom ở Phase 55b. Thứ tự: **8 → 17 → 22b → 27b → 31 → 55b → 37 → 38**. Chi tiết: `docs/app/index.md`.
+phần riêng của app gom ở Phase 61. Thứ tự: **56 → 57 → 58 → 59 → 60 → 61 → 62 → 63**. Chi tiết: `docs/app/index.md`.
 
-#### Phase 8 — Local App (code xong sớm 2026-10-25, thử máy mới khi tới lượt App)
+#### Phase 56 — Local App 1.0 (trước là phần app của Phase 8; code xong sớm 2026-10-25, thử máy mới khi tới lượt App)
 
 - **Mục tiêu:** đóng gói Phase 1–6 thành app Mac bấm là mở; project; xuất/nhập giữa các máy.
 - **Làm:** Tauri (lõi Rust) + đúng UI React + server Node chạy kèm (sidecar) · ULID · `schema_version` · `NR_DATA_DIR` ·
@@ -426,37 +425,37 @@ phần riêng của app gom ở Phase 55b. Thứ tự: **8 → 17 → 22b → 27
 - **Xong khi:** mở `.dmg` trên tài khoản macOS mới chưa có Node → tra được 1 keyword, Gatekeeper không cảnh báo · mở ≤ 5 giây ·
   xuất → nhập project bằng nhau, nhập lại không nhân đôi · backup → restore đủ · DB thật lên ULID không mất dòng · test xanh,
   web `npm run dev` vẫn chạy (đủ 6 mục ở spec §2).
-- Chi tiết: [spec Phase 8](2026-10-24-niche-radar-phase8-local-app.md) · `docs/phase-8-local-app.md`.
+- Chi tiết: [spec Phase 8](2026-10-24-niche-radar-phase8-local-app.md) · `docs/app/phase-56-local-app-1.md`.
 
-#### Phase 17 — Local App 2.0
+#### Phase 57 — Local App 2.0
 
 - **Làm:** gói phần còn lại Version 1 (7, 9–11.2, 18) + Phase 12–16 → gói collector mới vào sidecar → migration DB (bảng mới ULID) → key trong Keychain → nút job Claude in Chrome → `.dmg` ký + notarize.
 - **Xong khi:** app 1.x có dữ liệu → cài 2.0 không mất dòng · tra 1 niche ra đủ khối YouTube + Amazon + Maps · mở ≤ 5 giây.
-- Chi tiết: `docs/phase-17-local-app-2.md`.
+- Chi tiết: `docs/phase-57-local-app-2.md`.
 
 
-#### Phase 22b — Local App 3.0
+#### Phase 58 — Local App 3.0
 
 - **Làm:** gói Phase 19–21 vào app → migration DB (bộ so sánh, lịch sử hỏi, kết quả kiểm, ULID) → `.dmg` 3.0 ký + notarize.
-- **Xong khi:** 2.x → 3.0 không mất dòng · test xanh, bản Web vẫn chạy. Chi tiết: `docs/app/phase-22b-local-app-3.md`.
+- **Xong khi:** 2.x → 3.0 không mất dòng · test xanh, bản Web vẫn chạy. Chi tiết: `docs/app/phase-58-local-app-3.md`.
 
-#### Phase 27b — Local App 4.0
+#### Phase 59 — Local App 4.0
 
 - **Làm:** gói Phase 23–26 (key trong Keychain, engine `codex`/`claude` có thì dùng) → migration DB → `.dmg` 4.0.
-- **Xong khi:** 3.x → 4.0 không mất dòng · test xanh. Chi tiết: `docs/app/phase-27b-local-app-4.md`.
+- **Xong khi:** 3.x → 4.0 không mất dòng · test xanh. Chi tiết: `docs/app/phase-59-local-app-4.md`.
 
-#### Phase 31 — App Mac nhẹ
+#### Phase 60 — App Mac nhẹ
 
-- Mở ≤ 3 giây, ít RAM khi rảnh, sidecar + `.dmg` nhỏ hơn — đo so với mốc Phase 28. Chi tiết: `docs/app/phase-31-light-mac-app.md`.
+- Mở ≤ 3 giây, ít RAM khi rảnh, sidecar + `.dmg` nhỏ hơn — đo so với mốc Phase 28. Chi tiết: `docs/app/phase-60-light-mac-app.md`.
 
-#### Phase 55b — Phần riêng của app Mac
+#### Phase 61 — Phần riêng của app Mac
 
 - **Làm:** setup trong app (11.1) · CSP + quyền Tauri + key trong Keychain (40) · đăng nhập qua deep link (44) · license key + checkout từ app (49) · khôi phục mua (50) · BYOK Keychain + lượt AI còn lại (51).
-- **Xong khi:** license key test kích hoạt được không đăng nhập · deep link quay lại đúng app · phiếu bảo mật app qua. Chi tiết: `docs/app/phase-55b-app-only.md`.
+- **Xong khi:** license key test kích hoạt được không đăng nhập · deep link quay lại đúng app · phiếu bảo mật app qua. Chi tiết: `docs/app/phase-61-app-only.md`.
 
-#### Phase 37 — Build app Mac trên CI · Phase 38 — Release + auto-update
+#### Phase 62 — Build app Mac trên CI · Phase 63 — Release + auto-update
 
-- Runner macOS build + ký + notarize bằng secret anh nhập → tag → GitHub Releases + What's New + Tauri updater. Chi tiết: `docs/app/phase-37-mac-build-ci.md`, `docs/app/phase-38-release-auto-update.md`.
+- Runner macOS build + ký + notarize bằng secret anh nhập → tag → GitHub Releases + What's New + Tauri updater. Chi tiết: `docs/app/phase-62-mac-build-ci.md`, `docs/app/phase-63-release-auto-update.md`.
 
 ### Appendix — chưa xếp phase / không làm
 
@@ -482,7 +481,7 @@ Xem §7 (mục chưa xếp cũ đã chuyển vào Phase 8, 9, 11).
 | Nguồn | `google-play-scraper` · iTunes Search API · Google autocomplete · `google-trends-api` · Reddit OAuth · TrustMRR (Phase 5) |
 | Test | Vitest (115 test) + `npm run smoke` gọi thật |
 | Tài liệu | MkDocs Material |
-| App Mac (Phase 8) | Tauri (lõi Rust) + server Node chạy kèm |
+| App Mac (Phase 56) | Tauri (lõi Rust) + server Node chạy kèm |
 | AI | Phase 1–3, 5 không dùng · Phase 4 tuỳ chọn (Feature Gap Matrix) · Phase 6 lớp AI chung — thử API key, extension miễn phí, AI trong trình duyệt, model trên máy; tắt mặc định |
 
 ## 6. Hạn chế và giới hạn miễn phí

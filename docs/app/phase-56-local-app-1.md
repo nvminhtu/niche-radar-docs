@@ -1,7 +1,7 @@
-# Phase 8 · Local App (macOS trước)
+# Phase 56 · Local App 1.0 (app Mac)
 
-> Đóng gói **Phase 1–6** thành **app Mac bấm là mở** — không cần Node, không gõ lệnh; gom tra cứu thành project,
-> xuất / nhập được giữa các máy.
+> Đóng gói bản Web thành **app Mac bấm là mở** — không cần Node, không gõ lệnh. Trước là phần app của Phase 8; phần
+> Project + xuất / nhập + backup ở lại Web: [Phase 8](../web/phase-8-project-data.md). Thuộc Version 13, làm sau khi hết phase Web.
 
 <span class="chip chip--doing">Code xong sớm 2026-10-25 · thử máy mới để sau khi Web xong hết</span>
 
@@ -31,9 +31,7 @@ flowchart LR
 | | |
 |---|---|
 | :material-apple: **App Mac** | Tauri + sidecar Node, `.dmg` ký + notarize |
-| :material-folder-multiple: **Project** | gom run / explore thành project, ghi chú + kết luận |
-| :material-database-sync: **Dữ liệu chuyển máy được** | khoá ULID (nhập file không đụng nhau), `schema_version`, `NR_DATA_DIR` |
-| :material-export: **Xuất / nhập** | gói project `.json` · CSV từng bảng · báo cáo `.md` · backup / restore cả DB |
+| :material-database: **Dữ liệu** | dùng chung định dạng Phase 8, nằm ở `~/Library/Application Support/niche-radar/` |
 
 <div class="box box--star" markdown>
 **Xong khi**
@@ -62,4 +60,4 @@ flowchart LR
 - Dữ liệu app Mac: `~/Library/Application Support/niche-radar/` (bản web vẫn ở `data/`)
 - Còn lại: anh thử `.dmg` trên một tài khoản macOS mới chưa cài Node
 
-[Spec đầy đủ Phase 8 · Local App](../superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md)
+[Spec gốc Phase 8 · Local App](../superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md)

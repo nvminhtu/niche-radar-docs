@@ -23,20 +23,20 @@ tệ đi quá 10%. Explore 100 keyword hiện mất ~6 phút: mục tiêu ghi sa
 flowchart LR
   B[Phase 28<br/>Đo mốc] --> C[Phase 29<br/>Collector song song<br/>+ cache]
   B --> U[Phase 30<br/>UI + DB nhanh]
-  B --> A[Phase 31<br/>App Mac nhẹ]
+  B --> A[Phase 60<br/>App Mac nhẹ]
   C & U & A --> R[Đo lại<br/>so với mốc]
 ```
 
 ## Các phase
 
-> Phase 31 nằm ở mục **App** — chỉ làm khi hết phase Web. Version 5 bản Web xong ở Phase 30.
+> Phase 60 nằm ở mục **App** — chỉ làm khi hết phase Web. Version 5 bản Web xong ở Phase 30.
 
 | Phase | Làm gì |
 |---|---|
 | [28 · Đo mốc](phase-28-benchmark.md) | script đo thời gian từng luồng, RAM, dung lượng; bảng mốc lưu trong repo |
 | [29 · Collector nhanh hơn](phase-29-fast-collector.md) | chạy các nguồn song song (mỗi nguồn giữ giới hạn riêng), đẩy kết quả dần, cache dùng chung giữa niche, chạy tiếp khi lỗi giữa chừng |
 | [30 · UI + DB nhanh](phase-30-fast-ui-db.md) | bảng lớn chỉ vẽ phần đang thấy, tách code theo trang, index SQLite, API trả từng trang |
-| [31 · App Mac nhẹ](../app/phase-31-light-mac-app.md) | thời gian mở, RAM khi rảnh, dung lượng sidecar Node, `.dmg` |
+| [31 · App Mac nhẹ](../app/phase-60-light-mac-app.md) | thời gian mở, RAM khi rảnh, dung lượng sidecar Node, `.dmg` |
 
 ## Phase 28 · Đo mốc
 
@@ -59,7 +59,7 @@ flowchart LR
   các query chậm nhất ở Phase 28 · bật WAL · API danh sách trả từng trang.
 - **Xong khi:** bảng 1.000 keyword cuộn mượt · mở trang niche ≤ 1 giây với DB có 50 niche · bundle trang chủ nhỏ hơn mốc.
 
-## Phase 31 · App Mac nhẹ
+## Phase 60 · App Mac nhẹ
 
 - **Làm:** đo lại thời gian mở + RAM khi rảnh trên app thật · gói sidecar Node gọn hơn (bỏ dependency chỉ dùng lúc dev) ·
   server tự ngủ khi không tra gì.
@@ -78,7 +78,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 - **Tính năng mới**
 - **Gọi nguồn nhanh hơn giới hạn**, proxy xoay, nhiều IP
-- **Viết lại collector bằng Rust** (chỉ xét khi Phase 31 đo ra Node là nút cổ chai)
+- **Viết lại collector bằng Rust** (chỉ xét khi Phase 60 đo ra Node là nút cổ chai)
 - **Server cloud / hàng đợi trên mạng** để chạy nhanh hơn
 - **Tối ưu chỗ không đo được** chậm
 </div>

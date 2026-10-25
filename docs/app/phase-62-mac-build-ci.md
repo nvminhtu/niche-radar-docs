@@ -1,9 +1,9 @@
-# Phase 37 · Build app Mac trên CI
+# Phase 62 · Build app Mac trên CI
 
 > Bản `.dmg` không build trên máy anh nữa mà trên **runner macOS** (máy Mac ảo của GitHub). CI tự ký bằng chứng chỉ của
 > anh và gửi Apple **notarize** (Apple soát + đóng dấu), để file tải về mở được ngay.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 55b · cần CI Web (Phase 36)</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 61 · cần CI Web (Phase 36)</span>
 
 ## Chạy thế nào
 
@@ -45,7 +45,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tạo GitHub Release, What's New, auto-update (Phase 38)
+- Tạo GitHub Release, What's New, auto-update (Phase 63)
 - Mac App Store
 - Bản Windows / Linux
 - Claude tạo chứng chỉ hoặc nhập secret thay anh

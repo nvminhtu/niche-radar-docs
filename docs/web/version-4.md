@@ -44,7 +44,7 @@ flowchart TB
 | [24 · Kệ AI (GEO / AEO)](phase-24-ai-shelf.md) | hỏi Gemini / ChatGPT / Claude như người dùng, đếm app được nhắc + trang được trích | có (là nguồn) |
 | [25 · Chỗ trống AI + SEO](phase-25-ai-seo-gap.md) | điểm "kệ yếu" theo công thức, thêm cột vào so sánh niche Phase 18 | không |
 | [26 · Gói GEO + trang cần viết](phase-26-geo-pack.md) | xuất bộ câu hỏi + regex đối thủ cho `geo.py`, danh sách trang cần viết | AI Cite (Phase 20) |
-| [27 · Review + Local App 4.0](phase-27-review-4.md) | chọn niche thật 3 lần có kệ Google + kệ AI (gói app Mac → Phase 27b, [mục App](../app/index.md)) | không |
+| [27 · Review + Local App 4.0](phase-27-review-4.md) | chọn niche thật 3 lần có kệ Google + kệ AI (gói app Mac → Phase 59, [mục App](../app/index.md)) | không |
 
 Thứ tự: 23 (không AI, rẻ) → 24 (tốn tiền theo lượt, có trần) → 25 chấm điểm → 26 nối sang App-AI-Skills → 27 gói app.
 Vẫn **bản Web trước**.

@@ -21,20 +21,20 @@ flowchart LR
   PR[Pull request] --> CI[Phase 36<br/>CI: lint · type · test ·<br/>E2E · docs]
   CI -->|xanh| M[Merge main]
   M --> T[Gắn tag vX.Y.Z]
-  T --> B[Phase 37<br/>Build + ký + notarize<br/>macOS runner]
-  B --> R[Phase 38<br/>GitHub Releases<br/>+ auto-update]
+  T --> B[Phase 62<br/>Build + ký + notarize<br/>macOS runner]
+  B --> R[Phase 63<br/>GitHub Releases<br/>+ auto-update]
   R --> U[App máy người dùng<br/>tự cập nhật]
 ```
 
 ## Các phase
 
-> Phase 37–38 nằm ở mục **App** — chỉ làm khi hết phase Web. Version 7 bản Web gồm Phase 36 và 39.
+> Phase 62–38 nằm ở mục **App** — chỉ làm khi hết phase Web. Version 7 bản Web gồm Phase 36 và 39.
 
 | Phase | Làm gì |
 |---|---|
 | [36 · CI cho pull request](phase-36-ci-pull-request.md) | GitHub Actions: lint, typecheck, test, E2E (fixture), `docs:build --strict`, chặn merge khi đỏ |
-| [37 · Build app Mac trên CI](../app/phase-37-mac-build-ci.md) | runner macOS build Tauri + sidecar, ký Developer ID, notarize bằng secret |
-| [38 · Release + auto-update](../app/phase-38-release-auto-update.md) | tag → `.dmg` lên Releases, What's New từ commit, Tauri updater |
+| [37 · Build app Mac trên CI](../app/phase-62-mac-build-ci.md) | runner macOS build Tauri + sidecar, ký Developer ID, notarize bằng secret |
+| [38 · Release + auto-update](../app/phase-63-release-auto-update.md) | tag → `.dmg` lên Releases, What's New từ commit, Tauri updater |
 | [39 · Quy trình nhánh](phase-39-branch-flow.md) | `main` có bảo vệ, mỗi phase một nhánh + PR, ghi cách làm vào Quy trình build |
 
 ## Phase 36 · CI cho pull request
@@ -43,13 +43,13 @@ flowchart LR
   trên fixture · `docs:build --strict` · ảnh chụp E2E lỗi đính kèm vào kết quả.
 - **Xong khi:** PR cố tình làm đỏ 1 test → CI đỏ, không merge được · PR xanh chạy ≤ 10 phút.
 
-## Phase 37 · Build app Mac trên CI
+## Phase 62 · Build app Mac trên CI
 
 - **Làm:** workflow build trên runner macOS · chứng chỉ Developer ID + mật khẩu notarize lưu ở **GitHub Secrets**
   (anh tự nhập, Claude không đụng) · ký + notarize + staple.
 - **Xong khi:** `.dmg` tải từ CI mở trên máy sạch không bị Gatekeeper chặn.
 
-## Phase 38 · Release + auto-update
+## Phase 63 · Release + auto-update
 
 - **Làm:** gắn tag `v*` → build → tạo GitHub Release, đính `.dmg` + What's New sinh từ commit `feat` / `fix` ·
   Tauri updater: app kiểm bản mới lúc mở, hỏi trước khi cập nhật, file cập nhật có chữ ký.

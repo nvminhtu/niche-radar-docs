@@ -27,7 +27,7 @@ bán trước của [Phase 7](phase-7-review-validate.md) — số thật của 
 | **Điểm v2 thêm 2 trục** | **Tiếp cận khách** (có kênh nào gom người dùng: cộng đồng, video, trang đang lên top) và **Hợp sức mình** (làm một mình ≤ 4 tuần được không, cần backend không) · **trọng số mẫu** cho Mac / iOS / Android / SaaS · mỗi điểm có **1 dòng lý do** kèm nguồn | Điểm v2 [Phase 7](phase-7-review-validate.md) |
 | **Mức nặng chủ đề than** | không chỉ đếm số lần: mất dữ liệu · trả tiền mà không dùng được nặng hơn quảng cáo · giao diện. Xếp chủ đề theo số lần × mức nặng | Chủ đề than [Phase 6](phase-6-ai-web.md) |
 | **Nhãn mô hình tiền** | mỗi đối thủ gắn subscription · lifetime · IAP lẻ · quảng cáo · **chưa biết**; niche hiện tỷ lệ từng loại. Không lấy lượt tải thay cho doanh thu | Cột Tiền [Phase 2](phase-2-app-store.md) |
-| **Theo dõi định kỳ** (kéo lên từ danh sách dưới) | chụp lại số của project sau 7 / 30 / 90 ngày: đối thủ mới, rating, giá, keyword, Trends — so với lần trước, ghi cạnh kết luận đang xem / ứng viên / loại | Project ([Phase 8](../app/phase-8-local-app.md)) |
+| **Theo dõi định kỳ** (kéo lên từ danh sách dưới) | chụp lại số của project sau 7 / 30 / 90 ngày: đối thủ mới, rating, giá, keyword, Trends — so với lần trước, ghi cạnh kết luận đang xem / ứng viên / loại | Project ([Phase 8](phase-8-project-data.md)) |
 
 Không thêm lại **Reddit** làm nguồn than (đã bỏ 2026-10-24). Comment YouTube ở [Phase 13](phase-13-youtube-ai.md).
 

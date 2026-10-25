@@ -35,11 +35,11 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
-### :material-apple: 2 · App Mac — sau khi Web xong
+### :material-apple: 2 · App Mac — Version 13, phase cuối cùng
 
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần · code ở `app/`
-- Gói một lần cho bản Web đã chín, **sau mọi phase tính năng**: Phase 8 → 17 → 22b → 27b → 31 → 55b → 37 → 38
-- <span class="chip chip--todo">Chờ Web xong · Phase 8 đã có .dmg từ trước</span>
+- Gói một lần cho bản Web đã chín, **sau mọi phase tính năng**: Phase 56 → 57 → 58 → 59 → 60 → 61 → 62 → 63
+- <span class="chip chip--todo">Chờ Web xong · Phase 56 đã có .dmg từ trước</span>
 - [Mở lộ trình App →](app/index.md)
 </div>
 </div>
@@ -65,7 +65,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 
 | Mục | Version | Nội dung | Phase | Trạng thái |
 |---|---|---|---|---|
-| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate, UI, tài khoản, setup, tutorial | 1–7, 9, 18, 10–11.2 | <span class="chip chip--doing">Đang làm</span> |
+| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate, UI, tài khoản, setup, tutorial | 1–9, 18, 10–11.2 | <span class="chip chip--doing">Đang làm</span> |
 | Web | 2 | Nguồn mới + AI: YouTube, Amazon, Google Maps | 12–16 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 3 | So sánh đối thủ + AI Cite (so sánh niche dời lên V1) | 19–22 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 4 | Kệ Google, kệ AI, gói GEO | 23–27 | <span class="chip chip--todo">Chưa làm</span> |
@@ -77,7 +77,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 | Web | 10 | Bán Pro: lifetime / subscription | 48–51 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 52–55 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
-| App | — | Local App 1.0 → 4.0, app nhẹ, build trên CI, auto-update | 8, 17, 22b, 27b, 31, 55b, 37, 38 | <span class="chip chip--todo">Chờ Web xong</span> |
+| App | 13 · cuối cùng | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 56–63 | <span class="chip chip--todo">Chờ Web xong</span> |
 
 Việc chưa xếp phase hoặc không làm: [Appendix](appendix.md). Mỗi phase đi theo [Quy trình build](quy-trinh-build.md).
 
