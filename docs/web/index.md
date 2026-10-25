@@ -77,7 +77,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <div class="step" markdown>
 <span class="step__n">9</span>
 <div class="step__body">
-<h3>Small Features Update <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Small Features Update <span class="chip chip--done">4 mục ưu tiên xong 2026-10-25</span></h3>
 <p>Các tính năng nhỏ lượm được khi dùng thật, mỗi cái một plan ngắn. Ưu tiên: điểm v2 thêm trục Tiếp cận + Hợp sức mình, mức nặng chủ đề than, nhãn mô hình tiền, theo dõi định kỳ.</p>
 <a class="go" href="phase-9-small-features/">Xem chi tiết →</a>
 </div>

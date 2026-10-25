@@ -68,7 +68,7 @@ Version 13 · App Mac — phase cuối cùng, sau khi hết mọi phase Web:
 | **6 — Tích hợp AI (bản Web)** | AI đọc review / Reddit / listing — đường nào rẻ / miễn phí chạy được? | ⚪ Có Bước 0 thử 4 tuyến, chưa chắc làm được hết |
 | **7 — Review + Validate** | Phase 1–6 có đạt thật trên niche thật không? niche nào đáng làm, có người trả tiền không? | ⚪ |
 | **8 — Project + dữ liệu** (Web; vỏ app tách sang Phase 56) | project có đánh giá, xuất/nhập giữa các máy, backup? | ✅ Xong 2026-10-25 — `docs/web/phase-8-project-data.md` |
-| **9 — Small Features Update** | tính năng nhỏ nào đáng làm tiếp? | ⚪ |
+| **9 — Small Features Update** | tính năng nhỏ nào đáng làm tiếp? | ✅ 4 mục ưu tiên xong 2026-10-25 — `docs/web/phase-9-small-features.md` · ứng viên khác chưa chốt |
 | **18 — So sánh niche** (dời lên 2026-10-25) | 2–4 niche cạnh nhau, niche nào đáng chọn? (không AI) | ⚪ Làm ngay sau Phase 9 |
 | **10 — UI / UX Improvement** | chỗ nào dùng còn vướng? | ⚪ |
 | **11 — Account + Flow** | người khác dùng được không cần hỏi? góp ý vào đâu? | ⚪ Xét lại trước khi code (cần người dùng ngoài) |
@@ -213,7 +213,8 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 ### Phase 9 — Small Features Update
 
 - **Mục tiêu:** làm các tính năng nhỏ lượm được khi dùng thật, mỗi cái một plan ngắn.
-- **Ứng viên ưu tiên (review 2026-10-25, làm sau vòng test bán trước Phase 7):** điểm v2 thêm trục **Tiếp cận khách** +
+- **Trạng thái:** 4 mục ưu tiên xong 2026-10-25 (anh chốt làm luôn, không đợi test bán trước) · ứng viên khác chưa chốt.
+- **Ứng viên ưu tiên (review 2026-10-25):** điểm v2 thêm trục **Tiếp cận khách** +
   **Hợp sức mình**, trọng số mẫu Mac / iOS / Android / SaaS, 1 dòng lý do mỗi điểm · **mức nặng** chủ đề than ·
   **nhãn mô hình tiền** (subscription / lifetime / IAP / quảng cáo / chưa biết) · **theo dõi định kỳ** 7 / 30 / 90 ngày cho project.
   Không thêm lại Reddit.
