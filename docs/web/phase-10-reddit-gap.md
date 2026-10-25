@@ -4,7 +4,7 @@
 > xin app · tìm thay thế) và **chủ đề** (Bluetooth, pin, Finder, quản lý cửa sổ…) → đếm chủ đề nào **hỏi nhiều nhất,
 > được quan tâm nhất, chưa ai giải** → bảng gap kèm link bài gốc.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25 · chen trước Phase 12</span>
+<span class="chip chip--todo">Chưa làm · plan 2026-10-25 · bước 0 qua một nửa · nguồn khác ngoài Reddit: Phase 11</span>
 
 <div class="box box--goal" markdown>
 **Vì sao làm, vì sao gấp.** Review store (Phase 1–4) chỉ cho biết người ta than app **đã có**. Reddit hỏi đáp cho biết

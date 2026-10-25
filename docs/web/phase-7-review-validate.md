@@ -5,6 +5,11 @@
 
 <span class="chip chip--doing">Code xong 2026-10-24 · vòng test bán trước chờ anh chạy + nhập số thật</span>
 
+<div class="nr-review-stop" markdown>
+**⏸ REVIEW PHASE — dừng lại soát.** Đối chiếu "Xong khi" của các phase trước trên niche thật, sửa lỗi xong
+mới làm tiếp phase sau.
+</div>
+
 ## Kết quả soát (2026-10-24)
 
 | Phase | Soát | Kết quả |

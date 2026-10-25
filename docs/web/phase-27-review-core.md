@@ -5,6 +5,11 @@
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
 
+<div class="nr-review-stop" markdown>
+**⏸ REVIEW PHASE — dừng lại soát.** Đối chiếu "Xong khi" của các phase trước trên niche thật, sửa lỗi xong
+mới làm tiếp phase sau.
+</div>
+
 ## Làm gì
 
 | | |
