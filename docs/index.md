@@ -32,7 +32,7 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
 - Version 1 → 9: nguồn dữ liệu, AI, so sánh, SEO / GEO, tốc độ, test, CI, bảo mật, tài khoản
 - Sau App Mac: Version 10 → 12 — bán Pro, marketing, tính năng mới
-- <span class="chip chip--doing">Đang làm · Phase 7 · tiếp theo 10 Reddit Gap → 11 Research nguồn gap → 12–27</span>
+- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 11 Research nguồn gap xong 2026-10-26 (chờ duyệt top 3) → 12–27</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>

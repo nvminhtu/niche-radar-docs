@@ -38,47 +38,48 @@
 ## Tasks
 
 ### Task 1: Khung trang + thang chấm
-- [ ] Tạo `gap-sources-map.md`: thang 6 tiêu chí, luật kết luận, bảng tóm tắt (Nguồn · Nhóm · Tín hiệu · Lấy được ·
+- [x] Tạo `gap-sources-map.md`: thang 6 tiêu chí, luật kết luận, bảng tóm tắt (Nguồn · Nhóm · Tín hiệu · Lấy được ·
       Chi phí · Điều khoản · Hợp app · Kết luận · Ngày kiểm), mục chi tiết 1 cột.
-- [ ] Nối nav + link từ trang Phase 11. `npm run docs:build` xanh.
+- [x] Nối nav + link từ trang Phase 11. `npm run docs:build` xanh.
 
 ### Task 2: Kiểm ≥ 30 nguồn
-- [ ] Tìm kiếm / xu hướng: Pinterest Trends, TikTok Creative Center, Google Autocomplete + People also ask, YouTube /
+- [x] Tìm kiếm / xu hướng: Pinterest Trends, TikTok Creative Center, Google Autocomplete + People also ask, YouTube /
       Amazon suggest, Exploding Topics, Glimpse, AnswerThePublic.
-- [ ] Cộng đồng: Apple Community, Ask Different, Super User, Hacker News (Ask HN), Indie Hackers, Product Hunt, Quora,
+- [x] Cộng đồng: Apple Community, Ask Different, Super User, Hacker News (Ask HN), Indie Hackers, Product Hunt, Quora,
       Discord, X search, nhóm Facebook.
-- [ ] Chợ app / review: Mac App Store, Setapp, Raycast Store, Chrome Web Store, VS Code Marketplace, WordPress plugins,
+- [x] Chợ app / review: Mac App Store, Setapp, Raycast Store, Chrome Web Store, VS Code Marketplace, WordPress plugins,
       Shopify App Store, Figma Community, AlternativeTo, G2, Capterra, Trustpilot.
-- [ ] Bằng chứng tiền: TrustMRR (đã có), Acquire.com, Flippa, Indie Hackers products, Starter Story, Gumroad, Etsy,
+- [x] Bằng chứng tiền: TrustMRR (đã có), Acquire.com, Flippa, Indie Hackers products, Starter Story, Gumroad, Etsy,
       marketplace template Notion / Excel.
-- [ ] Yêu cầu tính năng: GitHub issues (feature request, 👍), Canny / Featurebase công khai, Upwork / Fiverr.
-- [ ] Dữ liệu của mình: Search Console oneclicktool.app (`/fix`) qua MCP đã nối — chỉ đọc.
-- [ ] Mỗi nguồn: mở thật ≥ 1 trang, đọc điều khoản (link), chấm 6 tiêu chí, kết luận, ngày.
+- [x] Yêu cầu tính năng: GitHub issues (feature request, 👍), Canny / Featurebase công khai, Upwork / Fiverr.
+- [x] Dữ liệu của mình: Search Console oneclicktool.app (`/fix`) qua MCP đã nối — chỉ đọc.
+- [x] Mỗi nguồn: mở thật ≥ 1 trang, đọc điều khoản (link), chấm 6 tiêu chí, kết luận, ngày.
 
 ### Task 3: ≥ 10 MCP
-- [ ] Đang có: Google Trends, Search Console, Google Analytics — ghi dùng cho nguồn nào.
-- [ ] Kiểm: Apify, Firecrawl, Exa, Tavily, Perplexity, Bright Data, DataForSEO, MCP cộng đồng cho Reddit / HN / Product
+- [x] Đang có: Google Trends, Search Console, Google Analytics — ghi dùng cho nguồn nào.
+- [x] Kiểm: Apify, Firecrawl, Exa, Tavily, Perplexity, Bright Data, DataForSEO, MCP cộng đồng cho Reddit / HN / Product
       Hunt / YouTube transcript / App Store. Mỗi cái: làm gì, free / trả phí (giá + nguồn + ngày), chính chủ hay cộng đồng.
-- [ ] MCP cộng đồng: đọc code trước, ghi quyền nó đòi; đòi ghi / gửi dữ liệu đi lạ → ghi "không dùng".
+- [x] MCP cộng đồng: đọc code trước, ghi quyền nó đòi; đòi ghi / gửi dữ liệu đi lạ → ghi "không dùng".
 
 ### Task 4: ≥ 10 repo / tool
-- [ ] google-play-scraper, app-store-scraper, yt-dlp, Crawlee, Playwright, Scrapy, trafilatura, kho dump Reddit
+- [x] google-play-scraper, app-store-scraper, yt-dlp, Crawlee, Playwright, Scrapy, trafilatura, kho dump Reddit
       (Arctic Shift), BERTopic, KeyBERT, sentence-transformers, repo "awesome" indie / scraping.
-- [ ] Mỗi cái: link, số sao + ngày commit gần nhất (đo trên GitHub), license, còn chạy không, dùng cho nguồn nào.
+- [x] Mỗi cái: link, số sao + ngày commit gần nhất (đo trên GitHub), license, còn chạy không, dùng cho nguồn nào.
 
 ### Task 5: ≥ 8 phương pháp
-- [ ] SERP do diễn đàn chiếm · "X alternative / X vs Y / X free" · "I'd pay for / is there an app / wish there was" ·
+- [x] SERP do diễn đàn chiếm · "X alternative / X vs Y / X free" · "I'd pay for / is there an app / wish there was" ·
       đợt đổi nền tảng (WWDC) · unbundling tool lớn · template bán chạy · extension nhiều dùng điểm thấp · JTBD từ review ·
       Upwork việc lặp lại · Search Console của mình.
-- [ ] Mỗi cái: làm thế nào, nguồn nào, Niche Radar đã có chưa (link phase), nên thêm không.
+- [x] Mỗi cái: làm thế nào, nguồn nào, Niche Radar đã có chưa (link phase), nên thêm không.
 
 ### Task 6: Top 3 + đẩy kiến thức chung
-- [ ] Chọn top 3 nguồn "Làm phase riêng": lý do, phase cũ nên gộp / đổi (so với YouTube 31–32, Amazon 33–34, Maps 35).
+- [x] Chọn top 3 nguồn "Làm phase riêng": lý do, phase cũ nên gộp / đổi (so với YouTube 31–32, Amazon 33–34, Maps 35).
       Ghi là **đề xuất** — anh duyệt mới đánh số phase.
-- [ ] Nguồn Bỏ → `appendix.md`.
-- [ ] Viết bản tiếng Anh dạng phương pháp lên Product Growth Playbook (đúng `SKILL_TEMPLATE.md`, có nguồn), push main.
-- [ ] Chip phase → xong, ROADMAP, CHANGELOG (nhãn Docs). Mở trang ở ~1340px xem không có cột hẹp.
+- [x] Nguồn Bỏ → `appendix.md`.
+- [x] Viết bản tiếng Anh dạng phương pháp lên Product Growth Playbook (đúng `SKILL_TEMPLATE.md`, có nguồn), push main.
+- [x] Chip phase → xong, ROADMAP, CHANGELOG (nhãn Docs). Mở trang ở ~1340px xem không có cột hẹp.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: xong. 52 nguồn · 17 MCP · 21 repo · 12 phương pháp ở `docs/web/gap-sources-map.md`; top 3 chờ duyệt; Search Console `chưa đo` (thiếu khoá MCP trên máy).

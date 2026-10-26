@@ -4,7 +4,7 @@
 > xin app · tìm thay thế) và **chủ đề** (Bluetooth, pin, Finder, quản lý cửa sổ…) → đếm chủ đề nào **hỏi nhiều nhất,
 > được quan tâm nhất, chưa ai giải** → bảng gap kèm link bài gốc.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25 · bước 0 qua một nửa · nguồn khác ngoài Reddit: Phase 11</span>
+<span class="chip chip--doing">Code xong 2026-10-25 (tuyến C: nhập file) · chờ anh nhập ≥ 500 bài r/MacOS thật</span>
 
 <div class="box box--goal" markdown>
 **Vì sao làm, vì sao gấp.** Review store (Phase 1–4) chỉ cho biết người ta than app **đã có**. Reddit hỏi đáp cho biết
@@ -18,6 +18,29 @@ hỏi đi hỏi lại mỗi tháng, nhiều upvote, câu trả lời top là "kh
 **Đảo quyết định cũ.** Ngày 2026-10-24 Reddit bị gỡ vì "không trong plan" + cần key. Phase này đưa lại, nhưng
 **khác hẳn bản cũ**: không đếm bài theo keyword, mà quét theo **subreddit** và gom thành chủ đề.
 </div>
+
+## Dùng thế nào (tuyến C — đã có)
+
+Menu **Thêm → Reddit Gap** (hoặc nút Reddit Gap ở trang chủ). Không cần key, không cần Claude in Chrome.
+Trang xếp **kết quả trước, việc lưu file sau** (sửa 2026-10-26 — bản đầu bắt lưu 10 trang rồi mới thấy gì):
+
+1. **Đầu trang = bảng gap.** Chưa nhập gì → **bảng ví dụ** 4 dòng, ghi rõ "Ví dụ · số minh hoạ", để biết mình sẽ nhận
+   được gì. Đã nhập → bảng thật: chủ đề × chuyên mục xếp theo điểm gap, lọc chuyên mục, bấm một dòng ra bài gốc.
+2. **Ngay dưới = ô nhập.** Chọn subreddit (r/MacOS, r/mac, r/MacApps, r/applehelp hoặc gõ tên khác) → chỉ 2 dòng:
+   **Top 12 tháng**, **Top 30 ngày**. Bấm **Mở JSON** → Chrome mở trang toàn chữ (100 bài) → **Cmd + S** → thả file vào
+   **bất kỳ đâu trên trang** (cả trang nhận kéo thả) hoặc **Chọn file…**. Nhập lại file cũ chỉ cập nhật điểm / comment.
+3. **Thêm nguồn** (mục gấp): 8 trang search mẫu cho bảng chắc hơn (cả 10 trang ≈ 600–1.000 bài) + cách lưu khi trang
+   JSON lỗi (403, trắng, bắt đăng nhập): **HTML (dự phòng)** ở old.reddit.com, cuộn hết trang, Cmd + S, chọn
+   **“Webpage, HTML Only”**. Trang www.reddit.com mới lưu HTML cũng đọc được.
+4. **Đếm app Mac** tra Mac App Store theo từ khoá chủ đề (top 20 dòng, ≈ 1 giây / chủ đề, tối đa 50 → hiện "50+").
+   **Tải .md**: top 20 gap + 3 link bài mẫu mỗi dòng, dán vào research hoặc đưa `/app-demand`.
+
+**Điểm gap** = số bài × log2(2 + trung vị điểm+comment) × (1 − tỷ lệ đã giải) × (1 + tỷ lệ "không có cách gốc") ×
+1 / (1 + số app Mac / 10). Chưa đếm app thì hệ số app = 1. "Không có cách gốc" chỉ đo được khi file có comment top —
+file danh sách (top / search) không có comment, nên cột đó thường là "—".
+
+**Sửa luật xếp**: `web/src/lib/reddit-rules.ts` (mẫu câu chuyên mục, ~40 chủ đề Mac, flair bỏ qua, dấu "đã giải").
+Xếp lúc đọc, sửa luật là bảng đổi ngay, không phải nhập lại.
 
 ## Khả thi không — chấm trước khi code
 
@@ -75,6 +98,10 @@ nối extension ↔ app, chưa chạm tới Reddit — nên **chưa biết** Chr
 → Mạng **không** chặn Chrome (chỉ chặn đường DNS mà `curl` dùng). Tuyến B (Claude in Chrome) **đi được về mạng**.
 Claude in Chrome vẫn 0 trình duyệt nối với app → chưa đọc tự động 100 bài.
 
+**Lần 5 (2026-10-25):** Claude in Chrome vẫn 0 trình duyệt. Anh chọn **tuyến C** (lưu file từ Chrome, nhập vào) —
+đã code xong, xem phần "Dùng thế nào" ở đầu trang. Tuyến B làm sau khi extension nối được, ghi vào cùng định dạng file
+`niche-radar-reddit/1`.
+
 **Bước 0 qua một nửa.** Đã biết: Reddit vào được bằng Chrome. Chưa biết: đọc tự động được ≥ 100 bài / trang và đủ
 trường (điểm, comment, flair, ngày). Việc tiếp: sửa đường nối extension ↔ app (tắt hẳn Chrome mở lại, mở khung Claude,
 khởi động lại app Claude / session mới) rồi chạy job đọc 100 bài. Phương án dự phòng: tuyến C — anh lưu trang
@@ -115,6 +142,14 @@ Mỗi chủ đề × chuyên mục một dòng:
   sách bài gốc (link Reddit). Một cột từ trên xuống, đọc rõ ở 1340px
 - **Xuất `.md`**: top 20 gap + 3 link bài mẫu mỗi gap → dán vào `research/*.md` hoặc đưa `/app-demand`
 - Gắn vào Project (Phase 8) như các nguồn khác
+
+**Đã làm (2026-10-25, code):** bảng `reddit_threads` + `reddit_topic_apps` (migration 0014, backup tự động trước migrate) ·
+đọc 4 dạng file (JSON danh sách, JSON trang một bài kèm 3 comment top, HTML old.reddit / www.reddit, file job) ·
+xếp chuyên mục + chủ đề không AI · bảng gap + bài gốc + đếm app Mac + xuất `.md` · trang `/reddit` · 15 test với file mẫu
+tự dựng theo cấu trúc Reddit (chưa có file Reddit thật trên máy để làm fixture — mạng chặn `curl`).
+
+**Chưa làm trong lần này:** gắn chủ đề vào Project (Project hiện chỉ nhận keyword store) · AI gán chủ đề cho bài "Khác" ·
+tuyến B (Claude in Chrome tự đọc). Ba việc này chờ có dữ liệu thật để biết có đáng không.
 
 <div class="box box--star" markdown>
 **Xong khi**

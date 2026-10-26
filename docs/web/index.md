@@ -83,17 +83,25 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 </div>
 </div>
 <div class="step" markdown>
+<span class="step__n">9c</span>
+<div class="step__body">
+<h3>Đa ngôn ngữ (i18n) <span class="chip chip--done">Khung xong 2026-10-25</span></h3>
+<p>Chữ giao diện tách ra file theo ngôn ngữ (Tiếng Việt · English · Español), ô chọn ngôn ngữ ở header + Cài đặt. Thiếu bản dịch thì hiện tiếng Anh rồi tiếng Việt. Dịch dần từng trang khi cần.</p>
+<a class="go" href="phase-9c-i18n/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
 <span class="step__n">10</span>
 <div class="step__body">
-<h3>Reddit Gap <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
-<p>Quét câu hỏi top của subreddit hỏi đáp (mẫu r/MacOS), xếp chuyên mục + chủ đề, đếm chủ đề hỏi nhiều, quan tâm nhiều, chưa ai giải. Bước 0 thử đường lấy dữ liệu trước.</p>
+<h3>Reddit Gap <span class="chip chip--doing">Code xong 2026-10-25 (tuyến C: nhập file) · chờ anh nhập ≥ 500 bài r/MacOS thật</span></h3>
+<p>Lưu trang Reddit bằng Chrome (JSON hoặc HTML), nhập vào trang Reddit Gap → xếp chuyên mục + chủ đề, đếm chủ đề hỏi nhiều, quan tâm nhiều, chưa ai giải, kèm link bài gốc và xuất .md.</p>
 <a class="go" href="phase-10-reddit-gap/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">11</span>
 <div class="step__body">
-<h3>Research nguồn tìm gap <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Research nguồn tìm gap <span class="chip chip--done">Xong 2026-10-26 · chờ duyệt top 3</span></h3>
 <p>Chỉ research, chưa code: liệt kê mọi nơi dev / indie tìm gap + keyword niche (Pinterest Trends, Product Hunt, Hacker News…), chấm mức độ và nên làm hay không; gom MCP free / trả phí, tool scrape, repo GitHub dùng kèm, và phương pháp tìm gap / niche anh chưa biết.</p>
 <a class="go" href="phase-11-gap-sources/">Xem chi tiết →</a>
 </div>

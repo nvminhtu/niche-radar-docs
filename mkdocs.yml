@@ -10,9 +10,8 @@ theme:
   font:
     text: Figtree
     code: JetBrains Mono
-  icon:
-    logo: material/radar
-  favicon: images/favicon.svg
+  logo: images/shotmatic-wordmark-light.png
+  favicon: images/shotmatic-favicon-32.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -70,8 +69,10 @@ nav:
           - Phase 7 · Review + Validate: web/phase-7-review-validate.md
           - Phase 8 · Project + dữ liệu: web/phase-8-project-data.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
+          - Phase 9c · Đa ngôn ngữ: web/phase-9c-i18n.md
           - Phase 10 · Reddit Gap: web/phase-10-reddit-gap.md
           - Phase 11 · Research nguồn tìm gap: web/phase-11-gap-sources.md
+          - Phase 11 · Bản đồ nguồn gap: web/gap-sources-map.md
       - "Version 1 · Làm kỹ tính năng chính (Phase 12–27)":
           - "Phase 12 · Đối thủ bị chê gì": web/phase-12-competitor-complaints.md
           - "Phase 13 · Chấm sức khoẻ niche": web/phase-13-niche-health.md

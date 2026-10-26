@@ -43,6 +43,13 @@ Trang chủ → **Research 1 keyword** → gõ keyword → **Research**. Kết q
 "Tra lại (bỏ cache)" để lấy mới. Nguồn nào lỗi thì có nút **Thử lại** riêng nguồn đó.
 Nút **Đọc review 1–2★** gom câu than lặp lại của top 3 app Play (cache 7 ngày).
 
+## Reddit Gap
+
+Menu **Thêm → Reddit Gap**. Chưa nhập gì thì đầu trang là **bảng ví dụ** (số minh hoạ) để thấy kết quả trông thế nào.
+Ngay dưới: chọn subreddit → mở **Top 12 tháng** và **Top 30 ngày** → Cmd + S mỗi trang → thả 2 file vào bất kỳ đâu trên
+trang → bảng ví dụ đổi thành bảng gap thật; bấm dòng xem bài gốc, **Tải .md**. Muốn nhiều bài hơn hoặc JSON lỗi → mở
+mục **Thêm nguồn** (8 trang search + cách lưu HTML dự phòng). Chi tiết: [Phase 10](web/phase-10-reddit-gap.md).
+
 ## Khi bị chặn
 
 Play, Trends, Google gợi ý không có API chính thức → gọi dồn dập sẽ bị chặn tạm (thường 10–30 phút).
