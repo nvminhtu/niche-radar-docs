@@ -27,13 +27,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/telemetry.ts` (mới) | track + đồng ý + tải gtag |
-| `web/src/lib/errors.ts` | `reportError()` qua cùng cổng |
-| `web/src/components/ConsentBanner.tsx` (mới), `SettingsPage.tsx` | hỏi đồng ý, tắt / bật |
-| chỗ gọi 7 sự kiện (HomePage, ExplorePage, ComparePage, AskBox, ExportDialog, geo pack) | `track()` |
-| `web/tests/telemetry.test.ts` | payload không chuỗi, không gửi khi `no` |
+- `web/src/lib/telemetry.ts` (mới) — track + đồng ý + tải gtag
+- `web/src/lib/errors.ts` — `reportError()` qua cùng cổng
+- `web/src/components/ConsentBanner.tsx` (mới), `SettingsPage.tsx` — hỏi đồng ý, tắt / bật
+- chỗ gọi 7 sự kiện (HomePage, ExplorePage, ComparePage, AskBox, ExportDialog, geo pack) — `track()`
+- `web/tests/telemetry.test.ts` — payload không chuỗi, không gửi khi `no`
 
 ## Tasks
 

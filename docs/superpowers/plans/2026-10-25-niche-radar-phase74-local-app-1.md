@@ -22,10 +22,8 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `app/scripts/build-mac.sh`, `app/src-tauri/*` | đã có |
-| `docs/app/phase-74-local-app-1.md` | kết quả thử máy sạch |
+- `app/scripts/build-mac.sh`, `app/src-tauri/*` — đã có
+- `docs/app/phase-74-local-app-1.md` — kết quả thử máy sạch
 
 ## Tasks
 

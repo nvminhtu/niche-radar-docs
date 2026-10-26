@@ -39,3 +39,5 @@ flowchart LR
 - Thêm tính năng mới (ghi sang Phase 9)
 - Đổi hết giao diện vì thích — chỉ sửa chỗ có vướng thật
 </div>
+
+Plan code chi tiết: [Phase 29](../superpowers/plans/2026-10-25-niche-radar-phase29-ui-ux.md)

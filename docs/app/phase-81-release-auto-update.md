@@ -45,3 +45,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 7](../web/version-7.md)
+
+Plan code chi tiết: [Phase 81](../superpowers/plans/2026-10-25-niche-radar-phase81-release-auto-update.md)

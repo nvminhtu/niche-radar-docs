@@ -85,3 +85,5 @@ Chrome do anh bấm, hoặc bỏ.
 - Mua dữ liệu trả phí (Sensor Tower, Appfigures…) — chỉ khi Phase 13 back-test cho thấy cần
 - Ước doanh thu bằng mô hình phức tạp; dự báo doanh thu của app mình
 </div>
+
+Plan code chi tiết: [Phase 18](../superpowers/plans/2026-10-25-niche-radar-phase18-revenue.md)

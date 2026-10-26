@@ -24,15 +24,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `canary/run.ts` (mới) | gọi mọi collector qua `fetcher` thật, so dạng, ghi log, thông báo |
-| `canary/shape.ts` (mới) | sinh + so hình dạng |
-| `canary/install.sh`, `canary/uninstall.sh`, plist mẫu (mới) | LaunchAgent 1 lần / ngày |
-| `canary/keywords.json` (mới) | keyword từng nguồn |
-| `package.json` gốc | `canary` |
-| `web/tests/canary-shape.test.ts` | |
-| `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` | folder mới |
+- `canary/run.ts` (mới) — gọi mọi collector qua `fetcher` thật, so dạng, ghi log, thông báo
+- `canary/shape.ts` (mới) — sinh + so hình dạng
+- `canary/install.sh`, `canary/uninstall.sh`, plist mẫu (mới) — LaunchAgent 1 lần / ngày
+- `canary/keywords.json` (mới) — keyword từng nguồn
+- `package.json` gốc — `canary`
+- `web/tests/canary-shape.test.ts`
+- `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` — folder mới
 
 ## Tasks
 

@@ -64,3 +64,5 @@ Engine nào không chạy được → ghi lý do trên UI, các engine khác v�
 - Hỏi nhiều lần một câu để lấy trung bình
 - Đo app của mình (việc của `/app-geo`)
 </div>
+
+Plan code chi tiết: [Phase 42](../superpowers/plans/2026-10-25-niche-radar-phase42-ai-shelf.md)

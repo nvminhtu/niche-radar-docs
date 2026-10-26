@@ -31,17 +31,15 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới (chung 14 + 15) | cột mới `project_items` + `projects`, index mới, bảng `project_log` |
-| `web/src/lib/projects.ts` | `addItems(db, projectId, items[])` hàng loạt trong 1 transaction, trả `{ added, updated }`; `undoAdd(ids)` |
-| `web/src/lib/collect-snapshot.ts` (mới) | dựng `snapshot` theo loại từ `RunView` / explore view |
-| `web/src/lib/projects-client.ts` | `CollectTarget` có `kind/ref/snapshot/note`; nhớ project gần nhất (localStorage, try/catch) |
-| `web/src/components/CollectButton.tsx` | ô tìm project, tạo mới, ghi chú, chế độ hàng loạt |
-| `KeywordTable`, `ExploreDashboard`, `NicheMap`, `CompetitorBlock`, `ComplaintsBlock`, `GapMatrixBlock` | gắn nút + ô tick |
-| `web/src/client/ProjectPage.tsx` | cột theo loại |
-| `web/src/lib/portable.ts` | xuất / nhập trường mới, đọc gói cũ |
-| `web/tests/projects*.test.ts`, `portable*.test.ts` | |
+- `web/src/db/schema.ts` + migration mới (chung 14 + 15) — cột mới `project_items` + `projects`, index mới, bảng `project_log`
+- `web/src/lib/projects.ts` — `addItems(db, projectId, items[])` hàng loạt trong 1 transaction, trả `{ added, updated }`; `undoAdd(ids)`
+- `web/src/lib/collect-snapshot.ts` (mới) — dựng `snapshot` theo loại từ `RunView` / explore view
+- `web/src/lib/projects-client.ts` — `CollectTarget` có `kind/ref/snapshot/note`; nhớ project gần nhất (localStorage, try/catch)
+- `web/src/components/CollectButton.tsx` — ô tìm project, tạo mới, ghi chú, chế độ hàng loạt
+- `KeywordTable`, `ExploreDashboard`, `NicheMap`, `CompetitorBlock`, `ComplaintsBlock`, `GapMatrixBlock` — gắn nút + ô tick
+- `web/src/client/ProjectPage.tsx` — cột theo loại
+- `web/src/lib/portable.ts` — xuất / nhập trường mới, đọc gói cũ
+- `web/tests/projects*.test.ts`, `portable*.test.ts`
 
 ## Tasks
 

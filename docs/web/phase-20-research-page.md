@@ -46,3 +46,5 @@ thứ tự chưa theo câu hỏi chọn niche, trang dài, nguồn lỗi phải 
 - Làm nhanh collector — [Version 5](version-5.md)
 - Đổi màu, font, hệ thống giao diện chung — [Phase 29](phase-29-ui-ux.md)
 </div>
+
+Plan code chi tiết: [Phase 20](../superpowers/plans/2026-10-25-niche-radar-phase20-research-page.md)

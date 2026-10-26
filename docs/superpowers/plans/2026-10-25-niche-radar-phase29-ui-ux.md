@@ -23,13 +23,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/phase-29-ui-ux.md` | danh sách chỗ vướng + trạng thái |
-| `web/tests/e2e/a11y.spec.ts` (mới, nếu Phase 51 chưa có Playwright thì dùng script tạm) | tương phản + phím Tab tới mọi nút chính |
-| `web/src/components/*`, `web/src/client/*` | sửa theo danh sách |
-| `web/src/client/globals.css`, `components/charts/theme.tsx` | token màu nếu tương phản trượt |
-| `design/ui-29/` | screenshot |
+- `docs/web/phase-29-ui-ux.md` — danh sách chỗ vướng + trạng thái
+- `web/tests/e2e/a11y.spec.ts` (mới, nếu Phase 51 chưa có Playwright thì dùng script tạm) — tương phản + phím Tab tới mọi nút chính
+- `web/src/components/*`, `web/src/client/*` — sửa theo danh sách
+- `web/src/client/globals.css`, `components/charts/theme.tsx` — token màu nếu tương phản trượt
+- `design/ui-29/` — screenshot
 
 ## Tasks
 

@@ -26,15 +26,13 @@ Phase 6 / 17 / 25 (lớp AI, kiểm trích dẫn, tuyến theo việc).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/collectors/youtube-text.ts` (mới) | phụ đề (có mốc giây) + comment top, cache 7 ngày |
-| `web/src/db/schema.ts` + migration mới | `yt_texts` (videoId, kind `caption|comment`, json, fetchedAt) |
-| `web/src/lib/ai/tasks.ts` | task `yt_themes`, `yt_wishes`, `yt_tools`, `yt_summary` (hoặc 1 task gộp có 4 mục) + `clean*` kiểm trích dẫn |
-| `web/src/lib/youtube-link.ts` (mới) | nối tên tool được nhắc với đối thủ trong run (luật tên như Phase 22) |
-| `web/src/lib/gap.ts` | nhận gợi ý hàng mới (nhãn "từ YouTube"), anh bấm thêm |
-| `web/src/components/YoutubeAiBlock.tsx` (mới) | 4 mục, mốc giây bấm được |
-| `web/tests/youtube-ai*.test.ts` | `Ask` giả |
+- `web/src/collectors/youtube-text.ts` (mới) — phụ đề (có mốc giây) + comment top, cache 7 ngày
+- `web/src/db/schema.ts` + migration mới — `yt_texts` (videoId, kind `caption | comment`, json, fetchedAt)
+- `web/src/lib/ai/tasks.ts` — task `yt_themes`, `yt_wishes`, `yt_tools`, `yt_summary` (hoặc 1 task gộp có 4 mục) + `clean*` kiểm trích dẫn
+- `web/src/lib/youtube-link.ts` (mới) — nối tên tool được nhắc với đối thủ trong run (luật tên như Phase 22)
+- `web/src/lib/gap.ts` — nhận gợi ý hàng mới (nhãn "từ YouTube"), anh bấm thêm
+- `web/src/components/YoutubeAiBlock.tsx` (mới) — 4 mục, mốc giây bấm được
+- `web/tests/youtube-ai*.test.ts` — `Ask` giả
 
 ## Tasks
 

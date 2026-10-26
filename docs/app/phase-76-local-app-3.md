@@ -35,3 +35,5 @@ flowchart LR
 - Tính năng mới (chỉ gói những gì Phase 37–39 đã xong)
 - Auto-update ([Phase 81](phase-81-release-auto-update.md)), bản Windows
 </div>
+
+Plan code chi tiết: [Phase 76](../superpowers/plans/2026-10-25-niche-radar-phase76-local-app-3.md)

@@ -61,3 +61,5 @@ flowchart LR
 - Còn lại: anh thử `.dmg` trên một tài khoản macOS mới chưa cài Node
 
 [Spec gốc Phase 8 · Local App](../superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md)
+
+Plan code chi tiết: [Phase 74](../superpowers/plans/2026-10-25-niche-radar-phase74-local-app-1.md)

@@ -26,15 +26,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/features.ts` | `id`, `steps`, rút gọn `what` |
-| `web/src/components/HelpButton.tsx` (mới) | nút ? + khung nổi (Esc / bấm ngoài đóng, nút **Thử ngay** → `to`) |
-| Các khối: `RunHeader`, `ExploreDashboard`, `ComplaintsBlock`, `GapMatrixBlock`, `AiTaskBlock`, `CollectButton`, `HealthBlock`, `SettingsPage` (Backup)… | gắn `HelpButton id=…` cạnh tiêu đề |
-| `web/src/client/GuidePage.tsx` | dùng `steps` |
-| `design/help/` | style lock, prompt, raw |
-| `web/public/help/` | hình đã chọn |
-| `web/tests/features.test.ts` | luật chữ + mọi `done` có ≥ 2 bước |
+- `web/src/lib/features.ts` — `id`, `steps`, rút gọn `what`
+- `web/src/components/HelpButton.tsx` (mới) — nút ? + khung nổi (Esc / bấm ngoài đóng, nút **Thử ngay** → `to`)
+- Các khối: `RunHeader`, `ExploreDashboard`, `ComplaintsBlock`, `GapMatrixBlock`, `AiTaskBlock`, `CollectButton`, `HealthBlock`, `SettingsPage` (Backup)… — gắn `HelpButton id=…` cạnh tiêu đề
+- `web/src/client/GuidePage.tsx` — dùng `steps`
+- `design/help/` — style lock, prompt, raw
+- `web/public/help/` — hình đã chọn
+- `web/tests/features.test.ts` — luật chữ + mọi `done` có ≥ 2 bước
 
 ## Tasks
 

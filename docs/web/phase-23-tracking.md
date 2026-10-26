@@ -45,3 +45,5 @@ rời top 10, rating ≥ 0,1★, nhãn tiền, số keyword, Trends, điểm v2)
 - Thông báo đẩy / email — sau [Version 9](version-9.md)
 - Chạy khi app tắt (cần dịch vụ nền / máy chủ)
 </div>
+
+Plan code chi tiết: [Phase 23](../superpowers/plans/2026-10-25-niche-radar-phase23-tracking.md)

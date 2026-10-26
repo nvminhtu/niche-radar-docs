@@ -28,19 +28,17 @@ Phase 18** (Tiền đổi từ proxy sang đo) — Phase 18 có task riêng cho 
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/score-v2.ts` | mỗi `Factor` thêm `inputs` (số đầu vào + nguồn + ngày) và `formula` (chuỗi đọc được) |
-| `web/src/lib/health-flags.ts` (mới) | 5 cờ: thương hiệu lớn ≥ 3/5 top · cần backend / tài khoản bắt buộc · tên loại bão hoà (4.3) · nội dung bản quyền · Trends giảm 2 năm |
-| `web/src/lib/score-config.ts` | ngưỡng mặc định + đọc / ghi ngưỡng có lý do |
-| `web/src/lib/health-summary.ts` (mới) | ghép câu kết luận từ mẫu |
-| `web/src/lib/health-next.ts` (mới) | "cần đo thêm gì": yếu tố ước / chưa đo → bước nâng lên (phase / nút) + % đo ước sau khi làm |
-| `web/src/db/schema.ts` + migration mới | `score_history` (runId, term, country, score, measuredPct, decision, flags json, takenAt) |
-| `web/src/server/app.ts` | `/research/:id/health` trả thêm `flags`, `summary`; `POST /settings/score-thresholds`; `GET /scores/history?term=` |
-| `web/src/components/HealthBlock.tsx` | bấm yếu tố mở chi tiết, nhãn độ tin, cờ, đoạn kết luận |
-| `web/src/client/SettingsPage.tsx` | sửa ngưỡng + ô lý do + lịch sử |
-| `web/src/lib/evidence.ts` | thêm đoạn kết luận + cờ |
-| `web/tests/score-v2*.test.ts`, `health-flags.test.ts` | |
+- `web/src/lib/score-v2.ts` — mỗi `Factor` thêm `inputs` (số đầu vào + nguồn + ngày) và `formula` (chuỗi đọc được)
+- `web/src/lib/health-flags.ts` (mới) — 5 cờ: thương hiệu lớn ≥ 3/5 top · cần backend / tài khoản bắt buộc · tên loại bão hoà (4.3) · nội dung bản quyền · Trends giảm 2 năm
+- `web/src/lib/score-config.ts` — ngưỡng mặc định + đọc / ghi ngưỡng có lý do
+- `web/src/lib/health-summary.ts` (mới) — ghép câu kết luận từ mẫu
+- `web/src/lib/health-next.ts` (mới) — "cần đo thêm gì": yếu tố ước / chưa đo → bước nâng lên (phase / nút) + % đo ước sau khi làm
+- `web/src/db/schema.ts` + migration mới — `score_history` (runId, term, country, score, measuredPct, decision, flags json, takenAt)
+- `web/src/server/app.ts` — `/research/:id/health` trả thêm `flags`, `summary`; `POST /settings/score-thresholds`; `GET /scores/history?term=`
+- `web/src/components/HealthBlock.tsx` — bấm yếu tố mở chi tiết, nhãn độ tin, cờ, đoạn kết luận
+- `web/src/client/SettingsPage.tsx` — sửa ngưỡng + ô lý do + lịch sử
+- `web/src/lib/evidence.ts` — thêm đoạn kết luận + cờ
+- `web/tests/score-v2*.test.ts`, `health-flags.test.ts`
 
 ## Tasks
 

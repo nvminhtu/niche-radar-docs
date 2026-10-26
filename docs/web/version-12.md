@@ -33,6 +33,10 @@ Chấm mỗi ứng viên: **số người xin** (đếm từ góp ý) · **tác 
 |---|---|---|
 | ~~Theo dõi định kỳ~~ | Phase 9 | **kéo lên ứng viên ưu tiên [Phase 9](phase-9-small-features.md) (2026-10-25)** |
 | ~~Product Brief Export~~ | review 2026-10-25 | **gộp vào [Phase 16](phase-16-export.md) (2026-10-26)** — phần brief tính năng nằm trong gói cho LLM |
+| **Decision Engine Pro** (AI chấm các long-tail ngay trong app, 1 bấm) | review sản phẩm 2026-10-26 | bản miễn phí Copy prompt + dán JSON ở [Phase 16b](phase-16b-decision-board.md); chỉ làm khi fake-door 16b đạt ngưỡng |
+| **Email báo khi niche đổi** | review sản phẩm 2026-10-26 | báo trong app ở [Phase 23](phase-23-tracking.md); email cần máy chủ (sau Version 9); fake-door đo ở 16b |
+| **Niche → Spec / ASO** (PRD tóm tắt, title / subtitle / keyword field, 5 tính năng đối thủ bị chê) | review sản phẩm 2026-10-26 | sau khi 16b ra keyword BUILD; nối với `/app-spec`, `/app-listing` |
+| **Báo cáo chia sẻ** (PDF / link) | review sản phẩm 2026-10-26 | cho người cần show co-founder; giá trị thấp hơn, làm sau |
 | **Search volume trả phí** (DataForSEO, Keyword Planner) | Phase 9, Version 4 | chỉ khi review kết quả cho thấy cần số lượt tìm thật |
 | **Nguồn Chrome Web Store** | Phase 9 | cho người làm extension |
 | **Giá IAP nhiều nước** | Phase 9 | so giá theo thị trường |

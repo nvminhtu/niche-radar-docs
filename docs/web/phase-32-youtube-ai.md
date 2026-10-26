@@ -61,3 +61,5 @@ chất lượng · thời gian · tiền rồi chọn.
 - Tải video về máy, xử lý video bằng ffmpeg
 - Đăng comment / tương tác với kênh
 </div>
+
+Plan code chi tiết: [Phase 32](../superpowers/plans/2026-10-25-niche-radar-phase32-youtube-ai.md)

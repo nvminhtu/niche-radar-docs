@@ -25,14 +25,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/sync/account-delete.ts` (mới) | xoá đệ quy + `deleteUser` |
-| `web/src/lib/sync/cloud-export.ts` (mới) | tải mọi tài liệu `users/{uid}` ra `.json` |
-| `web/src/client/SettingsPage.tsx` | mục Tài khoản: Xuất · Xoá (có bước xác nhận) |
-| `docs/privacy.md` (mới) + `mkdocs.yml` + link trong app | trang Privacy |
-| `scripts/privacy-events.ts`, `web/tests/privacy.test.ts` | bảng sự kiện khớp code |
-| `tests/rules/*.test.ts` | rà quy tắc |
+- `web/src/lib/sync/account-delete.ts` (mới) — xoá đệ quy + `deleteUser`
+- `web/src/lib/sync/cloud-export.ts` (mới) — tải mọi tài liệu `users/{uid}` ra `.json`
+- `web/src/client/SettingsPage.tsx` — mục Tài khoản: Xuất · Xoá (có bước xác nhận)
+- `docs/privacy.md` (mới) + `mkdocs.yml` + link trong app — trang Privacy
+- `scripts/privacy-events.ts`, `web/tests/privacy.test.ts` — bảng sự kiện khớp code
+- `tests/rules/*.test.ts` — rà quy tắc
 
 ## Tasks
 

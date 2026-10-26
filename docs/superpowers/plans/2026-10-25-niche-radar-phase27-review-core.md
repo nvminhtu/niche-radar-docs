@@ -24,13 +24,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/phase-27-review-core.md` | phiếu soát + bảng 5 niche |
-| `design/review-27/*.png` | screenshot bằng chứng |
-| `web/src/lib/features.ts`, `GuidePage.tsx`, `AboutPage.tsx`, `docs/cach-dung.md` | tính năng chính / phụ, hướng dẫn |
-| `docs/superpowers/specs/2026-10-24-niche-radar-master-plan.md` §4 | lỗi lớn pending |
-| `CHANGELOG.md`, `web/package.json`, `web/src/lib/version.ts` | ra bản |
+- `docs/web/phase-27-review-core.md` — phiếu soát + bảng 5 niche
+- `design/review-27/*.png` — screenshot bằng chứng
+- `web/src/lib/features.ts`, `GuidePage.tsx`, `AboutPage.tsx`, `docs/cach-dung.md` — tính năng chính / phụ, hướng dẫn
+- `docs/superpowers/specs/2026-10-24-niche-radar-master-plan.md` §4 — lỗi lớn pending
+- `CHANGELOG.md`, `web/package.json`, `web/src/lib/version.ts` — ra bản
 
 ## Tasks
 

@@ -39,3 +39,5 @@ flowchart LR
 - Đổi công thức điểm cơ hội Phase 1 (kệ yếu là cột riêng, không trộn vào)
 - AI chấm điểm hay giải thích (đã có ô hỏi Phase 38 nếu cần)
 </div>
+
+Plan code chi tiết: [Phase 43](../superpowers/plans/2026-10-25-niche-radar-phase43-ai-seo-gap.md)

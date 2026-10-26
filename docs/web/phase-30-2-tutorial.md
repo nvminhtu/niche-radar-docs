@@ -55,3 +55,5 @@ flowchart LR
 - Tour bắt buộc nhiều bước khi mở app lần đầu
 - Dịch sang tiếng Anh — khi có người dùng ngoài nói tiếng Anh
 </div>
+
+Plan code chi tiết: [Phase 30.2](../superpowers/plans/2026-10-25-niche-radar-phase30-2-tutorial.md)

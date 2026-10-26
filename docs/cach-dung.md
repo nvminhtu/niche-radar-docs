@@ -43,12 +43,17 @@ Trang chủ → **Research 1 keyword** → gõ keyword → **Research**. Kết q
 "Tra lại (bỏ cache)" để lấy mới. Nguồn nào lỗi thì có nút **Thử lại** riêng nguồn đó.
 Nút **Đọc review 1–2★** gom câu than lặp lại của top 3 app Play (cache 7 ngày).
 
-## Reddit Gap
+## Gap hỏi đáp (Reddit · Stack Exchange · Hacker News)
 
-Menu **Thêm → Reddit Gap**. Chưa nhập gì thì đầu trang là **bảng ví dụ** (số minh hoạ) để thấy kết quả trông thế nào.
+Menu **Thêm → Gap hỏi đáp**, 4 tab. Tab **Reddit**: Chưa nhập gì thì đầu trang là **bảng ví dụ** (số minh hoạ) để thấy kết quả trông thế nào.
 Ngay dưới: chọn subreddit → mở **Top 12 tháng** và **Top 30 ngày** → Cmd + S mỗi trang → thả 2 file vào bất kỳ đâu trên
 trang → bảng ví dụ đổi thành bảng gap thật; bấm dòng xem bài gốc, **Tải .md**. Muốn nhiều bài hơn hoặc JSON lỗi → mở
 mục **Thêm nguồn** (8 trang search + cách lưu HTML dự phòng). Chi tiết: [Phase 10](web/phase-10-reddit-gap.md).
+
+Tab **Stack Exchange** / **Hacker News**: bấm **Lấy dữ liệu** — app tự gọi API miễn phí (không key), chạy nền ≈ 1–2 phút,
+câu đã lấy trong 7 ngày thì bỏ qua. Stack Exchange cho 300 lệnh / ngày / IP, một lần đủ 3 site ≈ 60 lệnh; muốn nhiều hơn
+thì tạo key ở StackApps và đặt `STACKEXCHANGE_KEY` trong `web/.env.local`. Tab **Gộp** cộng cả ba nguồn theo chủ đề.
+Chi tiết: [Phase 10b](web/phase-10b-qa-gap.md).
 
 ## Khi bị chặn
 

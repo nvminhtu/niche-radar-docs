@@ -25,13 +25,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `security/attacks/*.html`, `security/attacks/run.sh` (mới) | kịch bản thử lặp lại được |
-| `web/tests/e2e/security.spec.ts` (mới) | XSS + token chạy được trong E2E |
-| `security/checklist.md`, `security/evidence/` | bằng chứng |
-| code lọt | sửa + test |
-| `web/package.json`, `version.ts`, `CHANGELOG.md` | 8.0.0 |
+- `security/attacks/*.html`, `security/attacks/run.sh` (mới) — kịch bản thử lặp lại được
+- `web/tests/e2e/security.spec.ts` (mới) — XSS + token chạy được trong E2E
+- `security/checklist.md`, `security/evidence/` — bằng chứng
+- code lọt — sửa + test
+- `web/package.json`, `version.ts`, `CHANGELOG.md` — 8.0.0
 
 ## Tasks
 

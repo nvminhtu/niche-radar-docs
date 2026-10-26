@@ -99,6 +99,22 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 </div>
 </div>
 <div class="step" markdown>
+<span class="step__n">10b</span>
+<div class="step__body">
+<h3>Q&amp;A Gap (Stack Exchange + Hacker News) <span class="chip chip--done">Xong 2026-10-26</span></h3>
+<p>Câu xin phần mềm / hỏi cách làm từ Ask Different, Super User, Software Recs và Ask HN qua API miễn phí, không key. Xếp chung chủ đề với Reddit Gap, thêm lượt xem và cờ "đã có câu trả lời được chấp nhận"; tab Gộp cộng các nguồn.</p>
+<a class="go" href="phase-10b-qa-gap/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">10c</span>
+<div class="step__body">
+<h3>GitHub Feature Request Gap <span class="chip chip--todo">Chưa làm · plan 2026-10-26</span></h3>
+<p>Issue nhiều 👍 của nhóm repo app Mac menu bar, app Mac, Chrome extension, plugin Obsidian → tính năng người dùng xin mà maintainer từ chối hoặc để treo, gom theo chủ đề và repo.</p>
+<a class="go" href="phase-10c-github-gap/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
 <span class="step__n">11</span>
 <div class="step__body">
 <h3>Research nguồn tìm gap <span class="chip chip--done">Xong 2026-10-26 · chờ duyệt top 3</span></h3>
@@ -149,9 +165,17 @@ Các tính năng chính đã có bản đầu ở Phase 1–9 — mỗi cái đ�
 <div class="step" markdown>
 <span class="step__n">16</span>
 <div class="step__body">
-<h3>Export (CSV, JSON, gói cho LLM) <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Export (CSV, JSON, gói cho LLM) <span class="chip chip--doing">Code xong · merge main 2026-10-26 · còn mở CSV bằng Google Sheets</span></h3>
 <p>Một hộp Xuất chung: CSV mở đúng trên Excel / Sheets, JSON có schema, Markdown, gói LLM (brief + schema + prompt) cắt theo trần token.</p>
 <a class="go" href="phase-16-export/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">16b</span>
+<div class="step__body">
+<h3>Bàn quyết định long-tail + đo nhu cầu Pro <span class="chip chip--todo">Chưa làm · plan 2026-10-26</span></h3>
+<p>Chấm các keyword trong Project theo rubric 5 trục có dẫn chứng, Copy prompt cho AI rồi dán JSON ngược, ra BUILD / TEST THÊM / BỎ. Kèm 2 nút Pro giả (fake-door) đo có ai muốn trả tiền.</p>
+<a class="go" href="phase-16b-decision-board/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>

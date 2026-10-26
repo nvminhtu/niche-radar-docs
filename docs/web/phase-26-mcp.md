@@ -49,3 +49,5 @@ flowchart LR
 - Tool ghi (tạo project, collect) qua MCP — xét sau khi dùng thật
 - Hỏi dữ liệu bằng lời ngay trong UI — [Phase 38](phase-38-ai-cite-ask.md)
 </div>
+
+Plan code chi tiết: [Phase 26](../superpowers/plans/2026-10-25-niche-radar-phase26-mcp.md)

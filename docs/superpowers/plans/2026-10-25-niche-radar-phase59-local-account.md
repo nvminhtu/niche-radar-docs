@@ -27,14 +27,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `users` (id, uid, name, createdAt); `user_id` + index trên bảng "của người"; gán hồ sơ mặc định |
-| `web/src/db/ownership.ts` (mới) | danh sách bảng của người / dùng chung |
-| `web/src/lib/*` (projects, run-research, explore, ai, validate, ask, reports, tracking…) | nhận `userId` |
-| `web/src/server/app.ts` | middleware `userId`; `GET/POST /users`, `POST /users/:id/select`, `GET /users/:id/export.zip`, `POST /users/:id/delete` |
-| `web/src/client/SettingsPage.tsx` / `ProfilesPage.tsx` (mới), `AppShell.tsx` | màn hồ sơ, chọn hồ sơ ở góc |
-| `web/tests/users-*.test.ts` | cách ly, xoá, migrate |
+- `web/src/db/schema.ts` + migration mới — `users` (id, uid, name, createdAt); `user_id` + index trên bảng "của người"; gán hồ sơ mặc định
+- `web/src/db/ownership.ts` (mới) — danh sách bảng của người / dùng chung
+- `web/src/lib/*` (projects, run-research, explore, ai, validate, ask, reports, tracking…) — nhận `userId`
+- `web/src/server/app.ts` — middleware `userId`; `GET/POST /users`, `POST /users/:id/select`, `GET /users/:id/export.zip`, `POST /users/:id/delete`
+- `web/src/client/SettingsPage.tsx` / `ProfilesPage.tsx` (mới), `AppShell.tsx` — màn hồ sơ, chọn hồ sơ ở góc
+- `web/tests/users-*.test.ts` — cách ly, xoá, migrate
 
 ## Tasks
 

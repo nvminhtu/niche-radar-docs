@@ -26,13 +26,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/geo/pack.ts` (mới) | dựng 4 file + zip (dùng `zip.ts` của Phase 16) |
-| `web/src/lib/geo/pages.ts` (mới) | luật loại trang + lý do có trích dẫn |
-| `web/src/server/app.ts` | `GET /research/:id/geo-pack.zip` |
-| nút "Xuất gói GEO" trên `/r/:id` + project ứng viên | |
-| `web/tests/geo-pack.test.ts` + fixture `questions.tsv` mẫu từ `geo.py` | |
+- `web/src/lib/geo/pack.ts` (mới) — dựng 4 file + zip (dùng `zip.ts` của Phase 16)
+- `web/src/lib/geo/pages.ts` (mới) — luật loại trang + lý do có trích dẫn
+- `web/src/server/app.ts` — `GET /research/:id/geo-pack.zip`
+- nút "Xuất gói GEO" trên `/r/:id` + project ứng viên
+- `web/tests/geo-pack.test.ts` + fixture `questions.tsv` mẫu từ `geo.py`
 
 ## Tasks
 

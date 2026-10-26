@@ -24,13 +24,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `marketing/reports/NN-<niche>.md` (mới) | báo cáo tuần |
-| repo oneclicktool.app: bài blog | qua `/oneclicktool-blog` |
-| `marketing/<kênh>/NN-*.md` | thread nháp (khuôn Campaign Promo Desk) |
-| `marketing/geo-test/<ngày>/` | mốc GEO |
-| `marketing/gtm.md` | việc từ khoảng trống |
+- `marketing/reports/NN-<niche>.md` (mới) — báo cáo tuần
+- repo oneclicktool.app: bài blog — qua `/oneclicktool-blog`
+- `marketing/<kênh>/NN-*.md` — thread nháp (khuôn Campaign Promo Desk)
+- `marketing/geo-test/<ngày>/` — mốc GEO
+- `marketing/gtm.md` — việc từ khoảng trống
 
 ## Tasks
 

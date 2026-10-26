@@ -37,17 +37,15 @@ Phase 3 (mẫu "chỉ Top 10 keyword"), Phase 11 (kết luận nguồn YouTube �
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `SOURCES` thêm `youtube`; bảng `yt_videos` (videoId, keywordId, rank, title, channelId, views, publishedAt, durationSec, fetchedAt), `yt_channels` (channelId, subs, fetchedAt), `yt_mcp` (keywordId, provider, json, fetchedAt) |
-| `web/src/collectors/youtube.ts` (mới) | search + video + channel qua `youtubei.js`; Data API dự phòng khi có key |
-| `web/src/collectors/suggest.ts` | nguồn gợi ý `yt` |
-| `web/src/lib/youtube-metrics.ts` (mới) | độ đông, độ mới (% top đăng trong 12 tháng), vượt kênh (view ÷ sub) |
-| `web/src/lib/youtube-mcp-job.ts` (mới) | file job Top 10 keyword cho Claude đã nối vidIQ + nhập kết quả |
-| `web/src/lib/run-research.ts`, `run-view.ts` | chạy nguồn mới, view có khối YouTube |
-| `web/src/components/YoutubeBlock.tsx` (mới), `KeywordTable.tsx`, `ExploreShared.tsx` | bảng top video, cột vượt kênh, nhãn `YT`, cột `vidiq_*` |
-| `web/src/lib/explore.ts`, `exploreCsv` | gợi ý YT trong cây + CSV |
-| `web/tests/youtube-*.test.ts` + fixture JSON | |
+- `web/src/db/schema.ts` + migration mới — `SOURCES` thêm `youtube`; bảng `yt_videos` (videoId, keywordId, rank, title, channelId, views, publishedAt, durationSec, fetchedAt), `yt_channels` (channelId, subs, fetchedAt), `yt_mcp` (keywordId, provider, json, fetchedAt)
+- `web/src/collectors/youtube.ts` (mới) — search + video + channel qua `youtubei.js`; Data API dự phòng khi có key
+- `web/src/collectors/suggest.ts` — nguồn gợi ý `yt`
+- `web/src/lib/youtube-metrics.ts` (mới) — độ đông, độ mới (% top đăng trong 12 tháng), vượt kênh (view ÷ sub)
+- `web/src/lib/youtube-mcp-job.ts` (mới) — file job Top 10 keyword cho Claude đã nối vidIQ + nhập kết quả
+- `web/src/lib/run-research.ts`, `run-view.ts` — chạy nguồn mới, view có khối YouTube
+- `web/src/components/YoutubeBlock.tsx` (mới), `KeywordTable.tsx`, `ExploreShared.tsx` — bảng top video, cột vượt kênh, nhãn `YT`, cột `vidiq_*`
+- `web/src/lib/explore.ts`, `exploreCsv` — gợi ý YT trong cây + CSV
+- `web/tests/youtube-*.test.ts` + fixture JSON
 
 ## Tasks
 

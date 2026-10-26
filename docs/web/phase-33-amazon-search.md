@@ -59,3 +59,5 @@ flowchart LR
 - Ước doanh số từ BSR (chỉ ghi BSR, không quy ra tiền)
 - Dịch vụ trả phí (Jungle Scout, Helium 10, Keepa)
 </div>
+
+Plan code chi tiết: [Phase 33](../superpowers/plans/2026-10-25-niche-radar-phase33-amazon-search.md)

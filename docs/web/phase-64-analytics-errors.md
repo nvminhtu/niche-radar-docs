@@ -61,3 +61,5 @@ Chỉ gửi **loại sự kiện + số đếm**. Không gửi chữ keyword, ni
 </div>
 
 [Tổng quan Version 9](version-9.md)
+
+Plan code chi tiết: [Phase 64](../superpowers/plans/2026-10-25-niche-radar-phase64-analytics-errors.md)

@@ -25,14 +25,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/ai/tasks.ts` | task `amazon` (JOB_ONLY như `trustmrr` + tuyến A trên mô tả / bullet / review công khai), `cleanAmazon` |
-| `web/src/db/schema.ts` + migration mới | `amz_insights` (runId, asin, kind, text, quote, url, by `job|ai`, verdict) |
-| `web/src/lib/gap.ts` | cột nguồn Amazon (ô từ "có / không" trong review) |
-| `web/src/components/AmazonAiBlock.tsx` (mới) | 4 mục + nút "đáng soi" |
-| `web/src/lib/evidence.ts` | thêm gợi ý cho app đã đánh dấu |
-| `web/tests/amazon-ai*.test.ts` | |
+- `web/src/lib/ai/tasks.ts` — task `amazon` (JOB_ONLY như `trustmrr` + tuyến A trên mô tả / bullet / review công khai), `cleanAmazon`
+- `web/src/db/schema.ts` + migration mới — `amz_insights` (runId, asin, kind, text, quote, url, by `job | ai`, verdict)
+- `web/src/lib/gap.ts` — cột nguồn Amazon (ô từ "có / không" trong review)
+- `web/src/components/AmazonAiBlock.tsx` (mới) — 4 mục + nút "đáng soi"
+- `web/src/lib/evidence.ts` — thêm gợi ý cho app đã đánh dấu
+- `web/tests/amazon-ai*.test.ts`
 
 ## Tasks
 

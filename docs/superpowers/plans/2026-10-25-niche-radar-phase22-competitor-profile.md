@@ -26,16 +26,14 @@ Phase 18 (doanh thu verified), Phase 14 (collect đối thủ).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `app_links` (playAppId, iosAppId, by `domain|dev-brand|manual`, checkedAt), `cross_store_checks` (appId, found, checkedAt) |
-| `web/src/lib/competitor-flags.ts` (mới) | 5 cờ + lý do |
-| `web/src/lib/app-link.ts` (mới) | nối 2 store theo luật chặt + tra store kia |
-| `web/src/lib/competitor-profile.ts` (mới) | gom: 2 store, dev, ra mắt, cập nhật cuối + nhịp (từ `app_snapshots`), rating, giá / IAP, mô hình tiền, lời chê, tính năng (gap), doanh thu, niche xuất hiện |
-| `web/src/server/app.ts` | `GET /api/apps/:id` · `POST /api/apps/:id/link` (nối / tách tay) |
-| `web/src/client/AppPage.tsx` (mới) + `main.tsx` | trang `/app/:id`, 1 cột |
-| `web/src/components/CompetitorBlock.tsx` | cột cờ (chip + tooltip), tên app link sang trang đối thủ |
-| `web/tests/competitor-flags.test.ts`, `app-link.test.ts` | |
+- `web/src/db/schema.ts` + migration mới — `app_links` (playAppId, iosAppId, by `domain | dev-brand | manual`, checkedAt), `cross_store_checks` (appId, found, checkedAt)
+- `web/src/lib/competitor-flags.ts` (mới) — 5 cờ + lý do
+- `web/src/lib/app-link.ts` (mới) — nối 2 store theo luật chặt + tra store kia
+- `web/src/lib/competitor-profile.ts` (mới) — gom: 2 store, dev, ra mắt, cập nhật cuối + nhịp (từ `app_snapshots`), rating, giá / IAP, mô hình tiền, lời chê, tính năng (gap), doanh thu, niche xuất hiện
+- `web/src/server/app.ts` — `GET /api/apps/:id` · `POST /api/apps/:id/link` (nối / tách tay)
+- `web/src/client/AppPage.tsx` (mới) + `main.tsx` — trang `/app/:id`, 1 cột
+- `web/src/components/CompetitorBlock.tsx` — cột cờ (chip + tooltip), tên app link sang trang đối thủ
+- `web/tests/competitor-flags.test.ts`, `app-link.test.ts`
 
 ## Tasks
 

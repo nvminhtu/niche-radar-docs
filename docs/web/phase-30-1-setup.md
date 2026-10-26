@@ -78,3 +78,5 @@ flowchart LR
 - Gọi API của ChatGPT / Gemini trong tool — chỉ mở trang web của họ
 - Linux — khi có người dùng xin
 </div>
+
+Plan code chi tiết: [Phase 30.1](../superpowers/plans/2026-10-25-niche-radar-phase30-1-setup.md)

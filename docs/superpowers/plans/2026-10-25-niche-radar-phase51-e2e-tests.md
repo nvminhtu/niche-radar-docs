@@ -23,13 +23,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/playwright.config.ts` (mới / mở rộng từ Phase 46) | 2 viewport 1340 + 375, webServer `NR_E2E=1` |
-| `web/src/server/index.ts`, `lib/deps.ts` | chế độ E2E: deps fixture + AI giả |
-| `web/tests/e2e/{research,explore,competitor,compare,ask-export}.spec.ts` | 5 luồng |
-| `web/package.json` | `e2e`, `e2e:update` |
-| component thiếu tên truy cập | thêm `aria-label` |
+- `web/playwright.config.ts` (mới / mở rộng từ Phase 46) — 2 viewport 1340 + 375, webServer `NR_E2E=1`
+- `web/src/server/index.ts`, `lib/deps.ts` — chế độ E2E: deps fixture + AI giả
+- `web/tests/e2e/{research,explore,competitor,compare,ask-export}.spec.ts` — 5 luồng
+- `web/package.json` — `e2e`, `e2e:update`
+- component thiếu tên truy cập — thêm `aria-label`
 
 ## Tasks
 

@@ -26,16 +26,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `bench/niches.json` (mới) | 3 niche chuẩn + country |
-| `bench/run.ts` (mới) | chạy luồng, đo 9 chỉ số, ghi `bench/out/<ngày>.json` |
-| `bench/compare.ts` (mới) | so 2 file kết quả + so bảng keyword / điểm |
-| `bench/baseline.json` (mới) | mốc đã chốt |
-| `web/src/db/client.ts` | hook đo query khi `NR_PROFILE=1` |
-| `package.json` gốc | `bench`, `bench:compare` |
-| `docs/web/phase-46-benchmark.md` | bảng mốc + luồng chậm nhất |
-| `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` | folder + lệnh mới (luật repo) |
+- `bench/niches.json` (mới) — 3 niche chuẩn + country
+- `bench/run.ts` (mới) — chạy luồng, đo 9 chỉ số, ghi `bench/out/<ngày>.json`
+- `bench/compare.ts` (mới) — so 2 file kết quả + so bảng keyword / điểm
+- `bench/baseline.json` (mới) — mốc đã chốt
+- `web/src/db/client.ts` — hook đo query khi `NR_PROFILE=1`
+- `package.json` gốc — `bench`, `bench:compare`
+- `docs/web/phase-46-benchmark.md` — bảng mốc + luồng chậm nhất
+- `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` — folder + lệnh mới (luật repo)
 
 ## Tasks
 

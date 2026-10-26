@@ -22,11 +22,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/phase-45-review-4.md` | bảng 3 lần: thời gian, chi phí AI, quota SERP, gói GEO, vướng |
-| code Phase 41–44 | sửa lỗi kèm test |
-| `CHANGELOG.md` | bản Web mới |
+- `docs/web/phase-45-review-4.md` — bảng 3 lần: thời gian, chi phí AI, quota SERP, gói GEO, vướng
+- code Phase 41–44 — sửa lỗi kèm test
+- `CHANGELOG.md` — bản Web mới
 
 ## Tasks
 

@@ -28,14 +28,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/sync/*.ts` (mới) | mapping, sync 2 chiều, xung đột |
-| `web/src/server/app.ts` | `POST /sync/apply` (ghi bản từ cloud vào SQLite có kiểm `updatedAt`), `GET /sync/changes?since=` |
-| `web/src/db/schema.ts` + migration mới | `updatedAt` ms + `deviceId` trên bảng đồng bộ; `sync_state` |
-| `firestore.rules`, `firestore.indexes.json`, `firebase.json` (mới) | quy tắc + emulator |
-| `web/tests/sync-*.test.ts`, `tests/rules/*.test.ts` | mapping, xung đột, quy tắc |
-| `README.md`, `CLAUDE.md`, `CHANGELOG.md` | file mới ở gốc |
+- `web/src/lib/sync/*.ts` (mới) — mapping, sync 2 chiều, xung đột
+- `web/src/server/app.ts` — `POST /sync/apply` (ghi bản từ cloud vào SQLite có kiểm `updatedAt`), `GET /sync/changes?since=`
+- `web/src/db/schema.ts` + migration mới — `updatedAt` ms + `deviceId` trên bảng đồng bộ; `sync_state`
+- `firestore.rules`, `firestore.indexes.json`, `firebase.json` (mới) — quy tắc + emulator
+- `web/tests/sync-*.test.ts`, `tests/rules/*.test.ts` — mapping, xung đột, quy tắc
+- `README.md`, `CLAUDE.md`, `CHANGELOG.md` — file mới ở gốc
 
 ## Tasks
 

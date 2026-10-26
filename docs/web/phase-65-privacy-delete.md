@@ -45,3 +45,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 9](version-9.md)
+
+Plan code chi tiết: [Phase 65](../superpowers/plans/2026-10-25-niche-radar-phase65-privacy-delete.md)

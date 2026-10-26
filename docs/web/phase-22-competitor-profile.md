@@ -43,3 +43,5 @@ và Feature Gap nằm ở khối khác. "Cờ đối thủ yếu" là ứng viê
 - So 2–5 đối thủ cạnh nhau — [Phase 37](phase-37-compare-competitor.md)
 - Theo dõi thay đổi của đối thủ theo thời gian — [Phase 23](phase-23-tracking.md)
 </div>
+
+Plan code chi tiết: [Phase 22](../superpowers/plans/2026-10-25-niche-radar-phase22-competitor-profile.md)

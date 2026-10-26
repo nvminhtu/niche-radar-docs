@@ -34,6 +34,7 @@ Giá: **chưa đo**. Chỉ ghi số sau khi đo giá đối thủ và chi phí A
 |---|---|
 | :material-tag-search: **Giá đối thủ** | đo giá tool nghiên cứu niche / keyword / app, mỗi dòng ghi nguồn + ngày |
 | :material-robot: **Chi phí AI** | đo chi phí AI thật mỗi niche từ log Phase 42, 38, 39 |
+| :material-lock-open-variant: **Số fake-door** | đọc bảng kết quả [Phase 16b](phase-16b-decision-board.md#ket-qua-fake-door): tính năng nào được bấm, bao nhiêu email, mức giá người chọn — tín hiệu giá đầu tiên có nguồn |
 | :material-filter-variant: **Phễu GA4** | đọc phễu [Version 9](version-9.md): người dùng dừng ở tính năng nào |
 | :material-scale-balance: **Chọn mô hình** | Free / Pro, lifetime và / hoặc subscription, độ dài dùng thử cho Phase 68 |
 | :material-file-document-edit: **money.md** | viết theo `/app-money` của App-AI-Skills: bảng gói, giá, lý do từng con số kèm nguồn |
@@ -58,3 +59,5 @@ Giá: **chưa đo**. Chỉ ghi số sau khi đo giá đối thủ và chi phí A
 </div>
 
 [Tổng quan Version 10](version-10.md)
+
+Plan code chi tiết: [Phase 66](../superpowers/plans/2026-10-25-niche-radar-phase66-money-model.md)

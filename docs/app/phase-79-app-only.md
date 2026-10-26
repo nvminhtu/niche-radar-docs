@@ -46,3 +46,5 @@ flowchart LR
 - Mac App Store / thanh toán trong app của Apple
 - Làm trước khi bản Web xong Version 9
 </div>
+
+Plan code chi tiết: [Phase 79](../superpowers/plans/2026-10-25-niche-radar-phase79-app-only.md)

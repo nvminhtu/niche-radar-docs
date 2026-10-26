@@ -71,6 +71,8 @@ nav:
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
           - Phase 9c · Đa ngôn ngữ: web/phase-9c-i18n.md
           - Phase 10 · Reddit Gap: web/phase-10-reddit-gap.md
+          - Phase 10b · Q&A Gap (Stack Exchange + HN): web/phase-10b-qa-gap.md
+          - Phase 10c · GitHub Feature Request Gap: web/phase-10c-github-gap.md
           - Phase 11 · Research nguồn tìm gap: web/phase-11-gap-sources.md
           - Phase 11 · Bản đồ nguồn gap: web/gap-sources-map.md
       - "Version 1 · Làm kỹ tính năng chính (Phase 12–27)":
@@ -80,6 +82,7 @@ nav:
           - "Phase 15 · Quản lý Project": web/phase-15-project-manage.md
           - "Phase 16 · Export (CSV, JSON, gói LLM + brief tính năng)": web/phase-16-export.md
           - "Định dạng file xuất": export-schema.md
+          - "Phase 16b · Bàn quyết định long-tail + đo nhu cầu Pro": web/phase-16b-decision-board.md
           - "Phase 17 · Tóm tắt niche + chủ đề than (AI)": web/phase-17-ai-summary.md
           - "Phase 18 · Doanh thu thật (TrustMRR + AI)": web/phase-18-revenue.md
           - "Phase 19 · Backup / restore": web/phase-19-backup-restore.md
@@ -175,6 +178,7 @@ nav:
   - Skills: skills.md
   - Tài liệu chi tiết:
       - Master Plan (bản đầy đủ): superpowers/specs/2026-10-24-niche-radar-master-plan.md
+      - Plan code từng phase: superpowers/plans/index.md
       - Plan code Phase 1: superpowers/plans/2026-10-24-niche-radar-phase1-explorer.md
       - Plan code Phase 2: superpowers/plans/2026-10-24-niche-radar-phase2-appstore-money.md
       - Spec Phase 8 · Local App: superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md

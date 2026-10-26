@@ -40,16 +40,14 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/collectors/play-reviews.ts` + `appstore-web.ts` | giữ 1–3★, `version` (Play), ngày; Play 200 · iOS 5 trang; vẫn cache 7 ngày |
-| `web/src/db/schema.ts` + migration mới | bảng `review_seen` (backup trước, như Phase 8) |
-| `web/src/lib/complaint-rules.ts` (mới) | gốc từ, đồng nghĩa, từ khoá 8 loại, mẫu câu "ước gì" |
-| `web/src/lib/complaints.ts` | gộp cùng ý, gán loại, đếm theo app, mới nổi (90 ngày vs trước), `wishes()` |
-| `web/src/server/app.ts` | `/research/:id/complaints` trả `{ complaints, byApp, emerging, wishes }`, nhận lọc `store/app/type/from/to` |
-| `web/src/components/ComplaintsBlock.tsx` | bảng app × loại, chip mới nổi, danh sách ước gì, bộ lọc, câu trích có link |
-| `web/src/lib/evidence.ts` | thêm mục lời chê + ước gì |
-| `web/tests/complaints*.test.ts` + fixture | review thật đã ẩn tên |
+- `web/src/collectors/play-reviews.ts` + `appstore-web.ts` — giữ 1–3★, `version` (Play), ngày; Play 200 · iOS 5 trang; vẫn cache 7 ngày
+- `web/src/db/schema.ts` + migration mới — bảng `review_seen` (backup trước, như Phase 8)
+- `web/src/lib/complaint-rules.ts` (mới) — gốc từ, đồng nghĩa, từ khoá 8 loại, mẫu câu "ước gì"
+- `web/src/lib/complaints.ts` — gộp cùng ý, gán loại, đếm theo app, mới nổi (90 ngày vs trước), `wishes()`
+- `web/src/server/app.ts` — `/research/:id/complaints` trả `{ complaints, byApp, emerging, wishes }`, nhận lọc `store/app/type/from/to`
+- `web/src/components/ComplaintsBlock.tsx` — bảng app × loại, chip mới nổi, danh sách ước gì, bộ lọc, câu trích có link
+- `web/src/lib/evidence.ts` — thêm mục lời chê + ước gì
+- `web/tests/complaints*.test.ts` + fixture — review thật đã ẩn tên
 
 ## Tasks
 

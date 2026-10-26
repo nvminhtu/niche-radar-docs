@@ -28,16 +28,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `security/checklist.md` (mới) | phiếu: mục · cách kiểm · kết quả · ngày |
-| `web/src/server/app.ts`, `index.ts`, `lib/api-guard.ts` | token, Origin, Host |
-| `web/src/client/page-cache.ts` / chỗ gọi `fetch` chung | gửi `X-NR-Token` |
-| `web/src/lib/safe.ts` (mới) | `safeHref`, `redact` |
-| component hiện link / chữ cào về | dùng `safeHref` |
-| `.github/dependabot.yml` (mới), `.github/workflows/ci.yml` | Dependabot + bước `npm audit --audit-level=high` + gitleaks |
-| `web/src/demo/demo-fetch.ts` | demo không cần token |
-| `web/tests/security-*.test.ts` | |
+- `security/checklist.md` (mới) — phiếu: mục · cách kiểm · kết quả · ngày
+- `web/src/server/app.ts`, `index.ts`, `lib/api-guard.ts` — token, Origin, Host
+- `web/src/client/page-cache.ts` / chỗ gọi `fetch` chung — gửi `X-NR-Token`
+- `web/src/lib/safe.ts` (mới) — `safeHref`, `redact`
+- component hiện link / chữ cào về — dùng `safeHref`
+- `.github/dependabot.yml` (mới), `.github/workflows/ci.yml` — Dependabot + bước `npm audit --audit-level=high` + gitleaks
+- `web/src/demo/demo-fetch.ts` — demo không cần token
+- `web/tests/security-*.test.ts`
 
 ## Tasks
 

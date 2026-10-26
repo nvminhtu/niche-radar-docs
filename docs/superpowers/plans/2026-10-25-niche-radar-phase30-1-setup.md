@@ -28,16 +28,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/setup.md` (mới) + `docs/javascripts/setup-detect.js` + `mkdocs.yml` | lớp 1 |
-| `web/src/lib/setup-check.ts` (mới) | Node, npm, better-sqlite3 (mở DB thử), cổng 3200 / 3201, mạng 3 nguồn, key Claude, Ollama |
-| `web/src/server/app.ts` | `GET /api/setup/check` |
-| `web/src/client/SetupPage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` | `/setup`, nút Kiểm tra máy, bắt buộc / tuỳ chọn |
-| `web/src/components/AskAi.tsx` (mới) | menu dọc 4 dòng, đóng khi bấm ngoài / Esc |
-| `web/src/lib/scrub.ts` (mới) | che dữ liệu riêng (dùng chung với Phase 30 góp ý) |
-| `README.md`, `docs/cach-dung.md` | trỏ tới trang Setup |
-| `web/tests/setup-check.test.ts`, `scrub.test.ts` | |
+- `docs/setup.md` (mới) + `docs/javascripts/setup-detect.js` + `mkdocs.yml` — lớp 1
+- `web/src/lib/setup-check.ts` (mới) — Node, npm, better-sqlite3 (mở DB thử), cổng 3200 / 3201, mạng 3 nguồn, key Claude, Ollama
+- `web/src/server/app.ts` — `GET /api/setup/check`
+- `web/src/client/SetupPage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` — `/setup`, nút Kiểm tra máy, bắt buộc / tuỳ chọn
+- `web/src/components/AskAi.tsx` (mới) — menu dọc 4 dòng, đóng khi bấm ngoài / Esc
+- `web/src/lib/scrub.ts` (mới) — che dữ liệu riêng (dùng chung với Phase 30 góp ý)
+- `README.md`, `docs/cach-dung.md` — trỏ tới trang Setup
+- `web/tests/setup-check.test.ts`, `scrub.test.ts`
 
 ## Tasks
 

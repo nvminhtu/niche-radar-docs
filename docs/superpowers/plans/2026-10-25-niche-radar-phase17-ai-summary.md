@@ -34,15 +34,13 @@ mọi câu có trích dẫn đã kiểm.
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/ai/tasks.ts` | task `summary` đổi sang khung 6 mục (`cleanSummary` kiểm từng mục); giữ đọc được bản cũ 5 câu |
-| `web/src/lib/ai/themes.ts` | gửi phần mới + ghép chủ đề cũ; tên chủ đề tiếng Việt, câu trích giữ nguyên văn gốc |
-| `web/src/lib/ai/crosscheck.ts` (mới) | khớp chủ đề AI ↔ cụm Phase 12 (từ chung trong nhãn + câu trích trùng) → "chỉ AI thấy, nên kiểm" |
-| `web/src/db/schema.ts` + migration mới | `ai_history` (runId, task, json, createdAt) — `ai_results` vẫn là bản hiện tại (review mới lấy từ `review_seen` của Phase 12) |
-| `web/src/lib/ai/estimate.ts` (mới) | ước token + tiền trước khi gửi |
-| `web/src/components/AiResults.tsx`, `AiTaskBlock.tsx` | 6 mục, tỉ lệ khớp "22/22", câu gạch, nhãn kiểm chéo, xem lịch sử |
-| `web/tests/ai-summary*.test.ts` | client giả (`Ask` giả) |
+- `web/src/lib/ai/tasks.ts` — task `summary` đổi sang khung 6 mục (`cleanSummary` kiểm từng mục); giữ đọc được bản cũ 5 câu
+- `web/src/lib/ai/themes.ts` — gửi phần mới + ghép chủ đề cũ; tên chủ đề tiếng Việt, câu trích giữ nguyên văn gốc
+- `web/src/lib/ai/crosscheck.ts` (mới) — khớp chủ đề AI ↔ cụm Phase 12 (từ chung trong nhãn + câu trích trùng) → "chỉ AI thấy, nên kiểm"
+- `web/src/db/schema.ts` + migration mới — `ai_history` (runId, task, json, createdAt) — `ai_results` vẫn là bản hiện tại (review mới lấy từ `review_seen` của Phase 12)
+- `web/src/lib/ai/estimate.ts` (mới) — ước token + tiền trước khi gửi
+- `web/src/components/AiResults.tsx`, `AiTaskBlock.tsx` — 6 mục, tỉ lệ khớp "22/22", câu gạch, nhãn kiểm chéo, xem lịch sử
+- `web/tests/ai-summary*.test.ts` — client giả (`Ask` giả)
 
 ## Tasks
 

@@ -30,18 +30,16 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | bảng `reddit_threads` (khoá `id` Reddit), `reddit_fetches` (subreddit, route, fetchedAt, count) |
-| `web/src/lib/reddit/format.ts` | kiểm + chuẩn hoá file nhập (bỏ `author`, cắt độ dài, loại trùng) |
-| `web/src/lib/reddit/rules.ts` | mẫu câu chuyên mục, flair, từ điển ~40 chủ đề Mac, cụm "chưa giải" |
-| `web/src/lib/reddit/classify.ts` | `categoryOf(thread)`, `topicsOf(thread)` (1–2 chủ đề) |
-| `web/src/lib/reddit/gap.ts` | gom chủ đề × chuyên mục, số liệu, điểm gap, đếm app Mac App Store |
-| `web/src/lib/reddit/job.ts` | sinh file job cho Claude in Chrome (link top năm / tháng / search 6–8 mẫu) |
-| `web/src/server/app.ts` | `GET /api/reddit`, `GET /api/reddit/job`, `POST /api/reddit/import`, `GET /api/reddit/gap`, `GET /api/reddit/export.md` |
-| `web/src/client/RedditGapPage.tsx` + `main.tsx` + `NavMenu.tsx` | trang `/reddit`, 1 cột |
-| `web/src/lib/features.ts` | thêm "Reddit Gap" (Phase 10) |
-| `web/tests/reddit-*.test.ts` + `web/tests/fixtures/reddit/` | fixture bài thật đã bỏ tên người đăng |
+- `web/src/db/schema.ts` + migration mới — bảng `reddit_threads` (khoá `id` Reddit), `reddit_fetches` (subreddit, route, fetchedAt, count)
+- `web/src/lib/reddit/format.ts` — kiểm + chuẩn hoá file nhập (bỏ `author`, cắt độ dài, loại trùng)
+- `web/src/lib/reddit/rules.ts` — mẫu câu chuyên mục, flair, từ điển ~40 chủ đề Mac, cụm "chưa giải"
+- `web/src/lib/reddit/classify.ts` — `categoryOf(thread)`, `topicsOf(thread)` (1–2 chủ đề)
+- `web/src/lib/reddit/gap.ts` — gom chủ đề × chuyên mục, số liệu, điểm gap, đếm app Mac App Store
+- `web/src/lib/reddit/job.ts` — sinh file job cho Claude in Chrome (link top năm / tháng / search 6–8 mẫu)
+- `web/src/server/app.ts` — `GET /api/reddit`, `GET /api/reddit/job`, `POST /api/reddit/import`, `GET /api/reddit/gap`, `GET /api/reddit/export.md`
+- `web/src/client/RedditGapPage.tsx` + `main.tsx` + `NavMenu.tsx` — trang `/reddit`, 1 cột
+- `web/src/lib/features.ts` — thêm "Reddit Gap" (Phase 10)
+- `web/tests/reddit-*.test.ts` + `web/tests/fixtures/reddit/` — fixture bài thật đã bỏ tên người đăng
 
 ## Tasks
 

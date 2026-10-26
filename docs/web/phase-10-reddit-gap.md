@@ -181,3 +181,5 @@ tuyến B (Claude in Chrome tự đọc). Ba việc này chờ có dữ liệu t
 | Điều khoản Reddit cấm dùng dữ liệu cho sản phẩm bán | Bản đầu chỉ dùng nội bộ để research. Trước khi bán Pro (Phase 66+) phải đọc lại điều khoản, có thể tắt nguồn Reddit ở bản bán |
 | Phân loại bằng mẫu câu sai nhiều | Kiểm tay 30 bài, sửa luật trong file; AI chỉ gán phần `other` |
 | Top năm thiên về bài vui / tin tức, ít hỏi đáp | Lọc bỏ flair News / Discussion; thêm search theo mẫu câu hỏi |
+
+Plan code chi tiết: [Phase 10](../superpowers/plans/2026-10-25-niche-radar-phase10-reddit-gap.md)

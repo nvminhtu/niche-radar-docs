@@ -71,3 +71,5 @@ flowchart LR
 - Hỏi dữ liệu bằng lời — [Phase 38](phase-38-ai-cite-ask.md)
 - Thêm / thử lại tuyến AI khác (Gemini, OpenAI, AI trong trình duyệt, Ollama) — [Phase 25](phase-25-ai-settings.md)
 </div>
+
+Plan code chi tiết: [Phase 17](../superpowers/plans/2026-10-25-niche-radar-phase17-ai-summary.md)

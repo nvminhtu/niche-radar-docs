@@ -26,14 +26,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `functions/src/ai-proxy.ts`, `usage-report.ts` (mới) | proxy có trần + báo cáo |
-| `web/src/lib/ai/settings.ts`, `providers.ts` | tuyến `byok` / `pro-pool`, `proPoolAsk` gọi proxy |
-| `web/src/lib/ai/quota.ts` (mới) | đọc lượt còn lại |
-| `web/src/components/AiQuota.tsx` (mới), `SettingsPage.tsx` | hiện lượt còn, chọn BYOK / pool |
-| `firestore.rules` | `usage` chỉ đọc với chủ |
-| `functions/test/ai-proxy.test.ts`, `web/tests/ai-route*.test.ts` | |
+- `functions/src/ai-proxy.ts`, `usage-report.ts` (mới) — proxy có trần + báo cáo
+- `web/src/lib/ai/settings.ts`, `providers.ts` — tuyến `byok` / `pro-pool`, `proPoolAsk` gọi proxy
+- `web/src/lib/ai/quota.ts` (mới) — đọc lượt còn lại
+- `web/src/components/AiQuota.tsx` (mới), `SettingsPage.tsx` — hiện lượt còn, chọn BYOK / pool
+- `firestore.rules` — `usage` chỉ đọc với chủ
+- `functions/test/ai-proxy.test.ts`, `web/tests/ai-route*.test.ts`
 
 ## Tasks
 

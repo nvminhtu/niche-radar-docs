@@ -40,3 +40,5 @@ flowchart LR
 - Tính năng tra cứu mới (chỉ gói những gì Phase 31–35 đã xong)
 - Auto-update, bản Windows (xét lại khi có người dùng ngoài)
 </div>
+
+Plan code chi tiết: [Phase 75](../superpowers/plans/2026-10-25-niche-radar-phase75-local-app-2.md)

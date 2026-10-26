@@ -40,3 +40,5 @@ flowchart LR
 - Server nhiều người dùng, sync cloud realtime — chỉ khi có quyết định host (Idea Lab qua test)
 - Thanh toán trong tool khi chưa có quyết định bán
 </div>
+
+Plan code chi tiết: [Phase 30](../superpowers/plans/2026-10-25-niche-radar-phase30-account.md)

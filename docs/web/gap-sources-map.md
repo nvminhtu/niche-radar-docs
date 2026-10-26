@@ -4,12 +4,12 @@
 > và **12 phương pháp**, tất cả chấm chung một thang. Kiểm ngày **2026-10-26**: mở thật vài trang của từng nguồn, đọc
 > điều khoản. Không đăng ký, không trả phí, không quét hàng loạt. Số nào chưa đo được thì ghi `chưa đo`.
 
-<span class="chip chip--done">Xong 2026-10-26 · chờ anh duyệt top 3</span>
+<span class="chip chip--done">Xong 2026-10-26 · top 3 đã duyệt → Phase 10b + 10c</span>
 
 <div class="box box--star" markdown>
 **Tóm tắt**
 
-- **Đề xuất làm phase riêng (anh duyệt mới đánh số):**
+- **Làm phase riêng (đã duyệt 2026-10-26 → Phase 10b + 10c):**
   1. **Stack Exchange Q&A** (Ask Different + Super User): đã gọi thử API được, không cần key, có điểm và lượt xem.
   2. **GitHub Issues xếp theo 👍**: tính năng người dùng xin mà maintainer không làm. API miễn phí, điều khoản thoáng nhất trong các nguồn.
   3. **Hacker News Ask HN** (API Algolia): câu "is there an app / tool…" kèm điểm và số bình luận.
@@ -799,7 +799,10 @@ Mỗi phương pháp ghi cách làm, nguồn dùng và Niche Radar đã có chư
 12. **Search Console của mình.** Câu có nhiều lượt hiện mà trang mình chưa trả lời. Nguồn: GSC qua MCP. **Chưa có trong
     app.** Làm tay qua MCP khi có khoá.
 
-## Đề xuất top 3 (chờ anh duyệt)
+## Đề xuất top 3 (đã duyệt 2026-10-26)
+
+**Anh duyệt cả 3:** A + C gộp thành [Phase 10b · Q&A Gap](phase-10b-qa-gap.md), B thành
+[Phase 10c · GitHub Feature Request Gap](phase-10c-github-gap.md). Làm trước Phase 12.
 
 Cả 3 đều là API miễn phí, không cần trả tiền, và **dùng lại khung của Phase 10**: chuyên mục + chủ đề → bảng gap → bài
 gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một nguồn trong bảng gap, không cần trang mới.
@@ -833,4 +836,3 @@ gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một n
 - **Thứ tự gợi ý:** A + C (gộp) và B làm ngay sau Phase 10, trước Phase 12. Lý do: cả hai dùng chung bảng gap vừa làm
   xong, và cho thêm dữ liệu để Phase 12–13 chấm.
 
-Anh duyệt xong thì đánh số phase, thêm trang phase và sửa ROADMAP. Chưa duyệt thì không đánh số.

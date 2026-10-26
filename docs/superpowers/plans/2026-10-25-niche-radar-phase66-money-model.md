@@ -25,11 +25,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `money.md` (chỗ chốt ở trên) | bảng gói, giá, dùng thử, số máy / license, % chi phí AI tối đa, lý do + nguồn |
-| `docs/web/phase-66-money-model.md` | tóm tắt (không số nội bộ nhạy cảm nếu sync public) |
-| `scripts/ai-cost-report.ts` (mới) | in chi phí AI / niche từ DB |
+- `money.md` (chỗ chốt ở trên) — bảng gói, giá, dùng thử, số máy / license, % chi phí AI tối đa, lý do + nguồn
+- `docs/web/phase-66-money-model.md` — tóm tắt (không số nội bộ nhạy cảm nếu sync public)
+- `scripts/ai-cost-report.ts` (mới) — in chi phí AI / niche từ DB
 
 ## Tasks
 

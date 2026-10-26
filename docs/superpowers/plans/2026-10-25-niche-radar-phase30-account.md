@@ -25,15 +25,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/profile.ts` (mới) | đọc / ghi hồ sơ, đổi nơi lưu an toàn |
-| `web/src/lib/feedback.ts` (mới) | lưu góp ý, phân loại, xuất `.md` |
-| `web/src/server/app.ts` | `GET/POST /profile` · `POST /profile/data-dir` · `POST /feedback` · `GET /feedback.md` |
-| `web/src/client/HomePage.tsx` | màn lần đầu khi DB rỗng |
-| `web/src/components/FeedbackButton.tsx` (mới), `AppShell.tsx` | nút góp ý ở chân trang |
-| `web/src/client/SettingsPage.tsx` | mục Hồ sơ |
-| `web/tests/profile.test.ts`, `feedback.test.ts` | |
+- `web/src/lib/profile.ts` (mới) — đọc / ghi hồ sơ, đổi nơi lưu an toàn
+- `web/src/lib/feedback.ts` (mới) — lưu góp ý, phân loại, xuất `.md`
+- `web/src/server/app.ts` — `GET/POST /profile` · `POST /profile/data-dir` · `POST /feedback` · `GET /feedback.md`
+- `web/src/client/HomePage.tsx` — màn lần đầu khi DB rỗng
+- `web/src/components/FeedbackButton.tsx` (mới), `AppShell.tsx` — nút góp ý ở chân trang
+- `web/src/client/SettingsPage.tsx` — mục Hồ sơ
+- `web/tests/profile.test.ts`, `feedback.test.ts`
 
 ## Tasks
 

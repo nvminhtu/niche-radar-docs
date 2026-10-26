@@ -26,12 +26,10 @@ Phase 10 / 12 (dữ liệu nỗi đau).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `marketing/gtm.md` (mới, qua `/app-gtm`) | Pha 0 + Pha 1: định vị 5 dòng + bằng chứng |
-| repo oneclicktool.app: trang `niche-radar` + dữ liệu sản phẩm | landing |
-| repo `app-demo`: `niche-radar/` | video demo + ảnh |
-| `docs/web/phase-70-positioning-landing.md` | link landing, kết quả kiểm |
+- `marketing/gtm.md` (mới, qua `/app-gtm`) — Pha 0 + Pha 1: định vị 5 dòng + bằng chứng
+- repo oneclicktool.app: trang `niche-radar` + dữ liệu sản phẩm — landing
+- repo `app-demo`: `niche-radar/` — video demo + ảnh
+- `docs/web/phase-70-positioning-landing.md` — link landing, kết quả kiểm
 
 ## Tasks
 

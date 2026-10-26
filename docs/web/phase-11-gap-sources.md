@@ -5,13 +5,13 @@
 > Niche Radar không. Đây cũng là chỗ gom **MCP**, **tool scrape / repo GitHub** dùng kèm được, và **phương pháp tìm
 > gap / niche** mà anh chưa biết để hỏi.
 
-<span class="chip chip--done">Xong 2026-10-26 · chờ anh duyệt top 3</span>
+<span class="chip chip--done">Xong 2026-10-26 · top 3 đã duyệt → Phase 10b + 10c</span>
 
 <div class="box box--star" markdown>
 **Kết quả:** [Bản đồ nguồn gap](gap-sources-map.md) có 52 nguồn, 17 MCP, 21 repo / tool và 12 phương pháp, kiểm ngày
 2026-10-26. Đề xuất 3 phase mới, tất cả dùng API miễn phí và dùng lại bảng gap của Phase 10:
 **A · Stack Exchange Q&A Gap**, **B · GitHub Feature Request Gap**, **C · Hacker News Ask Gap** (có thể gộp với A).
-Dự bị: X search (trả phí). Đề xuất hạ Amazon (Phase 33–34) xuống ứng viên. Anh duyệt xong mới đánh số.
+Dự bị: X search (trả phí). Đề xuất hạ Amazon (Phase 33–34) xuống ứng viên. **Anh duyệt 2026-10-26:** A + C gộp thành [Phase 10b · Q&A Gap](phase-10b-qa-gap.md), B thành [Phase 10c · GitHub Feature Request Gap](phase-10c-github-gap.md).
 </div>
 
 <div class="box box--goal" markdown>
@@ -154,3 +154,5 @@ Mỗi phương pháp ghi: làm thế nào, nguồn nào, Niche Radar đã có ch
 - Quét thử với số lượng lớn — chỉ mở vài trang để kiểm "lấy được không"
 - Bịa số (giá, số sao, lượt dùng) — chưa đo thì ghi `chưa đo`
 </div>
+
+Plan code chi tiết: [Phase 11](../superpowers/plans/2026-10-25-niche-radar-phase11-gap-sources.md)

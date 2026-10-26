@@ -26,14 +26,12 @@ Phase 12, 18 làm số Đau / Tiền tốt hơn nếu đã xong.
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/compare-niche.ts` (mới) | hàng 6 nhóm: Cơ hội · Đối thủ · Xu hướng · Đau · Tiền · Nguồn mới; `winners()` |
-| `web/src/server/app.ts` | `GET /api/compare?runs=12,15,18` · `GET /api/compare.csv` · `GET /api/compare.md` |
-| `web/src/client/ComparePage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` | trang `/compare`, chọn niche (tick trong lịch sử), bảng, ô bấm mở `/r/:id#khối` |
-| `RunHistory.tsx` | ô tick + nút "So sánh (N)" |
-| `web/src/lib/features.ts` | "So sánh niche" → done |
-| `web/tests/compare-niche.test.ts` | |
+- `web/src/lib/compare-niche.ts` (mới) — hàng 6 nhóm: Cơ hội · Đối thủ · Xu hướng · Đau · Tiền · Nguồn mới; `winners()`
+- `web/src/server/app.ts` — `GET /api/compare?runs=12,15,18` · `GET /api/compare.csv` · `GET /api/compare.md`
+- `web/src/client/ComparePage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` — trang `/compare`, chọn niche (tick trong lịch sử), bảng, ô bấm mở `/r/:id#khối`
+- `RunHistory.tsx` — ô tick + nút "So sánh (N)"
+- `web/src/lib/features.ts` — "So sánh niche" → done
+- `web/tests/compare-niche.test.ts`
 
 ## Tasks
 

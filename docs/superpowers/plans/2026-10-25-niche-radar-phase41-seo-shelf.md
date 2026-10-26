@@ -34,16 +34,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/collectors/serp.ts` (mới) | `SerpProvider` + `brave`, `google_cse` |
-| `web/src/lib/serp-rules.ts` (mới) | loại trang + độ dễ chen |
-| `web/src/lib/questions.ts` (mới) | bộ câu hỏi từ autocomplete |
-| `web/src/db/schema.ts` + migration mới | `SOURCES` thêm `serp`; `serp_results` (keywordId, rank, url, title, domain, kind, provider, fetchedAt), `serp_calls`, `niche_questions` (runId, prefix, text) |
-| `run-research.ts`, `run-view.ts` | nguồn mới chạy cho Top 10 cơ hội |
-| `web/src/components/SerpBlock.tsx` (mới) | bảng top 10 theo keyword, chip loại trang, độ dễ chen, bộ câu hỏi |
-| export (Phase 16) | bảng `serp`, `questions` |
-| `web/tests/serp-*.test.ts` | fixture JSON Brave / CSE |
+- `web/src/collectors/serp.ts` (mới) — `SerpProvider` + `brave`, `google_cse`
+- `web/src/lib/serp-rules.ts` (mới) — loại trang + độ dễ chen
+- `web/src/lib/questions.ts` (mới) — bộ câu hỏi từ autocomplete
+- `web/src/db/schema.ts` + migration mới — `SOURCES` thêm `serp`; `serp_results` (keywordId, rank, url, title, domain, kind, provider, fetchedAt), `serp_calls`, `niche_questions` (runId, prefix, text)
+- `run-research.ts`, `run-view.ts` — nguồn mới chạy cho Top 10 cơ hội
+- `web/src/components/SerpBlock.tsx` (mới) — bảng top 10 theo keyword, chip loại trang, độ dễ chen, bộ câu hỏi
+- export (Phase 16) — bảng `serp`, `questions`
+- `web/tests/serp-*.test.ts` — fixture JSON Brave / CSE
 
 ## Tasks
 

@@ -60,3 +60,5 @@ flowchart LR
 - Backup lên cloud gắn tài khoản — [Phase 63](phase-63-project-sync.md)
 - Mã hoá backup (ghi Appendix nếu có dữ liệu nhạy cảm)
 </div>
+
+Plan code chi tiết: [Phase 19](../superpowers/plans/2026-10-25-niche-radar-phase19-backup-restore.md)

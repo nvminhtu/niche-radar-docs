@@ -31,16 +31,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/backup/schedule.ts` (mới) | `ensureDailyBackup(db, now)` gọi lúc server khởi động + mỗi giờ; `retention(list, now)` 7/4/6 |
-| `web/src/lib/backup/verify.ts` (mới) | integrity + đếm dòng → `{ ok, counts, error }` |
-| `web/src/lib/portable.ts` | `backupDb` ghi `.partial` → kiểm → đổi tên; `backupBefore(reason)` gọi trước import / merge / xoá hẳn |
-| `web/src/lib/backup/restore-project.ts` (mới) | mở bản cũ chỉ đọc, `exportProject` từ bản đó → `importBundle` vào DB hiện tại |
-| `web/src/lib/backup/external.ts` (mới) | thư mục ngoài (lưu `settings`), nén `.zip` |
-| `web/src/server/index.ts`, `app.ts` | hẹn giờ; `GET /data` thêm `lastGood`, `POST /data/backup-dir`, `GET /data/backups/:name/preview`, `POST /data/restore-project` |
-| `web/src/client/SettingsPage.tsx` + `AppShell.tsx` | danh sách có nhãn đỏ / xanh, xem trước so số dòng, chọn thư mục ngoài, "Backup cuối" ở chân trang, báo vàng > 3 ngày |
-| `web/tests/backup-*.test.ts` | |
+- `web/src/lib/backup/schedule.ts` (mới) — `ensureDailyBackup(db, now)` gọi lúc server khởi động + mỗi giờ; `retention(list, now)` 7/4/6
+- `web/src/lib/backup/verify.ts` (mới) — integrity + đếm dòng → `{ ok, counts, error }`
+- `web/src/lib/portable.ts` — `backupDb` ghi `.partial` → kiểm → đổi tên; `backupBefore(reason)` gọi trước import / merge / xoá hẳn
+- `web/src/lib/backup/restore-project.ts` (mới) — mở bản cũ chỉ đọc, `exportProject` từ bản đó → `importBundle` vào DB hiện tại
+- `web/src/lib/backup/external.ts` (mới) — thư mục ngoài (lưu `settings`), nén `.zip`
+- `web/src/server/index.ts`, `app.ts` — hẹn giờ; `GET /data` thêm `lastGood`, `POST /data/backup-dir`, `GET /data/backups/:name/preview`, `POST /data/restore-project`
+- `web/src/client/SettingsPage.tsx` + `AppShell.tsx` — danh sách có nhãn đỏ / xanh, xem trước so số dòng, chọn thư mục ngoài, "Backup cuối" ở chân trang, báo vàng > 3 ngày
+- `web/tests/backup-*.test.ts`
 
 ## Tasks
 

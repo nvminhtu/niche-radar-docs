@@ -50,3 +50,5 @@ sách phẳng.
 - Chia sẻ project cho người khác / nhiều người sửa — sau [Version 9](version-9.md)
 - Bảng kanban kéo thả giữa cột trạng thái (chỉ làm nếu dùng thật thấy cần — ghi Appendix)
 </div>
+
+Plan code chi tiết: [Phase 15](../superpowers/plans/2026-10-25-niche-radar-phase15-project-manage.md)

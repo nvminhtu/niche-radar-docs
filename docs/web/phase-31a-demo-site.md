@@ -80,3 +80,5 @@ flowchart LR
 </div>
 
 [Tổng quan Web](index.md)
+
+Plan code chi tiết: [Phase 31a](../superpowers/plans/2026-10-25-niche-radar-phase31a-demo-site.md)

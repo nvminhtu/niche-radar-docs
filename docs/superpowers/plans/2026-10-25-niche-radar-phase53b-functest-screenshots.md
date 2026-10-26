@@ -24,13 +24,11 @@ Phase 53 (bộ niche chuẩn).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/tests/functest/run.spec.ts` (mới) + `web/scripts/functest.ts` | nhận keyword, chạy Playwright, viết `report.md` |
-| `web/src/lib/run-research.ts` | `NR_DISABLE_SOURCES` |
-| `web/package.json` | `functest` |
-| `.gitignore` | `run/functest/` |
-| `docs/cach-dung.md`, `CHANGELOG.md` | lệnh mới |
+- `web/tests/functest/run.spec.ts` (mới) + `web/scripts/functest.ts` — nhận keyword, chạy Playwright, viết `report.md`
+- `web/src/lib/run-research.ts` — `NR_DISABLE_SOURCES`
+- `web/package.json` — `functest`
+- `.gitignore` — `run/functest/`
+- `docs/cach-dung.md`, `CHANGELOG.md` — lệnh mới
 
 ## Tasks
 

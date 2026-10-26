@@ -26,14 +26,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/auth-client.ts` (mới) | 3 cách đăng nhập, theo dõi phiên, lấy ID token |
-| `web/src/server/auth.ts` (mới) | kiểm token, `POST /auth/link` gắn hồ sơ, `POST /auth/logout` |
-| `web/src/db/schema.ts` + migration mới | `users.firebaseUid` |
-| `web/src/client/SettingsPage.tsx` / `ProfilesPage.tsx`, `AppShell.tsx` | nút đăng nhập, trạng thái tài khoản |
-| `docs/cach-dung.md` | bước anh tạo Firebase project + bật 3 provider |
-| `web/tests/auth-*.test.ts` | token giả, gắn hồ sơ |
+- `web/src/lib/auth-client.ts` (mới) — 3 cách đăng nhập, theo dõi phiên, lấy ID token
+- `web/src/server/auth.ts` (mới) — kiểm token, `POST /auth/link` gắn hồ sơ, `POST /auth/logout`
+- `web/src/db/schema.ts` + migration mới — `users.firebaseUid`
+- `web/src/client/SettingsPage.tsx` / `ProfilesPage.tsx`, `AppShell.tsx` — nút đăng nhập, trạng thái tài khoản
+- `docs/cach-dung.md` — bước anh tạo Firebase project + bật 3 provider
+- `web/tests/auth-*.test.ts` — token giả, gắn hồ sơ
 
 ## Tasks
 

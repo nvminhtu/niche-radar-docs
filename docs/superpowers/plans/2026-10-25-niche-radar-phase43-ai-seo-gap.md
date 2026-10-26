@@ -24,13 +24,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/shelf-score.ts` (mới) | 2 điểm + phần + refs |
-| `web/src/lib/compare-niche.ts` | 2 hàng mới nhóm "Kệ" (cao = thắng), ô thiếu "chưa tra" |
-| `web/src/components/ShelfScore.tsx` (mới) | hiện điểm + tooltip công thức + bấm ra số gốc; dùng trên `/r/:id` và `/compare` |
-| `web/src/lib/open-questions.ts` (mới) | danh sách câu chưa ai trả lời tốt |
-| `web/tests/shelf-score.test.ts` | |
+- `web/src/lib/shelf-score.ts` (mới) — 2 điểm + phần + refs
+- `web/src/lib/compare-niche.ts` — 2 hàng mới nhóm "Kệ" (cao = thắng), ô thiếu "chưa tra"
+- `web/src/components/ShelfScore.tsx` (mới) — hiện điểm + tooltip công thức + bấm ra số gốc; dùng trên `/r/:id` và `/compare`
+- `web/src/lib/open-questions.ts` (mới) — danh sách câu chưa ai trả lời tốt
+- `web/tests/shelf-score.test.ts`
 
 ## Tasks
 

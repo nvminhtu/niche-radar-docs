@@ -52,3 +52,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 6](version-6.md)
+
+Plan code chi tiết: [Phase 51](../superpowers/plans/2026-10-25-niche-radar-phase51-e2e-tests.md)

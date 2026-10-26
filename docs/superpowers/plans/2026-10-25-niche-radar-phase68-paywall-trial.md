@@ -27,14 +27,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/features.ts` | `tier`, `freeSince` |
-| `web/src/lib/pro-gate.ts` (mới) + `web/src/server/app.ts` | `requirePro` |
-| `web/src/components/PaywallModal.tsx`, `ProGate.tsx` (mới) | màn nâng cấp + cổng |
-| `functions/src/trial.ts`, `restore.ts`, `devices.ts` (mới) | dùng thử, khôi phục, số máy |
-| `web/src/client/SettingsPage.tsx` | mục Gói: trạng thái, Khôi phục mua, danh sách máy |
-| `web/tests/pro-gate.test.ts`, `functions/test/*` | |
+- `web/src/lib/features.ts` — `tier`, `freeSince`
+- `web/src/lib/pro-gate.ts` (mới) + `web/src/server/app.ts` — `requirePro`
+- `web/src/components/PaywallModal.tsx`, `ProGate.tsx` (mới) — màn nâng cấp + cổng
+- `functions/src/trial.ts`, `restore.ts`, `devices.ts` (mới) — dùng thử, khôi phục, số máy
+- `web/src/client/SettingsPage.tsx` — mục Gói: trạng thái, Khôi phục mua, danh sách máy
+- `web/tests/pro-gate.test.ts`, `functions/test/*`
 
 ## Tasks
 

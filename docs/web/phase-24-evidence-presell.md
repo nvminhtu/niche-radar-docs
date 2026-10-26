@@ -56,3 +56,5 @@ flowchart LR
 - Dựng landing thật để bán — Version 11 ([Phase 70](phase-70-positioning-landing.md))
 - Tự tạo tài khoản / đăng bài trên X, Reddit
 </div>
+
+Plan code chi tiết: [Phase 24](../superpowers/plans/2026-10-25-niche-radar-phase24-evidence-presell.md)

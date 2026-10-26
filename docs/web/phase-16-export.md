@@ -4,7 +4,7 @@
 > và có **gói dành riêng cho LLM** — dán vào Claude / ChatGPT là nó hiểu ngay niche, không vượt giới hạn token,
 > rồi viết **brief tính năng** (khách · vấn đề · giải pháp khác · MVP · giá thử · 10 người đầu) dẫn nguồn từng ý.
 
-<span class="chip chip--doing">Code xong · merge main 2026-10-26 · còn phạm vi Reddit Gap + test /app-demand</span>
+<span class="chip chip--doing">Code xong 2026-10-26 · Task 4b xong · còn mở CSV bằng Google Sheets</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (rải rác ở Phase 1, 7, 8).** CSV keyword ở Explore · project `.md` / CSV / `.niche.json` · evidence pack `.md`.
@@ -19,7 +19,7 @@ Feature Gap đã lưu (Phase 4), item project kiểu keyword (Phase 8). Phase 12
 
 ```mermaid
 flowchart LR
-  S[Phạm vi<br/>1 Research · 1 Project] --> F{Định dạng}
+  S[Phạm vi<br/>1 Research · 1 Project<br/>1 subreddit] --> F{Định dạng}
   F --> C[CSV<br/>mỗi bảng 1 file]
   F --> J[JSON<br/>có schema_version]
   F --> M[Markdown<br/>evidence pack]
@@ -32,7 +32,7 @@ flowchart LR
 
 | | |
 |---|---|
-| :material-export-variant: **Hộp thoại Xuất chung** | cùng một hộp ở trang Research và trang Project; nhớ lựa chọn lần trước |
+| :material-export-variant: **Hộp thoại Xuất chung** | cùng một hộp ở trang Research, trang Project và trang Reddit Gap; nhớ lựa chọn lần trước |
 | :material-file-delimited: **CSV** | UTF-8 có BOM (Excel đọc đúng tiếng Việt), tên cột tiếng Anh `snake_case` cố định, ngày ISO, số không định dạng địa phương; mỗi bảng 1 file: keywords · competitors · complaints · gaps · trends · scores |
 | :material-code-json: **JSON** | cùng dữ liệu, có `format: "niche-radar/export"` + `schema_version`, kèm mô tả cột trong [Định dạng file xuất](../export-schema.md) |
 | :material-language-markdown: **Markdown** | evidence pack (Phase 7) — dán vào `research/*.md`, `/app-demand` đọc thẳng |
@@ -53,11 +53,11 @@ flowchart LR
 
 **Cần xong trước:** [Phase 10](phase-10-reddit-gap.md) (đã code). Phase 12 · 13 · 14 không chặn nữa từ khi kéo lên sớm — xong thì gói tự giàu thêm.
 
-<div class="box box--rules" markdown>
-**Còn lại (từ review Phase 12–23 ngày 2026-10-26, chưa làm ở nhánh `phase16-export`)**
+<div class="box box--goal" markdown>
+**Task 4b xong (2026-10-26, nhánh `phase16b-reddit`)**
 
-- Phạm vi **1 subreddit** cho bảng gap của [Phase 10](phase-10-reddit-gap.md) (bảng `reddit_gaps`, CSV + Markdown cùng số với trang); nút Tải .md cũ của Reddit Gap chuyển sang hộp Xuất chung
-- Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand)
+- Phạm vi **Reddit Gap** (`reddit:<subreddit|all>`): nút "Xuất cho AI" trên trang Reddit Gap thay nút Tải .md cũ — CSV `reddit_gaps` cùng số với bảng trên trang, JSON, `.md` y hệt bản cũ (top 20 + 3 bài mẫu), gói cho AI mã `[R1]` với prompt riêng cho dữ liệu Reddit (thiếu giá / đối thủ → `chưa đo`). Route `/api/reddit/gap.md` cũ vẫn chạy.
+- Test gói Markdown đủ mọi mục, ô, số cột mà `check_demand.py` của `/app-demand` đọc
 </div>
 
 <div class="box box--star" markdown>
@@ -80,3 +80,5 @@ flowchart LR
 - Xuất PDF / slide, mở API cho tool khác gọi (MCP ở [Phase 26](phase-26-mcp.md))
 - Tự gửi file lên AI hay tool tự viết brief bằng AI — gói chỉ là file, anh tự dán
 </div>
+
+Plan code chi tiết: [Phase 16](../superpowers/plans/2026-10-25-niche-radar-phase16-export.md)

@@ -26,16 +26,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/ai/providers.ts` | `geminiAsk`, `openaiAsk`, `lmstudioAsk`; `testKey(provider)` gọi 1 lần rẻ nhất |
-| `web/src/lib/ai/settings.ts` | `route` thành map theo việc (`themes`, `summary`, `gap`, `revenue`, `presale`), key theo provider, `capMonthUsd` |
-| `web/src/lib/ai/ledger.ts` (mới) | tổng theo ngày / tháng từ `ai_calls`, chặn khi vượt trần tháng |
-| `web/src/lib/ai/benchmark.ts` (mới) | chạy fixture qua mọi tuyến bật → `{ route, themes, matchedPct, ms, costUsd }` |
-| `web/src/client/browser-ai.ts` (mới) | tuyến C: phát hiện Prompt API, chạy bài thử, POST kết quả |
-| `web/src/server/app.ts` | `POST /settings/ai/test-key` · `POST /ai/benchmark` · `GET /ai/ledger` |
-| `web/src/client/SettingsPage.tsx` | 3 provider, chọn tuyến theo việc, sổ chi phí, nút bài thử + bảng so |
-| `web/tests/ai-providers.test.ts`, `ai-ledger.test.ts` | fetch giả |
+- `web/src/lib/ai/providers.ts` — `geminiAsk`, `openaiAsk`, `lmstudioAsk`; `testKey(provider)` gọi 1 lần rẻ nhất
+- `web/src/lib/ai/settings.ts` — `route` thành map theo việc (`themes`, `summary`, `gap`, `revenue`, `presale`), key theo provider, `capMonthUsd`
+- `web/src/lib/ai/ledger.ts` (mới) — tổng theo ngày / tháng từ `ai_calls`, chặn khi vượt trần tháng
+- `web/src/lib/ai/benchmark.ts` (mới) — chạy fixture qua mọi tuyến bật → `{ route, themes, matchedPct, ms, costUsd }`
+- `web/src/client/browser-ai.ts` (mới) — tuyến C: phát hiện Prompt API, chạy bài thử, POST kết quả
+- `web/src/server/app.ts` — `POST /settings/ai/test-key` · `POST /ai/benchmark` · `GET /ai/ledger`
+- `web/src/client/SettingsPage.tsx` — 3 provider, chọn tuyến theo việc, sổ chi phí, nút bài thử + bảng so
+- `web/tests/ai-providers.test.ts`, `ai-ledger.test.ts` — fetch giả
 
 ## Tasks
 

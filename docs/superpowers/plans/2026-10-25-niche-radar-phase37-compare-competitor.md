@@ -25,14 +25,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/compare-competitor.ts` (mới) | hàng + luật thắng; `suggest(run)` = top 3 theo lượt tải + 1–2 app bị chê nhiều nhất |
-| `web/src/components/CompareTable.tsx` | dùng chung với Phase 28 |
-| `web/src/server/app.ts` | `GET /api/compare/apps?ids=` + `.csv` + `.md` |
-| `web/src/client/CompareAppsPage.tsx` (mới) + route | trang so đối thủ; ô tick trong `CompetitorBlock` |
-| `web/src/lib/features.ts` | "So sánh đối thủ" → done |
-| `web/tests/compare-competitor.test.ts` | |
+- `web/src/lib/compare-competitor.ts` (mới) — hàng + luật thắng; `suggest(run)` = top 3 theo lượt tải + 1–2 app bị chê nhiều nhất
+- `web/src/components/CompareTable.tsx` — dùng chung với Phase 28
+- `web/src/server/app.ts` — `GET /api/compare/apps?ids=` + `.csv` + `.md`
+- `web/src/client/CompareAppsPage.tsx` (mới) + route — trang so đối thủ; ô tick trong `CompetitorBlock`
+- `web/src/lib/features.ts` — "So sánh đối thủ" → done
+- `web/tests/compare-competitor.test.ts`
 
 ## Tasks
 

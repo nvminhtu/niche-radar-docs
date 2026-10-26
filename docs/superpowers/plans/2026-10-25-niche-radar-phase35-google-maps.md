@@ -33,16 +33,14 @@ Phase 11 (kết luận nguồn Maps).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `maps_runs` (type, city, createdAt), `maps_places` (runId, osmId/placeId, name, rating, reviews, hasWebsite, source), `maps_insights` (runId, kind `complaint|owner_reply|idea`, text, quote, url) |
-| `web/src/collectors/overpass.ts` (mới) | đếm chỗ + có web / điện thoại |
-| `web/src/collectors/places.ts` (mới) | Places Text Search (khi có key, có trần) |
-| `web/src/lib/maps-types.ts` (mới) | loại → tag OSM / type Places |
-| `web/src/lib/ai/tasks.ts` | task `maps` (job Chrome đọc review top 20 chỗ + trả lời của chủ) |
-| `web/src/server/app.ts` | `POST /maps` · `GET /maps/:id` · job + import |
-| `web/src/client/MapsPage.tsx` (mới) + route | chọn loại + ≤ 5 thành phố, bảng so, chủ đề, ý tưởng |
-| `web/tests/maps-*.test.ts` | fixture Overpass JSON |
+- `web/src/db/schema.ts` + migration mới — `maps_runs` (type, city, createdAt), `maps_places` (runId, osmId/placeId, name, rating, reviews, hasWebsite, source), `maps_insights` (runId, kind `complaint | owner_reply | idea`, text, quote, url)
+- `web/src/collectors/overpass.ts` (mới) — đếm chỗ + có web / điện thoại
+- `web/src/collectors/places.ts` (mới) — Places Text Search (khi có key, có trần)
+- `web/src/lib/maps-types.ts` (mới) — loại → tag OSM / type Places
+- `web/src/lib/ai/tasks.ts` — task `maps` (job Chrome đọc review top 20 chỗ + trả lời của chủ)
+- `web/src/server/app.ts` — `POST /maps` · `GET /maps/:id` · job + import
+- `web/src/client/MapsPage.tsx` (mới) + route — chọn loại + ≤ 5 thành phố, bảng so, chủ đề, ý tưởng
+- `web/tests/maps-*.test.ts` — fixture Overpass JSON
 
 ## Tasks
 

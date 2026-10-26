@@ -64,3 +64,5 @@ flowchart LR
 - Sắp xếp, lọc, gộp project — [Phase 15](phase-15-project-manage.md) (cột cho Phase 15 thêm sẵn ở migration chung, chưa có UI)
 - Đồng bộ project lên mạng — [Phase 63](phase-63-project-sync.md)
 </div>
+
+Plan code chi tiết: [Phase 14](../superpowers/plans/2026-10-25-niche-radar-phase14-collect.md)

@@ -47,3 +47,5 @@ flowchart LR
 - Viết nháp bài (việc của `/oneclicktool-blog`)
 - Đo lại sau ra mắt, so mốc (việc của `/app-geo` + `geo.py compare`)
 </div>
+
+Plan code chi tiết: [Phase 44](../superpowers/plans/2026-10-25-niche-radar-phase44-geo-pack.md)

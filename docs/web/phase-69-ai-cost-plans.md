@@ -49,3 +49,5 @@ Có thể chọn cả hai cách cùng lúc.
 </div>
 
 [Tổng quan Version 10](version-10.md)
+
+Plan code chi tiết: [Phase 69](../superpowers/plans/2026-10-25-niche-radar-phase69-ai-cost-plans.md)

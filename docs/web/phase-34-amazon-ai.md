@@ -61,3 +61,5 @@ Bài thử chuẩn: 5 sản phẩm × review 1–3★ của 1 niche → so chủ
 - Cào review sau đăng nhập bằng script (dễ bị khoá tài khoản)
 - Tự mua / tự đặt hàng để xem sản phẩm
 </div>
+
+Plan code chi tiết: [Phase 34](../superpowers/plans/2026-10-25-niche-radar-phase34-amazon-ai.md)

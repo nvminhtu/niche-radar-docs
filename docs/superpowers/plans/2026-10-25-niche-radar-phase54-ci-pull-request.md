@@ -25,12 +25,10 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `.github/workflows/ci.yml` (mới) | 2 job: `web` (lint, typecheck, test, e2e) · `docs` (build strict) |
-| `.nvmrc` (mới nếu chưa có) | phiên bản Node |
-| `docs/quy-trinh-build.md` | mục CI |
-| `CHANGELOG.md` (Repo) | |
+- `.github/workflows/ci.yml` (mới) — 2 job: `web` (lint, typecheck, test, e2e) · `docs` (build strict)
+- `.nvmrc` (mới nếu chưa có) — phiên bản Node
+- `docs/quy-trinh-build.md` — mục CI
+- `CHANGELOG.md` (Repo)
 
 ## Tasks
 

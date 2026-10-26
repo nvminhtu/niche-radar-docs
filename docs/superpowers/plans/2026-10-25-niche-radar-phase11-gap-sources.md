@@ -27,13 +27,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/gap-sources-map.md` (mới) | Bản đồ nguồn gap: bảng tóm tắt + mục từng nguồn |
-| `docs/web/phase-11-gap-sources.md` | chip trạng thái, link sang bản đồ, kết quả |
-| `mkdocs.yml` | thêm bản đồ vào nav dưới Phase 11 |
-| `docs/appendix.md` | nguồn bị Bỏ + lý do (để khỏi xét lại) |
-| Product Growth Playbook (repo riêng) | 1 skill / trang tiếng Anh: cách chấm nguồn gap + phương pháp — không tên niche đang nhắm |
+- `docs/web/gap-sources-map.md` (mới) — Bản đồ nguồn gap: bảng tóm tắt + mục từng nguồn
+- `docs/web/phase-11-gap-sources.md` — chip trạng thái, link sang bản đồ, kết quả
+- `mkdocs.yml` — thêm bản đồ vào nav dưới Phase 11
+- `docs/appendix.md` — nguồn bị Bỏ + lý do (để khỏi xét lại)
+- Product Growth Playbook (repo riêng) — 1 skill / trang tiếng Anh: cách chấm nguồn gap + phương pháp — không tên niche đang nhắm
 
 ## Tasks
 

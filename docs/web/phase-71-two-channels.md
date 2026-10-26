@@ -60,3 +60,5 @@ Cột **Chọn**: `chính` (đúng 2) · `dài hạn` (1, thứ tích luỹ như
 </div>
 
 [Tổng quan Version 11](version-11.md)
+
+Plan code chi tiết: [Phase 71](../superpowers/plans/2026-10-25-niche-radar-phase71-two-channels.md)

@@ -55,3 +55,5 @@ flowchart LR
 - AI viết kết luận ([Phase 39](phase-39-ai-cite-report.md))
 - So cùng niche giữa hai thời điểm (ứng viên Phase 9)
 </div>
+
+Plan code chi tiết: [Phase 28](../superpowers/plans/2026-10-25-niche-radar-phase28-compare-niche.md)

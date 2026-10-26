@@ -22,11 +22,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `app/src-tauri/*` | `dialog.save` cho file xuất (nếu chưa có) |
-| `web/src/lib/download.ts` (mới nếu chưa có) | 1 hàm tải file: trình duyệt → `<a download>`, app → lệnh Tauri |
-| `docs/app/phase-76-local-app-3.md`, `CHANGELOG.md` | |
+- `app/src-tauri/*` — `dialog.save` cho file xuất (nếu chưa có)
+- `web/src/lib/download.ts` (mới nếu chưa có) — 1 hàm tải file: trình duyệt → `<a download>`, app → lệnh Tauri
+- `docs/app/phase-76-local-app-3.md`, `CHANGELOG.md`
 
 ## Tasks
 

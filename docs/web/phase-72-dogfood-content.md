@@ -45,3 +45,5 @@ flowchart TB
 </div>
 
 [Tổng quan Version 11](version-11.md)
+
+Plan code chi tiết: [Phase 72](../superpowers/plans/2026-10-25-niche-radar-phase72-dogfood-content.md)

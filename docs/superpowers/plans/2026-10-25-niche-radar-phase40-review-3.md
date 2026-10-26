@@ -21,11 +21,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/phase-40-review-3.md` | bảng 3 lần: thời gian từng bước, chỗ vướng, evidence pack có / không |
-| code Phase 37–39 | sửa lỗi kèm test |
-| `CHANGELOG.md` | bản Web mới |
+- `docs/web/phase-40-review-3.md` — bảng 3 lần: thời gian từng bước, chỗ vướng, evidence pack có / không
+- code Phase 37–39 — sửa lỗi kèm test
+- `CHANGELOG.md` — bản Web mới
 
 ## Tasks
 

@@ -28,16 +28,14 @@ Phase 28 / 37 (màn so sánh có ô hỏi).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/cite-ref.ts` (mới) | sinh / giải id nguồn |
-| `web/src/lib/cite-check.ts` (mới) | lớp kiểm dùng chung (Phase 39 dùng lại) |
-| `web/src/lib/ask/retrieve.ts` (mới) | chọn dòng liên quan + id |
-| `web/src/lib/ask/ask.ts` (mới) | prompt, schema, gọi `aiAsk(db, 'ask')`, chạy `cite-check` |
-| `web/src/db/schema.ts` + migration mới | `ask_history` (scope, question, answer json, check json, createdAt) |
-| `web/src/server/app.ts` | `POST /ask` · `GET /ask/history` · `POST /ask/:id/recheck` |
-| `web/src/components/AskBox.tsx` (mới) | ô hỏi + ví dụ sẵn, câu trả lời có link, cờ đỏ, lịch sử |
-| `web/tests/cite-check.test.ts`, `ask*.test.ts`, `fixtures/ask-benchmark.json` (20 câu) | |
+- `web/src/lib/cite-ref.ts` (mới) — sinh / giải id nguồn
+- `web/src/lib/cite-check.ts` (mới) — lớp kiểm dùng chung (Phase 39 dùng lại)
+- `web/src/lib/ask/retrieve.ts` (mới) — chọn dòng liên quan + id
+- `web/src/lib/ask/ask.ts` (mới) — prompt, schema, gọi `aiAsk(db, 'ask')`, chạy `cite-check`
+- `web/src/db/schema.ts` + migration mới — `ask_history` (scope, question, answer json, check json, createdAt)
+- `web/src/server/app.ts` — `POST /ask` · `GET /ask/history` · `POST /ask/:id/recheck`
+- `web/src/components/AskBox.tsx` (mới) — ô hỏi + ví dụ sẵn, câu trả lời có link, cờ đỏ, lịch sử
+- `web/tests/cite-check.test.ts`, `ask*.test.ts`, `fixtures/ask-benchmark.json` (20 câu)
 
 ## Tasks
 

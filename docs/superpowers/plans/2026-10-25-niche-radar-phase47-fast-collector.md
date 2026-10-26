@@ -24,14 +24,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/run-research.ts` | chạy nguồn song song (`Promise.allSettled`), checkpoint, đọc cache |
-| `web/src/collectors/*.ts` | ghi từng phần ngay khi có, nhận checkpoint |
-| `web/src/db/schema.ts` + migration mới | `keyword_cache`, `source_jobs.checkpoint` |
-| `web/src/server/app.ts` | SSE `/research/:id/events` |
-| `web/src/components/progress-hooks.ts`, `ProgressPanel.tsx`, `RunDashboard.tsx` | nhận SSE, vẽ khối khi có dữ liệu |
-| `web/tests/run-research*.test.ts` | deps giả có độ trễ, lỗi giữa chừng |
+- `web/src/lib/run-research.ts` — chạy nguồn song song (`Promise.allSettled`), checkpoint, đọc cache
+- `web/src/collectors/*.ts` — ghi từng phần ngay khi có, nhận checkpoint
+- `web/src/db/schema.ts` + migration mới — `keyword_cache`, `source_jobs.checkpoint`
+- `web/src/server/app.ts` — SSE `/research/:id/events`
+- `web/src/components/progress-hooks.ts`, `ProgressPanel.tsx`, `RunDashboard.tsx` — nhận SSE, vẽ khối khi có dữ liệu
+- `web/tests/run-research*.test.ts` — deps giả có độ trễ, lỗi giữa chừng
 
 ## Tasks
 

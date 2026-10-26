@@ -25,16 +25,14 @@ làm trước thì phải sắp lại lần nữa.
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/answer-row.ts` (mới) | 5 số: điểm v2 + gợi ý · số đối thủ đáng gờm · xu hướng 12 tháng · lời chê nặng nhất · có ai thu tiền thật |
-| `web/src/lib/source-state.ts` | 4 mức + câu lý do thường ("Google chặn tạm, thử lại sau ~15 phút") |
-| `web/src/lib/run-compare.ts` (mới) | tìm run trước cùng `term + country`, trả mũi tên cho số chính |
-| `web/src/components/RunDashboard.tsx` | thứ tự: Có nhu cầu không → Ai đang làm → Họ bị chê gì → Ai thu tiền → Còn chỗ trống → Kết luận; khối thô gập lại |
-| `web/src/components/AnswerRow.tsx` (mới) | hàng số, bấm nhảy tới khối (`id` + scroll) |
-| `web/src/components/SourceBlock.tsx` | dòng nguồn + giờ lấy + trạng thái + nút chạy lại |
-| `web/src/server/app.ts` | `/research/:id` trả thêm `answer`, `compare`; `retry` nhận nguồn mới |
-| `web/tests/answer-row.test.ts`, `source-state.test.ts`, `run-compare.test.ts` | fixture lỗi từng nguồn |
+- `web/src/lib/answer-row.ts` (mới) — 5 số: điểm v2 + gợi ý · số đối thủ đáng gờm · xu hướng 12 tháng · lời chê nặng nhất · có ai thu tiền thật
+- `web/src/lib/source-state.ts` — 4 mức + câu lý do thường ("Google chặn tạm, thử lại sau ~15 phút")
+- `web/src/lib/run-compare.ts` (mới) — tìm run trước cùng `term + country`, trả mũi tên cho số chính
+- `web/src/components/RunDashboard.tsx` — thứ tự: Có nhu cầu không → Ai đang làm → Họ bị chê gì → Ai thu tiền → Còn chỗ trống → Kết luận; khối thô gập lại
+- `web/src/components/AnswerRow.tsx` (mới) — hàng số, bấm nhảy tới khối (`id` + scroll)
+- `web/src/components/SourceBlock.tsx` — dòng nguồn + giờ lấy + trạng thái + nút chạy lại
+- `web/src/server/app.ts` — `/research/:id` trả thêm `answer`, `compare`; `retry` nhận nguồn mới
+- `web/tests/answer-row.test.ts`, `source-state.test.ts`, `run-compare.test.ts` — fixture lỗi từng nguồn
 
 ## Tasks
 

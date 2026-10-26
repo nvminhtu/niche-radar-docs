@@ -23,14 +23,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/report/compare-report.ts` (mới) | prompt + schema 4 mục, gọi `aiAsk(db, 'report')`, chạy `cite-check` + kiểm ô thắng |
-| `web/src/db/schema.ts` + migration mới | `reports` (kind `niche|app`, inputIds, json, status, createdAt, updatedAt) |
-| `web/src/server/app.ts` | `POST /reports` · `GET /reports/:id` · `POST /reports/:id/edit` · `GET /reports/:id/evidence.md` |
-| `web/src/client/ReportPage.tsx` (mới) + nút trên `/compare`, `/compare/apps` | đọc, sửa câu, cờ đỏ, xuất |
-| `web/src/lib/evidence.ts` | gộp bảng so sánh + báo cáo theo khung Phase 7 |
-| `web/tests/compare-report.test.ts` | Ask giả |
+- `web/src/lib/report/compare-report.ts` (mới) — prompt + schema 4 mục, gọi `aiAsk(db, 'report')`, chạy `cite-check` + kiểm ô thắng
+- `web/src/db/schema.ts` + migration mới — `reports` (kind `niche | app`, inputIds, json, status, createdAt, updatedAt)
+- `web/src/server/app.ts` — `POST /reports` · `GET /reports/:id` · `POST /reports/:id/edit` · `GET /reports/:id/evidence.md`
+- `web/src/client/ReportPage.tsx` (mới) + nút trên `/compare`, `/compare/apps` — đọc, sửa câu, cờ đỏ, xuất
+- `web/src/lib/evidence.ts` — gộp bảng so sánh + báo cáo theo khung Phase 7
+- `web/tests/compare-report.test.ts` — Ask giả
 
 ## Tasks
 

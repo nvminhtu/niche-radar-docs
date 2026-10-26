@@ -44,4 +44,11 @@ Chấm ở [Bản đồ nguồn gap](web/gap-sources-map.md). Đừng xét lại
 là diễn đàn" cho Phase 41 · nút tiền tố "alternative / vs / free" cho Phase 21 · nhắc theo lịch WWDC cho Phase 23 ·
 hạ Amazon (Phase 33–34) xuống ứng viên — chờ anh duyệt.
 
+## Ứng viên từ Phase 10b (2026-10-26)
+
+- Q&A Gap vào hộp **Xuất** của Phase 16 (CSV / JSON / gói AI) — giờ chỉ có **Tải .md**
+- Ô nhập key StackApps ở Cài đặt (giờ đọc `STACKEXCHANGE_KEY` từ `.env.local`)
+- Chủ đề mới cho từ điển: mạng / IP / hosts, terminal multiplexer (tmux), quyền admin (sudo), ổ cứng / phân vùng
+- Thêm site Stack Exchange khác (Ask Ubuntu, Unix & Linux) — chỉ khi có nhu cầu ngoài Mac
+
 [Master Plan §7](superpowers/specs/2026-10-24-niche-radar-master-plan.md)

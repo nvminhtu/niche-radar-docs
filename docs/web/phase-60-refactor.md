@@ -45,3 +45,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 8](version-8.md)
+
+Plan code chi tiết: [Phase 60](../superpowers/plans/2026-10-25-niche-radar-phase60-refactor.md)

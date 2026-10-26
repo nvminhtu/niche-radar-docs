@@ -23,13 +23,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/scripts/export-demo.ts`, `web/public-demo/api/*` | đã có — chụp lại nếu đổi niche mẫu |
-| `web/src/demo/*` | đã có |
-| `web/scripts/check-demo.ts` (mới, nếu chưa có) | soát JSON: không `/Users/`, không chuỗi giống key, không `notes` |
-| `web/.env.demo` (gitignore) | `VITE_GA_ID`, mã form Mailchimp — anh điền |
-| `docs/web/phase-31a-demo-site.md` | chip, link live, kết quả đo |
+- `web/scripts/export-demo.ts`, `web/public-demo/api/*` — đã có — chụp lại nếu đổi niche mẫu
+- `web/src/demo/*` — đã có
+- `web/scripts/check-demo.ts` (mới, nếu chưa có) — soát JSON: không `/Users/`, không chuỗi giống key, không `notes`
+- `web/.env.demo` (gitignore) — `VITE_GA_ID`, mã form Mailchimp — anh điền
+- `docs/web/phase-31a-demo-site.md` — chip, link live, kết quả đo
 
 ## Tasks
 

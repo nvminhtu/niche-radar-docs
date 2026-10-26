@@ -25,13 +25,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `marketing/gtm.md` | lịch, luật dừng, bảng số tuần, quyết định cuối |
-| `marketing/<kênh>/NN-*.md` | bài từng tuần |
-| `marketing/x-marketing.md` | bài X đã đăng |
-| `marketing/geo-test/<ngày>/` | đo lại GEO |
-| `docs/web/phase-73-six-week-launch.md` | tóm tắt kết quả (không số nhạy cảm nếu sync public) |
+- `marketing/gtm.md` — lịch, luật dừng, bảng số tuần, quyết định cuối
+- `marketing/<kênh>/NN-*.md` — bài từng tuần
+- `marketing/x-marketing.md` — bài X đã đăng
+- `marketing/geo-test/<ngày>/` — đo lại GEO
+- `docs/web/phase-73-six-week-launch.md` — tóm tắt kết quả (không số nhạy cảm nếu sync public)
 
 ## Tasks
 

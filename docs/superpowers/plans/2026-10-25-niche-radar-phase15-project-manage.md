@@ -27,14 +27,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/projects.ts` | `searchProjects`, `archive/unarchive`, `duplicate`, `merge(a, b)`, `setItemStatus`, `reorder`, `log()` |
-| `web/src/server/app.ts` | `GET /projects?q=&tag=&status=&sort=&archived=` · `POST /projects/:id/archive` · `/duplicate` · `/merge` · `/items/:itemId/status` · `/items/reorder` · `GET /projects/:id/log` |
-| `web/src/client/ProjectsPage.tsx` | ô tìm, lọc thẻ + trạng thái, sắp, "đến hạn trước", đã lưu trữ |
-| `web/src/client/ProjectPage.tsx` | 7 tab (Tổng quan · Keyword · Đối thủ · Lời chê · Khoảng trống · Theo dõi · Ghi chú), bước tiếp, nhật ký, nút pipeline |
-| `web/src/lib/project-compare.ts` (mới) | so 2 project: điểm v2, số đối thủ, lời chê nặng nhất, ai thu tiền, xu hướng |
-| `web/tests/projects-manage.test.ts` | |
+- `web/src/lib/projects.ts` — `searchProjects`, `archive/unarchive`, `duplicate`, `merge(a, b)`, `setItemStatus`, `reorder`, `log()`
+- `web/src/server/app.ts` — `GET /projects?q=&tag=&status=&sort=&archived=` · `POST /projects/:id/archive` · `/duplicate` · `/merge` · `/items/:itemId/status` · `/items/reorder` · `GET /projects/:id/log`
+- `web/src/client/ProjectsPage.tsx` — ô tìm, lọc thẻ + trạng thái, sắp, "đến hạn trước", đã lưu trữ
+- `web/src/client/ProjectPage.tsx` — 7 tab (Tổng quan · Keyword · Đối thủ · Lời chê · Khoảng trống · Theo dõi · Ghi chú), bước tiếp, nhật ký, nút pipeline
+- `web/src/lib/project-compare.ts` (mới) — so 2 project: điểm v2, số đối thủ, lời chê nặng nhất, ai thu tiền, xu hướng
+- `web/tests/projects-manage.test.ts`
 
 ## Tasks
 

@@ -26,14 +26,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `mcp/package.json`, `mcp/server.ts`, `mcp/README.md` (mới) | server stdio, build ra `mcp/dist/server.js` |
-| `mcp/tools/*.ts` (mới) | `search_niches` · `get_research` · `get_explore` · `list_projects` · `get_project` · `get_competitor` · `get_complaints` · `compare_niches` |
-| `mcp/lib/limit.ts` (mới) | cắt kích thước + lọc trường riêng tư |
-| `web/tests/mcp-*.test.ts` hoặc `mcp/tests/` | fixture DB, kiểm read-only |
-| `docs/cach-dung.md`, `README.md`, `CLAUDE.md`, `CHANGELOG.md` | lệnh cài + folder mới (luật repo khi thêm folder) |
-| `package.json` gốc | `npm run check` chạy cả test `mcp/` |
+- `mcp/package.json`, `mcp/server.ts`, `mcp/README.md` (mới) — server stdio, build ra `mcp/dist/server.js`
+- `mcp/tools/*.ts` (mới) — `search_niches` · `get_research` · `get_explore` · `list_projects` · `get_project` · `get_competitor` · `get_complaints` · `compare_niches`
+- `mcp/lib/limit.ts` (mới) — cắt kích thước + lọc trường riêng tư
+- `web/tests/mcp-*.test.ts` hoặc `mcp/tests/` — fixture DB, kiểm read-only
+- `docs/cach-dung.md`, `README.md`, `CLAUDE.md`, `CHANGELOG.md` — lệnh cài + folder mới (luật repo khi thêm folder)
+- `package.json` gốc — `npm run check` chạy cả test `mcp/`
 
 ## Tasks
 

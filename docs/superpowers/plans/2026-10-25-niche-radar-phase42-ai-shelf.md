@@ -27,15 +27,13 @@ Phase 25 (key Gemini, sổ chi phí). Đọc `scripts/geo.py` của repo App-AI-
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/geo/engines.ts` (mới) | 3 engine |
-| `web/src/lib/geo/prompt.ts` (mới) | câu lệnh mẫu như `geo.py` |
-| `web/src/lib/geo/count.ts` (mới) | đếm nhắc tên, tách URL / domain nguồn |
-| `web/src/db/schema.ts` + migration mới | `geo_runs` (runId, createdAt), `geo_answers` (geoRunId, questionId, engine, model, text, sources json, ms, costUsd) |
-| `web/src/server/app.ts` | `POST /research/:id/geo` (chọn câu) · `GET /research/:id/geo` |
-| `web/src/components/AiShelfBlock.tsx` (mới) | ma trận câu × engine, app được nhắc, domain được trích, cờ yếu, mở nguyên văn |
-| `web/tests/geo-*.test.ts` | fixture câu trả lời thật đã lưu |
+- `web/src/lib/geo/engines.ts` (mới) — 3 engine
+- `web/src/lib/geo/prompt.ts` (mới) — câu lệnh mẫu như `geo.py`
+- `web/src/lib/geo/count.ts` (mới) — đếm nhắc tên, tách URL / domain nguồn
+- `web/src/db/schema.ts` + migration mới — `geo_runs` (runId, createdAt), `geo_answers` (geoRunId, questionId, engine, model, text, sources json, ms, costUsd)
+- `web/src/server/app.ts` — `POST /research/:id/geo` (chọn câu) · `GET /research/:id/geo`
+- `web/src/components/AiShelfBlock.tsx` (mới) — ma trận câu × engine, app được nhắc, domain được trích, cờ yếu, mở nguyên văn
+- `web/tests/geo-*.test.ts` — fixture câu trả lời thật đã lưu
 
 ## Tasks
 

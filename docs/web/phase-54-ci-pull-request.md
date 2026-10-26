@@ -57,3 +57,5 @@ Dùng đúng lệnh đang có trong `package.json`, không viết lệnh riêng 
 </div>
 
 [Tổng quan Version 7](version-7.md)
+
+Plan code chi tiết: [Phase 54](../superpowers/plans/2026-10-25-niche-radar-phase54-ci-pull-request.md)

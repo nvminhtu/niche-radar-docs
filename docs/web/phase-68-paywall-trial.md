@@ -50,3 +50,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 10](version-10.md)
+
+Plan code chi tiết: [Phase 68](../superpowers/plans/2026-10-25-niche-radar-phase68-paywall-trial.md)

@@ -42,3 +42,5 @@ Bước 0 Phase 6: tuyến C (Gemini Nano trong Chrome) chưa thử vì cần t�
 - Gói lượt AI kèm Pro / bán AI — [Phase 69](phase-69-ai-cost-plans.md)
 - Key trong Keychain của app Mac — [Phase 79](../app/phase-79-app-only.md)
 </div>
+
+Plan code chi tiết: [Phase 25](../superpowers/plans/2026-10-25-niche-radar-phase25-ai-settings.md)

@@ -55,3 +55,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 8](version-8.md)
+
+Plan code chi tiết: [Phase 61](../superpowers/plans/2026-10-25-niche-radar-phase61-security-review-8.md)

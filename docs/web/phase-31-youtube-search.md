@@ -109,3 +109,5 @@ Các MCP đã tìm được (2026-10-24, tiền và giới hạn kiểm lại l�
 - Mua gói trả phí vidIQ / TubeBuddy chỉ để có số — chỉ xét khi bảng thử cho thấy cần
 - Dùng tool tạo nội dung của MCP (`generate_titles`, `generate_thumbnail`, `generate_clips`) — ngoài việc chọn niche
 </div>
+
+Plan code chi tiết: [Phase 31](../superpowers/plans/2026-10-25-niche-radar-phase31-youtube-search.md)

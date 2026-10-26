@@ -36,19 +36,17 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/export/dataset.ts` (mới) | dựng `Dataset` theo phạm vi, dùng lại `run-view`, `projects`, `score-v2`, `gap`, `ai/tasks` |
-| `web/src/lib/export/columns.ts` (mới) | cột từng bảng + mô tả (dùng cho CSV, JSON, `schema.md`, docs) |
-| `web/src/lib/export/formats.ts` (mới) | CSV · JSON · Markdown |
-| `web/src/lib/export/llm.ts` (mới) | `brief.md` · `schema.md` · `prompt.md` (khung brief tính năng) + cắt theo trần |
-| `web/src/lib/export/zip.ts` (mới) | đóng `.zip` không nén |
-| `web/src/server/app.ts` | `GET /api/export?scope=run:12|project:3&format=csv|json|md|llm&cap=8000[&preview=1]` |
-| `web/src/components/ExportDialog.tsx` (mới) | hộp chọn định dạng × trần, hiện ước token, Tải / Copy cho AI |
-| `RunHeader`, `ProjectPage` | gắn nút Xuất |
-| `web/src/lib/features.ts` | thêm dòng "Xuất cho AI + brief tính năng" |
-| `docs/export-schema.md` (mới) + `mkdocs.yml` | tài liệu cột |
-| `web/tests/export.test.ts` | |
+- `web/src/lib/export/dataset.ts` (mới) — dựng `Dataset` theo phạm vi, dùng lại `run-view`, `projects`, `score-v2`, `gap`, `ai/tasks`
+- `web/src/lib/export/columns.ts` (mới) — cột từng bảng + mô tả (dùng cho CSV, JSON, `schema.md`, docs)
+- `web/src/lib/export/formats.ts` (mới) — CSV · JSON · Markdown
+- `web/src/lib/export/llm.ts` (mới) — `brief.md` · `schema.md` · `prompt.md` (khung brief tính năng) + cắt theo trần
+- `web/src/lib/export/zip.ts` (mới) — đóng `.zip` không nén
+- `web/src/server/app.ts` — `GET /api/export?scope=run:12 | project:3&format=csv | json | md | llm&cap=8000[&preview=1]`
+- `web/src/components/ExportDialog.tsx` (mới) — hộp chọn định dạng × trần, hiện ước token, Tải / Copy cho AI
+- `RunHeader`, `ProjectPage` — gắn nút Xuất
+- `web/src/lib/features.ts` — thêm dòng "Xuất cho AI + brief tính năng"
+- `docs/export-schema.md` (mới) + `mkdocs.yml` — tài liệu cột
+- `web/tests/export.test.ts`
 
 ## Tasks
 
@@ -71,8 +69,8 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
 - [x] Test so chéo: cùng run → CSV, JSON, gói LLM cùng số (top đối thủ, số rating, điểm).
 
 ### Task 4b: Còn lại — từ review Phase 12–23 (2026-10-26, nhánh khác)
-- [ ] Phạm vi subreddit (đọc `lib/reddit-gap.ts`), bảng `reddit_gaps`; nút Tải .md của trang Reddit Gap gọi qua lớp mới (giữ top 20 gap + 3 link mẫu).
-- [ ] Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand, ghi danh sách mục vào test).
+- [x] Phạm vi subreddit (đọc `lib/reddit-gap.ts`), bảng `reddit_gaps`; nút Tải .md của trang Reddit Gap gọi qua lớp mới (giữ top 20 gap + 3 link mẫu).
+- [x] Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand, ghi danh sách mục vào test).
 
 ### Task 5: Chạy thật + soát
 - [x] Build + 3 niche thật: CSV mở trong Numbers (screenshot), JSON đủ bảng, gói LLM ≤ 8k, dán vào Claude hỏi 5 câu + viết brief → ghi kết quả.
@@ -88,6 +86,8 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
   dự phòng `execCommand` vì Clipboard API bị chặn trong pane / app Mac.
 
 - 2026-10-26: merge `main` — gộp review Phase 12–23 (`4b70c8c`): 2 việc mới thành Task 4b, chưa làm.
+- 2026-10-26: Task 4b xong (`be1dffe` + sửa nhãn chuyên mục), 264 test xanh. Lệch: nút Tải .md của Reddit Gap thay bằng hộp
+  Xuất (route `/api/reddit/gap.md` giữ nguyên cho link cũ, cùng hàm `gapMarkdown`); Reddit Gap 1 bảng nên CSV tải thẳng, không zip.
 
 ## Kết quả chạy thật (2026-10-26, bản sao DB thật, nhánh `phase16-export`)
 
@@ -105,3 +105,9 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
   có mã nguồn có thật; ý không có số ghi "suy luận" / "giả định, cần kiểm". Kết luận AI: test thêm.
 - **Giao diện**: hộp Xuất ở trang Research + Project, 1280 và 375 không tràn; Copy cho AI → clipboard có đủ gói.
 - `/app-demand`: Markdown = evidence pack Phase 7 (đã đọc được từ trước), chưa chạy lại.
+- **Reddit Gap** (70 bài r/macos — DB thử của session Phase 10, link bài là dữ liệu dựng, không phải bài thật): gói 8k ~3,231
+  token, không cắt; 15 dòng R1–R15 cùng số với `/api/reddit/gap` (Menu bar · Tìm thay thế 14 bài, gap 38.2…); llm / csv /
+  md / json đều 200. Hộp Xuất xem ở 1340: gọn, không tràn.
+- **`check_demand.py` thật** trên gói Markdown #13: không lỗi mục / ô / cột; còn 9 FAIL đều là phần nhận định để TODO
+  (27 TODO, 3 tiêu chí điểm, Tổng, Đề xuất) — đúng phần `/app-demand` điền.
+- Thấy ngoài phạm vi: ở bề rộng ~1009px nút "Tra niche mới" trên header tràn 40px (sau đổi logo `dbfbea2`) — chưa sửa.

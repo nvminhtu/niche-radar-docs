@@ -24,14 +24,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/scripts/record.ts` (mới) + `web/package.json` | `npm run record [nguồn]` |
-| `web/tests/setup/no-network.ts` (mới) + `vitest.config` | chặn mạng |
-| `web/tests/fixtures/{playstore,appstore,trends,trustmrr,youtube,amazon,serp,…}/` | fixture |
-| `web/tests/collectors/*.test.ts` | 1 file / collector |
-| `web/src/collectors/*.ts` | thêm tham số `fetcher` nơi thiếu |
-| `docs/web/phase-50-fixture-tests.md` | số coverage + danh sách file chưa test |
+- `web/scripts/record.ts` (mới) + `web/package.json` — `npm run record [nguồn]`
+- `web/tests/setup/no-network.ts` (mới) + `vitest.config` — chặn mạng
+- `web/tests/fixtures/{playstore,appstore,trends,trustmrr,youtube,amazon,serp,…}/` — fixture
+- `web/tests/collectors/*.test.ts` — 1 file / collector
+- `web/src/collectors/*.ts` — thêm tham số `fetcher` nơi thiếu
+- `docs/web/phase-50-fixture-tests.md` — số coverage + danh sách file chưa test
 
 ## Tasks
 

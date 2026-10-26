@@ -52,3 +52,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 7](../web/version-7.md)
+
+Plan code chi tiết: [Phase 80](../superpowers/plans/2026-10-25-niche-radar-phase80-mac-build-ci.md)

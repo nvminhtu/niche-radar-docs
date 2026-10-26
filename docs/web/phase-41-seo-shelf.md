@@ -54,3 +54,5 @@ Không cào trang kết quả Google bằng script.
 - Phân tích nội dung trang top 10 (độ dài, heading…)
 - Theo dõi thứ hạng theo thời gian
 </div>
+
+Plan code chi tiết: [Phase 41](../superpowers/plans/2026-10-25-niche-radar-phase41-seo-shelf.md)

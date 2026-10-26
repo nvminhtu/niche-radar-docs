@@ -26,13 +26,11 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `app/src-tauri/src/*.rs` | lệnh mở thư mục job, (Keychain nếu làm ở đây) |
-| `app/src-tauri/tauri.conf.json`, `app/package.json` | version, resource mới |
-| `app/scripts/build-mac.sh` | gói thêm resource nếu có |
-| `web/src/lib/ai/settings.ts` (nếu Keychain) | đọc key qua bridge khi chạy trong app |
-| `docs/app/phase-75-local-app-2.md`, `CHANGELOG.md` | What's New, kết quả |
+- `app/src-tauri/src/*.rs` — lệnh mở thư mục job, (Keychain nếu làm ở đây)
+- `app/src-tauri/tauri.conf.json`, `app/package.json` — version, resource mới
+- `app/scripts/build-mac.sh` — gói thêm resource nếu có
+- `web/src/lib/ai/settings.ts` (nếu Keychain) — đọc key qua bridge khi chạy trong app
+- `docs/app/phase-75-local-app-2.md`, `CHANGELOG.md` — What's New, kết quả
 
 ## Tasks
 

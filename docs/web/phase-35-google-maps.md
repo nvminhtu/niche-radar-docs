@@ -61,3 +61,5 @@ flowchart TB
 - Cào Google Maps bằng script / headless browser
 - Thu thập liên hệ chủ cửa hàng để bán hàng (lead list)
 </div>
+
+Plan code chi tiết: [Phase 35](../superpowers/plans/2026-10-25-niche-radar-phase35-google-maps.md)

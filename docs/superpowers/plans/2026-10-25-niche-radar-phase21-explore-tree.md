@@ -26,15 +26,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `explore_nodes`: `filtered` (lý do), `mergedInto` (nodeId); bảng `research_queue` (explorationId, nodeId, runId, status) |
-| `web/src/lib/explore-rules.ts` (mới) | luật rác: thương hiệu, tên app top trong run, số nhiều / thứ tự từ, ngoài niche (không chứa từ nào của seed và không ở nhóm) |
-| `web/src/lib/explore.ts` | áp luật sau khi dựng cây; `mergeKey()`; `popularity()` trả thêm `explain` |
-| `web/src/lib/batch-research.ts` (mới) | hàng đợi lần lượt, hoãn khi bị chặn |
-| `web/src/server/app.ts` | `POST /explore/:id/nodes/:nodeId/unfilter` · `/unmerge` · `POST /explore/:id/batch-research` · `GET /explore/:id/batch` |
-| `ExploreDashboard.tsx`, `NicheMap.tsx`, `KeywordTable.tsx`, `ExploreShared.tsx` | mục "đã lọc", nút gộp, chip nguồn + lọc nguồn, tooltip điểm, ô tick + "Research N lá", bản đồ nhóm theo ý định + ô tìm |
-| `web/tests/explore-rules.test.ts`, `batch-research.test.ts` | |
+- `web/src/db/schema.ts` + migration mới — `explore_nodes`: `filtered` (lý do), `mergedInto` (nodeId); bảng `research_queue` (explorationId, nodeId, runId, status)
+- `web/src/lib/explore-rules.ts` (mới) — luật rác: thương hiệu, tên app top trong run, số nhiều / thứ tự từ, ngoài niche (không chứa từ nào của seed và không ở nhóm)
+- `web/src/lib/explore.ts` — áp luật sau khi dựng cây; `mergeKey()`; `popularity()` trả thêm `explain`
+- `web/src/lib/batch-research.ts` (mới) — hàng đợi lần lượt, hoãn khi bị chặn
+- `web/src/server/app.ts` — `POST /explore/:id/nodes/:nodeId/unfilter` · `/unmerge` · `POST /explore/:id/batch-research` · `GET /explore/:id/batch`
+- `ExploreDashboard.tsx`, `NicheMap.tsx`, `KeywordTable.tsx`, `ExploreShared.tsx` — mục "đã lọc", nút gộp, chip nguồn + lọc nguồn, tooltip điểm, ô tick + "Research N lá", bản đồ nhóm theo ý định + ô tìm
+- `web/tests/explore-rules.test.ts`, `batch-research.test.ts`
 
 ## Tasks
 

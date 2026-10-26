@@ -50,3 +50,5 @@ TEST THÊM / BỎ. Back-test 5 niche ra 4,5–5,4 điểm, chưa niche nào ≥ 
 - So nhiều niche cạnh nhau — [Phase 28](phase-28-compare-niche.md)
 - Đo trục Tiếp cận / Hợp sức tự động (cần nguồn mới — YouTube, Reddit ở Version 2)
 </div>
+
+Plan code chi tiết: [Phase 13](../superpowers/plans/2026-10-25-niche-radar-phase13-niche-health.md)

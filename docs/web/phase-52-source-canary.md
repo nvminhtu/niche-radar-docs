@@ -42,3 +42,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 6](version-6.md)
+
+Plan code chi tiết: [Phase 52](../superpowers/plans/2026-10-25-niche-radar-phase52-source-canary.md)

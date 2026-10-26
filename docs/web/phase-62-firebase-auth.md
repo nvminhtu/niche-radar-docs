@@ -50,3 +50,5 @@ giữ mật khẩu.
 </div>
 
 [Tổng quan Version 9](version-9.md)
+
+Plan code chi tiết: [Phase 62](../superpowers/plans/2026-10-25-niche-radar-phase62-firebase-auth.md)

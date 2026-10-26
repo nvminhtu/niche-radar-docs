@@ -27,14 +27,12 @@ Tham khảo mẫu Lemon Squeezy đã chạy ở app RAM Rescue (license key + we
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `functions/` (mới: `package.json`, `src/lemon-webhook.ts`, test) | webhook |
-| `firestore.rules` | `entitlement` chỉ đọc với chủ, không ghi từ client |
-| `web/src/lib/entitlement.ts` (mới) | `isPro(uid)`, nghe thay đổi |
-| `web/src/components/UpgradeButton.tsx` (mới) | mở checkout có `uid` |
-| `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` | folder `functions/` mới |
-| `functions/test/*.test.ts`, `tests/rules/*` | chữ ký, idempotent, quy tắc |
+- `functions/` (mới: `package.json`, `src/lemon-webhook.ts`, test) — webhook
+- `firestore.rules` — `entitlement` chỉ đọc với chủ, không ghi từ client
+- `web/src/lib/entitlement.ts` (mới) — `isPro(uid)`, nghe thay đổi
+- `web/src/components/UpgradeButton.tsx` (mới) — mở checkout có `uid`
+- `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` — folder `functions/` mới
+- `functions/test/*.test.ts`, `tests/rules/*` — chữ ký, idempotent, quy tắc
 
 ## Tasks
 

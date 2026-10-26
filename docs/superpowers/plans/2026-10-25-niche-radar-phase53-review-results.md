@@ -24,14 +24,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `review/answers/*.json` (mới, khung rỗng) | anh điền |
-| `review/run.ts` (mới) | chạy tool trên 5 niche (DB chụp hoặc `--fresh`), chấm, viết phiếu |
-| `review/score.ts` (mới) | 5 cách chấm |
-| `package.json` gốc | `review` |
-| `web/tests/review-score.test.ts` | |
-| `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` | folder mới |
+- `review/answers/*.json` (mới, khung rỗng) — anh điền
+- `review/run.ts` (mới) — chạy tool trên 5 niche (DB chụp hoặc `--fresh`), chấm, viết phiếu
+- `review/score.ts` (mới) — 5 cách chấm
+- `package.json` gốc — `review`
+- `web/tests/review-score.test.ts`
+- `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` — folder mới
 
 ## Tasks
 

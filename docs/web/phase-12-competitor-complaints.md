@@ -67,3 +67,5 @@ flowchart LR
 - So sánh 2–5 đối thủ cạnh nhau — [Phase 37](phase-37-compare-competitor.md)
 - Lấy review ngoài 2 store (Reddit, YouTube…) — [Phase 10](phase-10-reddit-gap.md), [Phase 32](phase-32-youtube-ai.md)
 </div>
+
+Plan code chi tiết: [Phase 12](../superpowers/plans/2026-10-25-niche-radar-phase12-competitor-complaints.md)

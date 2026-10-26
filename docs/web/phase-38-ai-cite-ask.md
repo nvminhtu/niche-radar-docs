@@ -62,3 +62,5 @@ Dùng lại tuyến đã chọn ở [Phase 6](phase-6-ai-web.md). Bài thử chu
 - AI lên web tìm thêm, đọc trang ngoài DB
 - AI sửa / ghi vào DB
 </div>
+
+Plan code chi tiết: [Phase 38](../superpowers/plans/2026-10-25-niche-radar-phase38-ai-cite-ask.md)

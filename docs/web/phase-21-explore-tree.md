@@ -46,3 +46,5 @@ cây còn keyword trùng nghĩa, tên thương hiệu, từ không liên quan.
 - Số lượt tìm thật trả phí (DataForSEO, Keyword Planner) — Appendix
 - Làm nhanh Explore — [Phase 47](phase-47-fast-collector.md)
 </div>
+
+Plan code chi tiết: [Phase 21](../superpowers/plans/2026-10-25-niche-radar-phase21-explore-tree.md)

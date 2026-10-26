@@ -49,3 +49,5 @@ flowchart LR
 - Theo dõi đối thủ đổi giá / ra bản mới theo thời gian
 - AI viết kết luận ([Phase 39](phase-39-ai-cite-report.md))
 </div>
+
+Plan code chi tiết: [Phase 37](../superpowers/plans/2026-10-25-niche-radar-phase37-compare-competitor.md)

@@ -37,3 +37,5 @@ flowchart LR
 
 - Tính năng mới (chỉ soát những gì Phase 41–44 đã xong)
 </div>
+
+Plan code chi tiết: [Phase 45](../superpowers/plans/2026-10-25-niche-radar-phase45-review-4.md)

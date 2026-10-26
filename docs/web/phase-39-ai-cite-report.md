@@ -47,3 +47,5 @@ flowchart LR
 - Sinh concept app, giá, spec (việc của `/app-money`, `/app-spec`)
 - Xuất PDF / slide, gửi báo cáo cho người khác
 </div>
+
+Plan code chi tiết: [Phase 39](../superpowers/plans/2026-10-25-niche-radar-phase39-ai-cite-report.md)

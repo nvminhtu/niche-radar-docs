@@ -35,15 +35,13 @@ nếu Bỏ thì dừng, hỏi anh), Phase 31 (mẫu thêm nguồn mới).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `SOURCES` thêm `amazon`; `amz_products` (asin, keywordId, rank, title, price, currency, rating, reviews, boughtBadge, bsr, bsrCategory, firstAvailable, fetchedAt) |
-| `web/src/collectors/amazon.ts` (mới) | gợi ý + tìm + trang sản phẩm, limiter 5 giây |
-| `web/src/collectors/amazon-parse.ts` (mới) | parse HTML (cheerio) |
-| `web/src/lib/amazon-metrics.ts` (mới) | độ đông log, khoảng giá (thấp / trung vị / cao), lính mới (< 12 tháng trong top) |
-| `run-research.ts`, `run-view.ts`, `explore.ts` | nguồn mới, nhãn `AMZ` |
-| `web/src/components/AmazonBlock.tsx` (mới) | bảng top sản phẩm, khoảng giá, BSR, lính mới |
-| `web/tests/amazon-*.test.ts` + `fixtures/amazon/*.html` | |
+- `web/src/db/schema.ts` + migration mới — `SOURCES` thêm `amazon`; `amz_products` (asin, keywordId, rank, title, price, currency, rating, reviews, boughtBadge, bsr, bsrCategory, firstAvailable, fetchedAt)
+- `web/src/collectors/amazon.ts` (mới) — gợi ý + tìm + trang sản phẩm, limiter 5 giây
+- `web/src/collectors/amazon-parse.ts` (mới) — parse HTML (cheerio)
+- `web/src/lib/amazon-metrics.ts` (mới) — độ đông log, khoảng giá (thấp / trung vị / cao), lính mới (< 12 tháng trong top)
+- `run-research.ts`, `run-view.ts`, `explore.ts` — nguồn mới, nhãn `AMZ`
+- `web/src/components/AmazonBlock.tsx` (mới) — bảng top sản phẩm, khoảng giá, BSR, lính mới
+- `web/tests/amazon-*.test.ts` + `fixtures/amazon/*.html`
 
 ## Tasks
 

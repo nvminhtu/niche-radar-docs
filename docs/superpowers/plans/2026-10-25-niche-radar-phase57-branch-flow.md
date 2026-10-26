@@ -23,11 +23,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/quy-trinh-build.md` | mục Nhánh → PR → CI → merge → tag → release |
-| `CLAUDE.md`, `AGENTS.md` | luật: không push thẳng `main`, mỗi phase một nhánh |
-| `CHANGELOG.md` (Repo) | |
+- `docs/quy-trinh-build.md` — mục Nhánh → PR → CI → merge → tag → release
+- `CLAUDE.md`, `AGENTS.md` — luật: không push thẳng `main`, mỗi phase một nhánh
+- `CHANGELOG.md` (Repo)
 
 ## Tasks
 

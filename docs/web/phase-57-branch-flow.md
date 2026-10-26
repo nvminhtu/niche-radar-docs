@@ -42,3 +42,5 @@ flowchart LR
 </div>
 
 [Tổng quan Version 7](version-7.md)
+
+Plan code chi tiết: [Phase 57](../superpowers/plans/2026-10-25-niche-radar-phase57-branch-flow.md)

@@ -25,14 +25,12 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/collectors/define.ts` (mới), `registry.ts` (mới) | khuôn + registry |
-| `web/src/collectors/*.ts` | chuyển từng nguồn sang khuôn (1 PR / nguồn) |
-| `web/src/server/app.ts` → `server/routes/*.ts` | tách |
-| file > 400 dòng khác (đo bằng `wc -l` lúc làm) | tách |
-| `web/src/types/*` | kiểu chung |
-| `web/tests/collectors/fake-source.test.ts` | chứng minh 2 file |
+- `web/src/collectors/define.ts` (mới), `registry.ts` (mới) — khuôn + registry
+- `web/src/collectors/*.ts` — chuyển từng nguồn sang khuôn (1 PR / nguồn)
+- `web/src/server/app.ts` → `server/routes/*.ts` — tách
+- file > 400 dòng khác (đo bằng `wc -l` lúc làm) — tách
+- `web/src/types/*` — kiểu chung
+- `web/tests/collectors/fake-source.test.ts` — chứng minh 2 file
 
 ## Tasks
 

@@ -23,11 +23,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/geo/engines.ts` | tìm binary theo danh sách chỗ + cài đặt đường dẫn |
-| `app/src-tauri/entitlements.plist` | kiểm quyền chạy tiến trình con |
-| `docs/app/phase-77-local-app-4.md`, `CHANGELOG.md` | |
+- `web/src/lib/geo/engines.ts` — tìm binary theo danh sách chỗ + cài đặt đường dẫn
+- `app/src-tauri/entitlements.plist` — kiểm quyền chạy tiến trình con
+- `docs/app/phase-77-local-app-4.md`, `CHANGELOG.md`
 
 ## Tasks
 

@@ -21,11 +21,9 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `marketing/gtm.md` | bảng ICE + chọn + nhịp |
-| `marketing/reddit/subs.md` (nếu chọn Reddit) | danh sách sub + luật |
-| `docs/web/phase-71-two-channels.md` | tóm tắt kết quả |
+- `marketing/gtm.md` — bảng ICE + chọn + nhịp
+- `marketing/reddit/subs.md` (nếu chọn Reddit) — danh sách sub + luật
+- `docs/web/phase-71-two-channels.md` — tóm tắt kết quả
 
 ## Tasks
 

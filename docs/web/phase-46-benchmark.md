@@ -54,3 +54,5 @@ Mục tiêu cụ thể cho từng số: ghi sau khi đo, không đặt trước.
 </div>
 
 [Tổng quan Version 5](version-5.md)
+
+Plan code chi tiết: [Phase 46](../superpowers/plans/2026-10-25-niche-radar-phase46-benchmark.md)

@@ -26,16 +26,14 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/db/schema.ts` + migration mới | `projects`: `trackEvery` (7/30/90/null), `lastAutoRun` · `tracking_alerts` (projectId, snapshotId, kind, detail json, seenAt) · `tracked_apps` (projectId, appId) |
-| `web/src/lib/tracking-scheduler.ts` (mới) | `dueProjects(now)`, `tick(deps, now)` → tra lại + `takeSnapshot` |
-| `web/src/lib/tracking-alerts.ts` (mới) | so 2 snapshot (`diffItem` có sẵn) → alert theo luật |
-| `web/src/lib/tracking.ts` | snapshot thêm số đối thủ đã collect (giá, rating, lần cập nhật) |
-| `web/src/server/index.ts`, `app.ts` | hẹn giờ; `GET /alerts/week` · `POST /alerts/:id/seen` · `POST /projects/:id/track` |
-| `HomePage.tsx` | hộp "Thay đổi tuần này" theo project |
-| `ProjectPage.tsx`, `TrackingBlock.tsx` | chọn nhịp, dòng thời gian (điểm v2, số đối thủ, Trends — `TrendLine`), so 2 lần chụp |
-| `web/tests/tracking-*.test.ts` | |
+- `web/src/db/schema.ts` + migration mới — `projects`: `trackEvery` (7/30/90/null), `lastAutoRun` · `tracking_alerts` (projectId, snapshotId, kind, detail json, seenAt) · `tracked_apps` (projectId, appId)
+- `web/src/lib/tracking-scheduler.ts` (mới) — `dueProjects(now)`, `tick(deps, now)` → tra lại + `takeSnapshot`
+- `web/src/lib/tracking-alerts.ts` (mới) — so 2 snapshot (`diffItem` có sẵn) → alert theo luật
+- `web/src/lib/tracking.ts` — snapshot thêm số đối thủ đã collect (giá, rating, lần cập nhật)
+- `web/src/server/index.ts`, `app.ts` — hẹn giờ; `GET /alerts/week` · `POST /alerts/:id/seen` · `POST /projects/:id/track`
+- `HomePage.tsx` — hộp "Thay đổi tuần này" theo project
+- `ProjectPage.tsx`, `TrackingBlock.tsx` — chọn nhịp, dòng thời gian (điểm v2, số đối thủ, Trends — `TrendLine`), so 2 lần chụp
+- `web/tests/tracking-*.test.ts`
 
 ## Tasks
 

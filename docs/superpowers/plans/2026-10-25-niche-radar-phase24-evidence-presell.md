@@ -25,15 +25,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/lib/evidence.ts` | đối chiếu từng mục khung; mục thiếu "chưa đo" + link đi lấy; thêm "Ai thu tiền", lời chê, điểm + cờ |
-| `web/src/lib/demand-template.ts` (mới) | đọc mục của `templates/demand.md` |
-| `web/src/db/schema.ts` + migration mới | `validations`: `lockedAt`, `changedAfterLock`, `source`, `views`, `clicks`, `emails`, `replies` |
-| `web/src/lib/validate.ts` | khoá ngưỡng, ghi số có nguồn, `decision()` trả lý do |
-| `web/src/server/app.ts` | `GET /projects/:id/evidence.md` · `GET /projects/:id/app-demand` (lệnh copy sẵn + tên file) · `POST /research/:id/validations/:vid/lock` |
-| `ProjectPage.tsx`, khối Validate | nút "Làm evidence pack" + "Copy lệnh /app-demand", form ngưỡng khoá, nhập số, gợi ý + nút ghi vào kết luận |
-| `web/tests/evidence*.test.ts`, `validate*.test.ts` | |
+- `web/src/lib/evidence.ts` — đối chiếu từng mục khung; mục thiếu "chưa đo" + link đi lấy; thêm "Ai thu tiền", lời chê, điểm + cờ
+- `web/src/lib/demand-template.ts` (mới) — đọc mục của `templates/demand.md`
+- `web/src/db/schema.ts` + migration mới — `validations`: `lockedAt`, `changedAfterLock`, `source`, `views`, `clicks`, `emails`, `replies`
+- `web/src/lib/validate.ts` — khoá ngưỡng, ghi số có nguồn, `decision()` trả lý do
+- `web/src/server/app.ts` — `GET /projects/:id/evidence.md` · `GET /projects/:id/app-demand` (lệnh copy sẵn + tên file) · `POST /research/:id/validations/:vid/lock`
+- `ProjectPage.tsx`, khối Validate — nút "Làm evidence pack" + "Copy lệnh /app-demand", form ngưỡng khoá, nhập số, gợi ý + nút ghi vào kết luận
+- `web/tests/evidence*.test.ts`, `validate*.test.ts`
 
 ## Tasks
 

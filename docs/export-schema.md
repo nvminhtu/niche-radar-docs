@@ -5,15 +5,15 @@
 
 ## Chung
 
-- **CSV**: UTF-8 có BOM, dấu phẩy, mọi ô trong ngoặc kép, xuống dòng CRLF, ngày ISO, số thô. Mỗi bảng 1 file, gói trong `.zip`.
+- **CSV**: UTF-8 có BOM, dấu phẩy, mọi ô trong ngoặc kép, xuống dòng CRLF, ngày ISO, số thô. Mỗi bảng 1 file, gói trong `.zip` (Reddit Gap chỉ 1 bảng → tải thẳng `.csv`).
 - **JSON**: `{ "format": "niche-radar/export", "schema_version": 1, "scope", "name", "created_at", "project", "runs", "tables" }` —
-  `tables` có đủ 6 bảng dưới đây, mỗi dòng đủ mọi cột (thiếu số = `null`).
+  `tables` có các bảng của phạm vi (Research / Project: 6 bảng store · Reddit Gap: `reddit_gaps`), mỗi dòng đủ mọi cột (thiếu số = `null`).
 - **Gói cho AI**: `prompt.md` (việc AI phải làm + khung brief tính năng 7 mục) · `brief.md` (dữ liệu gọn có mã nguồn) ·
   `schema.md` (nội dung như trang này). Ước token = ký tự / 3.
 
 ## Bảng
 
-Mã nguồn trong brief: `C` đối thủ · `P` chủ đề than (mỗi mã một chủ đề, nhiều câu trích) · `G` khoảng trống tính năng · `S` yếu tố điểm · `K` keyword · `T` Google Trends.
+Mã nguồn trong brief: `C` đối thủ · `P` chủ đề than (mỗi mã một chủ đề, nhiều câu trích) · `G` khoảng trống tính năng · `S` yếu tố điểm · `K` keyword · `T` Google Trends · `R` chủ đề Reddit Gap.
 Bảng đủ cột có trong CSV / JSON cùng lần xuất.
 
 ### keywords
@@ -125,3 +125,25 @@ Google Trends 12 tháng của keyword gốc (chỉ số tương đối 0–100, 
 - `evidence`: Bằng chứng / cách tính
 - `source`: Nguồn của dòng này
 - `fetched_at`: Ngày lấy số (ISO)
+
+### reddit_gaps
+
+Reddit Gap (Phase 10): chủ đề × chuyên mục từ bài Reddit anh đã lưu, xếp theo điểm gap. Cùng số với bảng trên trang /reddit.
+
+- `subreddit`: Subreddit (all = mọi subreddit đã nhập)
+- `code`: Mã dẫn nguồn trong brief (R1, R2…)
+- `topic`: Mã chủ đề
+- `topic_label`: Chủ đề
+- `category`: Mã chuyên mục
+- `category_label`: Chuyên mục: hỏi app · lỗi sau cập nhật · cách làm…
+- `threads`: Số bài
+- `recent_90d`: Số bài trong 90 ngày gần nhất
+- `median_engagement`: Trung vị điểm + comment mỗi bài
+- `solved_share`: Tỷ lệ bài đã giải (flair Solved / "Edit: solved"), 0–1
+- `no_native_share`: Tỷ lệ bài có comment nói "không có cách gốc", 0–1 (trống = file không có comment)
+- `mac_apps`: Số app Mac App Store cho chủ đề (50 = 50+, trống = chưa đếm)
+- `gap_score`: Điểm gap — công thức ở trang Reddit Gap
+- `sample_titles`: Tiêu đề 3 bài mẫu điểm cao nhất (cách nhau bởi " ; ")
+- `sample_urls`: Link 3 bài mẫu (cùng thứ tự)
+- `source`: Nguồn của dòng này
+- `fetched_at`: Ngày dựng bảng (ISO)

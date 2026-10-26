@@ -25,15 +25,13 @@
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `web/src/components/KeywordTable.tsx` (+ bảng lớn khác theo đo) | virtualize |
-| `web/src/client/main.tsx` | lazy route |
-| `web/src/db/schema.ts` + migration mới | index |
-| `web/src/db/client.ts` | WAL |
-| `web/src/server/app.ts`, `lib/explore-view.ts`, `lib/run-view.ts` | phân trang |
-| `bench/seed-50.ts` (mới) | DB 50 niche |
-| `web/tests/*` | phân trang, WAL + backup |
+- `web/src/components/KeywordTable.tsx` (+ bảng lớn khác theo đo) — virtualize
+- `web/src/client/main.tsx` — lazy route
+- `web/src/db/schema.ts` + migration mới — index
+- `web/src/db/client.ts` — WAL
+- `web/src/server/app.ts`, `lib/explore-view.ts`, `lib/run-view.ts` — phân trang
+- `bench/seed-50.ts` (mới) — DB 50 niche
+- `web/tests/*` — phân trang, WAL + backup
 
 ## Tasks
 

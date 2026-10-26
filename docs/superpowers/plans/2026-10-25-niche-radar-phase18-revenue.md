@@ -31,21 +31,19 @@ Phase 10 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 
 ## File đụng tới
 
-| File | Việc |
-|---|---|
-| `docs/web/phase-18-revenue.md` | điền bảng Bước 0 |
-| `web/src/lib/revenue/import.ts` (mới) | đọc file `.html` / `.json` đã lưu (TrustMRR, trang /open) → dòng verified nguyên văn + link + ngày sync; chống nhân đôi theo (nguồn, link); mẫu theo `reddit-import.ts` |
-| `web/src/lib/revenue/links.ts` (mới) | danh sách link cần mở cho 1 niche (TrustMRR theo tên đối thủ, /open từ `developerWebsite`, câu tìm bài công khai) |
-| `web/src/db/schema.ts` + migration mới | `revenue_rows` (appId?, source, url, mrr, revenue30d, provider, syncedAt, fetchedAt, match, matchReason) |
-| `web/src/lib/revenue/match.ts` (mới) | điểm khớp luật (tên, dev, domain web) → `chắc · gần đúng · không khớp`; AI xác nhận (tuỳ chọn) kèm lý do |
-| `web/src/lib/revenue/estimate.ts` (mới) | bậc ước từ giá + Top Grossing + số rating, kèm lý do |
-| `web/src/lib/revenue/table.ts` (mới) | gộp verified (TrustMRR job, trang /open, bài công khai) + ước → bảng "Ai đang thu tiền" |
-| `web/src/lib/ai/tasks.ts` | task `revenue` (job + tuyến A) đọc trang /open, bài chia sẻ: trả số nguyên văn + link, `cleanRevenue` kiểm số có trong câu trích |
-| `web/src/collectors/top-grossing.ts` (mới) | RSS Top Grossing App Store theo thể loại (công khai) — chỉ thứ hạng, cache 1 ngày |
-| `web/src/lib/score-v2.ts` | yếu tố Tiền: verified → "đo", ước → "proxy" |
-| `web/src/components/RevenueBlock.tsx` (mới) | bảng + dòng tóm tắt "3 app verified > $1k MRR", nhãn cũ, nút tra lại |
-| `web/src/lib/evidence.ts` | thêm bảng |
-| `web/tests/revenue-*.test.ts` | |
+- `docs/web/phase-18-revenue.md` — điền bảng Bước 0
+- `web/src/lib/revenue/import.ts` (mới) — đọc file `.html` / `.json` đã lưu (TrustMRR, trang /open) → dòng verified nguyên văn + link + ngày sync; chống nhân đôi theo (nguồn, link); mẫu theo `reddit-import.ts`
+- `web/src/lib/revenue/links.ts` (mới) — danh sách link cần mở cho 1 niche (TrustMRR theo tên đối thủ, /open từ `developerWebsite`, câu tìm bài công khai)
+- `web/src/db/schema.ts` + migration mới — `revenue_rows` (appId?, source, url, mrr, revenue30d, provider, syncedAt, fetchedAt, match, matchReason)
+- `web/src/lib/revenue/match.ts` (mới) — điểm khớp luật (tên, dev, domain web) → `chắc · gần đúng · không khớp`; AI xác nhận (tuỳ chọn) kèm lý do
+- `web/src/lib/revenue/estimate.ts` (mới) — bậc ước từ giá + Top Grossing + số rating, kèm lý do
+- `web/src/lib/revenue/table.ts` (mới) — gộp verified (TrustMRR job, trang /open, bài công khai) + ước → bảng "Ai đang thu tiền"
+- `web/src/lib/ai/tasks.ts` — task `revenue` (job + tuyến A) đọc trang /open, bài chia sẻ: trả số nguyên văn + link, `cleanRevenue` kiểm số có trong câu trích
+- `web/src/collectors/top-grossing.ts` (mới) — RSS Top Grossing App Store theo thể loại (công khai) — chỉ thứ hạng, cache 1 ngày
+- `web/src/lib/score-v2.ts` — yếu tố Tiền: verified → "đo", ước → "proxy"
+- `web/src/components/RevenueBlock.tsx` (mới) — bảng + dòng tóm tắt "3 app verified > $1k MRR", nhãn cũ, nút tra lại
+- `web/src/lib/evidence.ts` — thêm bảng
+- `web/tests/revenue-*.test.ts`
 
 ## Tasks
 

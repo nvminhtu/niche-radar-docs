@@ -33,3 +33,5 @@ mới làm tiếp phase sau.
 
 - Thêm tính năng mới — chỉ soát + sửa
 </div>
+
+Plan code chi tiết: [Phase 27](../superpowers/plans/2026-10-25-niche-radar-phase27-review-core.md)
