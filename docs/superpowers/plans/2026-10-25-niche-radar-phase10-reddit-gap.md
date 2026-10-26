@@ -1,11 +1,11 @@
-# Niche Radar Phase 10 — Reddit Gap — Implementation Plan
+# Niche Radar Phase 11 — Reddit Gap — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 trượt → dừng cả phase, ghi lý do vào `docs/appendix.md`.
 
 **Goal:** biết người dùng Mac **cần mà chưa có** gì — chủ đề hỏi nhiều, được quan tâm, chưa ai giải — kèm link bài gốc.
 
-**Spec:** [Phase 10 · Reddit Gap](../../web/phase-10-reddit-gap.md) · **Cần trước:** Phase 6 (job Claude in Chrome), Phase 2
+**Spec:** [Phase 11 · Reddit Gap](../../web/phase-11-reddit-gap.md) · **Cần trước:** Phase 6 (job Claude in Chrome), Phase 2
 (collector App Store), Phase 8 (Project + backup).
 
 ## Mục tiêu · làm · không làm
@@ -38,7 +38,7 @@
 - `web/src/lib/reddit/job.ts` — sinh file job cho Claude in Chrome (link top năm / tháng / search 6–8 mẫu)
 - `web/src/server/app.ts` — `GET /api/reddit`, `GET /api/reddit/job`, `POST /api/reddit/import`, `GET /api/reddit/gap`, `GET /api/reddit/export.md`
 - `web/src/client/RedditGapPage.tsx` + `main.tsx` + `NavMenu.tsx` — trang `/reddit`, 1 cột
-- `web/src/lib/features.ts` — thêm "Reddit Gap" (Phase 10)
+- `web/src/lib/features.ts` — thêm "Reddit Gap" (Phase 11)
 - `web/tests/reddit-*.test.ts` + `web/tests/fixtures/reddit/` — fixture bài thật đã bỏ tên người đăng
 
 ## Tasks

@@ -1,11 +1,11 @@
-# Niche Radar Phase 29 — UI / UX Improvement — Implementation Plan
+# Niche Radar Phase 24 — UI / UX Improvement — Implementation Plan
 
 > **For agentic workers:** chỉ sửa chỗ **vướng thật**, không thêm tính năng. Mỗi màn sửa xong thì `npm run check` xanh,
 > có screenshot trước / sau đã Read, rồi commit. Steps dùng checkbox (`- [ ]`).
 
 **Goal:** tool dễ dùng hơn — ít bấm hơn, đọc nhanh hơn, không lạc.
 
-**Spec:** [Phase 29 · UI / UX Improvement](../../web/phase-29-ui-ux.md) · **Cần trước:** Phase 27 (chỗ vướng ghi được khi đi 5 niche).
+**Spec:** [Phase 24 · UI / UX Improvement](../../web/phase-24-ui-ux.md) · **Cần trước:** Phase 25 (chỗ vướng ghi được khi đi 5 niche).
 
 ## Mục tiêu · làm · không làm
 
@@ -23,8 +23,8 @@
 
 ## File đụng tới
 
-- `docs/web/phase-29-ui-ux.md` — danh sách chỗ vướng + trạng thái
-- `web/tests/e2e/a11y.spec.ts` (mới, nếu Phase 51 chưa có Playwright thì dùng script tạm) — tương phản + phím Tab tới mọi nút chính
+- `docs/web/phase-24-ui-ux.md` — danh sách chỗ vướng + trạng thái
+- `web/tests/e2e/a11y.spec.ts` (mới, nếu Backlog 09 chưa có Playwright thì dùng script tạm) — tương phản + phím Tab tới mọi nút chính
 - `web/src/components/*`, `web/src/client/*` — sửa theo danh sách
 - `web/src/client/globals.css`, `components/charts/theme.tsx` — token màu nếu tương phản trượt
 - `design/ui-29/` — screenshot
@@ -33,7 +33,7 @@
 
 ### Task 1: Soát + lập danh sách
 - [ ] Đi luồng chính trên 3 niche, đếm số bấm. Mở mọi màn ở 3 cỡ, sáng + tối.
-- [ ] Kiểm trạng thái đang tải · rỗng · lỗi · bị chặn từng màn (dùng fixture lỗi của Phase 20).
+- [ ] Kiểm trạng thái đang tải · rỗng · lỗi · bị chặn từng màn (dùng fixture lỗi của Phase 22).
 - [ ] Phím Tab + VoiceOver trên Research, Explore, Project. Ghi mọi chỗ vướng có screenshot "trước".
 
 ### Task 2: Sửa theo thứ tự đau nhất

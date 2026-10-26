@@ -1,11 +1,11 @@
-# Niche Radar Phase 52 — Canary nguồn thật — Implementation Plan
+# Niche Radar Backlog 10 — Canary nguồn thật — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Canary chỉ báo, không tự sửa collector.
 
 **Goal:** mỗi ngày tự gọi thật một lượt nhỏ tới từng nguồn; nguồn đổi dạng / bị chặn → biết trong 1 ngày.
 
-**Spec:** [Phase 52 · Canary nguồn thật](../../web/phase-52-source-canary.md) · **Cần trước:** Phase 50 (fixture + `_meta`, collector nhận `fetcher`).
+**Spec:** [Backlog 10 · Canary nguồn thật](../../web/phase-backlog-10-source-canary.md) · **Cần trước:** Backlog 08 (fixture + `_meta`, collector nhận `fetcher`).
 
 ## Mục tiêu · làm · không làm
 

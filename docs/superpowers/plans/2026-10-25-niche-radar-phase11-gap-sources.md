@@ -1,11 +1,11 @@
-# Niche Radar Phase 11 — Research nguồn tìm gap — Implementation Plan
+# Niche Radar Phase 14 — Research nguồn tìm gap — Implementation Plan
 
 > **For agentic workers:** phase **chỉ research, không code**. Mỗi Task xong thì `npm run docs:build` (strict) xanh rồi
 > commit. Steps dùng checkbox (`- [ ]`). Không đăng ký, không trả phí, không nhập key, không cài MCP chưa đọc code.
 
 **Goal:** so **mọi nguồn** tìm gap / keyword niche trên cùng một thang, chọn top 3 nguồn đáng có phase code riêng.
 
-**Spec:** [Phase 11 · Research nguồn tìm gap](../../web/phase-11-gap-sources.md) · **Cần trước:** không (chạy song song được với Phase 10).
+**Spec:** [Phase 14 · Research nguồn tìm gap](../../web/phase-14-gap-sources.md) · **Cần trước:** không (chạy song song được với Phase 11).
 
 ## Mục tiêu · làm · không làm
 
@@ -28,8 +28,8 @@
 ## File đụng tới
 
 - `docs/web/gap-sources-map.md` (mới) — Bản đồ nguồn gap: bảng tóm tắt + mục từng nguồn
-- `docs/web/phase-11-gap-sources.md` — chip trạng thái, link sang bản đồ, kết quả
-- `mkdocs.yml` — thêm bản đồ vào nav dưới Phase 11
+- `docs/web/phase-14-gap-sources.md` — chip trạng thái, link sang bản đồ, kết quả
+- `mkdocs.yml` — thêm bản đồ vào nav dưới Phase 14
 - `docs/appendix.md` — nguồn bị Bỏ + lý do (để khỏi xét lại)
 - Product Growth Playbook (repo riêng) — 1 skill / trang tiếng Anh: cách chấm nguồn gap + phương pháp — không tên niche đang nhắm
 

@@ -1,6 +1,6 @@
 # Định dạng file xuất
 
-> Cột cố định của [Phase 16 · Export](web/phase-16-export.md). CSV, JSON và `schema.md` trong gói cho AI dùng chung một
+> Cột cố định của [Phase 15 · Export](web/phase-15-export.md). CSV, JSON và `schema.md` trong gói cho AI dùng chung một
 > bảng cột ở `web/src/lib/export/columns.ts`. Đổi tên / bỏ cột = tăng `schema_version` + ghi CHANGELOG.
 
 ## Chung
@@ -128,7 +128,7 @@ Google Trends 12 tháng của keyword gốc (chỉ số tương đối 0–100, 
 
 ### reddit_gaps
 
-Reddit Gap (Phase 10): chủ đề × chuyên mục từ bài Reddit anh đã lưu, xếp theo điểm gap. Cùng số với bảng trên trang /reddit.
+Reddit Gap (Phase 11): chủ đề × chuyên mục từ bài Reddit anh đã lưu, xếp theo điểm gap. Cùng số với bảng trên trang /reddit.
 
 - `subreddit`: Subreddit (all = mọi subreddit đã nhập)
 - `code`: Mã dẫn nguồn trong brief (R1, R2…)
@@ -150,7 +150,7 @@ Reddit Gap (Phase 10): chủ đề × chuyên mục từ bài Reddit anh đã l�
 
 ### decisions
 
-Bàn quyết định (Phase 16b): mỗi keyword của project chấm 5 trục 1–5 có dẫn chứng + verdict. Bản chốt (manual) và bản AI dán ngược (ai) mới nhất.
+Bàn quyết định (Phase 16): mỗi keyword của project chấm 5 trục 1–5 có dẫn chứng + verdict. Bản chốt (manual) và bản AI dán ngược (ai) mới nhất.
 
 - `decision_id`: Mã lần chấm
 - `kind`: manual = bản anh chốt · ai = JSON AI dán ngược

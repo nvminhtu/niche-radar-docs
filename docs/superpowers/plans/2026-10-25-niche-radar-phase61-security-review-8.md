@@ -1,16 +1,16 @@
-# Niche Radar Phase 61 — Review bảo mật + bản 8.0 — Implementation Plan
+# Niche Radar Backlog 17 — Review bảo mật + bản 8.0 — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Claude không tự gắn tag 8.0 khi anh chưa đồng ý.
 
-**Goal:** tự **tấn công thử** theo phiếu Phase 58 trên bản build, sửa chỗ lọt, rồi ra bản Web 8.0 qua CI.
+**Goal:** tự **tấn công thử** theo phiếu Backlog 15 trên bản build, sửa chỗ lọt, rồi ra bản Web 8.0 qua CI.
 
-**Spec:** [Phase 61 · Review bảo mật + 8.0](../../web/phase-61-security-review-8.md) · **Cần trước:** Phase 58, 59, 60, 54, 57.
+**Spec:** [Backlog 17 · Review bảo mật + 8.0](../../web/phase-backlog-17-security-review-8.md) · **Cần trước:** Backlog 15, B02, B16, B13, 57.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** mọi lần thử bị chặn, có ảnh / log bằng chứng · bản 8.0 cài đè 7.x không mất dữ liệu (đếm từng bảng trước / sau).
-  Dòng "7.x tự nhận 8.0 qua auto-update" chỉ áp dụng khi App Mac đã có auto-update (Phase 81 — làm sau Version 9); trước đó ghi "chưa áp dụng".
-- **Làm:** 3 nhóm thử (trang lạ gọi API · review có `<script>` · key lọt log) + mọi mục phiếu Phase 58, bằng chứng, sửa, ra bản 8.0.
+  Dòng "7.x tự nhận 8.0 qua auto-update" chỉ áp dụng khi App Mac đã có auto-update (Phase 36 — làm sau Version 9); trước đó ghi "chưa áp dụng".
+- **Làm:** 3 nhóm thử (trang lạ gọi API · review có `<script>` · key lọt log) + mọi mục phiếu Backlog 15, bằng chứng, sửa, ra bản 8.0.
 - **Không làm:** pentest thuê ngoài · tính năng mới.
 
 ## Global Constraints

@@ -1,15 +1,15 @@
-# Niche Radar Phase 60 — Refactor — Implementation Plan
+# Niche Radar Backlog 16 — Refactor — Implementation Plan
 
 > **For agentic workers:** mỗi bước là **1 PR nhỏ** (1 nguồn / 1 file to), không đổi API, không đổi giao diện. Mỗi PR: `npm run check` + `npm run e2e`
 > xanh và `npm run review` giữ nguyên điểm. Steps dùng checkbox (`- [ ]`).
 
 **Goal:** dọn code mà không đổi cách tool chạy: mọi nguồn theo một khuôn, file to tách nhỏ, code chết gỡ đi.
 
-**Spec:** [Phase 60 · Refactor](../../web/phase-60-refactor.md) · **Cần trước:** Phase 50 (test collector), 51 (E2E), 53 (phiếu review).
+**Spec:** [Backlog 16 · Refactor](../../web/phase-backlog-16-refactor.md) · **Cần trước:** Backlog 08 (test collector), 51 (E2E), 53 (phiếu review).
 
 ## Mục tiêu · làm · không làm
 
-- **Xong khi:** test + E2E xanh · phiếu review (Phase 53) giữ nguyên điểm trước / sau · thêm thử 1 nguồn giả chỉ cần 2 file (collector + test) ·
+- **Xong khi:** test + E2E xanh · phiếu review (Backlog 11) giữ nguyên điểm trước / sau · thêm thử 1 nguồn giả chỉ cần 2 file (collector + test) ·
   không còn file nào > 400 dòng.
 - **Làm:** khuôn `Collector`, tách file > 400 dòng, gỡ code chết, gom kiểu chung.
 - **Không làm:** đổi framework · viết lại ngôn ngữ khác · tính năng mới · nhiều nguồn trong một PR.

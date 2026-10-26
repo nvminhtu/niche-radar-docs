@@ -1,11 +1,11 @@
-# Niche Radar Phase 41 — Kệ Google (SEO) — Implementation Plan
+# Niche Radar Phase 58 — Kệ Google (SEO) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không cào trang kết quả Google bằng script. Key API anh tự tạo.
 
 **Goal:** với keyword chính của niche: top 10 Google là ai, loại trang gì, còn chỗ chen không; kèm câu hỏi người dùng hay gõ. Không AI.
 
-**Spec:** [Phase 41 · Kệ Google](../../web/phase-41-seo-shelf.md) · **Cần trước:** Phase 1 (Top 10 cơ hội, `collectors/suggest.ts`).
+**Spec:** [Phase 58 · Kệ Google](../../web/phase-58-seo-shelf.md) · **Cần trước:** Phase 1 (Top 10 cơ hội, `collectors/suggest.ts`).
 
 ## Mục tiêu · làm · không làm
 
@@ -40,7 +40,7 @@
 - `web/src/db/schema.ts` + migration mới — `SOURCES` thêm `serp`; `serp_results` (keywordId, rank, url, title, domain, kind, provider, fetchedAt), `serp_calls`, `niche_questions` (runId, prefix, text)
 - `run-research.ts`, `run-view.ts` — nguồn mới chạy cho Top 10 cơ hội
 - `web/src/components/SerpBlock.tsx` (mới) — bảng top 10 theo keyword, chip loại trang, độ dễ chen, bộ câu hỏi
-- export (Phase 16) — bảng `serp`, `questions`
+- export (Phase 15) — bảng `serp`, `questions`
 - `web/tests/serp-*.test.ts` — fixture JSON Brave / CSE
 
 ## Tasks

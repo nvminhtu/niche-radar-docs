@@ -26,36 +26,36 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 </div>
 
 <div class="box box--goal" markdown>
-**Mới 2026-10-26 — [Plan bán app Mac + Windows (A1–A3)](app/plan-ban-app.md):** [A1](app/phase-a1-hoan-thien-web.md) gom mọi việc Web dang dở · [A2](app/phase-a2-ai-cua-ban.md) AI của bạn (Claude Code, Codex, Ollama chạy trong app, MCP, khung chat, terminal nhúng) · [A3](app/phase-a3-ai-tinh-nang.md) nút AI cho từng tính năng đã làm. Thứ tự dưới đây đã gom theo A1–A3.
+**Đánh số lại 2026-10-26 — số phase = thứ tự làm.** Đã xong 1–17 → [Hoàn thiện Web](app/hoan-thien-web.md) trước bản bán 18–25 → [Phase 26](app/phase-26-ai-cua-ban.md) AI của bạn (Claude Code, Codex, Ollama chạy trong app, MCP, khung chat) → [Phase 27](app/phase-27-ai-tinh-nang.md) nút AI cho từng tính năng → bán 28–36 → sau bản bán 37–44 → 45–62. Phase không làm thành **Backlog 01–21**. Bảng số cũ → mới: [Plan bán app](app/plan-ban-app.md#so-cu-so-moi-anh-so-lai-2026-10-26).
 </div>
 
-## Thứ tự: Web V1 → V9 → V10 → App Mac + Windows → V11 → V2–4, V12 · ⛔ KO LÀM
+## Thứ tự: Phase 1 → 62 · ⛔ KO LÀM = Backlog 01–21
 
 <div class="nr-forms" markdown>
 <div class="nr-web" markdown>
 ### :material-web: 1 · Web local — làm + test tính năng
 
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
-- Version 1 (đang làm) → **Version 9** analytics, bỏ Account → **Version 10** dùng thử + license key
-- Sau App: Version 11 marketing → Version 2, 3, 4, 12 tính năng mới (vào app qua bản cập nhật)
-- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 10b xong · 16 Export · 16b · 10c GitHub Gap xong → 12–27</span>
+- Hoàn thiện Web 18–25 (đang làm) → AI 26–27 → **Version 9** analytics (28–29) → **Version 10** dùng thử + license (30–32)
+- Sau App: 37–44 hoàn thiện tiếp → Version 11 marketing (45–48) → Version 2, 3, 4 (49–62), 12 (vào app qua bản cập nhật)
+- <span class="chip chip--doing">Đang làm · Phase 18 Đối thủ bị chê gì · chờ chạy thật: 7, 11, 15, 16, 17</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
 ### :material-laptop: 2 · App Mac + Windows — thứ để bán
 
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần · code ở `app/`
-- Gói khi bản Web **xong Version 10**: 75 → 79 → 82 (Windows Beta) → 81 (GitHub Releases + tự cập nhật)
+- Gói khi bản Web **xong Phase 32**: 33 → 34 → 35 (Windows Beta) → 36 (GitHub Releases + tự cập nhật)
 - Tải miễn phí → dùng thử N ngày → mua đứt → license key, 2 máy, không tài khoản
-- <span class="chip chip--todo">Chờ xong Version 10 · Phase 74 đã có .dmg từ trước</span>
+- <span class="chip chip--todo">Chờ xong Phase 32 · Phase 17 đã có .dmg từ trước</span>
 - [Mở lộ trình App →](app/index.md)
 </div>
 </div>
 
 <div class="box box--danger" markdown>
-**⛔ KO LÀM (chốt 2026-10-26)** — không ra tiền, không thêm người dùng: **Account** (Phase 30, 59, 62, 63) ·
-**Version 5** Performance · **Version 6** test tự động · **Version 7** CI · **Version 8** security / refactor ·
-App 76, 77, 78, 80. Trang giữ lại để tra. [Danh sách + lý do](appendix.md#khong-lam-chot-2026-10-26)
+**⛔ KO LÀM (chốt 2026-10-26)** — không ra tiền, không thêm người dùng: bỏ số phase, thành **Backlog 01–21**: Account (01–04) ·
+**Version 5** Performance (05–07) · **Version 6** test tự động (08–12) · **Version 7** CI (13–14) · **Version 8** security / refactor (15–17) ·
+App (18–21). Trang giữ lại để tra. [Danh sách + lý do](appendix.md#khong-lam-chot-2026-10-26)
 </div>
 
 ## Chạy thế nào
@@ -77,18 +77,19 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 
 ## Lộ trình tóm tắt
 
-| Mục | Version | Nội dung | Phase | Trạng thái |
-|---|---|---|---|---|
-| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate · Reddit / Q&A Gap · làm kỹ tính năng chính (12–27) · so sánh niche, UI, setup, tutorial | 1–11, 12–27, 28, 29, 30.1, 30.2 | <span class="chip chip--doing">Đang làm</span> |
-| Web | 9 | Analytics + báo lỗi + trang Riêng tư — bỏ Account | 64–65 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 10 | Bán: dùng thử + license key + mua đứt, AI của người dùng | 66–69 | <span class="chip chip--todo">Chưa làm</span> |
-| App | Mac + Windows | bản bán đầu, phần riêng app, Windows Beta, GitHub Releases + tự cập nhật | 75, 79, 82, 81 | <span class="chip chip--todo">Chờ xong Version 10</span> |
-| Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 70–73 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 2 | Nguồn mới + AI: YouTube, Amazon, Google Maps | 31a, 31–35 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 3 | So sánh đối thủ + AI Cite | 37–40 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 4 | Kệ Google, kệ AI, gói GEO | 41–45 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
-| ⛔ | KO LÀM | Account · V5 Performance · V6 test tự động · V7 CI · V8 security / refactor · App 76–78, 80 | 30 · 46–63 · 76–78 · 80 | <span class="chip chip--skip">Không làm</span> |
+| Bước | Nội dung | Phase | Trạng thái |
+|---|---|---|---|
+| Đã xong | Google Play, App Store, Trends, Feature Gap, AI, validate, Project, i18n, Reddit / Q&A / GitHub Gap, Export, Bàn quyết định, app Mac 1.0 | 1–17 | <span class="chip chip--doing">Xong · 7, 11, 15, 16, 17 chờ chạy thật</span> |
+| Hoàn thiện Web | lời chê, sức khoẻ niche, collect, project, trang Research, setup, UI, review cụm | 18–25 | <span class="chip chip--doing">Đang làm</span> |
+| AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng | 26–27 | <span class="chip chip--todo">Chưa làm</span> |
+| Bán | Version 9 analytics · Version 10 dùng thử + license · app Mac + Windows + tự cập nhật | 28–36 | <span class="chip chip--todo">Chưa làm</span> |
+| Sau bản bán | doanh thu, backup tự động, Explore, hồ sơ đối thủ, theo dõi, evidence, so sánh niche, tutorial | 37–44 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 45–48 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 2 | Demo site + YouTube, Amazon, Google Maps | 49–54 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 3 | So sánh đối thủ + AI Cite | 55–57 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 4 | Kệ Google, kệ AI, gói GEO | 58–62 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
+| ⛔ KO LÀM | Account · V5 Performance · V6 test tự động · V7 CI · V8 security / refactor · App 3.0 / 4.0 / app nhẹ / CI | Backlog 01–21 | <span class="chip chip--skip">Không làm</span> |
 
 Việc chưa xếp phase hoặc không làm: [Appendix](appendix.md). Mỗi phase đi theo [Quy trình build](quy-trinh-build.md).
 

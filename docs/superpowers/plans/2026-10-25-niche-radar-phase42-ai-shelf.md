@@ -1,12 +1,12 @@
-# Niche Radar Phase 42 — Kệ AI (GEO / AEO) — Implementation Plan
+# Niche Radar Phase 59 — Kệ AI (GEO / AEO) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** hỏi Gemini, ChatGPT, Claude đúng câu người dùng hay hỏi; đếm **app nào được nhắc**, **trang nào được trích**. LLM là nguồn dữ liệu.
 
-**Spec:** [Phase 42 · Kệ AI](../../web/phase-42-ai-shelf.md) · **Cần trước:** Phase 41 (bộ câu hỏi), Phase 22 (tên đối thủ + regex),
-Phase 25 (key Gemini, sổ chi phí). Đọc `scripts/geo.py` của repo App-AI-Skills để dùng **cùng câu lệnh mẫu + cách đếm**.
+**Spec:** [Phase 59 · Kệ AI](../../web/phase-59-ai-shelf.md) · **Cần trước:** Phase 58 (bộ câu hỏi), Phase 40 (tên đối thủ + regex),
+Phase 26.6 (key Gemini, sổ chi phí). Đọc `scripts/geo.py` của repo App-AI-Skills để dùng **cùng câu lệnh mẫu + cách đếm**.
 
 ## Mục tiêu · làm · không làm
 
@@ -22,8 +22,8 @@ Phase 25 (key Gemini, sổ chi phí). Đọc `scripts/geo.py` của repo App-AI-
 - Prompt mẫu chép từ `geo.py` vào `web/src/lib/geo/prompt.ts` (ghi nguồn + ngày chép); đổi thì đổi cả hai — test so chuỗi với file mẫu đã lưu.
 - Đếm bằng regex trên chữ đã lưu (`web/src/lib/geo/count.ts`), không nhờ AI đếm. Regex tên lấy từ đối thủ (tên thương hiệu trước ":" / " - ").
 - Mỗi câu trả lời lưu nguyên văn + engine + model + ngày. Số cũ không trộn với số mới (lọc theo lần đo).
-- Chạy song song tối đa 2, trần chi phí / niche (Gemini qua sổ chi phí Phase 25; CLI tính 0 đ, ghi thời gian).
-- "Câu trả lời yếu": không nhắc app nào, hoặc chỉ nhắc app có cờ `bị chê` (Phase 22).
+- Chạy song song tối đa 2, trần chi phí / niche (Gemini qua sổ chi phí Phase 26.6; CLI tính 0 đ, ghi thời gian).
+- "Câu trả lời yếu": không nhắc app nào, hoặc chỉ nhắc app có cờ `bị chê` (Phase 40).
 
 ## File đụng tới
 

@@ -18,14 +18,14 @@
   không phải cộng dồn các nguồn.
 
 **Thước đo Version 5 xong:** cùng một bộ 3 niche chuẩn, mọi chỉ số trong bảng mốc bằng hoặc tốt hơn, và không chỉ số nào
-tệ đi quá 10%. Explore 100 keyword hiện mất ~6 phút: mục tiêu ghi sau khi đo ở Phase 46, không đặt trước.
+tệ đi quá 10%. Explore 100 keyword hiện mất ~6 phút: mục tiêu ghi sau khi đo ở Backlog 05, không đặt trước.
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  B[Phase 46<br/>Đo mốc] --> C[Phase 47<br/>Collector song song<br/>+ cache]
-  B --> U[Phase 48<br/>UI + DB nhanh]
+  B[Backlog 05<br/>Đo mốc] --> C[Backlog 06<br/>Collector song song<br/>+ cache]
+  B --> U[Backlog 07<br/>UI + DB nhanh]
   C & U --> R[Đo lại<br/>so với mốc]
 ```
 
@@ -33,17 +33,17 @@ flowchart LR
 
 | Phase | Làm gì |
 |---|---|
-| [44 · Đo mốc](phase-46-benchmark.md) | script đo thời gian từng luồng, RAM, dung lượng; bảng mốc lưu trong repo |
-| [45 · Collector nhanh hơn](phase-47-fast-collector.md) | chạy các nguồn song song (mỗi nguồn giữ giới hạn riêng), đẩy kết quả dần, cache dùng chung giữa niche, chạy tiếp khi lỗi giữa chừng |
-| [46 · UI + DB nhanh](phase-48-fast-ui-db.md) | bảng lớn chỉ vẽ phần đang thấy, tách code theo trang, index SQLite, API trả từng trang |
+| [44 · Đo mốc](phase-backlog-05-benchmark.md) | script đo thời gian từng luồng, RAM, dung lượng; bảng mốc lưu trong repo |
+| [45 · Collector nhanh hơn](phase-backlog-06-fast-collector.md) | chạy các nguồn song song (mỗi nguồn giữ giới hạn riêng), đẩy kết quả dần, cache dùng chung giữa niche, chạy tiếp khi lỗi giữa chừng |
+| [46 · UI + DB nhanh](phase-backlog-07-fast-ui-db.md) | bảng lớn chỉ vẽ phần đang thấy, tách code theo trang, index SQLite, API trả từng trang |
 
-## Phase 46 · Đo mốc
+## Backlog 05 · Đo mốc
 
 - **Làm:** `npm run bench` chạy 3 niche chuẩn, ghi: thời gian tới kết quả đầu tiên · tổng thời gian explore · thời gian
   mở từng trang · thời gian query chậm nhất · RAM server · dung lượng bundle web. Lưu `bench/baseline.json` + bảng trong trang này.
 - **Xong khi:** chạy 3 lần liên tiếp, chênh lệch mỗi số ≤ 15% (đo ổn định mới tin được).
 
-## Phase 47 · Collector nhanh hơn
+## Backlog 06 · Collector nhanh hơn
 
 - **Làm:** hàng đợi theo nguồn: Play, App Store, Trends… chạy song song, mỗi nguồn giữ giới hạn gọi của nó ·
   kết quả đổ dần lên UI (stream) · cache theo keyword dùng chung giữa các niche (niche B dùng lại keyword niche A đã tra
@@ -51,10 +51,10 @@ flowchart LR
 - **Xong khi:** kết quả đầu tiên ≤ 30 giây · tổng thời gian ≈ nguồn chậm nhất + ≤ 10% · không nguồn nào bị chặn nhiều hơn
   mốc · ngắt mạng giữa chừng rồi bật lại → chạy tiếp được.
 
-## Phase 48 · UI + DB nhanh
+## Backlog 07 · UI + DB nhanh
 
 - **Làm:** bảng > 200 dòng chỉ vẽ phần đang thấy (virtualize) · tách code theo trang (lazy load) · index SQLite cho
-  các query chậm nhất ở Phase 46 · bật WAL · API danh sách trả từng trang.
+  các query chậm nhất ở Backlog 05 · bật WAL · API danh sách trả từng trang.
 - **Xong khi:** bảng 1.000 keyword cuộn mượt · mở trang niche ≤ 1 giây với DB có 50 niche · bundle trang chủ nhỏ hơn mốc.
 
 <div class="box box--rules" markdown>

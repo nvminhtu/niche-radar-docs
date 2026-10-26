@@ -1,11 +1,11 @@
-# Niche Radar Phase 47 — Collector nhanh hơn — Implementation Plan
+# Niche Radar Backlog 06 — Collector nhanh hơn — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh + `npm run bench:compare` không tệ đi rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không gọi nhanh hơn giới hạn, không proxy.
 
 **Goal:** nguồn **chạy cùng lúc**, kết quả hiện dần, không tra lại thứ vừa tra.
 
-**Spec:** [Phase 47 · Collector nhanh hơn](../../web/phase-47-fast-collector.md) · **Cần trước:** Phase 46 (`bench/baseline.json`, `compare.ts`).
+**Spec:** [Backlog 06 · Collector nhanh hơn](../../web/phase-backlog-06-fast-collector.md) · **Cần trước:** Backlog 05 (`bench/baseline.json`, `compare.ts`).
 
 ## Mục tiêu · làm · không làm
 

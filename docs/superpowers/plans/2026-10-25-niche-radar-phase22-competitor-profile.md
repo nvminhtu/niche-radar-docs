@@ -1,19 +1,19 @@
-# Niche Radar Phase 22 — Hồ sơ đối thủ + cờ đối thủ yếu — Implementation Plan
+# Niche Radar Phase 40 — Hồ sơ đối thủ + cờ đối thủ yếu — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** mỗi đối thủ có **một trang riêng**; bảng đối thủ có **cờ** để thấy ngay ai yếu.
 
-**Spec:** [Phase 22 · Hồ sơ đối thủ](../../web/phase-22-competitor-profile.md) · **Cần trước:** Phase 12 (lời chê theo app),
-Phase 18 (doanh thu verified), Phase 14 (collect đối thủ).
+**Spec:** [Phase 40 · Hồ sơ đối thủ](../../web/phase-40-competitor-profile.md) · **Cần trước:** Phase 18 (lời chê theo app),
+Phase 37 (doanh thu verified), Phase 20 (collect đối thủ).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** 3 niche thật: kiểm tay 15 cờ, ≥ 14 đúng với trang store · nối Play ↔ iOS: kiểm tay 10 cặp, **0 cặp nối sai** ·
   trang đối thủ đọc được 1340 + 375, screenshot đã Read.
 - **Làm:** trang `/app/:store/:id`, 5 cờ trên bảng đối thủ, nối cùng app 2 store, đối thủ xuất hiện ở niche nào, Collect đối thủ.
-- **Không làm:** so 2–5 đối thủ (Phase 37) · theo dõi thay đổi theo thời gian (Phase 23) · AI gắn "yếu".
+- **Không làm:** so 2–5 đối thủ (Phase 55) · theo dõi thay đổi theo thời gian (Phase 41) · AI gắn "yếu".
 
 ## Global Constraints
 
@@ -45,7 +45,7 @@ Phase 18 (doanh thu verified), Phase 14 (collect đối thủ).
 
 ### Task 3: Trang đối thủ
 - [ ] `competitor-profile.ts` + `AppPage`: đủ mục spec, mục thiếu ghi "chưa đo"; "xuất hiện ở niche nào" (query `keyword_hits`).
-- [ ] Nút Collect đối thủ (Phase 14).
+- [ ] Nút Collect đối thủ (Phase 20).
 
 ### Task 4: Soát
 - [ ] 3 niche: kiểm tay 15 cờ + 10 cặp nối → bảng dưới. Screenshot 1340 + 375, Read. `features.ts`, chip, ROADMAP, CHANGELOG.

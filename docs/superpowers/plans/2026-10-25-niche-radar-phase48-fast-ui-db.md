@@ -1,11 +1,11 @@
-# Niche Radar Phase 48 — UI + DB nhanh — Implementation Plan
+# Niche Radar Backlog 07 — UI + DB nhanh — Implementation Plan
 
-> **For agentic workers:** chỉ sửa chỗ Phase 46 **đo ra chậm**. Mỗi Task xong thì `npm run check` xanh + `bench:compare` không tệ đi rồi commit.
+> **For agentic workers:** chỉ sửa chỗ Backlog 05 **đo ra chậm**. Mỗi Task xong thì `npm run check` xanh + `bench:compare` không tệ đi rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** bảng nghìn dòng không giật, trang mở nhanh, query nhanh.
 
-**Spec:** [Phase 48 · UI + DB nhanh](../../web/phase-48-fast-ui-db.md) · **Cần trước:** Phase 46 (danh sách chậm nhất), Phase 47.
+**Spec:** [Backlog 07 · UI + DB nhanh](../../web/phase-backlog-07-fast-ui-db.md) · **Cần trước:** Backlog 05 (danh sách chậm nhất), Phase 47.
 
 ## Mục tiêu · làm · không làm
 
@@ -18,8 +18,8 @@
 
 - Virtualize bằng `@tanstack/react-virtual` (nhỏ, không đổi kiểu bảng) — bắt đầu `KeywordTable.tsx`, rồi bảng nào > 200 dòng thật.
 - Lazy load: `React.lazy` + route `lazy` của react-router cho mọi trang trừ `HomePage`.
-- Index chỉ cho query trong top 10 chậm của Phase 46; mỗi index ghi query nó phục vụ (comment trong schema) + ms trước / sau.
-- WAL: `PRAGMA journal_mode = WAL` khi mở DB; backup (Phase 19) phải xử lý file `-wal` (dùng API backup nên ổn — test lại).
+- Index chỉ cho query trong top 10 chậm của Backlog 05; mỗi index ghi query nó phục vụ (comment trong schema) + ms trước / sau.
+- WAL: `PRAGMA journal_mode = WAL` khi mở DB; backup (Phase 38) phải xử lý file `-wal` (dùng API backup nên ổn — test lại).
 - Phân trang API: `?page=&size=` (mặc định 100) cho danh sách lớn (explore nodes, keywords, lịch sử); client cũ không truyền → trang 1 + `total`.
 - DB 50 niche để đo: script tạo từ fixture (`bench/seed-50.ts`), không dùng DB thật.
 

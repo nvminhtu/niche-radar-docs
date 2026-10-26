@@ -1,12 +1,12 @@
-# Niche Radar Phase 20 — Trang kết quả Research — Implementation Plan
+# Niche Radar Phase 22 — Trang kết quả Research — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** mở trang là trả lời được **"niche này có đáng xem tiếp không"** trong 30 giây; nguồn lỗi biết ngay, chạy lại đúng nguồn đó.
 
-**Spec:** [Phase 20 · Trang kết quả Research](../../web/phase-20-research-page.md) · **Cần trước:** Phase 12, 13, 17, 18 (số cho hàng đầu trang),
-Phase 22 (cột cờ trên bảng đối thủ). **Làm sau Phase 22 dù số nhỏ hơn** — trang này sắp lại các khối mà 12–22 thêm vào;
+**Spec:** [Phase 22 · Trang kết quả Research](../../web/phase-22-research-page.md) · **Cần trước:** Phase 18, 19, 27.1, 37 (số cho hàng đầu trang),
+Phase 40 (cột cờ trên bảng đối thủ). **Làm sau Phase 40 dù số nhỏ hơn** — trang này sắp lại các khối mà 12–22 thêm vào;
 làm trước thì phải sắp lại lần nữa.
 
 ## Mục tiêu · làm · không làm
@@ -14,7 +14,7 @@ làm trước thì phải sắp lại lần nữa.
 - **Xong khi:** anh mở 3 niche, trả lời "đáng xem tiếp không" chỉ từ hàng số đầu trang (khớp với đọc cả trang) · giả lập lỗi
   từng nguồn → khối báo đúng lý do, chạy lại riêng được · đo thời gian tới khi hàng số hiện (trước / sau) · screenshot 1340 + 375 đã Read.
 - **Làm:** hàng số đầu trang, sắp khối theo câu hỏi, trạng thái từng nguồn, chạy lại 1 nguồn, so lần tra trước, 4 nút đi tiếp.
-- **Không làm:** nguồn mới / đổi cách tính · làm nhanh collector (Version 5) · đổi hệ giao diện (Phase 29).
+- **Không làm:** nguồn mới / đổi cách tính · làm nhanh collector (Version 5) · đổi hệ giao diện (Phase 24).
 
 ## Global Constraints
 
@@ -50,7 +50,7 @@ làm trước thì phải sắp lại lần nữa.
 
 ### Task 5: So lần trước + đi tiếp
 - [ ] `run-compare.ts`: đối thủ mới, rating, xu hướng có mũi tên.
-- [ ] Cuối trang đúng 4 nút: Collect · Explore sâu · Xuất (Phase 16) · Làm evidence pack.
+- [ ] Cuối trang đúng 4 nút: Collect · Explore sâu · Xuất (Phase 15) · Làm evidence pack.
 
 ### Task 6: Soát
 - [ ] Đo lại thời gian → "sau". Anh thử 3 niche. Screenshot 1340 + 375, Read. Chip, ROADMAP, CHANGELOG.
@@ -58,4 +58,4 @@ làm trước thì phải sắp lại lần nữa.
 ## Tiến độ
 
 - 2026-10-25: viết plan.
-- 2026-10-26: review plan — thêm Phase 17, 22 vào Cần trước; thứ tự làm thật: sau Phase 22.
+- 2026-10-26: review plan — thêm Phase 27.1, 40 vào Cần trước; thứ tự làm thật: sau Phase 22.

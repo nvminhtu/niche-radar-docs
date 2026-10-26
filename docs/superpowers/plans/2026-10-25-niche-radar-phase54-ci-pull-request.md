@@ -1,11 +1,11 @@
-# Niche Radar Phase 54 — CI cho pull request — Implementation Plan
+# Niche Radar Backlog 13 — CI cho pull request — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự trên nhánh riêng, mở PR thử. Steps dùng checkbox (`- [ ]`).
 > Bật luật bảo vệ nhánh trên GitHub là việc của anh (quyền admin repo) — Claude ghi bước, không tự đổi cài đặt repo khi chưa được đồng ý.
 
 **Goal:** mỗi PR, GitHub tự chạy hết các bước kiểm; đỏ là không gộp được.
 
-**Spec:** [Phase 54 · CI cho pull request](../../web/phase-54-ci-pull-request.md) · **Cần trước:** Phase 50 (test không mạng), Phase 51 (E2E fixture).
+**Spec:** [Backlog 13 · CI cho pull request](../../web/phase-backlog-13-ci-pull-request.md) · **Cần trước:** Backlog 08 (test không mạng), Backlog 09 (E2E fixture).
 
 ## Mục tiêu · làm · không làm
 
@@ -19,7 +19,7 @@
 - Chỉ dùng lệnh có sẵn: `npm run lint`, `typecheck`, `npm test` (qua `npm --prefix web`), `npm run e2e`, `npm run docs:build`.
 - Runner `ubuntu-latest` cho web + docs (better-sqlite3 build được trên Linux); Node theo `.nvmrc` / `engines`.
 - Cache `actions/setup-node` (npm) + `actions/cache` cho trình duyệt Playwright; Python + `pip install -r requirements-docs.txt` có cache.
-- Chặn mạng ngoài trong test đã có từ Phase 50; thêm bước kiểm `NR_E2E=1` cho E2E.
+- Chặn mạng ngoài trong test đã có từ Backlog 08; thêm bước kiểm `NR_E2E=1` cho E2E.
 - E2E đỏ → `actions/upload-artifact` thư mục `test-results/` + `playwright-report/`.
 - Luật nhánh: `main` cần check `ci` xanh — anh bật ở Settings → Branches (hoặc `gh api` khi anh đồng ý).
 

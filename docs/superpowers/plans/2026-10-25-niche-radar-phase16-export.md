@@ -1,4 +1,4 @@
-# Niche Radar Phase 16 — Export (CSV, JSON, gói cho LLM + brief tính năng) — Implementation Plan
+# Niche Radar Phase 15 — Export (CSV, JSON, gói cho LLM + brief tính năng) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [x]`).
@@ -6,8 +6,8 @@
 **Goal:** **một nút Xuất chung**: phạm vi × định dạng. Excel / Sheets mở được, code đọc được, có **gói cho LLM** không vượt
 trần token, và gói đó kèm khung để AI viết **brief tính năng** (khách · vấn đề · giải pháp khác · MVP · giá thử · 10 người đầu).
 
-**Spec:** [Phase 16 · Export](../../web/phase-16-export.md) · **Đổi 2026-10-26:** kéo lên ngay sau Phase 10, gộp Product Brief
-Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có (chủ đề than AI · điểm v2 · Feature Gap đã lưu · item keyword).
+**Spec:** [Phase 15 · Export](../../web/phase-15-export.md) · **Đổi 2026-10-26:** kéo lên ngay sau Phase 11, gộp Product Brief
+Export (Version 12). Không chờ Phase 18–20 — dùng dữ liệu đang có (chủ đề than AI · điểm v2 · Feature Gap đã lưu · item keyword).
 
 ## Mục tiêu · làm · không làm
 
@@ -16,7 +16,7 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
   đủ 7 mục, mã nguồn có thật · `/app-demand` đọc được gói Markdown không sửa tay.
 - **Làm:** hộp thoại Xuất chung (trang Research, trang Project) · CSV · JSON · Markdown (evidence pack) · gói LLM
   (`brief.md` + `schema.md` + `prompt.md`) · trần token · `.zip` / Copy cho AI.
-- **Không làm:** phạm vi Explore / cả DB · JSONL · file JSON Schema · nhập từ CSV · PDF / slide · API (MCP ở Phase 26) ·
+- **Không làm:** phạm vi Explore / cả DB · JSONL · file JSON Schema · nhập từ CSV · PDF / slide · API (MCP ở Phase 26.3) ·
   tự gửi file lên AI · tool tự viết brief.
 
 ## Global Constraints
@@ -68,7 +68,7 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
 - [x] `ExportDialog` ở trang Research + Project; nhiều file → `.zip`; gói LLM có **Copy cho AI**.
 - [x] Test so chéo: cùng run → CSV, JSON, gói LLM cùng số (top đối thủ, số rating, điểm).
 
-### Task 4b: Còn lại — từ review Phase 12–23 (2026-10-26, nhánh khác)
+### Task 4b: Còn lại — từ review Phase 18–41 (2026-10-26, nhánh khác)
 - [x] Phạm vi subreddit (đọc `lib/reddit-gap.ts`), bảng `reddit_gaps`; nút Tải .md của trang Reddit Gap gọi qua lớp mới (giữ top 20 gap + 3 link mẫu).
 - [x] Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand, ghi danh sách mục vào test).
 
@@ -79,13 +79,13 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
-- 2026-10-26: kéo lên ngay sau Phase 10, gộp brief tính năng; cắt phạm vi Explore / cả DB, JSONL, file JSON Schema (→ Appendix).
+- 2026-10-26: kéo lên ngay sau Phase 11, gộp brief tính năng; cắt phạm vi Explore / cả DB, JSONL, file JSON Schema (→ Appendix).
   Mockup: hộp thoại nhỏ dùng lại kiểu popover `CollectButton` — không sinh mockup riêng (ghi lệch quy trình).
 - 2026-10-26: Task 1–4 xong (`040d0d8`, `a6c7d3a`), 261 test xanh. Lệch plan: ước token chia 3 thay vì 4; thêm mức cắt mịn
   (keyword 40/20/10/5, đối thủ 40/30/20/15/10/5) vì bản đầu cắt 118 đối thủ còn 15 dù còn dư 2.5k token; Copy có đường
   dự phòng `execCommand` vì Clipboard API bị chặn trong pane / app Mac.
 
-- 2026-10-26: merge `main` — gộp review Phase 12–23 (`4b70c8c`): 2 việc mới thành Task 4b, chưa làm.
+- 2026-10-26: merge `main` — gộp review Phase 18–41 (`4b70c8c`): 2 việc mới thành Task 4b, chưa làm.
 - 2026-10-26: Task 4b xong (`be1dffe` + sửa nhãn chuyên mục), 264 test xanh. Lệch: nút Tải .md của Reddit Gap thay bằng hộp
   Xuất (route `/api/reddit/gap.md` giữ nguyên cho link cũ, cùng hàm `gapMarkdown`); Reddit Gap 1 bảng nên CSV tải thẳng, không zip.
 
@@ -105,7 +105,7 @@ Export (Version 12). Không chờ Phase 12–14 — dùng dữ liệu đang có 
   có mã nguồn có thật; ý không có số ghi "suy luận" / "giả định, cần kiểm". Kết luận AI: test thêm.
 - **Giao diện**: hộp Xuất ở trang Research + Project, 1280 và 375 không tràn; Copy cho AI → clipboard có đủ gói.
 - `/app-demand`: Markdown = evidence pack Phase 7 (đã đọc được từ trước), chưa chạy lại.
-- **Reddit Gap** (70 bài r/macos — DB thử của session Phase 10, link bài là dữ liệu dựng, không phải bài thật): gói 8k ~3,231
+- **Reddit Gap** (70 bài r/macos — DB thử của session Phase 11, link bài là dữ liệu dựng, không phải bài thật): gói 8k ~3,231
   token, không cắt; 15 dòng R1–R15 cùng số với `/api/reddit/gap` (Menu bar · Tìm thay thế 14 bài, gap 38.2…); llm / csv /
   md / json đều 200. Hộp Xuất xem ở 1340: gọn, không tràn.
 - **`check_demand.py` thật** trên gói Markdown #13: không lỗi mục / ô / cột; còn 9 FAIL đều là phần nhận định để TODO

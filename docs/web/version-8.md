@@ -7,7 +7,7 @@
 <span class="chip chip--skip">Không làm · 2026-10-26</span>
 
 <div class="box box--danger" markdown>
-**Không làm (chốt 2026-10-26):** security / refactor — không ra tiền, không thêm người dùng. Phần bảo mật tối thiểu cho app bán (CSP, quyền Tauri, key trong Keychain) đã nằm ở [Phase 79](../app/phase-79-app-only.md). Trang giữ lại để tra, không code.
+**Không làm (chốt 2026-10-26):** security / refactor — không ra tiền, không thêm người dùng. Phần bảo mật tối thiểu cho app bán (CSP, quyền Tauri, key trong Keychain) đã nằm ở [Phase 34](../app/phase-34-app-only.md). Trang giữ lại để tra, không code.
 </div>
 
 ## Mục tiêu
@@ -18,28 +18,28 @@
   máy, chưa đăng nhập mạng.
 - **Code dễ sửa:** mỗi nguồn dữ liệu cùng một khuôn, không còn file quá to, không code chết. Hành vi không đổi.
 
-**Thước đo Version 8 xong:** phiếu kiểm bảo mật (Phase 58) hết mục đỏ · thêm một nguồn mới chỉ cần 1 file collector +
-1 file test · phiếu review kết quả ([Phase 53](version-6.md)) giữ nguyên điểm trước và sau refactor.
+**Thước đo Version 8 xong:** phiếu kiểm bảo mật (Backlog 15) hết mục đỏ · thêm một nguồn mới chỉ cần 1 file collector +
+1 file test · phiếu review kết quả ([Backlog 11](version-6.md)) giữ nguyên điểm trước và sau refactor.
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  S[Phase 58<br/>Kiểm + vá bảo mật] --> A[Phase 59<br/>Lớp tài khoản<br/>trên máy]
-  S --> R[Phase 60<br/>Refactor<br/>khuôn nguồn chung]
-  A & R --> V[Phase 61<br/>Review bảo mật<br/>+ ra bản 8.0]
+  S[Backlog 15<br/>Kiểm + vá bảo mật] --> A[Backlog 02<br/>Lớp tài khoản<br/>trên máy]
+  S --> R[Backlog 16<br/>Refactor<br/>khuôn nguồn chung]
+  A & R --> V[Backlog 17<br/>Review bảo mật<br/>+ ra bản 8.0]
 ```
 
 ## Các phase
 
 | Phase | Làm gì |
 |---|---|
-| [56 · Kiểm + vá bảo mật](phase-58-security-audit.md) | API cục bộ, key, XSS từ chữ cào, thư viện, secret trong repo |
-| [57 · Lớp tài khoản trên máy](phase-59-local-account.md) | `user_id` trên mọi bảng, hồ sơ, xuất / xoá dữ liệu một người |
-| [58 · Refactor](phase-60-refactor.md) | khuôn collector chung, tách file to, gỡ code chết, kiểu dữ liệu chung |
-| [59 · Review bảo mật + 8.0](phase-61-security-review-8.md) | tự tấn công thử theo phiếu, sửa, ra bản qua CI |
+| [56 · Kiểm + vá bảo mật](phase-backlog-15-security-audit.md) | API cục bộ, key, XSS từ chữ cào, thư viện, secret trong repo |
+| [57 · Lớp tài khoản trên máy](phase-backlog-02-local-account.md) | `user_id` trên mọi bảng, hồ sơ, xuất / xoá dữ liệu một người |
+| [58 · Refactor](phase-backlog-16-refactor.md) | khuôn collector chung, tách file to, gỡ code chết, kiểu dữ liệu chung |
+| [59 · Review bảo mật + 8.0](phase-backlog-17-security-review-8.md) | tự tấn công thử theo phiếu, sửa, ra bản qua CI |
 
-## Phase 58 · Kiểm + vá bảo mật
+## Backlog 15 · Kiểm + vá bảo mật
 
 - **Làm:** phiếu kiểm `security/checklist.md`:
     - **API cục bộ:** chỉ nghe `127.0.0.1` (đã có) + token ngẫu nhiên mỗi lần mở app, chặn trang web khác gọi vào (CSRF, DNS rebinding) · kiểm `Origin`
@@ -48,7 +48,7 @@ flowchart LR
     - **Thư viện:** `npm audit` + Dependabot · quét secret trong lịch sử git
 - **Xong khi:** mọi mục phiếu có kết quả, mục đỏ đã vá kèm test.
 
-## Phase 59 · Lớp tài khoản trên máy
+## Backlog 02 · Lớp tài khoản trên máy
 
 - **Làm:** bảng `users` + `user_id` trên project, lần tra, lịch sử hỏi · màn hồ sơ (tên, thư mục dữ liệu) · nhiều hồ sơ
   trên một máy · **xuất toàn bộ dữ liệu** một người (`.zip`) · **xoá toàn bộ** (có xác nhận, xoá thật) ·
@@ -56,15 +56,15 @@ flowchart LR
 - **Xong khi:** 2 hồ sơ trên một máy không thấy dữ liệu của nhau · xoá hồ sơ → đếm bảng còn 0 dòng của hồ sơ đó ·
   DB 7.x lên 8.0 không mất dòng.
 
-## Phase 60 · Refactor
+## Backlog 16 · Refactor
 
 - **Làm:** khuôn chung `Collector` (tên, giới hạn gọi, cache, `fetch`, `parse`), mọi nguồn theo khuôn này · tách file
   > 400 dòng · gỡ code / export không ai dùng · gom kiểu dữ liệu dùng chung · không đổi API, không đổi giao diện.
 - **Xong khi:** test + E2E xanh · phiếu review kết quả giữ nguyên điểm · thêm thử 1 nguồn giả chỉ cần 2 file.
 
-## Phase 61 · Review bảo mật + 8.0
+## Backlog 17 · Review bảo mật + 8.0
 
-- **Làm:** tự tấn công thử theo phiếu Phase 58: trang web lạ gọi API · review có `<script>` · key lọt log · sửa chỗ hỏng
+- **Làm:** tự tấn công thử theo phiếu Backlog 15: trang web lạ gọi API · review có `<script>` · key lọt log · sửa chỗ hỏng
   → ra bản 8.0 qua CI ([Version 7](version-7.md)).
 - **Xong khi:** mọi lần thử đều bị chặn, có ảnh / log làm bằng chứng · bản 8.0 cài đè 7.x không mất dữ liệu.
 

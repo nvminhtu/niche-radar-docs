@@ -68,17 +68,17 @@ Số tải lấy từ GitHub API ngày 2026-10-26, đếm file `.dmg` / `Setup.e
 - **Họ hơn:** volume + difficulty có công thức, đa quốc gia + tự dịch keyword, ghi thẳng App Store Connect, MCP 53 tool,
   có bản Windows
 - **Mình hơn:** nhiều nguồn ngoài App Store, đọc lời chê + khoảng trống tính năng, bằng chứng doanh thu, kết luận nên làm hay
-  không. MCP của mình ([Phase 26](web/phase-26-mcp.md)) trả lời được "niche nào đáng build", không chỉ "mình đứng hạng mấy"
+  không. MCP của mình ([Phase 26.3](web/phase-26-3-mcp.md)) trả lời được "niche nào đáng build", không chỉ "mình đứng hạng mấy"
 - **Không có moat dữ liệu:** họ cũng chỉ đọc App Store công khai. Thứ bán được là luồng làm việc + cách phân phối
 
 #### Áp vào Niche Radar (chốt 2026-10-26)
 
 - Bán **app Mac + Windows** tải về, dữ liệu trên máy, không tài khoản — [App Mac + Windows](app/index.md)
-- File cài trên GitHub Releases public, app tự cập nhật — [Phase 81](app/phase-81-release-auto-update.md)
-- Windows ra bản Beta chưa ký trước — [Phase 82](app/phase-82-windows-app.md)
+- File cài trên GitHub Releases public, app tự cập nhật — [Phase 36](app/phase-36-release-auto-update.md)
+- Windows ra bản Beta chưa ký trước — [Phase 35](app/phase-35-windows-app.md)
 - License key + 2 máy + tìm lại key bằng email, giá mua đứt bậc thang; **khác họ: có dùng thử** — [Version 10](web/version-10.md)
-- AI chạy trên thứ người dùng đã trả (Claude Code, Codex, Ollama, key riêng), không bán lượt AI — [Phase 69](web/phase-69-ai-cost-plans.md)
-- MCP là điểm bán ngay trên landing — [Phase 26](web/phase-26-mcp.md)
+- AI chạy trên thứ người dùng đã trả (Claude Code, Codex, Ollama, key riêng), không bán lượt AI — [Phase 26.7](web/phase-26-7-ai-cost-plans.md)
+- MCP là điểm bán ngay trên landing — [Phase 26.3](web/phase-26-3-mcp.md)
 
 ## Đối tác
 

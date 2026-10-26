@@ -1,12 +1,12 @@
-# Niche Radar Phase 53b — Test chức năng thật + chụp màn kết quả — Implementation Plan
+# Niche Radar Backlog 12 — Test chức năng thật + chụp màn kết quả — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** gõ keyword **thật**, đợi tool chạy xong, chụp lại màn kết quả để anh mở xem ngay.
 
-**Spec:** [Phase 53b · Test chức năng thật](../../web/phase-53b-functest-screenshots.md) · **Cần trước:** Phase 51 (Playwright config, selector theo role),
-Phase 53 (bộ niche chuẩn).
+**Spec:** [Backlog 12 · Test chức năng thật](../../web/phase-backlog-12-functest-screenshots.md) · **Cần trước:** Backlog 09 (Playwright config, selector theo role),
+Backlog 11 (bộ niche chuẩn).
 
 ## Mục tiêu · làm · không làm
 

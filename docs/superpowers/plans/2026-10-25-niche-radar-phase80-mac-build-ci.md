@@ -1,17 +1,17 @@
-# Niche Radar Phase 80 — Build app Mac trên CI — Implementation Plan
+# Niche Radar Backlog 21 — Build app Mac trên CI — Implementation Plan
 
 > **For agentic workers:** Claude viết workflow đọc secret **theo tên**, không bao giờ đọc, in hay đổi giá trị. Anh tạo chứng chỉ và nhập GitHub Secrets.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** `.dmg` build trên runner macOS của GitHub, tự ký Developer ID + notarize + staple.
 
-**Spec:** [Phase 80 · Build app Mac trên CI](../../app/phase-80-mac-build-ci.md) · **Cần trước:** Phase 54 (CI), Phase 74–78 (build tay chạy ổn bằng `npm run mac`).
+**Spec:** [Backlog 21 · Build app Mac trên CI](../../app/phase-backlog-21-mac-build-ci.md) · **Cần trước:** Backlog 13 (CI), Phase 17–B20 (build tay chạy ổn bằng `npm run mac`).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** `.dmg` tải từ CI mở trên máy sạch không bị Gatekeeper chặn · log CI không có giá trị secret (chỉ `***`) · không chứng chỉ / mật khẩu / key nào trong repo.
 - **Làm:** `.github/workflows/build-mac.yml` (runner macOS), build Tauri + sidecar như `build-mac.sh`, keychain tạm, ký → notarize → staple, artifact `.dmg`.
-- **Không làm:** GitHub Release / What's New / auto-update (Phase 81) · Mac App Store · Windows / Linux · Claude tạo chứng chỉ / nhập secret.
+- **Không làm:** GitHub Release / What's New / auto-update (Phase 36) · Mac App Store · Windows / Linux · Claude tạo chứng chỉ / nhập secret.
 
 ## Global Constraints
 

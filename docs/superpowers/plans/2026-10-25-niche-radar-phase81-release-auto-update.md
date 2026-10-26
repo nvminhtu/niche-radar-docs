@@ -1,4 +1,4 @@
-# Niche Radar Phase 81 — Release + auto-update (Mac + Windows) — Implementation Plan
+# Niche Radar Phase 36 — Release + auto-update (Mac + Windows) — Implementation Plan
 
 > **For agentic workers:** Claude không tự gắn tag hay bấm phát hành khi anh chưa đồng ý. Khoá ký file cập nhật do anh tạo, lưu trên máy anh
 > (không vào repo). Steps dùng checkbox (`- [ ]`).
@@ -6,8 +6,8 @@
 **Goal:** một lệnh trên máy ra bản cho **cả Mac và Windows**: `.dmg` + `.exe` + What's New lên **GitHub Releases public**; app trên cả hai hệ điều
 hành tự thấy bản mới và hỏi trước khi cập nhật.
 
-**Spec:** [Phase 81 · Release + auto-update](../../app/phase-81-release-auto-update.md) · **Cần trước:** Phase 75 + 79 (app Mac bán được), Phase 82
-(`npm run win` ra `.exe`). **Đổi 2026-10-26:** không CI — Phase 80 không làm, build + ký trên máy (học Wow Keywords: ra bản dày, ghi chú lời thường).
+**Spec:** [Phase 36 · Release + auto-update](../../app/phase-36-release-auto-update.md) · **Cần trước:** Phase 33 + 34 (app Mac bán được), Phase 35
+(`npm run win` ra `.exe`). **Đổi 2026-10-26:** không CI — Backlog 21 không làm, build + ký trên máy (học Wow Keywords: ra bản dày, ghi chú lời thường).
 
 ## Mục tiêu · làm · không làm
 
@@ -28,7 +28,7 @@ hành tự thấy bản mới và hỏi trước khi cập nhật.
   và `platforms.windows-x86_64` (file `-setup.exe` hoặc `.nsis.zip` theo bản Tauri lúc làm) kèm chữ ký từng file.
 - **Mac:** bản cập nhật vẫn ký Developer ID + notarize (dùng lại `build-mac.sh`). **Windows:** chưa ký Authenticode (Beta) — chữ ký updater vẫn bắt buộc.
 - **What's New:** commit `feat` / `fix` kể từ tag trước, nhóm theo loại, tiếng Việt như CHANGELOG; anh sửa được trước khi đăng (script dừng hỏi).
-- **Cập nhật xong** → migrate DB có backup (Phase 19) như mọi lần nâng. Tag khớp version (`version.test.ts`).
+- **Cập nhật xong** → migrate DB có backup (Phase 38) như mọi lần nâng. Tag khớp version (`version.test.ts`).
 
 ## File đụng tới
 

@@ -1,18 +1,18 @@
-# Niche Radar Phase 62 — Firebase Auth — Implementation Plan
+# Niche Radar Backlog 03 — Firebase Auth — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Anh tạo project Firebase / Apple Developer cấu hình; Claude nối code, không nhập thanh toán.
 
-**Goal:** đăng nhập thật (Google · Apple · email link) để Phase 63 mang project sang máy khác. Không đăng nhập → app vẫn đủ như cũ.
+**Goal:** đăng nhập thật (Google · Apple · email link) để Backlog 04 mang project sang máy khác. Không đăng nhập → app vẫn đủ như cũ.
 
-**Spec:** [Phase 62 · Firebase Auth](../../web/phase-62-firebase-auth.md) · **Cần trước:** Phase 59 (bảng `users`), Phase 58 (token API).
+**Spec:** [Backlog 03 · Firebase Auth](../../web/phase-backlog-03-firebase-auth.md) · **Cần trước:** Backlog 02 (bảng `users`), Backlog 15 (token API).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** đăng nhập / đăng xuất được cả 3 cách trên bản Web · tắt mạng vẫn mở project trên máy · lần đầu đăng nhập: đếm project trước / sau
   gắn hồ sơ, không mất dòng · không đăng nhập: mọi tính năng như 8.0 · `npm run check` xanh.
 - **Làm:** client Firebase Auth, route kiểm ID token, gắn hồ sơ ↔ tài khoản, đăng xuất giữ dữ liệu máy.
-- **Không làm:** sync (Phase 63) · analytics (64) · xoá tài khoản cloud (65) · tự làm mật khẩu / server riêng.
+- **Không làm:** sync (Backlog 04) · analytics (64) · xoá tài khoản cloud (65) · tự làm mật khẩu / server riêng.
 
 ## Global Constraints
 
@@ -45,7 +45,7 @@
 - [ ] Kiểm token, migration `firebaseUid`, gắn hồ sơ. Test: token sai 401; gắn lần đầu không mất project (đếm).
 
 ### Task 4: Offline + đăng xuất
-- [ ] Tắt mạng mở project bình thường; đăng xuất giữ dữ liệu. E2E (Phase 51) chạy không config → như 8.0.
+- [ ] Tắt mạng mở project bình thường; đăng xuất giữ dữ liệu. E2E (Backlog 09) chạy không config → như 8.0.
 
 ### Task 5: Soát
 - [ ] Đăng nhập thật 3 cách; screenshot 1340 + 375, Read. Cách dùng, CHANGELOG, chip, ROADMAP.

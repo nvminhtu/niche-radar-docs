@@ -1,11 +1,11 @@
-# Niche Radar Phase 19 — Backup / restore dữ liệu — Implementation Plan
+# Niche Radar Phase 38 — Backup / restore dữ liệu — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Test chạy trên thư mục tạm (`NR_DATA_DIR`), không đụng DB thật.
 
 **Goal:** dữ liệu **không được mất**: backup tự chạy, tự dọn, tự kiểm; restore xem trước được, lấy lại được **một project**.
 
-**Spec:** [Phase 19 · Backup / restore](../../web/phase-19-backup-restore.md) · **Cần trước:** Phase 8 (`backupDb`,
+**Spec:** [Phase 38 · Backup / restore](../../web/phase-38-backup-restore.md) · **Cần trước:** Phase 8 (`backupDb`,
 `listBackups`, `checkDbFile`, `restoreDb`, `importBundle` trong `lib/portable.ts`).
 
 ## Mục tiêu · làm · không làm
@@ -15,7 +15,7 @@
   nhân đôi · test xanh · screenshot Cài đặt → Dữ liệu đã Read.
 - **Làm:** backup tự động (ngày + trước nhập / gộp / xoá hẳn), giữ 7 ngày + 4 tuần + 6 tháng, thư mục ngoài, kiểm sau backup,
   restore xem trước, restore 1 project, nén `.zip` khi ra thư mục ngoài, "Backup cuối".
-- **Không làm:** backup lên cloud gắn tài khoản (Phase 63) · mã hoá backup.
+- **Không làm:** backup lên cloud gắn tài khoản (Backlog 04) · mã hoá backup.
 
 ## Global Constraints
 

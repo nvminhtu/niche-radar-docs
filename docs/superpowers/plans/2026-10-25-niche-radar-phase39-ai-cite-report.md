@@ -1,11 +1,11 @@
-# Niche Radar Phase 39 — Báo cáo so sánh (AI Cite) — Implementation Plan
+# Niche Radar Phase 56 — Báo cáo so sánh (AI Cite) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool không ghi `Verdict` thay người dùng.
 
-**Goal:** từ bảng so sánh niche (Phase 28) hoặc đối thủ (Phase 37), AI viết **một trang kết luận** có trích dẫn đã kiểm → evidence pack.
+**Goal:** từ bảng so sánh niche (Phase 43) hoặc đối thủ (Phase 55), AI viết **một trang kết luận** có trích dẫn đã kiểm → evidence pack.
 
-**Spec:** [Phase 39 · Báo cáo so sánh](../../web/phase-39-ai-cite-report.md) · **Cần trước:** Phase 38 (`cite-check.ts`, `cite-ref.ts`), Phase 28, 37, 24.
+**Spec:** [Phase 56 · Báo cáo so sánh](../../web/phase-56-ai-cite-report.md) · **Cần trước:** Phase 26.4 (`cite-check.ts`, `cite-ref.ts`), Phase 43, 55, 24.
 
 ## Mục tiêu · làm · không làm
 
@@ -17,7 +17,7 @@
 ## Global Constraints
 
 - Khung cố định: 1 Kết luận 3 dòng · 2 Mỗi niche / đối thủ mạnh ở đâu, yếu ở đâu · 3 Rủi ro (dữ liệu thiếu, nguồn chưa tra) · 4 Câu hỏi còn mở.
-- AI **không** đổi ô thắng của Phase 28; khác ý → mục Rủi ro kèm trích dẫn. Kiểm bằng code: câu nói "X thắng hàng Y" trái `winners()` → cờ đỏ.
+- AI **không** đổi ô thắng của Phase 43; khác ý → mục Rủi ro kèm trích dẫn. Kiểm bằng code: câu nói "X thắng hàng Y" trái `winners()` → cờ đỏ.
 - Câu sửa tay lưu `by: 'human'`, không qua kiểm AI nhưng vẫn kiểm số nếu có ref.
 - Xuất bị chặn khi còn cờ đỏ (API trả 409).
 

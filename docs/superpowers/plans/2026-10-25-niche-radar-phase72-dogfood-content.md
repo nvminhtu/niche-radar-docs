@@ -1,10 +1,10 @@
-# Niche Radar Phase 72 — Dogfood làm nội dung — Implementation Plan
+# Niche Radar Phase 47 — Dogfood làm nội dung — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Claude soạn, anh đăng. Không lộ niche của app riêng.
 
 **Goal:** dùng chính Niche Radar làm marketing: mỗi tuần 1 báo cáo niche công khai; chạy Version 4 cho từ khoá của Niche Radar để có mốc GEO trước ra mắt.
 
-**Spec:** [Phase 72 · Dogfood làm nội dung](../../web/phase-72-dogfood-content.md) · **Cần trước:** Phase 70 (landing + email), Phase 41–44 (kệ Google / AI, gói GEO), Phase 16 (xuất Markdown).
+**Spec:** [Phase 47 · Dogfood làm nội dung](../../web/phase-47-dogfood-content.md) · **Cần trước:** Phase 45 (landing + email), Phase 58–61 (kệ Google / AI, gói GEO), Phase 15 (xuất Markdown).
 
 ## Mục tiêu · làm · không làm
 
@@ -16,9 +16,9 @@
 ## Global Constraints
 
 - Chọn niche báo cáo: **không** nằm trong danh sách niche đang nhắm (đối chiếu `research/*` của App-AI-Skills + `scripts/private-words.txt` của repo docs) — kiểm trước khi viết.
-- Báo cáo = xuất Markdown (Phase 16) + lời viết thêm; số giữ nguyên nguồn + ngày; chưa đo → `chưa đo`.
+- Báo cáo = xuất Markdown (Phase 15) + lời viết thêm; số giữ nguyên nguồn + ngày; chưa đo → `chưa đo`.
 - Bài blog theo `/oneclicktool-blog` (`check_post.py`, phễu về `product: niche-radar`); ảnh blog Codex sinh.
-- Mốc GEO: gói GEO (Phase 44) cho từ khoá "niche research tool", "app idea finder"… → `/app-geo` (`geo.py run` + `analyze`) →
+- Mốc GEO: gói GEO (Phase 61) cho từ khoá "niche research tool", "app idea finder"… → `/app-geo` (`geo.py run` + `analyze`) →
   `marketing/geo-test/YYYY-MM-DD/README-RESULT.md`.
 - Câu AI không nhắc Niche Radar → việc (trang alternative, bài how-to) ghi vào lịch Phase 73.
 

@@ -36,7 +36,7 @@ Chưa niche nào ≥ 6 ("đáng test bán trước") — đúng kỳ vọng: c�
 ## Còn lại (cần anh)
 
 - Chọn 1 niche → tải evidence pack → chạy `/app-demand` điền phần nhận định → đăng nháp test bán trước → nhập số thật vào bảng.
-- Vòng này làm kỹ + chạy thật ở [Phase 24 · Evidence pack + test bán trước](phase-24-evidence-presell.md).
+- Vòng này làm kỹ + chạy thật ở [Phase 42 · Evidence pack + test bán trước](phase-42-evidence-presell.md).
 
 
 ## Chạy thế nào

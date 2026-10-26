@@ -1,12 +1,12 @@
-# Niche Radar Phase 32 — YouTube Research (AI) — Implementation Plan
+# Niche Radar Phase 51 — YouTube Research (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 (bài thử tuyến) làm trước.
 
 **Goal:** AI đọc phụ đề + comment của niche: người xem than gì, xin gì, dùng app nào — trích dẫn kèm mốc giây.
 
-**Spec:** [Phase 32 · YouTube Research (AI)](../../web/phase-32-youtube-ai.md) · **Cần trước:** Phase 31 (`yt_videos`),
-Phase 6 / 17 / 25 (lớp AI, kiểm trích dẫn, tuyến theo việc).
+**Spec:** [Phase 51 · YouTube Research (AI)](../../web/phase-51-youtube-ai.md) · **Cần trước:** Phase 50 (`yt_videos`),
+Phase 6 / 27.1 / 26.6 (lớp AI, kiểm trích dẫn, tuyến theo việc).
 
 ## Mục tiêu · làm · không làm
 
@@ -19,17 +19,17 @@ Phase 6 / 17 / 25 (lớp AI, kiểm trích dẫn, tuyến theo việc).
 ## Global Constraints
 
 - AI không bịa số — view / sub / số comment từ Phase 31.
-- Mọi câu kèm link video + `&t=<giây>` (phụ đề) hoặc link comment; câu trích **khớp nguyên văn** văn bản đã gửi (dùng chung hàm kiểm của Phase 6 / 17).
-- Tuyến chính: chữ từ `youtubei.js` → `aiAsk(db, 'youtube')`. Tuyến phụ: Gemini đọc link (nếu Phase 25 có Gemini) · job Claude in Chrome.
+- Mọi câu kèm link video + `&t=<giây>` (phụ đề) hoặc link comment; câu trích **khớp nguyên văn** văn bản đã gửi (dùng chung hàm kiểm của Phase 6 / 27.1).
+- Tuyến chính: chữ từ `youtubei.js` → `aiAsk(db, 'youtube')`. Tuyến phụ: Gemini đọc link (nếu Phase 26.6 có Gemini) · job Claude in Chrome.
 - Chỉ video top 10 của Top 5 keyword; ≤ 100 comment / video; phụ đề cắt theo trần token của tuyến.
-- Tắt AI → Phase 31 vẫn chạy.
+- Tắt AI → Phase 50 vẫn chạy.
 
 ## File đụng tới
 
 - `web/src/collectors/youtube-text.ts` (mới) — phụ đề (có mốc giây) + comment top, cache 7 ngày
 - `web/src/db/schema.ts` + migration mới — `yt_texts` (videoId, kind `caption | comment`, json, fetchedAt)
 - `web/src/lib/ai/tasks.ts` — task `yt_themes`, `yt_wishes`, `yt_tools`, `yt_summary` (hoặc 1 task gộp có 4 mục) + `clean*` kiểm trích dẫn
-- `web/src/lib/youtube-link.ts` (mới) — nối tên tool được nhắc với đối thủ trong run (luật tên như Phase 22)
+- `web/src/lib/youtube-link.ts` (mới) — nối tên tool được nhắc với đối thủ trong run (luật tên như Phase 40)
 - `web/src/lib/gap.ts` — nhận gợi ý hàng mới (nhãn "từ YouTube"), anh bấm thêm
 - `web/src/components/YoutubeAiBlock.tsx` (mới) — 4 mục, mốc giây bấm được
 - `web/tests/youtube-ai*.test.ts` — `Ask` giả

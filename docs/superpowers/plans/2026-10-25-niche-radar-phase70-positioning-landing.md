@@ -1,12 +1,12 @@
-# Niche Radar Phase 70 — Định vị + landing + email — Implementation Plan
+# Niche Radar Phase 45 — Định vị + landing + email — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Landing ở repo oneclicktool.app (tiếng Anh 100%),
 > media host ở repo `app-demo` (không để trong `public/`). Anh mở tài khoản email; Claude không đăng bài.
 
 **Goal:** một câu định vị có bằng chứng, rồi dựng **chỗ của mình**: landing riêng + form email + đo lượt bấm.
 
-**Spec:** [Phase 70 · Định vị + landing + email](../../web/phase-70-positioning-landing.md) · **Cần trước:** Version 10 (giá), Phase 31a (demo site để link "Try the demo"),
-Phase 10 / 12 (dữ liệu nỗi đau).
+**Spec:** [Phase 45 · Định vị + landing + email](../../web/phase-45-positioning-landing.md) · **Cần trước:** Version 10 (giá), Phase 49 (demo site để link "Try the demo"),
+Phase 11 / 18 (dữ liệu nỗi đau).
 
 ## Mục tiêu · làm · không làm
 
@@ -18,7 +18,7 @@ Phase 10 / 12 (dữ liệu nỗi đau).
 ## Global Constraints
 
 - File GTM: `marketing/gtm.md` của Niche Radar (tạo bằng `/app-gtm`, khung + checker `check_gtm.py` của App-AI-Skills).
-- 3 nỗi đau lấy bằng chính tool: Reddit Gap (Phase 10) / lời chê (Phase 12) về "app idea", "niche research" — mỗi nỗi đau 1 link nguồn.
+- 3 nỗi đau lấy bằng chính tool: Reddit Gap (Phase 11) / lời chê (Phase 18) về "app idea", "niche research" — mỗi nỗi đau 1 link nguồn.
 - Landing: skill `/oneclicktool-landing` (layout riêng, đủ khối bán hàng), đường dẫn `oneclicktool.app/niche-radar`; video demo quay từ app thật
   (`/app-video`), host ở `app-demo`. Giá lấy đúng `money.md`.
 - Form email: Mailchimp `PRODUCT=niche-radar` (như demo site) — anh tạo audience / tag.
@@ -29,7 +29,7 @@ Phase 10 / 12 (dữ liệu nỗi đau).
 - `marketing/gtm.md` (mới, qua `/app-gtm`) — Pha 0 + Pha 1: định vị 5 dòng + bằng chứng
 - repo oneclicktool.app: trang `niche-radar` + dữ liệu sản phẩm — landing
 - repo `app-demo`: `niche-radar/` — video demo + ảnh
-- `docs/web/phase-70-positioning-landing.md` — link landing, kết quả kiểm
+- `docs/web/phase-45-positioning-landing.md` — link landing, kết quả kiểm
 
 ## Tasks
 

@@ -1,16 +1,16 @@
-# Niche Radar Phase 65 — Riêng tư + xoá tài khoản — Implementation Plan
+# Niche Radar Phase 29 — Riêng tư + xoá tài khoản — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** người dùng xoá được tài khoản (cả cloud), tải được dữ liệu cloud, đọc trang Privacy ghi đúng thứ app gửi đi — điều kiện để bán ở Version 10.
 
-**Spec:** [Phase 65 · Riêng tư + xoá tài khoản](../../web/phase-65-privacy-delete.md) · **Cần trước:** Phase 62, 63, 64.
+**Spec:** [Phase 29 · Riêng tư + xoá tài khoản](../../web/phase-29-privacy-delete.md) · **Cần trước:** Backlog 03, B04, 64.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** xoá tài khoản → Firestore còn 0 tài liệu của người đó · đăng nhập lại tài khoản vừa xoá → không dữ liệu cũ · Privacy khớp danh sách
-  sự kiện Phase 64 (đối chiếu từng dòng) · chọn "giữ dữ liệu máy" → project máy vẫn mở · test quy tắc xanh.
+  sự kiện Phase 28 (đối chiếu từng dòng) · chọn "giữ dữ liệu máy" → project máy vẫn mở · test quy tắc xanh.
 - **Làm:** xoá tài khoản (Auth + Firestore, hỏi xoá dữ liệu máy), xuất dữ liệu cloud, trang Privacy, rà lại quy tắc.
 - **Không làm:** thanh toán / Pro · giữ bản sao dữ liệu đã xoá.
 

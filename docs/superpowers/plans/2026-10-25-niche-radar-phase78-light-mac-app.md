@@ -1,10 +1,10 @@
-# Niche Radar Phase 78 — App Mac nhẹ — Implementation Plan
+# Niche Radar Backlog 20 — App Mac nhẹ — Implementation Plan
 
 > **For agentic workers:** đo trước, sửa đúng chỗ đo ra nặng. Build chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`).
 
 **Goal:** app Mac mở nhanh, ít RAM khi rảnh, file cài nhỏ hơn; đo lại cả Version 5 so với mốc.
 
-**Spec:** [Phase 78 · App Mac nhẹ](../../app/phase-78-light-mac-app.md) · **Cần trước:** Phase 77, Phase 46 (`bench/baseline.json`).
+**Spec:** [Backlog 20 · App Mac nhẹ](../../app/phase-backlog-20-light-mac-app.md) · **Cần trước:** Backlog 19, Backlog 05 (`bench/baseline.json`).
 
 ## Mục tiêu · làm · không làm
 
@@ -19,8 +19,8 @@
   dung lượng `.app` + `.dmg`. Lệnh đo `app/scripts/measure.sh` (mới).
 - Sidecar gọn: bundle server bằng `esbuild` (1 file + `better-sqlite3` native) thay vì chép `node_modules` đầy đủ; danh sách external ghi trong script.
 - Server tự ngủ: không có request trong N phút (mặc định 10) và không job đang chạy → thoát tiến trình; Tauri khởi động lại sidecar khi UI gọi API
-  (lệnh Rust `ensure_server`), UI hiện "đang mở lại…" ≤ 1 giây. Job theo lịch (Phase 23) giữ server thức.
-- Đo lại Version 5: `npm run bench` + `bench:compare` 3 niche chuẩn, ghi cột "Phase 78" cạnh mốc.
+  (lệnh Rust `ensure_server`), UI hiện "đang mở lại…" ≤ 1 giây. Job theo lịch (Phase 41) giữ server thức.
+- Đo lại Version 5: `npm run bench` + `bench:compare` 3 niche chuẩn, ghi cột "Backlog 20" cạnh mốc.
 
 ## File đụng tới
 
@@ -29,7 +29,7 @@
 - `app/src-tauri/src/*.rs` — `ensure_server`, khởi động lại sidecar
 - `web/src/server/index.ts` — hẹn giờ ngủ khi rảnh (chỉ bật khi `NR_APP=1`)
 - `web/src/client/page-cache.ts` / fetch chung — chờ server dậy khi gọi lỗi kết nối
-- `docs/app/phase-78-light-mac-app.md`, `bench/` — số trước / sau
+- `docs/app/phase-backlog-20-light-mac-app.md`, `bench/` — số trước / sau
 
 ## Tasks
 
@@ -47,4 +47,4 @@
 
 ## Tiến độ
 
-- 2026-10-25: viết plan. Mốc cũ Phase 74: mở ~0,14 giây tới server sẵn sàng · RAM nghỉ ≈ 200 MB · `.dmg` 45 MB (app 119 MB).
+- 2026-10-25: viết plan. Mốc cũ Phase 17: mở ~0,14 giây tới server sẵn sàng · RAM nghỉ ≈ 200 MB · `.dmg` 45 MB (app 119 MB).

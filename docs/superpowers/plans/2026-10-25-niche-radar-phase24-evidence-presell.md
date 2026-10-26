@@ -1,19 +1,19 @@
-# Niche Radar Phase 24 — Evidence pack + test bán trước — Implementation Plan
+# Niche Radar Phase 42 — Evidence pack + test bán trước — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool không tự đăng bài, không chạy quảng cáo, không thu tiền.
 
 **Goal:** chạy **hết 1 vòng thật**: niche → evidence pack → `/app-demand` → test bán trước → số thật → BUILD / TEST THÊM / BỎ.
 
-**Spec:** [Phase 24 · Evidence pack + test bán trước](../../web/phase-24-evidence-presell.md) · **Cần trước:** Phase 7
-(`lib/evidence.ts`, `lib/validate.ts`, task AI `presale`), Phase 12, 13, 18.
+**Spec:** [Phase 42 · Evidence pack + test bán trước](../../web/phase-42-evidence-presell.md) · **Cần trước:** Phase 7
+(`lib/evidence.ts`, `lib/validate.ts`, task AI `presale`), Phase 18, 19, 18.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** 1 niche thật đi hết vòng, quyết định đã ghi · `/app-demand` đọc evidence pack không sửa tay · Phase 7 chip → Xong.
 - **Làm:** evidence pack đủ khung `templates/demand.md`, 1 bấm sang pipeline, ngưỡng khoá trước khi chạy, nhập số thật có
   nguồn, gợi ý quyết định.
-- **Không làm:** landing thật để bán (Phase 70) · tạo tài khoản / đăng bài.
+- **Không làm:** landing thật để bán (Phase 45) · tạo tài khoản / đăng bài.
 
 ## Global Constraints
 
@@ -47,7 +47,7 @@
 
 ### Task 4: Chạy 1 vòng thật
 - [ ] Anh chọn 1 niche → evidence pack → `/app-demand` đọc (không sửa tay) → anh chạy test bán trước (tay) → nhập số → quyết định.
-- [ ] Ghi tóm tắt vòng (không tên app chưa ra mắt) vào trang phase. Phase 7 + 24 chip → Xong. ROADMAP, CHANGELOG.
+- [ ] Ghi tóm tắt vòng (không tên app chưa ra mắt) vào trang phase. Phase 7 + 42 chip → Xong. ROADMAP, CHANGELOG.
 
 ## Tiến độ
 

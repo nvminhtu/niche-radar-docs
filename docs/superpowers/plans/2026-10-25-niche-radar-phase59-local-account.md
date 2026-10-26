@@ -1,11 +1,11 @@
-# Niche Radar Phase 59 — Lớp tài khoản trên máy — Implementation Plan
+# Niche Radar Backlog 02 — Lớp tài khoản trên máy — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Migration luôn backup trước, đếm dòng trước / sau.
 
 **Goal:** mọi dữ liệu gắn một **hồ sơ** (`user_id`); nhiều hồ sơ trên một máy không thấy nhau; mỗi người xuất / xoá được toàn bộ dữ liệu của mình.
 
-**Spec:** [Phase 59 · Lớp tài khoản trên máy](../../web/phase-59-local-account.md) · **Cần trước:** Phase 30 (hồ sơ đơn `profile.*` — nâng thành bảng), Phase 19 (backup), Phase 58.
+**Spec:** [Backlog 02 · Lớp tài khoản trên máy](../../web/phase-backlog-02-local-account.md) · **Cần trước:** Backlog 01 (hồ sơ đơn `profile.*` — nâng thành bảng), Phase 38 (backup), Phase 58.
 
 ## Mục tiêu · làm · không làm
 
@@ -19,11 +19,11 @@
 
 - **Cache nguồn dùng chung** (review_cache, listing_cache, iap_cache, trends_cache, keyword_cache, apps, app_snapshots…) **không** gắn `user_id` —
   là dữ liệu công khai; chỉ bảng "của người" gắn. Danh sách bảng ghi trong `web/src/db/ownership.ts`.
-- Lọc ở 1 lớp: mọi hàm `lib/*` nhận `ctx.userId`; route lấy `userId` từ header `X-NR-User` (gắn sau token Phase 58); test bắt route quên lọc
+- Lọc ở 1 lớp: mọi hàm `lib/*` nhận `ctx.userId`; route lấy `userId` từ header `X-NR-User` (gắn sau token Backlog 15); test bắt route quên lọc
   (duyệt mọi bảng "của người" sau khi gọi API bằng hồ sơ B → không có dòng của A).
 - Hồ sơ đang chọn lưu `settings` + localStorage; đổi hồ sơ reload dữ liệu.
 - Xoá toàn bộ: hỏi lại (gõ tên hồ sơ), backup trước, xoá thật mọi bảng "của người", đếm 0.
-- Xuất `.zip`: dùng `exportProject` cho từng project + JSON các bảng còn lại của hồ sơ (`zip.ts` Phase 16).
+- Xuất `.zip`: dùng `exportProject` cho từng project + JSON các bảng còn lại của hồ sơ (`zip.ts` Phase 15).
 
 ## File đụng tới
 
@@ -43,7 +43,7 @@
 - [ ] `lib/*` nhận `userId`; middleware; test cách ly A / B duyệt mọi bảng của người.
 
 ### Task 3: Màn hồ sơ
-- [ ] Thêm / đổi tên / chọn hồ sơ, thư mục dữ liệu (dùng lại Phase 30).
+- [ ] Thêm / đổi tên / chọn hồ sơ, thư mục dữ liệu (dùng lại Backlog 01).
 
 ### Task 4: Xuất + xoá
 - [ ] `.zip` của 1 hồ sơ; xoá toàn bộ có xác nhận + backup. Test: sau xoá 0 dòng.

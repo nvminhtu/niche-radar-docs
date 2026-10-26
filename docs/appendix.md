@@ -14,7 +14,7 @@
 
 | Mục | Từ đâu | Ghi chú |
 |---|---|---|
-| Xuất phạm vi 1 Explore / cả DB qua hộp Xuất chung · JSONL · file JSON Schema | cắt khỏi [Phase 16](web/phase-16-export.md) khi kéo lên sớm | Explore còn nút CSV cũ, cả DB có Backup; làm khi có tool khác cần đọc |
+| Xuất phạm vi 1 Explore / cả DB qua hộp Xuất chung · JSONL · file JSON Schema | cắt khỏi [Phase 15](web/phase-15-export.md) khi kéo lên sớm | Explore còn nút CSV cũ, cả DB có Backup; làm khi có tool khác cần đọc |
 
 ## Không làm (chốt 2026-10-26)
 
@@ -28,8 +28,8 @@ Anh chốt: **bán app Mac + Windows tải về + dùng thử + license**, học
 | Performance | V5: 46–48 · App 78 | không ra tiền; mốc 2026-10-25 đã ổn (mở ~0,14 s) | — |
 | Test tự động | V6: 50–53b | không ra tiền | test hiện có vẫn chạy trước khi merge |
 | CI cho PR, quy trình nhánh, build app trên CI | V7: 54, 57 · App 80 | không ra tiền | build + ký trên máy (`npm run mac`) |
-| Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 79](app/phase-79-app-only.md) |
-| Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 81](app/phase-81-release-auto-update.md) |
+| Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 34](app/phase-34-app-only.md) |
+| Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 36](app/phase-36-release-auto-update.md) |
 | Gói lượt AI kèm Pro | phần của 69 | mình gánh tiền AI | AI người dùng đã có (Claude Code, Codex, Ollama, key riêng) |
 
 ## Không làm (từ trước)
@@ -37,13 +37,13 @@ Anh chốt: **bán app Mac + Windows tải về + dùng thử + license**, học
 | Không làm | Vì sao | Thay bằng |
 |---|---|---|
 | Dịch vụ ước tính trả phí hằng tháng (Sensor Tower, AppTweak, Appfigures, MobileAction) | tốn tiền cho tool nội bộ, số ước tính | proxy miễn phí + Phase 5 verified |
-| Sinh concept, giá, spec, checklist ra mắt | pipeline App-AI-Skills đã làm | `/app-research` → `/app-money` → `/app-spec` · brief tính năng (khách · vấn đề · MVP · giá thử) đã gộp vào gói LLM của [Phase 16](web/phase-16-export.md) |
+| Sinh concept, giá, spec, checklist ra mắt | pipeline App-AI-Skills đã làm | `/app-research` → `/app-money` → `/app-spec` · brief tính năng (khách · vấn đề · MVP · giá thử) đã gộp vào gói LLM của [Phase 15](web/phase-15-export.md) |
 | Tự đăng bài / quảng cáo / thu tiền | việc của người dùng | Phase 7 soạn nháp + lưu số |
 | AI tự đưa ra con số | dễ bịa | số từ collector, AI chỉ trích dẫn |
 | Dữ liệu TikTok / X | không lấy miễn phí ổn định | Reddit; X đọc tay |
 | Electron | nặng | Tauri |
 
-## Nguồn gap bị Bỏ (Phase 11, 2026-10-26)
+## Nguồn gap bị Bỏ (Phase 14, 2026-10-26)
 
 Chấm ở [Bản đồ nguồn gap](web/gap-sources-map.md). Đừng xét lại nếu chưa có lý do mới (đổi điều khoản, có API mới).
 
@@ -56,13 +56,13 @@ Chấm ở [Bản đồ nguồn gap](web/gap-sources-map.md). Đừng xét lại
 | Acquire · Flippa · Indie Hackers products · Starter Story · Gumroad · Notion / Excel template · CodeCanyon | bằng chứng tiền yếu hoặc cấm quét; TrustMRR đã thay |
 | producthunt-mcp-server | không license, bỏ từ 2025-04, API Product Hunt cấm dùng thương mại |
 
-**Ứng viên (chưa xếp phase):** gom chủ đề bằng BERTopic + sentence-transformers thay từ điển tay ở Phase 10 · cờ "top 3
-là diễn đàn" cho Phase 41 · nút tiền tố "alternative / vs / free" cho Phase 21 · nhắc theo lịch WWDC cho Phase 23 ·
-hạ Amazon (Phase 33–34) xuống ứng viên — chờ anh duyệt.
+**Ứng viên (chưa xếp phase):** gom chủ đề bằng BERTopic + sentence-transformers thay từ điển tay ở Phase 11 · cờ "top 3
+là diễn đàn" cho Phase 58 · nút tiền tố "alternative / vs / free" cho Phase 39 · nhắc theo lịch WWDC cho Phase 41 ·
+hạ Amazon (Phase 52–53) xuống ứng viên — chờ anh duyệt.
 
-## Ứng viên từ Phase 10b (2026-10-26)
+## Ứng viên từ Phase 12 (2026-10-26)
 
-- Q&A Gap vào hộp **Xuất** của Phase 16 (CSV / JSON / gói AI) — giờ chỉ có **Tải .md**
+- Q&A Gap vào hộp **Xuất** của Phase 15 (CSV / JSON / gói AI) — giờ chỉ có **Tải .md**
 - Ô nhập key StackApps ở Cài đặt (giờ đọc `STACKEXCHANGE_KEY` từ `.env.local`)
 - Chủ đề mới cho từ điển: mạng / IP / hosts, terminal multiplexer (tmux), quyền admin (sudo), ổ cứng / phân vùng
 - Thêm site Stack Exchange khác (Ask Ubuntu, Unix & Linux) — chỉ khi có nhu cầu ngoài Mac

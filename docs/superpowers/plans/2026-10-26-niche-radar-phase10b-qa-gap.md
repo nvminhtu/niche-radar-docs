@@ -1,19 +1,19 @@
-# Niche Radar Phase 10b — Q&A Gap (Stack Exchange + Hacker News) — Implementation Plan
+# Niche Radar Phase 12 — Q&A Gap (Stack Exchange + Hacker News) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [x]`). Không tạo key StackApps thay anh, không đăng gì lên Stack Exchange / HN.
 
-**Goal:** thêm hai nguồn hỏi đáp gọi bằng API miễn phí (Stack Exchange, Hacker News) vào bảng gap của Phase 10, để biết
+**Goal:** thêm hai nguồn hỏi đáp gọi bằng API miễn phí (Stack Exchange, Hacker News) vào bảng gap của Phase 11, để biết
 chủ đề nào **hỏi nhiều, nhiều người xem, chưa ai giải**, kèm link câu gốc.
 
-**Spec:** [Phase 10b · Q&A Gap](../../web/phase-10b-qa-gap.md) · **Cần trước:** Phase 10 (luật phân loại, điểm gap,
+**Spec:** [Phase 12 · Q&A Gap](../../web/phase-12-qa-gap.md) · **Cần trước:** Phase 11 (luật phân loại, điểm gap,
 đếm app Mac, trang `/reddit`), Phase 8 (backup trước migrate) · **Nguồn quyết định:** [Bản đồ nguồn gap](../../web/gap-sources-map.md).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** chạy thật 3 site Stack Exchange + HN (ghi số câu, số lệnh) · kiểm tay 30 câu: chuyên mục ≥ 80 %, chủ đề ≥ 70 %
   · top 10 gap tab Gộp mỗi dòng ≥ 3 link mở được · `.md` chọn được 1 bài `/fix` hoặc 1 ý tưởng app Mac · test fixture thật.
-- **Làm:** bảng `qa_threads`, 2 collector (SE, HN), dùng lại phân loại Phase 10, điểm gap có lượt xem + cờ đã giải, tab
+- **Làm:** bảng `qa_threads`, 2 collector (SE, HN), dùng lại phân loại Phase 11, điểm gap có lượt xem + cờ đã giải, tab
   nguồn + tab Gộp trên trang Gap hỏi đáp, xuất `.md` có ghi công CC BY-SA.
 - **Không làm:** đăng bài · lưu tên / id người dùng · cây comment HN · site SE ngoài 3 site · gom chủ đề bằng AI / BERTopic ·
   tạo key thay anh.
@@ -42,14 +42,14 @@ chủ đề nào **hỏi nhiều, nhiều người xem, chưa ai giải**, kèm 
 | File | Việc |
 |---|---|
 | `web/src/db/schema.ts` + migration mới | `qa_threads`, `qa_fetches` |
-| `web/src/lib/qa-sources.ts` | danh sách site + tag + câu search (dùng `SEARCH_QUERIES` của Phase 10) |
+| `web/src/lib/qa-sources.ts` | danh sách site + tag + câu search (dùng `SEARCH_QUERIES` của Phase 11) |
 | `web/src/lib/qa-stackexchange.ts` | gọi SE, chuẩn hoá, lấy câu trả lời top, xử lý `backoff` / quota |
 | `web/src/lib/qa-hn.ts` | gọi Algolia, chuẩn hoá |
 | `web/src/lib/qa-gap.ts` | nhập vào DB, gap board theo nguồn, board Gộp (Reddit + QA), `.md` |
 | `web/src/lib/reddit-rules.ts` | thêm chủ đề Windows / đa nền tảng, dev tool |
 | `web/src/server/app.ts` | `GET /api/qa`, `POST /api/qa/fetch`, `GET /api/qa/gap`, `GET /api/qa/threads`, `GET /api/qa/export.md` |
 | `web/src/client/RedditGapPage.tsx` (+ component tab nhỏ nếu file quá dài) | tab Reddit · Stack Exchange · HN · Gộp; tên trang "Gap hỏi đáp" |
-| `web/src/lib/features.ts`, `web/src/locales/*` | thêm mục Phase 10b; chữ mới qua `useT()` |
+| `web/src/lib/features.ts`, `web/src/locales/*` | thêm mục Phase 12; chữ mới qua `useT()` |
 | `web/tests/qa-*.test.ts` + `web/tests/fixtures/qa/` | fixture SE + Algolia thật (bỏ tên) |
 
 ## Tasks
@@ -60,11 +60,11 @@ chủ đề nào **hỏi nhiều, nhiều người xem, chưa ai giải**, kèm 
       `topAnswers` json (≤ 3 × 300 ký tự, [] cho HN), `createdAt`, `url`, `fetchedAt`. Khoá chính `(source, id)`.
 - [x] `qa_fetches`: `source`, `query`, `fetchedAt`, `count`, `quotaRemaining`.
 - [x] `qa-sources.ts`: 3 site SE + tag đã đo ở trên + `SEARCH_QUERIES`; HN dùng `SEARCH_QUERIES`, cửa sổ 3 năm.
-- [x] Test: migrate trên DB rỗng và DB đang có dữ liệu Phase 10 (backup được tạo).
+- [x] Test: migrate trên DB rỗng và DB đang có dữ liệu Phase 11 (backup được tạo).
 
 ### Task 2: Collector Stack Exchange
 - [x] `fetchSe(site, { tag? , q? }, fetcher)` → `search/advanced?order=desc&sort=votes&pagesize=100&filter=withbody`.
-- [x] Chuẩn hoá: bỏ HTML trong `body` (dùng `decodeEntities` của Phase 10 + bỏ thẻ), cắt 500 ký tự, bỏ `owner`.
+- [x] Chuẩn hoá: bỏ HTML trong `body` (dùng `decodeEntities` của Phase 11 + bỏ thẻ), cắt 500 ký tự, bỏ `owner`.
 - [x] `fetchTopAnswers(site, ids, fetcher)` → `/questions/{ids}/answers?sort=votes&filter=withbody`, 100 id / lệnh,
       giữ ≤ 3 câu điểm cao nhất mỗi câu hỏi.
 - [x] Tôn trọng `backoff`, ≥ 1 giây / lệnh, trả `quotaRemaining`; hết quota → dừng, báo rõ, giữ phần đã lấy.
@@ -92,7 +92,7 @@ chủ đề nào **hỏi nhiều, nhiều người xem, chưa ai giải**, kèm 
 - [x] Trang: tên "Gap hỏi đáp", giữ `/reddit`, tab Reddit · Stack Exchange · Hacker News · Gộp. Tab SE / HN: nút
       **Lấy dữ liệu** + chọn site, tiến độ, quota còn lại, rồi bảng gap. Bấm dòng ra câu gốc (link + nguồn).
 - [x] `.md`: top 20 gap, 3 link mỗi dòng, dòng ghi công "Nội dung Stack Exchange theo CC BY-SA 4.0, link về câu gốc".
-- [x] `features.ts`: thêm "Gap hỏi đáp · Stack Exchange + HN" (Phase 10b). Chữ mới qua `useT()` (vi gốc, en, es).
+- [x] `features.ts`: thêm "Gap hỏi đáp · Stack Exchange + HN" (Phase 12). Chữ mới qua `useT()` (vi gốc, en, es).
 
 ### Task 6: Chạy thật + soát
 - [x] Lấy cả 3 site SE + HN. Ghi số câu từng nguồn + số lệnh SE đã dùng vào "Kết quả chạy thật".
@@ -102,7 +102,7 @@ chủ đề nào **hỏi nhiều, nhiều người xem, chưa ai giải**, kèm 
 
 ## Tiến độ
 
-- 2026-10-26: anh duyệt (gộp A + C từ Phase 11), viết plan. Đo trước: SE + HN gọi được không key.
+- 2026-10-26: anh duyệt (gộp A + C từ Phase 14), viết plan. Đo trước: SE + HN gọi được không key.
 
 ## Kết quả chạy thật
 
@@ -127,5 +127,5 @@ Chạy 2026-10-26 trên bản sao DB (`NICHE_DB`), qua giao diện (nút **Lấy
   TeraCopy" (copy có hàng đợi, tạm dừng / chạy tiếp, kiểm checksum). Đo Mac App Store 2026-10-26: TeraCopy (Free, 0 đánh
   giá), CopyQueue $19.99 (0 đánh giá), RapidCopy $19.99 (0 đánh giá) — có người làm nhưng chưa ai có đánh giá ⇒ ứng viên
   cho `/best-app` / `/app-demand`, chưa kiểm nhu cầu tiền.
-- **Chưa làm (ghi Appendix):** đưa Q&A vào hộp Xuất của Phase 16 (CSV / JSON / gói AI) — giờ chỉ có **Tải .md**; ô nhập
+- **Chưa làm (ghi Appendix):** đưa Q&A vào hộp Xuất của Phase 15 (CSV / JSON / gói AI) — giờ chỉ có **Tải .md**; ô nhập
   key StackApps ở Cài đặt (giờ đọc `STACKEXCHANGE_KEY` từ môi trường); thêm chủ đề mạng / IP, terminal multiplexer.

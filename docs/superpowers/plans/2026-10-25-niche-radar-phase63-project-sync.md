@@ -1,11 +1,11 @@
-# Niche Radar Phase 63 — Sync project — Implementation Plan
+# Niche Radar Backlog 04 — Sync project — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** đăng nhập máy khác là thấy project, ghi chú, kết luận của mình; chỉ thứ người dùng tự viết lên cloud, dữ liệu cào ở lại máy.
 
-**Spec:** [Phase 63 · Sync project](../../web/phase-63-project-sync.md) · **Cần trước:** Phase 62 (đăng nhập), Phase 59 (`user_id`), Phase 14–15 (item có `uid`).
+**Spec:** [Backlog 04 · Sync project](../../web/phase-backlog-04-project-sync.md) · **Cần trước:** Backlog 03 (đăng nhập), Backlog 02 (`user_id`), Phase 20–21 (item có `uid`).
 
 ## Mục tiêu · làm · không làm
 

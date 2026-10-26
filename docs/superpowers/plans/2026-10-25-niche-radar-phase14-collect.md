@@ -1,12 +1,12 @@
-# Niche Radar Phase 14 — Collect niche vào Project — Implementation Plan
+# Niche Radar Phase 20 — Collect niche vào Project — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** thấy gì đáng giữ ở **bất cứ chỗ nào** — bấm 1 lần là vào project, kèm số liệu lúc đó và nguồn.
 
-**Spec:** [Phase 14 · Collect niche vào Project](../../web/phase-14-collect.md) · **Cần trước:** Phase 8 (`projects.ts`,
-`portable.ts`, `CollectButton.tsx`), Phase 12 (lời chê để gom).
+**Spec:** [Phase 20 · Collect niche vào Project](../../web/phase-20-collect.md) · **Cần trước:** Phase 8 (`projects.ts`,
+`portable.ts`, `CollectButton.tsx`), Phase 18 (lời chê để gom).
 
 ## Mục tiêu · làm · không làm
 
@@ -14,7 +14,7 @@
   trùng · xuất / nhập project đủ item + số chụp (test round-trip) · test xanh · screenshot popover + project đã Read.
 - **Làm:** 5 loại item, Collect ở 6 chỗ, gom hàng loạt, popover nhớ project gần nhất + tìm + tạo mới, chụp số lúc gom,
   ghi chú 1 dòng, chống trùng, hoàn tác.
-- **Không làm:** sắp / lọc / gộp project (Phase 15) · đồng bộ lên mạng (Phase 63).
+- **Không làm:** sắp / lọc / gộp project (Phase 21) · đồng bộ lên mạng (Backlog 04).
 
 ## Global Constraints
 
@@ -24,10 +24,10 @@
 - Khoá chống trùng đổi từ `(projectId, term, country)` sang `(projectId, kind, ref, country)`; với keyword `ref = term`.
 - Số chụp lúc gom **không** bị ghi đè khi gom lại; gom lại chỉ cập nhật `lastSeen` + `latest` (json) riêng.
 - Gói `.niche.json` (`BUNDLE_FORMAT`) tăng phiên bản, nhập được cả gói cũ; nhập máy khác không nhân đôi nhờ `uid`.
-- **Một migration chung Phase 14 + 15** (số kế tiếp, `backupDb` trước; đếm dòng trước / sau `countRows`). Ngoài cột Phase 14
-  ở trên, thêm luôn phần Phase 15: `projects.tags` (json), `archivedAt`, `nextStep`, `nextDue` · `project_items.status`
+- **Một migration chung Phase 20 + 21** (số kế tiếp, `backupDb` trước; đếm dòng trước / sau `countRows`). Ngoài cột Phase 20
+  ở trên, thêm luôn phần Phase 21: `projects.tags` (json), `archivedAt`, `nextStep`, `nextDue` · `project_items.status`
   (`giữ | ứng viên | loại`, mặc định `giữ`), `reason`, `rank` · bảng `project_log` (projectId, at, kind, detail json).
-  Phase 14 chỉ ghi / đọc phần của mình; phần Phase 15 để mặc định, chưa có UI. `BUNDLE_FORMAT` tăng **một lần** cho cả hai.
+  Phase 20 chỉ ghi / đọc phần của mình; phần Phase 21 để mặc định, chưa có UI. `BUNDLE_FORMAT` tăng **một lần** cho cả hai.
 
 ## File đụng tới
 
@@ -44,9 +44,9 @@
 ## Tasks
 
 ### Task 1: Schema chung 14 + 15 + migrate dữ liệu thật
-- [ ] Cột mới + index mới (Phase 14) **và** cột / bảng Phase 15 (xem Global Constraints) trong cùng 1 file migration;
+- [ ] Cột mới + index mới (Phase 20) **và** cột / bảng Phase 21 (xem Global Constraints) trong cùng 1 file migration;
       chuyển item cũ (`kind = 'keyword'`, `ref = term`, sinh `uid`, `status = 'giữ'`).
-- [ ] `portable.ts`: xuất / nhập mọi cột mới (cả phần Phase 15, để trống cũng round-trip), đọc được gói cũ.
+- [ ] `portable.ts`: xuất / nhập mọi cột mới (cả phần Phase 21, để trống cũng round-trip), đọc được gói cũ.
 - [ ] Test migrate trên bản sao DB có item cũ: 0 dòng mất; round-trip `.niche.json` giữ đủ trường 14 + 15.
 
 ### Task 2: API hàng loạt + chống trùng + hoàn tác
@@ -75,4 +75,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan.
-- 2026-10-26: review plan — gộp migration với Phase 15 (DB thật chỉ nâng 1 lần, `BUNDLE_FORMAT` tăng 1 lần); thêm phím `C`.
+- 2026-10-26: review plan — gộp migration với Phase 21 (DB thật chỉ nâng 1 lần, `BUNDLE_FORMAT` tăng 1 lần); thêm phím `C`.

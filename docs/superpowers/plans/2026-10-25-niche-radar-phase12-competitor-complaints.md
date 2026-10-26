@@ -1,4 +1,4 @@
-# Niche Radar Phase 12 — Đối thủ bị chê gì — Implementation Plan
+# Niche Radar Phase 18 — Đối thủ bị chê gì — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
@@ -6,7 +6,7 @@
 **Goal:** từ "vài cụm lặp lại" thành **bản đồ lời chê**: app nào bị chê gì, loại gì, mới nổi hay cũ, người dùng ước gì —
 mọi dòng có câu nguyên văn. Không AI.
 
-**Spec:** [Phase 12 · Đối thủ bị chê gì](../../web/phase-12-competitor-complaints.md) · **Cần trước:** Phase 1–2 (review),
+**Spec:** [Phase 18 · Đối thủ bị chê gì](../../web/phase-18-competitor-complaints.md) · **Cần trước:** Phase 1–2 (review),
 Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 
 ## Mục tiêu · làm · không làm
@@ -14,7 +14,7 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 - **Xong khi:** 3 niche thật, top 10 cụm mỗi niche ≥ 8/10 có nghĩa · số cụm trùng ý giảm rõ (đếm trước / sau, ghi số) ·
   bảng app × loại đọc được ở 1340px, ô bấm ra câu trích đúng app · "ước gì" ≥ 5 dòng ở ≥ 2/3 niche · test xanh · screenshot đã Read.
 - **Làm:** lấy đủ review (có 3★), gộp cùng ý, loại lời chê, bảng app × loại, mới nổi, ước gì, lọc, đưa vào evidence pack.
-- **Không làm:** AI gom chủ đề (Phase 17) · so 2–5 đối thủ (Phase 37) · review ngoài 2 store.
+- **Không làm:** AI gom chủ đề (Phase 27.1) · so 2–5 đối thủ (Phase 55) · review ngoài 2 store.
 
 ## Đo trước khi code
 
@@ -35,7 +35,7 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
   `review_seen` (storeAppId, country, hash = sha256 text, score, date, version, firstSeenAt) giữ mọi review 1–3★ đã thấy;
   `review_cache` vẫn bị ghi đè như cũ. Mới nổi = review có `firstSeenAt` ở lần lấy này so với phần còn lại; chỉ khi 200
   review đã phủ ≥ 180 ngày mới so thẳng theo `date`. Chưa có lần trước → `emerging: null` + lý do, không đoán.
-- `review_seen` dùng chung cho cache "chỉ gửi review mới" của Phase 17 (không tạo bảng hash thứ hai).
+- `review_seen` dùng chung cho cache "chỉ gửi review mới" của Phase 27.1 (không tạo bảng hash thứ hai).
 - API cũ `GET /api/research/:id/complaints` giữ trường `complaints` để khối cũ không vỡ; thêm trường mới bên cạnh.
 
 ## File đụng tới
@@ -74,7 +74,7 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 ### Task 4: UI + lọc + evidence
 - [ ] `ComplaintsBlock`: bảng app × loại (ô bấm mở câu trích), chip "mới nổi", danh sách "ước gì", lọc store / app / loại / khoảng ngày.
 - [ ] Bảng đọc được ở 1340px; ở 375px chuyển thành danh sách theo app (1 cột).
-- [ ] `evidence.ts` thêm top cụm + ước gì; gói xuất Phase 16 đọc từ đây.
+- [ ] `evidence.ts` thêm top cụm + ước gì; gói xuất Phase 15 đọc từ đây.
 
 ### Task 5: Chạy thật + soát
 - [ ] 3 niche thật: đếm cụm trùng ý trước / sau, kiểm tay top 10 cụm, đếm dòng "ước gì" → ghi bảng dưới.

@@ -1,11 +1,11 @@
-# Niche Radar Phase 30.1 — Setup ngay trong Web — Implementation Plan
+# Niche Radar Phase 23 — Setup ngay trong Web — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` + `npm run docs:build` xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool chỉ hướng dẫn + kiểm, không tự cài, không `sudo`.
 
 **Goal:** máy thiếu đồ cài vẫn tự lên được: trang Setup đúng máy, nút **Kiểm tra máy**, gói cài chính chủ, nút **Hỏi AI**.
 
-**Spec:** [Phase 30.1 · Setup ngay trong Web](../../web/phase-30-1-setup.md) · **Cần trước:** không.
+**Spec:** [Phase 23 · Setup ngay trong Web](../../web/phase-23-setup.md) · **Cần trước:** không.
 
 ## Mục tiêu · làm · không làm
 
@@ -33,7 +33,7 @@
 - `web/src/server/app.ts` — `GET /api/setup/check`
 - `web/src/client/SetupPage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` — `/setup`, nút Kiểm tra máy, bắt buộc / tuỳ chọn
 - `web/src/components/AskAi.tsx` (mới) — menu dọc 4 dòng, đóng khi bấm ngoài / Esc
-- `web/src/lib/scrub.ts` (mới) — che dữ liệu riêng (dùng chung với Phase 30 góp ý)
+- `web/src/lib/scrub.ts` (mới) — che dữ liệu riêng (dùng chung với Backlog 01 góp ý)
 - `README.md`, `docs/cach-dung.md` — trỏ tới trang Setup
 - `web/tests/setup-check.test.ts`, `scrub.test.ts`
 

@@ -1,13 +1,13 @@
-# Niche Radar Phase 23 — Theo dõi niche định kỳ — Implementation Plan
+# Niche Radar Phase 41 — Theo dõi niche định kỳ — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** theo dõi **tự chạy theo lịch** và **chỉ báo cái đáng chú ý**.
 
-**Spec:** [Phase 23 · Theo dõi niche định kỳ](../../web/phase-23-tracking.md) · **Cần trước:** Phase 9 (`lib/tracking.ts`,
-`project_snapshots`), Phase 12 (`emerging` — luật "lời chê mới nổi"), Phase 13 (`score_history`), Phase 21 (hàng đợi
-`research_queue`), Phase 22 (cờ `bỏ bê`).
+**Spec:** [Phase 41 · Theo dõi niche định kỳ](../../web/phase-41-tracking.md) · **Cần trước:** Phase 9 (`lib/tracking.ts`,
+`project_snapshots`), Phase 18 (`emerging` — luật "lời chê mới nổi"), Phase 19 (`score_history`), Phase 39 (hàng đợi
+`research_queue`), Phase 40 (cờ `bỏ bê`).
 
 ## Mục tiêu · làm · không làm
 
@@ -19,7 +19,7 @@
 ## Global Constraints
 
 - Chỉ chạy khi server đang chạy: bộ hẹn giờ trong `server/index.ts` (mỗi 15 phút kiểm "đến hạn"), giới hạn N lượt / ngày (settings, mặc định 10).
-- **Không chạy song song** — dùng chung hàng đợi lần lượt của Phase 21 (`batch-research.ts`); bị chặn → hoãn tới lần kiểm sau, không dồn.
+- **Không chạy song song** — dùng chung hàng đợi lần lượt của Phase 39 (`batch-research.ts`); bị chặn → hoãn tới lần kiểm sau, không dồn.
 - Luật báo cố định trong `web/src/lib/tracking-alerts.ts`: đối thủ mới vào top 5 · `bỏ bê` vừa cập nhật · giá / gói đổi ·
   Trends trung bình đổi ≥ 20% · điểm v2 đổi ≥ 1 · lời chê mới nổi. Còn lại → "không có gì mới".
 - Giờ qua tham số `now` để test.
@@ -45,7 +45,7 @@
 
 ### Task 3: Hộp thay đổi + dòng thời gian
 - [ ] Trang chủ: alert 7 ngày theo project, bấm mở so 2 lần chụp; đánh dấu đã xem.
-- [ ] Trang project: biểu đồ, chấm = 1 lần chụp — chỗ duy nhất vẽ điểm theo thời gian (Phase 13 chỉ lưu `score_history`).
+- [ ] Trang project: biểu đồ, chấm = 1 lần chụp — chỗ duy nhất vẽ điểm theo thời gian (Phase 19 chỉ lưu `score_history`).
 
 ### Task 4: Theo dõi đối thủ
 - [ ] Đối thủ đã collect: lưu giá, rating, lần cập nhật mỗi snapshot; alert giá đổi / vừa cập nhật.
@@ -56,4 +56,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan.
-- 2026-10-26: review plan — thêm Phase 12, 21 vào Cần trước; biểu đồ điểm chỉ làm ở đây.
+- 2026-10-26: review plan — thêm Phase 18, 39 vào Cần trước; biểu đồ điểm chỉ làm ở đây.

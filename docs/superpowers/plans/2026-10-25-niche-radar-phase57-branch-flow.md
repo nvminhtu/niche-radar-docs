@@ -1,11 +1,11 @@
-# Niche Radar Phase 57 — Quy trình nhánh — Implementation Plan
+# Niche Radar Backlog 14 — Quy trình nhánh — Implementation Plan
 
 > **For agentic workers:** phase về quy trình, ít code. Steps dùng checkbox (`- [ ]`). Claude không tự merge / gắn tag khi anh chưa đồng ý,
 > không tự đổi cài đặt bảo vệ nhánh.
 
 **Goal:** khoá `main` (chỉ vào qua PR có CI xanh), mỗi phase một nhánh, xong mới gộp + tag; ghi vào Quy trình build.
 
-**Spec:** [Phase 57 · Quy trình nhánh](../../web/phase-57-branch-flow.md) · **Cần trước:** Phase 54 (CI).
+**Spec:** [Backlog 14 · Quy trình nhánh](../../web/phase-backlog-14-branch-flow.md) · **Cần trước:** Backlog 13 (CI).
 
 ## Mục tiêu · làm · không làm
 

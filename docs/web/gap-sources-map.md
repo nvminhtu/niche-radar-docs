@@ -1,27 +1,27 @@
 # Bản đồ nguồn gap
 
-> Kết quả của [Phase 11](phase-11-gap-sources.md). Có **52 nguồn** tìm gap và keyword niche, **17 MCP**, **21 repo / tool**
+> Kết quả của [Phase 14](phase-14-gap-sources.md). Có **52 nguồn** tìm gap và keyword niche, **17 MCP**, **21 repo / tool**
 > và **12 phương pháp**, tất cả chấm chung một thang. Kiểm ngày **2026-10-26**: mở thật vài trang của từng nguồn, đọc
 > điều khoản. Không đăng ký, không trả phí, không quét hàng loạt. Số nào chưa đo được thì ghi `chưa đo`.
 
-<span class="chip chip--done">Xong 2026-10-26 · top 3 đã duyệt → Phase 10b + 10c</span>
+<span class="chip chip--done">Xong 2026-10-26 · top 3 đã duyệt → Phase 12 + 13</span>
 
 <div class="box box--star" markdown>
 **Tóm tắt**
 
-- **Làm phase riêng (đã duyệt 2026-10-26 → Phase 10b + 10c):**
+- **Làm phase riêng (đã duyệt 2026-10-26 → Phase 12 + 13):**
   1. **Stack Exchange Q&A** (Ask Different + Super User): đã gọi thử API được, không cần key, có điểm và lượt xem.
   2. **GitHub Issues xếp theo 👍**: tính năng người dùng xin mà maintainer không làm. API miễn phí, điều khoản thoáng nhất trong các nguồn.
   3. **Hacker News Ask HN** (API Algolia): câu "is there an app / tool…" kèm điểm và số bình luận.
 - **Dự bị:** X search. Tín hiệu mạnh, nhưng API tính tiền theo bài đọc ($0.005 / bài), nên anh quyết.
-- **Đã có trong Niche Radar, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 12), Google Trends (Phase 3), TrustMRR (Phase 18), Reddit (Phase 10).
+- **Đã có trong Niche Radar, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 18), Google Trends (Phase 3), TrustMRR (Phase 37), Reddit (Phase 11).
 - **Phần lớn chợ review lớn cấm quét** (G2, Trustpilot, Shopify, Upwork, VS Code, Gumroad…). Chỉ đọc tay khi đã chọn niche.
-- **Amazon (Phase 33–34) yếu:** gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm khai thác dữ liệu. Đề xuất hạ xuống ứng viên.
+- **Amazon (Phase 52–53) yếu:** gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm khai thác dữ liệu. Đề xuất hạ xuống ứng viên.
 </div>
 
 ## Thang chấm
 
-Mỗi nguồn chấm 6 tiêu chí (chi tiết ở [Phase 11 · Thang chấm](phase-11-gap-sources.md#thang-cham-moi-nguon)):
+Mỗi nguồn chấm 6 tiêu chí (chi tiết ở [Phase 14 · Thang chấm](phase-14-gap-sources.md#thang-cham-moi-nguon)):
 
 1. **Gap**: có cho thấy người ta *cần mà chưa có* không. Chấm **Mạnh / Vừa / Yếu**
 2. **Quan tâm**: có upvote, lượt xem, số review để xếp hạng không. Chấm **Mạnh / Vừa / Yếu**
@@ -233,10 +233,10 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 11 · Reddit
 
-- **Kết luận: Đã có** ([Phase 10](phase-10-reddit-gap.md), tuyến C: nhập trang lưu từ Chrome).
+- **Kết luận: Đã có** ([Phase 11](phase-11-reddit-gap.md), tuyến C: nhập trang lưu từ Chrome).
 - **Gap:** Mạnh. Câu "is there an app", "is there a way" có upvote.
 - **Quan tâm:** Mạnh. Có upvote và số bình luận.
-- **Lấy được:** đọc qua trình duyệt. Gọi `top.json` bằng máy trả **HTTP 403** (đo 2026-10-26). Đây là lý do Phase 10 đi tuyến nhập file.
+- **Lấy được:** đọc qua trình duyệt. Gọi `top.json` bằng máy trả **HTTP 403** (đo 2026-10-26). Đây là lý do Phase 11 đi tuyến nhập file.
 - **Chi phí:** miễn phí. Apify actor từ $3.40 / 1.000 kết quả (xem mục MCP).
 - **Điều khoản:** Vừa.
 - **Hợp app:** mọi loại.
@@ -366,7 +366,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 23 · App Store / Mac App Store review
 
-- **Kết luận: Đã có** ([Phase 2](phase-2-app-store.md)). Sẽ đào sâu ở [Phase 12 · Đối thủ bị chê gì](phase-12-competitor-complaints.md).
+- **Kết luận: Đã có** ([Phase 2](phase-2-app-store.md)). Sẽ đào sâu ở [Phase 18 · Đối thủ bị chê gì](phase-18-competitor-complaints.md).
 - **Gap:** Mạnh. Review 1–3★ chê thẳng đối thủ.
 - **Quan tâm:** Vừa. Mặt app Mac rất mỏng: feed "Top Paid Mac Apps" trả 0 mục, trang web của Magnet ghi "chưa đủ đánh giá". Đọc RSS review theo từng id app là cách chắc nhất.
 - **Lấy được:** API miễn phí (RSS + iTunes Search).
@@ -522,7 +522,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 37 · TrustMRR
 
-- **Kết luận: Đã có** ([Phase 18](phase-18-revenue.md)). Chỉ dùng nội bộ, không đăng lại dữ liệu.
+- **Kết luận: Đã có** ([Phase 37](phase-37-revenue.md)). Chỉ dùng nội bộ, không đăng lại dữ liệu.
 - **Gap:** Vừa. Không cho thấy gap, nhưng cho thấy ngách nào có doanh thu đã xác minh.
 - **Quan tâm:** Mạnh. Có MRR và doanh thu xác minh.
 - **Lấy được:** API có key miễn phí. Gói standard 10 lệnh / phút, premium 60 lệnh / phút. Giá premium `chưa đo`.
@@ -765,8 +765,8 @@ Ghi chú từng cái (giá lấy từ trang giá của hãng, đo 2026-10-26):
 
 Rút ra:
 
-- **Rủi ro đang có:** `google-trends-api` mà Niche Radar dùng không cập nhật từ 2022. Ghi vào [Phase 52 · Canary nguồn thật](phase-52-source-canary.md) để báo khi gãy.
-- **Thay từ điển tay ở Phase 10:** BERTopic + sentence-transformers gom được hàng nghìn câu hỏi thành chủ đề. Đây là Python, nên nếu dùng thì chạy như bước tiền xử lý. Ghi vào Appendix làm ứng viên, chưa làm.
+- **Rủi ro đang có:** `google-trends-api` mà Niche Radar dùng không cập nhật từ 2022. Ghi vào [Backlog 10 · Canary nguồn thật](phase-backlog-10-source-canary.md) để báo khi gãy.
+- **Thay từ điển tay ở Phase 11:** BERTopic + sentence-transformers gom được hàng nghìn câu hỏi thành chủ đề. Đây là Python, nên nếu dùng thì chạy như bước tiền xử lý. Ghi vào Appendix làm ứng viên, chưa làm.
 - **Arctic Shift** là đường lấy Reddit số lượng lớn mà không cần API Reddit. Repo không ghi license, nên chỉ dùng để research nội bộ.
 
 ## Phương pháp tìm gap
@@ -775,36 +775,36 @@ Mỗi phương pháp ghi cách làm, nguồn dùng và Niche Radar đã có chư
 
 1. **SERP do diễn đàn chiếm.** Gõ câu hỏi lên Google. Nếu top 3 là Reddit, Quora hay Apple Community thì chưa có trang
    hay app tốt trả lời: vừa là gap nội dung, vừa là gap app. Nguồn: Google SERP (làm tay, hoặc SerpApi / DataForSEO).
-   **Chưa có.** Nên thêm cờ "top 3 là diễn đàn" vào [Phase 41 · Kệ Google](phase-41-seo-shelf.md).
+   **Chưa có.** Nên thêm cờ "top 3 là diễn đàn" vào [Phase 58 · Kệ Google](phase-58-seo-shelf.md).
 2. **"X alternative", "X vs Y", "X free".** Tìm người đang muốn bỏ app đang dùng. Nguồn: autocomplete, AlternativeTo.
    **Có một phần** (autocomplete ở Phase 1–2). Nên thêm các tiền tố này thành nút sẵn trong
-   [Phase 21 · Explore](phase-21-explore-tree.md).
+   [Phase 39 · Explore](phase-39-explore-tree.md).
 3. **"I'd pay for", "is there an app", "wish there was".** Nguồn: Reddit, HN, Stack Exchange, X.
-   **Có ở Phase 10** (8 câu search mẫu). Đề xuất A và C dùng lại đúng các cụm này.
+   **Có ở Phase 11** (8 câu search mẫu). Đề xuất A và C dùng lại đúng các cụm này.
 4. **Feature request bị bỏ ngỏ.** Issue nhiều 👍 mà maintainer đóng "won't fix" hoặc để mở hơn 1 năm. Nguồn: GitHub,
    Canny, Featurebase. **Chưa có.** Đây là đề xuất B.
 5. **Câu xin phần mềm chưa có câu trả lời được chấp nhận.** Câu hỏi nhiều lượt xem mà `is_answered = false` hoặc câu
    trả lời top là "không có". Nguồn: Ask Different, Super User. **Chưa có.** Đây là đề xuất A.
 6. **Đợt đổi nền tảng.** macOS / iOS mới (WWDC tháng 6, bản phát hành tháng 9) làm hỏng app cũ hoặc mở API mới. Cửa sổ
    niche ngắn, rất hợp app Mac. Nguồn: Trends "Rising", Apple Community, Ask Different sau ngày phát hành. **Chưa có.**
-   Nên thêm lịch nhắc vào [Phase 23 · Theo dõi niche](phase-23-tracking.md).
+   Nên thêm lịch nhắc vào [Phase 41 · Theo dõi niche](phase-41-tracking.md).
 7. **Tách tool lớn (unbundling).** Người dùng Excel / Notion / Photoshop chỉ để làm 1 việc nhỏ, lặp lại → làm app nhỏ đúng
    việc đó. Nguồn: Reddit, template bán chạy. **Chưa có**, làm tay.
 8. **Template bán chạy.** Template Notion / Excel bán tốt nghĩa là có quy trình người ta muốn có app. Nguồn: Etsy (tay).
    **Chưa có**, làm tay.
 9. **Extension nhiều người dùng mà điểm thấp.** Nguồn: Chrome Web Store (tay), Firefox AMO (API). **Chưa có**, làm tay.
 10. **Jobs-to-be-Done từ review.** Đọc review theo "lúc nào dùng · để xong việc gì · vì sao đổi app". Nguồn: App Store,
-    Google Play. **Có** ([Phase 12](phase-12-competitor-complaints.md) cùng lệnh `mine` của `/app-research`).
+    Google Play. **Có** ([Phase 18](phase-18-competitor-complaints.md) cùng lệnh `mine` của `/app-research`).
 11. **Việc lặp lại trên Upwork / Fiverr.** Việc người ta trả tiền thuê làm tay mỗi tuần. **Chưa có**, làm tay.
 12. **Search Console của mình.** Câu có nhiều lượt hiện mà trang mình chưa trả lời. Nguồn: GSC qua MCP. **Chưa có trong
     app.** Làm tay qua MCP khi có khoá.
 
 ## Đề xuất top 3 (đã duyệt 2026-10-26)
 
-**Anh duyệt cả 3:** A + C gộp thành [Phase 10b · Q&A Gap](phase-10b-qa-gap.md), B thành
-[Phase 10c · GitHub Feature Request Gap](phase-10c-github-gap.md). Làm trước Phase 12.
+**Anh duyệt cả 3:** A + C gộp thành [Phase 12 · Q&A Gap](phase-12-qa-gap.md), B thành
+[Phase 13 · GitHub Feature Request Gap](phase-13-github-gap.md). Làm trước Phase 12.
 
-Cả 3 đều là API miễn phí, không cần trả tiền, và **dùng lại khung của Phase 10**: chuyên mục + chủ đề → bảng gap → bài
+Cả 3 đều là API miễn phí, không cần trả tiền, và **dùng lại khung của Phase 11**: chuyên mục + chủ đề → bảng gap → bài
 gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một nguồn trong bảng gap, không cần trang mới.
 
 **A · Stack Exchange Q&A Gap** (Ask Different + Super User + Software Recommendations)
@@ -833,6 +833,6 @@ gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một n
   mining. Niche Radar chọn app phần mềm.
 - **Google Maps (35):** chưa xét ở phase này, vì đây là nguồn cho business địa phương, không phải app. Giữ nguyên, xét
   khi tới.
-- **Thứ tự gợi ý:** A + C (gộp) và B làm ngay sau Phase 10, trước Phase 12. Lý do: cả hai dùng chung bảng gap vừa làm
-  xong, và cho thêm dữ liệu để Phase 12–13 chấm.
+- **Thứ tự gợi ý:** A + C (gộp) và B làm ngay sau Phase 11, trước Phase 12. Lý do: cả hai dùng chung bảng gap vừa làm
+  xong, và cho thêm dữ liệu để Phase 18–19 chấm.
 

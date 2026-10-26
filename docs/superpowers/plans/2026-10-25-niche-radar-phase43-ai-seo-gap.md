@@ -1,11 +1,11 @@
-# Niche Radar Phase 43 — Chỗ trống AI + SEO — Implementation Plan
+# Niche Radar Phase 60 — Chỗ trống AI + SEO — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** gộp kệ Google + kệ AI thành điểm **"kệ yếu"** công thức cố định, đưa vào bảng so sánh niche. Không AI.
 
-**Spec:** [Phase 43 · Chỗ trống AI + SEO](../../web/phase-43-ai-seo-gap.md) · **Cần trước:** Phase 41, 42, 28.
+**Spec:** [Phase 60 · Chỗ trống AI + SEO](../../web/phase-60-ai-seo-gap.md) · **Cần trước:** Phase 58, 59, 28.
 
 ## Mục tiêu · làm · không làm
 
@@ -20,7 +20,7 @@
   - Kệ Google = % top 10 là `forum` + `blog nhỏ`, trừ điểm khi có `app chính chủ` đứng top 3.
   - Kệ AI = % câu trả lời yếu − phạt độ tập trung (1 app > 50% lượt nhắc) + điểm khi trang được trích là loại mình viết được (blog / so sánh).
 - Trọng số khởi đầu đều; chốt sau 3 niche thật, ghi vào trang phase + lý do. Đổi trọng số → test cập nhật.
-- "Câu chưa ai trả lời tốt" = câu có kệ Google dễ **và** kệ AI yếu → lưu để Phase 44 đọc.
+- "Câu chưa ai trả lời tốt" = câu có kệ Google dễ **và** kệ AI yếu → lưu để Phase 61 đọc.
 
 ## File đụng tới
 

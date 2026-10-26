@@ -1,11 +1,11 @@
-# Niche Radar Phase 77 — Local App 4.0 — Implementation Plan
+# Niche Radar Backlog 19 — Local App 4.0 — Implementation Plan
 
-> **For agentic workers:** chỉ làm khi bản Web **xong Version 9**. Chỉ gói Phase 41–44 đã xong ở Web. Build chỉ bằng `npm run mac`.
+> **For agentic workers:** chỉ làm khi bản Web **xong Version 9**. Chỉ gói Phase 58–61 đã xong ở Web. Build chỉ bằng `npm run mac`.
 > Steps dùng checkbox (`- [ ]`).
 
-**Goal:** gói kệ Google, kệ AI, cột kệ yếu, gói GEO (Phase 41–44) vào app Mac.
+**Goal:** gói kệ Google, kệ AI, cột kệ yếu, gói GEO (Phase 58–61) vào app Mac.
 
-**Spec:** [Phase 77 · Local App 4.0](../../app/phase-77-local-app-4.md) · **Cần trước:** Phase 76, Phase 45 (đã soát ở Web).
+**Spec:** [Backlog 19 · Local App 4.0](../../app/phase-backlog-19-local-app-4.md) · **Cần trước:** Backlog 18, Phase 62 (đã soát ở Web).
 
 ## Mục tiêu · làm · không làm
 
@@ -25,7 +25,7 @@
 
 - `web/src/lib/geo/engines.ts` — tìm binary theo danh sách chỗ + cài đặt đường dẫn
 - `app/src-tauri/entitlements.plist` — kiểm quyền chạy tiến trình con
-- `docs/app/phase-77-local-app-4.md`, `CHANGELOG.md`
+- `docs/app/phase-backlog-19-local-app-4.md`, `CHANGELOG.md`
 
 ## Tasks
 

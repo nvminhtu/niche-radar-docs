@@ -1,11 +1,11 @@
-# Niche Radar Phase 74 — Local App 1.0 (app Mac) — Implementation Plan
+# Niche Radar Phase 17 — Local App 1.0 (app Mac) — Implementation Plan
 
 > **For agentic workers:** phần lớn đã xong (2026-10-25, `.dmg` ký + notarize). Còn lại là **kiểm trên máy sạch**. Build chỉ bằng `npm run mac`.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** bản Web thành app Mac bấm là mở — không cần Node, không gõ lệnh.
 
-**Spec:** [Phase 74 · Local App 1.0](../../app/phase-74-local-app-1.md) · spec gốc [Phase 8 · Local App](../specs/2026-10-24-niche-radar-phase8-local-app.md).
+**Spec:** [Phase 17 · Local App 1.0](../../app/phase-17-local-app-1.md) · spec gốc [Phase 8 · Local App](../specs/2026-10-24-niche-radar-phase8-local-app.md).
 
 ## Mục tiêu · làm · không làm
 
@@ -13,7 +13,7 @@
   RAM nghỉ ≤ 300 MB · xuất project → nhập máy khác bằng dòng, không nhân đôi · backup → xoá DB → restore đủ · DB thật lên ULID không mất dòng ·
   test xanh, `npm run dev` vẫn chạy.
 - **Làm:** phần còn lại — thử máy sạch, ghi số.
-- **Không làm:** tính năng tra cứu mới · đăng nhập / sync / license · Windows ([Phase 82](2026-10-26-niche-radar-phase82-windows-app.md)), auto-update ([Phase 81](2026-10-25-niche-radar-phase81-release-auto-update.md)).
+- **Không làm:** tính năng tra cứu mới · đăng nhập / sync / license · Windows ([Phase 35](2026-10-26-niche-radar-phase82-windows-app.md)), auto-update ([Phase 36](2026-10-25-niche-radar-phase81-release-auto-update.md)).
 
 ## Global Constraints
 
@@ -23,7 +23,7 @@
 ## File đụng tới
 
 - `app/scripts/build-mac.sh`, `app/src-tauri/*` — đã có
-- `docs/app/phase-74-local-app-1.md` — kết quả thử máy sạch
+- `docs/app/phase-17-local-app-1.md` — kết quả thử máy sạch
 
 ## Tasks
 
