@@ -4,7 +4,7 @@
 > (gói Claude, ChatGPT / Codex) hoặc AI chạy trên máy (Ollama). Học đúng câu của Wow Keywords:
 > *"No second subscription — runs on the AI you already pay for."*
 
-<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.2 Thư mục AI + 26.3 MCP + 26.4 Khung chat xong 2026-10-26 · còn 26.5 Terminal (đợt 2), 26.6 Cài đặt AI</span>
+<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.2 Thư mục AI + 26.3 MCP + 26.4 Khung chat xong 2026-10-26 · 26.6 Cài đặt AI đang làm (nút AI chung + chọn AI từng việc + Gemini CLI code xong) · còn 26.5 Terminal (đợt 2)</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được 70 % việc.**
@@ -256,6 +256,15 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
 - Không nối AI nào → mọi nút AI hiện "Nối AI để dùng" + link Setup; phần không AI chạy đủ
 - Bước "Nối AI" trong Setup lần đầu ([Phase 24](../web/phase-24-setup.md)) — Wow Keywords bắt buộc nối 1 AI;
   mình **cho bỏ qua** vì phần không AI vẫn có giá trị
+
+**Kết quả 26.6 (2026-10-26) — đang làm, phần đầu code xong**
+
+- ✅ Nút **Chạy bằng AI** dùng chung (`web/src/components/AiRunButton.tsx`, icon đũa phép) + ô chọn AI có trên máy, mặc định là tuyến ở
+  Cài đặt; gắn vào Chủ đề than, Tóm tắt, Test bán trước, Feature Gap. API `GET /api/ai/choices`, các việc AI nhận `{ route }`
+- ✅ Tuyến **Gemini CLI** (`geminiAsk`) trong Cài đặt + Kiểm tra máy — cần `GEMINI_API_KEY` vì tài khoản Google cá nhân bị chặn cho CLI
+  (`IneligibleTierError`, đo 2026-10-26); khung chat chưa chạy bằng Gemini
+- ✅ 414 test xanh, typecheck sạch · ⚪ chưa chạy thật 4 khối bằng từng AI trên DB thật
+- ⚪ Còn: sổ dùng AI (token · thời gian từng lần), "Nối AI để dùng" + link Setup khi chưa nối
 
 <div class="box box--rules" markdown>
 **Luật an toàn — máy chủ local mở được AI và Terminal thì phải khoá kỹ**
