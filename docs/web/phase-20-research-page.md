@@ -11,6 +11,8 @@ xếp các khối: đối thủ, Trends, Feature Gap, chủ đề than, TrustMRR
 thứ tự chưa theo câu hỏi chọn niche, trang dài, nguồn lỗi phải tra lại cả lượt.
 </div>
 
+**Cần xong trước:** [Phase 12](phase-12-competitor-complaints.md) (lời chê) · [Phase 13](phase-13-niche-health.md) (điểm + cờ) · [Phase 17](phase-17-ai-summary.md) (tóm tắt) · [Phase 18](phase-18-revenue.md) (ai thu tiền) · [Phase 22](phase-22-competitor-profile.md) (cờ trên bảng đối thủ) · **làm sau Phase 22** dù số nhỏ hơn: trang này sắp lại các khối mà 12–22 thêm vào
+
 ## Làm gì
 
 | | |

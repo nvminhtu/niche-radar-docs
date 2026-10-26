@@ -10,6 +10,8 @@
 copy được danh sách. Mới gom được keyword / niche, từng cái một, không ghi số lúc gom.
 </div>
 
+**Cần xong trước:** [Phase 8](phase-8-project-data.md) (project + `.niche.json`) · [Phase 12](phase-12-competitor-complaints.md) (lời chê để gom)
+
 ## Chạy thế nào
 
 ```mermaid
@@ -34,12 +36,16 @@ flowchart LR
 | :material-note-edit: **Ghi chú 1 dòng** | ô ghi chú tuỳ chọn ngay lúc gom ("long-tail cho bản Mac") |
 | :material-content-duplicate: **Không trùng** | cùng item cùng project → báo "đã có" + cập nhật số mới, không thêm dòng |
 | :material-undo: **Hoàn tác** | thanh báo "Đã thêm 20 vào Project X · Hoàn tác" |
+| :material-keyboard: **Phím tắt** | đang chọn dòng trong bảng → bấm `C` mở Collect (gom nhanh khi lướt bảng dài) |
 
 <div class="box box--rules" markdown>
 **Luật**
 
 - Item giữ khoá ULID + nguồn gốc, đi theo gói `.niche.json` (nhập máy khác không nhân đôi — như Phase 8)
 - Số chụp lúc gom không bị ghi đè khi tra lại; số mới nằm ở [Phase 23](phase-23-tracking.md)
+- **Một migration chung cho Phase 14 + 15**: thêm luôn cột / bảng Phase 15 cần (thẻ, lưu trữ, bước tiếp, trạng thái +
+  lý do + thứ tự item, nhật ký) để DB thật chỉ nâng 1 lần, backup 1 lần, test round-trip `.niche.json` 1 lần. Phase 15
+  chỉ làm logic + UI trên schema đã có
 </div>
 
 <div class="box box--star" markdown>
@@ -48,12 +54,13 @@ flowchart LR
 - Gom được từ đủ 6 chỗ ở trên, mỗi loại hiện đúng cột trong project
 - Gom 20 keyword 1 lần < 2 giây; gom lại → 0 dòng trùng
 - Xuất / nhập project vẫn đủ item + số chụp (test round-trip)
+- DB thật lên schema chung 14 + 15, 0 dòng mất (đếm trước / sau)
 - Test xanh, screenshot popover + project đã Read
 </div>
 
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Sắp xếp, lọc, gộp project — [Phase 15](phase-15-project-manage.md)
+- Sắp xếp, lọc, gộp project — [Phase 15](phase-15-project-manage.md) (cột cho Phase 15 thêm sẵn ở migration chung, chưa có UI)
 - Đồng bộ project lên mạng — [Phase 63](phase-63-project-sync.md)
 </div>

@@ -19,7 +19,9 @@
 - **Không tự xoá keyword**: lọc / gộp chỉ gắn cờ (`filtered`, `mergedInto`) trên `explore_nodes`; mục "đã lọc" bỏ lọc được.
 - Luật lọc + danh sách chặn (thương hiệu, tên app top) trong `web/src/lib/explore-rules.ts`, sửa được ở Cài đặt (lưu `settings`).
 - Gộp cùng nghĩa bằng khoá chuẩn hoá: gốc từ + bỏ stopword ("app", "for") + sắp từ; giữ biến thể bên trong nút.
-- Research hàng loạt: **lần lượt** (1 lượt một lúc), dùng `startResearch` + hàng đợi trong bộ nhớ server; giữ rate limit hiện có.
+- Research hàng loạt: **lần lượt** (1 lượt một lúc), dùng `startResearch` + hàng đợi **lưu ở bảng `research_queue`** (không
+  chỉ trong bộ nhớ): server khởi động lại thì lá `running` dở về `queued` và chạy tiếp. Giữ rate limit hiện có. Phase 23
+  dùng chung hàng đợi này.
 - Nhãn "ước lượng — không phải lượt tìm thật" giữ nguyên cạnh điểm cơ hội.
 
 ## File đụng tới
@@ -52,6 +54,7 @@
 
 ### Task 5: Research hàng loạt
 - [ ] Tick 3–10 lá → hàng đợi lần lượt + tiến độ; bị chặn → hoãn, báo. Test với deps giả.
+- [ ] Khởi động lại giữa chừng: `resumeQueue()` lúc server start. Test: 5 lá, dừng sau lá 2 → chạy tiếp 3 lá, không chạy lại lá đã xong.
 
 ### Task 6: Bản đồ ngách
 - [ ] Nhóm theo ý định (tính năng · đối tượng · nền tảng · khác — dùng `classify`), lọc nhóm, tìm keyword.
@@ -62,3 +65,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan. Explore hiện ~6 phút / niche.
+- 2026-10-26: review plan — hàng đợi lưu DB, chạy tiếp sau khi tắt server (Phase 23 dùng chung).

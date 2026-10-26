@@ -5,7 +5,9 @@
 
 **Goal:** mở trang là trả lời được **"niche này có đáng xem tiếp không"** trong 30 giây; nguồn lỗi biết ngay, chạy lại đúng nguồn đó.
 
-**Spec:** [Phase 20 · Trang kết quả Research](../../web/phase-20-research-page.md) · **Cần trước:** Phase 12, 13, 18 (số cho hàng đầu trang).
+**Spec:** [Phase 20 · Trang kết quả Research](../../web/phase-20-research-page.md) · **Cần trước:** Phase 12, 13, 17, 18 (số cho hàng đầu trang),
+Phase 22 (cột cờ trên bảng đối thủ). **Làm sau Phase 22 dù số nhỏ hơn** — trang này sắp lại các khối mà 12–22 thêm vào;
+làm trước thì phải sắp lại lần nữa.
 
 ## Mục tiêu · làm · không làm
 
@@ -58,3 +60,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: review plan — thêm Phase 17, 22 vào Cần trước; thứ tự làm thật: sau Phase 22.

@@ -11,6 +11,8 @@ rời top 10, rating ≥ 0,1★, nhãn tiền, số keyword, Trends, điểm v2)
 `project_snapshots`.
 </div>
 
+**Cần xong trước:** [Phase 12](phase-12-competitor-complaints.md) (lời chê mới nổi) · [Phase 13](phase-13-niche-health.md) (lịch sử điểm) · [Phase 21](phase-21-explore-tree.md) (hàng đợi lần lượt) · [Phase 22](phase-22-competitor-profile.md) (cờ bỏ bê)
+
 ## Làm gì
 
 | | |
@@ -18,7 +20,7 @@ rời top 10, rating ≥ 0,1★, nhãn tiền, số keyword, Trends, điểm v2)
 | :material-calendar-sync: **Tự chạy theo lịch** | project bật theo dõi → khi server đang chạy và đến hạn, tự tra lại lần lượt (ban đêm / lúc máy rảnh), giới hạn số lượt mỗi ngày |
 | :material-bell-ring: **Chỉ báo cái đáng chú ý** | luật: đối thủ mới vào top 5 · đối thủ `bỏ bê` vừa cập nhật · giá / gói đổi · Trends trung bình đổi ≥ 20% · điểm v2 đổi ≥ 1 · lời chê mới nổi. Còn lại gom thành "không có gì mới" |
 | :material-inbox: **Hộp tin thay đổi** | trang chủ có hộp "Thay đổi tuần này" theo project; bấm vào mở so sánh 2 lần chụp |
-| :material-chart-timeline-variant: **Dòng thời gian** | trang project: biểu đồ điểm v2, số đối thủ, Trends qua các lần chụp; chấm trên biểu đồ = 1 lần chụp |
+| :material-chart-timeline-variant: **Dòng thời gian** | trang project: biểu đồ điểm v2 (lịch sử điểm của [Phase 13](phase-13-niche-health.md)), số đối thủ, Trends qua các lần chụp; chấm trên biểu đồ = 1 lần chụp. Đây là **chỗ duy nhất** vẽ điểm theo thời gian |
 | :material-account-eye: **Theo dõi đối thủ** | đối thủ đã collect: theo dõi riêng giá, rating, lần cập nhật |
 | :material-cog: **Chọn nhịp** | 7 / 30 / 90 ngày hoặc tắt, từng project |
 

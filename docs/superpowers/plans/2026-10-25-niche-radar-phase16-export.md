@@ -5,7 +5,8 @@
 
 **Goal:** **một nút Xuất chung**: phạm vi × định dạng. Excel / Sheets mở được, code đọc được, có **gói cho LLM** không vượt trần token.
 
-**Spec:** [Phase 16 · Export](../../web/phase-16-export.md) · **Cần trước:** Phase 12 (lời chê), Phase 13 (điểm + cờ), Phase 14 (item theo loại).
+**Spec:** [Phase 16 · Export](../../web/phase-16-export.md) · **Cần trước:** Phase 10 (bảng Reddit Gap, `lib/reddit-gap.ts`),
+Phase 12 (lời chê), Phase 13 (điểm + cờ), Phase 14 (item theo loại).
 
 ## Mục tiêu · làm · không làm
 
@@ -18,7 +19,7 @@
 ## Global Constraints
 
 - **Một nguồn dữ liệu**: `web/src/lib/export/dataset.ts` dựng `Dataset` (keywords · competitors · complaints · gaps · trends ·
-  scores) cho một phạm vi (run / exploration / project / toàn bộ). Mọi định dạng render từ `Dataset` → cùng số (test so chéo).
+  scores · reddit_gaps) cho một phạm vi (run / exploration / project / subreddit / toàn bộ). Mọi định dạng render từ `Dataset` → cùng số (test so chéo).
 - CSV: UTF-8 có BOM, cột tiếng Anh `snake_case` cố định, ngày ISO, số thô (không định dạng địa phương), dùng lại `csvCell`.
 - JSON có `format: "niche-radar/export"` + `schema_version`; JSON Schema ở `docs/export-schema.md` (+ file `.json` trong `docs/`).
   Đổi tên cột = tăng `schema_version` + CHANGELOG.
@@ -41,7 +42,8 @@
 ## Tasks
 
 ### Task 1: Dataset chung
-- [ ] `dataset.ts` cho 4 phạm vi; mỗi dòng có `source` + `fetched_at`.
+- [ ] `dataset.ts` cho 5 phạm vi (thêm subreddit — đọc `lib/reddit-gap.ts`); mỗi dòng có `source` + `fetched_at`.
+- [ ] Nút Tải .md của trang Reddit Gap gọi qua lớp mới (giữ nội dung top 20 gap + 3 link mẫu).
 - [ ] Test: dataset của 1 run fixture có đủ 6 bảng, số khớp `run-view`.
 
 ### Task 2: CSV + JSON / JSONL
@@ -60,8 +62,10 @@
 
 ### Task 5: Chạy thật + soát
 - [ ] 3 niche: mở CSV trong Numbers + Google Sheets (screenshot), validate JSON, gói LLM ≤ 8k, dán vào Claude hỏi 5 câu → ghi kết quả.
+- [ ] Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand, ghi danh sách mục vào test).
 - [ ] Đưa gói Markdown cho `/app-demand` đọc thử. Chip phase, ROADMAP, CHANGELOG.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: review plan — thêm phạm vi Reddit Gap (Phase 10) và test gói Markdown khớp `/app-demand`.

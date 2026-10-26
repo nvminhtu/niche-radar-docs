@@ -9,7 +9,11 @@
 **Hiện có (bản đầu ở Phase 1–2).** `complaints.ts` đếm cụm 1–3 từ trong review 1–2★ của top app Play + iOS, giữ cụm
 xuất hiện ≥ 3 review, kèm câu trích. Chạy nhanh, không AI — nhưng còn trùng ý ("crash" · "keeps crashing"), không biết
 app nào bị chê, không tách lỗi với thiếu tính năng, bỏ qua review 3★ (chỗ người dùng nói "ước gì").
+Mỗi app chỉ đọc **150 review mới nhất** (Play) và **60** (App Store, proxy apps.apple.com vì RSS đã chết), cache bị ghi
+đè mỗi 7 ngày — app lớn thì 150 review chỉ phủ vài ngày, nên **không so được "90 ngày trước"** từ một lần lấy.
 </div>
+
+**Cần xong trước:** [Phase 2](phase-2-app-store.md) (review iOS) · [Phase 9](phase-9-small-features.md) (bảng mức nặng)
 
 ## Chạy thế nào
 
@@ -19,7 +23,7 @@ flowchart LR
   N --> C[Cụm lời chê]
   C --> T[Gắn loại<br/>luật từ khoá]
   C --> A[Bảng app × cụm]
-  C --> H[Mới nổi<br/>90 ngày vs trước]
+  C --> H[Mới nổi<br/>so lần lấy trước]
   R --> W[Câu 'ước gì'<br/>review 3★]
 ```
 
@@ -27,11 +31,12 @@ flowchart LR
 
 | | |
 |---|---|
-| :material-database-arrow-down: **Lấy đủ review** | top 5 app mỗi store, ≤ 200 review / app, có ngày + số sao + phiên bản; thêm review **3★** cho phần "ước gì". Cache 7 ngày như hiện tại |
+| :material-database-arrow-down: **Lấy đủ review** | top 5 app mỗi store: Play 200 review mới nhất / app (hiện 150), App Store 100 (5 trang × 20, hiện 60 — gọi thưa như cũ). Giữ **1–3★** (hiện chỉ 1–2★; 3★ cho phần "ước gì"), có ngày + số sao; phiên bản chỉ Play có. Cache 7 ngày như hiện tại |
+| :material-history: **Nhớ review đã thấy** | mỗi lần lấy, review mới ghi vào lịch sử theo app (khoá = hash nội dung, ngày thấy lần đầu) — **không ghi đè** như cache. Đây là nền cho "mới nổi" và cho cache AI ở [Phase 17](phase-17-ai-summary.md) |
 | :material-merge: **Gộp cùng ý** | gốc từ (crash / crashes / crashing), bảng đồng nghĩa sửa được (`ads` = `advertisement` = `commercials`), bỏ tên app + tên thương hiệu khỏi cụm |
 | :material-tag-multiple: **Loại lời chê** | luật từ khoá: Lỗi / crash · Mất dữ liệu · Ép trả phí / giá · Quảng cáo · Thiếu tính năng · Khó dùng · Đồng bộ / tài khoản · Khác. Dùng chung bảng mức nặng của Phase 9 |
 | :material-table-account: **App nào bị chê gì** | bảng app × loại lời chê, ô = số review + bấm ra câu trích. Thấy ngay app nào yếu ở đâu |
-| :material-trending-up: **Mới nổi** | so 90 ngày gần nhất với trước đó: cụm tăng mạnh gắn nhãn "mới nổi" (thường là bản cập nhật hỏng hoặc vừa đổi giá) |
+| :material-trending-up: **Mới nổi** | so review **mới thấy ở lần lấy này** với lịch sử đã lưu: cụm có ≥ 3 review mới và tỉ lệ ≥ 2× trước đó → "mới nổi" (thường là bản cập nhật hỏng hoặc vừa đổi giá). App nhỏ mà 200 review đã phủ ≥ 180 ngày thì so thẳng theo ngày (90 ngày gần nhất vs 90 ngày trước). Lần lấy đầu, chưa đủ ngày → ghi "chưa có lần trước để so", không đoán |
 | :material-lightbulb-on: **Người dùng ước gì** | lọc câu "wish / would be nice / please add / missing / need a way to" ở review 1–3★ → danh sách tính năng được xin, đếm số lần |
 | :material-filter: **Lọc + mở gốc** | lọc theo store, app, loại, khoảng thời gian; câu trích bấm mở đúng trang review / app |
 | :material-file-export: **Ra ngoài** | cụm + câu trích vào evidence pack và gói xuất ([Phase 16](phase-16-export.md)) |
@@ -51,6 +56,7 @@ flowchart LR
 - Gộp cùng ý làm số cụm trùng ý giảm rõ (đếm trước / sau trên cùng 3 niche, ghi số)
 - Bảng app × loại đọc được ở 1340px, mọi ô bấm ra câu trích đúng app
 - Danh sách "ước gì" có ≥ 5 dòng ở ít nhất 2 / 3 niche
+- Mới nổi: test 2 lần lấy giả (cụm tăng / không tăng) đúng nhãn; niche thật lần đầu hiện "chưa có lần trước để so"
 - Test xanh, screenshot đã Read
 </div>
 

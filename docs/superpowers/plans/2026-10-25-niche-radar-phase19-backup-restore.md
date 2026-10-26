@@ -26,6 +26,8 @@
   không `rm` thẳng.
 - Restore luôn tạo bản an toàn trước; bản trượt kiểm không cho restore.
 - Giờ lấy qua tham số `now` để test giả lập 3 ngày.
+- Thư mục dữ liệu lấy từ `lib/paths.ts` (bản Web `web/data/`, app Mac `~/Library/Application Support/niche-radar/` qua
+  `NR_DATA_DIR` do vỏ Tauri đặt) — không ghi cứng đường dẫn; Cài đặt hiện đường dẫn thật.
 
 ## File đụng tới
 
@@ -61,8 +63,10 @@
 - [ ] Cài đặt → Dữ liệu + chân trang "Backup cuối: hôm nay 09:12 · 14 MB", báo vàng > 3 ngày không có bản tốt.
 
 ### Task 6: Soát
-- [ ] Chạy kịch bản Xong khi trên thư mục dữ liệu tạm; screenshot Cài đặt → Dữ liệu 1340 + 375, Read. Chip, ROADMAP, CHANGELOG.
+- [ ] Chạy kịch bản Xong khi trên thư mục dữ liệu tạm; screenshot Cài đặt → Dữ liệu 1340 + 375, Read.
+- [ ] Mở app Mac bản dev (`npm run mac` hoặc chạy sidecar với `NR_DATA_DIR` của app) → backup ghi đúng thư mục app. Chip, ROADMAP, CHANGELOG.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: review plan — ghi rõ 2 thư mục dữ liệu (Web / app Mac), kiểm cả trên app Mac.

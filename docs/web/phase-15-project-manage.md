@@ -11,6 +11,8 @@ kết luận, ghi chú, mô tả, xuất / nhập, theo dõi định kỳ 7 / 30
 sách phẳng.
 </div>
 
+**Cần xong trước:** [Phase 14](phase-14-collect.md) (item có loại + schema chung 14 + 15)
+
 ## Làm gì
 
 | | |
@@ -22,19 +24,21 @@ sách phẳng.
 | :material-sort: **Xếp ưu tiên item** | kéo thả hoặc sắp theo điểm; trạng thái từng item (giữ / ứng viên / loại) — **loại phải ghi lý do** |
 | :material-flag-checkered: **Bước tiếp** | mỗi project có 1 dòng "bước tiếp" + ngày hẹn; trang danh sách hiện project đến hạn trước |
 | :material-timeline-text: **Nhật ký** | ghi tự động: thêm / loại item, đổi trạng thái, đổi kết luận, lần chụp số — xem lại vì sao đã quyết |
+| :material-compare-horizontal: **So 2 project nhanh** | chọn 2 project → bảng cạnh nhau: điểm v2, số đối thủ, lời chê nặng nhất, ai thu tiền, xu hướng. Bản rút gọn — so nhiều niche đầy đủ ở [Phase 28](phase-28-compare-niche.md) |
 | :material-rocket-launch: **Ra pipeline** | nút "Làm evidence pack" và "Mở /app-demand" với project đã là ứng viên ([Phase 24](phase-24-evidence-presell.md)) |
 
 <div class="box box--rules" markdown>
 **Luật**
 
 - Không xoá cứng từ danh sách: lưu trữ trước, xoá hẳn phải xác nhận + có backup tự động ngay trước đó
-- Mọi trường mới (thẻ, lý do loại, bước tiếp, nhật ký) đi theo gói `.niche.json` và migration có backup
+- Mọi trường mới (thẻ, lý do loại, bước tiếp, nhật ký) đi theo gói `.niche.json`. **Schema đã thêm sẵn ở migration chung
+  của [Phase 14](phase-14-collect.md)** — phase này không nâng DB lần nữa
 </div>
 
 <div class="box box--star" markdown>
 **Xong khi**
 
-- DB thật (mọi project hiện có) lên schema mới, 0 dòng mất (đếm trước / sau)
+- Dùng đúng schema chung của Phase 14, không thêm migration; mọi trường mới round-trip qua `.niche.json`
 - Tìm 1 keyword ra đúng project chứa nó; lọc thẻ + trạng thái cùng lúc chạy đúng
 - Gộp 2 project có item trùng → không nhân đôi, nhật ký ghi lại
 - Trang project đọc được ở 1340px và 375px, screenshot đã Read

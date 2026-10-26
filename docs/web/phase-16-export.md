@@ -10,6 +10,8 @@
 Mỗi chỗ một kiểu, tên cột chưa thống nhất, chưa có tài liệu định dạng, chưa có bản gọn cho AI.
 </div>
 
+**Cần xong trước:** [Phase 10](phase-10-reddit-gap.md) (bảng gap) · [Phase 12](phase-12-competitor-complaints.md) (lời chê) · [Phase 13](phase-13-niche-health.md) (điểm + cờ) · [Phase 14](phase-14-collect.md) (item theo loại)
+
 ## Chạy thế nào
 
 ```mermaid
@@ -27,7 +29,8 @@ flowchart LR
 | | |
 |---|---|
 | :material-export-variant: **Hộp thoại Xuất chung** | cùng một hộp ở Research, Explore, Project, Cài đặt → Dữ liệu; nhớ lựa chọn lần trước |
-| :material-file-delimited: **CSV** | UTF-8 có BOM (Excel đọc đúng tiếng Việt), tên cột tiếng Anh `snake_case` cố định, ngày ISO, số không định dạng địa phương; mỗi bảng 1 file: keywords · competitors · complaints · gaps · trends · scores |
+| :material-file-delimited: **CSV** | UTF-8 có BOM (Excel đọc đúng tiếng Việt), tên cột tiếng Anh `snake_case` cố định, ngày ISO, số không định dạng địa phương; mỗi bảng 1 file: keywords · competitors · complaints · gaps · trends · scores · reddit_gaps |
+| :material-reddit: **Phạm vi Reddit Gap** | thêm phạm vi "1 subreddit" cho bảng gap của [Phase 10](phase-10-reddit-gap.md) (chủ đề × chuyên mục + link bài gốc); nút Tải .md cũ của Reddit Gap chuyển sang hộp Xuất chung |
 | :material-code-json: **JSON / JSONL** | cùng dữ liệu, có `format` + `schema_version`, kèm JSON Schema trong docs; JSONL cho bảng lớn (mỗi dòng 1 bản ghi) |
 | :material-language-markdown: **Markdown** | báo cáo đọc được: tóm tắt, bảng chính, nguồn + ngày — dán vào `research/*.md` |
 | :material-robot: **Gói cho LLM** | `brief.md` (front matter: niche, ngày, nguồn; số chính; bảng gọn top N; lời chê kèm câu trích; điểm + cờ) · `schema.md` giải thích từng cột · `prompt.md` câu hỏi mẫu ("niche này đáng làm không, vì sao, dẫn nguồn") |
@@ -48,7 +51,8 @@ flowchart LR
 - CSV mở trong Numbers + Google Sheets không vỡ dấu, không lệch cột (3 niche thật)
 - JSON của 3 niche qua JSON Schema; nhập lại project từ `.niche.json` vẫn chạy như Phase 8
 - Gói LLM 1 niche ≤ 8k token; dán vào Claude, hỏi 5 câu kiểm (top đối thủ, lời chê nhiều nhất, xu hướng…) → 5/5 đúng số
-- `/app-demand` đọc được gói Markdown không phải sửa tay
+- `/app-demand` đọc được gói Markdown không phải sửa tay — có test kiểm gói ra đúng các mục `/app-demand` đọc
+- Reddit Gap xuất được CSV + Markdown cùng số với bảng trên trang
 </div>
 
 <div class="box box--danger" markdown>

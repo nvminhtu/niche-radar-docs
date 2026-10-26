@@ -6,18 +6,23 @@
 **Goal:** trả lời "**có ai đang thu tiền thật không, bao nhiêu**" — số verified tách bạch với số ước.
 
 **Spec:** [Phase 18 · Doanh thu thật](../../web/phase-18-revenue.md) · **Cần trước:** Phase 6 (job TrustMRR, `cleanTrust`),
-Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + độ tin).
+Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + độ tin + back-test để chạy lại),
+Phase 10 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** bảng Bước 0 đủ nguồn ứng viên, quyết dùng / bỏ + lý do · 10 niche thật: đếm đối thủ có verified, kiểm tay
   10 dòng khớp tên (≥ 9 đúng) · bảng "Ai đang thu tiền" tách verified / ước, có trong evidence pack.
-- **Làm:** khớp tên chắc hơn (luật + AI xác nhận), dòng verified đủ trường, ước theo bậc, bảng "Ai đang thu tiền", nối điểm v2, làm mới.
+- **Xong khi (thêm):** chạy được không cần Claude in Chrome — tuyến C nhập ≥ 10 trang đã lưu thật, đọc đúng số · back-test
+  Phase 13 chạy lại, bảng trước / sau.
+- **Làm:** tuyến C nhập trang đã lưu, khớp tên chắc hơn (luật + AI xác nhận), dòng verified đủ trường, ước theo bậc, bảng "Ai đang thu tiền", nối điểm v2, làm mới, chạy lại back-test.
 - **Không làm:** mua dữ liệu trả phí · mô hình ước doanh thu phức tạp · dự báo doanh thu app mình.
 
 ## Global Constraints
 
-- Không quét trang cấm quét (TrustMRR); không đăng nhập thay anh; job Claude in Chrome do anh bấm.
+- Không quét trang cấm quét (TrustMRR): tool **không tự gọi** trustmrr.com. Đường chính là **tuyến C** — anh tự mở link
+  tool đưa, Cmd + S, nhập file (như Reddit Gap Phase 10). Job Claude in Chrome là tuyến phụ: Chrome không nối được 5 lần
+  tới 2026-10-25, nên không Task nào được chỉ chạy qua job. Không đăng nhập thay anh.
 - **Verified** = có số nguyên văn trên trang + link + ngày sync + ngày mình lấy. Thiếu một → không phải verified.
 - **Ước** chỉ theo bậc `$0 · <$1k · $1–10k · >$10k / tháng` từ giá × tín hiệu (Top Grossing, số rating); luôn nhãn "ước", không trộn cột.
 - Lượt tải không thay cho doanh thu.
@@ -29,6 +34,9 @@ Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + �
 | File | Việc |
 |---|---|
 | `docs/web/phase-18-revenue.md` | điền bảng Bước 0 |
+| `web/src/lib/revenue/import.ts` (mới) | đọc file `.html` / `.json` đã lưu (TrustMRR, trang /open) → dòng verified nguyên văn + link + ngày sync; chống nhân đôi theo (nguồn, link); mẫu theo `reddit-import.ts` |
+| `web/src/lib/revenue/links.ts` (mới) | danh sách link cần mở cho 1 niche (TrustMRR theo tên đối thủ, /open từ `developerWebsite`, câu tìm bài công khai) |
+| `web/src/db/schema.ts` + migration mới | `revenue_rows` (appId?, source, url, mrr, revenue30d, provider, syncedAt, fetchedAt, match, matchReason) |
 | `web/src/lib/revenue/match.ts` (mới) | điểm khớp luật (tên, dev, domain web) → `chắc · gần đúng · không khớp`; AI xác nhận (tuỳ chọn) kèm lý do |
 | `web/src/lib/revenue/estimate.ts` (mới) | bậc ước từ giá + Top Grossing + số rating, kèm lý do |
 | `web/src/lib/revenue/table.ts` (mới) | gộp verified (TrustMRR job, trang /open, bài công khai) + ước → bảng "Ai đang thu tiền" |
@@ -42,11 +50,15 @@ Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + �
 ## Tasks
 
 ### Task 0: Chọn nguồn (làm trước)
-- [ ] TrustMRR qua job: đo tỉ lệ khớp trên 10 niche.
+- [ ] TrustMRR qua tuyến C: anh lưu 3–5 trang (trang startup, tìm kiếm, top category) → xem đọc được trường nào; job Chrome chỉ thử nếu nối được.
 - [ ] Trang /open /stats của đối thủ: tìm link từ web đối thủ (listing cache có `developerWebsite`), đọc được không.
 - [ ] Bài công khai (Indie Hackers, X founder): tìm theo tên app — chỉ số có ngày + link.
 - [ ] Top Grossing RSS: có cho thể loại cần không.
 - [ ] Điền bảng Bước 0 (có số công khai · điều khoản · cần đăng nhập · độ phủ mobile · dùng / bỏ + lý do).
+
+### Task 0b: Tuyến C — nhập trang đã lưu
+- [ ] `links.ts` + khối "Link cần mở" (mỗi dòng: Mở · tên file gợi ý), `import.ts` + kéo thả nhiều file, báo từng file đọc được gì.
+- [ ] Fixture: trang TrustMRR + trang /open đã lưu (ẩn tên) → đúng MRR, ngày sync, link; nhập lại → 0 dòng mới; file lạ → báo "không đọc được", không đoán.
 
 ### Task 1: Khớp tên
 - [ ] `match.ts` luật + test (cùng dev, domain trùng, tên thương hiệu trước ":"). AI xác nhận khi có key, lưu lý do.
@@ -58,7 +70,8 @@ Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + �
 ### Task 3: Bảng + điểm v2 + làm mới
 - [ ] `table.ts` + `RevenueBlock`; verified và ước ở 2 cột riêng.
 - [ ] Yếu tố Tiền dùng verified trước. Test độ tin đổi theo nguồn.
-- [ ] Nhãn "cũ" > 30 ngày + nút tạo job tra lại.
+- [ ] Nhãn "cũ" > 30 ngày + nút mở lại link để lưu bản mới (hoặc tạo job).
+- [ ] Chạy lại back-test Phase 13 (Tiền giờ là "đo" ở niche có verified) → bảng trước / sau ở trang Phase 13.
 
 ### Task 4: Chạy thật + soát
 - [ ] 10 niche thật: đếm đối thủ có verified, kiểm tay 10 dòng khớp → bảng dưới.
@@ -67,6 +80,8 @@ Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 13 (yếu tố Tiền + �
 ## Tiến độ
 
 - 2026-10-25: viết plan. Đã có 1 khớp gần đúng (habit tracker) qua job TrustMRR ở Phase 6.
+- 2026-10-26: review plan — Claude in Chrome không nối được nên thêm tuyến C (nhập trang đã lưu) làm đường chính, job thành
+  tuyến phụ; thêm bảng `revenue_rows`; thêm bước chạy lại back-test Phase 13.
 
 ## Kết quả chạy thật
 

@@ -24,13 +24,16 @@
 - Khoá chống trùng đổi từ `(projectId, term, country)` sang `(projectId, kind, ref, country)`; với keyword `ref = term`.
 - Số chụp lúc gom **không** bị ghi đè khi gom lại; gom lại chỉ cập nhật `lastSeen` + `latest` (json) riêng.
 - Gói `.niche.json` (`BUNDLE_FORMAT`) tăng phiên bản, nhập được cả gói cũ; nhập máy khác không nhân đôi nhờ `uid`.
-- Migration số kế tiếp, `backupDb` trước; đếm dòng trước / sau (`countRows`).
+- **Một migration chung Phase 14 + 15** (số kế tiếp, `backupDb` trước; đếm dòng trước / sau `countRows`). Ngoài cột Phase 14
+  ở trên, thêm luôn phần Phase 15: `projects.tags` (json), `archivedAt`, `nextStep`, `nextDue` · `project_items.status`
+  (`giữ | ứng viên | loại`, mặc định `giữ`), `reason`, `rank` · bảng `project_log` (projectId, at, kind, detail json).
+  Phase 14 chỉ ghi / đọc phần của mình; phần Phase 15 để mặc định, chưa có UI. `BUNDLE_FORMAT` tăng **một lần** cho cả hai.
 
 ## File đụng tới
 
 | File | Việc |
 |---|---|
-| `web/src/db/schema.ts` + migration mới | cột mới `project_items`, index mới |
+| `web/src/db/schema.ts` + migration mới (chung 14 + 15) | cột mới `project_items` + `projects`, index mới, bảng `project_log` |
 | `web/src/lib/projects.ts` | `addItems(db, projectId, items[])` hàng loạt trong 1 transaction, trả `{ added, updated }`; `undoAdd(ids)` |
 | `web/src/lib/collect-snapshot.ts` (mới) | dựng `snapshot` theo loại từ `RunView` / explore view |
 | `web/src/lib/projects-client.ts` | `CollectTarget` có `kind/ref/snapshot/note`; nhớ project gần nhất (localStorage, try/catch) |
@@ -42,9 +45,11 @@
 
 ## Tasks
 
-### Task 1: Schema + migrate dữ liệu thật
-- [ ] Cột mới + index mới; migration chuyển item cũ (`kind = 'keyword'`, `ref = term`, sinh `uid`).
-- [ ] Test migrate trên bản sao DB có item cũ: 0 dòng mất.
+### Task 1: Schema chung 14 + 15 + migrate dữ liệu thật
+- [ ] Cột mới + index mới (Phase 14) **và** cột / bảng Phase 15 (xem Global Constraints) trong cùng 1 file migration;
+      chuyển item cũ (`kind = 'keyword'`, `ref = term`, sinh `uid`, `status = 'giữ'`).
+- [ ] `portable.ts`: xuất / nhập mọi cột mới (cả phần Phase 15, để trống cũng round-trip), đọc được gói cũ.
+- [ ] Test migrate trên bản sao DB có item cũ: 0 dòng mất; round-trip `.niche.json` giữ đủ trường 14 + 15.
 
 ### Task 2: API hàng loạt + chống trùng + hoàn tác
 - [ ] `POST /api/projects/:id/items` nhận 1 hoặc mảng item; trùng → cập nhật `latest`, trả "đã có".
@@ -56,10 +61,11 @@
       lời chê (cụm, số review, 3 câu trích) · khoảng trống (hàng, số app có, ô `?`) — kèm `runId`/`explorationId` + ngày.
 - [ ] Test mỗi loại.
 
-### Task 4: Popover + Collect ở 6 chỗ
+### Task 4: Popover + Collect ở 6 chỗ (+ phím `C`)
 - [ ] Popover: project gần nhất lên đầu, gõ tìm, tạo mới, ghi chú 1 dòng.
 - [ ] Gắn vào cây keyword, Top cơ hội, bản đồ ngách, bảng đối thủ, khối Đối thủ bị chê gì, ô Feature Gap "không ai có".
 - [ ] Ô tick nhiều dòng + nút "Collect N"; thanh báo "Đã thêm N vào Project X · Hoàn tác".
+- [ ] Phím `C` khi đang chọn dòng mở popover (bỏ qua khi đang gõ trong ô nhập).
 
 ### Task 5: Trang project + xuất / nhập
 - [ ] `ProjectPage`: nhóm item theo loại, cột riêng (icon, số chụp, ngày, ghi chú, link nguồn).
@@ -71,3 +77,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: review plan — gộp migration với Phase 15 (DB thật chỉ nâng 1 lần, `BUNDLE_FORMAT` tăng 1 lần); thêm phím `C`.

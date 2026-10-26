@@ -7,7 +7,8 @@
 bằng niche đã biết kết quả.
 
 **Spec:** [Phase 13 · Chấm sức khoẻ niche](../../web/phase-13-niche-health.md) · **Cần trước:** Phase 7 + 9 (`score-v2.ts`,
-`score-config.ts`, `HealthBlock.tsx`), Phase 12 (lời chê theo loại — cho cờ & giải thích "Đau").
+`score-config.ts`, `HealthBlock.tsx`), Phase 12 (lời chê theo loại — cho cờ & giải thích "Đau"). **Chạy lại back-test sau
+Phase 18** (Tiền đổi từ proxy sang đo) — Phase 18 có task riêng cho việc này.
 
 ## Mục tiêu · làm · không làm
 
@@ -33,6 +34,7 @@ bằng niche đã biết kết quả.
 | `web/src/lib/health-flags.ts` (mới) | 5 cờ: thương hiệu lớn ≥ 3/5 top · cần backend / tài khoản bắt buộc · tên loại bão hoà (4.3) · nội dung bản quyền · Trends giảm 2 năm |
 | `web/src/lib/score-config.ts` | ngưỡng mặc định + đọc / ghi ngưỡng có lý do |
 | `web/src/lib/health-summary.ts` (mới) | ghép câu kết luận từ mẫu |
+| `web/src/lib/health-next.ts` (mới) | "cần đo thêm gì": yếu tố ước / chưa đo → bước nâng lên (phase / nút) + % đo ước sau khi làm |
 | `web/src/db/schema.ts` + migration mới | `score_history` (runId, term, country, score, measuredPct, decision, flags json, takenAt) |
 | `web/src/server/app.ts` | `/research/:id/health` trả thêm `flags`, `summary`; `POST /settings/score-thresholds`; `GET /scores/history?term=` |
 | `web/src/components/HealthBlock.tsx` | bấm yếu tố mở chi tiết, nhãn độ tin, cờ, đoạn kết luận |
@@ -60,7 +62,10 @@ bằng niche đã biết kết quả.
 ### Task 4: Ngưỡng + lịch sử điểm
 - [ ] Ngưỡng ở Cài đặt, mỗi lần sửa bắt nhập lý do, lưu lịch sử.
 - [ ] Migration `score_history` (backup trước); ghi 1 dòng mỗi lần chấm xong.
-- [ ] Project hiện đường điểm theo thời gian (dùng `TrendLine`), nối Phase 23.
+- [ ] **Không vẽ biểu đồ ở đây** — dòng thời gian điểm làm 1 chỗ ở Phase 23 (đọc `score_history`).
+
+### Task 4b: Cần đo thêm gì
+- [ ] `health-next.ts` + dòng dưới điểm trong `HealthBlock`. Test: niche thiếu Trends → gợi ý chạy lại Trends; Tiền proxy → gợi ý Phase 18.
 
 ### Task 5: Kết luận không AI + back-test
 - [ ] `health-summary.ts`: "Tiền rõ (3 app thu subscription), đau vừa, cạnh tranh đông; cờ: thương hiệu lớn" → evidence pack.
@@ -73,3 +78,4 @@ bằng niche đã biết kết quả.
 ## Tiến độ
 
 - 2026-10-25: viết plan. Back-test cũ (Phase 7): 5 niche 4,5–5,4 điểm, chưa niche nào ≥ 6.
+- 2026-10-26: review plan — biểu đồ điểm chỉ làm ở Phase 23; back-test chạy lại sau Phase 18; thêm "cần đo thêm gì".

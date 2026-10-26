@@ -11,6 +11,8 @@ Hợp sức), trọng số sửa được + 4 mẫu (App Mac · iOS · Android �
 TEST THÊM / BỎ. Back-test 5 niche ra 4,5–5,4 điểm, chưa niche nào ≥ 6.
 </div>
 
+**Cần xong trước:** [Phase 9](phase-9-small-features.md) (điểm v2) · [Phase 12](phase-12-competitor-complaints.md) (lời chê theo loại cho yếu tố Đau) · back-test **chạy lại sau [Phase 18](phase-18-revenue.md)** (Tiền đổi từ ước sang đo)
+
 ## Làm gì
 
 | | |
@@ -20,7 +22,8 @@ TEST THÊM / BỎ. Back-test 5 niche ra 4,5–5,4 điểm, chưa niche nào ≥ 
 | :material-flag: **Cờ chặn** | luật cố định ép gợi ý xuống TEST THÊM / BỎ dù điểm cao: thương hiệu lớn chiếm ≥ 3 / 5 top · cần backend / tài khoản bắt buộc · tên loại app bão hoà (rủi ro 4.3) · nội dung có bản quyền · xu hướng giảm 2 năm liền. Mỗi cờ ghi lý do + nguồn |
 | :material-ruler: **Ngưỡng do anh đặt** | ngưỡng BUILD / TEST THÊM / BỎ sửa ở Cài đặt, mỗi lần sửa ghi lý do + ngày (giống Quyết định đã chốt) |
 | :material-history: **Back-test** | chấm lại các niche đã biết kết quả (app đã ra mắt của mình, niche đã bỏ) → bảng điểm vs kết quả thật, chỉnh trọng số mẫu theo đó |
-| :material-chart-line: **Điểm theo thời gian** | mỗi lần tra lại lưu điểm, project hiện đường điểm (nối [Phase 23](phase-23-tracking.md)) |
+| :material-chart-line: **Lưu điểm mỗi lần chấm** | mỗi lần tra lại lưu 1 dòng điểm + % đo + cờ. Biểu đồ điểm theo thời gian **chỉ làm ở [Phase 23](phase-23-tracking.md)** (dòng thời gian chung), không vẽ 2 chỗ |
+| :material-arrow-up-bold-circle: **Cần đo thêm gì để chắc hơn** | dưới điểm: yếu tố nào đang "ước" / "chưa đo" và bước nào nâng nó lên, VD "Tiền đang ước → nhập trang TrustMRR ([Phase 18](phase-18-revenue.md)) → độ tin 55% → ~70%". Tool chỉ ra bước tiếp, không chỉ cho điểm |
 | :material-text-box-outline: **1 đoạn kết luận không AI** | ghép câu từ mẫu: "Tiền rõ (3 app thu subscription), đau vừa, cạnh tranh đông; cờ: thương hiệu lớn" — vào evidence pack |
 
 <div class="box box--rules" markdown>
@@ -35,7 +38,7 @@ TEST THÊM / BỎ. Back-test 5 niche ra 4,5–5,4 điểm, chưa niche nào ≥ 
 **Xong khi**
 
 - Mở 1 niche bất kỳ, giải thích được từng yếu tố từ màn hình, không phải đọc code (anh thử 3 niche)
-- Back-test ≥ 5 niche đã biết kết quả, bảng điểm vs kết quả nằm trong trang này
+- Back-test ≥ 5 niche đã biết kết quả, bảng điểm vs kết quả nằm trong trang này; chạy lại sau Phase 18, thêm cột "sau Phase 18"
 - Cờ chặn bật đúng trên ≥ 2 niche thử có rủi ro thật (kiểm tay lý do)
 - Test xanh cho công thức + cờ, screenshot đã Read
 </div>

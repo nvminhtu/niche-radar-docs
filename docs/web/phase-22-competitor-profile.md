@@ -10,6 +10,8 @@
 và Feature Gap nằm ở khối khác. "Cờ đối thủ yếu" là ứng viên chưa chốt ở [Phase 9](phase-9-small-features.md).
 </div>
 
+**Cần xong trước:** [Phase 12](phase-12-competitor-complaints.md) (lời chê theo app) · [Phase 14](phase-14-collect.md) (collect đối thủ) · [Phase 18](phase-18-revenue.md) (doanh thu verified)
+
 ## Làm gì
 
 | | |
