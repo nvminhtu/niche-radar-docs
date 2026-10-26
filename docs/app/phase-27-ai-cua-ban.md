@@ -66,6 +66,54 @@ một hàm) trên từng tuyến. Ghi: chạy được không · JSON đúng khu
 | Ollama | HTTP `localhost:11434` — đã có code | thử model mới hơn llama3.1 8B (Phase 6 đo kém: 1 chủ đề / 110 review) |
 | Key riêng (BYOK) | Claude API — đã có code | chạy thật lần đầu khi có key |
 
+### Kết quả Bước 0 (đo 2026-10-26, MacBook M1 Pro 16 GB)
+
+Bài thử: lượt tra #14 `budget tracker`, **110 review 1–2★** của 6 app top → `complaintThemes()` (cùng prompt, schema, hàm
+kiểm câu trích như Phase 6). Mỗi tuyến chạy **5 lần**. Lệnh: `npx tsx scripts/ai-bench.ts 14 <claude-code|codex> - 5`.
+Hai tuyến mới nằm ở `web/src/lib/ai/cli.ts` (`claudeCodeAsk`, `codexAsk`, `loginStatus`) — cùng chữ ký `Ask` nên mọi
+việc AI cũ chạy được ngay.
+
+| | Codex 0.162.0 | Claude Code 2.1.269 |
+|---|---|---|
+| Đăng nhập | gói ChatGPT | gói Claude Pro · model mặc định `claude-sonnet-5` |
+| JSON đúng khuôn | 5/5 | 5/5 |
+| Câu trích khớp nguyên văn | 150/150 (100 %) | 120/120 (100 %) |
+| Số chủ đề mỗi lần | 10 · 10 · 10 · 10 · 10 | 9 · 8 · 8 · 8 · 7 |
+| Thời gian mỗi lần | 23 · 37 · 37 · 64 · **387** giây · trung vị 37 | 112 · 91 · 99 · 80 · 130 giây · trung vị 99 |
+| Token vào / ra | ~30k / 1,4–2,2k | 28–33k / 8,5–13,8k |
+| Tiền của mình | 0 đ | 0 đ |
+| Quyết | **bật** | **bật** |
+
+So với job Claude (tuyến B, Phase 6): 10 chủ đề, 22/22 câu khớp, nhưng vài phút và phải có người đưa file → giữ làm dự phòng.
+
+Chủ đề hai bên **cùng ý chính**: bị trừ tiền / khó huỷ đăng ký (Rocket Money), không đồng bộ ngân hàng (Wallet), hỗ trợ
+toàn bot, ứng tiền bị từ chối (Cleo, Albert), quảng cáo dày, mất giao dịch. Codex tách mịn hơn (10 chủ đề, thêm "thiếu
+tính năng"); Claude Code gộp thành 7–9.
+
+**Lỗi đo thật** (`loginStatus` + chạy thử với thư mục cấu hình trống):
+
+| Tình huống | Claude Code | Codex |
+|---|---|---|
+| Chưa cài | báo "Máy chưa cài Claude Code" sau 4 ms | báo "Máy chưa cài Codex" sau 6 ms |
+| Chưa đăng nhập — chạy thẳng | báo đúng "chưa đăng nhập" sau 0,8 giây | báo đúng nhưng **sau 20 giây** |
+| Chưa đăng nhập — kiểm trước | `claude auth status` JSON `loggedIn`, 0,3 giây | `codex login status` exit 1, 0,06 giây |
+| Hết lượt | chưa gặp thật — test bằng CLI giả (`tests/ai-cli.test.ts`) | như bên trái |
+
+**Rút ra cho phần xây (A2.1):**
+
+- Nút **Kiểm tra** gọi `loginStatus` trước (dưới 1 giây) rồi mới hỏi thử — không để Codex treo 20 giây
+- `claude auth status` có **email + tên tổ chức** của người dùng → chỉ đọc `loggedIn`, cách đăng nhập, loại gói; không lưu, không log
+- Chạy **sạch**: thư mục tạm trống, Claude Code `--tools "" --strict-mcp-config --setting-sources ""`, Codex
+  `--ignore-user-config --ignore-rules -s read-only`. Không có cờ này Codex nạp cả MCP của máy (lỗi đăng nhập Vercel,
+  Atlassian) và tốn thêm token nền
+- Mỗi việc AI chạy **1–2 phút** (Claude Code) → UI phải có thanh tiến độ + nút Dừng, không bắt người dùng nhìn vòng xoay im
+- Codex có lần chậm bất thường (387 giây — lúc đó 2 tuyến chạy cùng lúc) → đặt hạn 10 phút / việc, quá hạn thì dừng + báo
+- Claude Code ra nhiều token hơn (8–14k vs 1,4–2,2k) vì model nghĩ lâu hơn → thử `--effort low` khi làm A2.1, đo lại cùng bài
+- `--json-schema` (Claude Code) và `--output-schema` (Codex) đều cho JSON đúng 10/10 lần → **không cần** thử lại / sửa JSON bằng prompt
+
+**Chưa đo ở Bước 0:** OpenCode (máy chưa cài) · Gemini CLI · Ollama model mới · key riêng · MCP + khung chat (đo khi
+làm A2.3 / A2.4). Mới đo **1 niche** — chạy thêm 2 niche khi làm việc 1 bấm ở Phase AI cho từng tính năng.
+
 <div class="box box--rules" markdown>
 **Ghi nhớ khi đo**
 
@@ -168,7 +216,7 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
 <div class="box box--star" markdown>
 **Xong khi**
 
-- Bảng Bước 0 điền đủ các tuyến đã thử, có số đo + ngày
+- Bảng Bước 0 điền đủ các tuyến đã thử, có số đo + ngày — **Claude Code + Codex xong 2026-10-26**
 - Máy có Claude Code đã đăng nhập: mở app → Cài đặt → AI hiện "Sẵn sàng" sau 1 câu hỏi thử, **không cần key**
 - Claude Code chưa đăng nhập → báo "chưa đăng nhập" + cách sửa trong ≤ 10 giây, không quay vòng mãi
 - Việc "chủ đề than" cũ chạy 1 bấm qua Claude Code và qua Codex, ≥ 95 % câu trích khớp nguyên văn trên 3 niche
