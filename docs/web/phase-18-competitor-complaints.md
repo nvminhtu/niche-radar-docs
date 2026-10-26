@@ -3,7 +3,7 @@
 > Từ "vài cụm từ lặp lại" thành **bản đồ lời chê**: app nào bị chê gì, chê kiểu gì, chê mới nổi hay chê cũ,
 > và người dùng **ước gì** — mọi dòng có câu nguyên văn. **Không AI** (AI ở [Phase 28.1](phase-28-1-ai-summary.md)).
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong 2026-10-26 · chạy thật 3 niche · top 10 có nghĩa 10/10 · "ước gì" 16 / 14 / 20 dòng</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (bản đầu ở Phase 1–2).** `complaints.ts` đếm cụm 1–3 từ trong review 1–2★ của top app Play + iOS, giữ cụm
@@ -67,5 +67,39 @@ flowchart LR
 - So sánh 2–5 đối thủ cạnh nhau — [Phase 56](phase-56-compare-competitor.md)
 - Lấy review ngoài 2 store (Reddit, YouTube…) — [Phase 11](phase-11-reddit-gap.md), [Phase 52](phase-52-youtube-ai.md)
 </div>
+
+## Kết quả chạy thật (2026-10-26)
+
+Bản sao DB thật, top 5 app mỗi store, Play 200 + App Store 100 review mới nhất / app (đo cùng ngày).
+
+**habit tracker**
+
+- Review 1–2★ · 3★: **334 · 109** (trong 1.500 đã đọc)
+- Cụm trùng ý trong top 10: **3 → 0** · top 10 có nghĩa: **10/10** · "ước gì": **16 dòng**
+- Mới nổi: không cụm nào tăng ≥ 2× (1 app so theo ngày)
+
+**budget tracker**
+
+- Review 1–2★ · 3★: **418 · 77**
+- Cụm trùng ý trong top 10: **3 → 0** · top 10 có nghĩa: **10/10** · "ước gì": **14 dòng**
+- Mới nổi: không cụm nào tăng ≥ 2× (1 app so theo ngày)
+
+**pomodoro timer**
+
+- Review 1–2★ · 3★: **310 · 96**
+- Cụm trùng ý trong top 10: **2 → 0** · top 10 có nghĩa: **10/10** · "ước gì": **20 dòng**
+- Mới nổi: 2 cụm — "buggy" ×3,2 (hay gặp ở bản 2.6.2) · "goes off"
+
+**Ghi chú**
+
+- **Trước** (luật cũ, cùng 3 niche): top 10 có từ rác `phone` · `year` · `week` · `need` · `always` · `version` và cùng ý tách 2–4 cụm
+  (`subscription` · `pro` · `pay` · `premium` · `free`). **Sau**: `subscription` (gộp pro / pay / premium / paywall) · `cancel` · `charge` ·
+  `refund` · `scam` · `account` · `login` · `bug` · `delete` · `update`…
+- Cụm 1 chữ chỉ giữ khi là chữ chê rõ nghĩa (`SINGLE_WORDS`); chữ của niche ("screen", "timer", "focus") phải đi cùng chữ khác.
+- App Store: nhiều app chỉ trả 2 trang (40 review) khi chưa thêm `limit=20`; giờ đủ 100 / app.
+- **Mới nổi** lần đầu: app chưa có lần lấy trước và review chưa phủ 180 ngày → "chưa so được"; app phủ ≥ 180 ngày (Productive 841 ngày,
+  Timer+ 323 ngày…) so 90 ngày gần nhất với 90 ngày trước. Lần đọc lại sau ≥ 7 ngày so với lịch sử `review_seen`.
+- Còn yếu: cụm `update` / `support` hơi chung chung; vài câu "ước gì" là câu mỉa ("I wish zero stars was an option"). Gom chủ đề sâu hơn để
+  [Phase 28.1](phase-28-1-ai-summary.md) (AI).
 
 Plan code chi tiết: [Phase 18](../superpowers/plans/2026-10-25-niche-radar-phase12-competitor-complaints.md)

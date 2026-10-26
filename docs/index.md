@@ -38,7 +38,7 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
 - Hoàn thiện Web 18–26 (đang làm) → AI 27–28 → **Version 9** analytics (29–30) → **Version 10** dùng thử + license (31–33)
 - Sau App: 38–45 hoàn thiện tiếp → Version 11 marketing (46–49) → Version 2, 3, 4 (50–63), 12 (vào app qua bản cập nhật)
-- <span class="chip chip--doing">Đang làm · Phase 18 Đối thủ bị chê gì · chờ chạy thật: 7, 11, 15, 16, 17</span>
+- <span class="chip chip--doing">Đang làm · Phase 19 Ai là khách hàng (18 xong 2026-10-26) · chờ chạy thật: 7, 11, 15, 16, 17</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>

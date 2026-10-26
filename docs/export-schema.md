@@ -61,13 +61,13 @@ Keyword đã tra trong lượt Research (keyword gốc + gợi ý của Google P
 
 ### complaints
 
-Lời chê: chủ đề than gom từ review 1–2★ của top đối thủ, kèm câu nguyên văn đã kiểm khớp review gốc.
+Lời chê: chủ đề than AI (nếu đã chạy) + cụm lời chê theo luật từ khoá (Phase 12, gộp cùng ý) từ review 1–2★ của top đối thủ, kèm câu nguyên văn đã kiểm khớp review gốc.
 
 - `run_id`: Mã lượt Research trong Niche Radar
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (P1, P2…) — một mã mỗi chủ đề
-- `theme`: Chủ đề than
+- `theme`: Chủ đề than (AI) hoặc “cụm” · loại lời chê (luật)
 - `review_count`: Số review 1–2★ nói về chủ đề này
 - `severity`: Mức nặng: Mất dữ liệu · Trả tiền mà không dùng được (×3) · Ép trả phí · Hỏng (×2) · Quảng cáo · Giao diện (×1)
 - `quote`: Câu nguyên văn trong review

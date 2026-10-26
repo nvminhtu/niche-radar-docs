@@ -52,33 +52,33 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 ## Tasks
 
 ### Task 1: Lấy đủ review
-- [ ] Mở rộng fetch: giữ review 1–3★ (3★ chỉ dùng cho "ước gì"), lưu `score`, `date`, `version`; Play 200, iOS 5 trang.
-- [ ] Đổi khoá cache nếu cần (không làm mất cache cũ — đọc được cả bản cũ thiếu `version`). Khối lời chê cũ vẫn chỉ đọc 1–2★.
-- [ ] Migration `review_seen`; mỗi lần lấy mạng thật → upsert theo hash, giữ `firstSeenAt` cũ.
-- [ ] Test: parse review có / không `version`; cache còn hạn không gọi mạng; lấy 2 lần cùng review → 0 dòng mới.
+- [x] Mở rộng fetch: giữ review 1–3★ (3★ chỉ dùng cho "ước gì"), lưu `score`, `date`, `version`; Play 200, iOS 5 trang.
+- [x] Đổi khoá cache nếu cần (không làm mất cache cũ — đọc được cả bản cũ thiếu `version`). Khối lời chê cũ vẫn chỉ đọc 1–2★.
+- [x] Migration `review_seen`; mỗi lần lấy mạng thật → upsert theo hash, giữ `firstSeenAt` cũ.
+- [x] Test: parse review có / không `version`; cache còn hạn không gọi mạng; lấy 2 lần cùng review → 0 dòng mới.
 
 ### Task 2: Gộp cùng ý + loại
-- [ ] `complaint-rules.ts`: gốc từ (crash / crashes / crashing), đồng nghĩa (`ads` = `advertisement` = `commercials`…),
+- [x] `complaint-rules.ts`: gốc từ (crash / crashes / crashing), đồng nghĩa (`ads` = `advertisement` = `commercials`…),
       từ khoá từng loại, danh sách bỏ (tên app trong run, tên thương hiệu).
-- [ ] `complaints.ts`: chuẩn hoá cụm → khoá gộp; gán loại; câu trích kiểm nguyên văn.
-- [ ] Test: "crash" + "keeps crashing" thành 1 cụm; cụm < 3 review bị bỏ; câu trích không khớp bị bỏ.
+- [x] `complaints.ts`: chuẩn hoá cụm → khoá gộp; gán loại; câu trích kiểm nguyên văn.
+- [x] Test: "crash" + "keeps crashing" thành 1 cụm; cụm < 3 review bị bỏ; câu trích không khớp bị bỏ.
 
 ### Task 3: App × loại + mới nổi + ước gì
-- [ ] `byApp`: ô = số review + ≤ 3 câu trích (app, store, link review/app).
-- [ ] `emerging`: review mới thấy lần này (`firstSeenAt`) vs lịch sử `review_seen`; cụm ≥ 3 review mới và tỉ lệ ≥ 2× → "mới nổi"
+- [x] `byApp`: ô = số review + ≤ 3 câu trích (app, store, link review/app).
+- [x] `emerging`: review mới thấy lần này (`firstSeenAt`) vs lịch sử `review_seen`; cụm ≥ 3 review mới và tỉ lệ ≥ 2× → "mới nổi"
       (kèm phiên bản hay gặp, Play). App có 200 review phủ ≥ 180 ngày → so 90 ngày gần nhất vs 90 ngày trước theo `date`.
       Chưa có lần trước → `null` + "chưa có lần trước để so".
-- [ ] `wishes()`: câu "wish / would be nice / please add / missing / need a way to" ở 1–3★ → gộp như cụm, đếm lần.
-- [ ] Test từng hàm trên fixture.
+- [x] `wishes()`: câu "wish / would be nice / please add / missing / need a way to" ở 1–3★ → gộp như cụm, đếm lần.
+- [x] Test từng hàm trên fixture.
 
 ### Task 4: UI + lọc + evidence
-- [ ] `ComplaintsBlock`: bảng app × loại (ô bấm mở câu trích), chip "mới nổi", danh sách "ước gì", lọc store / app / loại / khoảng ngày.
-- [ ] Bảng đọc được ở 1340px; ở 375px chuyển thành danh sách theo app (1 cột).
-- [ ] `evidence.ts` thêm top cụm + ước gì; gói xuất Phase 15 đọc từ đây.
+- [x] `ComplaintsBlock`: bảng app × loại (ô bấm mở câu trích), chip "mới nổi", danh sách "ước gì", lọc store / app / loại / khoảng ngày.
+- [x] Bảng đọc được ở 1340px; ở 375px chuyển thành danh sách theo app (1 cột).
+- [x] `evidence.ts` thêm top cụm + ước gì; gói xuất Phase 15 đọc từ đây.
 
 ### Task 5: Chạy thật + soát
-- [ ] 3 niche thật: đếm cụm trùng ý trước / sau, kiểm tay top 10 cụm, đếm dòng "ước gì" → ghi bảng dưới.
-- [ ] Screenshot 1340 + 375, Read. `features.ts`, chip phase, ROADMAP, CHANGELOG.
+- [x] 3 niche thật: đếm cụm trùng ý trước / sau, kiểm tay top 10 cụm, đếm dòng "ước gì" → ghi bảng dưới.
+- [x] Screenshot 1340 + 375, Read. `features.ts`, chip phase, ROADMAP, CHANGELOG.
 
 ## Tiến độ
 
@@ -86,8 +86,15 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 - 2026-10-26: review plan — "mới nổi 90 ngày" không làm được từ 150 / 60 review mới nhất → đổi sang so lần lấy trước qua
   bảng `review_seen`; tăng Play 200, iOS 100; giữ 1–3★; sửa "RSS review iOS" thành proxy apps.apple.com.
 
+- 2026-10-26: code xong Task 1–5 (nhánh `phase12-complaints`): `review_seen` + cột `max_score` / `span_days` (migration 0018),
+  `complaint-rules.ts`, `complaints.ts` viết lại, `complaint-report.ts` (route + evidence + gói xuất dùng chung, gói xuất chỉ đọc cache),
+  `ComplaintsBlock` mới; 320 test. Đo trước: iOS chỉ trả 40 review / app (2 trang); top 10 cũ lẫn `phone`, `year`, `need`…
+  Sửa sau chạy thật: `price` không gộp vào `expensive` ("you are the price"), `ui` = `interface`, nhãn "ước gì" giữ nguyên chữ người dùng.
+
 ## Kết quả chạy thật
 
 | Niche | Cụm trùng trước | Cụm trùng sau | Top 10 có nghĩa | Ước gì |
 |---|---|---|---|---|
-| — | chưa đo | chưa đo | chưa đo | chưa đo |
+| habit tracker | 3 (subscription · pro · pay · free) | 0 | 10/10 | 16 |
+| budget tracker | 3 (subscription · pay · premium · help/support) | 0 | 10/10 | 14 |
+| pomodoro timer | 2 (year · years, subscription · free) | 0 | 10/10 | 20 |

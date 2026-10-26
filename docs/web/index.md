@@ -7,7 +7,7 @@
 > bán 29–37 (Version 9 + 10 + app) → Hoàn thiện Web sau bản bán 38–45 → Version 11 (46–49) → Version 2, 3, 4 (50–63).
 > Phase không làm bỏ số, thành **Backlog 01–21** dưới vạch ⛔ KO LÀM. Link số cũ vẫn mở được (tự chuyển trang).
 
-<span class="chip chip--doing">Đang làm · Hoàn thiện Web · tiếp theo Phase 18 Đối thủ bị chê gì → 19 Ai là khách hàng → … → 26 → AI 27–28 → bán 29–37</span>
+<span class="chip chip--doing">Đang làm · Hoàn thiện Web · 18 xong 2026-10-26 · tiếp theo Phase 19 Ai là khách hàng → … → 26 → AI 27–28 → bán 29–37</span>
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
@@ -169,7 +169,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">18</span>
 <div class="step__body">
-<h3>Đối thủ bị chê gì <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Đối thủ bị chê gì <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Gộp lời chê cùng ý, chia loại (lỗi · mất dữ liệu · ép trả phí · quảng cáo · thiếu tính năng…), bảng app × lời chê, lời chê mới nổi, danh sách "người dùng ước gì" — không AI.</p>
 <a class="go" href="phase-18-competitor-complaints/">Xem chi tiết →</a>
 </div>

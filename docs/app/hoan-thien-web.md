@@ -58,7 +58,7 @@ Người mua mở app ra là thấy những chỗ này. Thứ tự làm từ tr�
 
 | # | Phase | Đã có | Còn thiếu (phần không AI) |
 |---|---|---|---|
-| 1 | [18 · Đối thủ bị chê gì](../web/phase-18-competitor-complaints.md) | đếm cụm 1–3 từ trong review 1–2★, câu trích | gộp cùng ý ("crash" · "keeps crashing"), app nào bị chê, tách lỗi vs thiếu tính năng, review 3★ "ước gì", bảng app × lời chê |
+| 1 | [18 · Đối thủ bị chê gì](../web/phase-18-competitor-complaints.md) | ✅ xong 2026-10-26 | ~~gộp cùng ý ("crash" · "keeps crashing"), app nào bị chê, tách lỗi vs thiếu tính năng, review 3★ "ước gì", bảng app × lời chê~~ |
 | 2 | [19 · Ai là khách hàng](../web/phase-19-ai-la-khach.md) | — | loại khách theo vai từ keyword · review 1–3★ của Phase 18 · đối thủ · Reddit / Q&A, bảng loại khách có dẫn chứng, mục Đối tượng của evidence pack — không đoán giới tính / tuổi |
 | 3 | [20 · Chấm sức khoẻ niche](../web/phase-20-niche-health.md) | 7 yếu tố, trọng số + 4 mẫu, BUILD / TEST THÊM / BỎ | giải thích từng yếu tố, độ tin, cờ chặn, back-test (5 niche hiện 4,5–5,4 điểm, chưa niche nào ≥ 6) |
 | 4 | [21 · Collect](../web/phase-21-collect.md) + [22 · Quản lý Project](../web/phase-22-project-manage.md) | + Collect từng keyword, trạng thái / kết luận / ghi chú | 5 loại item, gom hàng loạt, chụp số lúc gom · tìm / lọc / thẻ / gộp, lý do loại, bước tiếp (**1 migration chung**) |
