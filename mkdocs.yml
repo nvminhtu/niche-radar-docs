@@ -78,7 +78,8 @@ nav:
           - "Phase 13 · Chấm sức khoẻ niche": web/phase-13-niche-health.md
           - "Phase 14 · Collect niche vào Project": web/phase-14-collect.md
           - "Phase 15 · Quản lý Project": web/phase-15-project-manage.md
-          - "Phase 16 · Export (CSV, JSON, gói LLM)": web/phase-16-export.md
+          - "Phase 16 · Export (CSV, JSON, gói LLM + brief tính năng)": web/phase-16-export.md
+          - "Định dạng file xuất": export-schema.md
           - "Phase 17 · Tóm tắt niche + chủ đề than (AI)": web/phase-17-ai-summary.md
           - "Phase 18 · Doanh thu thật (TrustMRR + AI)": web/phase-18-revenue.md
           - "Phase 19 · Backup / restore": web/phase-19-backup-restore.md

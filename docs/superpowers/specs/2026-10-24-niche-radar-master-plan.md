@@ -427,7 +427,7 @@ Chi tiết: `docs/version-4.md`.
 
 ### Version 12 — New Features — Just Planned
 
-- Chỉ lên plan: danh sách ứng viên (Product Brief Export — chỉ khi bán cho người ngoài, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 82 (74–81 là App Mac).
+- Chỉ lên plan: danh sách ứng viên (Product Brief Export đã gộp vào Phase 16 ngày 2026-10-26, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 82 (74–81 là App Mac).
 - Chi tiết: `docs/version-12.md`.
 
 ### App Mac (Phase 74–81) — làm khi xong Version 9, trước Version 10

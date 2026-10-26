@@ -10,12 +10,18 @@
 | Cờ đối thủ yếu · MCP có sẵn · MCP của app · Chrome Web Store · giá IAP nhiều nước · theo dõi định kỳ · search volume trả phí | ứng viên [Phase 9 · Small Features Update](web/phase-9-small-features.md) |
 | Host cho nhiều người | [Phase 30 · Account](web/phase-30-account.md) — chỉ khi có quyết định bán |
 
+## Chưa xếp (2026-10-26)
+
+| Mục | Từ đâu | Ghi chú |
+|---|---|---|
+| Xuất phạm vi 1 Explore / cả DB qua hộp Xuất chung · JSONL · file JSON Schema | cắt khỏi [Phase 16](web/phase-16-export.md) khi kéo lên sớm | Explore còn nút CSV cũ, cả DB có Backup; làm khi có tool khác cần đọc |
+
 ## Không làm
 
 | Không làm | Vì sao | Thay bằng |
 |---|---|---|
 | Dịch vụ ước tính trả phí hằng tháng (Sensor Tower, AppTweak, Appfigures, MobileAction) | tốn tiền cho tool nội bộ, số ước tính | proxy miễn phí + Phase 5 verified |
-| Sinh concept, giá, spec, checklist ra mắt | pipeline App-AI-Skills đã làm | `/app-research` → `/app-money` → `/app-spec` · bản cho người ngoài (Product Brief Export) là ứng viên [Version 12](web/version-12.md) |
+| Sinh concept, giá, spec, checklist ra mắt | pipeline App-AI-Skills đã làm | `/app-research` → `/app-money` → `/app-spec` · brief tính năng (khách · vấn đề · MVP · giá thử) đã gộp vào gói LLM của [Phase 16](web/phase-16-export.md) |
 | Tự đăng bài / quảng cáo / thu tiền | việc của người dùng | Phase 7 soạn nháp + lưu số |
 | AI tự đưa ra con số | dễ bịa | số từ collector, AI chỉ trích dẫn |
 | Dữ liệu TikTok / X | không lấy miễn phí ổn định | Reddit; X đọc tay |
