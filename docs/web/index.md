@@ -441,7 +441,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <span class="step__n">V11</span>
 <div class="step__body">
 <h3>Marketing Plan <span class="chip chip--todo">Phase 46–49</span></h3>
-<p>Định vị + landing + email, 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<p>Định vị + landing + email · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
 <a class="go" href="version-11/">Xem chi tiết →</a>
 </div>
 </div>

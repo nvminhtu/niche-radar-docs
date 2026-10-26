@@ -3,7 +3,7 @@
 > Dựng sẵn **khung dịch**: chữ giao diện tách ra file theo ngôn ngữ, có ô chọn ngôn ngữ. Khi cần bán cho người
 > nước ngoài thì chỉ việc dịch thêm, không phải sửa lại code.
 
-<span class="chip chip--done">Khung xong 2026-10-25 · mới dịch header, menu, trang Cài đặt</span>
+<span class="chip chip--done">Khung xong 2026-10-25 · dịch đủ giao diện + chữ server 2026-10-26, English mặc định</span>
 
 ## Chạy thế nào
 
@@ -16,10 +16,24 @@ flowchart LR
   E -- chưa --> SV[Hiện tiếng Việt<br/>bản gốc, luôn đủ]
 ```
 
-- Ngôn ngữ có sẵn: **Tiếng Việt** (mặc định, bản gốc) · **English** · **Español**.
+- Ngôn ngữ có sẵn: **English** (mặc định từ 2026-10-26, cả demo lẫn app trên máy) · **Tiếng Việt** (bản gốc trong code) · **Español** (chưa dịch → hiện English).
 - Chọn ở ô góc phải header hoặc **Cài đặt → Ngôn ngữ giao diện**. Lưu trên trình duyệt (`localStorage`), đổi luôn
   `<html lang>` để trình đọc màn hình và Google đọc đúng.
-- Chưa tự đoán theo ngôn ngữ trình duyệt: phần lớn trang chưa dịch, bật tự đoán bây giờ sẽ ra trang nửa Anh nửa Việt.
+- Chưa tự đoán theo ngôn ngữ trình duyệt — mở lần đầu là English, đổi ở ô chọn thì nhớ trên trình duyệt đó (đổi xong tải lại trang).
+
+## Hai cách dịch
+
+| Cách | Dùng khi | Ví dụ |
+|---|---|---|
+| `t('key')` + `vi.ts` / `en.ts` | header, menu, Cài đặt (làm trước) | `t('nav.settings')` |
+| `tr('Chữ tiếng Việt')` + `en-text.ts` | mọi chữ còn lại, cả ở server | `tr('Tổng rating top 10: {n}', { n })` |
+| `tx('…')` + `lazyTr({...})` | bảng hằng tạo lúc import (nhãn, gợi ý) | `export const LABEL = lazyTr({ money: tx('Tiền') })` |
+
+- Chữ server viết ra (lý do điểm, nhãn tiền, Feature Gap, gợi ý bàn quyết định, lỗi API) theo header `x-nr-lang` trang gửi kèm
+  (`installLangHeader` trong `I18n.tsx`, `src/server/lang.ts`). Không có header → tiếng Việt (test giữ nguyên).
+- Giá trị dữ liệu (verdict `TEST THÊM`, trạng thái project, nhóm tuổi app…) giữ tiếng Việt trong DB, chỉ dịch lúc hiện.
+- Sửa chữ tiếng Việt trong `tr()` thì sửa khoá trong `en-text.ts` theo — `tests/i18n-text.test.ts` báo chữ nào thiếu bản dịch.
+- Trang demo: `npm run demo:export` xuất bằng English; chữ AI đã viết sẵn trong DB dịch tay ở `web/scripts/demo-ai-en.json`.
 
 ## File nằm ở đâu
 
@@ -55,8 +69,8 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Dịch hết các trang Research, Explore, Projects, Hướng dẫn, About (dịch dần khi cần bán ra nước ngoài)
-- Dịch lỗi trả về từ API, evidence pack `.md`, chữ AI viết ra
+- Prompt / gói gửi AI (prompt.md, brief.md, file job), evidence pack `.md`, tên cột CSV — còn tiếng Việt
+- Bắt AI viết theo ngôn ngữ đang chọn (chủ đề than, tóm tắt niche) — prompt AI vẫn xin tiếng Việt
 - Đường dẫn theo ngôn ngữ (`/en/...`), tự đoán theo trình duyệt, chữ phải-sang-trái
 - Thư viện i18n ngoài (react-i18next…) — khung tự viết ~60 dòng là đủ; khi cần số nhiều phức tạp thì thêm `Intl.PluralRules`
 </div>

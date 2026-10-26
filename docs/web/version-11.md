@@ -20,6 +20,7 @@ có quyết định giữ / dừng. Số thật ghi ngày, chưa đo thì ghi `c
 
 ```mermaid
 flowchart TB
+  P[Phase 46<br/>Định vị + landing + email] --> BL[Phase 46.1<br/>Blog shotmatic.app<br/>SEO · AEO · GEO]
   P[Phase 46<br/>Định vị + landing + email] --> C[Phase 47<br/>Chọn 2 kênh · ICE]
   P --> D[Phase 48<br/>Dogfood<br/>báo cáo niche công khai · gói GEO cho chính nó]
   C & D --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
@@ -30,6 +31,7 @@ flowchart TB
 | Phase | Làm gì | Skill App-AI-Skills |
 |---|---|---|
 | [68 · Định vị + landing + email](phase-46-positioning-landing.md) | 1 câu định vị, landing riêng, form email, GA4 sự kiện mua / tải | `/app-gtm`, `/oneclicktool-landing` |
+| [46.1 · Landing shotmatic.app — Blog](phase-46-1-landing-blog.md) | blog riêng trên landing: phân trang, chuyên mục SEO · AEO · GEO, bản .md + llms.txt cho AI search | `/oneclicktool-blog`, `/app-geo` |
 | [69 · Chọn 2 kênh](phase-47-two-channels.md) | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
 | [70 · Dogfood làm nội dung](phase-48-dogfood-content.md) | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
 | [71 · Lịch 6 tuần + ra mắt](phase-49-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
