@@ -14,7 +14,7 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
 - **Xong khi:** 3 niche thật, top 10 cụm mỗi niche ≥ 8/10 có nghĩa · số cụm trùng ý giảm rõ (đếm trước / sau, ghi số) ·
   bảng app × loại đọc được ở 1340px, ô bấm ra câu trích đúng app · "ước gì" ≥ 5 dòng ở ≥ 2/3 niche · test xanh · screenshot đã Read.
 - **Làm:** lấy đủ review (có 3★), gộp cùng ý, loại lời chê, bảng app × loại, mới nổi, ước gì, lọc, đưa vào evidence pack.
-- **Không làm:** AI gom chủ đề (Phase 27.1) · so 2–5 đối thủ (Phase 55) · review ngoài 2 store.
+- **Không làm:** AI gom chủ đề (Phase 28.1) · so 2–5 đối thủ (Phase 56) · review ngoài 2 store.
 
 ## Đo trước khi code
 
@@ -35,7 +35,7 @@ Phase 9 (bảng mức nặng `severityOf` trong `lib/ai/themes.ts`).
   `review_seen` (storeAppId, country, hash = sha256 text, score, date, version, firstSeenAt) giữ mọi review 1–3★ đã thấy;
   `review_cache` vẫn bị ghi đè như cũ. Mới nổi = review có `firstSeenAt` ở lần lấy này so với phần còn lại; chỉ khi 200
   review đã phủ ≥ 180 ngày mới so thẳng theo `date`. Chưa có lần trước → `emerging: null` + lý do, không đoán.
-- `review_seen` dùng chung cho cache "chỉ gửi review mới" của Phase 27.1 (không tạo bảng hash thứ hai).
+- `review_seen` dùng chung cho cache "chỉ gửi review mới" của Phase 28.1 (không tạo bảng hash thứ hai).
 - API cũ `GET /api/research/:id/complaints` giữ trường `complaints` để khối cũ không vỡ; thêm trường mới bên cạnh.
 
 ## File đụng tới

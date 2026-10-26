@@ -1,11 +1,11 @@
-# Niche Radar Phase 45 — Định vị + landing + email — Implementation Plan
+# Niche Radar Phase 46 — Định vị + landing + email — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Landing ở repo oneclicktool.app (tiếng Anh 100%),
 > media host ở repo `app-demo` (không để trong `public/`). Anh mở tài khoản email; Claude không đăng bài.
 
 **Goal:** một câu định vị có bằng chứng, rồi dựng **chỗ của mình**: landing riêng + form email + đo lượt bấm.
 
-**Spec:** [Phase 45 · Định vị + landing + email](../../web/phase-45-positioning-landing.md) · **Cần trước:** Version 10 (giá), Phase 49 (demo site để link "Try the demo"),
+**Spec:** [Phase 46 · Định vị + landing + email](../../web/phase-46-positioning-landing.md) · **Cần trước:** Version 10 (giá), Phase 50 (demo site để link "Try the demo"),
 Phase 11 / 18 (dữ liệu nỗi đau).
 
 ## Mục tiêu · làm · không làm
@@ -29,7 +29,7 @@ Phase 11 / 18 (dữ liệu nỗi đau).
 - `marketing/gtm.md` (mới, qua `/app-gtm`) — Pha 0 + Pha 1: định vị 5 dòng + bằng chứng
 - repo oneclicktool.app: trang `niche-radar` + dữ liệu sản phẩm — landing
 - repo `app-demo`: `niche-radar/` — video demo + ảnh
-- `docs/web/phase-45-positioning-landing.md` — link landing, kết quả kiểm
+- `docs/web/phase-46-positioning-landing.md` — link landing, kết quả kiểm
 
 ## Tasks
 

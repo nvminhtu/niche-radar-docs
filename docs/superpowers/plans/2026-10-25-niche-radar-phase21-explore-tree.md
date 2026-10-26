@@ -1,11 +1,11 @@
-# Niche Radar Phase 39 — Explore: cây keyword + bản đồ ngách — Implementation Plan
+# Niche Radar Phase 40 — Explore: cây keyword + bản đồ ngách — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** cây **sạch hơn** (ít rác, ít trùng), nguồn gợi ý rõ hơn, điểm cơ hội **giải thích được**, từ cây đi thẳng sang Research hàng loạt.
 
-**Spec:** [Phase 39 · Explore](../../web/phase-39-explore-tree.md) · **Cần trước:** Phase 1 (`lib/explore.ts`, `explore-view.ts`), Phase 2 (`appstore_hint`).
+**Spec:** [Phase 40 · Explore](../../web/phase-40-explore-tree.md) · **Cần trước:** Phase 1 (`lib/explore.ts`, `explore-view.ts`), Phase 2 (`appstore_hint`).
 
 ## Mục tiêu · làm · không làm
 
@@ -20,7 +20,7 @@
 - Luật lọc + danh sách chặn (thương hiệu, tên app top) trong `web/src/lib/explore-rules.ts`, sửa được ở Cài đặt (lưu `settings`).
 - Gộp cùng nghĩa bằng khoá chuẩn hoá: gốc từ + bỏ stopword ("app", "for") + sắp từ; giữ biến thể bên trong nút.
 - Research hàng loạt: **lần lượt** (1 lượt một lúc), dùng `startResearch` + hàng đợi **lưu ở bảng `research_queue`** (không
-  chỉ trong bộ nhớ): server khởi động lại thì lá `running` dở về `queued` và chạy tiếp. Giữ rate limit hiện có. Phase 41
+  chỉ trong bộ nhớ): server khởi động lại thì lá `running` dở về `queued` và chạy tiếp. Giữ rate limit hiện có. Phase 42
   dùng chung hàng đợi này.
 - Nhãn "ước lượng — không phải lượt tìm thật" giữ nguyên cạnh điểm cơ hội.
 
@@ -63,4 +63,4 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan. Explore hiện ~6 phút / niche.
-- 2026-10-26: review plan — hàng đợi lưu DB, chạy tiếp sau khi tắt server (Phase 41 dùng chung).
+- 2026-10-26: review plan — hàng đợi lưu DB, chạy tiếp sau khi tắt server (Phase 42 dùng chung).

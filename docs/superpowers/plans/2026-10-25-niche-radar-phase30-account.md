@@ -5,19 +5,19 @@
 
 **Goal:** khi có **người khác** dùng tool: hồ sơ trên máy, luồng lần đầu tới quyết định không cần tài liệu, đường nhận góp ý.
 
-**Spec:** [Backlog 01 · Account + Flow](../../web/phase-backlog-01-account.md) · **Cần trước:** Phase 23 (Setup), Phase 24 (luồng chính đã gọn).
+**Spec:** [Backlog 01 · Account + Flow](../../web/phase-backlog-01-account.md) · **Cần trước:** Phase 24 (Setup), Phase 25 (luồng chính đã gọn).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** 1 người ngoài cài app, tra 1 niche, gửi 1 góp ý — không hỏi anh · góp ý hiện trong danh sách Phase 9 có nhãn phân loại.
 - **Làm:** hồ sơ trên máy (tên, nơi lưu dữ liệu), luồng lần đầu (onboarding nhẹ trong trang chủ), nút góp ý → file / email / issue → phân loại.
-- **Không làm:** server nhiều người · sync cloud · thanh toán khi chưa quyết bán. License key (mẫu RAM Rescue) chỉ ghi khung, bật ở Phase 31–68.
+- **Không làm:** server nhiều người · sync cloud · thanh toán khi chưa quyết bán. License key (mẫu RAM Rescue) chỉ ghi khung, bật ở Phase 32–68.
 
 ## Global Constraints
 
 - Hồ sơ = 1 dòng `settings` (`profile.name`, `profile.dataDir`), không mật khẩu, không gửi đi đâu.
-- Đổi nơi lưu dữ liệu: backup trước, chép DB sang chỗ mới, kiểm (`verify` của Phase 38), rồi mới đổi `NR_DATA_DIR` qua file cấu hình.
-- Luồng lần đầu: **không** tour bắt buộc (luật Phase 44) — trang chủ khi DB rỗng hiện 3 bước + 1 ô gõ niche mẫu.
+- Đổi nơi lưu dữ liệu: backup trước, chép DB sang chỗ mới, kiểm (`verify` của Phase 39), rồi mới đổi `NR_DATA_DIR` qua file cấu hình.
+- Luồng lần đầu: **không** tour bắt buộc (luật Phase 45) — trang chủ khi DB rỗng hiện 3 bước + 1 ô gõ niche mẫu.
 - Góp ý: lưu file `feedback/<ulid>.json` trong thư mục dữ liệu + nút "Gửi" mở `mailto:` / trang issue GitHub với nội dung soạn sẵn
   (không tự gửi). Không kèm đường dẫn máy, key.
 - Phân loại góp ý luật từ khoá: lỗi · tính năng mới · khó dùng · khác → dòng mới trong mục "Ứng viên" của trang Phase 9
@@ -45,7 +45,7 @@
 - [ ] Nút + form ngắn (loại, mô tả, màn đang ở); lưu file; Gửi = `mailto:` / issue soạn sẵn. Phân loại + xuất `.md`. Test.
 
 ### Task 4: Người ngoài thử
-- [ ] 1 người ngoài cài theo trang Setup (Phase 23), tra 1 niche, gửi 1 góp ý. Ghi chỗ họ vướng (không ghi tên thật).
+- [ ] 1 người ngoài cài theo trang Setup (Phase 24), tra 1 niche, gửi 1 góp ý. Ghi chỗ họ vướng (không ghi tên thật).
 - [ ] Góp ý vào danh sách Phase 9 có nhãn. Chip, ROADMAP, CHANGELOG.
 
 ## Tiến độ

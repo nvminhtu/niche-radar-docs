@@ -1,11 +1,11 @@
-# Niche Radar Phase 28 — Analytics + báo lỗi — Implementation Plan
+# Niche Radar Phase 29 — Analytics + báo lỗi — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không gửi chữ người dùng gõ.
 
 **Goal:** đo người dùng đi tới bước nào trong phễu, biết khi app lỗi trên máy người khác — có hỏi đồng ý.
 
-**Spec:** [Phase 28 · Analytics + báo lỗi](../../web/phase-28-analytics-errors.md) · **Cần trước:** Backlog 03 (Firebase project — nếu chọn ghi lỗi lên Firestore).
+**Spec:** [Phase 29 · Analytics + báo lỗi](../../web/phase-29-analytics-errors.md) · **Cần trước:** Backlog 03 (Firebase project — nếu chọn ghi lỗi lên Firestore).
 
 ## Mục tiêu · làm · không làm
 
@@ -22,8 +22,8 @@
 - GA4 qua Measurement Protocol từ **server local** hoặc `gtag` ở client — chọn `gtag` (nhẹ, GA4 chuẩn), tải script **chỉ sau** khi đồng ý.
 - Đồng ý lưu `settings.telemetry = 'yes'|'no'|null`; `null` → hỏi 1 lần; `no` → không tải script.
 - Báo lỗi: chọn lúc làm giữa (a) Sentry gói free (ghi giá + giới hạn, link + ngày) và (b) ghi Firestore `errors/{id}` (đã có Firebase).
-  Ghi lựa chọn + lý do vào trang phase. Lỗi gửi qua `redact()` (Backlog 15) + bỏ đường dẫn máy (`scrub()` Phase 23). Cùng cổng đồng ý.
-- Demo site (Phase 49) giữ GA riêng của nó, không dùng `telemetry.ts`.
+  Ghi lựa chọn + lý do vào trang phase. Lỗi gửi qua `redact()` (Backlog 15) + bỏ đường dẫn máy (`scrub()` Phase 24). Cùng cổng đồng ý.
+- Demo site (Phase 50) giữ GA riêng của nó, không dùng `telemetry.ts`.
 
 ## File đụng tới
 
@@ -45,7 +45,7 @@
 - [ ] Chọn (a) / (b), ghi lý do; `reportError` qua `redact` + `scrub`. Gây lỗi thử → thấy lỗi.
 
 ### Task 4: Phễu + soát
-- [ ] Anh tạo GA4 property, dán ID; tạo phễu 5 bước trong GA4 (Explore → Funnel). Network log khi từ chối. Privacy (Phase 29) lấy danh sách từ đây.
+- [ ] Anh tạo GA4 property, dán ID; tạo phễu 5 bước trong GA4 (Explore → Funnel). Network log khi từ chối. Privacy (Phase 30) lấy danh sách từ đây.
 - [ ] CHANGELOG, chip, ROADMAP.
 
 ## Tiến độ

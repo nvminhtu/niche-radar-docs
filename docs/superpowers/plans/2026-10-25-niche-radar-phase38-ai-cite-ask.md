@@ -1,12 +1,12 @@
-# Niche Radar Phase 26.4 — Hỏi dữ liệu (AI Cite) — Implementation Plan
+# Niche Radar Phase 27.4 — Hỏi dữ liệu (AI Cite) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** gõ câu hỏi bằng lời → AI trả lời **chỉ từ dữ liệu đã cào**, câu nào cũng có trích dẫn bấm được; dựng **lớp kiểm trích dẫn** dùng chung.
 
-**Spec:** [Phase 26.4 · Hỏi dữ liệu](../../web/phase-26-4-ai-cite-ask.md) · **Cần trước:** Phase 26.6 (tuyến AI theo việc), Phase 15 (`Dataset`),
-Phase 43 / 55 (màn so sánh có ô hỏi).
+**Spec:** [Phase 27.4 · Hỏi dữ liệu](../../web/phase-27-4-ai-cite-ask.md) · **Cần trước:** Phase 27.6 (tuyến AI theo việc), Phase 15 (`Dataset`),
+Phase 44 / 56 (màn so sánh có ô hỏi).
 
 ## Mục tiêu · làm · không làm
 
@@ -29,7 +29,7 @@ Phase 43 / 55 (màn so sánh có ô hỏi).
 ## File đụng tới
 
 - `web/src/lib/cite-ref.ts` (mới) — sinh / giải id nguồn
-- `web/src/lib/cite-check.ts` (mới) — lớp kiểm dùng chung (Phase 56 dùng lại)
+- `web/src/lib/cite-check.ts` (mới) — lớp kiểm dùng chung (Phase 57 dùng lại)
 - `web/src/lib/ask/retrieve.ts` (mới) — chọn dòng liên quan + id
 - `web/src/lib/ask/ask.ts` (mới) — prompt, schema, gọi `aiAsk(db, 'ask')`, chạy `cite-check`
 - `web/src/db/schema.ts` + migration mới — `ask_history` (scope, question, answer json, check json, createdAt)

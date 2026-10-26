@@ -19,7 +19,7 @@
 - Server chỉ nghe `127.0.0.1` (đã có). Thêm:
   - **Token**: sinh 32 byte ngẫu nhiên lúc server khởi động, nhúng vào HTML trang (meta tag) do chính server trả; client gửi header `X-NR-Token`;
     thiếu / sai → 401. Route tĩnh không cần token.
-  - **Origin + Host**: chỉ nhận `Origin` = origin của app (`http://127.0.0.1:<port>` / `http://localhost:<port>` / origin Tauri ở Phase 34);
+  - **Origin + Host**: chỉ nhận `Origin` = origin của app (`http://127.0.0.1:<port>` / `http://localhost:<port>` / origin Tauri ở Phase 35);
     `Host` khác `127.0.0.1|localhost:<port>` → 403 (chặn DNS rebinding).
 - Hiện chữ cào về: không `dangerouslySetInnerHTML` với dữ liệu ngoài; link qua 1 hàm `safeHref()` chỉ cho `http(s)`.
 - Dependabot: `.github/dependabot.yml` cho `web/`, `app/`, `mcp/`, GitHub Actions.

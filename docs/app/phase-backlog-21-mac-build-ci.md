@@ -49,7 +49,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tạo GitHub Release, What's New, auto-update (Phase 36)
+- Tạo GitHub Release, What's New, auto-update (Phase 37)
 - Mac App Store
 - Bản Windows / Linux
 - Claude tạo chứng chỉ hoặc nhập secret thay anh

@@ -1,11 +1,11 @@
 # Niche Radar Backlog 19 — Local App 4.0 — Implementation Plan
 
-> **For agentic workers:** chỉ làm khi bản Web **xong Version 9**. Chỉ gói Phase 58–61 đã xong ở Web. Build chỉ bằng `npm run mac`.
+> **For agentic workers:** chỉ làm khi bản Web **xong Version 9**. Chỉ gói Phase 59–62 đã xong ở Web. Build chỉ bằng `npm run mac`.
 > Steps dùng checkbox (`- [ ]`).
 
-**Goal:** gói kệ Google, kệ AI, cột kệ yếu, gói GEO (Phase 58–61) vào app Mac.
+**Goal:** gói kệ Google, kệ AI, cột kệ yếu, gói GEO (Phase 59–62) vào app Mac.
 
-**Spec:** [Backlog 19 · Local App 4.0](../../app/phase-backlog-19-local-app-4.md) · **Cần trước:** Backlog 18, Phase 62 (đã soát ở Web).
+**Spec:** [Backlog 19 · Local App 4.0](../../app/phase-backlog-19-local-app-4.md) · **Cần trước:** Backlog 18, Phase 63 (đã soát ở Web).
 
 ## Mục tiêu · làm · không làm
 

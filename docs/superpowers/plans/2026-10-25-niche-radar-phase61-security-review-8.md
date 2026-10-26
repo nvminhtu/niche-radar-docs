@@ -9,7 +9,7 @@
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** mọi lần thử bị chặn, có ảnh / log bằng chứng · bản 8.0 cài đè 7.x không mất dữ liệu (đếm từng bảng trước / sau).
-  Dòng "7.x tự nhận 8.0 qua auto-update" chỉ áp dụng khi App Mac đã có auto-update (Phase 36 — làm sau Version 9); trước đó ghi "chưa áp dụng".
+  Dòng "7.x tự nhận 8.0 qua auto-update" chỉ áp dụng khi App Mac đã có auto-update (Phase 37 — làm sau Version 9); trước đó ghi "chưa áp dụng".
 - **Làm:** 3 nhóm thử (trang lạ gọi API · review có `<script>` · key lọt log) + mọi mục phiếu Backlog 15, bằng chứng, sửa, ra bản 8.0.
 - **Không làm:** pentest thuê ngoài · tính năng mới.
 

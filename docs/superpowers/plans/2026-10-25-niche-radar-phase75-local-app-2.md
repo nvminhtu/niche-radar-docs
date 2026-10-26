@@ -1,29 +1,29 @@
-# Niche Radar Phase 33 — Local App 2.0 (bản bán đầu tiên) — Implementation Plan
+# Niche Radar Phase 34 — Local App 2.0 (bản bán đầu tiên) — Implementation Plan
 
 > **For agentic workers:** chỉ làm khi bản Web **xong Version 10** (dùng thử + license chạy ở Web). Chỉ gói thứ đã xong ở Web, không thêm tính năng.
 > Build chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`).
 
-**Goal:** gói Version 1 (Phase 7, 9–44) + Version 9 (analytics) + Version 10 (dùng thử, license) vào app Mac một lần — **bản bán đầu tiên**.
-Windows đi sau ở Phase 35 trên cùng code này.
+**Goal:** gói Version 1 (Phase 7, 9–45) + Version 9 (analytics) + Version 10 (dùng thử, license) vào app Mac một lần — **bản bán đầu tiên**.
+Windows đi sau ở Phase 36 trên cùng code này.
 
-**Spec:** [Phase 33 · Local App 2.0](../../app/phase-33-local-app-2.md) · **Cần trước:** Web Version 1, 9, 10 xong; Phase 17 (`.dmg` 1.x).
-**Sau:** Phase 34 (license + kho bí mật cho cả Mac / Windows) → 82 (Windows) → 81 (phát hành + tự cập nhật). Version 2 (YouTube, Amazon, Maps)
-vào app qua bản cập nhật Phase 36, không gói ở đây.
+**Spec:** [Phase 34 · Local App 2.0](../../app/phase-34-local-app-2.md) · **Cần trước:** Web Version 1, 9, 10 xong; Phase 17 (`.dmg` 1.x).
+**Sau:** Phase 35 (license + kho bí mật cho cả Mac / Windows) → 82 (Windows) → 81 (phát hành + tự cập nhật). Version 2 (YouTube, Amazon, Maps)
+vào app qua bản cập nhật Phase 37, không gói ở đây.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** app 1.x có dữ liệu thật → cài 2.0 → dữ liệu còn đủ (đếm từng bảng trước / sau) · trên app tra 1 niche ra đủ khối của Version 1
   (khối bị chặn báo đúng) · dùng thử chạy, nhập key test → Pro · mở ≤ 5 giây, test xanh, bản web vẫn chạy.
 - **Làm:** review ở Web trước khi gói, collector mới vào sidecar, migration DB, nút mở thư mục job, `.dmg` mới + What's New.
-- **Không làm:** tính năng mới · Version 2 · kho bí mật Keychain (Phase 34) · Windows (Phase 35) · tự cập nhật (Phase 36).
+- **Không làm:** tính năng mới · Version 2 · kho bí mật Keychain (Phase 35) · Windows (Phase 36) · tự cập nhật (Phase 37).
 
 ## Global Constraints
 
 - Sidecar Node chạy đúng code `web/` (cùng build) → collector mới tự có; chỉ cần kiểm dependency native / binary đi kèm (hiện chỉ `better-sqlite3`).
-- Migration: app mở DB cũ → migrate có backup (Phase 38) → đếm bảng; test bằng bản sao DB app 1.x thật.
-- Key AI ở phase này vẫn lưu `settings` như Web; chuyển sang kho bí mật ở Phase 34 (ghi rõ trong What's New).
-- "Mở thư mục job": lệnh Tauri mở `NR_DATA_DIR/jobs/` bằng Finder (Windows: Explorer — cùng lệnh `opener`, thử ở Phase 35).
-- Đường dẫn trong code dùng `path.join` (để Phase 35 không phải sửa lại).
+- Migration: app mở DB cũ → migrate có backup (Phase 39) → đếm bảng; test bằng bản sao DB app 1.x thật.
+- Key AI ở phase này vẫn lưu `settings` như Web; chuyển sang kho bí mật ở Phase 35 (ghi rõ trong What's New).
+- "Mở thư mục job": lệnh Tauri mở `NR_DATA_DIR/jobs/` bằng Finder (Windows: Explorer — cùng lệnh `opener`, thử ở Phase 36).
+- Đường dẫn trong code dùng `path.join` (để Phase 36 không phải sửa lại).
 - Version app = version Web lúc gói (`version.test.ts` bắt lệch với `tauri.conf.json`).
 
 ## File đụng tới
@@ -31,7 +31,7 @@ vào app qua bản cập nhật Phase 36, không gói ở đây.
 - `app/src-tauri/src/main.rs` — lệnh mở thư mục job
 - `app/src-tauri/tauri.conf.json`, `app/package.json` — version, resource mới
 - `app/scripts/build-mac.sh` — gói thêm resource nếu có
-- `docs/app/phase-33-local-app-2.md`, `CHANGELOG.md` — What's New, kết quả
+- `docs/app/phase-34-local-app-2.md`, `CHANGELOG.md` — What's New, kết quả
 
 ## Tasks
 

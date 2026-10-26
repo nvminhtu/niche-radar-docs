@@ -1,12 +1,12 @@
-# Niche Radar Phase 35 — App Windows (Beta) — Implementation Plan
+# Niche Radar Phase 36 — App Windows (Beta) — Implementation Plan
 
-> **For agentic workers:** chỉ làm sau Phase 34 (license + dùng thử đã chạy trên Mac). Cùng một app Tauri + cùng `web/` — **không** viết UI
+> **For agentic workers:** chỉ làm sau Phase 35 (license + dùng thử đã chạy trên Mac). Cùng một app Tauri + cùng `web/` — **không** viết UI
 > riêng cho Windows. Steps dùng checkbox (`- [ ]`). Không mua chứng chỉ ký, không nộp Microsoft Store, không nhập key / mật khẩu thay anh.
 
 **Goal:** thêm khách ngoài người dùng Mac: cùng app build cho **Windows 11 x64**, ra **Beta chưa ký** trước, dùng thử + license chạy như Mac.
 
-**Spec:** [Phase 35 · App Windows (Beta)](../../app/phase-35-windows-app.md) · **Cần trước:** Phase 33 (bản bán đầu Mac), Phase 34 (license, dùng thử,
-lưu key theo hệ điều hành). **Sau:** Phase 36 phát hành cả `.dmg` + `.exe` và tự cập nhật trên cả hai.
+**Spec:** [Phase 36 · App Windows (Beta)](../../app/phase-36-windows-app.md) · **Cần trước:** Phase 34 (bản bán đầu Mac), Phase 35 (license, dùng thử,
+lưu key theo hệ điều hành). **Sau:** Phase 37 phát hành cả `.dmg` + `.exe` và tự cập nhật trên cả hai.
 
 ## Mục tiêu · làm · không làm
 
@@ -32,16 +32,16 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
 
 - **Một code:** khác biệt hệ điều hành chỉ ở `app/` (script build, cấu hình bundle, lệnh Rust lưu key) và vài chỗ `web/src/lib/paths.ts` /
   tìm binary — mỗi chỗ rẽ nhánh bằng `process.platform`, có test cho cả hai nhánh.
-- **Dữ liệu:** `%APPDATA%\niche-radar\` (Tauri `app_data_dir`), truyền xuống sidecar qua `NR_DATA_DIR` như Mac. Backup / restore (Phase 38) dùng
+- **Dữ liệu:** `%APPDATA%\niche-radar\` (Tauri `app_data_dir`), truyền xuống sidecar qua `NR_DATA_DIR` như Mac. Backup / restore (Phase 39) dùng
   `path.join`, không nối chuỗi `/`.
 - **Lưu key + ngày dùng thử:** crate `keyring` (Rust) — trên Mac là Keychain, trên Windows là Credential Manager — cùng lệnh
-  `secret_get/set/delete` của Phase 34, không viết lớp thứ hai.
+  `secret_get/set/delete` của Phase 35, không viết lớp thứ hai.
 - **Sidecar không chạy nền khi tắt app:** Tauri giết tiến trình Node lúc cửa sổ đóng (`RunEvent::Exit`); NSIS uninstall chạy `taskkill` tiến trình
   `node.exe` trong thư mục cài trước khi xoá file.
 - **Tìm AI:** Claude Code / Codex / Ollama trên Windows — `where.exe`, `%LOCALAPPDATA%\Programs\`, `%APPDATA%\npm\`; Ollama gọi `http://127.0.0.1:11434`
   như Mac. Không thấy → ẩn tuyến đó, như Backlog 19 đã ghi cho Mac.
 - **Chưa ký:** SmartScreen hiện "Windows protected your PC" → trang tải ghi rõ "More info → Run anyway" (học Wow Keywords:
-  "unsigned, so Windows may show a security warning"). Tên file + version giữ ổn định để Phase 36 dùng làm link tải.
+  "unsigned, so Windows may show a security warning"). Tên file + version giữ ổn định để Phase 37 dùng làm link tải.
 - **Version** khớp `web/package.json` + `tauri.conf.json` (`version.test.ts` đã bắt lệch).
 
 ## File đụng tới
@@ -51,11 +51,11 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
 - `app/scripts/common.sh` (mới) — phần chung Mac / Windows tách từ `build-mac.sh`
 - `package.json` gốc — lệnh `win`
 - `app/src-tauri/tauri.conf.json` — `bundle.windows` (NSIS, `installMode: currentUser`, icon `.ico` đã có), resources theo hệ điều hành
-- `app/src-tauri/src/main.rs` (+ `secrets.rs` của Phase 34) — tắt sidecar khi thoát, `keyring` chạy cả 2 nền tảng
+- `app/src-tauri/src/main.rs` (+ `secrets.rs` của Phase 35) — tắt sidecar khi thoát, `keyring` chạy cả 2 nền tảng
 - `app/src-tauri/windows/hooks.nsh` (mới) — `taskkill` lúc gỡ cài
 - `web/src/lib/paths.ts`, `web/src/lib/geo/engines.ts` / chỗ tìm Claude Code · Codex · Ollama — nhánh Windows
 - `web/tests/paths-win.test.ts` (mới) — giả `process.platform = 'win32'`
-- trang tải (demo site Phase 49 / landing) — nút "Windows 11 · x64 · Beta" + cảnh báo SmartScreen
+- trang tải (demo site Phase 50 / landing) — nút "Windows 11 · x64 · Beta" + cảnh báo SmartScreen
 - `app/README.md`, `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` (App) — lệnh `npm run win` (luật repo khi thêm lệnh)
 
 ## Tasks
@@ -72,7 +72,7 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
 - [ ] Trên Windows: mở app → tra 1 niche → đóng app → Task Manager không còn `node.exe` của app.
 
 ### Task 3: License + dùng thử trên Windows
-- [ ] `keyring` cho Credential Manager (dùng chung lệnh Phase 34). Nhập key test → Pro; máy Windows hiện trong danh sách 2 máy của license.
+- [ ] `keyring` cho Credential Manager (dùng chung lệnh Phase 35). Nhập key test → Pro; máy Windows hiện trong danh sách 2 máy của license.
 - [ ] Hết dùng thử (giả lập ngày) → về Free, dữ liệu còn đủ.
 
 ### Task 4: Tìm AI trên Windows

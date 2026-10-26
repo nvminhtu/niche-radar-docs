@@ -19,7 +19,7 @@
 - Virtualize bằng `@tanstack/react-virtual` (nhỏ, không đổi kiểu bảng) — bắt đầu `KeywordTable.tsx`, rồi bảng nào > 200 dòng thật.
 - Lazy load: `React.lazy` + route `lazy` của react-router cho mọi trang trừ `HomePage`.
 - Index chỉ cho query trong top 10 chậm của Backlog 05; mỗi index ghi query nó phục vụ (comment trong schema) + ms trước / sau.
-- WAL: `PRAGMA journal_mode = WAL` khi mở DB; backup (Phase 38) phải xử lý file `-wal` (dùng API backup nên ổn — test lại).
+- WAL: `PRAGMA journal_mode = WAL` khi mở DB; backup (Phase 39) phải xử lý file `-wal` (dùng API backup nên ổn — test lại).
 - Phân trang API: `?page=&size=` (mặc định 100) cho danh sách lớn (explore nodes, keywords, lịch sử); client cũ không truyền → trang 1 + `total`.
 - DB 50 niche để đo: script tạo từ fixture (`bench/seed-50.ts`), không dùng DB thật.
 

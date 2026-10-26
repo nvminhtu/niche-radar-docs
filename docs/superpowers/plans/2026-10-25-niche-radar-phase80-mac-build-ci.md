@@ -11,7 +11,7 @@
 
 - **Xong khi:** `.dmg` tải từ CI mở trên máy sạch không bị Gatekeeper chặn · log CI không có giá trị secret (chỉ `***`) · không chứng chỉ / mật khẩu / key nào trong repo.
 - **Làm:** `.github/workflows/build-mac.yml` (runner macOS), build Tauri + sidecar như `build-mac.sh`, keychain tạm, ký → notarize → staple, artifact `.dmg`.
-- **Không làm:** GitHub Release / What's New / auto-update (Phase 36) · Mac App Store · Windows / Linux · Claude tạo chứng chỉ / nhập secret.
+- **Không làm:** GitHub Release / What's New / auto-update (Phase 37) · Mac App Store · Windows / Linux · Claude tạo chứng chỉ / nhập secret.
 
 ## Global Constraints
 

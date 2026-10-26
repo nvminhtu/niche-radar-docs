@@ -1,11 +1,11 @@
-# Niche Radar Phase 23 — Setup ngay trong Web — Implementation Plan
+# Niche Radar Phase 24 — Setup ngay trong Web — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` + `npm run docs:build` xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool chỉ hướng dẫn + kiểm, không tự cài, không `sudo`.
 
 **Goal:** máy thiếu đồ cài vẫn tự lên được: trang Setup đúng máy, nút **Kiểm tra máy**, gói cài chính chủ, nút **Hỏi AI**.
 
-**Spec:** [Phase 23 · Setup ngay trong Web](../../web/phase-23-setup.md) · **Cần trước:** không.
+**Spec:** [Phase 24 · Setup ngay trong Web](../../web/phase-24-setup.md) · **Cần trước:** không.
 
 ## Mục tiêu · làm · không làm
 

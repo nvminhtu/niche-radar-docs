@@ -19,7 +19,7 @@
   dung lượng `.app` + `.dmg`. Lệnh đo `app/scripts/measure.sh` (mới).
 - Sidecar gọn: bundle server bằng `esbuild` (1 file + `better-sqlite3` native) thay vì chép `node_modules` đầy đủ; danh sách external ghi trong script.
 - Server tự ngủ: không có request trong N phút (mặc định 10) và không job đang chạy → thoát tiến trình; Tauri khởi động lại sidecar khi UI gọi API
-  (lệnh Rust `ensure_server`), UI hiện "đang mở lại…" ≤ 1 giây. Job theo lịch (Phase 41) giữ server thức.
+  (lệnh Rust `ensure_server`), UI hiện "đang mở lại…" ≤ 1 giây. Job theo lịch (Phase 42) giữ server thức.
 - Đo lại Version 5: `npm run bench` + `bench:compare` 3 niche chuẩn, ghi cột "Backlog 20" cạnh mốc.
 
 ## File đụng tới

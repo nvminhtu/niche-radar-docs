@@ -44,7 +44,7 @@ flowchart TB
 
 - **Làm:** `npm run record` lưu phản hồi thật của Play, App Store, Trends, YouTube, Amazon… vào `web/tests/fixtures/` ·
   test collector đọc fixture, không gọi mạng · đo độ phủ (coverage), liệt kê file chưa có test · test cho lớp kiểm trích
-  dẫn (Phase 26.4) và công thức điểm (Phase 1, 60).
+  dẫn (Phase 27.4) và công thức điểm (Phase 1, 61).
 - **Xong khi:** `npm test` xanh khi tắt mạng · mỗi collector có ≥ 1 test trên fixture thật · độ phủ `web/src/lib` + `web/src/collectors`
   có số, ghi vào trang này.
 

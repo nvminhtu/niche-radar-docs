@@ -6,7 +6,7 @@
 > **Đổi 2026-10-26:** bỏ hẳn tài khoản (Firebase Auth, sync project, xoá tài khoản). Học Wow Keywords: app chạy trên
 > máy, không tài khoản, license key là đủ để bán. Backlog 03, B04 chuyển xuống [Không làm](../appendix.md#khong-lam-chot-2026-10-26).
 
-<span class="chip chip--todo">Chưa làm · làm ngay sau Version 1 (Phase 1–44)</span>
+<span class="chip chip--todo">Chưa làm · làm ngay sau Version 1 (Phase 1–45)</span>
 
 ## Mục tiêu
 
@@ -23,18 +23,18 @@ khớp từng sự kiện gửi đi.
 ```mermaid
 flowchart LR
   APP[App / bản Web<br/>chạy trên máy] --> C{Đồng ý<br/>gửi số đo?}
-  C -- có --> AN[Phase 28<br/>sự kiện phễu<br/>chỉ loại + số đếm]
+  C -- có --> AN[Phase 29<br/>sự kiện phễu<br/>chỉ loại + số đếm]
   C -- không --> N[Không gửi gì]
-  APP --> ER[Phase 28<br/>báo lỗi tự động]
-  AN & ER --> PV[Phase 29<br/>trang Riêng tư]
+  APP --> ER[Phase 29<br/>báo lỗi tự động]
+  AN & ER --> PV[Phase 30<br/>trang Riêng tư]
   LOCAL[(SQLite trên máy<br/>mọi dữ liệu)] -.ở lại máy.- APP
 ```
 
 ## Các phase
 
-- [Phase 28 · Analytics + báo lỗi](phase-28-analytics-errors.md) — sự kiện phễu (thêm `trial_start`, `license_activate`),
+- [Phase 29 · Analytics + báo lỗi](phase-29-analytics-errors.md) — sự kiện phễu (thêm `trial_start`, `license_activate`),
   báo lỗi tự động, có hỏi đồng ý
-- [Phase 29 · Trang Riêng tư](phase-29-privacy-delete.md) — Privacy Policy ghi đúng thứ gửi đi; phần xoá tài khoản bỏ
+- [Phase 30 · Trang Riêng tư](phase-30-privacy-delete.md) — Privacy Policy ghi đúng thứ gửi đi; phần xoá tài khoản bỏ
 
 <div class="box box--rules" markdown>
 **Luật**
@@ -48,7 +48,7 @@ flowchart LR
 
 <div class="box box--danger" markdown>
 - **Tài khoản, đăng nhập, sync project lên cloud** (Backlog 03, B04 cũ) — bỏ 2026-10-26
-- **Xoá tài khoản** (phần đầu Phase 29 cũ) — không có tài khoản thì không cần
+- **Xoá tài khoản** (phần đầu Phase 30 cũ) — không có tài khoản thì không cần
 - **Đưa dữ liệu cào lên cloud**, chạy collector trên server
 - **Thanh toán, license**: [Version 10](version-10.md)
 - **Quảng cáo, bán dữ liệu người dùng**

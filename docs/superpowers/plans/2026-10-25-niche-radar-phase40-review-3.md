@@ -1,11 +1,11 @@
-# Niche Radar Phase 57 — Review Version 3 — Implementation Plan
+# Niche Radar Phase 58 — Review Version 3 — Implementation Plan
 
-> **For agentic workers:** phase **chỉ soát + sửa** Phase 55–39. Mỗi lỗi sửa xong `npm run check` xanh rồi commit.
+> **For agentic workers:** phase **chỉ soát + sửa** Phase 56–39. Mỗi lỗi sửa xong `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** dùng Version 3 **chọn niche thật 3 lần** ở bản Web, sửa lỗi gặp phải.
 
-**Spec:** [Phase 57 · Review Version 3](../../web/phase-57-review-3.md) · **Cần trước:** Phase 55, 26.4, 39.
+**Spec:** [Phase 58 · Review Version 3](../../web/phase-58-review-3.md) · **Cần trước:** Phase 56, 27.4, 39.
 
 ## Mục tiêu · làm · không làm
 
@@ -21,8 +21,8 @@
 
 ## File đụng tới
 
-- `docs/web/phase-57-review-3.md` — bảng 3 lần: thời gian từng bước, chỗ vướng, evidence pack có / không
-- code Phase 55–56 — sửa lỗi kèm test
+- `docs/web/phase-58-review-3.md` — bảng 3 lần: thời gian từng bước, chỗ vướng, evidence pack có / không
+- code Phase 56–57 — sửa lỗi kèm test
 - `CHANGELOG.md` — bản Web mới
 
 ## Tasks

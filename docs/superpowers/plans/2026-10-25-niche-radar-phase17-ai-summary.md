@@ -1,4 +1,4 @@
-# Niche Radar Phase 27.1 — Tóm tắt niche + chủ đề than (AI) — Implementation Plan
+# Niche Radar Phase 28.1 — Tóm tắt niche + chủ đề than (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không nhập key thay anh. **Task 1–4 + 6 làm bằng tuyến B, không cần key**; chỉ Task 5
@@ -7,7 +7,7 @@
 **Goal:** đưa tóm tắt AI lên mức **dùng hằng ngày**: 1 bấm khi có key, khung 6 mục cố định, kiểm chéo với lời chê không AI,
 mọi câu có trích dẫn đã kiểm.
 
-**Spec:** [Phase 27.1 · Tóm tắt niche + chủ đề than (AI)](../../web/phase-27-1-ai-summary.md) · **Cần trước:** Phase 6
+**Spec:** [Phase 28.1 · Tóm tắt niche + chủ đề than (AI)](../../web/phase-28-1-ai-summary.md) · **Cần trước:** Phase 6
 (`lib/ai/tasks.ts`, `themes.ts`, `providers.ts`), Phase 18 (cụm lời chê để kiểm chéo + bảng `review_seen` để chỉ gửi review mới).
 
 ## Mục tiêu · làm · không làm
@@ -18,7 +18,7 @@ mọi câu có trích dẫn đã kiểm.
   báo giá trước khi bấm lệch ≤ 30% so với `ai_calls`.
 - **Làm:** khung 6 mục, tỉ lệ khớp trích dẫn (câu trượt bị gạch), kiểm chéo, review nhiều thứ tiếng, chỉ gửi review mới,
   lịch sử bản tóm tắt, báo giá trước khi bấm (tuyến A), đo tuyến A khi có key.
-- **Không làm:** hỏi dữ liệu bằng lời (Phase 26.4) · tuyến AI mới hay thử lại Ollama (Phase 26.6 — Bước 0 Phase 6 đo Ollama kém).
+- **Không làm:** hỏi dữ liệu bằng lời (Phase 27.4) · tuyến AI mới hay thử lại Ollama (Phase 27.6 — Bước 0 Phase 6 đo Ollama kém).
 
 ## Global Constraints
 
@@ -72,7 +72,7 @@ mọi câu có trích dẫn đã kiểm.
 
 - 2026-10-25: viết plan. Tuyến B đã chạy 5 niche (47 chủ đề, mọi câu khớp). Tuyến A chưa có key.
 - 2026-10-26: review plan — tách Xong khi phần 1 (tuyến B) / phần 2 (key) để không bị chặn; dùng `review_seen` của Phase 18
-  thay bảng `review_hashes`; thêm báo giá trước khi bấm; ghi rõ Ollama không dùng (sang Phase 26.6).
+  thay bảng `review_hashes`; thêm báo giá trước khi bấm; ghi rõ Ollama không dùng (sang Phase 27.6).
 
 ## Kết quả chạy thật
 

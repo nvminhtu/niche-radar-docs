@@ -1,11 +1,11 @@
-# Niche Radar Phase 49 — Demo Site (show hàng) — Implementation Plan
+# Niche Radar Phase 50 — Demo Site (show hàng) — Implementation Plan
 
 > **For agentic workers:** code đã xong ở bản 0.9.0 (tên cũ Phase 13a). Phần còn lại là **đưa lên + đo**. Claude không đăng
 > nhập Cloudflare / Mailchimp / GA, không trả phí — anh làm bước tài khoản, Claude chạy lệnh và kiểm. Steps dùng checkbox (`- [ ]`).
 
 **Goal:** trang **tĩnh** cho khách bấm thử UI thật trên dữ liệu chụp sẵn; muốn xài thật → để email + tải app.
 
-**Spec:** [Phase 49 · Demo Site](../../web/phase-49-demo-site.md) · **Cần trước:** `.dmg` đã ký + notarize (0.9.0, GitHub Releases).
+**Spec:** [Phase 50 · Demo Site](../../web/phase-50-demo-site.md) · **Cần trước:** `.dmg` đã ký + notarize (0.9.0, GitHub Releases).
 
 ## Mục tiêu · làm · không làm
 
@@ -13,7 +13,7 @@
   trắng, console sạch, đã xem 1340 + 375 · nút chỉ có trong app → "Bản demo", không request ra ngoài · trang live trên Cloudflare
   Pages, tải `.dmg` mở được trên Mac khác · 1 email test vào đúng danh sách; GA thấy `demo_view`, `download`, `generate_lead`.
 - **Làm:** phần còn lại — deploy, nối email + GA thật, kiểm live.
-- **Không làm:** host server thật · tài khoản / thanh toán / trial · dịch UI · landing bán hàng (Phase 45) · đăng bài.
+- **Không làm:** host server thật · tài khoản / thanh toán / trial · dịch UI · landing bán hàng (Phase 46) · đăng bài.
 
 ## Global Constraints
 
@@ -27,7 +27,7 @@
 - `web/src/demo/*` — đã có
 - `web/scripts/check-demo.ts` (mới, nếu chưa có) — soát JSON: không `/Users/`, không chuỗi giống key, không `notes`
 - `web/.env.demo` (gitignore) — `VITE_GA_ID`, mã form Mailchimp — anh điền
-- `docs/web/phase-49-demo-site.md` — chip, link live, kết quả đo
+- `docs/web/phase-50-demo-site.md` — chip, link live, kết quả đo
 
 ## Tasks
 

@@ -7,7 +7,7 @@
 trần token, và gói đó kèm khung để AI viết **brief tính năng** (khách · vấn đề · giải pháp khác · MVP · giá thử · 10 người đầu).
 
 **Spec:** [Phase 15 · Export](../../web/phase-15-export.md) · **Đổi 2026-10-26:** kéo lên ngay sau Phase 11, gộp Product Brief
-Export (Version 12). Không chờ Phase 18–20 — dùng dữ liệu đang có (chủ đề than AI · điểm v2 · Feature Gap đã lưu · item keyword).
+Export (Version 12). Không chờ Phase 18–21 — dùng dữ liệu đang có (chủ đề than AI · điểm v2 · Feature Gap đã lưu · item keyword).
 
 ## Mục tiêu · làm · không làm
 
@@ -16,7 +16,7 @@ Export (Version 12). Không chờ Phase 18–20 — dùng dữ liệu đang có 
   đủ 7 mục, mã nguồn có thật · `/app-demand` đọc được gói Markdown không sửa tay.
 - **Làm:** hộp thoại Xuất chung (trang Research, trang Project) · CSV · JSON · Markdown (evidence pack) · gói LLM
   (`brief.md` + `schema.md` + `prompt.md`) · trần token · `.zip` / Copy cho AI.
-- **Không làm:** phạm vi Explore / cả DB · JSONL · file JSON Schema · nhập từ CSV · PDF / slide · API (MCP ở Phase 26.3) ·
+- **Không làm:** phạm vi Explore / cả DB · JSONL · file JSON Schema · nhập từ CSV · PDF / slide · API (MCP ở Phase 27.3) ·
   tự gửi file lên AI · tool tự viết brief.
 
 ## Global Constraints
@@ -68,7 +68,7 @@ Export (Version 12). Không chờ Phase 18–20 — dùng dữ liệu đang có 
 - [x] `ExportDialog` ở trang Research + Project; nhiều file → `.zip`; gói LLM có **Copy cho AI**.
 - [x] Test so chéo: cùng run → CSV, JSON, gói LLM cùng số (top đối thủ, số rating, điểm).
 
-### Task 4b: Còn lại — từ review Phase 18–41 (2026-10-26, nhánh khác)
+### Task 4b: Còn lại — từ review Phase 18–42 (2026-10-26, nhánh khác)
 - [x] Phạm vi subreddit (đọc `lib/reddit-gap.ts`), bảng `reddit_gaps`; nút Tải .md của trang Reddit Gap gọi qua lớp mới (giữ top 20 gap + 3 link mẫu).
 - [x] Test: gói Markdown có đủ các mục `/app-demand` đọc (đối chiếu SKILL.md của app-demand, ghi danh sách mục vào test).
 
@@ -85,7 +85,7 @@ Export (Version 12). Không chờ Phase 18–20 — dùng dữ liệu đang có 
   (keyword 40/20/10/5, đối thủ 40/30/20/15/10/5) vì bản đầu cắt 118 đối thủ còn 15 dù còn dư 2.5k token; Copy có đường
   dự phòng `execCommand` vì Clipboard API bị chặn trong pane / app Mac.
 
-- 2026-10-26: merge `main` — gộp review Phase 18–41 (`4b70c8c`): 2 việc mới thành Task 4b, chưa làm.
+- 2026-10-26: merge `main` — gộp review Phase 18–42 (`4b70c8c`): 2 việc mới thành Task 4b, chưa làm.
 - 2026-10-26: Task 4b xong (`be1dffe` + sửa nhãn chuyên mục), 264 test xanh. Lệch: nút Tải .md của Reddit Gap thay bằng hộp
   Xuất (route `/api/reddit/gap.md` giữ nguyên cho link cũ, cùng hàm `gapMarkdown`); Reddit Gap 1 bảng nên CSV tải thẳng, không zip.
 

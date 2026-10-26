@@ -47,8 +47,8 @@ giữ mật khẩu.
 **Không làm ở phase này**
 
 - Đưa project lên cloud (Backlog 04)
-- Analytics, báo lỗi (Phase 28)
-- Xoá tài khoản trên cloud (Phase 29)
+- Analytics, báo lỗi (Phase 29)
+- Xoá tài khoản trên cloud (Phase 30)
 - Tự làm đăng nhập bằng mật khẩu, server riêng ngoài Firebase
 - Tạo project Firebase, nhập thanh toán Google Cloud: anh tạo, Claude nối code
 </div>

@@ -1,11 +1,11 @@
-# Niche Radar Phase 26.7 — Chi phí AI theo gói — Implementation Plan
+# Niche Radar Phase 27.7 — Chi phí AI theo gói — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** người dùng Pro không làm chi phí AI vượt tiền họ trả: BYOK, gói lượt AI kèm Pro có trần, hoặc cả hai — theo số Phase 66.
 
-**Spec:** [Phase 26.7 · Chi phí AI theo gói](../../web/phase-26-7-ai-cost-plans.md) · **Cần trước:** Phase 30 (% chi phí AI tối đa, trần lượt), Phase 26.6 (provider, sổ chi phí), Phase 31–68.
+**Spec:** [Phase 27.7 · Chi phí AI theo gói](../../web/phase-27-7-ai-cost-plans.md) · **Cần trước:** Phase 31 (% chi phí AI tối đa, trần lượt), Phase 27.6 (provider, sổ chi phí), Phase 32–68.
 
 ## Mục tiêu · làm · không làm
 
@@ -18,7 +18,7 @@
 
 - **Gói lượt AI** cần key của mình ở **server mình**, không ở máy người dùng → proxy AI là Cloud Function `functions/src/ai-proxy.ts`
   (kiểm Firebase ID token + `entitlement` Pro + bộ đếm). Key của mình trong Secret Manager, không bao giờ xuống máy người dùng.
-- **BYOK** giữ như Phase 26.6 (key trên máy, gọi thẳng provider). Hai tuyến tách bạch trong `aiAsk`: `route = 'byok' | 'pro-pool'`; BYOK lỗi key
+- **BYOK** giữ như Phase 27.6 (key trên máy, gọi thẳng provider). Hai tuyến tách bạch trong `aiAsk`: `route = 'byok' | 'pro-pool'`; BYOK lỗi key
   → lỗi rõ, không tự đổi sang `pro-pool`.
 - Bộ đếm: `usage/{uid}/months/{YYYY-MM}` `{ calls, costUsd }`, tăng trong transaction **trước** khi gọi provider; vượt trần → 429 "hết lượt tháng này".
 - "Lượt" = 1 việc AI (themes / summary / ask…) theo bảng quy đổi trong `money.md`, không theo token (dễ hiểu cho người dùng).

@@ -1,19 +1,19 @@
-# Niche Radar Phase 43 — So sánh niche — Implementation Plan
+# Niche Radar Phase 44 — So sánh niche — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** đặt **2–4 niche đã tra** cạnh nhau trên một màn, luật thắng / thua rõ ràng. Không AI, không cào thêm.
 
-**Spec:** [Phase 43 · So sánh niche](../../web/phase-43-compare-niche.md) · **Cần trước:** dữ liệu Phase 1–9 (chạy được ngay);
-Phase 18, 37 làm số Đau / Tiền tốt hơn nếu đã xong.
+**Spec:** [Phase 44 · So sánh niche](../../web/phase-44-compare-niche.md) · **Cần trước:** dữ liệu Phase 1–9 (chạy được ngay);
+Phase 18, 38 làm số Đau / Tiền tốt hơn nếu đã xong.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** so 3 niche thật ra bảng đủ nhóm, ô thiếu ghi "chưa tra" · kiểm tay 10 ô ngẫu nhiên khớp màn chi tiết ·
   bảng 4 niche đọc được ở 1340px · xuất Markdown dán vào `research/*.md`.
 - **Làm:** chọn 2–4 niche, bảng 6 nhóm hàng, ô thắng theo luật, ô thiếu, bấm ô mở chi tiết, xuất CSV + Markdown.
-- **Không làm:** > 4 niche · AI kết luận (Phase 56) · so cùng niche 2 thời điểm.
+- **Không làm:** > 4 niche · AI kết luận (Phase 57) · so cùng niche 2 thời điểm.
 
 ## Global Constraints
 

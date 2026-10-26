@@ -11,8 +11,8 @@
 Mỗi chỗ một kiểu, tên cột chưa thống nhất, chưa có tài liệu định dạng, chưa có bản gọn cho AI.
 
 **Đổi 2026-10-26.** Kéo lên làm ngay sau Phase 11 (trước 11–15), gộp **Product Brief Export** (ứng viên Version 12)
-vào gói LLM. Vì đi trước Phase 18–20 nên dùng dữ liệu đang có: chủ đề than AI (Phase 6), điểm v2 (Phase 7/9),
-Feature Gap đã lưu (Phase 4), item project kiểu keyword (Phase 8). Phase 18–20 xong thì gói tự giàu thêm.
+vào gói LLM. Vì đi trước Phase 18–21 nên dùng dữ liệu đang có: chủ đề than AI (Phase 6), điểm v2 (Phase 7/9),
+Feature Gap đã lưu (Phase 4), item project kiểu keyword (Phase 8). Phase 18–21 xong thì gói tự giàu thêm.
 </div>
 
 ## Chạy thế nào
@@ -77,7 +77,7 @@ flowchart LR
 - Phạm vi 1 Explore và cả DB (Explore giữ nút CSV cũ; cả DB đã có Backup) — để sau, ghi ở Appendix
 - JSONL, JSON Schema dạng file `.json` để máy kiểm — chỉ khi có tool khác cần đọc
 - Nhập từ CSV (chỉ nhập `.niche.json` như cũ)
-- Xuất PDF / slide, mở API cho tool khác gọi (MCP ở [Phase 26.3](phase-26-3-mcp.md))
+- Xuất PDF / slide, mở API cho tool khác gọi (MCP ở [Phase 27.3](phase-27-3-mcp.md))
 - Tự gửi file lên AI hay tool tự viết brief bằng AI — gói chỉ là file, anh tự dán
 </div>
 

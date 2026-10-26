@@ -1,10 +1,10 @@
-# Niche Radar Phase 46 — Chọn 2 kênh — Implementation Plan
+# Niche Radar Phase 47 — Chọn 2 kênh — Implementation Plan
 
 > **For agentic workers:** phase **chấm + chọn**, không code, không đăng. Steps dùng checkbox (`- [ ]`). Anh duyệt.
 
 **Goal:** chấm ICE từng kênh rồi chọn **đúng 2 kênh chính** làm đều tay 6 tuần.
 
-**Spec:** [Phase 46 · Chọn 2 kênh](../../web/phase-46-two-channels.md) · **Cần trước:** Phase 45 (`marketing/gtm.md` có định vị).
+**Spec:** [Phase 47 · Chọn 2 kênh](../../web/phase-47-two-channels.md) · **Cần trước:** Phase 46 (`marketing/gtm.md` có định vị).
 
 ## Mục tiêu · làm · không làm
 
@@ -23,7 +23,7 @@
 
 - `marketing/gtm.md` — bảng ICE + chọn + nhịp
 - `marketing/reddit/subs.md` (nếu chọn Reddit) — danh sách sub + luật
-- `docs/web/phase-46-two-channels.md` — tóm tắt kết quả
+- `docs/web/phase-47-two-channels.md` — tóm tắt kết quả
 
 ## Tasks
 

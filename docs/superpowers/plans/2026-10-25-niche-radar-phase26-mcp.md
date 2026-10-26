@@ -1,19 +1,19 @@
-# Niche Radar Phase 26.3 — MCP của app (Claude đọc DB, chỉ đọc) — Implementation Plan
+# Niche Radar Phase 27.3 — MCP của app (Claude đọc DB, chỉ đọc) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** MCP server nhỏ `niche-radar-mcp` để **Claude tự đọc DB** — tìm niche, so niche, viết `research/*.md` — không xuất file rồi dán tay.
 
-**Spec:** [Phase 26.3 · MCP của app](../../web/phase-26-3-mcp.md) · **Cần trước:** Phase 15 (`lib/export/dataset.ts`), Phase 40
-(hồ sơ đối thủ), Phase 43 nếu đã có (`compare_niches`; chưa có thì tool này trả bảng thô).
+**Spec:** [Phase 27.3 · MCP của app](../../web/phase-27-3-mcp.md) · **Cần trước:** Phase 15 (`lib/export/dataset.ts`), Phase 41
+(hồ sơ đối thủ), Phase 44 nếu đã có (`compare_niches`; chưa có thì tool này trả bảng thô).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** Claude Code gọi được mọi tool trên DB thật; 3 câu lệnh mẫu ra đúng số (kiểm tay với UI) · test từng tool
   (fixture DB) · thử ghi qua MCP → bị chặn.
 - **Làm:** folder `mcp/` (stdio), 8 tool chỉ đọc, trả kèm nguồn, giới hạn kích thước, cài 1 lệnh, 3 quy trình mẫu.
-- **Không làm:** tool ghi (tạo project, collect) · hỏi bằng lời trong UI (Phase 26.4).
+- **Không làm:** tool ghi (tạo project, collect) · hỏi bằng lời trong UI (Phase 27.4).
 
 ## Global Constraints
 

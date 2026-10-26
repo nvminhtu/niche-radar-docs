@@ -129,7 +129,7 @@ có cách gốc") × 1 / (1 + số app Mac / 10). Công thức hiện trên tran
 
 - **Hết 300 lệnh / ngày** → cache 7 ngày, hiện số lệnh còn lại, cho anh nhập key StackApps ở Cài đặt nếu cần.
 - **Điều khoản:** nội dung Stack Exchange theo CC BY-SA, nên phải ghi nguồn ở mỗi link và trong file `.md`. Bản dùng nội
-  bộ thì ổn. Trước khi bán Pro (Phase 30+) phải đọc lại điều khoản API.
+  bộ thì ổn. Trước khi bán Pro (Phase 31+) phải đọc lại điều khoản API.
 - **Câu hỏi cũ:** top theo votes thiên về câu 2012–2016. Bảng có lọc "3 năm gần nhất" và cột xu hướng theo năm.
 - **Từ điển chủ đề Mac không hợp HN:** HN hỏi nhiều về SaaS / dev tool, nên thêm chủ đề ở Bước 2. Phần còn lại vào "Khác".
 

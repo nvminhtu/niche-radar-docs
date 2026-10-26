@@ -14,9 +14,9 @@
   2. **GitHub Issues xếp theo 👍**: tính năng người dùng xin mà maintainer không làm. API miễn phí, điều khoản thoáng nhất trong các nguồn.
   3. **Hacker News Ask HN** (API Algolia): câu "is there an app / tool…" kèm điểm và số bình luận.
 - **Dự bị:** X search. Tín hiệu mạnh, nhưng API tính tiền theo bài đọc ($0.005 / bài), nên anh quyết.
-- **Đã có trong Niche Radar, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 18), Google Trends (Phase 3), TrustMRR (Phase 37), Reddit (Phase 11).
+- **Đã có trong Niche Radar, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 18), Google Trends (Phase 3), TrustMRR (Phase 38), Reddit (Phase 11).
 - **Phần lớn chợ review lớn cấm quét** (G2, Trustpilot, Shopify, Upwork, VS Code, Gumroad…). Chỉ đọc tay khi đã chọn niche.
-- **Amazon (Phase 52–53) yếu:** gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm khai thác dữ liệu. Đề xuất hạ xuống ứng viên.
+- **Amazon (Phase 53–54) yếu:** gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm khai thác dữ liệu. Đề xuất hạ xuống ứng viên.
 </div>
 
 ## Thang chấm
@@ -522,7 +522,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 37 · TrustMRR
 
-- **Kết luận: Đã có** ([Phase 37](phase-37-revenue.md)). Chỉ dùng nội bộ, không đăng lại dữ liệu.
+- **Kết luận: Đã có** ([Phase 38](phase-38-revenue.md)). Chỉ dùng nội bộ, không đăng lại dữ liệu.
 - **Gap:** Vừa. Không cho thấy gap, nhưng cho thấy ngách nào có doanh thu đã xác minh.
 - **Quan tâm:** Mạnh. Có MRR và doanh thu xác minh.
 - **Lấy được:** API có key miễn phí. Gói standard 10 lệnh / phút, premium 60 lệnh / phút. Giá premium `chưa đo`.
@@ -775,10 +775,10 @@ Mỗi phương pháp ghi cách làm, nguồn dùng và Niche Radar đã có chư
 
 1. **SERP do diễn đàn chiếm.** Gõ câu hỏi lên Google. Nếu top 3 là Reddit, Quora hay Apple Community thì chưa có trang
    hay app tốt trả lời: vừa là gap nội dung, vừa là gap app. Nguồn: Google SERP (làm tay, hoặc SerpApi / DataForSEO).
-   **Chưa có.** Nên thêm cờ "top 3 là diễn đàn" vào [Phase 58 · Kệ Google](phase-58-seo-shelf.md).
+   **Chưa có.** Nên thêm cờ "top 3 là diễn đàn" vào [Phase 59 · Kệ Google](phase-59-seo-shelf.md).
 2. **"X alternative", "X vs Y", "X free".** Tìm người đang muốn bỏ app đang dùng. Nguồn: autocomplete, AlternativeTo.
    **Có một phần** (autocomplete ở Phase 1–2). Nên thêm các tiền tố này thành nút sẵn trong
-   [Phase 39 · Explore](phase-39-explore-tree.md).
+   [Phase 40 · Explore](phase-40-explore-tree.md).
 3. **"I'd pay for", "is there an app", "wish there was".** Nguồn: Reddit, HN, Stack Exchange, X.
    **Có ở Phase 11** (8 câu search mẫu). Đề xuất A và C dùng lại đúng các cụm này.
 4. **Feature request bị bỏ ngỏ.** Issue nhiều 👍 mà maintainer đóng "won't fix" hoặc để mở hơn 1 năm. Nguồn: GitHub,
@@ -787,7 +787,7 @@ Mỗi phương pháp ghi cách làm, nguồn dùng và Niche Radar đã có chư
    trả lời top là "không có". Nguồn: Ask Different, Super User. **Chưa có.** Đây là đề xuất A.
 6. **Đợt đổi nền tảng.** macOS / iOS mới (WWDC tháng 6, bản phát hành tháng 9) làm hỏng app cũ hoặc mở API mới. Cửa sổ
    niche ngắn, rất hợp app Mac. Nguồn: Trends "Rising", Apple Community, Ask Different sau ngày phát hành. **Chưa có.**
-   Nên thêm lịch nhắc vào [Phase 41 · Theo dõi niche](phase-41-tracking.md).
+   Nên thêm lịch nhắc vào [Phase 42 · Theo dõi niche](phase-42-tracking.md).
 7. **Tách tool lớn (unbundling).** Người dùng Excel / Notion / Photoshop chỉ để làm 1 việc nhỏ, lặp lại → làm app nhỏ đúng
    việc đó. Nguồn: Reddit, template bán chạy. **Chưa có**, làm tay.
 8. **Template bán chạy.** Template Notion / Excel bán tốt nghĩa là có quy trình người ta muốn có app. Nguồn: Etsy (tay).
@@ -834,5 +834,5 @@ gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một n
 - **Google Maps (35):** chưa xét ở phase này, vì đây là nguồn cho business địa phương, không phải app. Giữ nguyên, xét
   khi tới.
 - **Thứ tự gợi ý:** A + C (gộp) và B làm ngay sau Phase 11, trước Phase 12. Lý do: cả hai dùng chung bảng gap vừa làm
-  xong, và cho thêm dữ liệu để Phase 18–19 chấm.
+  xong, và cho thêm dữ liệu để Phase 18–20 chấm.
 

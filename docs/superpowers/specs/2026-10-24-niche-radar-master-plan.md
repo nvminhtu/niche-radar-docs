@@ -20,7 +20,7 @@ việc của Idea Lab (repo App-AI-Skills) — chỉ khi Idea Lab qua test mới
 | Giao diện | React (Vite) | **Dùng lại đúng giao diện Web**, bọc bằng Tauri (không Electron) |
 | Lấy dữ liệu | Server Node (Hono) trong máy | Cùng server Node chạy kèm app (sidecar) |
 | Dữ liệu | `data/niche.db` (SQLite) | Cùng định dạng SQLite, nằm trong thư mục app |
-| Khi nào | Version 1–9 (Phase 1–29), rồi Version 10–12 (Phase 30–48) sau App | **Khi bản Web xong Version 9 (Phase 1–29)**, trước Version 10: 74 → 75 → 76 → 77 → 78 → 79 → 80 → 81 (Phase 17 đã code sớm — [spec Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
+| Khi nào | Version 1–9 (Phase 1–30), rồi Version 10–12 (Phase 31–49) sau App | **Khi bản Web xong Version 9 (Phase 1–30)**, trước Version 10: 74 → 75 → 76 → 77 → 78 → 79 → 80 → 81 (Phase 17 đã code sớm — [spec Local App](2026-10-24-niche-radar-phase8-local-app.md)) — macOS, ký Developer ID + notarize |
 
 Vì App bọc lại Web, mọi tính năng làm ở Web đều có trong App — không viết 2 lần.
 
@@ -53,7 +53,7 @@ v1 nền ─► 1 Google Play ─► 2 App Store ─► 3 Google Trends ─► 4
       ─► 10 Reddit Gap ─► 11 Research nguồn gap ─► 12–27 Làm kỹ tính năng chính ─► 28 So sánh niche ─► 29 UI/UX ─► 30 Account + Flow (30.1 · 30.2)
           ⚪ plan 2026-10-25               ⚪                  ⚪          ⚪
 
-      ─► … Version 2–12 (Phase 50–48, chỉ bản Web) …
+      ─► … Version 2–12 (Phase 51–49, chỉ bản Web) …
 
 App Mac — làm khi bản Web xong Version 9, trước Version 10:
       72 Local App 1.0 ─► 73 ─► 74 ─► 75 ─► 76 App nhẹ ─► 77 Phần riêng app ─► 78 CI ─► 79 Release
@@ -74,10 +74,10 @@ App Mac — làm khi bản Web xong Version 9, trước Version 10:
 | **9 — Small Features Update** | tính năng nhỏ nào đáng làm tiếp? | ✅ 4 mục ưu tiên xong 2026-10-25 — `docs/web/phase-9-small-features.md` · ứng viên khác chưa chốt |
 | **9b — Reddit Gap** | subreddit hỏi đáp hỏi gì nhiều mà chưa ai giải? | ⚪ |
 | **12–27 — Làm kỹ tính năng chính** | mỗi tính năng chính 1 phase: đối thủ bị chê gì · sức khoẻ niche · collect · quản lý project · export · tóm tắt AI · doanh thu thật · backup · trang Research · Explore · hồ sơ đối thủ · theo dõi · evidence pack · cài đặt AI · MCP · review | ⚪ Plan 2026-10-25 — `docs/web/index.md` |
-| **28 — So sánh niche** (dời lên 2026-10-25) | 2–4 niche cạnh nhau, niche nào đáng chọn? (không AI) | ⚪ Sau Phase 25 |
+| **28 — So sánh niche** (dời lên 2026-10-25) | 2–4 niche cạnh nhau, niche nào đáng chọn? (không AI) | ⚪ Sau Phase 26 |
 | **29 — UI / UX Improvement** | chỗ nào dùng còn vướng? | ⚪ |
 | **30 — Account + Flow** | người khác dùng được không cần hỏi? góp ý vào đâu? | ⚪ Xét lại trước khi code (cần người dùng ngoài) |
-| ─── | **Vạch MVP** — Phase 1–44 xong mới sang dưới. Từ đây thêm nguồn mới + AI, chỉ bản Web; app Mac làm khi xong Version 9 | |
+| ─── | **Vạch MVP** — Phase 1–45 xong mới sang dưới. Từ đây thêm nguồn mới + AI, chỉ bản Web; app Mac làm khi xong Version 9 | |
 | **31a — Demo Site** | trang tĩnh show hàng, để email + tải app | ⚪ Plan 2026-10-25 |
 | **31 — YouTube Search** | người ta tìm gì trên YouTube, video nào hút view, kênh nhỏ nào thắng? (không AI) | ⚪ |
 | **32 — YouTube Research (AI)** | người xem than gì, xin gì, dùng tool nào? | ⚪ |
@@ -226,11 +226,11 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
   Không thêm lại Reddit.
 - **Ứng viên khác (từ Appendix cũ):** cờ đối thủ yếu · MCP có sẵn · MCP của app · Chrome Web Store · giá IAP nhiều nước ·
   search volume trả phí (chỉ khi Phase 7 cho thấy cần).
-- **Không làm:** tính năng ngoài danh sách đã chốt · đổi UI tổng thể (Phase 24). Tính năng to hơn ~1 tuần → tách phase riêng.
+- **Không làm:** tính năng ngoài danh sách đã chốt · đổi UI tổng thể (Phase 25). Tính năng to hơn ~1 tuần → tách phase riêng.
 - **Xong khi:** danh sách ưu tiên anh duyệt · mỗi tính năng có ở bản Web, test xanh, screenshot (app Mac nhận ở mục App).
 - Chi tiết: `docs/phase-9-small-features.md`.
 
-### Phase 18–25 — Làm kỹ tính năng chính (plan 2026-10-25)
+### Phase 18–26 — Làm kỹ tính năng chính (plan 2026-10-25)
 
 - **Vì sao:** các tính năng chính đã có bản đầu ở Phase 1–9 nhưng gom chung trong phase lớn. Mỗi tính năng lớn
   được một phase riêng để làm kỹ: đủ dữ liệu, giải thích được, "Xong khi" đo được. Số cũ 10–63 lùi 16 (→ 26–79); sau đó Reddit Gap 9b → 10, thêm 11 Research nguồn gap, mọi số từ 10 lùi 2 (→ 12–81).
@@ -240,24 +240,24 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
   21 Theo dõi niche định kỳ · 22 Evidence pack + test bán trước · 23 Cài đặt AI + tuyến miễn phí · 24 MCP của app ·
   25 Review cụm tính năng chính.
 - **Không làm:** nguồn dữ liệu mới (Version 2), AI quyết thay anh, tính năng ngoài danh sách.
-- **Xong khi:** từng phase đạt "Xong khi" của nó; Phase 25 soát cả cụm trên 5 niche thật.
-- Chi tiết: `docs/web/phase-18-competitor-complaints.md` … `docs/web/phase-25-review-core.md`.
+- **Xong khi:** từng phase đạt "Xong khi" của nó; Phase 26 soát cả cụm trên 5 niche thật.
+- Chi tiết: `docs/web/phase-18-competitor-complaints.md` … `docs/web/phase-26-review-core.md`.
 
-### Phase 43 — So sánh niche (không AI) · dời lên Version 1, số cũ 18 → 10 → 26 (2026-10-25)
+### Phase 44 — So sánh niche (không AI) · dời lên Version 1, số cũ 18 → 10 → 26 (2026-10-25)
 
-- **Vì sao dời:** chỉ đọc DB, chạy được với dữ liệu Phase 1–9; chọn giữa vài niche là câu hỏi chính, không chờ nguồn mới. Nhóm Nguồn mới ghi "chưa tra" tới Phase 50–35. App Mac gói ở Phase 33 (mục App).
+- **Vì sao dời:** chỉ đọc DB, chạy được với dữ liệu Phase 1–9; chọn giữa vài niche là câu hỏi chính, không chờ nguồn mới. Nhóm Nguồn mới ghi "chưa tra" tới Phase 51–35. App Mac gói ở Phase 34 (mục App).
 
 - **Làm:** chọn 2–4 niche đã tra → bảng mỗi niche 1 cột, nhóm Cơ hội · Đối thủ · Xu hướng · Đau · Tiền · Nguồn mới → tô ô thắng theo luật cố định ghi trên UI · ô thiếu ghi "chưa tra" · xuất CSV + Markdown.
 - **Xong khi:** 3 niche thật đủ nhóm · kiểm tay 10 ô khớp màn chi tiết · đọc được ở 1340px.
-- Chi tiết: `docs/phase-43-compare-niche.md`.
+- Chi tiết: `docs/phase-44-compare-niche.md`.
 
-### Phase 24 — UI / UX Improvement
+### Phase 25 — UI / UX Improvement
 
 - **Mục tiêu:** sửa chỗ vướng thật — luồng chính, trạng thái tải/rỗng/lỗi, bảng dày, sáng/tối, bàn phím, cỡ cửa sổ.
-- **Làm:** soát từng màn → mockup (Codex) → anh duyệt → sửa bản Web → screenshot trước/sau. Checklist: [Soát gì](https://nvminhtu.github.io/niche-radar-docs/web/phase-24-ui-ux/#soat-gi).
+- **Làm:** soát từng màn → mockup (Codex) → anh duyệt → sửa bản Web → screenshot trước/sau. Checklist: [Soát gì](https://nvminhtu.github.io/niche-radar-docs/web/phase-25-ui-ux/#soat-gi).
 - **Không làm:** thêm tính năng mới (ghi sang Phase 9) · đổi hết giao diện khi không có vướng thật.
 - **Xong khi:** danh sách chỗ vướng có trạng thái từng mục (sửa / bỏ + lý do) · mỗi màn sửa có screenshot trước/sau đã Read ở bản Web.
-- Chi tiết: `docs/phase-24-ui-ux.md`.
+- Chi tiết: `docs/phase-25-ui-ux.md`.
 
 ### Backlog 01 — Account + Flow người dùng
 
@@ -270,77 +270,77 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 
 ---
 
-**Vạch MVP.** Phase 1–44 là MVP. Từ Phase 50: mỗi nguồn mới một phase **cào số (không AI)** rồi một phase **AI đọc chữ**
-(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 33 ở mục App, khi xong Version 9.
+**Vạch MVP.** Phase 1–45 là MVP. Từ Phase 51: mỗi nguồn mới một phase **cào số (không AI)** rồi một phase **AI đọc chữ**
+(dùng lại lớp AI Phase 6). Chỉ bản Web; gói vào app Mac là Phase 34 ở mục App, khi xong Version 9.
 Luật cào chung: gọi thưa, cache, bị chặn thì dừng nguồn đó và báo — **không vượt captcha, không proxy xoay, không cào
 trang cần đăng nhập bằng script**.
 
-### Phase 50 — YouTube Search (không AI)
+### Phase 51 — YouTube Search (không AI)
 
 - **Làm:** gợi ý YouTube (autocomplete `ds=yt`) làm nguồn keyword thứ 4 · top 20 video mỗi keyword Top 10 (view, ngày
   đăng, độ dài, kênh) · độ đông YouTube · độ mới (video top trong 12 tháng) · "video vượt kênh" (view ÷ sub cao) · CSV.
 - **Thư viện:** `youtubei.js` (InnerTube, không key) làm chính; YouTube Data API v3 (quota 10.000/ngày, 1 lần tìm = 100) dự phòng có key; `yt-dlp` nếu cần bền hơn. Đo endpoint trước khi code.
 - **MCP bên thứ 3 (tuỳ chọn, tắt mặc định):** vidIQ (`mcp.vidiq.com/mcp`: `keyword_research` lượt tìm + cạnh tranh, `outliers`, `trending_videos`; có gói Free, trừ credit mỗi lần gọi) thử trước · Apify YouTube MCP · MCP cộng đồng trên YouTube Data API. Tuyến job `.json` qua Claude đã nối MCP (chính) hoặc app gọi thẳng bằng API key chỉ đọc. Số MCP = ước tính bên thứ 3, cột riêng, không trộn vào điểm cơ hội, trần credit mỗi niche.
 - **Xong khi:** 3 niche thật có cây keyword YouTube + bảng top video + cột video vượt kênh, một lần chạy không bị chặn.
-- Chi tiết: `docs/phase-50-youtube-search.md`.
+- Chi tiết: `docs/phase-51-youtube-search.md`.
 
-### Phase 51 — YouTube Research (AI)
+### Phase 52 — YouTube Research (AI)
 
 - **Làm:** phụ đề + comment top video → chủ đề than · xin tính năng · tool được nhắc · tóm tắt video có mốc giây · gợi ý hàng mới cho Feature Gap Matrix.
 - **Tuyến:** phụ đề + comment qua lớp AI Phase 6 (chính) · Gemini API đọc thẳng link YouTube (video không phụ đề) · Claude in Chrome qua file job. Bài thử chuẩn 10 video → chọn.
 - **Xong khi:** 3 niche có chủ đề + xin tính năng, mọi câu có link + mốc giây, dưới trần chi phí.
-- Chi tiết: `docs/phase-51-youtube-ai.md`.
+- Chi tiết: `docs/phase-52-youtube-ai.md`.
 
-### Phase 52 — Amazon Search (không AI)
+### Phase 53 — Amazon Search (không AI)
 
 - **Làm:** gợi ý Amazon · top 20 sản phẩm mỗi keyword Top 5 (giá, sao, số review, huy hiệu đã bán) · BSR top 5 · khoảng giá · "lính mới thắng".
 - **Cách lấy:** autocomplete + cào HTML (`fetch` + `cheerio`), ≥ 5 giây / request, cache 7 ngày; gặp captcha → dừng nguồn. PA-API không hợp (cần tài khoản Associates có doanh số).
 - **Không làm:** ước doanh số từ BSR · Jungle Scout / Helium 10 / Keepa.
 - **Xong khi:** 3 niche có cây keyword Amazon + top sản phẩm + khoảng giá; captcha (nếu có) báo đúng trên UI.
-- Chi tiết: `docs/phase-52-amazon-search.md`.
+- Chi tiết: `docs/phase-53-amazon-search.md`.
 
-### Phase 53 — Amazon Research (AI)
+### Phase 54 — Amazon Research (AI)
 
 - **Làm:** review 1–3★ + hỏi đáp top 5 sản phẩm → chủ đề chê · ước gì · so với ai · gợi ý chỗ app làm tốt hơn · cột Amazon cho Feature Gap Matrix.
 - **Tuyến:** Claude in Chrome trong phiên Amazon anh tự đăng nhập (chỉ đọc, kết quả qua file `.json`) — chính · lớp AI Phase 6 cho mô tả + review công khai.
 - **Không làm:** cào review sau đăng nhập bằng script · Claude tự đăng nhập / nhập mật khẩu.
 - **Xong khi:** 3 niche có chủ đề chê + ước gì có link review · ≥ 1 gợi ý cho app anh thấy đáng soi.
-- Chi tiết: `docs/phase-53-amazon-ai.md`.
+- Chi tiết: `docs/phase-54-amazon-ai.md`.
 
-### Phase 54 — Google Maps Research (AI)
+### Phase 55 — Google Maps Research (AI)
 
 - **Làm:** đếm cửa hàng theo loại × thành phố (≤ 5 thành phố) · review 1–3★ Top 20 chỗ → khách than gì · chủ trả lời gì · việc làm tay → ý tưởng app có ≥ 3 review làm bằng chứng → evidence pack Phase 7.
 - **Cách lấy:** OpenStreetMap Overpass (0 đ, đếm) · Google Places API (New) có key, có trần số lần gọi · Claude in Chrome đọc review trên Maps. **Không** cào Maps bằng script.
 - **Xong khi:** 3 loại × 2 thành phố có số đếm + chủ đề có trích dẫn · ≥ 1 ý tưởng có ≥ 3 review · chạy được không cần key.
-- Chi tiết: `docs/phase-54-google-maps.md`.
+- Chi tiết: `docs/phase-55-google-maps.md`.
 
 ---
 
-**Version 3 · So sánh + AI Cite.** Không thêm nguồn. So sánh niche (Phase 43) đã dời lên MVP; ở đây đặt 2–5 đối thủ cạnh nhau (không AI), rồi cho hỏi dữ liệu
+**Version 3 · So sánh + AI Cite.** Không thêm nguồn. So sánh niche (Phase 44) đã dời lên MVP; ở đây đặt 2–5 đối thủ cạnh nhau (không AI), rồi cho hỏi dữ liệu
 bằng lời — AI chỉ đọc DB, mọi câu có trích dẫn, **máy tự kiểm** (id có thật · câu trích đúng chữ · số bằng DB), sai thì cờ
 đỏ. Thước đo: chọn 1 niche thật ≤ 30 phút tới evidence pack. **Không làm:** nguồn mới · AEO/GEO/SEO (Version 4) · AI lên
 web khi trả lời · so theo thời gian (theo dõi định kỳ, Phase 9) · AI chấm "niche tốt nhất" · chat nhiều lượt. Chi tiết: `docs/version-3.md`.
 
-### Phase 55 — So sánh đối thủ (không AI)
+### Phase 56 — So sánh đối thủ (không AI)
 
 - **Làm:** 2–5 đối thủ trong 1 niche → giá / gói · sao, % review 1–2★, cập nhật cuối · tính năng từ Feature Gap Matrix · 3 chủ đề than có câu nguyên văn + link · hàng "Chỗ trống" · xuất.
 - **Xong khi:** 2 niche × 4 đối thủ đủ hàng · 10 câu than mở đúng review gốc · ≥ 1 dòng Chỗ trống.
-- Chi tiết: `docs/phase-55-compare-competitor.md`.
+- Chi tiết: `docs/phase-56-compare-competitor.md`.
 
-### Phase 26.4 — Hỏi dữ liệu (AI Cite)
+### Phase 27.4 — Hỏi dữ liệu (AI Cite)
 
 - **Làm:** ô hỏi trên màn niche / so sánh → lấy dòng liên quan từ DB kèm id → lớp AI Phase 6 → câu trả lời gắn id nguồn → **lớp kiểm trích dẫn dùng chung** → lịch sử hỏi.
 - **Xong khi:** bài thử 20 câu: ≥ 95% trích dẫn qua kiểm, 0 câu thiếu trích dẫn, đúng "chưa có dữ liệu", dưới trần chi phí · sửa 1 câu trích trong DB → cờ đỏ.
-- Chi tiết: `docs/phase-26-4-ai-cite-ask.md`.
+- Chi tiết: `docs/phase-27-4-ai-cite-ask.md`.
 
-### Phase 56 — Báo cáo so sánh (AI Cite)
+### Phase 57 — Báo cáo so sánh (AI Cite)
 
-- **Làm:** từ bảng Phase 43 / 55 → báo cáo khung cố định (kết luận · mạnh/yếu · rủi ro · câu hỏi mở) → kiểm trích dẫn, còn cờ đỏ thì chặn xuất → sửa tay → evidence pack `.md` cho `/app-research`.
+- **Làm:** từ bảng Phase 44 / 56 → báo cáo khung cố định (kết luận · mạnh/yếu · rủi ro · câu hỏi mở) → kiểm trích dẫn, còn cờ đỏ thì chặn xuất → sửa tay → evidence pack `.md` cho `/app-research`.
 - **Không làm:** ghi Verdict thay người dùng · sinh concept / giá / spec · PDF, slide.
 - **Xong khi:** 2 báo cáo niche + 1 báo cáo đối thủ, 0 cờ đỏ · kiểm tay 15 trích dẫn đúng.
-- Chi tiết: `docs/phase-56-ai-cite-report.md`.
+- Chi tiết: `docs/phase-57-ai-cite-report.md`.
 
-### Phase 57 — Review Version 3
+### Phase 58 — Review Version 3
 
 - **Làm:** 3 lần chọn niche thật ở bản Web (bấm giờ) → sửa lỗi. Gói vào app Mac → Backlog 18 (mục App).
 - **Xong khi:** ≥ 2/3 lần ≤ 30 phút · test xanh.
@@ -355,32 +355,32 @@ SEO trả phí / search volume trả phí (ứng viên Phase 9) · cào Google /
 (`/app-geo`) · viết / đăng bài · audit kỹ thuật (`geo.py audit`) · fine-tune model · mẹo lừa AI · hứa thứ hạng.
 Chi tiết: `docs/version-4.md`.
 
-### Phase 58 — Kệ Google (SEO, không AI)
+### Phase 59 — Kệ Google (SEO, không AI)
 
 - **Làm:** top 10 cho Top 10 keyword qua API tìm kiếm có tầng miễn phí (Brave Search API đề xuất; đo quota trước) → loại trang theo luật domain (store · forum · blog nhỏ · site lớn · app chính chủ · video) → độ dễ chen · bộ câu hỏi từ autocomplete `how/why/can/best/vs/alternative` · cache 7 ngày.
 - **Xong khi:** 3 niche × 10 keyword · ≥ 20 câu hỏi/niche · ≥ 6/10 URL kiểm tay có trong top 10 Google · hết quota báo đúng.
-- Chi tiết: `docs/phase-58-seo-shelf.md`.
+- Chi tiết: `docs/phase-59-seo-shelf.md`.
 
-### Phase 59 — Kệ AI (GEO / AEO)
+### Phase 60 — Kệ AI (GEO / AEO)
 
 - **Làm:** 10–20 câu × engine (Gemini + Google Search grounding chính · ChatGPT qua `codex exec` · Claude qua `claude -p`, cùng câu lệnh mẫu `geo.py`) → lưu nguyên văn + engine + model + ngày → đếm nhắc tên + domain được trích bằng regex → cờ câu trả lời yếu · trần chi phí.
 - **Xong khi:** 3 niche × 10 câu × ≥ 2 engine dưới trần · kiểm tay 10 câu đếm đúng · khớp `geo.py analyze` trên cùng câu.
-- Chi tiết: `docs/phase-59-ai-shelf.md`.
+- Chi tiết: `docs/phase-60-ai-shelf.md`.
 
-### Phase 60 — Chỗ trống AI + SEO (không AI)
+### Phase 61 — Chỗ trống AI + SEO (không AI)
 
-- **Làm:** điểm kệ Google (% forum + blog nhỏ, có app chính chủ không) + điểm kệ AI (% câu yếu, độ tập trung nhắc tên, trang trích viết được không) theo công thức ghi trên UI → 2 cột mới trong so sánh niche Phase 43 → danh sách câu hỏi chưa ai trả lời tốt.
+- **Làm:** điểm kệ Google (% forum + blog nhỏ, có app chính chủ không) + điểm kệ AI (% câu yếu, độ tập trung nhắc tên, trang trích viết được không) theo công thức ghi trên UI → 2 cột mới trong so sánh niche Phase 44 → danh sách câu hỏi chưa ai trả lời tốt.
 - **Xong khi:** 3 niche có 2 cột mới, mỗi điểm bấm ra số gốc · niche biết chắc đông ra "khó chen".
-- Chi tiết: `docs/phase-60-ai-seo-gap.md`.
+- Chi tiết: `docs/phase-61-ai-seo-gap.md`.
 
-### Phase 61 — Gói GEO + trang cần viết
+### Phase 62 — Gói GEO + trang cần viết
 
-- **Làm:** niche đã chọn → `questions.tsv` + `brands.tsv` đúng định dạng `geo.py` · danh sách trang cần viết (loại trang · trang AI đang trích · lý do qua AI Cite Phase 26.4) · `geo-pack/` + lệnh chạy mốc.
+- **Làm:** niche đã chọn → `questions.tsv` + `brands.tsv` đúng định dạng `geo.py` · danh sách trang cần viết (loại trang · trang AI đang trích · lý do qua AI Cite Phase 27.4) · `geo-pack/` + lệnh chạy mốc.
 - **Không làm:** viết bài (`/oneclicktool-blog`) · đo lại sau ra mắt (`/app-geo`).
 - **Xong khi:** 1 niche → `geo.py run` + `analyze` chạy không sửa tay · ≥ 5 trang cần viết có trích dẫn qua kiểm.
-- Chi tiết: `docs/phase-61-geo-pack.md`.
+- Chi tiết: `docs/phase-62-geo-pack.md`.
 
-### Phase 62 — Review Version 4
+### Phase 63 — Review Version 4
 
 - **Làm:** 3 lần chọn niche thật có kệ Google + kệ AI → sửa lỗi. Gói vào app Mac → Backlog 19 (mục App).
 - **Xong khi:** 3 lần chọn có gói GEO chạy mốc, dưới trần · test xanh.
@@ -415,12 +415,12 @@ Chi tiết: `docs/version-4.md`.
 - Firebase Auth trên bản Web (Google, Apple, email link) → Firestore chỉ project / ghi chú / kết luận / so sánh, dữ liệu cào thô ở lại SQLite, quy tắc chỉ chủ → GA4 sự kiện phễu không gửi chữ người gõ, hỏi đồng ý + báo lỗi → xoá tài khoản xoá cả cloud + Privacy Policy. **Không:** dữ liệu thô lên cloud · team · server riêng.
 - Chi tiết: `docs/version-9.md`.
 
-### Version 10 — Sell Pro — Lifetime / Subscriptions (Phase 30–26.7)
+### Version 10 — Sell Pro — Lifetime / Subscriptions (Phase 31–27.7)
 
-- `money.md` qua `/app-money` (giá đối thủ có nguồn + chi phí AI đo thật + phễu GA4) → Lemon Squeezy + webhook Cloud Functions → quyền Pro (license key kích hoạt trong app → Phase 34) → paywall, dùng thử, khôi phục, giới hạn máy → BYOK hay gói lượt AI có trần. Thước đo: 1 đơn thật có nguồn. **Không:** Mac App Store IAP · tự xử lý thẻ · gói team · crypto.
+- `money.md` qua `/app-money` (giá đối thủ có nguồn + chi phí AI đo thật + phễu GA4) → Lemon Squeezy + webhook Cloud Functions → quyền Pro (license key kích hoạt trong app → Phase 35) → paywall, dùng thử, khôi phục, giới hạn máy → BYOK hay gói lượt AI có trần. Thước đo: 1 đơn thật có nguồn. **Không:** Mac App Store IAP · tự xử lý thẻ · gói team · crypto.
 - Chi tiết: `docs/version-10.md`.
 
-### Version 11 — Marketing Plan (Phase 45–48)
+### Version 11 — Marketing Plan (Phase 46–49)
 
 - `/app-gtm`: định vị + landing riêng (`/oneclicktool-landing`) + email + GA4 → 2 kênh chọn bằng ICE → dogfood: báo cáo niche công khai hằng tuần + Version 4 cho chính niche-radar → lịch 6 tuần + ra mắt + bảng số + luật dừng. Claude soạn, anh đăng. **Không:** quảng cáo trả tiền trước 10 đơn · mua review · > 2 kênh.
 - Chi tiết: `docs/version-11.md`.
@@ -430,10 +430,10 @@ Chi tiết: `docs/version-4.md`.
 - Chỉ lên plan: danh sách ứng viên (Product Brief Export đã gộp vào Phase 15 ngày 2026-10-26, search volume trả phí, Chrome Web Store, IAP nhiều nước, MCP của app, team, Perplexity, Windows, TikTok / X, báo cáo công khai tự động, góp ý người dùng) → chấm số người xin · tác động · công · rủi ro → chọn ≤ 3 mỗi đợt, anh duyệt mới tách phase từ 82 (74–81 là App Mac).
 - Chi tiết: `docs/version-12.md`.
 
-### App Mac (Phase 17–36) — làm khi xong Version 9, trước Version 10
+### App Mac (Phase 17–37) — làm khi xong Version 9, trước Version 10
 
 App bọc lại đúng giao diện Web (Tauri), nên chỉ gói **một lần** khi bản Web xong Version 9. Trang phase Web không nhắc app;
-phần riêng của app gom ở Phase 34 (phần Pro của 77 làm khi tới Version 10). Thứ tự: **74 → 75 → 76 → 77 → 78 → 79 → 80 → 81**. Chi tiết: `docs/app/index.md`.
+phần riêng của app gom ở Phase 35 (phần Pro của 77 làm khi tới Version 10). Thứ tự: **74 → 75 → 76 → 77 → 78 → 79 → 80 → 81**. Chi tiết: `docs/app/index.md`.
 
 #### Phase 17 — Local App 1.0 (trước là phần app của Phase 8; code xong sớm 2026-10-25, thử máy mới khi tới lượt App)
 
@@ -447,39 +447,39 @@ phần riêng của app gom ở Phase 34 (phần Pro của 77 làm khi tới Ver
   web `npm run dev` vẫn chạy (đủ 6 mục ở spec §2).
 - Chi tiết: [spec Phase 8](2026-10-24-niche-radar-phase8-local-app.md) · `docs/app/phase-17-local-app-1.md`.
 
-#### Phase 33 — Local App 2.0
+#### Phase 34 — Local App 2.0
 
-- **Làm:** gói phần còn lại Version 1 (7, 9–28.2) + Phase 50–54 → gói collector mới vào sidecar → migration DB (bảng mới ULID) → key trong Keychain → nút job Claude in Chrome → `.dmg` ký + notarize.
+- **Làm:** gói phần còn lại Version 1 (7, 9–28.2) + Phase 51–55 → gói collector mới vào sidecar → migration DB (bảng mới ULID) → key trong Keychain → nút job Claude in Chrome → `.dmg` ký + notarize.
 - **Xong khi:** app 1.x có dữ liệu → cài 2.0 không mất dòng · tra 1 niche ra đủ khối YouTube + Amazon + Maps · mở ≤ 5 giây.
-- Chi tiết: `docs/phase-33-local-app-2.md`.
+- Chi tiết: `docs/phase-34-local-app-2.md`.
 
 
 #### Backlog 18 — Local App 3.0
 
-- **Làm:** gói Phase 55–56 vào app → migration DB (bộ so sánh, lịch sử hỏi, kết quả kiểm, ULID) → `.dmg` 3.0 ký + notarize.
+- **Làm:** gói Phase 56–57 vào app → migration DB (bộ so sánh, lịch sử hỏi, kết quả kiểm, ULID) → `.dmg` 3.0 ký + notarize.
 - **Xong khi:** 2.x → 3.0 không mất dòng · test xanh, bản Web vẫn chạy. Chi tiết: `docs/app/phase-backlog-18-local-app-3.md`.
 
 #### Backlog 19 — Local App 4.0
 
-- **Làm:** gói Phase 58–61 (key trong Keychain, engine `codex`/`claude` có thì dùng) → migration DB → `.dmg` 4.0.
+- **Làm:** gói Phase 59–62 (key trong Keychain, engine `codex`/`claude` có thì dùng) → migration DB → `.dmg` 4.0.
 - **Xong khi:** 3.x → 4.0 không mất dòng · test xanh. Chi tiết: `docs/app/phase-backlog-19-local-app-4.md`.
 
 #### Backlog 20 — App Mac nhẹ
 
 - Mở ≤ 3 giây, ít RAM khi rảnh, sidecar + `.dmg` nhỏ hơn — đo so với mốc Phase 46. Chi tiết: `docs/app/phase-backlog-20-light-mac-app.md`.
 
-#### Phase 34 — Phần riêng của app Mac
+#### Phase 35 — Phần riêng của app Mac
 
 - **Làm:** setup trong app (28.1) · CSP + quyền Tauri + key trong Keychain (56) · đăng nhập qua deep link (60) · license key + checkout từ app (65) · khôi phục mua (66) · BYOK Keychain + lượt AI còn lại (67).
-- **Xong khi:** license key test kích hoạt được không đăng nhập · deep link quay lại đúng app · phiếu bảo mật app qua. Chi tiết: `docs/app/phase-34-app-only.md`.
+- **Xong khi:** license key test kích hoạt được không đăng nhập · deep link quay lại đúng app · phiếu bảo mật app qua. Chi tiết: `docs/app/phase-35-app-only.md`.
 
-#### Backlog 21 — Build app Mac trên CI · Phase 36 — Release + auto-update
+#### Backlog 21 — Build app Mac trên CI · Phase 37 — Release + auto-update
 
-- Runner macOS build + ký + notarize bằng secret anh nhập → tag → GitHub Releases + What's New + Tauri updater. Chi tiết: `docs/app/phase-backlog-21-mac-build-ci.md`, `docs/app/phase-36-release-auto-update.md`.
+- Runner macOS build + ký + notarize bằng secret anh nhập → tag → GitHub Releases + What's New + Tauri updater. Chi tiết: `docs/app/phase-backlog-21-mac-build-ci.md`, `docs/app/phase-37-release-auto-update.md`.
 
 ### Appendix — chưa xếp phase / không làm
 
-Xem §7 (mục chưa xếp cũ đã chuyển vào Phase 8, 9, 25).
+Xem §7 (mục chưa xếp cũ đã chuyển vào Phase 8, 9, 26).
 
 ## 4. Đang pending (cập nhật mỗi phase)
 

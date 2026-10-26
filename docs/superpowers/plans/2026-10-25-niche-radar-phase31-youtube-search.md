@@ -1,11 +1,11 @@
-# Niche Radar Phase 50 — YouTube Search — Implementation Plan
+# Niche Radar Phase 51 — YouTube Search — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 làm trước.
 
 **Goal:** gõ niche → biết người ta tìm gì trên YouTube, video nào hút view, kênh nhỏ nào thắng kênh to. Không AI. MCP bên thứ 3 tuỳ chọn.
 
-**Spec:** [Phase 50 · YouTube Search](../../web/phase-50-youtube-search.md) · **Cần trước:** Phase 1 (cây keyword, `suggest.ts`),
+**Spec:** [Phase 51 · YouTube Search](../../web/phase-51-youtube-search.md) · **Cần trước:** Phase 1 (cây keyword, `suggest.ts`),
 Phase 3 (mẫu "chỉ Top 10 keyword"), Phase 14 (kết luận nguồn YouTube — nếu Phase 14 nói Bỏ thì dừng, hỏi anh).
 
 ## Mục tiêu · làm · không làm
@@ -14,7 +14,7 @@ Phase 3 (mẫu "chỉ Top 10 keyword"), Phase 14 (kết luận nguồn YouTube �
   test xanh · screenshot đã Read · bảng thử MCP đủ (vidIQ + ≥ 1 MCP khác hoặc lý do bỏ); nếu dùng: 1 niche có cột vidIQ qua
   tuyến job, dưới trần credit.
 - **Làm:** gợi ý YouTube (nhãn `YT`), top video mỗi keyword (Top 10 keyword), độ đông, độ mới, video vượt kênh, cột MCP tuỳ chọn, CSV.
-- **Không làm:** AI đọc video (Phase 51) · tải video · ước doanh thu kênh · mua gói trả phí · tool tạo nội dung của MCP.
+- **Không làm:** AI đọc video (Phase 52) · tải video · ước doanh thu kênh · mua gói trả phí · tool tạo nội dung của MCP.
 
 ## Đo trước khi code (Task 0)
 

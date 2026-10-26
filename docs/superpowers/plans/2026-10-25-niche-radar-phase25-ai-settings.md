@@ -1,11 +1,11 @@
-# Niche Radar Phase 26.6 — Cài đặt AI + tuyến miễn phí, sổ chi phí — Implementation Plan
+# Niche Radar Phase 27.6 — Cài đặt AI + tuyến miễn phí, sổ chi phí — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không nhập key thay anh, không tự tải model lớn.
 
 **Goal:** chọn **nhiều nhà cung cấp** (tự mang key), thử lại **tuyến miễn phí**, thấy rõ mỗi lần tra tốn bao nhiêu.
 
-**Spec:** [Phase 26.6 · Cài đặt AI](../../web/phase-26-6-ai-settings.md) · **Cần trước:** Phase 6 (`lib/ai/providers.ts`, `settings.ts`, `ai_calls`).
+**Spec:** [Phase 27.6 · Cài đặt AI](../../web/phase-27-6-ai-settings.md) · **Cần trước:** Phase 6 (`lib/ai/providers.ts`, `settings.ts`, `ai_calls`).
 
 ## Mục tiêu · làm · không làm
 
@@ -13,7 +13,7 @@
   khớp trang tính tiền nhà cung cấp (sai ≤ 10%) · tắt hết AI → tính năng không AI vẫn chạy.
 - **Làm:** Claude · Gemini Flash · OpenAI (key riêng, nút thử key), chọn tuyến theo việc, thử lại tuyến C (Gemini Nano trong
   Chrome) + D (Ollama / LM Studio), sổ chi phí ngày / tháng + trần tháng, bài thử chuẩn 1 bấm.
-- **Không làm:** gói lượt AI kèm Pro (Phase 26.7) · key trong Keychain (Phase 34).
+- **Không làm:** gói lượt AI kèm Pro (Phase 27.7) · key trong Keychain (Phase 35).
 
 ## Global Constraints
 

@@ -1,11 +1,11 @@
-# Niche Radar Phase 62 — Review Version 4 — Implementation Plan
+# Niche Radar Phase 63 — Review Version 4 — Implementation Plan
 
-> **For agentic workers:** phase **chỉ soát + sửa** Phase 58–44. Mỗi lỗi sửa xong `npm run check` xanh rồi commit.
+> **For agentic workers:** phase **chỉ soát + sửa** Phase 59–44. Mỗi lỗi sửa xong `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** dùng Version 4 **chọn niche thật 3 lần** có kệ Google + kệ AI ở bản Web, sửa lỗi.
 
-**Spec:** [Phase 62 · Review Version 4](../../web/phase-62-review-4.md) · **Cần trước:** Phase 58–44.
+**Spec:** [Phase 63 · Review Version 4](../../web/phase-63-review-4.md) · **Cần trước:** Phase 59–44.
 
 ## Mục tiêu · làm · không làm
 
@@ -16,14 +16,14 @@
 
 ## Global Constraints
 
-- Chi phí lấy từ sổ chi phí Phase 26.6 (không ước tay). Quota SERP từ `serp_calls`.
+- Chi phí lấy từ sổ chi phí Phase 27.6 (không ước tay). Quota SERP từ `serp_calls`.
 - Mốc `geo.py` lưu ở thư mục `research/` của repo pipeline do anh chọn — tool không tự ghi vào repo đó.
 - Lỗi lớn → Master Plan §4 pending.
 
 ## File đụng tới
 
-- `docs/web/phase-62-review-4.md` — bảng 3 lần: thời gian, chi phí AI, quota SERP, gói GEO, vướng
-- code Phase 58–61 — sửa lỗi kèm test
+- `docs/web/phase-63-review-4.md` — bảng 3 lần: thời gian, chi phí AI, quota SERP, gói GEO, vướng
+- code Phase 59–62 — sửa lỗi kèm test
 - `CHANGELOG.md` — bản Web mới
 
 ## Tasks

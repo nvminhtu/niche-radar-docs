@@ -11,7 +11,7 @@
 
 - **Xong khi:** `npm test` xanh khi tắt mạng · mỗi collector ≥ 1 test trên fixture thật · độ phủ `web/src/lib` + `web/src/collectors` có số,
   ghi vào trang phase · có danh sách file chưa có test.
-- **Làm:** `npm run record`, test mỗi collector, đo coverage, test lớp kiểm trích dẫn (Phase 26.4), test công thức điểm (Phase 1, 60).
+- **Làm:** `npm run record`, test mỗi collector, đo coverage, test lớp kiểm trích dẫn (Phase 27.4), test công thức điểm (Phase 1, 61).
 - **Không làm:** mục tiêu 100% · CI (Version 7) · sửa test cho xanh khi code sai.
 
 ## Global Constraints
@@ -43,7 +43,7 @@
 - [ ] Mỗi file trong `web/src/collectors/` ≥ 1 test fixture thật (parse đúng trường, xử lý trang chặn / rỗng).
 
 ### Task 4: Test lõi
-- [ ] Lớp kiểm trích dẫn (nếu Phase 26.4 chưa đủ ca), công thức điểm Phase 1 (`popularity`, `crowding`) + Phase 43.
+- [ ] Lớp kiểm trích dẫn (nếu Phase 27.4 chưa đủ ca), công thức điểm Phase 1 (`popularity`, `crowding`) + Phase 43.
 
 ### Task 5: Coverage + ghi lại
 - [ ] `npm run coverage`; số + danh sách file chưa test vào trang phase. Tắt Wi-Fi chạy `npm test` → xanh. Chip, ROADMAP, CHANGELOG.

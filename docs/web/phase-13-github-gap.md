@@ -157,6 +157,6 @@ app Mac cho chủ đề, rồi đưa vào Project chấm ở Bàn quyết địn
 - **Nhãn lạ không bắt được** → luật trong một file, kiểm tay 30 issue rồi bổ sung.
 - **Tính năng đã có ở app khác** → cột số app Mac theo chủ đề. Mỗi tính năng tốt vẫn phải kiểm tay xem có app nào làm chưa.
 - **Điều khoản:** GitHub Acceptable Use cho dùng dữ liệu công khai để research, cấm spam và bán thông tin cá nhân. Không
-  lưu người dùng nên an toàn. Trước khi bán Pro (Phase 30+) đọc lại.
+  lưu người dùng nên an toàn. Trước khi bán Pro (Phase 31+) đọc lại.
 
 Plan code: [2026-10-26-niche-radar-phase10c-github-gap](../superpowers/plans/2026-10-26-niche-radar-phase10c-github-gap.md)

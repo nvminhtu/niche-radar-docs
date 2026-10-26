@@ -1,19 +1,19 @@
 # Backlog 18 · Local App 3.0
 
-> Gói Phase 55–56 (Phase 43 gói ở Phase 33; đã soát ở [Phase 57](../web/phase-57-review-3.md)) vào **app Mac** một lần — như
-> [Phase 33](phase-33-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi bản Web xong Version 9**.
+> Gói Phase 56–57 (Phase 44 gói ở Phase 34; đã soát ở [Phase 58](../web/phase-58-review-3.md)) vào **app Mac** một lần — như
+> [Phase 34](phase-34-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi bản Web xong Version 9**.
 
 <span class="chip chip--skip">Không làm · 2026-10-26</span>
 
 <div class="box box--danger" markdown>
-**Không làm (chốt 2026-10-26):** tính năng mới vào app qua bản cập nhật [Phase 36](phase-36-release-auto-update.md), không gói theo version. Trang giữ lại để tra, không code.
+**Không làm (chốt 2026-10-26):** tính năng mới vào app qua bản cập nhật [Phase 37](phase-37-release-auto-update.md), không gói theo version. Trang giữ lại để tra, không code.
 </div>
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  W[Bản Web<br/>Phase 55–57 đã xong] --> P[Gói vào app Mac<br/>Tauri + sidecar Node]
+  W[Bản Web<br/>Phase 56–58 đã xong] --> P[Gói vào app Mac<br/>Tauri + sidecar Node]
   P --> M[Migration DB<br/>bảng so sánh · lịch sử hỏi]
   M --> B[.dmg 3.0<br/>ký + notarize]
 ```
@@ -36,8 +36,8 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tính năng mới (chỉ gói những gì Phase 55–56 đã xong)
-- Auto-update ([Phase 36](phase-36-release-auto-update.md)), bản Windows
+- Tính năng mới (chỉ gói những gì Phase 56–57 đã xong)
+- Auto-update ([Phase 37](phase-37-release-auto-update.md)), bản Windows
 </div>
 
 Plan code chi tiết: [Backlog 18](../superpowers/plans/2026-10-25-niche-radar-phase76-local-app-3.md)

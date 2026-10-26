@@ -178,7 +178,7 @@ tuyến B (Claude in Chrome tự đọc). Ba việc này chờ có dữ liệu t
 | Rủi ro | Cách đỡ |
 |---|---|
 | Không tuyến nào lấy được dữ liệu | Bước 0 trước, dừng sớm nếu trượt |
-| Điều khoản Reddit cấm dùng dữ liệu cho sản phẩm bán | Bản đầu chỉ dùng nội bộ để research. Trước khi bán Pro (Phase 30+) phải đọc lại điều khoản, có thể tắt nguồn Reddit ở bản bán |
+| Điều khoản Reddit cấm dùng dữ liệu cho sản phẩm bán | Bản đầu chỉ dùng nội bộ để research. Trước khi bán Pro (Phase 31+) phải đọc lại điều khoản, có thể tắt nguồn Reddit ở bản bán |
 | Phân loại bằng mẫu câu sai nhiều | Kiểm tay 30 bài, sửa luật trong file; AI chỉ gán phần `other` |
 | Top năm thiên về bài vui / tin tức, ít hỏi đáp | Lọc bỏ flair News / Discussion; thêm search theo mẫu câu hỏi |
 

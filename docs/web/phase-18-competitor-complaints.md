@@ -1,7 +1,7 @@
 # Phase 18 · Đối thủ bị chê gì
 
 > Từ "vài cụm từ lặp lại" thành **bản đồ lời chê**: app nào bị chê gì, chê kiểu gì, chê mới nổi hay chê cũ,
-> và người dùng **ước gì** — mọi dòng có câu nguyên văn. **Không AI** (AI ở [Phase 27.1](phase-27-1-ai-summary.md)).
+> và người dùng **ước gì** — mọi dòng có câu nguyên văn. **Không AI** (AI ở [Phase 28.1](phase-28-1-ai-summary.md)).
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
 
@@ -32,7 +32,7 @@ flowchart LR
 | | |
 |---|---|
 | :material-database-arrow-down: **Lấy đủ review** | top 5 app mỗi store: Play 200 review mới nhất / app (hiện 150), App Store 100 (5 trang × 20, hiện 60 — gọi thưa như cũ). Giữ **1–3★** (hiện chỉ 1–2★; 3★ cho phần "ước gì"), có ngày + số sao; phiên bản chỉ Play có. Cache 7 ngày như hiện tại |
-| :material-history: **Nhớ review đã thấy** | mỗi lần lấy, review mới ghi vào lịch sử theo app (khoá = hash nội dung, ngày thấy lần đầu) — **không ghi đè** như cache. Đây là nền cho "mới nổi" và cho cache AI ở [Phase 27.1](phase-27-1-ai-summary.md) |
+| :material-history: **Nhớ review đã thấy** | mỗi lần lấy, review mới ghi vào lịch sử theo app (khoá = hash nội dung, ngày thấy lần đầu) — **không ghi đè** như cache. Đây là nền cho "mới nổi" và cho cache AI ở [Phase 28.1](phase-28-1-ai-summary.md) |
 | :material-merge: **Gộp cùng ý** | gốc từ (crash / crashes / crashing), bảng đồng nghĩa sửa được (`ads` = `advertisement` = `commercials`), bỏ tên app + tên thương hiệu khỏi cụm |
 | :material-tag-multiple: **Loại lời chê** | luật từ khoá: Lỗi / crash · Mất dữ liệu · Ép trả phí / giá · Quảng cáo · Thiếu tính năng · Khó dùng · Đồng bộ / tài khoản · Khác. Dùng chung bảng mức nặng của Phase 9 |
 | :material-table-account: **App nào bị chê gì** | bảng app × loại lời chê, ô = số review + bấm ra câu trích. Thấy ngay app nào yếu ở đâu |
@@ -63,9 +63,9 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- AI gom chủ đề / viết tóm tắt — [Phase 27.1](phase-27-1-ai-summary.md)
-- So sánh 2–5 đối thủ cạnh nhau — [Phase 55](phase-55-compare-competitor.md)
-- Lấy review ngoài 2 store (Reddit, YouTube…) — [Phase 11](phase-11-reddit-gap.md), [Phase 51](phase-51-youtube-ai.md)
+- AI gom chủ đề / viết tóm tắt — [Phase 28.1](phase-28-1-ai-summary.md)
+- So sánh 2–5 đối thủ cạnh nhau — [Phase 56](phase-56-compare-competitor.md)
+- Lấy review ngoài 2 store (Reddit, YouTube…) — [Phase 11](phase-11-reddit-gap.md), [Phase 52](phase-52-youtube-ai.md)
 </div>
 
 Plan code chi tiết: [Phase 18](../superpowers/plans/2026-10-25-niche-radar-phase12-competitor-complaints.md)

@@ -20,40 +20,40 @@ có quyết định giữ / dừng. Số thật ghi ngày, chưa đo thì ghi `c
 
 ```mermaid
 flowchart TB
-  P[Phase 45<br/>Định vị + landing + email] --> C[Phase 46<br/>Chọn 2 kênh · ICE]
-  P --> D[Phase 47<br/>Dogfood<br/>báo cáo niche công khai · gói GEO cho chính nó]
-  C & D --> S[Phase 48<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
+  P[Phase 46<br/>Định vị + landing + email] --> C[Phase 47<br/>Chọn 2 kênh · ICE]
+  P --> D[Phase 48<br/>Dogfood<br/>báo cáo niche công khai · gói GEO cho chính nó]
+  C & D --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
 ```
 
 ## Các phase
 
 | Phase | Làm gì | Skill App-AI-Skills |
 |---|---|---|
-| [68 · Định vị + landing + email](phase-45-positioning-landing.md) | 1 câu định vị, landing riêng, form email, GA4 sự kiện mua / tải | `/app-gtm`, `/oneclicktool-landing` |
-| [69 · Chọn 2 kênh](phase-46-two-channels.md) | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
-| [70 · Dogfood làm nội dung](phase-47-dogfood-content.md) | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
-| [71 · Lịch 6 tuần + ra mắt](phase-48-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
+| [68 · Định vị + landing + email](phase-46-positioning-landing.md) | 1 câu định vị, landing riêng, form email, GA4 sự kiện mua / tải | `/app-gtm`, `/oneclicktool-landing` |
+| [69 · Chọn 2 kênh](phase-47-two-channels.md) | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
+| [70 · Dogfood làm nội dung](phase-48-dogfood-content.md) | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
+| [71 · Lịch 6 tuần + ra mắt](phase-49-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
 
-## Phase 45 · Định vị + landing + email
+## Phase 46 · Định vị + landing + email
 
 - **Làm:** 1 câu định vị + 3 nỗi đau (lấy từ chính dữ liệu Reddit / review mà tool đọc được về "app idea", "niche") ·
   landing riêng trên oneclicktool.app (video demo quay từ app thật, giá khớp Version 10, FAQ) · form email ·
   sự kiện GA4 `download`, `checkout_click`, `generate_lead`.
 - **Xong khi:** landing live, `check_landing.py` qua, xem ở 1280 + 375 · email test vào đúng danh sách.
 
-## Phase 46 · Chọn 2 kênh
+## Phase 47 · Chọn 2 kênh
 
 - **Làm:** liệt kê kênh, chấm ICE (Impact · Confidence · Ease) có lý do · chọn 2 · mỗi kênh: tần suất, dạng bài, ai làm.
 - **Xong khi:** bảng ICE + 2 kênh được chọn, anh duyệt.
 
-## Phase 47 · Dogfood làm nội dung
+## Phase 48 · Dogfood làm nội dung
 
 - **Làm:** mỗi tuần 1 **báo cáo niche công khai** (chạy tool thật, có trích dẫn) làm bài blog / thread / mồi email ·
-  chạy Phase 58–61 cho chính từ khoá của niche-radar ("niche research tool", "app idea finder"…) → gói GEO → `/app-geo`
+  chạy Phase 59–62 cho chính từ khoá của niche-radar ("niche research tool", "app idea finder"…) → gói GEO → `/app-geo`
   đo mốc trước ra mắt.
 - **Xong khi:** 3 báo cáo niche đăng được · đo mốc GEO của niche-radar có `README-RESULT.md`.
 
-## Phase 48 · Lịch 6 tuần + ra mắt
+## Phase 49 · Lịch 6 tuần + ra mắt
 
 - **Làm:** lịch 6 tuần thành file bài (theo khuôn Campaign của Promo Desk) · ngày ra mắt (Product Hunt / Indie Hackers
   nếu kênh được chọn) · bảng số mỗi tuần: lượt vào landing, email, tải, dùng thử, đơn · **luật dừng**: kênh nào 3 tuần

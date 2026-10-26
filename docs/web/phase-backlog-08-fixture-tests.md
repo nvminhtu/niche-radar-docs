@@ -26,8 +26,8 @@ flowchart LR
 | :material-record-rec: **Ghi fixture** | `npm run record` (mới) lưu phản hồi thật của Play, App Store, Trends, YouTube, Amazon… vào `web/tests/fixtures/` (fixture — bản ghi dữ liệu mẫu). Hiện đã có thư mục `appstore`, `playstore`, `trends`, `trustmrr` |
 | :material-test-tube: **Test collector** | mỗi file trong `web/src/collectors/` có test đọc fixture, không gọi mạng |
 | :material-chart-donut: **Độ phủ** | đo coverage (bao nhiêu % code được test chạy qua), liệt kê file chưa có test |
-| :material-format-quote-close: **Kiểm trích dẫn** | test cho lớp kiểm trích dẫn của Phase 26.4 |
-| :material-calculator: **Công thức điểm** | test cho công thức điểm của Phase 1 và Phase 60 |
+| :material-format-quote-close: **Kiểm trích dẫn** | test cho lớp kiểm trích dẫn của Phase 27.4 |
+| :material-calculator: **Công thức điểm** | test cho công thức điểm của Phase 1 và Phase 61 |
 
 <div class="box box--star" markdown>
 **Xong khi**

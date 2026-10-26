@@ -28,8 +28,8 @@ Anh chốt: **bán app Mac + Windows tải về + dùng thử + license**, học
 | Performance | V5: 46–48 · App 78 | không ra tiền; mốc 2026-10-25 đã ổn (mở ~0,14 s) | — |
 | Test tự động | V6: 50–53b | không ra tiền | test hiện có vẫn chạy trước khi merge |
 | CI cho PR, quy trình nhánh, build app trên CI | V7: 54, 57 · App 80 | không ra tiền | build + ký trên máy (`npm run mac`) |
-| Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 34](app/phase-34-app-only.md) |
-| Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 36](app/phase-36-release-auto-update.md) |
+| Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 35](app/phase-35-app-only.md) |
+| Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 37](app/phase-37-release-auto-update.md) |
 | Gói lượt AI kèm Pro | phần của 69 | mình gánh tiền AI | AI người dùng đã có (Claude Code, Codex, Ollama, key riêng) |
 
 ## Không làm (từ trước)
@@ -57,8 +57,8 @@ Chấm ở [Bản đồ nguồn gap](web/gap-sources-map.md). Đừng xét lại
 | producthunt-mcp-server | không license, bỏ từ 2025-04, API Product Hunt cấm dùng thương mại |
 
 **Ứng viên (chưa xếp phase):** gom chủ đề bằng BERTopic + sentence-transformers thay từ điển tay ở Phase 11 · cờ "top 3
-là diễn đàn" cho Phase 58 · nút tiền tố "alternative / vs / free" cho Phase 39 · nhắc theo lịch WWDC cho Phase 41 ·
-hạ Amazon (Phase 52–53) xuống ứng viên — chờ anh duyệt.
+là diễn đàn" cho Phase 59 · nút tiền tố "alternative / vs / free" cho Phase 40 · nhắc theo lịch WWDC cho Phase 42 ·
+hạ Amazon (Phase 53–54) xuống ứng viên — chờ anh duyệt.
 
 ## Ứng viên từ Phase 12 (2026-10-26)
 

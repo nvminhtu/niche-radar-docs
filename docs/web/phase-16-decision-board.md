@@ -14,11 +14,11 @@
   các keyword với nhau. Anh phải tự nhớ tiêu chí.
 - [Phase 15](phase-15-export.md) đã có gói cho LLM, nhưng **chỉ một chiều**: anh dán ra AI, kết quả AI không quay lại
   app được.
-- [Phase 42](phase-42-evidence-presell.md) có vòng BUILD / TEST THÊM / BỎ, nhưng cho **1 niche đã chọn**. Bước chọn
+- [Phase 43](phase-43-evidence-presell.md) có vòng BUILD / TEST THÊM / BỎ, nhưng cho **1 niche đã chọn**. Bước chọn
   1 trong N long-tail chưa có công cụ.
-- [Phase 43](phase-43-compare-niche.md) so 2–4 **niche** (cả Research), không có verdict. Phase này so các **keyword
+- [Phase 44](phase-44-compare-niche.md) so 2–4 **niche** (cả Research), không có verdict. Phase này so các **keyword
   trong 1 Project**, có verdict + dẫn chứng.
-- Bán Pro nằm ở [Version 10](version-10.md) (Phase 30–26.7), sau App Mac. Đi tới đó mới biết có ai trả tiền là rủi ro
+- Bán Pro nằm ở [Version 10](version-10.md) (Phase 31–27.7), sau App Mac. Đi tới đó mới biết có ai trả tiền là rủi ro
   lớn. Fake-door rẻ, đo được ngay trên demo site đang live.
 </div>
 
@@ -39,7 +39,7 @@ flowchart LR
   K -->|sai| E[Báo dòng lỗi<br/>không lưu]
   M & B --> V[Verdict từng keyword<br/>BUILD · TEST THÊM · BỎ]
   V --> S[Lưu vào Project<br/>kết luận + lý do]
-  V -->|BUILD| X[Phase 42<br/>evidence pack]
+  V -->|BUILD| X[Phase 43<br/>evidence pack]
 ```
 
 ## Làm gì
@@ -54,8 +54,8 @@ flowchart LR
 | :material-content-copy: **Copy prompt** | nút ở đầu bảng: ghép gói LLM Phase 15 (phạm vi Project, trần 8k / 32k) + rubric + luật dẫn chứng + định dạng JSON phải trả. Prompt ép: mỗi điểm 1 dẫn chứng có mã nguồn, không có thì `"chưa đo"`; chọn **1 BUILD, tối đa 1 TEST THÊM**, còn lại BỎ; 2 rủi ro lớn nhất của keyword BUILD + cách kiểm rẻ nhất (< $50, < 1 tuần); chỗ nào dữ liệu chưa đủ để kết luận |
 | :material-clipboard-arrow-down: **Dán JSON ngược** | ô dán kết quả AI → kiểm theo schema `niche-radar/decision` v1: đúng keyword trong Project, điểm 1–5, mỗi dẫn chứng trỏ mã nguồn **có thật** trong gói đã copy. Dẫn chứng không có thật → ô đó gạch đỏ "dẫn chứng không có trong dữ liệu", điểm không tính. JSON sai cú pháp → báo dòng lỗi, không lưu gì |
 | :material-compare: **AI vs tay** | khi có cả 2 bản chấm, ô lệch ≥ 2 điểm tô vàng để anh xem lại. Bản lưu cuối là bản anh chốt |
-| :material-scale-balance: **Verdict + lưu** | mỗi keyword: BUILD / TEST THÊM / BỎ + 1 dòng lý do (bắt buộc với BỎ). Lưu vào kết luận Project + trạng thái item (BỎ = loại có lý do, khớp [Phase 21](phase-21-project-manage.md)). Mỗi lần chấm lưu thành 1 bản, xem lại được bản cũ |
-| :material-rocket-launch: **Sang Phase 42** | keyword BUILD → nút "Làm evidence pack" mở đúng luồng [Phase 42](phase-42-evidence-presell.md) |
+| :material-scale-balance: **Verdict + lưu** | mỗi keyword: BUILD / TEST THÊM / BỎ + 1 dòng lý do (bắt buộc với BỎ). Lưu vào kết luận Project + trạng thái item (BỎ = loại có lý do, khớp [Phase 22](phase-22-project-manage.md)). Mỗi lần chấm lưu thành 1 bản, xem lại được bản cũ |
+| :material-rocket-launch: **Sang Phase 43** | keyword BUILD → nút "Làm evidence pack" mở đúng luồng [Phase 43](phase-43-evidence-presell.md) |
 | :material-file-export: **Xuất** | bảng rubric + verdict + dẫn chứng đi theo hộp Xuất chung của Phase 15 (Markdown + CSV `decisions`) và gói `.niche.json` |
 
 ### Phần B · Fake-door đo nhu cầu Pro (chưa thu tiền)
@@ -68,8 +68,8 @@ trước khi làm thật.
 | :material-lock-open-variant: **2 nút Pro** | (1) **"Chấm bằng AI 1 bấm"** cạnh nút Copy prompt · (2) **"Báo tôi qua email khi niche đổi"** ở khối Theo dõi của Project. Nhãn `Pro · sắp có` |
 | :material-form-select: **Hộp khi bấm** | nói thật: tính năng chưa có, đang đo nhu cầu. Hỏi 1 câu giá **"Bạn sẵn sàng trả bao nhiêu?"** (Không trả · ~$5/tháng · ~$10/tháng · ~$29 một lần · Khác) + ô email. Không có nút mua, không lấy thẻ |
 | :material-email-plus: **Email** | Mailchimp như demo site (`PRODUCT=niche-radar`) + tag `pro-<tính năng>` và tag mức giá đã chọn |
-| :material-chart-bar: **Đếm** | GA4 sự kiện `pro_interest_click` (tính năng) và `pro_interest_email` (tính năng, mức giá). Gắn `VITE_GA_ID` cho demo site (việc còn treo từ Phase 49). Bản chạy trên máy không gửi GA — chỉ ghi đếm vào DB của anh |
-| :material-ruler-square: **Ngưỡng ghi trước** | trước khi bật, anh ghi ngưỡng vào trang này (đề xuất để anh sửa: sau 4 tuần ≥ 20 email Pro **và** ≥ 30 % trong số đó chọn mức có trả tiền) — đạt thì mở [Phase 30](phase-30-money-model.md) sớm, không chờ App Mac |
+| :material-chart-bar: **Đếm** | GA4 sự kiện `pro_interest_click` (tính năng) và `pro_interest_email` (tính năng, mức giá). Gắn `VITE_GA_ID` cho demo site (việc còn treo từ Phase 50). Bản chạy trên máy không gửi GA — chỉ ghi đếm vào DB của anh |
+| :material-ruler-square: **Ngưỡng ghi trước** | trước khi bật, anh ghi ngưỡng vào trang này (đề xuất để anh sửa: sau 4 tuần ≥ 20 email Pro **và** ≥ 30 % trong số đó chọn mức có trả tiền) — đạt thì mở [Phase 31](phase-31-money-model.md) sớm, không chờ App Mac |
 | :material-table-eye: **Kết quả** | bảng ở cuối trang này: ngày bật, số click, số email, phân bố mức giá, nguồn (GA4 + Mailchimp) + ngày đo. Chưa có số → ghi **chưa đo** |
 
 <div class="box box--rules" markdown>
@@ -80,8 +80,8 @@ trước khi làm thật.
 - Không bịa dẫn chứng: điểm không có mã nguồn có thật trong gói → không tính, ghi `chưa đo`
 - Không có "điểm tổng bí ẩn": tổng = cộng 5 trục, ô `chưa đo` không cộng, ghi rõ "3/5 trục có dữ liệu"
 - Fake-door nói thật là chưa có, không thu tiền, không hứa ngày ra
-- Ngưỡng ghi trước khi bật; đổi sau khi thấy số → ghi đỏ "đổi sau khi thấy số" (như Phase 42)
-- Giá đối thủ trong review (credit $9, $19, $5.99…) **chưa vào `money.md`** — Phase 30 mở từng trang pricing đo lại có
+- Ngưỡng ghi trước khi bật; đổi sau khi thấy số → ghi đỏ "đổi sau khi thấy số" (như Phase 43)
+- Giá đối thủ trong review (credit $9, $19, $5.99…) **chưa vào `money.md`** — Phase 31 mở từng trang pricing đo lại có
   link + ngày
 - Schema mới: `decision` đi theo `.niche.json` + tăng `schema_version` của Export + ghi CHANGELOG
 </div>
@@ -102,10 +102,10 @@ trước khi làm thật.
 **Không làm ở phase này**
 
 - Gọi AI trong app (Decision Engine Pro) — chỉ khi fake-door đạt ngưỡng; ghi ứng viên ở [Version 12](version-12.md)
-- Gửi email báo thay đổi thật — [Phase 41](phase-41-tracking.md) làm phần báo trong app, email sau [Version 9](version-9.md)
+- Gửi email báo thay đổi thật — [Phase 42](phase-42-tracking.md) làm phần báo trong app, email sau [Version 9](version-9.md)
 - Niche → Spec / ASO (PRD tóm tắt, title / subtitle / keyword field), báo cáo chia sẻ PDF / link — ứng viên Version 12
 - Thanh toán, license, paywall thật — [Version 10](version-10.md)
-- So nhiều niche (cả Research) — [Phase 43](phase-43-compare-niche.md)
+- So nhiều niche (cả Research) — [Phase 44](phase-44-compare-niche.md)
 - Đổi rubric theo từng người (trọng số tuỳ chỉnh) — dùng bản cố định trước, đổi khi có người xin
 </div>
 
@@ -155,4 +155,4 @@ PRODUCT đúng · sửa ngưỡng dưới đây nếu muốn, trước khi có s
 | 2026-10-26 | Chấm bằng AI 1 bấm | chưa đo | chưa đo | chưa đo | GA4 chưa gắn · Mailchimp chưa đọc |
 | 2026-10-26 | Báo email khi niche đổi | chưa đo | chưa đo | chưa đo | GA4 chưa gắn · Mailchimp chưa đọc |
 
-**Ngưỡng (ghi trước khi bật, 2026-10-26):** sau 4 tuần (tới 2026-11-23) ≥ 20 email Pro **và** ≥ 30 % trong số đó chọn mức có trả tiền → mở Phase 30 sớm. Đây là mức đề xuất trong plan — anh sửa được trước khi có số; sửa sau khi thấy số thì ghi đỏ "đổi sau khi thấy số".
+**Ngưỡng (ghi trước khi bật, 2026-10-26):** sau 4 tuần (tới 2026-11-23) ≥ 20 email Pro **và** ≥ 30 % trong số đó chọn mức có trả tiền → mở Phase 31 sớm. Đây là mức đề xuất trong plan — anh sửa được trước khi có số; sửa sau khi thấy số thì ghi đỏ "đổi sau khi thấy số".

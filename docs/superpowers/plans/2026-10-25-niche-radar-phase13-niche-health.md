@@ -1,4 +1,4 @@
-# Niche Radar Phase 19 — Chấm sức khoẻ niche — Implementation Plan
+# Niche Radar Phase 20 — Chấm sức khoẻ niche — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
@@ -6,16 +6,16 @@
 **Goal:** điểm v2 **đọc được và tin được**: mỗi yếu tố giải thích trong 1 phút, cờ chặn rủi ro điểm không thấy, back-test
 bằng niche đã biết kết quả.
 
-**Spec:** [Phase 19 · Chấm sức khoẻ niche](../../web/phase-19-niche-health.md) · **Cần trước:** Phase 7 + 9 (`score-v2.ts`,
+**Spec:** [Phase 20 · Chấm sức khoẻ niche](../../web/phase-20-niche-health.md) · **Cần trước:** Phase 7 + 9 (`score-v2.ts`,
 `score-config.ts`, `HealthBlock.tsx`), Phase 18 (lời chê theo loại — cho cờ & giải thích "Đau"). **Chạy lại back-test sau
-Phase 37** (Tiền đổi từ proxy sang đo) — Phase 37 có task riêng cho việc này.
+Phase 38** (Tiền đổi từ proxy sang đo) — Phase 38 có task riêng cho việc này.
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** anh giải thích được từng yếu tố của 3 niche từ màn hình · back-test ≥ 5 niche đã biết kết quả, bảng trong
   trang phase · cờ chặn bật đúng ≥ 2 niche có rủi ro thật · test xanh cho công thức + cờ · screenshot đã Read.
 - **Làm:** mở từng yếu tố, nhãn độ tin, cờ chặn, ngưỡng do anh đặt, back-test, lưu điểm theo thời gian, 1 đoạn kết luận không AI.
-- **Không làm:** AI tự chấm / tự quyết BUILD · so nhiều niche (Phase 43) · đo tự động trục Tiếp cận / Hợp sức.
+- **Không làm:** AI tự chấm / tự quyết BUILD · so nhiều niche (Phase 44) · đo tự động trục Tiếp cận / Hợp sức.
 
 ## Global Constraints
 
@@ -60,7 +60,7 @@ Phase 37** (Tiền đổi từ proxy sang đo) — Phase 37 có task riêng cho 
 ### Task 4: Ngưỡng + lịch sử điểm
 - [ ] Ngưỡng ở Cài đặt, mỗi lần sửa bắt nhập lý do, lưu lịch sử.
 - [ ] Migration `score_history` (backup trước); ghi 1 dòng mỗi lần chấm xong.
-- [ ] **Không vẽ biểu đồ ở đây** — dòng thời gian điểm làm 1 chỗ ở Phase 41 (đọc `score_history`).
+- [ ] **Không vẽ biểu đồ ở đây** — dòng thời gian điểm làm 1 chỗ ở Phase 42 (đọc `score_history`).
 
 ### Task 4b: Cần đo thêm gì
 - [ ] `health-next.ts` + dòng dưới điểm trong `HealthBlock`. Test: niche thiếu Trends → gợi ý chạy lại Trends; Tiền proxy → gợi ý Phase 18.
@@ -76,4 +76,4 @@ Phase 37** (Tiền đổi từ proxy sang đo) — Phase 37 có task riêng cho 
 ## Tiến độ
 
 - 2026-10-25: viết plan. Back-test cũ (Phase 7): 5 niche 4,5–5,4 điểm, chưa niche nào ≥ 6.
-- 2026-10-26: review plan — biểu đồ điểm chỉ làm ở Phase 41; back-test chạy lại sau Phase 37; thêm "cần đo thêm gì".
+- 2026-10-26: review plan — biểu đồ điểm chỉ làm ở Phase 42; back-test chạy lại sau Phase 38; thêm "cần đo thêm gì".

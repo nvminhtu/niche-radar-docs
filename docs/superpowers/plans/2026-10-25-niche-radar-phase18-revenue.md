@@ -1,12 +1,12 @@
-# Niche Radar Phase 37 — Doanh thu thật: TrustMRR + nguồn khác + AI — Implementation Plan
+# Niche Radar Phase 38 — Doanh thu thật: TrustMRR + nguồn khác + AI — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 làm trước hết.
 
 **Goal:** trả lời "**có ai đang thu tiền thật không, bao nhiêu**" — số verified tách bạch với số ước.
 
-**Spec:** [Phase 37 · Doanh thu thật](../../web/phase-37-revenue.md) · **Cần trước:** Phase 6 (job TrustMRR, `cleanTrust`),
-Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 19 (yếu tố Tiền + độ tin + back-test để chạy lại),
+**Spec:** [Phase 38 · Doanh thu thật](../../web/phase-38-revenue.md) · **Cần trước:** Phase 6 (job TrustMRR, `cleanTrust`),
+Phase 9 (nhãn mô hình tiền `lib/money.ts`), Phase 20 (yếu tố Tiền + độ tin + back-test để chạy lại),
 Phase 11 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 
 ## Mục tiêu · làm · không làm
@@ -14,7 +14,7 @@ Phase 11 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 - **Xong khi:** bảng Bước 0 đủ nguồn ứng viên, quyết dùng / bỏ + lý do · 10 niche thật: đếm đối thủ có verified, kiểm tay
   10 dòng khớp tên (≥ 9 đúng) · bảng "Ai đang thu tiền" tách verified / ước, có trong evidence pack.
 - **Xong khi (thêm):** chạy được không cần Claude in Chrome — tuyến C nhập ≥ 10 trang đã lưu thật, đọc đúng số · back-test
-  Phase 19 chạy lại, bảng trước / sau.
+  Phase 20 chạy lại, bảng trước / sau.
 - **Làm:** tuyến C nhập trang đã lưu, khớp tên chắc hơn (luật + AI xác nhận), dòng verified đủ trường, ước theo bậc, bảng "Ai đang thu tiền", nối điểm v2, làm mới, chạy lại back-test.
 - **Không làm:** mua dữ liệu trả phí · mô hình ước doanh thu phức tạp · dự báo doanh thu app mình.
 
@@ -31,7 +31,7 @@ Phase 11 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 
 ## File đụng tới
 
-- `docs/web/phase-37-revenue.md` — điền bảng Bước 0
+- `docs/web/phase-38-revenue.md` — điền bảng Bước 0
 - `web/src/lib/revenue/import.ts` (mới) — đọc file `.html` / `.json` đã lưu (TrustMRR, trang /open) → dòng verified nguyên văn + link + ngày sync; chống nhân đôi theo (nguồn, link); mẫu theo `reddit-import.ts`
 - `web/src/lib/revenue/links.ts` (mới) — danh sách link cần mở cho 1 niche (TrustMRR theo tên đối thủ, /open từ `developerWebsite`, câu tìm bài công khai)
 - `web/src/db/schema.ts` + migration mới — `revenue_rows` (appId?, source, url, mrr, revenue30d, provider, syncedAt, fetchedAt, match, matchReason)
@@ -69,7 +69,7 @@ Phase 11 (mẫu nhập file tuyến C: `lib/reddit-import.ts`).
 - [ ] `table.ts` + `RevenueBlock`; verified và ước ở 2 cột riêng.
 - [ ] Yếu tố Tiền dùng verified trước. Test độ tin đổi theo nguồn.
 - [ ] Nhãn "cũ" > 30 ngày + nút mở lại link để lưu bản mới (hoặc tạo job).
-- [ ] Chạy lại back-test Phase 19 (Tiền giờ là "đo" ở niche có verified) → bảng trước / sau ở trang Phase 13.
+- [ ] Chạy lại back-test Phase 20 (Tiền giờ là "đo" ở niche có verified) → bảng trước / sau ở trang Phase 13.
 
 ### Task 4: Chạy thật + soát
 - [ ] 10 niche thật: đếm đối thủ có verified, kiểm tay 10 dòng khớp → bảng dưới.

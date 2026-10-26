@@ -5,7 +5,7 @@
 
 **Goal:** mọi dữ liệu gắn một **hồ sơ** (`user_id`); nhiều hồ sơ trên một máy không thấy nhau; mỗi người xuất / xoá được toàn bộ dữ liệu của mình.
 
-**Spec:** [Backlog 02 · Lớp tài khoản trên máy](../../web/phase-backlog-02-local-account.md) · **Cần trước:** Backlog 01 (hồ sơ đơn `profile.*` — nâng thành bảng), Phase 38 (backup), Phase 58.
+**Spec:** [Backlog 02 · Lớp tài khoản trên máy](../../web/phase-backlog-02-local-account.md) · **Cần trước:** Backlog 01 (hồ sơ đơn `profile.*` — nâng thành bảng), Phase 39 (backup), Phase 58.
 
 ## Mục tiêu · làm · không làm
 

@@ -1,11 +1,11 @@
-# Niche Radar Phase 54 — Google Maps Research (AI) — Implementation Plan
+# Niche Radar Phase 55 — Google Maps Research (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không cào Google Maps bằng script / headless.
 
 **Goal:** niche phục vụ cửa hàng / dịch vụ địa phương: một thành phố có bao nhiêu chỗ, khách và chủ than gì → ý tưởng app nhỏ có bằng chứng.
 
-**Spec:** [Phase 54 · Google Maps Research (AI)](../../web/phase-54-google-maps.md) · **Cần trước:** Phase 6 (job Chrome), Phase 42 (evidence pack),
+**Spec:** [Phase 55 · Google Maps Research (AI)](../../web/phase-55-google-maps.md) · **Cần trước:** Phase 6 (job Chrome), Phase 43 (evidence pack),
 Phase 14 (kết luận nguồn Maps).
 
 ## Mục tiêu · làm · không làm

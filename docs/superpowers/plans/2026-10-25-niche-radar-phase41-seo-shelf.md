@@ -1,11 +1,11 @@
-# Niche Radar Phase 58 — Kệ Google (SEO) — Implementation Plan
+# Niche Radar Phase 59 — Kệ Google (SEO) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không cào trang kết quả Google bằng script. Key API anh tự tạo.
 
 **Goal:** với keyword chính của niche: top 10 Google là ai, loại trang gì, còn chỗ chen không; kèm câu hỏi người dùng hay gõ. Không AI.
 
-**Spec:** [Phase 58 · Kệ Google](../../web/phase-58-seo-shelf.md) · **Cần trước:** Phase 1 (Top 10 cơ hội, `collectors/suggest.ts`).
+**Spec:** [Phase 59 · Kệ Google](../../web/phase-59-seo-shelf.md) · **Cần trước:** Phase 1 (Top 10 cơ hội, `collectors/suggest.ts`).
 
 ## Mục tiêu · làm · không làm
 

@@ -1,18 +1,18 @@
-# Niche Radar Phase 31 — Thanh toán — Implementation Plan
+# Niche Radar Phase 32 — Thanh toán — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit. Steps dùng checkbox (`- [ ]`).
 > Anh tạo cửa hàng Lemon Squeezy, nhập ngân hàng / thuế, bấm bán thật. Claude chỉ nối code và test ở **test mode**.
 
 **Goal:** bấm nâng cấp → trả tiền → quyền Pro gắn vào tài khoản trong vài giây.
 
-**Spec:** [Phase 31 · Thanh toán](../../web/phase-31-payments.md) · **Cần trước:** Phase 30 (`money.md` đã duyệt), Backlog 03 (tài khoản Firebase).
+**Spec:** [Phase 32 · Thanh toán](../../web/phase-32-payments.md) · **Cần trước:** Phase 31 (`money.md` đã duyệt), Backlog 03 (tài khoản Firebase).
 Tham khảo mẫu Lemon Squeezy đã chạy ở app RAM Rescue (license key + webhook).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** mua test → Pro ≤ 30 giây · huỷ / hoàn tiền → tắt quyền · webhook giả bị từ chối (chữ ký) · mua test → Pro mở trên 2 trình duyệt.
 - **Làm:** sản phẩm theo `money.md` (anh tạo), checkout gắn tài khoản, Cloud Function webhook, lớp kiểm quyền Pro.
-- **Không làm:** thanh toán của Apple · tự xử lý thẻ · crypto / chuyển khoản · paywall + dùng thử (Phase 32).
+- **Không làm:** thanh toán của Apple · tự xử lý thẻ · crypto / chuyển khoản · paywall + dùng thử (Phase 33).
 
 ## Global Constraints
 

@@ -1,12 +1,12 @@
-# Niche Radar Phase 52 — Amazon Search — Implementation Plan
+# Niche Radar Phase 53 — Amazon Search — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 làm trước. Gặp captcha → dừng, không vượt.
 
 **Goal:** gõ niche → biết người ta tìm gì trên Amazon, sản phẩm nào bán chạy, đông tới đâu, giá bao nhiêu. Không AI.
 
-**Spec:** [Phase 52 · Amazon Search](../../web/phase-52-amazon-search.md) · **Cần trước:** Phase 14 (kết luận nguồn Amazon —
-nếu Bỏ thì dừng, hỏi anh), Phase 50 (mẫu thêm nguồn mới).
+**Spec:** [Phase 53 · Amazon Search](../../web/phase-53-amazon-search.md) · **Cần trước:** Phase 14 (kết luận nguồn Amazon —
+nếu Bỏ thì dừng, hỏi anh), Phase 51 (mẫu thêm nguồn mới).
 
 ## Mục tiêu · làm · không làm
 
@@ -14,7 +14,7 @@ nếu Bỏ thì dừng, hỏi anh), Phase 50 (mẫu thêm nguồn mới).
   chạm thì UI báo đúng, nguồn khác vẫn chạy) · test xanh · screenshot đã Read.
 - **Làm:** gợi ý Amazon (nhãn `AMZ`), top 20 sản phẩm (giá, sao, số review, "bought in past month"), độ đông (log tổng review), BSR top 5,
   khoảng giá, lính mới thắng.
-- **Không làm:** AI đọc review (Phase 53) · ước doanh số từ BSR · dịch vụ trả phí (Jungle Scout, Helium 10, Keepa).
+- **Không làm:** AI đọc review (Phase 54) · ước doanh số từ BSR · dịch vụ trả phí (Jungle Scout, Helium 10, Keepa).
 
 ## Đo trước khi code (Task 0)
 

@@ -1,11 +1,11 @@
-# Niche Radar Phase 53 — Amazon Research (AI) — Implementation Plan
+# Niche Radar Phase 54 — Amazon Research (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Claude không đăng nhập Amazon thay anh; chỉ đọc, không giỏ hàng, không mua.
 
 **Goal:** AI đọc review Amazon: người mua chê gì, ước gì, so với ai — điểm yếu đối thủ có trích dẫn, và chỗ một app làm tốt hơn.
 
-**Spec:** [Phase 53 · Amazon Research (AI)](../../web/phase-53-amazon-ai.md) · **Cần trước:** Phase 52 (`amz_products`), Phase 6 / 27.1 (lớp AI + kiểm trích dẫn).
+**Spec:** [Phase 54 · Amazon Research (AI)](../../web/phase-54-amazon-ai.md) · **Cần trước:** Phase 53 (`amz_products`), Phase 6 / 28.1 (lớp AI + kiểm trích dẫn).
 
 ## Mục tiêu · làm · không làm
 

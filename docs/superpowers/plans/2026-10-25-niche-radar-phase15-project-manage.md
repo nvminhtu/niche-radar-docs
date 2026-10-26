@@ -1,16 +1,16 @@
-# Niche Radar Phase 21 — Quản lý Project — Implementation Plan
+# Niche Radar Phase 22 — Quản lý Project — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** chục project, hàng trăm item vẫn **tìm, lọc, xếp ưu tiên, dọn** được; mỗi project trả lời "đang ở bước nào, bước tiếp là gì".
 
-**Spec:** [Phase 21 · Quản lý Project](../../web/phase-21-project-manage.md) · **Cần trước:** Phase 20 (item có `kind` +
+**Spec:** [Phase 22 · Quản lý Project](../../web/phase-22-project-manage.md) · **Cần trước:** Phase 21 (item có `kind` +
 **schema chung 14 + 15 đã migrate** — phase này không có migration).
 
 ## Mục tiêu · làm · không làm
 
-- **Xong khi:** không thêm migration (dùng schema chung Phase 20) · tìm 1 keyword ra đúng project · lọc thẻ + trạng thái
+- **Xong khi:** không thêm migration (dùng schema chung Phase 21) · tìm 1 keyword ra đúng project · lọc thẻ + trạng thái
   cùng lúc đúng · gộp 2 project có item trùng không nhân đôi, nhật ký ghi lại · trang project đọc được 1340 + 375, screenshot đã Read.
 - **Làm:** tìm / lọc / sắp danh sách, thẻ, lưu trữ / nhân bản / gộp, tab trong project, ưu tiên + trạng thái item (loại phải
   có lý do), bước tiếp + ngày hẹn, nhật ký tự động, so 2 project nhanh, nút ra pipeline.
@@ -20,8 +20,8 @@
 
 - Không xoá cứng từ danh sách: **lưu trữ** trước; xoá hẳn phải xác nhận + `backupDb` ngay trước đó.
 - **Không migration**: mọi cột / bảng (`tags`, `archivedAt`, `nextStep`, `nextDue`, `status`, `reason`, `rank`,
-  `project_log`) đã có từ migration chung Phase 20, `portable.ts` đã round-trip. Thấy thiếu cột → sửa migration chung nếu
-  Phase 20 chưa vào `main`, đã vào rồi thì mới thêm migration nhỏ (ghi lý do ở Tiến độ).
+  `project_log`) đã có từ migration chung Phase 21, `portable.ts` đã round-trip. Thấy thiếu cột → sửa migration chung nếu
+  Phase 21 chưa vào `main`, đã vào rồi thì mới thêm migration nhỏ (ghi lý do ở Tiến độ).
 - Item "loại" bắt buộc `reason` (API trả 400 nếu thiếu).
 - Nhật ký ghi **tự động** ở tầng `lib/projects.ts` (không để UI tự ghi), loại sự kiện cố định.
 
@@ -37,7 +37,7 @@
 ## Tasks
 
 ### Task 1: Kiểm schema có sẵn
-- [ ] Xác nhận cột / bảng Phase 21 đã có từ migration chung Phase 20; test round-trip `.niche.json` có thẻ, lý do, bước tiếp, nhật ký.
+- [ ] Xác nhận cột / bảng Phase 22 đã có từ migration chung Phase 21; test round-trip `.niche.json` có thẻ, lý do, bước tiếp, nhật ký.
 
 ### Task 2: Tìm, lọc, sắp, thẻ
 - [ ] `searchProjects`: tên + term item bên trong, lọc `tag` + `status`, sắp `updatedAt | bestScore | itemCount`, ẩn lưu trữ mặc định.
@@ -53,13 +53,13 @@
 
 ### Task 5: Nhật ký + pipeline + xuất / nhập
 - [ ] `log()` gọi ở thêm / loại item, đổi trạng thái, đổi kết luận, chụp số; tab nhật ký.
-- [ ] Nút "Làm evidence pack" (Phase 42) và "Mở /app-demand" (copy lệnh + đường dẫn file) cho project ứng viên.
+- [ ] Nút "Làm evidence pack" (Phase 43) và "Mở /app-demand" (copy lệnh + đường dẫn file) cho project ứng viên.
 - [ ] So 2 project nhanh (`project-compare.ts` + bảng 1 cột ở 375px). Test số khớp trang từng project.
 
 ### Task 6: Soát
-- [ ] Chạy trên DB thật (đã ở schema chung từ Phase 20). Screenshot 1340 + 375, Read. Chip phase, ROADMAP, CHANGELOG.
+- [ ] Chạy trên DB thật (đã ở schema chung từ Phase 21). Screenshot 1340 + 375, Read. Chip phase, ROADMAP, CHANGELOG.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
-- 2026-10-26: review plan — migration dời sang Phase 20 (chung 1 lần); thêm so 2 project nhanh.
+- 2026-10-26: review plan — migration dời sang Phase 21 (chung 1 lần); thêm so 2 project nhanh.

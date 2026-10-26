@@ -11,12 +11,12 @@
 **Kết quả:** [Bản đồ nguồn gap](gap-sources-map.md) có 52 nguồn, 17 MCP, 21 repo / tool và 12 phương pháp, kiểm ngày
 2026-10-26. Đề xuất 3 phase mới, tất cả dùng API miễn phí và dùng lại bảng gap của Phase 11:
 **A · Stack Exchange Q&A Gap**, **B · GitHub Feature Request Gap**, **C · Hacker News Ask Gap** (có thể gộp với A).
-Dự bị: X search (trả phí). Đề xuất hạ Amazon (Phase 52–53) xuống ứng viên. **Anh duyệt 2026-10-26:** A + C gộp thành [Phase 12 · Q&A Gap](phase-12-qa-gap.md), B thành [Phase 13 · GitHub Feature Request Gap](phase-13-github-gap.md).
+Dự bị: X search (trả phí). Đề xuất hạ Amazon (Phase 53–54) xuống ứng viên. **Anh duyệt 2026-10-26:** A + C gộp thành [Phase 12 · Q&A Gap](phase-12-qa-gap.md), B thành [Phase 13 · GitHub Feature Request Gap](phase-13-github-gap.md).
 </div>
 
 <div class="box box--goal" markdown>
 **Vì sao cần.** Mới có 4 nguồn (Google Play, App Store, Google Trends, TrustMRR), sắp có Reddit. Các nguồn mới đã lên
-lịch (YouTube, Amazon, Google Maps ở Phase 50–54) được chọn theo cảm giác, chưa so với nhau. Phase này so **mọi
+lịch (YouTube, Amazon, Google Maps ở Phase 51–55) được chọn theo cảm giác, chưa so với nhau. Phase này so **mọi
 nguồn** trên cùng một thang trước, rồi mới chọn cái nào đáng có phase code riêng. Như vậy không tốn công tích hợp một
 nguồn yếu.
 
@@ -140,7 +140,7 @@ Mỗi phương pháp ghi: làm thế nào, nguồn nào, Niche Radar đã có ch
 - ≥ 10 MCP và ≥ 10 repo / tool đã kiểm (sao, ngày commit, license, giá đo thật — chỗ chưa đo ghi `chưa đo`)
 - ≥ 8 phương pháp, mỗi cái ghi Niche Radar đã có hay chưa
 - Top 3 nguồn đề xuất thành phase mới, mỗi cái có lý do + phase cũ nào nên gộp / đổi (vd. so với YouTube / Amazon /
-  Maps ở Phase 50–54) — anh duyệt mới đánh số
+  Maps ở Phase 51–55) — anh duyệt mới đánh số
 - Phần kiến thức chung (cách đọc nguồn, phương pháp) đẩy lên Product Growth Playbook bằng tiếng Anh; danh sách niche
   đang nhắm giữ riêng
 </div>

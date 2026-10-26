@@ -1,18 +1,18 @@
-# Niche Radar Phase 32 — Paywall + dùng thử — Implementation Plan
+# Niche Radar Phase 33 — Paywall + dùng thử — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không đếm ngược giả, không giấu nút đóng, không gọi gói trả phí là quyên góp.
 
 **Goal:** bấm tính năng Pro → màn nâng cấp nói rõ được gì, có dùng thử, có Khôi phục mua; mua xong dùng ngay.
 
-**Spec:** [Phase 32 · Paywall + dùng thử](../../web/phase-32-paywall-trial.md) · **Cần trước:** Phase 30 (gói, N ngày, số máy), Phase 31 (`entitlement`).
+**Spec:** [Phase 33 · Paywall + dùng thử](../../web/phase-33-paywall-trial.md) · **Cần trước:** Phase 31 (gói, N ngày, số máy), Phase 32 (`entitlement`).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** Free → bấm Pro → mua → dùng ngay, không khởi động lại · hết dùng thử → về Free, dữ liệu còn đủ (đếm project trước / sau) ·
   "Khôi phục mua" trên máy mới mở lại Pro · vượt số máy → báo rõ, không khoá máy đang dùng · tính năng đã Free ở bản trước vẫn Free với người đang dùng.
 - **Làm:** khoá Pro đúng chỗ, màn nâng cấp (giá, chu kỳ, tự gia hạn, cách huỷ), dùng thử N ngày, Khôi phục mua, giới hạn số máy, khớp landing.
-- **Không làm:** mã giảm giá / affiliate · gói team · chi phí AI theo gói (Phase 26.7).
+- **Không làm:** mã giảm giá / affiliate · gói team · chi phí AI theo gói (Phase 27.7).
 
 ## Global Constraints
 
@@ -49,7 +49,7 @@
 - [ ] Devices + màn vượt giới hạn; restore trên máy mới. Test emulator.
 
 ### Task 5: Soát
-- [ ] Luồng thật test mode: Free → Pro → dùng ngay. Giá khớp landing (Phase 45). Screenshot paywall 1340 + 375, sáng + tối, Read. CHANGELOG, chip, ROADMAP.
+- [ ] Luồng thật test mode: Free → Pro → dùng ngay. Giá khớp landing (Phase 46). Screenshot paywall 1340 + 375, sáng + tối, Read. CHANGELOG, chip, ROADMAP.
 
 ## Tiến độ
 

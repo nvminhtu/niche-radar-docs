@@ -1,32 +1,32 @@
-# Niche Radar Phase 55 — So sánh đối thủ — Implementation Plan
+# Niche Radar Phase 56 — So sánh đối thủ — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).
 
 **Goal:** đặt **2–5 đối thủ** cạnh nhau — giá, sao, tính năng, bị chê gì, cập nhật — để biết app mình đánh vào ai, hơn ở đâu. Không AI.
 
-**Spec:** [Phase 55 · So sánh đối thủ](../../web/phase-55-compare-competitor.md) · **Cần trước:** Phase 40 (hồ sơ đối thủ), Phase 18
-(lời chê theo app), Phase 4 (Feature Gap), Phase 43 (khung bảng so sánh dùng lại).
+**Spec:** [Phase 56 · So sánh đối thủ](../../web/phase-56-compare-competitor.md) · **Cần trước:** Phase 41 (hồ sơ đối thủ), Phase 18
+(lời chê theo app), Phase 4 (Feature Gap), Phase 44 (khung bảng so sánh dùng lại).
 
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** 2 niche thật × 4 đối thủ có bảng đủ hàng, ô thiếu "chưa có" · kiểm tay 10 câu than mở đúng review gốc · hàng
   "Chỗ trống" ra ≥ 1 dòng ở ≥ 1 niche.
 - **Làm:** chọn đối thủ (gợi ý sẵn), nhóm Tiền · Chất lượng · Tính năng · Bị chê gì · Chỗ trống, xuất CSV + Markdown.
-- **Không làm:** cào thêm đối thủ · theo dõi theo thời gian · AI kết luận (Phase 56).
+- **Không làm:** cào thêm đối thủ · theo dõi theo thời gian · AI kết luận (Phase 57).
 
 ## Global Constraints
 
-- Dữ liệu từ `competitor-profile.ts` (Phase 40) — không query lại kiểu khác.
-- Không ước doanh thu; chỉ giá công khai + verified (Phase 37).
+- Dữ liệu từ `competitor-profile.ts` (Phase 41) — không query lại kiểu khác.
+- Không ước doanh thu; chỉ giá công khai + verified (Phase 38).
 - Câu than nguyên văn đã lưu, link review gốc.
 - "Chỗ trống" = hàng Feature Gap / "ước gì" có ≥ 3 lần xin mà ≤ 1 đối thủ trong bảng là `yes`.
-- Dùng lại component bảng của Phase 43 (`CompareTable`) — tách ra nếu Phase 43 viết liền trong trang.
+- Dùng lại component bảng của Phase 44 (`CompareTable`) — tách ra nếu Phase 44 viết liền trong trang.
 
 ## File đụng tới
 
 - `web/src/lib/compare-competitor.ts` (mới) — hàng + luật thắng; `suggest(run)` = top 3 theo lượt tải + 1–2 app bị chê nhiều nhất
-- `web/src/components/CompareTable.tsx` — dùng chung với Phase 43
+- `web/src/components/CompareTable.tsx` — dùng chung với Phase 44
 - `web/src/server/app.ts` — `GET /api/compare/apps?ids=` + `.csv` + `.md`
 - `web/src/client/CompareAppsPage.tsx` (mới) + route — trang so đối thủ; ô tick trong `CompetitorBlock`
 - `web/src/lib/features.ts` — "So sánh đối thủ" → done
