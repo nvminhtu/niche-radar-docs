@@ -23,6 +23,13 @@ Từ context-ai/research-<slug>.md + spec.md, viết:
 
 Hỏi người dùng duyệt 3 dòng này trước khi viết nội dung nào.
 
+Duyệt xong → đổ sang **hồ sơ app kiểu TrustMRR** `context-ai/profile.md` (khuôn `templates/profile.md`, mẫu
+[reference/README-APP-LISTING-02-APP-PROFILE-TRUSTMRR.md](../../../reference/README-APP-LISTING-02-APP-PROFILE-TRUSTMRR.md)):
+`python3 scripts/app_profile.py <slug>` ghi khối Tự động (tên, link, giá, trial, phân phối, stack, bản live — từ app.json +
+money.md + state.md); Claude điền `## Startup insights` bằng tiếng Anh (Tagline ≤ 120 ký tự, Value proposition, Problem solved
+có trong research, Audience kèm B2B/B2C, Market). Doanh thu giữ `chưa đo` tới khi có số + nguồn + ngày.
+Kiểm `python3 scripts/check_profile.py <slug>` — 0 FAIL. Chữ ở đây dùng lại cho landing, Product Hunt, TrustMRR (Pha 3b).
+
 ## Pha 2 — Danh sách email + lead magnet (xong trước D-21)
 
 Ngày ra mắt phải có sẵn người để báo. Chi tiết + luật store: playbook §2.
@@ -98,6 +105,8 @@ người nổi tiếng; video/slide cho thấy kết quả trong 3 giây đầu.
   chọn 5–10 trang đúng người, soạn mô tả riêng từng trang từ listing, không chép một đoạn cho mọi nơi.
 - **Khi đã có doanh thu thật:** TrustMRR / StartupPage (xác thực bằng khoá read-only). App thu tiền bằng StoreKit trực tiếp
   phải gắn RevenueCat trước — đó là `/app-feature`, ghi backlog, không làm trong bước này.
+- Mô tả gửi các trang lấy từ `profile.md` (Tagline · Value proposition · Problem solved · Audience · Market); khi đã nối nguồn
+  doanh thu thì ghi số + nguồn + ngày vào `## Doanh thu` của profile.md.
 - Ghi từng trang vào marketing.md mục **Listing cộng đồng** (trạng thái · ngày · link). Người dùng tạo tài khoản / nối thanh toán / bấm Submit.
 
 ## Pha 4 — Lịch tuần ra mắt + nội dung

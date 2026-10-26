@@ -4,7 +4,7 @@
 > (gói Claude, ChatGPT / Codex) hoặc AI chạy trên máy (Ollama). Học đúng câu của Wow Keywords:
 > *"No second subscription — runs on the AI you already pay for."*
 
-<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.3 MCP xong 2026-10-26 · còn 26.2, 26.4–26.6</span>
+<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.2 Thư mục AI + 26.3 MCP + 26.4 Khung chat xong 2026-10-26 · còn 26.5 Terminal (đợt 2), 26.6 Cài đặt AI</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được 70 % việc.**
@@ -153,6 +153,19 @@ Một thư mục cố định cho mọi tiến trình AI làm việc (cwd): `~/L
 
 Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hiểu một kiểu** về dữ liệu.
 
+<div class="box box--star" markdown>
+**Kết quả 26.2 (2026-10-26) — xong**
+
+- Code `web/src/lib/ai/ai-dir.ts`; khối **Cài đặt → Thư mục AI** (`AiDirSection.tsx`) hiện đường dẫn, lệnh `cd … && claude`
+  để copy, từng file và việc của nó
+- Thư mục: Web dev `web/data/ai` · app Mac `~/Library/Application Support/niche-radar/ai` (theo `NR_DATA_DIR`)
+- App tạo `CLAUDE.md`, `AGENTS.md`, `.mcp.json`, 2 skill tiếng Anh `/app-demand` · `/compare-niches`. Chữ nằm trong code để
+  esbuild gói vào app Mac, không đọc file mẫu
+- File có dòng `niche-radar:auto` = của app, mỗi lần mở ghi bản mới nhất (đổi đường dẫn DB thì `.mcp.json` tự sửa). Người dùng
+  xoá dòng đó = file của họ, app không ghi đè, khối Cài đặt ghi "bạn đã sửa"
+- Test `tests/ai-chat.test.ts`: tạo đủ file, chạy lần 2 không đổi gì, cập nhật file của app nhưng không đụng file người dùng
+</div>
+
 ### 26.3 · niche-radar MCP (gộp Phase 27.3)
 
 - Server MCP stdio, chạy bằng Node đi kèm app, đọc `niche.db`
@@ -177,7 +190,13 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
   Ghi chú riêng của project chỉ trả khi gọi `includeNotes: true`. Chưa có tool ghi (để đợt 2)
 - **Nút Thêm:** Cài đặt → **Cho AI của bạn đọc dữ liệu (MCP)**. Mỗi CLI hiện trạng thái (Đã thêm · Chưa thêm · Đang trỏ
   bản cũ · Máy chưa cài) và **đúng lệnh sẽ chạy** — bấm mới chạy `claude mcp add -s user …` / `codex mcp add …` (có bản cũ
-  thì gỡ trước). Claude Desktop / Cursor / Windsurf: khối JSON để dán tay — app không sửa file cấu hình của app khác
+  thì gỡ trước). Claude Desktop / Cursor / Windsurf: thêm nút 1 bấm cùng ngày (xem dưới)
+- **Nút Thêm cho Claude Desktop / Cursor / Windsurf (2026-10-26):** 3 app này không có lệnh `mcp add` → gộp khối
+  `mcpServers["niche-radar"]` vào `claude_desktop_config.json` (Mac `~/Library/Application Support/Claude/`, Windows
+  `%APPDATA%\Claude\`) · `~/.cursor/mcp.json` · `~/.codeium/windsurf/mcp_config.json`. Trang hiện đường dẫn file + khối sẽ
+  ghi, bấm mới ghi. Chỉ đụng khối `niche-radar`, giữ mọi server / khoá khác, sao lưu `….bak-niche-radar`, ghi qua file tạm rồi
+  đổi tên; file lỗi JSON (có chú thích…) → báo "File cấu hình lỗi", không ghi. Chưa có thư mục app → "Máy chưa cài".
+  Code `web/src/lib/ai/mcp-config.ts`, test `tests/mcp.test.ts`
 - **Chạy ở đâu:** Web dev → Node + `tsx` chạy thẳng `src/mcp/server.ts`; app Mac → Node đi kèm + `server/mcp.cjs`
   (`build-mac.sh` gói bằng esbuild và thử `tools/list` trước khi ký). Luôn kèm `NICHE_DB` tuyệt đối
 - **Chạy thật trên DB thật (2026-10-26):** bấm Thêm ở cả 2 → `mcp get` báo đúng; hỏi "So 3 niche tôi tra gần nhất — niche
@@ -202,6 +221,25 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
   Read → **không sửa file, không chạy lệnh**
 - Hiện từng bước (gọi tool gì) như Markdown Viewer; mã nguồn trong câu trả lời bấm được → nhảy tới đúng dòng dữ liệu
 - Codex: cùng khung, chạy `codex exec --json` (đo ở Bước 0 xem resume được không)
+
+<div class="box box--star" markdown>
+**Kết quả 26.4 (2026-10-26) — code xong, chạy thật Codex trên DB thật**
+
+- Code `web/src/lib/ai/chat.ts` (chạy CLI, đọc luồng sự kiện) + `ChatPanel.tsx` (nút **Hỏi AI** ở mọi trang, bản demo tĩnh không có)
+  + API stream NDJSON; thử ngoài UI: `npx tsx scripts/chat-smoke.ts <claude-code|codex> "<câu hỏi>"`
+- **Chỉ đọc:** Claude Code chỉ được Read + Skill + tool `niche-radar` (MCP strict, bỏ cấu hình riêng của người dùng); Codex chạy
+  sandbox read-only, bỏ config riêng, MCP truyền bằng `-c`. Câu hỏi đi qua stdin (không lộ trên `ps`)
+- Câu hỏi kèm "đang xem gì" (`[Đang xem: Research #25]`), hiện từng bước gọi tool, `Research #id` / `Project #id` / `Explore #id`
+  trong câu trả lời bấm được → nhảy tới đúng trang; hỏi tiếp giữ phiên (`--resume`); nút Dừng giết tiến trình
+- 3 câu mẫu: so 3 niche gần nhất · đối thủ của niche đang xem bị chê gì · project nào có bàn quyết định
+- Nhật ký AI ghi việc · tuyến · token · thời gian, không ghi câu hỏi / câu trả lời; Claude Code / Codex tính $0 (vào gói người dùng)
+- **Chạy thật (2026-10-26, Codex 0.162.0, `web/data/niche.db`):** "Có bao nhiêu niche đã tra? Kể 3 cái mới nhất, kèm nguồn" →
+  16 giây, 1 lần gọi `search_niches`, trả "32 lượt tra" + Research #32 / #31 / #30 — **khớp DB** (đếm `runs` = 32)
+- **Lỗi bắt được khi chạy thật:** lần đầu DB chưa chạy migration 0019 → tool báo `no such column: apps.content_rating`. Sửa:
+  MCP so số migration lúc mở, DB cũ thì báo "dữ liệu cũ hơn bản app — mở app Niche Radar 1 lần rồi thử lại" (+ test)
+- Test `tests/ai-chat.test.ts` (8 test chung với 26.2: tham số 2 tuyến, đọc luồng 2 kiểu, Dừng, lỗi đăng nhập, API 400/403, nhật ký không có nội dung)
+- **Chưa làm:** thử Claude Code qua khung chat trong UI + 2 câu mẫu còn lại; screenshot khung chat ở 1340 / 375
+</div>
 
 ### 26.5 · Terminal nhúng — "hết nước chấm" (đợt 2)
 

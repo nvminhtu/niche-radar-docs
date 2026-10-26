@@ -61,12 +61,14 @@ Tab **GitHub**: bấm **Lấy App Mac menu bar** (hoặc App Mac · Chrome exten
 token chỉ đọc ở **Cài đặt → Token GitHub** thì 30 lệnh / phút. Bảng chỉ giữ **tính năng** bị từ chối hoặc còn mở ≥ 1 năm, xếp
 theo điểm; 2 khung gấp "Theo chủ đề", "Theo repo"; **Tải .md**. Tab này không cộng vào Gộp. Chi tiết: [Phase 13](web/phase-13-github-gap.md).
 
-## Cho Claude Code / Codex đọc dữ liệu (MCP)
+## Cho Claude Code / Codex / Cursor đọc dữ liệu (MCP)
 
-**Cài đặt → Cho AI của bạn đọc dữ liệu (MCP)** → bấm **Thêm vào Claude Code** hoặc **Thêm vào Codex** (trang hiện đúng lệnh
-sẽ chạy trước khi bấm). Mở phiên Claude Code / Codex mới rồi hỏi thẳng, ví dụ "So 3 niche tôi tra gần nhất trong Niche Radar —
+**Cài đặt → Cho AI của bạn đọc dữ liệu (MCP)** → bấm **Thêm vào Claude Code**, **Codex**, **Claude Desktop**, **Cursor** hoặc
+**Windsurf** (trang hiện đúng lệnh / khối JSON sẽ ghi trước khi bấm). Mở phiên Claude Code / Codex mới rồi hỏi thẳng, ví dụ "So 3 niche tôi tra gần nhất trong Niche Radar —
 niche nào đáng làm nhất, trích nguồn từng số". AI chỉ **đọc**: niche đã tra, đối thủ, lời chê đã lưu, Explore, project, bàn
-quyết định, bảng gap. Claude Desktop / Cursor / Windsurf: mở mục "dán tay" ở cuối khối, copy JSON vào file cấu hình MCP của app đó.
+quyết định, bảng gap. Claude Desktop / Cursor / Windsurf: nút chỉ gộp khối `niche-radar` vào file cấu hình của app đó, giữ
+nguyên server khác, sao lưu file cũ thành `….bak-niche-radar`; file lỗi JSON thì không ghi. Thoát hẳn app đó rồi mở lại.
+App khác (VS Code, Zed…): mục "dán tay" ở cuối khối.
 Dời repo hoặc cài app bản mới → khối báo "Đang trỏ bản cũ", bấm **Cập nhật**. Chi tiết: [Phase 27](app/phase-27-ai-cua-ban.md).
 
 ## Khi bị chặn

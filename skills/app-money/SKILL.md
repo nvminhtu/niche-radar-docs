@@ -102,6 +102,7 @@ python3 scripts/check_money.py apps/ACTIVE/<slug>/context-ai/money.md
   RevenueCat entitlement `pack_<tên>` + offering `shop`; mỗi gói mới sau này = thêm 1 IAP + 1 entitlement, không cần
   bản cập nhật nếu nội dung tải về được, ngược lại đi `/app-feature`. Plugin `revenuecat` có skill `create-revenuecat-project` hướng dẫn từng bước.
 - `spec.md` sẽ có dòng MVP "Paywall" (`shop`: "Shop") — `/app-spec` đọc money.md để viết.
+- App đã có `context-ai/profile.md` → chạy lại `python3 scripts/app_profile.py <slug>` để giá/trial trong hồ sơ khớp money.md.
 - LEARNED.md mục **Bước 2** · `scripts/app.py log` · tiếp theo `/app-spec`.
 
 ## Không làm

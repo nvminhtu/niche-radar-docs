@@ -7,7 +7,7 @@
 > bán 29–37 (Version 9 + 10 + app) → Hoàn thiện Web sau bản bán 38–45 → Version 11 (46–49) → Version 2, 3, 4 (50–63).
 > Phase không làm bỏ số, thành **Backlog 01–21** dưới vạch ⛔ KO LÀM. Link số cũ vẫn mở được (tự chuyển trang).
 
-<span class="chip chip--doing">Đang làm · Hoàn thiện Web · 18 xong 2026-10-26 · tiếp theo Phase 19 Ai là khách hàng → … → 26 → AI 27–28 → bán 29–37</span>
+<span class="chip chip--doing">Hoàn thiện Web 18–26 xong 2026-10-26 (bản 0.10.0) · đang làm Phase 27 AI (MCP + khung chat xong) → 28 → bán 29–37</span>
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
@@ -249,7 +249,7 @@ Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ
 <div class="step" markdown>
 <span class="step__n">27</span>
 <div class="step__body">
-<h3>AI của bạn — Claude Code, Codex, Ollama trong app <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>AI của bạn — Claude Code, Codex, Ollama trong app <span class="chip chip--doing">Đang làm · MCP + khung chat xong</span></h3>
 <p>Cầu AI gọi AI người dùng đã có, thư mục AI có sẵn skill, MCP của app (27.3), khung chat (27.4), Cài đặt AI (27.6, 27.7), terminal nhúng.</p>
 <a class="go" href="../app/phase-27-ai-cua-ban/">Xem chi tiết →</a>
 </div>
