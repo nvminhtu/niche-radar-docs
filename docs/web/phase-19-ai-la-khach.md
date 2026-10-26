@@ -3,7 +3,7 @@
 > Một niche có nhiều loại khách (trẻ em, phụ huynh, giáo viên, người ADHD…). Phase này trả lời **ai đang dùng, ai đang
 > khó chịu, ai trả được tiền, tìm họ ở đâu** — mỗi ô có dẫn chứng. **Không đoán giới tính / độ tuổi.**
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-26</span>
+<span class="chip chip--done">Xong 2026-10-26 · chạy thật 5 niche · review gắn loại khách đúng 6/6 · mục Đối tượng 5 → 3 TODO</span>
 
 <div class="box box--goal" markdown>
 **Từ đâu ra.** Issue [#1 "Nên có thêm chức năng Tìm loại khách hàng bán được"](https://github.com/nvminhtu/niche-radar-docs/issues/1)
@@ -73,3 +73,29 @@ flowchart LR
 - Nguồn mới (YouTube, Amazon…) — [Phase 52](phase-52-youtube-ai.md), [Phase 54](phase-54-amazon-ai.md)
 - Trả lời / đóng issue #1 trên GitHub — Tu tự làm
 </div>
+
+## Kết quả chạy thật (2026-10-26)
+
+Bản sao DB thật. habit tracker / pomodoro timer / bubble shooter đọc lại review 1–3★ qua mạng (442 · 406 · 527 review); budget tracker,
+bubble game for toddlers dùng review đã có (110 · 374).
+
+| Niche | Loại khách hiện (≥ 3 dẫn chứng) | Review tự nhận | Đối tượng TODO trước → sau |
+|---|---|---|---|
+| habit tracker | Người ADHD 8 · Gia đình 3 · Học sinh 3 · Phụ huynh 3 | 3 | 5 → 3 |
+| budget tracker | Gia đình 5 · Cặp đôi 5 · Người mới 4 · Học sinh 4 | 0 | 5 → 3 |
+| pomodoro timer | Học sinh 15 | 1 | 5 → 3 |
+| bubble shooter | Phụ huynh 11 · Gia đình 4 | 1 | 5 → 3 |
+| bubble game for toddlers | Phụ huynh 17 | 2 | 5 → 3 |
+
+**Ghi chú**
+
+- **Kiểm tay câu review:** lần đầu 17 câu, sai 8 (9/17 đúng) — `my stored lives` khớp "my store", `give them my business` khớp chủ shop,
+  `my wife is sleeping` khớp cặp đôi. Sửa: bọc `\b` hai đầu mẫu câu, chủ shop phải "I run / own a…", cặp đôi phải dùng chung
+  ("my wife and I", "with my partner"). Sau sửa **6/6 đúng**. Chưa đạt mốc "20 câu / niche": câu tự giới thiệu trong review **1–3★** rất hiếm
+  (~1–2 %, 0–3 câu / niche) — người khen mới hay kể "for my kids". Đọc review 4–5★ để biết *ai đang dùng* là việc của bản sau, chưa làm.
+- Nguồn mạnh nhất hiện tại là **mô tả store đối thủ** (cột Đối thủ nhắm + Trả được) và **keyword có chữ chỉ người** ("for students",
+  "for couples", "for adhd").
+- Cột **Ở đâu** cả 5 niche là "chưa đo · gợi ý r/…" vì DB chưa nhập bài Reddit / Q&A về các niche này — đúng luật, không đoán.
+- **Độ tuổi store** của app: cột đã lưu từ lần tra mới; app tra trước 2026-10-26 chưa có (không hiện dòng này).
+- pomodoro / bubble shooter / toddlers chỉ ra 1–2 loại — niche rộng, không nhắm rõ một nhóm người; đúng với dữ liệu.
+

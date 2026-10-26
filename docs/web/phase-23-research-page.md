@@ -3,7 +3,7 @@
 > Trang dùng nhiều nhất của tool. Mở ra là trả lời được **"niche này có đáng xem tiếp không"** trong 30 giây; nguồn nào
 > lỗi thì biết ngay, chạy lại đúng nguồn đó, không phải tra lại cả lượt.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong 2026-10-26 · đầu trang là câu trả lời + 3 lý do · 6 câu hỏi · trạng thái + chạy lại từng nguồn · so lần trước · 4 nút đi tiếp</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 1–9).** Research tra Google Play + App Store + Google Trends cùng lúc, bảng tiến độ từng nguồn, rồi
@@ -46,5 +46,21 @@ thứ tự chưa theo câu hỏi chọn niche, trang dài, nguồn lỗi phải 
 - Làm nhanh collector — [Version 5](version-5.md)
 - Đổi màu, font, hệ thống giao diện chung — [Phase 25](phase-25-ui-ux.md)
 </div>
+
+## Kết quả (2026-10-26)
+
+- **Đầu trang** (`AnswerRow`, API `/research/:id/answer`, chỉ đọc DB): gợi ý BUILD / TEST THÊM / BỎ + điểm + % đo, **3 lý do** (cờ bật trước, rồi yếu
+  tố lệch xa điểm giữa nhất), 5 ô: điểm v2 · đối thủ đáng gờm (≥ 100K rating) · xu hướng 12 tháng · lời chê nặng nhất · có ai thu tiền thật
+  (TrustMRR nếu có, không thì nhãn giá — ghi rõ "ước"). Bấm ô nhảy tới khối. Thiếu số → "chưa đo".
+- **So lần tra trước** cùng keyword + nước: mũi tên + màu (xanh tốt / đỏ xấu) cho điểm, đối thủ đáng gờm, Trends TB, rating trung vị; số app mới.
+- **Thứ tự theo câu hỏi**: 1 Có nhu cầu không (Trends) → 2 Ai đang làm (Đối thủ) → 3 Họ bị chê gì · ai là khách → 4 Ai thu tiền → 5 Còn chỗ trống nào
+  (Feature Gap) → 6 Kết luận (Sức khoẻ niche). Bảng Keyword × Store (dữ liệu thô) gập cuối trang.
+- **Trạng thái từng nguồn** trên mỗi khối: đủ · thiếu (xong nhưng không có số) · lỗi · bị chặn tạm · đang chạy + giờ lấy + nút **chạy lại** riêng
+  nguồn đó (giữ nguồn khác). Lỗi có lý do thường ("Nguồn chặn tạm vì gọi dồn dập — thử lại sau ~15 phút"), mã lỗi để nhỏ bên dưới. Test fixture
+  RATE_LIMITED / NETWORK / PARSE / xong-không-số.
+- **Đi tiếp** cuối trang đúng 4 nút: Collect · Explore sâu · Xuất cho AI · Làm evidence pack.
+- **Đo thời gian** (dev server, bản sao DB, 1340px, 3 niche habit / pomodoro / bubble shooter): số đầu tiên (thẻ số, cũ) có sau 66–131 ms; hàng
+  câu trả lời hiện sau **602–649 ms** kể từ mở trang (API `/answer` 142–154 ms). Bản build app sẽ nhanh hơn dev.
+- Xem 1340 + 375 (375: lý do xuống dưới gợi ý, 5 ô xếp dọc, không cuộn ngang).
 
 Plan code chi tiết: [Phase 23](../superpowers/plans/2026-10-25-niche-radar-phase20-research-page.md)

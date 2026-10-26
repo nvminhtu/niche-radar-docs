@@ -177,7 +177,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">19</span>
 <div class="step__body">
-<h3>Ai là khách hàng <span class="chip chip--todo">Chưa làm · plan 2026-10-26</span></h3>
+<h3>Ai là khách hàng <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Loại khách theo vai (trẻ em, phụ huynh, giáo viên, người ADHD…) từ keyword · review · đối thủ · Reddit / Q&amp;A, bảng loại khách có dẫn chứng, điền mục Đối tượng của evidence pack. Không đoán giới tính / độ tuổi.</p>
 <a class="go" href="phase-19-ai-la-khach/">Xem chi tiết →</a>
 </div>
@@ -185,7 +185,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">20</span>
 <div class="step__body">
-<h3>Chấm sức khoẻ niche <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Chấm sức khoẻ niche <span class="chip chip--done">Xong 2026-10-26 · back-test chờ kết quả thật</span></h3>
 <p>Mở từng yếu tố ra công thức + nguồn, độ tin hiện to, cờ chặn ép xuống TEST THÊM / BỎ, ngưỡng do anh đặt, back-test với niche đã biết kết quả.</p>
 <a class="go" href="phase-20-niche-health/">Xem chi tiết →</a>
 </div>
@@ -193,7 +193,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">21</span>
 <div class="step__body">
-<h3>Collect niche vào Project <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Collect niche vào Project <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Gom từ mọi chỗ (keyword, đối thủ, lời chê, ô trống tính năng), gom hàng loạt, tạo project ngay trong popover, chụp số lúc gom, không trùng, hoàn tác.</p>
 <a class="go" href="phase-21-collect/">Xem chi tiết →</a>
 </div>
@@ -201,7 +201,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">22</span>
 <div class="step__body">
-<h3>Quản lý Project <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Quản lý Project <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Tìm / lọc / thẻ / lưu trữ / nhân bản / gộp project, trang project chia tab, lý do loại bắt buộc, bước tiếp + ngày hẹn, nhật ký.</p>
 <a class="go" href="phase-22-project-manage/">Xem chi tiết →</a>
 </div>
@@ -209,7 +209,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">23</span>
 <div class="step__body">
-<h3>Research 1 keyword — trang kết quả <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Research 1 keyword — trang kết quả <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Đầu trang là câu trả lời (5 con số), khối xếp theo câu hỏi chọn niche, trạng thái + chạy lại từng nguồn, so với lần tra trước.</p>
 <a class="go" href="phase-23-research-page/">Xem chi tiết →</a>
 </div>
@@ -217,7 +217,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">24</span>
 <div class="step__body">
-<h3>Setup ngay trong Web <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Setup ngay trong Web <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Hướng dẫn cài đúng máy, nút Kiểm tra máy báo thiếu gì + gói cài, nút Hỏi AI (ChatGPT · Gemini · Claude).</p>
 <a class="go" href="phase-24-setup/">Xem chi tiết →</a>
 </div>
@@ -225,7 +225,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">25</span>
 <div class="step__body">
-<h3>UI / UX Improvement <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>UI / UX Improvement <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Sửa chỗ vướng thật: luồng chính, trạng thái tải / lỗi, bảng dày, sáng / tối.</p>
 <a class="go" href="phase-25-ui-ux/">Xem chi tiết →</a>
 </div>
@@ -233,7 +233,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <div class="step" markdown>
 <span class="step__n">26</span>
 <div class="step__body">
-<h3>Review cụm tính năng chính <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Review cụm tính năng chính <span class="chip chip--done">Xong 2026-10-26 · bản 0.10.0</span></h3>
 <p>Soát Phase 18–25 + 27–28 đợt 1 trên 5 niche thật, phiếu soát từng phase, sửa lỗi, cập nhật Hướng dẫn / About, ra bản Web mới.</p>
 <a class="go" href="phase-26-review-core/">Xem chi tiết →</a>
 </div>

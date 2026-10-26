@@ -37,6 +37,8 @@ hooks:
   - hooks/nav_status.py
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/setup-detect.js
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -59,6 +61,7 @@ nav:
   - Web:
       - web/index.md
       - Quy trình build: quy-trinh-build.md
+      - Setup máy: setup.md
       - "Plan bán app Mac + Windows": app/plan-ban-app.md
       - "Đã xong (Phase 1–17)":
           - Phase 1 · Google Play: web/phase-1-google-play.md

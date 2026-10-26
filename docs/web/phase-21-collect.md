@@ -3,7 +3,7 @@
 > Thấy gì đáng giữ ở **bất cứ chỗ nào** — keyword, ngách, đối thủ, câu chê, ô trống tính năng — bấm 1 lần là vào
 > project, kèm số liệu lúc đó và nguồn. Gom nhanh, không mất dấu.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong 2026-10-26 · 5 loại item · gom ở 6 chỗ + phím C · 100 keyword / 239 ms, gom lại 0 dòng trùng · migration chung 0019 không mất dòng</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 8).** Nút **+ Collect** (popover) ở kết quả Research / Explore gom niche hoặc long-tail vào một project,
@@ -64,5 +64,21 @@ flowchart LR
 - Sắp xếp, lọc, gộp project — [Phase 22](phase-22-project-manage.md) (cột cho Phase 22 thêm sẵn ở migration chung, chưa có UI)
 - Đồng bộ project lên mạng — [Backlog 04](phase-backlog-04-project-sync.md)
 </div>
+
+## Kết quả (2026-10-26)
+
+- **Migration chung 21 + 22** (`0019_hoan_thien_web`): bản sao DB thật trước / sau — projects 2 → 2, project_items 8 → 8, runs 32, apps 1.890,
+  decisions 2; mọi item có `uid` + khoá; tự backup `niche-before-migrate-19-to-20-….db` trước khi nâng.
+- **Gom ở đủ 6 chỗ**: cây keyword + bảng keyword Explore (keyword), Top cơ hội + "Collect N ngách ô Cơ hội" của bản đồ ngách (niche),
+  bảng Đối thủ (competitor), cụm lời chê + "ước gì" (complaint), hàng Khoảng trống / Định vị của Feature Gap (gap). Nút ở trang Research
+  + bảng keyword vẫn như cũ.
+- **Hàng loạt**: "+ Collect N keyword đang hiện" (theo nhóm / ô lọc đang chọn) và "+ Collect N" ở thanh keyword đã tick. Đo trên dev server
+  bản sao DB thật: **100 keyword trong 239 ms**; gom lại cùng 100 → "100 đã có — đã cập nhật số mới", 0 dòng thêm.
+- **Popover**: project dùng gần nhất lên đầu (ghi "gần nhất"), ô tìm khi > 5 project, tạo project mới + thêm 1 lần, ghi chú 1 dòng.
+  **Thanh báo** "Đã thêm N vào X · Hoàn tác". **Phím C** khi rê chuột / đang chọn dòng (bỏ qua khi đang gõ).
+- **Số chụp lúc gom** (`snapshot`) giữ nguyên khi gom lại; số mới vào `latest` (trang project hiện dòng "mới: …"). Keyword / niche: điểm v2 mới
+  nhất + số Explore; đối thủ: ★, số rating, tiền, lượt cài; lời chê: số review, loại, 3 câu trích; khoảng trống: có / tổng app.
+- `.niche.json` mang đủ loại item, số chụp, ghi chú, trạng thái + lý do; gói cũ (không có `kind`) nhập thành keyword. Test round-trip.
+- Theo dõi định kỳ, Bàn quyết định, Description, tra lại project chỉ dùng item keyword / niche (`ProjectView.items`); `all` = mọi loại.
 
 Plan code chi tiết: [Phase 21](../superpowers/plans/2026-10-25-niche-radar-phase14-collect.md)

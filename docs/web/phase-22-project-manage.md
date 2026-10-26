@@ -3,7 +3,7 @@
 > Khi đã có chục project và hàng trăm item, cần **tìm, lọc, xếp ưu tiên, dọn** được — và mỗi project luôn trả lời
 > "đang ở bước nào, bước tiếp là gì".
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong 2026-10-26 · 7 tab · tìm / lọc thẻ + trạng thái · lưu trữ / nhân bản / gộp · bước tiếp · nhật ký · so 2 project</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 8 + 9).** Trang Projects (danh sách) + trang một Project: trạng thái **đang xem / ứng viên / loại**,
@@ -50,5 +50,20 @@ sách phẳng.
 - Chia sẻ project cho người khác / nhiều người sửa — sau [Version 9](version-9.md)
 - Bảng kanban kéo thả giữa cột trạng thái (chỉ làm nếu dùng thật thấy cần — ghi Appendix)
 </div>
+
+## Kết quả (2026-10-26)
+
+- Dùng đúng schema chung của Phase 21, **không thêm migration**; thẻ, lưu trữ, bước tiếp, trạng thái + lý do item, nhật ký đều đi theo `.niche.json` (test).
+- **Danh sách**: ô tìm khớp tên project **và keyword bên trong** · lọc trạng thái + thẻ cùng lúc · sắp Mới sửa / Điểm cao nhất (lịch sử điểm Phase 20) /
+  Nhiều item · nút "Đã lưu trữ" · project **đến hạn lên đầu** (⏰). Bộ lọc nằm trên URL (`?tag=mac&status=ứng viên`) nên bấm thẻ ở trang project mở đúng danh sách.
+- **Lưu trữ / nhân bản / gộp**: nhân bản cấp `uid` mới cho item; gộp → item trùng (loại + khoá + nước) gộp 1, giữ số chụp cũ nhất, project nguồn
+  lưu trữ, nhật ký ghi 2 bên. **Xoá hẳn** chỉ khi đã lưu trữ, tự backup DB ngay trước.
+- **Trang project 7 tab**: Tổng quan (đánh giá, bước tiếp + ngày hẹn, thẻ, Ra pipeline, gộp / so, Bàn quyết định) · Keyword · Đối thủ · Lời chê ·
+  Khoảng trống · Theo dõi · Ghi chú & nhật ký (+ xuất file). Mỗi bảng: trạng thái giữ / ứng viên / loại (**loại bắt ghi lý do**), ↑ ↓ hoặc
+  "Sắp theo điểm cao → thấp" (lưu `rank`).
+- **Ra pipeline** (project ứng viên): "Làm evidence pack" từ lượt Research điểm cao nhất + "Copy lệnh /app-demand".
+- **So 2 project**: tick 2 dòng hoặc chọn ở tab Tổng quan → bảng cạnh nhau (375px thành 2 khối chồng): điểm + gợi ý, số đối thủ, lời chê nặng nhất,
+  đối thủ thu tiền, xu hướng. Thử trên bản sao DB: habit tracker 5,7 TEST THÊM · 118 đối thủ · "subscription" 95 review vs ram issue 5,4 · 43 đối thủ.
+- Kéo thả thật chưa làm — ↑ ↓ + sắp theo điểm đủ dùng; kanban vẫn để Appendix như plan.
 
 Plan code chi tiết: [Phase 22](../superpowers/plans/2026-10-25-niche-radar-phase15-project-manage.md)

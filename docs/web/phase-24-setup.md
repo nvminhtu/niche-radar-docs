@@ -4,7 +4,7 @@
 > **trang Setup**: hướng dẫn đúng máy đó, **nút Kiểm tra máy** báo cái gì đủ / thiếu, kèm **gói cài phù hợp**.
 > Kẹt chỗ nào thì có nút nhỏ **Hỏi AI** — xổ ra ChatGPT · Gemini · Claude · Perplexity, câu hỏi soạn sẵn.
 
-<span class="chip chip--todo">Chưa làm · sau Backlog 01</span>
+<span class="chip chip--done">Xong 2026-10-26 · /setup kiểm 12 mục trong 0,7 s · Hỏi AI 4 AI, đã che dữ liệu riêng · trang Setup máy tĩnh</span>
 
 ## Chạy thế nào
 
@@ -78,5 +78,21 @@ flowchart LR
 - Gọi API của ChatGPT / Gemini trong tool — chỉ mở trang web của họ
 - Linux — khi có người dùng xin
 </div>
+
+## Kết quả (2026-10-26)
+
+- **Lớp 1 · trang tĩnh** [Setup máy](../setup.md): đoán macOS / Windows + chip Apple / Intel từ trình duyệt, chỉ hiện bước của máy đó
+  (đoán không ra → hiện cả hai). Link cài chỉ nodejs.org + developer.apple.com. Thử trên Mac chip Apple: hiện "macOS · chip Apple", ẩn bước Windows.
+- **Lớp 2 · `/setup`** (menu Thêm → Setup · kiểm tra máy), API `GET /api/setup/check`: 12 mục chia 3 nhóm Máy · Nguồn dữ liệu · AI (tuỳ chọn),
+  mỗi mục đủ / thiếu / sai bản / lỗi / tuỳ chọn + 1 dòng cách sửa + link chính chủ. App Mac bỏ qua mục Node / npm / Command Line Tools của Terminal.
+- **Chạy thật trên máy dev** bắt đúng 1 tình huống thật: tool chạy Node 22.19, nhưng `node` trong Terminal là **18.16** → báo "sai bản, cần ≥ 20.19".
+  3 tình huống thiếu Node · Node cũ · thiếu Command Line Tools + nguồn bị chặn 429 kiểm bằng test (lệnh giả).
+- **Nhanh**: lần đầu viết tuần tự mất **33 s** (kiểm AI còn hỏi thử 1 câu — tốn lượt). Sửa: mọi mục chạy song song, AI chỉ tìm CLI + kiểm đăng nhập
+  (không hỏi thử) → **0,7 s**.
+- **Hỏi AI ▾** (`AskAi`, dùng lại được): ChatGPT · Claude · Perplexity mở tab với câu soạn sẵn; Gemini copy câu hỏi rồi mở trang. Câu hỏi qua
+  `scrub()`: bỏ `/Users/<tên>`, `C:\Users\<tên>`, key (`sk-…`, `AIza…`, `ghp_…`), email. Đóng bằng Esc / bấm ra ngoài.
+- Xem 1340 + 375 (375 không cuộn ngang). Test: `tests/setup-check.test.ts` (7).
+
+**Chưa làm được:** thử trên máy Mac sạch thật (user macOS mới, chưa Node) — cần anh tạo user mới hoặc máy khác; ghi ở phiếu soát Phase 26.
 
 Plan code chi tiết: [Phase 24](../superpowers/plans/2026-10-25-niche-radar-phase30-1-setup.md)

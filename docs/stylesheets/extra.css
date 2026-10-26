@@ -447,3 +447,6 @@ body {
 .md-typeset hr.nr-skip-line { border: 0; border-top: 4px solid #c0392b; margin: 2.8rem 0 .4rem; }
 .md-typeset hr.nr-skip-line + h2 { color: #c0392b; margin-top: .4rem; }
 .md-typeset .nr-skip .step { opacity: .62; border-style: dotted; }
+
+/* Phase 24 · trang Setup máy */
+.md-typeset .setup-detect { font-weight: 600; padding: .6rem .9rem; border-radius: .6rem; background: color-mix(in srgb, var(--sky) 22%, var(--paper)); }

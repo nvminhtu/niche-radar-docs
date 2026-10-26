@@ -9,6 +9,7 @@ cp .env.example .env.local   # tuỳ chọn: key Claude cho Feature Gap tuyến 
 npm run dev                  # mở http://localhost:3200
 ```
 
+Máy chưa có Node / báo lỗi khi cài: xem [Setup máy](setup.md); chạy được rồi thì vào **Thêm → Setup · kiểm tra máy** trong tool.
 Đứng ở gốc repo thì `npm run setup` rồi `npm run dev` cũng được (lối tắt sang `web/`).
 Dữ liệu nằm ở `web/data/niche.db` (app Mac: `~/Library/Application Support/niche-radar/`). Xoá file này = xoá sạch lịch sử.
 

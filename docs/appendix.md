@@ -14,6 +14,7 @@
 
 | Mục | Từ đâu | Ghi chú |
 |---|---|---|
+| Chế độ tối (dark mode) cho bản Web / app | soát [Phase 25](web/phase-25-ui-ux.md) — app chỉ có giao diện sáng | sáng đã đạt AA; làm khi người mua xin |
 | Xuất phạm vi 1 Explore / cả DB qua hộp Xuất chung · JSONL · file JSON Schema | cắt khỏi [Phase 15](web/phase-15-export.md) khi kéo lên sớm | Explore còn nút CSV cũ, cả DB có Backup; làm khi có tool khác cần đọc |
 
 ## Không làm (chốt 2026-10-26)

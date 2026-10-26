@@ -59,14 +59,14 @@ Người mua mở app ra là thấy những chỗ này. Thứ tự làm từ tr�
 | # | Phase | Đã có | Còn thiếu (phần không AI) |
 |---|---|---|---|
 | 1 | [18 · Đối thủ bị chê gì](../web/phase-18-competitor-complaints.md) | ✅ xong 2026-10-26 | ~~gộp cùng ý ("crash" · "keeps crashing"), app nào bị chê, tách lỗi vs thiếu tính năng, review 3★ "ước gì", bảng app × lời chê~~ |
-| 2 | [19 · Ai là khách hàng](../web/phase-19-ai-la-khach.md) | — | loại khách theo vai từ keyword · review 1–3★ của Phase 18 · đối thủ · Reddit / Q&A, bảng loại khách có dẫn chứng, mục Đối tượng của evidence pack — không đoán giới tính / tuổi |
-| 3 | [20 · Chấm sức khoẻ niche](../web/phase-20-niche-health.md) | 7 yếu tố, trọng số + 4 mẫu, BUILD / TEST THÊM / BỎ | giải thích từng yếu tố, độ tin, cờ chặn, back-test (5 niche hiện 4,5–5,4 điểm, chưa niche nào ≥ 6) |
-| 4 | [21 · Collect](../web/phase-21-collect.md) + [22 · Quản lý Project](../web/phase-22-project-manage.md) | + Collect từng keyword, trạng thái / kết luận / ghi chú | 5 loại item, gom hàng loạt, chụp số lúc gom · tìm / lọc / thẻ / gộp, lý do loại, bước tiếp (**1 migration chung**) |
-| 5 | [23 · Trang kết quả Research](../web/phase-23-research-page.md) | các khối xếp theo thứ tự phase thêm vào | **đầu trang là câu trả lời** (BUILD / TEST THÊM / BỎ + 3 lý do), sắp lại khối theo câu hỏi chọn niche, chạy lại từng nguồn lỗi |
+| 2 | [19 · Ai là khách hàng](../web/phase-19-ai-la-khach.md) | ✅ xong 2026-10-26 | loại khách theo vai từ keyword · review 1–3★ của Phase 18 · đối thủ · Reddit / Q&A, bảng loại khách có dẫn chứng, mục Đối tượng của evidence pack — không đoán giới tính / tuổi |
+| 3 | [20 · Chấm sức khoẻ niche](../web/phase-20-niche-health.md) | ✅ xong 2026-10-26 · back-test chờ kết quả thật | giải thích từng yếu tố, độ tin, cờ chặn, back-test (5 niche hiện 4,5–5,4 điểm, chưa niche nào ≥ 6) |
+| 4 | [21 · Collect](../web/phase-21-collect.md) + [22 · Quản lý Project](../web/phase-22-project-manage.md) | ✅ xong 2026-10-26 | 5 loại item, gom hàng loạt, chụp số lúc gom · tìm / lọc / thẻ / gộp, lý do loại, bước tiếp (**1 migration chung**) |
+| 5 | [23 · Trang kết quả Research](../web/phase-23-research-page.md) | ✅ xong 2026-10-26 | **đầu trang là câu trả lời** (BUILD / TEST THÊM / BỎ + 3 lý do), sắp lại khối theo câu hỏi chọn niche, chạy lại từng nguồn lỗi |
 | 6 | [10 · Tiếng Anh đủ cả app](../web/phase-10-i18n.md) | khung vi · en · es, mới dịch header / menu / Cài đặt | dịch **en** hết mọi trang (bán quốc tế như Wow Keywords) — vi giữ, es để sau |
-| 7 | [24 · Setup trong app](../web/phase-24-setup.md) | — | trang Setup lần đầu: kiểm máy + **nối AI** (dùng bộ dò của [Phase 27](phase-27-ai-cua-ban.md)) — bỏ phụ thuộc Backlog 01 Account (đã KO LÀM) |
-| 8 | [25 · UI / UX](../web/phase-25-ui-ux.md) | — | soát theo checklist, sửa header tràn 40px ở ~1009px, xem 1340 + 375 |
-| 9 | [26 · Review cụm](../web/phase-26-review-core.md) | — | review lại Phase 18–25 + Phase 27 + Phase 28 đợt 1 trên DB thật trước khi gói app ([Phase 34](phase-34-local-app-2.md)) |
+| 7 | [24 · Setup trong app](../web/phase-24-setup.md) | ✅ xong 2026-10-26 | trang Setup lần đầu: kiểm máy + **nối AI** (dùng bộ dò của [Phase 27](phase-27-ai-cua-ban.md)) — bỏ phụ thuộc Backlog 01 Account (đã KO LÀM) |
+| 8 | [25 · UI / UX](../web/phase-25-ui-ux.md) | ✅ xong 2026-10-26 | soát theo checklist, sửa header tràn 40px ở ~1009px, xem 1340 + 375 |
+| 9 | [26 · Review cụm](../web/phase-26-review-core.md) | ✅ xong 2026-10-26 · bản 0.10.0 | review lại Phase 18–25 + Phase 27 + Phase 28 đợt 1 trên DB thật trước khi gói app ([Phase 34](phase-34-local-app-2.md)) |
 
 ## Phase 38–45 · Sau bản bán đầu (vào bằng bản cập nhật)
 

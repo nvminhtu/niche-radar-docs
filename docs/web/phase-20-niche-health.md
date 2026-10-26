@@ -3,7 +3,7 @@
 > Điểm v2 đã có đủ 7 yếu tố — phase này làm cho điểm **đọc được và tin được**: mỗi số giải thích được trong 1 phút,
 > có cờ chặn khi niche có rủi ro mà điểm không thấy, và kiểm lại bằng niche đã biết kết quả.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong 2026-10-26 · công thức + nguồn từng yếu tố · 5 cờ chặn · ngưỡng có lý do · lịch sử điểm · back-test 10 niche (kết quả thật còn thiếu)</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 7 + 9).** Khối Sức khoẻ niche: 7 yếu tố (Tiền · Đau · Cạnh tranh · Nhu cầu · Xu hướng · Tiếp cận ·
@@ -50,5 +50,48 @@ TEST THÊM / BỎ. Back-test 5 niche ra 4,5–5,4 điểm, chưa niche nào ≥ 
 - So nhiều niche cạnh nhau — [Phase 44](phase-44-compare-niche.md)
 - Đo trục Tiếp cận / Hợp sức tự động (cần nguồn mới — YouTube, Reddit ở Version 2)
 </div>
+
+## Kết quả chạy thật (2026-10-26)
+
+Bản sao DB thật, trọng số mặc định, ngưỡng mặc định BUILD ≥ 6 · TEST THÊM ≥ 4.
+
+**Đã làm**
+
+- Bấm từng yếu tố → **công thức** (vd `8/10 × 7 + 3 (có doanh thu TrustMRR) = 8.6`) + số đầu vào + nguồn + ngày + app / câu làm dẫn chứng.
+  Test kiểm: công thức kết thúc bằng đúng điểm, tổng tính lại tay khớp.
+- **Đau đo được không cần AI**: chưa gom chủ đề AI thì lấy cụm lời chê theo luật của [Phase 18](phase-18-competitor-complaints.md).
+- 4 nhãn **đo · ước (proxy) · tự chấm · chưa đo**; điểm ghi "đo N % · số thật M %" (số thật = đo + tự chấm, không gồm ước).
+- **Cờ chặn** (`web/src/lib/health-flags.ts`): thương hiệu lớn ≥ 3/5 top · cần backend / tài khoản (≥ 3 và ≥ 50 % mô tả store) ·
+  loại app bão hoà 4.3 · bản quyền (seed → BỎ, ≥ 3 keyword gợi ý → TEST THÊM) · Trends giảm 2 năm liền (mỗi năm ≥ 15 %, đọc cache
+  Mùa vụ 5 năm). Thiếu dữ liệu → "chưa kiểm", không đoán.
+- **Ngưỡng** sửa ở Cài đặt → Ngưỡng gợi ý điểm niche, bắt ghi lý do, lưu lịch sử. **Lịch sử điểm**: bảng `score_history`, 1 dòng mỗi lần
+  điểm / gợi ý / cờ đổi (xem lại trang không nhân dòng) — biểu đồ để [Phase 42](phase-42-tracking.md).
+- **Cần đo thêm gì**: chỉ hiện bước làm được (đọc review, chạy lại Trends, tự chấm, TrustMRR) + % đo sau khi làm.
+- **Kết luận không AI** ở đầu khối + dòng "Kết luận không AI" và "Cờ chặn" trong evidence pack.
+
+**Back-test** (tool chấm lại, trọng số mặc định)
+
+| Niche | Điểm | Đo | Gợi ý | Cờ bật | Kết quả thật |
+|---|---|---|---|---|---|
+| not enough ram | 5,7 | 75 % | TEST THÊM | — | đã làm app Mac cho niche RAM, đang bán (doanh thu chưa đo) |
+| ram issue | 5,4 | 75 % | TEST THÊM | — | như trên |
+| habit tracker | 5,7 | 75 % | TEST THÊM | loại bão hoà 4.3 | chưa ghi |
+| color by number | 5,5 | 75 % | TEST THÊM | — | chưa ghi |
+| pomodoro timer | 5,3 | 75 % | TEST THÊM | — | chưa ghi |
+| budget tracker | 4,7 | 75 % | TEST THÊM | — | chưa ghi |
+| bubble shooter | 4,6 | 55 % | TEST THÊM (hạ vì đo < 60 %) | — | chưa ghi |
+| dual monitor wallpaper | 3,1 | 60 % | BỎ | loại bão hoà 4.3 | chưa ghi |
+| external display manager | 3,0 | 60 % | BỎ | — | chưa ghi |
+| bubble game for toddlers | 2,2 | 65 % | BỎ | — | chưa ghi |
+
+**Ghi chú**
+
+- **Chưa đạt "back-test ≥ 5 niche đã biết kết quả"**: DB chỉ có 2 niche (cùng nhóm RAM) có kết quả thật ghi được; các niche khác chưa
+  làm app / chưa bán nên chưa có kết quả. **Chưa đổi trọng số / ngưỡng** — không có số để căn. Cần anh: ghi kết quả thật (bán được /
+  không / bị từ chối) cho ≥ 3 niche nữa, rồi chạy lại bảng này.
+- Cờ **thương hiệu lớn** không bật ở 31 niche: top 5 theo thứ hạng của các niche này toàn nhà phát triển nhỏ (bubble shooter: Ilyon,
+  MadOverGames…; app King chỉ đứng đầu khi xếp theo số rating). Đúng với dữ liệu. Cờ **bão hoà 4.3** bật đúng 3 niche (habit tracker ×2,
+  dual monitor wallpaper). Cờ **cần backend** đọc 9–10 mô tả / niche, cao nhất 1/9 — chưa niche nào bật.
+- Không niche nào ≥ 6: cả 31 niche đều đông hoặc thiếu số thật (số thật 0–40 %).
 
 Plan code chi tiết: [Phase 20](../superpowers/plans/2026-10-25-niche-radar-phase13-niche-health.md)
