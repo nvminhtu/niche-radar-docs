@@ -1,70 +1,69 @@
-# Niche Radar Phase 79 — Phần riêng của app Mac (bảo mật, đăng nhập, Pro) — Implementation Plan
+# Niche Radar Phase 79 — Phần riêng của app (license, dùng thử, bảo mật) — Implementation Plan
 
-> **For agentic workers:** chỉ làm khi bản Web **xong Version 9** và app đã gói đủ (Phase 74–77). 3 dòng Pro (license, khôi phục mua, BYOK + lượt AI)
-> làm khi tới Version 10, sau khi Web xong phần Pro. Build chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`).
+> **For agentic workers:** chỉ làm sau Phase 75 (bản bán đầu) và khi bản Web xong Version 10 (dùng thử + license chạy ở Web).
+> Build Mac chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`). Không nhập key / mật khẩu thay anh, không bấm bán thật.
 
-**Goal:** làm mọi việc **chỉ app Mac mới có** mà các phase Web đã tách ra.
+**Goal:** gắn phần chỉ app mới có: lưu license + ngày dùng thử an toàn, checkout mở bằng trình duyệt ngoài, CSP chặt, tìm AI có sẵn trên máy.
+Viết **một lần cho cả Mac và Windows** — Phase 82 chỉ build + thử trên Windows.
 
-**Spec:** [Phase 79 · Phần riêng của app Mac](../../app/phase-79-app-only.md) · **Cần trước:** Phase 30.1, 58, 62 (cho phần A); Phase 67, 68, 69 (cho phần B).
+**Spec:** [Phase 79 · Phần riêng của app](../../app/phase-79-app-only.md) · **Cần trước:** Phase 75, Version 10 Web (Phase 66–69), Phase 58 (phiếu bảo mật),
+Phase 30.1 (trang Setup). **Đổi 2026-10-26:** bỏ tài khoản → bỏ đăng nhập trong app + deep link.
 
 ## Mục tiêu · làm · không làm
 
-- **Xong khi:** `.dmg` mới: CSP + quyền Tauri qua phiếu Phase 58, key không còn trong file thường · đăng nhập 3 cách trên app, deep link quay lại đúng app ·
-  mua test → license key kích hoạt trên app không đăng nhập · khôi phục mua chạy · lượt AI hiện đúng · test xanh, screenshot app đã Read.
-- **Làm:** phần A (sau Version 9): Setup trong app, CSP + capability Tauri tối thiểu, key trong Keychain, đăng nhập qua trình duyệt + deep link.
-  Phần B (khi tới Version 10): license key kiểu RAM Rescue + checkout mở từ app, Khôi phục mua, BYOK trong Keychain + lượt AI còn lại.
-- **Không làm:** tính năng không có ở Web · Mac App Store / IAP Apple · làm trước khi Web xong Version 9.
+- **Xong khi:** `.dmg` mới: CSP + quyền Tauri qua phiếu Phase 58, key / license không còn trong file thường · mua test → license key kích hoạt trên app
+  không cần tài khoản · khôi phục mua (tìm lại key bằng email) chạy · dùng thử N ngày đếm đúng, xoá app cài lại không reset được · lượt AI / tuyến AI
+  hiện đúng · test xanh, screenshot app đã Read.
+- **Làm:** Setup trong app, CSP + capability tối thiểu, lưu bí mật qua `keyring`, license key (activate / validate / deactivate, 2 máy), dùng thử,
+  checkout + khôi phục mua mở trình duyệt ngoài, BYOK + tìm Claude Code / Codex / Ollama.
+- **Không làm:** tài khoản / đăng nhập / deep link (bỏ 2026-10-26) · tính năng không có ở Web · Mac App Store / IAP Apple · làm trước khi Web xong Version 10.
 
 ## Global Constraints
 
-- **CSP** trong `tauri.conf.json`: `default-src 'self'; connect-src 'self' http://127.0.0.1:<port> https://*.googleapis.com https://*.firebaseio.com …`
-  (liệt kê đúng domain đang gọi, đo bằng log network trước); không `unsafe-eval`.
-- **Capability Tauri v2**: chỉ bật lệnh dùng thật (shell open URL, dialog save, deep link, keychain); file capability 1 chỗ, phiếu Phase 58 ghi từng quyền.
-- **Keychain**: plugin keyring (Rust crate `keyring`) qua lệnh `secret_get/set/delete`; server sidecar đọc key qua biến môi trường do Tauri nạp lúc
-  khởi động sidecar (không ghi ra đĩa). Migrate: key cũ trong `settings` → Keychain → xoá khỏi `settings`.
-- **Deep link**: scheme `nicheradar://auth?…`; luồng đăng nhập mở trình duyệt mặc định tới trang đăng nhập (host trên Firebase Hosting / landing),
-  trang đó chuyển `nicheradar://` kèm token một lần → app đổi lấy phiên Firebase (`signInWithCustomToken` hoặc credential). Kiểm `state` chống giả mạo.
-- **License key**: dùng lại mẫu Lemon Squeezy License API của RAM Rescue (activate / validate / deactivate theo `instance_id` = id máy);
-  key lưu Keychain; offline → dùng kết quả validate gần nhất ≤ 7 ngày.
-- Không tự nhập key / mật khẩu thay anh; không bấm phát hành.
+- **Lưu bí mật:** crate Rust `keyring` qua lệnh Tauri `secret_get/set/delete` — Mac: Keychain, Windows: Credential Manager (Phase 82 dùng lại, không
+  viết lớp thứ hai). Sidecar Node nhận key qua biến môi trường lúc Tauri khởi động nó, không ghi ra đĩa. Migrate: key cũ trong `settings` → kho bí mật → xoá khỏi `settings`.
+- **License:** theo luật đã chốt ở Version 10 (Lemon Squeezy License API như RAM Rescue, hoặc nhà bán đã chốt ở Phase 67): `instance_id` = id máy;
+  2 máy / license; offline dùng kết quả validate gần nhất ≤ 7 ngày; chuyển máy = deactivate trong Cài đặt.
+- **Dùng thử:** ngày bắt đầu lưu ở kho bí mật **và** trong DB; lấy ngày sớm hơn → xoá DB không reset được dùng thử. Hết hạn → Free, dữ liệu giữ nguyên.
+- **CSP** trong `tauri.conf.json`: `default-src 'self'`, `connect-src` chỉ `self` + sidecar `127.0.0.1:<port>` + domain license / checkout; không `unsafe-eval`.
+  Đo domain gọi thật bằng log network trước khi khoá.
+- **Capability Tauri v2:** chỉ bật lệnh dùng thật (mở URL ngoài, hộp thoại lưu file, kho bí mật); 1 file capability, phiếu Phase 58 ghi từng quyền.
+- **Tìm AI:** danh sách chỗ cài theo hệ điều hành (Mac: `/opt/homebrew/bin`, `/usr/local/bin`, `~/.local/bin`, `~/.npm-global/bin`; Windows: Phase 82) +
+  ô chọn đường dẫn ở Cài đặt. App mở từ Finder không có `PATH` của shell.
 
 ## File đụng tới
 
-- `app/src-tauri/tauri.conf.json`, `capabilities/*.json` — CSP, quyền, deep link scheme
-- `app/src-tauri/src/secrets.rs`, `deeplink.rs`, `license.rs` (mới) — Keychain, deep link, license
+- `app/src-tauri/tauri.conf.json`, `app/src-tauri/capabilities/*.json` — CSP, quyền
+- `app/src-tauri/src/secrets.rs` (mới), `license.rs` (mới), `main.rs` — kho bí mật, license, truyền key xuống sidecar
+- `app/src-tauri/Cargo.toml` — `keyring`, `tauri-plugin-shell` (mở URL) / `opener`
 - `web/src/lib/app-bridge.ts` (mới) — gọi lệnh Tauri khi chạy trong app, no-op ở Web
-- `web/src/client/SetupPage.tsx` — chế độ app: bỏ mục Node / npm, chỉ kiểm tuỳ chọn
-- `web/src/lib/auth-client.ts`, `entitlement.ts`, `ai/settings.ts` — nhánh app
+- `web/src/lib/entitlement.ts`, `web/src/lib/ai/settings.ts` — nhánh app (đọc license / key qua bridge)
+- `web/src/client/SetupPage.tsx` — chế độ app: bỏ mục Node / npm, chỉ kiểm phần tuỳ chọn
+- `web/src/client/SettingsPage.tsx` — mục Gói: trạng thái license, máy đang dùng, Khôi phục mua, ô đường dẫn AI
 - `security/checklist.md` — mục CSP + quyền Tauri
-- `docs/app/phase-79-app-only.md`, `CHANGELOG.md`
+- `docs/app/phase-79-app-only.md`, `CHANGELOG.md` (App)
 
 ## Tasks
 
-### Phần A — sau Version 9
+### Task 1: Setup trong app
+- [ ] `/setup` khi chạy trong app: Node + SQLite đã gói → chỉ kiểm key AI, Ollama, Claude in Chrome.
 
-#### Task 1: Setup trong app
-- [ ] `/setup` khi `NR_APP=1`: Node + SQLite đã gói → chỉ kiểm key AI, Ollama, Claude in Chrome.
+### Task 2: Kho bí mật
+- [ ] `secrets.rs` + bridge + migrate key cũ; grep thư mục dữ liệu không còn chuỗi key.
 
-#### Task 2: CSP + quyền
-- [ ] Đo domain gọi thật → CSP; capability tối thiểu; phiếu Phase 58 điền phần app. Thử tiêm script → bị CSP chặn.
+### Task 3: License + dùng thử
+- [ ] `license.rs` (activate / validate / deactivate) ở test mode; nhập key → Pro không cần tài khoản; 2 máy; offline ≤ 7 ngày.
+- [ ] Dùng thử: ngày bắt đầu ở 2 chỗ, lấy sớm hơn; test xoá DB không reset.
 
-#### Task 3: Keychain
-- [ ] `secrets.rs` + migrate key cũ; grep thư mục dữ liệu không còn chuỗi key.
+### Task 4: Checkout + khôi phục mua + AI
+- [ ] Nút mua mở trình duyệt ngoài; Khôi phục mua = nhập email → nhà bán gửi lại key.
+- [ ] BYOK trong kho bí mật; tìm Claude Code / Codex / Ollama; lượt AI / tuyến hiện đúng.
 
-#### Task 4: Đăng nhập + deep link
-- [ ] Trang đăng nhập web + `nicheradar://`; 3 cách đăng nhập trên app; test `state` sai bị từ chối.
-
-### Phần B — khi tới Version 10
-
-#### Task 5: License + checkout
-- [ ] `license.rs` theo mẫu RAM Rescue; checkout mở trình duyệt; kích hoạt không cần đăng nhập. Test mode.
-
-#### Task 6: Khôi phục mua + BYOK + lượt AI
-- [ ] Nút Khôi phục mua; BYOK trong Keychain; `AiQuota` trong app.
-
-### Task 7: Phát hành
-- [ ] `npm run mac`; screenshot app, Read. What's New, CHANGELOG, chip, ROADMAP.
+### Task 5: CSP + quyền + phát hành
+- [ ] Đo domain → CSP; capability tối thiểu; thử tiêm script → bị CSP chặn. Phiếu Phase 58 phần app.
+- [ ] `npm run mac`; screenshot app, Read. What's New, CHANGELOG, chip, ROADMAP. Phase 82 dùng lại toàn bộ phần này trên Windows.
 
 ## Tiến độ
 
-- 2026-10-25: viết plan.
+- 2026-10-25: viết plan (có đăng nhập + deep link).
+- 2026-10-26: viết lại — bỏ tài khoản, license + dùng thử làm ở đây, một lớp kho bí mật cho cả Mac + Windows.

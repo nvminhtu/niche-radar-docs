@@ -48,3 +48,5 @@ Trang tải ghi rõ điều này, như Wow Keywords ghi "unsigned, so Windows ma
 </div>
 
 [Mục App Mac + Windows](index.md)
+
+Plan code chi tiết: [Phase 82](../superpowers/plans/2026-10-26-niche-radar-phase82-windows-app.md)

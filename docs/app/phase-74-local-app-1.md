@@ -24,7 +24,7 @@ flowchart LR
 | Giao diện | dùng lại React của bản Web | không viết 2 lần |
 | Lấy dữ liệu | server Node chạy kèm (sidecar) | giữ nguyên collector đã test ở Phase 1–6 |
 | Viết lại collector bằng Rust | **chưa** — chỉ xét khi gói Node làm app quá nặng | viết lại = rủi ro hỏng dữ liệu đã chạy đúng |
-| Nền tảng | **macOS trước** (ký Developer ID + notarize, `.dmg`) | anh dùng Mac; Windows khi có người dùng thật |
+| Nền tảng | **macOS trước** (ký Developer ID + notarize, `.dmg`) | anh dùng Mac; Windows Beta ở [Phase 82](phase-82-windows-app.md) (chốt 2026-10-26) |
 
 ## Làm gì
 
@@ -48,7 +48,7 @@ flowchart LR
 
 - Tính năng tra cứu / chấm điểm mới (đã xong ở Phase 1–7)
 - Đăng nhập, sync cloud, license key — [Phase 30](../web/phase-30-account.md)
-- Bản Windows, auto-update
+- Bản Windows ([Phase 82](phase-82-windows-app.md)), auto-update ([Phase 81](phase-81-release-auto-update.md))
 </div>
 
 ## Kết quả (2026-10-25)

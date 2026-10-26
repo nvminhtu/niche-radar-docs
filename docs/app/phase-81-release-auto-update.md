@@ -1,13 +1,13 @@
 # Phase 81 · Release + auto-update
 
-> Gắn **tag** (nhãn phiên bản như `v5.0.0`) là CI tự ra bản: `.dmg` lên GitHub Releases kèm What's New. App trên máy
-> người dùng tự thấy bản mới và hỏi trước khi cập nhật.
+> Một lệnh trên máy (`npm run release`) ra bản cho **cả Mac và Windows**: `.dmg` + `.exe` lên GitHub Releases public kèm
+> What's New. App trên máy người dùng (Mac lẫn Windows) tự thấy bản mới và hỏi trước khi cập nhật.
 
 <span class="chip chip--todo">Chưa làm · sau Phase 82</span>
 
 > **Đổi 2026-10-26:** không CI (Phase 80 không làm) — build + ký trên máy bằng 1 lệnh rồi đẩy lên **GitHub Releases
 > public**, kèm `.exe` Windows ([Phase 82](phase-82-windows-app.md)). Học Wow Keywords: ra bản dày, ghi chú bằng lời
-> thường, app tự cập nhật. Chỗ nào dưới đây nhắc "tag → CI tự build" thì hiểu là lệnh chạy trên máy.
+> thường, app tự cập nhật.
 
 ## Chạy thế nào
 
@@ -24,17 +24,17 @@ flowchart LR
 
 | | |
 |---|---|
-| :material-tag: **Tag ra bản** | workflow chạy khi có tag `v*` → dùng lại bước build Phase 80 |
+| :material-tag: **Ra bản 1 lệnh** | `npm run release` chạy trên máy: `npm run mac` + `npm run win` → ký file cập nhật → GitHub Release (anh duyệt What's New trước khi đăng) |
 | :material-text-box-outline: **What's New** | sinh từ commit `feat` / `fix` kể từ tag trước |
-| :material-github: **GitHub Release** | tạo Release, đính `.dmg` + What's New + file cập nhật |
-| :material-update: **Tauri updater** | (bộ tự cập nhật của Tauri) app kiểm bản mới lúc mở, hỏi trước khi cập nhật |
-| :material-signature: **Chữ ký file cập nhật** | file cập nhật có chữ ký, app chỉ nhận file đúng chữ ký. Khoá ký do anh tạo, lưu ở GitHub Secrets |
+| :material-github: **GitHub Release** | repo Releases public riêng (code vẫn private), đính `.dmg` + `.exe` + What's New + file cập nhật + `latest.json` 2 nền tảng |
+| :material-update: **Tauri updater** | (bộ tự cập nhật của Tauri) app Mac + Windows kiểm bản mới lúc mở, hỏi trước khi cập nhật |
+| :material-signature: **Chữ ký file cập nhật** | file cập nhật có chữ ký, app chỉ nhận file đúng chữ ký. Khoá ký do anh tạo, giữ trên máy anh (không vào repo) |
 
 <div class="box box--star" markdown>
 **Xong khi**
 
-- Cài bản `x.y.0` → ra tag `x.y.1` → app báo có bản mới và cập nhật được, dữ liệu còn đủ
-- Từ lúc gắn tag tới lúc `.dmg` đã ký có trên Releases không cần thao tác tay
+- Cài bản `x.y.0` trên Mac **và** Windows → ra `x.y.1` → cả hai app báo có bản mới và cập nhật được, dữ liệu còn đủ
+- Từ lúc chạy `npm run release` tới lúc `.dmg` + `.exe` có trên Releases không cần thao tác tay nào khác (ngoài duyệt What's New)
 - What's New trên Release chỉ gồm commit `feat` / `fix`
 - Người dùng bấm "Để sau" → app vẫn chạy bản cũ bình thường
 </div>

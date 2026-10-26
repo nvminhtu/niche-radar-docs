@@ -104,13 +104,16 @@ Plan cũ (đã code xong): [Phase 1](2026-10-24-niche-radar-phase1-explorer.md) 
 - [Phase 72 — Dogfood làm nội dung](2026-10-25-niche-radar-phase72-dogfood-content.md)
 - [Phase 73 — Lịch 6 tuần + ra mắt](2026-10-25-niche-radar-phase73-six-week-launch.md)
 
-## App Mac
+## App Mac + Windows
+
+Làm theo thứ tự 74 → 75 → 79 → 82 → 81 (chốt 2026-10-26). 76, 77, 78, 80 không làm — giữ plan để tra.
 
 - [Phase 74 — Local App 1.0 (app Mac)](2026-10-25-niche-radar-phase74-local-app-1.md)
-- [Phase 75 — Local App 2.0](2026-10-25-niche-radar-phase75-local-app-2.md)
-- [Phase 76 — Local App 3.0](2026-10-25-niche-radar-phase76-local-app-3.md)
-- [Phase 77 — Local App 4.0](2026-10-25-niche-radar-phase77-local-app-4.md)
-- [Phase 78 — App Mac nhẹ](2026-10-25-niche-radar-phase78-light-mac-app.md)
-- [Phase 79 — Phần riêng của app Mac (bảo mật, đăng nhập, Pro)](2026-10-25-niche-radar-phase79-app-only.md)
-- [Phase 80 — Build app Mac trên CI](2026-10-25-niche-radar-phase80-mac-build-ci.md)
-- [Phase 81 — Release + auto-update](2026-10-25-niche-radar-phase81-release-auto-update.md)
+- [Phase 75 — Local App 2.0 (bản bán đầu tiên)](2026-10-25-niche-radar-phase75-local-app-2.md)
+- [Phase 76 — Local App 3.0 · ⛔ không làm (2026-10-26)](2026-10-25-niche-radar-phase76-local-app-3.md)
+- [Phase 77 — Local App 4.0 · ⛔ không làm (2026-10-26)](2026-10-25-niche-radar-phase77-local-app-4.md)
+- [Phase 78 — App Mac nhẹ · ⛔ không làm (2026-10-26)](2026-10-25-niche-radar-phase78-light-mac-app.md)
+- [Phase 79 — Phần riêng của app (license, dùng thử, bảo mật)](2026-10-25-niche-radar-phase79-app-only.md)
+- [Phase 80 — Build app Mac trên CI · ⛔ không làm (2026-10-26)](2026-10-25-niche-radar-phase80-mac-build-ci.md)
+- [Phase 81 — Release + auto-update (Mac + Windows)](2026-10-25-niche-radar-phase81-release-auto-update.md)
+- [Phase 82 — App Windows (Beta)](2026-10-26-niche-radar-phase82-windows-app.md)

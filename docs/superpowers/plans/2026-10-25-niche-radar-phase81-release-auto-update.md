@@ -1,52 +1,61 @@
-# Niche Radar Phase 81 — Release + auto-update — Implementation Plan
+# Niche Radar Phase 81 — Release + auto-update (Mac + Windows) — Implementation Plan
 
-> **For agentic workers:** Claude không tự gắn tag hay bấm phát hành khi anh chưa đồng ý. Khoá ký file cập nhật do anh tạo, lưu GitHub Secrets.
-> Steps dùng checkbox (`- [ ]`).
+> **For agentic workers:** Claude không tự gắn tag hay bấm phát hành khi anh chưa đồng ý. Khoá ký file cập nhật do anh tạo, lưu trên máy anh
+> (không vào repo). Steps dùng checkbox (`- [ ]`).
 
-**Goal:** gắn tag là CI tự ra bản (`.dmg` + What's New lên GitHub Releases); app trên máy người dùng tự thấy bản mới, hỏi trước khi cập nhật.
+**Goal:** một lệnh trên máy ra bản cho **cả Mac và Windows**: `.dmg` + `.exe` + What's New lên **GitHub Releases public**; app trên cả hai hệ điều
+hành tự thấy bản mới và hỏi trước khi cập nhật.
 
-**Spec:** [Phase 81 · Release + auto-update](../../app/phase-81-release-auto-update.md) · **Cần trước:** Phase 80 (build ký trên CI), Phase 57 (tag theo quy trình).
+**Spec:** [Phase 81 · Release + auto-update](../../app/phase-81-release-auto-update.md) · **Cần trước:** Phase 75 + 79 (app Mac bán được), Phase 82
+(`npm run win` ra `.exe`). **Đổi 2026-10-26:** không CI — Phase 80 không làm, build + ký trên máy (học Wow Keywords: ra bản dày, ghi chú lời thường).
 
 ## Mục tiêu · làm · không làm
 
-- **Xong khi:** cài `x.y.0` → ra tag `x.y.1` → app báo có bản mới và cập nhật được, dữ liệu còn đủ · từ lúc gắn tag tới lúc `.dmg` đã ký trên Releases
-  không thao tác tay · What's New chỉ gồm commit `feat` / `fix` · bấm "Để sau" → app chạy bản cũ bình thường.
-- **Làm:** workflow `release.yml` khi có tag `v*` (dùng lại build Phase 80), What's New từ commit, GitHub Release + `.dmg` + file cập nhật, Tauri updater, chữ ký file cập nhật.
-- **Không làm:** Claude tự tag / phát hành · cập nhật ngầm không hỏi · Windows / Linux, Mac App Store · deploy bản Web.
+- **Xong khi:** cài `x.y.0` trên Mac **và** trên Windows → ra `x.y.1` → cả hai app báo có bản mới, cập nhật được, dữ liệu còn đủ · từ lúc chạy
+  `npm run release` tới lúc `.dmg` + `.exe` có trên Releases không thao tác tay nào khác · What's New chỉ gồm commit `feat` / `fix`, lời thường ·
+  bấm "Để sau" → app chạy bản cũ bình thường.
+- **Làm:** `npm run release` (build Mac → build Windows → What's New → ký file cập nhật → `latest.json` → GitHub Release), Tauri updater trên 2 nền tảng,
+  hộp thoại hỏi cập nhật.
+- **Không làm:** Claude tự tag / phát hành · cập nhật ngầm · Linux, Mac App Store, Microsoft Store · deploy bản Web · CI.
 
 ## Global Constraints
 
-- Release ở repo nào: `.dmg` hiện để ở GitHub Releases (bản 0.9.0) — giữ đúng repo đó; repo code private thì endpoint updater phải là
-  repo / nơi **public** (Releases của repo public riêng hoặc file `latest.json` trên GitHub Pages) — chốt lúc làm, ghi lý do.
-- Tauri updater v2: `plugins.updater.pubkey` trong `tauri.conf.json` (public key, commit được), private key + password ở secret
-  `TAURI_SIGNING_PRIVATE_KEY`, `TAURI_SIGNING_PRIVATE_KEY_PASSWORD` (anh tạo bằng `tauri signer generate`).
-- `latest.json` sinh trong workflow: version, notes (What's New), `platforms.darwin-*` url + signature.
-- What's New: commit `feat` / `fix` kể từ tag trước (`git log <prev>..<tag> --grep`), nhóm theo loại, tiếng Việt như CHANGELOG.
-- App kiểm lúc mở, hỏi bằng hộp thoại có "Cập nhật" / "Để sau"; cập nhật xong → migrate DB có backup (Phase 19) như mọi lần nâng.
-- Tag khớp version (`version.test.ts` đã bắt lệch `package.json` / `tauri.conf.json`); CI fail nếu lệch.
+- **Repo phát hành public riêng** (kiểu `Kronop/wowkeywords-releases` của Wow Keywords): code vẫn ở repo private, repo public chỉ chứa Release —
+  host 0 đồng, có số tải công khai. Tên repo anh chốt (vd. `nvminhtu/niche-radar-releases`); anh tạo repo, Claude dùng `gh release create`.
+- **Tauri updater v2:** `plugins.updater.pubkey` trong `tauri.conf.json` (commit được); private key ở `~/.tauri/niche-radar.key` trên máy anh
+  (anh tạo bằng `npx tauri signer generate`), mật khẩu đọc từ biến môi trường lúc build — không vào repo, không in ra log.
+- **Endpoint:** `https://github.com/<repo-public>/releases/latest/download/latest.json`; `latest.json` có `platforms.darwin-aarch64` (file `.app.tar.gz`)
+  và `platforms.windows-x86_64` (file `-setup.exe` hoặc `.nsis.zip` theo bản Tauri lúc làm) kèm chữ ký từng file.
+- **Mac:** bản cập nhật vẫn ký Developer ID + notarize (dùng lại `build-mac.sh`). **Windows:** chưa ký Authenticode (Beta) — chữ ký updater vẫn bắt buộc.
+- **What's New:** commit `feat` / `fix` kể từ tag trước, nhóm theo loại, tiếng Việt như CHANGELOG; anh sửa được trước khi đăng (script dừng hỏi).
+- **Cập nhật xong** → migrate DB có backup (Phase 19) như mọi lần nâng. Tag khớp version (`version.test.ts`).
 
 ## File đụng tới
 
-- `.github/workflows/release.yml` (mới) — tag `v*` → build (gọi lại job Phase 80) → What's New → Release + `latest.json`
+- `scripts/release.sh` (mới) + `package.json` gốc `release` — gọi `npm run mac`, `npm run win`, sinh What's New, ký, `latest.json`, `gh release create`
 - `scripts/whats-new.ts` (mới) — sinh What's New từ commit
-- `app/src-tauri/tauri.conf.json`, `Cargo.toml`, `src/*.rs` — plugin updater, pubkey, endpoint
-- `web/src/lib/app-bridge.ts`, `components/UpdatePrompt.tsx` (mới) — hộp thoại cập nhật (chỉ trong app)
-- `docs/quy-trinh-build.md`, `CHANGELOG.md` — mục release + secret cần nhập
+- `scripts/latest-json.ts` (mới) — dựng `latest.json` 2 nền tảng
+- `app/src-tauri/tauri.conf.json`, `Cargo.toml` (`tauri-plugin-updater`), `src/main.rs` — plugin updater, pubkey, endpoint, `createUpdaterArtifacts`
+- `web/src/lib/app-bridge.ts`, `web/src/components/UpdatePrompt.tsx` (mới) — hộp thoại cập nhật (chỉ trong app)
+- `docs/quy-trinh-build.md`, `app/README.md`, `CLAUDE.md`, `CHANGELOG.md` — lệnh `npm run release`, khoá ký nằm đâu
 
 ## Tasks
 
-### Task 1: What's New
-- [ ] `whats-new.ts` + test trên lịch sử giả (chỉ `feat` / `fix`).
+### Task 1: What's New + latest.json
+- [ ] `whats-new.ts` + test lịch sử giả (chỉ `feat` / `fix`); `latest-json.ts` + test (2 nền tảng, thiếu file → lỗi rõ).
 
-### Task 2: Release workflow
-- [ ] `release.yml` dùng job build Phase 80; tạo Release + `.dmg` + `latest.json`. Thử với tag nháp trên nhánh thử (anh đồng ý), xoá sau.
+### Task 2: Updater trong app
+- [ ] Plugin updater + pubkey + endpoint; `UpdatePrompt` (Cập nhật / Để sau). Test: file sai chữ ký → bị từ chối.
 
-### Task 3: Updater trong app
-- [ ] Plugin updater, pubkey, endpoint; hộp thoại hỏi; "Để sau" không chặn. Test file cập nhật sai chữ ký → bị từ chối.
+### Task 3: Lệnh release
+- [ ] `release.sh`: build 2 nền tảng → ký file cập nhật → `latest.json` → dừng cho anh duyệt What's New → anh đồng ý → `gh release create` đính `.dmg`, `.exe`,
+      file cập nhật, `latest.json`.
 
-### Task 4: Vòng thật
-- [ ] Cài `x.y.0` → anh tag `x.y.1` → app báo + cập nhật; đếm bảng DB trước / sau. Ghi bằng chứng, quy trình build, CHANGELOG, chip, ROADMAP.
+### Task 4: Vòng thật trên 2 máy
+- [ ] Cài `x.y.0` trên Mac + Windows → anh đồng ý ra `x.y.1` → cả hai báo + cập nhật; đếm bảng DB trước / sau mỗi máy. "Để sau" không chặn.
+- [ ] Trang tải trỏ link `releases/latest`. Quy trình build, CHANGELOG, chip, ROADMAP.
 
 ## Tiến độ
 
-- 2026-10-25: viết plan.
+- 2026-10-25: viết plan (bản CI, chỉ Mac).
+- 2026-10-26: viết lại — không CI, phát hành từ máy, cả Mac + Windows, repo Releases public riêng.

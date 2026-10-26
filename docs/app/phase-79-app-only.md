@@ -1,4 +1,4 @@
-# Phase 79 · Phần riêng của app Mac (bảo mật, đăng nhập, Pro)
+# Phase 79 · Phần riêng của app (bảo mật, license, dùng thử)
 
 > Gom mọi việc **chỉ app Mac mới có** mà các phase Web 11.1, 40, 44, 49–51 đã tách ra: bản Web làm phần chung trước,
 > app Mac làm phần riêng ở đây — **sau khi bản Web xong Version 10** và sau khi app đã gói bản bán đầu (Phase 75).
@@ -6,7 +6,7 @@
 <span class="chip chip--todo">Chưa làm · sau Phase 75 · khi xong Version 10</span>
 
 > **Đổi 2026-10-26:** bỏ tài khoản → bỏ dòng **Đăng nhập trong app / deep link**. Version 10 làm **trước** App, nên
-> license key, dùng thử, AI của người dùng làm luôn ở phase này. Ngày dùng thử + key lưu trong Keychain (Windows: Phase 82).
+> license key, dùng thử, AI của người dùng làm luôn ở phase này. Ngày dùng thử + key lưu qua một lớp chung — Keychain trên Mac, Credential Manager trên Windows (Phase 82 chỉ build + thử).
 
 ## Chạy thế nào
 

@@ -13,7 +13,7 @@
   RAM nghỉ ≤ 300 MB · xuất project → nhập máy khác bằng dòng, không nhân đôi · backup → xoá DB → restore đủ · DB thật lên ULID không mất dòng ·
   test xanh, `npm run dev` vẫn chạy.
 - **Làm:** phần còn lại — thử máy sạch, ghi số.
-- **Không làm:** tính năng tra cứu mới · đăng nhập / sync / license · Windows, auto-update.
+- **Không làm:** tính năng tra cứu mới · đăng nhập / sync / license · Windows ([Phase 82](2026-10-26-niche-radar-phase82-windows-app.md)), auto-update ([Phase 81](2026-10-25-niche-radar-phase81-release-auto-update.md)).
 
 ## Global Constraints
 
