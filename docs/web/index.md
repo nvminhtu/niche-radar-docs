@@ -173,7 +173,7 @@ Các tính năng chính đã có bản đầu ở Phase 1–9 — mỗi cái đ�
 <div class="step" markdown>
 <span class="step__n">16b</span>
 <div class="step__body">
-<h3>Bàn quyết định long-tail + đo nhu cầu Pro <span class="chip chip--todo">Chưa làm · plan 2026-10-26</span></h3>
+<h3>Bàn quyết định long-tail + đo nhu cầu Pro <span class="chip chip--done">Xong 2026-10-26 · fake-door live trên demo</span></h3>
 <p>Chấm các keyword trong Project theo rubric 5 trục có dẫn chứng, Copy prompt cho AI rồi dán JSON ngược, ra BUILD / TEST THÊM / BỎ. Kèm 2 nút Pro giả (fake-door) đo có ai muốn trả tiền.</p>
 <a class="go" href="phase-16b-decision-board/">Xem chi tiết →</a>
 </div>

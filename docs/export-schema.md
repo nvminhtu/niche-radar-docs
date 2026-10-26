@@ -6,8 +6,8 @@
 ## Chung
 
 - **CSV**: UTF-8 có BOM, dấu phẩy, mọi ô trong ngoặc kép, xuống dòng CRLF, ngày ISO, số thô. Mỗi bảng 1 file, gói trong `.zip` (Reddit Gap chỉ 1 bảng → tải thẳng `.csv`).
-- **JSON**: `{ "format": "niche-radar/export", "schema_version": 1, "scope", "name", "created_at", "project", "runs", "tables" }` —
-  `tables` có các bảng của phạm vi (Research / Project: 6 bảng store · Reddit Gap: `reddit_gaps`), mỗi dòng đủ mọi cột (thiếu số = `null`).
+- **JSON**: `{ "format": "niche-radar/export", "schema_version": 2, "scope", "name", "created_at", "project", "runs", "tables" }` —
+  `tables` có các bảng của phạm vi (Research: 6 bảng store · Project: 6 bảng store + `decisions` · Reddit Gap: `reddit_gaps`). `schema_version` 2 (2026-10-26): thêm `decisions`, mỗi dòng đủ mọi cột (thiếu số = `null`).
 - **Gói cho AI**: `prompt.md` (việc AI phải làm + khung brief tính năng 7 mục) · `brief.md` (dữ liệu gọn có mã nguồn) ·
   `schema.md` (nội dung như trang này). Ước token = ký tự / 3.
 
@@ -147,3 +147,28 @@ Reddit Gap (Phase 10): chủ đề × chuyên mục từ bài Reddit anh đã l�
 - `sample_urls`: Link 3 bài mẫu (cùng thứ tự)
 - `source`: Nguồn của dòng này
 - `fetched_at`: Ngày dựng bảng (ISO)
+
+### decisions
+
+Bàn quyết định (Phase 16b): mỗi keyword của project chấm 5 trục 1–5 có dẫn chứng + verdict. Bản chốt (manual) và bản AI dán ngược (ai) mới nhất.
+
+- `decision_id`: Mã lần chấm
+- `kind`: manual = bản anh chốt · ai = JSON AI dán ngược
+- `term`: Keyword
+- `country`: Mã nước 2 chữ
+- `verdict`: BUILD · TEST THÊM · BỎ (trống = chưa chọn)
+- `reason`: Lý do verdict
+- `total`: Tổng điểm các trục có dữ liệu (không có điểm tổng bí ẩn)
+- `axes_measured`: Số trục có dữ liệu / 5
+- `demand_score`: Nhu cầu: điểm 1–5 (trống = chưa đo hoặc mã nguồn bịa)
+- `demand_evidence`: Nhu cầu: mã nguồn [C1]… + lý do
+- `weak_score`: Đối thủ yếu: điểm 1–5 (trống = chưa đo hoặc mã nguồn bịa)
+- `weak_evidence`: Đối thủ yếu: mã nguồn [C1]… + lý do
+- `money_score`: Khả năng thu tiền: điểm 1–5 (trống = chưa đo hoặc mã nguồn bịa)
+- `money_evidence`: Khả năng thu tiền: mã nguồn [C1]… + lý do
+- `effort_score`: Công sức build (5 = ít công): điểm 1–5 (trống = chưa đo hoặc mã nguồn bịa)
+- `effort_evidence`: Công sức build (5 = ít công): mã nguồn [C1]… + lý do
+- `aso_score`: ASO ngách: điểm 1–5 (trống = chưa đo hoặc mã nguồn bịa)
+- `aso_evidence`: ASO ngách: mã nguồn [C1]… + lý do
+- `source`: Nguồn của dòng này
+- `fetched_at`: Ngày chấm (ISO)

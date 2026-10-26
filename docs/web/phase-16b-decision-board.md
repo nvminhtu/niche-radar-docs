@@ -5,7 +5,7 @@
 > AI chấm qua **Copy prompt → dán kết quả JSON ngược vào app**. Cùng lúc, gắn **nút Pro giả (fake-door)** để đo xem có
 > ai muốn trả tiền không, trước khi đi tới Version 10.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-26 · từ review sản phẩm 2026-10-26 · đề xuất làm ngay sau Phase 16</span>
+<span class="chip chip--done">Xong 2026-10-26 · fake-door live trên demo · GA4 chờ VITE_GA_ID</span>
 
 <div class="box box--goal" markdown>
 **Vì sao làm.** Review sản phẩm ngày 2026-10-26 chỉ ra đoạn trống giữa "đẩy keyword vào Project" và "quyết định làm app":
@@ -109,11 +109,50 @@ trước khi làm thật.
 - Đổi rubric theo từng người (trọng số tuỳ chỉnh) — dùng bản cố định trước, đổi khi có người xin
 </div>
 
+## Đã làm (2026-10-26)
+
+**Phần A · Bàn quyết định** — khối mới trong trang Project, dưới bảng long-tail.
+
+- Mỗi keyword 1 khối xếp dọc, 5 trục chấm 1–5. Mỗi ô có **gợi ý dẫn chứng** lấy từ DB (Trends + mã `[T]`, đối thủ top 3
+  `[C…]`, mô hình tiền + điểm `[S…]`, keyword gốc `[K…]`, số đối thủ có đủ chữ của keyword trong tên). Bấm **+ dùng** là gắn
+  mã + lý do vào ô. Công sức build không có số → ghi lý do; nếu đã tự chấm Hợp sức mình ở điểm v2 thì hiện làm gợi ý.
+- **Copy prompt cho AI**: prompt rubric + `brief.md` phạm vi Project của Phase 16 + `schema.md`, mặc định trần 32k
+  (project 5 keyword không vừa 8k: ~8.900 token sau khi cắt hết mức — hộp báo "vẫn vượt trần").
+- **Dán JSON AI**: bóc JSON khỏi chữ thừa và khung code của AI, kiểm schema `niche-radar/decision` v1. Sai cú pháp → báo đúng dòng
+  (kể cả dấu phẩy thừa trước `]` mà V8 không báo vị trí). Thiếu keyword, keyword lạ, điểm ngoài 1–5, 2 BUILD, > 1 TEST THÊM,
+  BỎ không lý do, trục có số mà không dẫn mã → lỗi, **không ghi gì**. Mã nguồn không có trong dữ liệu → ô bị gạch, không cộng.
+- **Tổng** = cộng các trục có dữ liệu, ghi "4/5 trục có dữ liệu". Ô lệch ≥ 2 điểm giữa bản tay và bản AI tô vàng.
+- **Lưu bản chốt** (tuỳ chọn ghi verdict vào Kết luận) · **Dùng điểm AI làm nháp** (bỏ ô bị gạch) · **Lịch sử chấm**: mọi
+  bản tay / AI, xem lại bản cũ ở chế độ chỉ xem. Keyword BUILD có nút **Làm evidence pack** xám · Phase 24.
+- Xuất: bảng `decisions` trong CSV / JSON phạm vi Project (`schema_version` 2) · mục Bàn quyết định trong báo cáo `.md` ·
+  `.niche.json` mang bản chấm, nhập lại 2 lần không nhân đôi. Bản chấm **không** vào gói cho AI (AI chấm độc lập).
+- Bảng `decisions` + `pro_interest` (migration 0016).
+
+**Phần B · Fake-door** — 2 nút `Pro · sắp có`: **Chấm bằng AI 1 bấm** (cạnh Copy prompt) và **Báo tôi qua email khi niche đổi**
+(khối Theo dõi định kỳ). Hộp nói thật "chưa có, không thu tiền, không hứa ngày ra", hỏi mức giá, không nút mua.
+
+- Bản demo: GA4 `pro_interest_click` / `pro_interest_email` (chỉ chạy khi build có `VITE_GA_ID` — **chưa gắn**) + email vào
+  Mailchimp. JSONP của Mailchimp không gắn được tag → tính năng + mức giá ghi vào trường PRODUCT dạng
+  `niche-radar|pro-ai-score|~$10/tháng`; lọc người Niche Radar bằng "PRODUCT contains niche-radar".
+- Bản trên máy: chỉ đếm vào DB (`GET /api/pro-interest`), không gửi đi đâu.
+- Demo có project mẫu "Mẫu: app tiện ích cá nhân" (habit tracker · budget tracker · pomodoro timer), chưa chấm sẵn:
+  [niche-radar-demo.pages.dev/projects/4](https://niche-radar-demo.pages.dev/projects/4).
+
+**Chạy thật** (bản sao DB thật, project RAM 5 keyword: ram issue · over ram · ram ios · not enough ram · ai bubble shooter game):
+gợi ý đủ 5 trục cho cả 5 keyword, 375 mã nguồn chọn được · Copy prompt 32k = ~17.000 token, không cắt · dán JSON có dấu phẩy thừa
+→ "Dòng 7: ký tự ] không đúng chỗ (dấu phẩy thừa?)", không lưu · dán JSON 5 keyword có 1 mã bịa `C999` → lưu, ô "ram ios · Đối thủ
+yếu" bị gạch · dùng điểm AI làm nháp, sửa Nhu cầu "ram issue" 2 → 4 → lưu, mở lại thấy đúng, ô đó tô vàng, Kết luận ghi đủ 5
+verdict · `.niche.json` có 2 bản chấm · CSV có `decisions.csv` · fake-door bản máy đếm 1 bấm + 1 chọn giá. Xem ở 1340px và 375px,
+không tràn ngang. 288 test xanh (thêm `tests/decision.test.ts`, 11 test).
+
+**Còn lại (của anh):** gắn `VITE_GA_ID` rồi `npm run demo:deploy` để GA4 đếm · thử 1 email thật trên demo, xem Mailchimp có dòng
+PRODUCT đúng · sửa ngưỡng dưới đây nếu muốn, trước khi có số.
+
 ## Kết quả fake-door
 
 | Ngày bật | Tính năng | Click | Email | Chọn có trả tiền | Nguồn + ngày đo |
 |---|---|---|---|---|---|
-| — | Chấm bằng AI 1 bấm | chưa đo | chưa đo | chưa đo | — |
-| — | Báo email khi niche đổi | chưa đo | chưa đo | chưa đo | — |
+| 2026-10-26 | Chấm bằng AI 1 bấm | chưa đo | chưa đo | chưa đo | GA4 chưa gắn · Mailchimp chưa đọc |
+| 2026-10-26 | Báo email khi niche đổi | chưa đo | chưa đo | chưa đo | GA4 chưa gắn · Mailchimp chưa đọc |
 
-**Ngưỡng anh chốt:** chưa ghi.
+**Ngưỡng (ghi trước khi bật, 2026-10-26):** sau 4 tuần (tới 2026-11-23) ≥ 20 email Pro **và** ≥ 30 % trong số đó chọn mức có trả tiền → mở Phase 66 sớm. Đây là mức đề xuất trong plan — anh sửa được trước khi có số; sửa sau khi thấy số thì ghi đỏ "đổi sau khi thấy số".
