@@ -1,4 +1,4 @@
-"""Tô link sidebar theo trạng thái phase: xong → xanh, đang làm → vàng nhạt.
+"""Tô link sidebar theo trạng thái phase: xong → xanh, đang làm → vàng nhạt, không làm → xám gạch ngang.
 Phase Review (trang có khối class="nr-review-stop") → nhãn REVIEW ở sidebar + vạch REVIEW trên thẻ phase.
 
 Trạng thái lấy từ chip đầu tiên của chính trang (<span class="chip chip--done">…) — không ghi tay ở chỗ khác.
@@ -7,10 +7,12 @@ MkDocs đọc markdown của mọi trang trước rồi mới render, nên lúc 
 import posixpath
 import re
 
-CHIP = re.compile(r'class="chip chip--(done|doing|todo)"')
+CHIP = re.compile(r'class="chip chip--(done|doing|todo|skip)"')
 LINK = re.compile(r'<a href="([^"#:]*)" class="md-nav__link')
 REVIEW = re.compile(r'class="nr-review-stop"')
 STEP = re.compile(r'<div class="step">((?:(?!<div class="step">).)*?<a class="go" href="([^"#:]+)")', re.S)
+# mục nav có chữ "KO LÀM" = vạch chặn: mọi mục dưới nó không làm (chốt 2026-10-26)
+SKIPLINE = re.compile(r'(<(?:label|span|a)[^>]*class="md-nav__link)("[^>]*>\s*(?:<span class="md-ellipsis">\s*)?[^<]*KO LÀM)')
 status_by_url: dict[str, str] = {}
 review_urls: set[str] = set()
 
@@ -33,11 +35,12 @@ def on_post_page(output, page, **_):
     def repl(m):
         url = _abs(page, m.group(1))
         status = status_by_url.get(url)
-        return (m.group(0) + (f" nr-nav--{status}" if status in ("done", "doing") else "")
+        return (m.group(0) + (f" nr-nav--{status}" if status in ("done", "doing", "skip") else "")
                 + (" nr-nav--review" if url in review_urls else ""))
 
     def step(m):
         review = _abs(page, m.group(2)) in review_urls
         return ('<div class="step step--review">' if review else '<div class="step">') + m.group(1)
 
+    output = SKIPLINE.sub(lambda m: m.group(1) + " nr-nav--skipline" + m.group(2), output)
     return STEP.sub(step, LINK.sub(repl, output))

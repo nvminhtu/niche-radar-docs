@@ -3,7 +3,11 @@
 > Trước khi làm tool nhanh hơn, phải **đo nó đang chậm ở đâu**. Phase này viết một lệnh đo thời gian, RAM và dung lượng
 > của từng luồng chính, rồi lưu thành **bảng mốc** để các phase sau so lại.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 45</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** performance — không ra tiền, không thêm người dùng. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

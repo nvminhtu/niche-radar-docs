@@ -3,7 +3,11 @@
 > Đăng nhập máy khác là **thấy project, ghi chú, kết luận của mình**. Chỉ đưa lên cloud thứ nhỏ do người dùng viết;
 > dữ liệu cào thô ở lại máy.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 62</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** bỏ tài khoản — app bán bằng license key, dữ liệu ở máy (học Wow Keywords). Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

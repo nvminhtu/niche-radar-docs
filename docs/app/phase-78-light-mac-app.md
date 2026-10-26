@@ -3,7 +3,11 @@
 > Đo và làm nhẹ **app Mac**: mở nhanh, ít RAM khi không làm gì, file cài nhỏ hơn. Đây cũng là lần đo lại cuối của
 > Version 5 so với bảng mốc.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 77 · khi xong Version 9</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** performance — không ra tiền, không thêm người dùng; mốc 2026-10-25 đã ổn (mở ~0,14 s, RAM nghỉ ≈ 200 MB). Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

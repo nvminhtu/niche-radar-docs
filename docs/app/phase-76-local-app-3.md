@@ -3,7 +3,11 @@
 > Gói Phase 37–39 (Phase 28 gói ở Phase 75; đã soát ở [Phase 40](../web/phase-40-review-3.md)) vào **app Mac** một lần — như
 > [Phase 75](phase-75-local-app-2.md) đã làm cho Version 2. Thuộc mục App: **chỉ làm khi bản Web xong Version 9**.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 75 · khi xong Version 9</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** tính năng mới vào app qua bản cập nhật [Phase 81](phase-81-release-auto-update.md), không gói theo version. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

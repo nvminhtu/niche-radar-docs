@@ -1,8 +1,10 @@
 # Phase 75 · Local App 2.0
 
-> Sau khi bản Web **xong Version 9**, đóng gói phần còn lại của Version 1 (Phase 7, 9–28.2) và Version 2 (Phase 31–35) vào **app Mac** một lần — như Phase 74 đã làm cho Phase 1–6.
+> Sau khi bản Web **xong Version 10**, đóng gói phần còn lại của Version 1 (Phase 7, 9–30.2) + Version 9 (analytics) + Version 10 (dùng thử, license) vào **app Mac** một lần — như Phase 74 đã làm cho Phase 1–6. Đây là **bản bán đầu tiên**.
+>
+> **Đổi 2026-10-26:** Version 2 (YouTube, Amazon, Maps) không gói ở đây nữa — vào app qua bản cập nhật [Phase 81](phase-81-release-auto-update.md) khi làm xong. Bảng "Làm gì" dưới còn nhắc Phase 31–35: bỏ phần đó khi code.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 74 · khi xong Version 9</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 74 · khi xong Version 10</span>
 
 ## Chạy thế nào
 

@@ -3,7 +3,11 @@
 > Mỗi lần mở **pull request** (PR — yêu cầu gộp code vào `main`), máy chủ GitHub tự chạy hết các bước kiểm. Đỏ là không
 > gộp được. Bỏ việc "quên chạy test trước khi merge".
 
-<span class="chip chip--todo">Chưa làm · sau Phase 53</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** CI / quy trình nhánh — không ra tiền, không thêm người dùng. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

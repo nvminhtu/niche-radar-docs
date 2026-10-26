@@ -3,7 +3,11 @@
 > Cho máy **tự bấm qua các luồng chính** trên bản Web như người dùng thật, và chụp ảnh từng màn để so với ảnh chuẩn.
 > Nút hỏng hay màn vỡ thì test báo đỏ trước khi tới tay mình.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 50</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

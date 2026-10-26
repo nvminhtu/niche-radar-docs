@@ -94,12 +94,27 @@ nav:
           - "Phase 25 · Cài đặt AI + tuyến miễn phí": web/phase-25-ai-settings.md
           - "Phase 26 · MCP của app": web/phase-26-mcp.md
           - "Phase 27 · Review cụm tính năng chính": web/phase-27-review-core.md
-      - "Version 1 · So sánh + UI + Account (Phase 28–30.2)":
+      - "Version 1 · So sánh + UI + Setup (Phase 28–30.2)":
           - Phase 28 · So sánh niche: web/phase-28-compare-niche.md
           - Phase 29 · UI / UX: web/phase-29-ui-ux.md
-          - Phase 30 · Account + Flow: web/phase-30-account.md
           - Phase 30.1 · Setup trong Web: web/phase-30-1-setup.md
           - Phase 30.2 · Tutorial (nút ?): web/phase-30-2-tutorial.md
+      - "Version 9 (Analytics — bỏ Account)":
+          - Tổng quan Version 9: web/version-9.md
+          - "Phase 64 · Analytics + báo lỗi": web/phase-64-analytics-errors.md
+          - "Phase 65 · Trang Riêng tư": web/phase-65-privacy-delete.md
+      - "Version 10 (Sell Pro — dùng thử + license)":
+          - Tổng quan Version 10: web/version-10.md
+          - "Phase 66 · Mô hình tiền": web/phase-66-money-model.md
+          - "Phase 67 · Thanh toán + license key": web/phase-67-payments.md
+          - "Phase 68 · Dùng thử + paywall": web/phase-68-paywall-trial.md
+          - "Phase 69 · AI của người dùng": web/phase-69-ai-cost-plans.md
+      - "Version 11 (Marketing Plan)":
+          - Tổng quan Version 11: web/version-11.md
+          - "Phase 70 · Định vị + landing + email": web/phase-70-positioning-landing.md
+          - "Phase 71 · Chọn 2 kênh": web/phase-71-two-channels.md
+          - "Phase 72 · Dogfood làm nội dung": web/phase-72-dogfood-content.md
+          - "Phase 73 · Lịch 6 tuần + ra mắt": web/phase-73-six-week-launch.md
       - Version 2 (Demo + Nguồn mới + AI):
           - Phase 31a · Demo Site: web/phase-31a-demo-site.md
           - Phase 31 · YouTube Search: web/phase-31-youtube-search.md
@@ -120,59 +135,48 @@ nav:
           - Phase 43 · Chỗ trống AI + SEO: web/phase-43-ai-seo-gap.md
           - Phase 44 · Gói GEO + trang cần viết: web/phase-44-geo-pack.md
           - Phase 45 · Review Version 4: web/phase-45-review-4.md
-      - "Version 5 (Performance)":
-          - Tổng quan Version 5: web/version-5.md
-          - "Phase 46 · Đo mốc": web/phase-46-benchmark.md
-          - "Phase 47 · Collector nhanh hơn": web/phase-47-fast-collector.md
-          - "Phase 48 · UI + DB nhanh": web/phase-48-fast-ui-db.md
-      - "Version 6 (Automation Test + Review Results)":
-          - Tổng quan Version 6: web/version-6.md
-          - "Phase 50 · Test collector bằng fixture": web/phase-50-fixture-tests.md
-          - "Phase 51 · Test giao diện (E2E)": web/phase-51-e2e-tests.md
-          - "Phase 52 · Canary nguồn thật": web/phase-52-source-canary.md
-          - "Phase 53 · Review kết quả": web/phase-53-review-results.md
-          - "Phase 53b · Test chức năng + chụp kết quả (tùy chọn)": web/phase-53b-functest-screenshots.md
-      - "Version 7 (CI cho PR)":
-          - Tổng quan Version 7: web/version-7.md
-          - "Phase 54 · CI cho pull request": web/phase-54-ci-pull-request.md
-          - "Phase 57 · Quy trình nhánh": web/phase-57-branch-flow.md
-      - "Version 8 (Security & Account & Refactor Code)":
-          - Tổng quan Version 8: web/version-8.md
-          - "Phase 58 · Kiểm + vá bảo mật": web/phase-58-security-audit.md
-          - "Phase 59 · Lớp tài khoản trên máy": web/phase-59-local-account.md
-          - "Phase 60 · Refactor": web/phase-60-refactor.md
-          - "Phase 61 · Review bảo mật + 8.0": web/phase-61-security-review-8.md
-      - "Version 9 (Firebase, Analytics, Account)":
-          - Tổng quan Version 9: web/version-9.md
-          - "Phase 62 · Firebase Auth": web/phase-62-firebase-auth.md
-          - "Phase 63 · Sync project": web/phase-63-project-sync.md
-          - "Phase 64 · Analytics + báo lỗi": web/phase-64-analytics-errors.md
-          - "Phase 65 · Riêng tư + xoá tài khoản": web/phase-65-privacy-delete.md
-      - "Version 10 (Sell Pro — Lifetime / Subscriptions)":
-          - Tổng quan Version 10: web/version-10.md
-          - "Phase 66 · Mô hình tiền": web/phase-66-money-model.md
-          - "Phase 67 · Thanh toán": web/phase-67-payments.md
-          - "Phase 68 · Paywall + dùng thử": web/phase-68-paywall-trial.md
-          - "Phase 69 · Chi phí AI theo gói": web/phase-69-ai-cost-plans.md
-      - "Version 11 (Marketing Plan)":
-          - Tổng quan Version 11: web/version-11.md
-          - "Phase 70 · Định vị + landing + email": web/phase-70-positioning-landing.md
-          - "Phase 71 · Chọn 2 kênh": web/phase-71-two-channels.md
-          - "Phase 72 · Dogfood làm nội dung": web/phase-72-dogfood-content.md
-          - "Phase 73 · Lịch 6 tuần + ra mắt": web/phase-73-six-week-launch.md
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
       - Appendix · Chưa xếp / Không làm: appendix.md
-  - App Mac (sau Version 9):
+      - "⛔ KO LÀM — mọi phase dưới đây":
+          - "Account (bỏ 2026-10-26)":
+              - Phase 30 · Account + Flow: web/phase-30-account.md
+              - "Phase 59 · Lớp tài khoản trên máy": web/phase-59-local-account.md
+              - "Phase 62 · Firebase Auth": web/phase-62-firebase-auth.md
+              - "Phase 63 · Sync project": web/phase-63-project-sync.md
+          - "Version 5 (Performance)":
+              - Tổng quan Version 5: web/version-5.md
+              - "Phase 46 · Đo mốc": web/phase-46-benchmark.md
+              - "Phase 47 · Collector nhanh hơn": web/phase-47-fast-collector.md
+              - "Phase 48 · UI + DB nhanh": web/phase-48-fast-ui-db.md
+          - "Version 6 (Automation Test + Review Results)":
+              - Tổng quan Version 6: web/version-6.md
+              - "Phase 50 · Test collector bằng fixture": web/phase-50-fixture-tests.md
+              - "Phase 51 · Test giao diện (E2E)": web/phase-51-e2e-tests.md
+              - "Phase 52 · Canary nguồn thật": web/phase-52-source-canary.md
+              - "Phase 53 · Review kết quả": web/phase-53-review-results.md
+              - "Phase 53b · Test chức năng + chụp kết quả": web/phase-53b-functest-screenshots.md
+          - "Version 7 (CI cho PR)":
+              - Tổng quan Version 7: web/version-7.md
+              - "Phase 54 · CI cho pull request": web/phase-54-ci-pull-request.md
+              - "Phase 57 · Quy trình nhánh": web/phase-57-branch-flow.md
+          - "Version 8 (Security & Refactor)":
+              - Tổng quan Version 8: web/version-8.md
+              - "Phase 58 · Kiểm + vá bảo mật": web/phase-58-security-audit.md
+              - "Phase 60 · Refactor": web/phase-60-refactor.md
+              - "Phase 61 · Review bảo mật + 8.0": web/phase-61-security-review-8.md
+  - App Mac + Windows (sau Version 10):
       - app/index.md
       - Phase 74 · Local App 1.0: app/phase-74-local-app-1.md
-      - Phase 75 · Local App 2.0: app/phase-75-local-app-2.md
-      - Phase 76 · Local App 3.0: app/phase-76-local-app-3.md
-      - Phase 77 · Local App 4.0: app/phase-77-local-app-4.md
-      - "Phase 78 · App Mac nhẹ": app/phase-78-light-mac-app.md
-      - "Phase 79 · Phần riêng của app Mac": app/phase-79-app-only.md
-      - "Phase 80 · Build app Mac trên CI": app/phase-80-mac-build-ci.md
+      - "Phase 75 · Local App 2.0 (bản bán đầu)": app/phase-75-local-app-2.md
+      - "Phase 79 · Phần riêng của app": app/phase-79-app-only.md
+      - "Phase 82 · App Windows (Beta)": app/phase-82-windows-app.md
       - "Phase 81 · Release + auto-update": app/phase-81-release-auto-update.md
+      - "⛔ KO LÀM — App":
+          - Phase 76 · Local App 3.0: app/phase-76-local-app-3.md
+          - Phase 77 · Local App 4.0: app/phase-77-local-app-4.md
+          - "Phase 78 · App Mac nhẹ": app/phase-78-light-mac-app.md
+          - "Phase 80 · Build app Mac trên CI": app/phase-80-mac-build-ci.md
   - Hệ thống chạy thế nào: he-thong.md
   - Đối thủ · Đối tác · Tham khảo: doi-thu-tham-khao.md
   - Cách dùng: cach-dung.md

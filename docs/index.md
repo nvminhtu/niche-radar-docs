@@ -8,7 +8,9 @@ hide:
 
 > Gõ một niche → biết **keyword nào còn trống**, **đối thủ yếu ở đâu**, **nhu cầu lên hay xuống**.
 
-Tool nội bộ để chọn niche cho app của mình. Tra Google Play, App Store, Google Trends, TrustMRR — Phase 1–5 không cần AI, không tốn phí; AI vào ở Phase 4 (tuỳ chọn) và Phase 6.
+Chọn niche đáng làm app từ Google Play, App Store, Google Trends, Reddit, Q&A, TrustMRR — không AI vẫn chạy, AI là tuỳ chọn.
+**Chốt 2026-10-26:** bán dưới dạng **app Mac + Windows tải về, dùng thử rồi mua license** (học mô hình phân phối của
+[Wow Keywords](doi-thu-tham-khao.md#wow-keywords)). Bản Web vẫn chạy local để test tính năng.
 
 <div class="nr-stats" markdown>
 <div><b>100</b><span>keyword mỗi lần explore</span></div>
@@ -23,26 +25,33 @@ Tool nội bộ để chọn niche cho app của mình. Tra Google Play, App Sto
 trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 </div>
 
-## Thứ tự: Web Version 1–9 → App Mac → Web Version 10–12
+## Thứ tự: Web V1 → V9 → V10 → App Mac + Windows → V11 → V2–4, V12 · ⛔ KO LÀM
 
 <div class="nr-forms" markdown>
 <div class="nr-web" markdown>
-### :material-web: 1 · Web — làm trước, làm hết
+### :material-web: 1 · Web local — làm + test tính năng
 
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
-- Version 1 → 9: nguồn dữ liệu, AI, so sánh, SEO / GEO, tốc độ, test, CI, bảo mật, tài khoản
-- Sau App Mac: Version 10 → 12 — bán Pro, marketing, tính năng mới
-- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 11 Research nguồn gap xong 2026-10-26 · 10b Q&A Gap + 16b Bàn quyết định xong → 10c GitHub Gap → 12–27</span>
+- Version 1 (đang làm) → **Version 9** analytics, bỏ Account → **Version 10** dùng thử + license key
+- Sau App: Version 11 marketing → Version 2, 3, 4, 12 tính năng mới (vào app qua bản cập nhật)
+- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 10b xong · 16 Export xong → 10c GitHub Gap → 12–27</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
-### :material-apple: 2 · App Mac — làm khi xong Version 9
+### :material-laptop: 2 · App Mac + Windows — thứ để bán
 
 - **Bọc lại đúng giao diện Web** bằng Tauri → không viết 2 lần · code ở `app/`
-- Gói một lần khi bản Web **xong Version 9** (Phase 1–65): 74 → 75 → 76 → 77 → 78 → 79 → 80 → 81
-- <span class="chip chip--todo">Chờ xong Version 9 · Phase 74 đã có .dmg từ trước</span>
+- Gói khi bản Web **xong Version 10**: 75 → 79 → 82 (Windows Beta) → 81 (GitHub Releases + tự cập nhật)
+- Tải miễn phí → dùng thử N ngày → mua đứt → license key, 2 máy, không tài khoản
+- <span class="chip chip--todo">Chờ xong Version 10 · Phase 74 đã có .dmg từ trước</span>
 - [Mở lộ trình App →](app/index.md)
 </div>
+</div>
+
+<div class="box box--danger" markdown>
+**⛔ KO LÀM (chốt 2026-10-26)** — không ra tiền, không thêm người dùng: **Account** (Phase 30, 59, 62, 63) ·
+**Version 5** Performance · **Version 6** test tự động · **Version 7** CI · **Version 8** security / refactor ·
+App 76, 77, 78, 80. Trang giữ lại để tra. [Danh sách + lý do](appendix.md#khong-lam-chot-2026-10-26)
 </div>
 
 ## Chạy thế nào
@@ -66,19 +75,16 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 
 | Mục | Version | Nội dung | Phase | Trạng thái |
 |---|---|---|---|---|
-| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate · Reddit Gap · research nguồn gap · làm kỹ tính năng chính (12–27) · so sánh niche, UI, tài khoản, setup, tutorial | 1–10, 10b, 10c, 11, 12–27 (16b), 28–30.2 | <span class="chip chip--doing">Đang làm</span> |
-| Web | 2 | Nguồn mới + AI: YouTube, Amazon, Google Maps | 29–33 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 3 | So sánh đối thủ + AI Cite (so sánh niche dời lên V1) | 35–38 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 4 | Kệ Google, kệ AI, gói GEO | 39–43 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 5 | Performance | 44–46 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 6 | Automation test + review kết quả | 48–51b | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 7 | CI cho PR + quy trình nhánh | 52, 55 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 8 | Security, tài khoản trên máy, refactor | 56–59 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 9 | Firebase, Analytics, sync project | 60–63 | <span class="chip chip--todo">Chưa làm</span> |
-| App | sau Version 9 | Local App 1.0 → 4.0, app nhẹ, phần riêng app, build trên CI, auto-update | 74–81 | <span class="chip chip--todo">Chờ xong Version 9</span> |
-| Web | 10 | Bán Pro: lifetime / subscription | 64–67 | <span class="chip chip--todo">Chưa làm</span> |
-| Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 68–71 | <span class="chip chip--todo">Chưa làm</span> |
+| Web | 1 · MVP | Google Play, App Store, Trends, Feature Gap, AI, validate · Reddit / Q&A Gap · làm kỹ tính năng chính (12–27) · so sánh niche, UI, setup, tutorial | 1–11, 12–27, 28, 29, 30.1, 30.2 | <span class="chip chip--doing">Đang làm</span> |
+| Web | 9 | Analytics + báo lỗi + trang Riêng tư — bỏ Account | 64–65 | <span class="chip chip--todo">Chưa làm</span> |
+| Web | 10 | Bán: dùng thử + license key + mua đứt, AI của người dùng | 66–69 | <span class="chip chip--todo">Chưa làm</span> |
+| App | Mac + Windows | bản bán đầu, phần riêng app, Windows Beta, GitHub Releases + tự cập nhật | 75, 79, 82, 81 | <span class="chip chip--todo">Chờ xong Version 10</span> |
+| Web | 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 70–73 | <span class="chip chip--todo">Chưa làm</span> |
+| Web | 2 | Nguồn mới + AI: YouTube, Amazon, Google Maps | 31a, 31–35 | <span class="chip chip--todo">Chưa làm</span> |
+| Web | 3 | So sánh đối thủ + AI Cite | 37–40 | <span class="chip chip--todo">Chưa làm</span> |
+| Web | 4 | Kệ Google, kệ AI, gói GEO | 41–45 | <span class="chip chip--todo">Chưa làm</span> |
 | Web | 12 | Tính năng mới — mới ghi plan | — | <span class="chip chip--todo">Chưa đánh số</span> |
+| ⛔ | KO LÀM | Account · V5 Performance · V6 test tự động · V7 CI · V8 security / refactor · App 76–78, 80 | 30 · 46–63 · 76–78 · 80 | <span class="chip chip--skip">Không làm</span> |
 
 Việc chưa xếp phase hoặc không làm: [Appendix](appendix.md). Mỗi phase đi theo [Quy trình build](quy-trinh-build.md).
 
@@ -93,7 +99,7 @@ Việc chưa xếp phase hoặc không làm: [Appendix](appendix.md). Mỗi phas
 
 - AI tự đưa ra con số — AI (Phase 4, 6) chỉ đọc chữ và trích dẫn
 - Lượt tìm "thật" — store không công khai, "phổ biến" là ước lượng
-- Bán / host cho nhiều người — tool nội bộ
+- Tài khoản, đăng nhập, host server cho nhiều người — app chạy trên máy, bán bằng license key
 </div>
 
 [Bản Master Plan đầy đủ (chữ)](superpowers/specs/2026-10-24-niche-radar-master-plan.md)

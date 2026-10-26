@@ -3,7 +3,11 @@
 > Test xanh chỉ nói code chạy. Phase này hỏi câu khác: **tool có trả lời đúng không**. Có một bộ niche với đáp án anh
 > kiểm tay, mỗi bản mới chấm lại và ra **phiếu review**: đúng bao nhiêu, sai ở đâu.
 
-<span class="chip chip--todo">Chưa làm · sau Version 5</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 <div class="nr-review-stop" markdown>
 **⏸ REVIEW PHASE — dừng lại soát.** Đối chiếu "Xong khi" của các phase trước trên niche thật, sửa lỗi xong

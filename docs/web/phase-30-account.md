@@ -3,7 +3,11 @@
 > Khi có **người khác** dùng tool: tài khoản, luồng từ lúc mở app tới lúc ra quyết định, và **đường nhận tính năng mới**
 > từ người dùng.
 
-<span class="chip chip--todo">Chưa làm · xét lại trước khi code (cần có người dùng ngoài)</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** bỏ tài khoản — app bán bằng license key, dữ liệu ở máy (học Wow Keywords). Trang giữ lại để tra, không code.
+</div>
 
 ## Cách chạy
 

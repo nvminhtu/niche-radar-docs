@@ -3,7 +3,11 @@
 > Gói Phase 41–44 (đã soát ở [Phase 45](../web/phase-45-review-4.md)) vào **app Mac** một lần — như
 > [Phase 76](phase-76-local-app-3.md) đã làm cho Version 3. Thuộc mục App: **chỉ làm khi bản Web xong Version 9**.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 76 · khi xong Version 9</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** tính năng mới vào app qua bản cập nhật [Phase 81](phase-81-release-auto-update.md), không gói theo version. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

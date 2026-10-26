@@ -1,9 +1,9 @@
 # Phase 74 · Local App 1.0 (app Mac)
 
 > Đóng gói bản Web thành **app Mac bấm là mở** — không cần Node, không gõ lệnh. Trước là phần app của Phase 8; phần
-> Project + xuất / nhập + backup ở lại Web: [Phase 8](../web/phase-8-project-data.md). Thuộc mục App, làm khi bản Web xong Version 9.
+> Project + xuất / nhập + backup ở lại Web: [Phase 8](../web/phase-8-project-data.md). Thuộc mục App, làm khi bản Web xong Version 10.
 
-<span class="chip chip--doing">Code xong sớm 2026-10-25 · thử máy mới khi xong Version 9</span>
+<span class="chip chip--doing">Code xong sớm 2026-10-25 · thử máy mới khi xong Version 10</span>
 
 ## Chạy thế nào
 

@@ -3,7 +3,11 @@
 > Khoá `main`: chỉ vào được qua PR có CI xanh. Mỗi phase một **nhánh** (bản sao code để làm riêng), xong mới gộp và
 > gắn tag. Ghi hết cách làm vào [Quy trình build](../quy-trinh-build.md).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 54</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** CI / quy trình nhánh — không ra tiền, không thêm người dùng. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

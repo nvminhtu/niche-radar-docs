@@ -1,7 +1,10 @@
-# Web — làm hết trước
+# Web — làm + test tính năng (chạy local)
 
-> Mọi tính năng làm ở **bản Web** (`web/`, chạy `npm run dev` → `localhost:3200`). Đi lần lượt Version 1 → 12.
-> Trang này chỉ nói bản Web — app Mac có mục riêng: [App Mac](../app/index.md).
+> Mọi tính năng làm và **test** ở **bản Web chạy local** (`web/`, `npm run dev` → `localhost:3200`). Khách nhận
+> **app Mac + Windows** bọc đúng giao diện này: [App Mac + Windows](../app/index.md).
+>
+> **Thứ tự (chốt 2026-10-26):** Version 1 → **Version 9** (analytics) → **Version 10** (dùng thử + license) → App Mac +
+> Windows → Version 11 (marketing) → Version 2, 3, 4, 12. Dưới vạch **⛔ KO LÀM** là các phase không ra tiền, không thêm người dùng.
 
 <span class="chip chip--doing">Đang làm · Phase 7 · tiếp theo 10 Reddit Gap → 11 Research nguồn gap → 12–27</span>
 
@@ -268,7 +271,7 @@ Các tính năng chính đã có bản đầu ở Phase 1–9 — mỗi cái đ�
 </div>
 </div>
 
-## Version 1 · So sánh + UI + Account (Phase 28–30.2)
+## Version 1 · So sánh + UI + Setup (Phase 28–30.2)
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -285,14 +288,6 @@ Các tính năng chính đã có bản đầu ở Phase 1–9 — mỗi cái đ�
 <h3>UI / UX Improvement <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Sửa chỗ vướng thật: luồng chính, trạng thái tải / lỗi, bảng dày, sáng / tối.</p>
 <a class="go" href="phase-29-ui-ux/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">30</span>
-<div class="step__body">
-<h3>Account + Flow người dùng <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Tài khoản, luồng người dùng mới, nút góp ý → nhận tính năng mới.</p>
-<a class="go" href="phase-30-account/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
@@ -315,9 +310,88 @@ Các tính năng chính đã có bản đầu ở Phase 1–9 — mỗi cái đ�
 
 <hr class="nr-mvp-line">
 
+## Version 9 · Analytics + báo lỗi — bỏ Account (Phase 64–65)
+
+Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app
+bán bằng license key, dữ liệu ở máy — học [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords). Chi tiết: [Tổng quan Version 9](version-9.md).
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">64</span>
+<div class="step__body">
+<h3>Analytics + báo lỗi <span class="chip chip--todo">Chưa làm</span></h3>
+<p>9 sự kiện phễu (thêm dùng thử, nhập license), chỉ loại + số đếm, có hỏi đồng ý; báo lỗi tự động không cần server riêng.</p>
+<a class="go" href="phase-64-analytics-errors/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">65</span>
+<div class="step__body">
+<h3>Trang Riêng tư <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Privacy Policy ghi đúng từng thứ app gửi đi, link trong app. Phần xoá tài khoản bỏ.</p>
+<a class="go" href="phase-65-privacy-delete/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
+## Version 10 · Sell Pro — tải về + dùng thử + license (Phase 66–69)
+
+Tải miễn phí từ GitHub Releases → dùng thử đủ tính năng N ngày → mua đứt → dán license key, 2 máy. AI chạy trên thứ
+người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì": [Tổng quan Version 10](version-10.md).
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">66</span>
+<div class="step__body">
+<h3>Mô hình tiền <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Mua đứt, giá bậc thang có / không, dùng thử bao nhiêu ngày, hết hạn còn dùng được gì — giá đo từ đối thủ + số fake-door.</p>
+<a class="go" href="phase-66-money-model/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">67</span>
+<div class="step__body">
+<h3>Thanh toán + license key <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Lemon Squeezy checkout + API license key: kích hoạt, kiểm lại, gỡ máy. Không webhook, không server riêng.</p>
+<a class="go" href="phase-67-payments/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">68</span>
+<div class="step__body">
+<h3>Dùng thử + paywall <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Đếm ngày dùng thử trên máy, thanh "còn X ngày", màn mua + nhập key, tìm lại key bằng email, dữ liệu cũ vẫn xuất được.</p>
+<a class="go" href="phase-68-paywall-trial/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">69</span>
+<div class="step__body">
+<h3>AI của người dùng <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Gọi Claude Code / Codex / Ollama / key riêng; nút Kiểm tra hỏi thử 1 câu; mình không bán lượt AI.</p>
+<a class="go" href="phase-69-ai-cost-plans/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
+Xong Version 10 → gói thành app Mac + Windows: [App Mac + Windows](../app/index.md) (Phase 75 → 79 → 82 → 81).
+
+## Version 11 · Marketing (Phase 70–73)
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">V11</span>
+<div class="step__body">
+<h3>Marketing Plan <span class="chip chip--todo">Phase 70–73</span></h3>
+<p>Định vị + landing + email, 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<a class="go" href="version-11/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
 ## Version 2 · demo + nguồn mới + AI (Phase 31a, 31–35)
 
-Phase 1–30.2 (trừ 8) là **MVP bản Web**. Version 2 mở đầu bằng **trang demo tĩnh** để đi show hàng (29a), rồi thêm nguồn
+Làm sau khi app đã bán (Version 10 + App + Version 11), vào app qua bản cập nhật. Version 2 mở đầu bằng **trang demo tĩnh** để đi show hàng (29a), rồi thêm nguồn
 YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)** rồi một phase **AI đọc chữ**.
 
 <div class="steps nr-phases" markdown>
@@ -459,68 +533,9 @@ Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Ch
 </div>
 </div>
 
-## Version 5–12 · Từ tool riêng thành sản phẩm bán được
-
-Mỗi version một trang tổng quan, các phase nằm trong trang đó. Thứ tự: nhanh → test → CI/CD → bảo mật → tài khoản
-mạng → bán → marketing → tính năng mới.
+## Version 12 · Tính năng mới
 
 <div class="steps nr-phases" markdown>
-<div class="step" markdown>
-<span class="step__n">V5</span>
-<div class="step__body">
-<h3>Performance <span class="chip chip--todo">Phase 46–48</span></h3>
-<p>Nhanh và nhẹ: đo mốc trước, kết quả đầu ≤ 30 giây, collector song song giữ giới hạn từng nguồn, bảng lớn mượt.</p>
-<a class="go" href="version-5/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V6</span>
-<div class="step__body">
-<h3>Automation Test + Review Results <span class="chip chip--todo">Phase 50–53</span></h3>
-<p>Test chạy không cần mạng (fixture), E2E Playwright, canary nguồn thật hằng ngày, bộ niche chuẩn + phiếu review kết quả; tùy chọn: search thật + chụp màn kết quả.</p>
-<a class="go" href="version-6/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V7</span>
-<div class="step__body">
-<h3>CI/CD <span class="chip chip--todo">Phase 54, 57</span></h3>
-<p>GitHub Actions chặn PR đỏ, quy trình nhánh.</p>
-<a class="go" href="version-7/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V8</span>
-<div class="step__body">
-<h3>Security & Account & Refactor Code <span class="chip chip--todo">Phase 58–61</span></h3>
-<p>Vá bảo mật API cục bộ / key / XSS, lớp tài khoản trên máy (xuất / xoá dữ liệu), khuôn collector chung — hành vi không đổi.</p>
-<a class="go" href="version-8/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V9</span>
-<div class="step__body">
-<h3>Firebase, Analytics, Account <span class="chip chip--todo">Phase 62–65</span></h3>
-<p>Đăng nhập Firebase, sync project (dữ liệu cào thô ở lại máy), phễu GA4 có hỏi đồng ý, xoá tài khoản.</p>
-<a class="go" href="version-9/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V10</span>
-<div class="step__body">
-<h3>Sell Pro — Lifetime / Subscriptions <span class="chip chip--todo">Phase 66–69</span></h3>
-<p>money.md bằng số đo, Lemon Squeezy + webhook → quyền Pro, paywall + dùng thử, chi phí AI theo gói (BYOK / lượt).</p>
-<a class="go" href="version-10/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">V11</span>
-<div class="step__body">
-<h3>Marketing Plan <span class="chip chip--todo">Phase 70–73</span></h3>
-<p>Định vị + landing + email, 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng.</p>
-<a class="go" href="version-11/">Xem chi tiết →</a>
-</div>
-</div>
 <div class="step" markdown>
 <span class="step__n">V12</span>
 <div class="step__body">
@@ -530,3 +545,78 @@ mạng → bán → marketing → tính năng mới.
 </div>
 </div>
 </div>
+
+<hr class="nr-skip-line">
+
+## ⛔ KO LÀM — mọi phase dưới đây (chốt 2026-10-26)
+
+Không ra tiền, không thêm người dùng: tài khoản, performance, test tự động, CI, security / refactor. Trang giữ lại để
+tra, không code. Muốn làm lại → kéo lên trên vạch, sửa Master Plan trước. Danh sách + lý do: [Appendix](../appendix.md#khong-lam-chot-2026-10-26).
+
+<div class="steps nr-phases nr-skip" markdown>
+<div class="step" markdown>
+<span class="step__n">30</span>
+<div class="step__body">
+<h3>Account + Flow người dùng <span class="chip chip--skip">Không làm</span></h3>
+<p>Tài khoản, luồng người dùng mới — bỏ, app bán bằng license key.</p>
+<a class="go" href="phase-30-account/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">59</span>
+<div class="step__body">
+<h3>Lớp tài khoản trên máy <span class="chip chip--skip">Không làm</span></h3>
+<p>Hồ sơ người dùng trên máy — bỏ cùng Account.</p>
+<a class="go" href="phase-59-local-account/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">62</span>
+<div class="step__body">
+<h3>Firebase Auth <span class="chip chip--skip">Không làm</span></h3>
+<p>Đăng nhập Google / Apple / email link — bỏ.</p>
+<a class="go" href="phase-62-firebase-auth/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">63</span>
+<div class="step__body">
+<h3>Sync project <span class="chip chip--skip">Không làm</span></h3>
+<p>Project lên Firestore — bỏ, xuất / nhập file (Phase 8) là đủ.</p>
+<a class="go" href="phase-63-project-sync/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V5</span>
+<div class="step__body">
+<h3>Performance <span class="chip chip--skip">Không làm</span></h3>
+<p>Đo mốc, collector nhanh hơn, UI + DB nhanh (Phase 46–48).</p>
+<a class="go" href="version-5/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V6</span>
+<div class="step__body">
+<h3>Automation Test + Review Results <span class="chip chip--skip">Không làm</span></h3>
+<p>Fixture, E2E, canary nguồn thật, review kết quả (Phase 50–53b). Test đang có vẫn chạy trước khi merge.</p>
+<a class="go" href="version-6/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V7</span>
+<div class="step__body">
+<h3>CI cho PR <span class="chip chip--skip">Không làm</span></h3>
+<p>GitHub Actions chặn PR đỏ, quy trình nhánh (Phase 54, 57).</p>
+<a class="go" href="version-7/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">V8</span>
+<div class="step__body">
+<h3>Security & Refactor <span class="chip chip--skip">Không làm</span></h3>
+<p>Kiểm + vá bảo mật, refactor, review 8.0 (Phase 58, 60, 61). Bảo mật tối thiểu cho app bán nằm ở Phase 79.</p>
+<a class="go" href="version-8/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+

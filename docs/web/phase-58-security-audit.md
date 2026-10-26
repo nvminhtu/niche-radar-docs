@@ -3,7 +3,11 @@
 > Soát từng chỗ đang mở theo một **phiếu kiểm**, chỗ nào đỏ thì vá và viết test giữ lại. Làm trước khi có người ngoài
 > đăng nhập (Version 9) và trả tiền (Version 10).
 
-<span class="chip chip--todo">Chưa làm · sau Version 7</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** security / refactor — không ra tiền, không thêm người dùng. Phần bảo mật tối thiểu cho app bán (CSP, quyền Tauri, key trong Keychain) đã nằm ở [Phase 79](../app/phase-79-app-only.md). Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

@@ -3,7 +3,11 @@
 > Hai việc: **test tự động** để sửa code không sợ hỏng, và **review kết quả nghiên cứu** để biết tool có
 > **trả lời đúng** không. Tool chọn niche mà ra số sai thì chạy nhanh hay đẹp cũng vô ích.
 
-<span class="chip chip--todo">Chưa làm · sau Version 5</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 ## Mục tiêu
 

@@ -3,7 +3,11 @@
 > **CI** (Continuous Integration) = mỗi lần đẩy code, máy chủ GitHub tự chạy kiểm. Version 7 bỏ các bước làm tay
 > dễ quên: chạy test, build docs, chặn code đỏ, đi nhánh + PR đúng quy trình.
 
-<span class="chip chip--todo">Chưa làm · sau Version 6</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** CI / quy trình nhánh — không ra tiền, không thêm người dùng. Trang giữ lại để tra, không code.
+</div>
 
 ## Mục tiêu
 

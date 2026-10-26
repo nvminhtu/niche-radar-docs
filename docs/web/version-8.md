@@ -4,7 +4,11 @@
 > **khoá chặt** những gì đang mở, dựng **lớp tài khoản** trong code, và **dọn code** để sửa nhanh về sau.
 > Người dùng không thấy gì mới, nhưng tool an toàn hơn và dễ sửa hơn.
 
-<span class="chip chip--todo">Chưa làm · sau Version 7 (có CI để refactor không sợ hỏng)</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** security / refactor — không ra tiền, không thêm người dùng. Phần bảo mật tối thiểu cho app bán (CSP, quyền Tauri, key trong Keychain) đã nằm ở [Phase 79](../app/phase-79-app-only.md). Trang giữ lại để tra, không code.
+</div>
 
 ## Mục tiêu
 

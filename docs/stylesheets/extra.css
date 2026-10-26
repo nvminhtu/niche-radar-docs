@@ -437,3 +437,13 @@ body {
 .md-nav__link.nr-nav--review { border-top: 2px dashed var(--terra); padding-top: .25rem; margin-top: .45rem; flex-wrap: wrap; }
 .md-nav__link.nr-nav--review::before { content: "⏸ REVIEW"; flex-basis: 100%; font-size: .58rem; font-weight: 900;
   letter-spacing: .08em; color: var(--terra); }
+
+/* KO LÀM (chốt 2026-10-26): phase không ra tiền / không thêm người dùng. Trang phase có chip--skip →
+   hooks/nav_status.py gắn nr-nav--skip (xám gạch ngang); mục nav "KO LÀM" được gắn nr-nav--skipline (vạch đỏ). */
+.chip--skip { background: var(--paper); color: var(--ink-2); border-style: dotted; text-decoration: line-through; }
+.md-nav__link.nr-nav--skip { opacity: .55; text-decoration: line-through; }
+.md-nav__link.nr-nav--skipline { border-top: 3px solid #c0392b; margin-top: .9rem; padding-top: .35rem;
+  color: #c0392b !important; font-weight: 900; letter-spacing: .06em; }
+.md-typeset hr.nr-skip-line { border: 0; border-top: 4px solid #c0392b; margin: 2.8rem 0 .4rem; }
+.md-typeset hr.nr-skip-line + h2 { color: #c0392b; margin-top: .4rem; }
+.md-typeset .nr-skip .step { opacity: .62; border-style: dotted; }

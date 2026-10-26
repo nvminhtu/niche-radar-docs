@@ -3,7 +3,11 @@
 > Bản `.dmg` không build trên máy anh nữa mà trên **runner macOS** (máy Mac ảo của GitHub). CI tự ký bằng chứng chỉ của
 > anh và gửi Apple **notarize** (Apple soát + đóng dấu), để file tải về mở được ngay.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 79 · cần CI Web (Phase 54)</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** CI — build + ký + notarize trên máy bằng `npm run mac` là đủ. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

@@ -1,82 +1,79 @@
-# Version 10 · Sell Pro — Lifetime / Subscriptions
+# Version 10 · Sell Pro — bán app tải về + dùng thử + license
 
-> niche-radar bắt đầu **thu tiền**: bản Free đủ để thử thật, bản **Pro** mở phần tốn công / tốn tiền (AI, nhiều nguồn,
-> so sánh, gói GEO). Bán **mua đứt (lifetime)** và / hoặc **gói tháng / năm**: chọn bằng số đo, không đoán.
+> Niche Radar bắt đầu **thu tiền** bằng **app Mac + Windows tải về**: tải miễn phí, **dùng thử** đủ tính năng N ngày,
+> hết hạn thì nhập **license key** mua đứt. Không tài khoản, dữ liệu ở máy. Mô hình học từ
+> [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) (chốt 2026-10-26), khác ở chỗ **mình có dùng thử**.
 
-<span class="chip chip--todo">Chưa làm · sau Version 9 (cần tài khoản + analytics)</span>
+<span class="chip chip--todo">Chưa làm · sau Version 9</span>
 
 ## Mục tiêu
 
-- **Chốt mô hình bằng số:** Free gồm gì, Pro gồm gì, lifetime hay subscription hay cả hai, giá bao nhiêu. Dựa trên giá
-  đối thủ đo được và chi phí AI thật mỗi lần tra (đo ở Phase 66).
-- **Mua được trong ≤ 2 phút:** bấm nâng cấp → trả tiền → Pro mở ngay trên bản Web.
-- **Không lỗ tiền AI:** người dùng Pro không làm chi phí AI vượt tiền họ trả.
+- **Tải → dùng được trong ≤ 2 phút:** bấm tải trên landing → cài → mở → dùng thử ngay, không đăng ký.
+- **Mua được trong ≤ 2 phút:** bấm Mua → checkout → nhận key qua email → dán vào app → Pro mở, không khởi động lại.
+- **Không lỗ tiền AI:** app gọi AI người dùng đã có (Claude Code, Codex, Ollama, key riêng), mình không bán lượt AI.
 - **Đơn đầu tiên có nguồn:** 1 đơn thật từ người không quen.
 
-**Thước đo Version 10 xong:** mua thử bằng thẻ test → Pro mở trên 2 máy · huỷ / hoàn tiền → Pro tắt · **1 đơn thật**
-(ghi ngày + nguồn, không bịa).
+**Thước đo Version 10 xong:** mua bằng chế độ test → key kích hoạt trên 2 máy, máy thứ 3 bị báo · hoàn tiền → key tắt ·
+hết dùng thử → app báo rõ, dữ liệu còn đủ · **1 đơn thật** (ghi ngày + nguồn, không bịa).
+
+## Mô hình phân phối (học từ Wow Keywords)
+
+Họ làm gì → mình làm gì. Chi tiết + số đo ở [sổ đối thủ](../doi-thu-tham-khao.md#mo-hinh-phan-phoi-thu-ang-hoc).
+
+- **Tải miễn phí từ GitHub Releases public, code giữ kín** → mình dùng repo `niche-radar-docs` (đã có Release v0.8.0)
+  hoặc một repo chỉ chứa Release. Host 0 đồng, số tải đọc được bằng GitHub API
+- **Mở app phải có license, không dùng thử** → mình **có dùng thử** N ngày đủ tính năng (N chốt ở Phase 66), hết hạn mới
+  đòi key. Lý do: tool chọn niche phải chạy thử trên niche của chính họ mới thấy giá trị
+- **Mua đứt, giá bậc thang công khai** ($79, +$10 mỗi 20 license, đếm số còn lại) → ứng viên cho mình, chốt ở Phase 66
+- **1 license = 2 máy, chuyển máy trong Cài đặt, tìm lại key bằng email** → làm y vậy (Phase 67, 68)
+- **Stripe trực tiếp** → mình dùng **Lemon Squeezy** (lo thuế VAT các nước thay mình, có sẵn API license key, đã dùng cho
+  RAM Rescue) — không cần server riêng, không webhook
+- **Ra bản dày, ghi chú bằng lời thường, app tự cập nhật** → [Phase 81](../app/phase-81-release-auto-update.md)
+- **Windows ra cùng lúc dạng Beta chưa ký** → [Phase 82](../app/phase-82-windows-app.md)
+- **AI chạy trên thứ người dùng đã trả, không bán credit** → [Phase 69](phase-69-ai-cost-plans.md)
+- **MCP là điểm bán trên landing** → [Phase 26](phase-26-mcp.md) + [Version 11](version-11.md)
 
 ## Chạy thế nào
 
 ```mermaid
 flowchart LR
-  M[Phase 66<br/>money.md<br/>Free vs Pro · giá] --> P[Phase 67<br/>Lemon Squeezy<br/>checkout + webhook]
-  P --> E[Quyền Pro<br/>gắn vào tài khoản Firebase]
-  E --> W[Phase 68<br/>Paywall · dùng thử ·<br/>kích hoạt máy]
-  M --> C[Phase 69<br/>Chi phí AI theo gói<br/>BYOK hay gói lượt]
-  W & C --> S[Bán thật<br/>đơn đầu tiên]
+  L[Landing<br/>nút Tải Mac · Windows] --> D[GitHub Releases<br/>.dmg · .exe]
+  D --> T[Mở app<br/>dùng thử N ngày]
+  T --> PW[Phase 68<br/>hết hạn / bấm Mua]
+  PW --> CO[Phase 67<br/>Lemon Squeezy checkout]
+  CO --> K[Email<br/>license key]
+  K --> A[Dán key vào app<br/>kích hoạt ≤ 2 máy]
+  M[Phase 66<br/>money.md · giá] --> PW
+  M --> AI[Phase 69<br/>AI của người dùng]
 ```
 
 ## Các phase
 
-| Phase | Làm gì |
-|---|---|
-| [64 · Mô hình tiền](phase-66-money-model.md) | Free vs Pro, lifetime vs subscription, giá: đo đối thủ + chi phí AI, viết `money.md` qua `/app-money` |
-| [65 · Thanh toán](phase-67-payments.md) | Lemon Squeezy (lo thuế VAT thay mình), checkout, webhook → quyền Pro trên tài khoản |
-| [66 · Paywall + dùng thử](phase-68-paywall-trial.md) | màn nâng cấp, dùng thử, khôi phục mua, giới hạn số máy |
-| [67 · Chi phí AI theo gói](phase-69-ai-cost-plans.md) | tự mang key (BYOK) hay gói lượt AI kèm Pro, trần chi phí mỗi người |
+- [Phase 66 · Mô hình tiền](phase-66-money-model.md) — mua đứt / bậc thang / dùng thử bao lâu, giá đo từ đối thủ + số fake-door, viết `money.md`
+- [Phase 67 · Thanh toán + license key](phase-67-payments.md) — Lemon Squeezy checkout, API license key: kích hoạt / kiểm / gỡ máy
+- [Phase 68 · Dùng thử + paywall](phase-68-paywall-trial.md) — đếm ngày dùng thử trên máy, màn nhập key, 2 máy, tìm lại key
+- [Phase 69 · AI theo gói](phase-69-ai-cost-plans.md) — chạy trên Claude Code / Codex / Ollama / key riêng, không bán lượt AI
 
-## Phase 66 · Mô hình tiền
-
-- **Làm:** đo giá tool nghiên cứu niche / keyword / app (ghi nguồn + ngày) · đo chi phí AI thật mỗi niche từ log Phase 42,
-  36, 37 · đọc phễu GA4 ([Version 9](version-9.md)): người dùng dừng ở tính năng nào · chọn Free / Pro, lifetime và / hoặc
-  subscription · ghi `money.md` theo `/app-money` của App-AI-Skills.
-- **Ứng viên chia gói** (chốt ở phase này): Free = Play + App Store + Trends, vài niche mỗi tháng · Pro = mọi nguồn,
-  so sánh, AI Cite, kệ AI, gói GEO.
-- **Xong khi:** `money.md` có bảng gói, giá, lý do từng con số kèm nguồn · anh duyệt.
-
-## Phase 67 · Thanh toán
-
-- **Làm:** sản phẩm trên Lemon Squeezy (anh tạo cửa hàng, nhập ngân hàng, thuế) · checkout mở từ bản Web · webhook
-  (Firebase Cloud Functions) nhận đơn / gia hạn / huỷ / hoàn tiền → cập nhật quyền Pro trên tài khoản ·
-- **Xong khi:** mua bằng chế độ test → quyền Pro ≤ 30 giây · huỷ / hoàn tiền → quyền tắt · webhook giả mạo bị từ chối (kiểm chữ ký).
-
-## Phase 68 · Paywall + dùng thử
-
-- **Làm:** khoá Pro hiện đúng chỗ (bấm tính năng Pro → màn nâng cấp, nói rõ được gì) · dùng thử N ngày (chốt ở Phase 66) ·
-  "Khôi phục mua" · giới hạn số máy một license · trang giá trên landing ([Version 11](version-11.md)) khớp trong app.
-- **Xong khi:** Free → bấm Pro → mua → dùng ngay, không khởi động lại · hết hạn dùng thử → quay về Free, dữ liệu còn đủ.
-
-## Phase 69 · Chi phí AI theo gói
-
-- **Làm:** chọn 1 trong 2 (hoặc cả hai) bằng số Phase 66: **BYOK** (người dùng tự dán key AI, mình không tốn) hay
-  **gói lượt AI** kèm Pro (mình trả, có trần mỗi tháng) · hiện số lượt còn lại · hết lượt → báo, không tự trừ tiền thêm.
-- **Xong khi:** 1 người Pro dùng hết trần → AI dừng, phần không AI vẫn chạy · chi phí AI tháng ≤ % doanh thu đã đặt ở `money.md`.
+Phần UI chung (màn dùng thử, nhập key) làm ở bản Web; phần chỉ app mới có (lưu key trong Keychain / Windows Credential
+Manager, mở checkout bằng trình duyệt ngoài) gắn ở [Phase 79](../app/phase-79-app-only.md).
 
 <div class="box box--rules" markdown>
 **Luật**
 
 - Claude không tạo tài khoản Lemon Squeezy, không nhập ngân hàng / thuế, không bấm bán thật. Anh làm, Claude nối code
-- Không bịa doanh thu, số người mua: số từ dashboard Lemon Squeezy, ghi ngày
-- Giá hiển thị phải ghi rõ chu kỳ, tự gia hạn, cách huỷ. Không gọi gói trả phí là "quyên góp"
-- Tính năng đã Free ở bản trước không khoá lại thành Pro với người đang dùng
+- Không bịa doanh thu, số người mua, số license còn lại: số từ dashboard Lemon Squeezy, ghi ngày
+- Đếm ngược "còn N license" chỉ khi là số thật đọc từ đơn hàng
+- Giá hiển thị ghi rõ trả một lần hay theo chu kỳ. Không gọi gói trả phí là "quyên góp"
+- Hết dùng thử: dữ liệu vẫn xuất được (CSV / JSON), không khoá dữ liệu của người dùng
 </div>
 
 ## Không làm ở Version 10
 
 <div class="box box--danger" markdown>
-- **Thanh toán trong app của Apple**
-- **Tự xử lý thẻ**, Stripe tự làm phần thuế
+- **Tài khoản, đăng nhập** — bỏ 2026-10-26, license key là đủ
+- **Mac App Store / Microsoft Store**, thanh toán trong app của Apple
+- **Bán lượt AI, tự trả tiền AI cho người dùng**
+- **Tự xử lý thẻ**, server webhook riêng
 - **Gói team / nhiều chỗ ngồi**: ứng viên [Version 12](version-12.md)
 - **Mã giảm giá phức tạp, affiliate**: xét sau đơn thứ 10
 - **Crypto, chuyển khoản tay**

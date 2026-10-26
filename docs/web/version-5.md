@@ -4,7 +4,11 @@
 > **nhanh và nhẹ**: thấy kết quả đầu tiên sớm, bảng lớn không giật, không ngốn RAM.
 > **Không thêm tính năng.**
 
-<span class="chip chip--todo">Chưa làm · sau Version 4</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** performance — không ra tiền, không thêm người dùng. Trang giữ lại để tra, không code.
+</div>
 
 ## Mục tiêu
 

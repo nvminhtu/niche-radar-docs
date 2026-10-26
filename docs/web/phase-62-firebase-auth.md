@@ -3,7 +3,11 @@
 > Cho người dùng **đăng nhập thật** bằng Google, Apple hoặc link gửi qua email, để Phase 63 mang project của họ sang máy
 > khác. Không đăng nhập thì app vẫn dùng đủ như cũ.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 61</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** bỏ tài khoản — app bán bằng license key, dữ liệu ở máy (học Wow Keywords). Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

@@ -3,7 +3,11 @@
 > Ghi lại **phản hồi thật** của từng nguồn một lần, rồi cho test chạy trên bản ghi đó. Test nhanh, không cần mạng,
 > và sửa code collector không sợ hỏng âm thầm.
 
-<span class="chip chip--todo">Chưa làm · sau Version 5</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

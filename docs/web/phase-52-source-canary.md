@@ -3,7 +3,11 @@
 > Google, Apple hay đổi trang mà không báo trước. Mỗi ngày tool **tự gọi thật một lượt nhỏ** tới từng nguồn (canary —
 > con chim báo động sớm). Nguồn đổi dạng hay bị chặn thì biết trong 1 ngày, không phải lúc đang chọn niche.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 50</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

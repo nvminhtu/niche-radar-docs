@@ -3,7 +3,11 @@
 > **Refactor** = dọn lại code mà không đổi cách tool chạy. Mọi nguồn dữ liệu theo một khuôn chung, file to tách nhỏ,
 > code chết gỡ đi. Mục đích: lần sau thêm nguồn hay sửa lỗi nhanh hơn.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 58</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** security / refactor — không ra tiền, không thêm người dùng. Phần bảo mật tối thiểu cho app bán (CSP, quyền Tauri, key trong Keychain) đã nằm ở [Phase 79](../app/phase-79-app-only.md). Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

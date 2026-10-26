@@ -3,7 +3,11 @@
 > Gắn **tag** (nhãn phiên bản như `v5.0.0`) là CI tự ra bản: `.dmg` lên GitHub Releases kèm What's New. App trên máy
 > người dùng tự thấy bản mới và hỏi trước khi cập nhật.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 80</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 82</span>
+
+> **Đổi 2026-10-26:** không CI (Phase 80 không làm) — build + ký trên máy bằng 1 lệnh rồi đẩy lên **GitHub Releases
+> public**, kèm `.exe` Windows ([Phase 82](phase-82-windows-app.md)). Học Wow Keywords: ra bản dày, ghi chú bằng lời
+> thường, app tự cập nhật. Chỗ nào dưới đây nhắc "tag → CI tự build" thì hiểu là lệnh chạy trên máy.
 
 ## Chạy thế nào
 
@@ -40,10 +44,10 @@ flowchart LR
 
 - Claude tự gắn tag hay bấm phát hành khi anh chưa đồng ý
 - Cập nhật ngầm không hỏi
-- Bản Windows / Linux, Mac App Store
+- Linux, Mac App Store, Microsoft Store
 - Deploy bản Web lên mạng
 </div>
 
-[Tổng quan Version 7](../web/version-7.md)
+[Mục App Mac + Windows](index.md)
 
 Plan code chi tiết: [Phase 81](../superpowers/plans/2026-10-25-niche-radar-phase81-release-auto-update.md)

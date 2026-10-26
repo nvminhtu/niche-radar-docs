@@ -3,7 +3,11 @@
 > Phase 51 chạy trên dữ liệu giả nên không biết **search thật** ra màn hình thế nào. Phase này gõ keyword thật, đợi
 > tool chạy xong, rồi **chụp lại màn kết quả** để anh mở ra xem ngay, không phải tự bấm lại.
 
-<span class="chip chip--todo">Tùy chọn · chạy tay khi cần</span>
+<span class="chip chip--skip">Không làm · 2026-10-26</span>
+
+<div class="box box--danger" markdown>
+**Không làm (chốt 2026-10-26):** test tự động — không ra tiền, không thêm người dùng. Vẫn chạy test hiện có trước khi merge. Trang giữ lại để tra, không code.
+</div>
 
 ## Chạy thế nào
 

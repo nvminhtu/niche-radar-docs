@@ -6,9 +6,9 @@
 
 | Mục cũ ở Appendix | Giờ ở |
 |---|---|
-| App Mac (Tauri) | [Phase 74 · Local App 1.0](app/phase-74-local-app-1.md) (mục App, khi xong Version 9) |
+| App Mac (Tauri) | [App Mac + Windows](app/index.md) (khi xong Version 10) |
 | Cờ đối thủ yếu · MCP có sẵn · MCP của app · Chrome Web Store · giá IAP nhiều nước · theo dõi định kỳ · search volume trả phí | ứng viên [Phase 9 · Small Features Update](web/phase-9-small-features.md) |
-| Host cho nhiều người | [Phase 30 · Account](web/phase-30-account.md) — chỉ khi có quyết định bán |
+| Host cho nhiều người | không làm (2026-10-26) — bán app chạy trên máy, xem [Version 10](web/version-10.md) |
 
 ## Chưa xếp (2026-10-26)
 
@@ -16,7 +16,23 @@
 |---|---|---|
 | Xuất phạm vi 1 Explore / cả DB qua hộp Xuất chung · JSONL · file JSON Schema | cắt khỏi [Phase 16](web/phase-16-export.md) khi kéo lên sớm | Explore còn nút CSV cũ, cả DB có Backup; làm khi có tool khác cần đọc |
 
-## Không làm
+## Không làm (chốt 2026-10-26)
+
+Anh chốt: **bán app Mac + Windows tải về + dùng thử + license**, học mô hình phân phối của
+[Wow Keywords](doi-thu-tham-khao.md#wow-keywords). Phase không ra tiền và không thêm người dùng đẩy xuống dưới vạch
+**⛔ KO LÀM** ở menu. Trang phase giữ lại để tra, chip ghi "Không làm".
+
+| Không làm | Phase | Vì sao | Thay bằng |
+|---|---|---|---|
+| Account: tài khoản, đăng nhập Firebase, sync project, lớp tài khoản trên máy | 30, 59, 62, 63 (+ phần xoá tài khoản của 65) | app bán bằng license key, dữ liệu ở máy | license key ([Version 10](web/version-10.md)) · xuất / nhập file ([Phase 8](web/phase-8-project-data.md)) |
+| Performance | V5: 46–48 · App 78 | không ra tiền; mốc 2026-10-25 đã ổn (mở ~0,14 s) | — |
+| Test tự động | V6: 50–53b | không ra tiền | test hiện có vẫn chạy trước khi merge |
+| CI cho PR, quy trình nhánh, build app trên CI | V7: 54, 57 · App 80 | không ra tiền | build + ký trên máy (`npm run mac`) |
+| Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 79](app/phase-79-app-only.md) |
+| Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 81](app/phase-81-release-auto-update.md) |
+| Gói lượt AI kèm Pro | phần của 69 | mình gánh tiền AI | AI người dùng đã có (Claude Code, Codex, Ollama, key riêng) |
+
+## Không làm (từ trước)
 
 | Không làm | Vì sao | Thay bằng |
 |---|---|---|
