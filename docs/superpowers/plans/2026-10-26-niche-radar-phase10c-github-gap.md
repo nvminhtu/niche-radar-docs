@@ -1,7 +1,7 @@
 # Niche Radar Phase 10c — GitHub Feature Request Gap — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
-> Steps dùng checkbox (`- [ ]`). Không tạo / nhập token GitHub thay anh, không comment / 👍 / mở issue.
+> Steps dùng checkbox (`- [x]`). Không tạo / nhập token GitHub thay anh, không comment / 👍 / mở issue.
 
 **Goal:** từ issue nhiều 👍 của các repo app Mac / extension, tìm **tính năng người dùng xin mà maintainer không làm**,
 xếp theo điểm, gom theo chủ đề và repo, kèm link.
@@ -60,48 +60,49 @@ xếp theo điểm, gom theo chủ đề và repo, kèm link.
 ## Tasks
 
 ### Task 1: Bảng + luật
-- [ ] `gh_repos`: `fullName` (khoá), `stars`, `pushedAt`, `description`, `topics` json, `group` (`menubar` · `mac-app` ·
+- [x] `gh_repos`: `fullName` (khoá), `stars`, `pushedAt`, `description`, `topics` json, `group` (`menubar` · `mac-app` ·
       `chrome-ext` · `obsidian` · `manual`), `archived`, `hasIssues`, `fetchedAt`, `issuesFetchedAt`.
-- [ ] `gh_issues`: khoá `(repo, number)`, `title`, `body` (≤ 500), `labels` json, `plus1`, `reactions`, `comments`, `state`,
+- [x] `gh_issues`: khoá `(repo, number)`, `title`, `body` (≤ 500), `labels` json, `plus1`, `reactions`, `comments`, `state`,
       `stateReason`, `createdAt`, `closedAt`, `url`, `fetchedAt`.
-- [ ] `gh-rules.ts`: 4 câu search nhóm (đã đo ở trên), mẫu loại tính năng / lỗi theo nhãn + tiêu đề, mẫu "không làm"
+- [x] `gh-rules.ts`: 4 câu search nhóm (đã đo ở trên), mẫu loại tính năng / lỗi theo nhãn + tiêu đề, mẫu "không làm"
       `wont|won't|wontfix|wontdo|not planned|out of scope|declined`, mẫu tên repo bỏ qua `^awesome`.
-- [ ] Test migrate trên DB đang có dữ liệu Phase 10 / 10b (backup được tạo).
+- [x] Test migrate trên DB đang có dữ liệu Phase 10 / 10b (backup được tạo).
 
 ### Task 2: Collector
-- [ ] `findRepos(group, fetcher)` → `search/repositories?q=<câu nhóm>&sort=stars&per_page=50`; bỏ archived, tắt issue, `awesome-…`.
-- [ ] `addManualRepos(list)` → `GET /repos/{owner}/{repo}` từng repo (rate limit core, rộng hơn search), kiểm tồn tại.
-- [ ] `fetchIssues(repo, fetcher)` → `search/issues?q=repo:{repo} is:issue reactions:>=5&sort=reactions-+1&per_page=100`.
-- [ ] Rate limit + `retry-after` + cache 7 ngày; trả tiến độ (repo thứ mấy / tổng, lệnh còn lại).
-- [ ] Test với fixture thật: có `user` (bị bỏ), hết lượt (chờ reset — đồng hồ giả), repo không có issue, trùng issue.
+- [x] `findRepos(group, fetcher)` → `search/repositories?q=<câu nhóm>&sort=stars&per_page=50`; bỏ archived, tắt issue, `awesome-…`.
+- [x] `addManualRepos(list)` → `GET /repos/{owner}/{repo}` từng repo (rate limit core, rộng hơn search), kiểm tồn tại.
+- [x] `fetchIssues(repo, fetcher)` → `search/issues?q=repo:{repo} is:issue reactions:>=5&sort=reactions-+1&per_page=100`.
+- [x] Rate limit + `retry-after` + cache 7 ngày; trả tiến độ (repo thứ mấy / tổng, lệnh còn lại).
+- [x] Test với fixture thật: có `user` (bị bỏ), hết lượt (chờ reset — đồng hồ giả), repo không có issue, trùng issue.
 
 ### Task 3: Phân loại + điểm
-- [ ] `kindOf(issue)` → `feature` · `bug` · `other`; `fateOf(issue, now)` → `declined` · `done` · `pending` (kèm số năm).
-- [ ] `topicsOf` của Phase 10 cho tiêu đề + thân.
-- [ ] Điểm = log2(1 + 👍) × log2(2 + comment) × min(3, số năm treo) × (declined ? 1,5 : 1); chỉ tính `feature` có
+- [x] `kindOf(issue)` → `feature` · `bug` · `other`; `fateOf(issue, now)` → `declined` · `done` · `pending` (kèm số năm).
+- [x] `topicsOf` của Phase 10 cho tiêu đề + thân.
+- [x] Điểm = log2(1 + 👍) × log2(2 + comment) × min(3, số năm treo) × (declined ? 1,5 : 1); chỉ tính `feature` có
       `declined` hoặc `pending` ≥ 1 năm. Số năm: declined = đóng − mở; pending = hôm nay − mở. Xuất chuỗi công thức.
-- [ ] `byTopic`: số issue, tổng 👍, số repo khác nhau, số app Mac (`countMacApps`). `byRepo`: số tính năng bị từ chối, tổng 👍.
-- [ ] Test: ví dụ Rectangle (nhãn `wontdo` + `completed` → `declined`), `not_planned` → `declined`, issue lỗi không vào bảng.
+- [x] `byTopic`: số issue, tổng 👍, số repo khác nhau, số app Mac (`countMacApps`). `byRepo`: số tính năng bị từ chối, tổng 👍.
+- [x] Test: ví dụ Rectangle (nhãn `wontdo` + `completed` → `declined`), `not_planned` → `declined`, issue lỗi không vào bảng.
 
 ### Task 4: API + màn hình + xuất
-- [ ] API: `GET /api/gh` (nhóm, repo, lần lấy cuối, lệnh còn lại, có token không) · `POST /api/gh/fetch` (`{ group }` hoặc
+- [x] API: `GET /api/gh` (nhóm, repo, lần lấy cuối, lệnh còn lại, có token không) · `POST /api/gh/fetch` (`{ group }` hoặc
       `{ repos: [...] }`, chạy nền) · `GET /api/gh/gap?group=` · `GET /api/gh/export.md?group=`.
-- [ ] Tab **GitHub** trong trang Gap hỏi đáp: chọn nhóm / ô dán repo → Lấy dữ liệu → tiến độ → bảng issue (cột công
+- [x] Tab **GitHub** trong trang Gap hỏi đáp: chọn nhóm / ô dán repo → Lấy dữ liệu → tiến độ → bảng issue (cột công
       thức có `title`) → khung gấp "Theo chủ đề", "Theo repo". 1 cột.
-- [ ] Cài đặt: ô token GitHub tuỳ chọn (che như các key khác), câu hướng dẫn tạo token chỉ đọc công khai.
-- [ ] `.md`: top 30 issue + top 10 chủ đề, mỗi dòng có link.
-- [ ] `features.ts`: "Gap GitHub · tính năng bị từ chối" (Phase 10c). Chữ qua `useT()` (vi, en, es).
+- [x] Cài đặt: ô token GitHub tuỳ chọn (che như các key khác), câu hướng dẫn tạo token chỉ đọc công khai.
+- [x] `.md`: top 30 issue + top 10 chủ đề, mỗi dòng có link.
+- [x] `features.ts`: "Gap GitHub · tính năng bị từ chối" (Phase 10c). Chữ qua `useT()` (vi, en, es).
 
 ### Task 5: Chạy thật + soát
-- [ ] Chạy nhóm "App Mac menu bar" + "App Mac". Ghi số repo, số issue, số lệnh, thời gian vào "Kết quả chạy thật".
-- [ ] Kiểm tay 30 issue (loại, số phận), ghi tỷ lệ. Mở top 10, kiểm đúng là tính năng chưa có.
-- [ ] Xuất `.md`, chọn 1 ý tưởng app Mac / plugin, ghi vào đây.
-- [ ] Screenshot tab GitHub ở 1340 và 375, Read ảnh. Cập nhật chip phase, ROADMAP, CHANGELOG (nhãn Web), `docs/cach-dung.md`.
+- [x] Chạy nhóm "App Mac menu bar" + "App Mac". Ghi số repo, số issue, số lệnh, thời gian vào "Kết quả chạy thật".
+- [x] Kiểm tay 30 issue (loại, số phận), ghi tỷ lệ. Mở top 10, kiểm đúng là tính năng chưa có.
+- [x] Xuất `.md`, chọn 1 ý tưởng app Mac / plugin, ghi vào đây.
+- [x] Screenshot tab GitHub ở 1340 và 375, Read ảnh. Cập nhật chip phase, ROADMAP, CHANGELOG (nhãn Web), `docs/cach-dung.md`.
 
 ## Tiến độ
 
 - 2026-10-26: anh duyệt (đề xuất B từ Phase 11), viết plan. Đo trước: Search API không token 10 lệnh / phút; phải lọc theo 👍.
+- 2026-10-26: code xong Task 1–5, merge main. 308 test xanh.
 
 ## Kết quả chạy thật
 
-Chưa chạy.
+Xong 2026-10-26 — số đo, kiểm tay và ý tưởng chọn được ghi ở [trang phase](../../web/phase-10c-github-gap.md#ket-qua-chay-that-2026-10-26). Lệch plan: repo thuộc nhiều nhóm (`groups` json) thay vì 1 cột `group`; chữ trong tab chưa qua `useT()` (trang Gap hỏi đáp Phase 10 / 10b cũng chưa dịch).

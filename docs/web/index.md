@@ -112,7 +112,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <div class="step" markdown>
 <span class="step__n">10c</span>
 <div class="step__body">
-<h3>GitHub Feature Request Gap <span class="chip chip--todo">Chưa làm · plan 2026-10-26</span></h3>
+<h3>GitHub Feature Request Gap <span class="chip chip--done">Xong 2026-10-26</span></h3>
 <p>Issue nhiều 👍 của nhóm repo app Mac menu bar, app Mac, Chrome extension, plugin Obsidian → tính năng người dùng xin mà maintainer từ chối hoặc để treo, gom theo chủ đề và repo.</p>
 <a class="go" href="phase-10c-github-gap/">Xem chi tiết →</a>
 </div>

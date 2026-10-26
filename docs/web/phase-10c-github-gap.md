@@ -4,7 +4,7 @@
 > qua GitHub Search API → tách ra những tính năng người dùng xin mà **maintainer không làm**: còn mở hơn 1 năm, hoặc đã
 > đóng với lý do "không làm". Mỗi tính năng như vậy là một ứng viên app riêng hoặc plugin.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-26 · duyệt từ Phase 11</span>
+<span class="chip chip--done">Xong 2026-10-26 · chạy thật 78 repo · 736 issue</span>
 
 <div class="box box--goal" markdown>
 **Vì sao làm.** Trong 52 nguồn của [Phase 11](gap-sources-map.md), đây là tín hiệu "cần mà chưa có" **sạch nhất**:
@@ -118,6 +118,37 @@ flowchart LR
 - Tạo token thay anh
 - Đọc cả cây comment của issue (chỉ đếm số comment)
 </div>
+
+## Kết quả chạy thật (2026-10-26)
+
+Chạy trên bản sao DB thật, **không token** (Search API 10 lệnh / phút):
+
+| Nhóm | Repo | Issue ≥ 5 👍 | Lệnh | Thời gian | Chờ hết lượt |
+|---|---|---|---|---|---|
+| App Mac menu bar | 34 (38 tìm thấy, bỏ archived / tắt issue) | 263 | 35 | 3,2 phút | 2,3 phút |
+| App Mac | 47 (3 repo trùng menu bar dùng cache, không gọi lại) | 473 | 45 | 4,1 phút | 3 phút |
+
+Gộp 2 nhóm: **78 repo · 736 issue** — tính năng 388 · lỗi 221 · khác 127; Đã làm 385 · Không làm 30 · Còn treo 310 · Trùng 11 →
+**148 tính năng chưa làm** vào bảng.
+
+- **Sửa sau chạy thật:** cùng một repo có cả topic `menubar` lẫn `macos-app` (vd exelban/stats) bị chuyển hẳn sang nhóm sau,
+  nhóm menu bar mất issue. Repo giờ thuộc được nhiều nhóm (`groups`).
+- **Kiểm tay 30 issue ngẫu nhiên** (hạt giống 7): loại đúng 22/30 → bổ sung luật (lỗi kiểu "CPU 100% usage", "memory usage",
+  "not starting", "whenever…"; tính năng kiểu "Dark mode…", "Improve…", "…so I can…"; tiêu đề tiếng Trung). Mẫu **độc lập**
+  (hạt giống 19, sau khi sửa luật): **loại đúng 26/30 = 87 %** (≥ 85 %), **số phận đúng 30/30** (lấy thẳng `state` +
+  `state_reason` + nhãn). Lỗi còn: "We really need a new release" bị xếp tính năng. Lưu ý: "Đã làm" là theo maintainer đóng
+  `completed` — có repo đóng hàng loạt bằng bot, không kiểm được từ API.
+- **Top 10 bảng chính:** 9/10 đúng là tính năng app đó chưa có (CotEditor Hot Exit + Diff/merge bị từ chối · Plash nhiều màn
+  hình treo 6,8 năm, 52 👍 · Moonlight clipboard chung 75 👍 + tự đổi độ phân giải 70 👍 · Ice đổi chỗ icon mới 70 👍 + Ice Bar
+  chỉ màn hình máy 68 👍 · CotEditor code folding treo 11 năm · Moonlight phím tắt tuỳ chỉnh). 1 dòng sai: ImageGlass "mở nhanh
+  hơn" là cải thiện tốc độ, không phải tính năng.
+- **Chủ đề gắn từ luật Phase 10 còn nhiễu** (vd "Hot Exit" dính chủ đề Chậm / nóng vì chữ *hot*) — chỉ dùng để gom, đọc tiêu đề trước.
+
+**Ý tưởng chọn từ file `.md` (output của phase):** cụm **Màn hình ngoài** đứng đầu theo số repo — 19 issue, 338 👍, 9 repo khác
+nhau cùng xin (Plash: web làm hình nền trên nhiều màn hình · Ice: chỉ ẩn / Ice Bar trên màn hình máy hoặc màn có tai thỏ ·
+Moonlight: tự đổi độ phân giải theo màn hình). → **App Mac menu bar "luật theo từng màn hình"**: cắm màn ngoài / rút ra thì tự
+đổi bộ icon menu bar, hình nền (cả trang web), độ phân giải, bố cục. Bước kế: tra Research "multi monitor menu bar" + đếm
+app Mac cho chủ đề, rồi đưa vào Project chấm ở Bàn quyết định (Phase 16b).
 
 ## Rủi ro
 

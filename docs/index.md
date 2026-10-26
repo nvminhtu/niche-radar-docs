@@ -34,7 +34,7 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - Code ở `web/` · chạy: `npm run dev` → mở `localhost:3200`
 - Version 1 (đang làm) → **Version 9** analytics, bỏ Account → **Version 10** dùng thử + license key
 - Sau App: Version 11 marketing → Version 2, 3, 4, 12 tính năng mới (vào app qua bản cập nhật)
-- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 10b xong · 16 Export xong → 10c GitHub Gap → 12–27</span>
+- <span class="chip chip--doing">Đang làm · Phase 7 · 10 Reddit Gap chờ dữ liệu thật · 10b xong · 16 Export · 16b · 10c GitHub Gap xong → 12–27</span>
 - [Mở lộ trình Web →](web/index.md)
 </div>
 <div class="nr-app" markdown>
