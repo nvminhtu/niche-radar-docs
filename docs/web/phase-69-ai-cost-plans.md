@@ -7,6 +7,10 @@
 
 <span class="chip chip--todo">Chưa làm · sau Phase 66</span>
 
+<div class="box box--star" markdown>
+**Gộp vào [Phase A2](../app/phase-a2-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.
+</div>
+
 ## Chạy thế nào
 
 ```mermaid

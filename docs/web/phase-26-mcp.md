@@ -5,6 +5,10 @@
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
 
+<div class="box box--star" markdown>
+**Gộp vào [Phase A2](../app/phase-a2-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.
+</div>
+
 <div class="box box--goal" markdown>
 **Hiện có.** Chưa có. Ứng viên "MCP của app" ở [Phase 9](phase-9-small-features.md). Hiện muốn Claude đọc dữ liệu phải
 xuất evidence pack / gói LLM ([Phase 16](phase-16-export.md)) rồi dán.

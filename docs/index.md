@@ -25,6 +25,10 @@ Chọn niche đáng làm app từ Google Play, App Store, Google Trends, Reddit,
 trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 </div>
 
+<div class="box box--goal" markdown>
+**Mới 2026-10-26 — [Plan bán app Mac + Windows (A1–A3)](app/plan-ban-app.md):** [A1](app/phase-a1-hoan-thien-web.md) gom mọi việc Web dang dở · [A2](app/phase-a2-ai-cua-ban.md) AI của bạn (Claude Code, Codex, Ollama chạy trong app, MCP, khung chat, terminal nhúng) · [A3](app/phase-a3-ai-tinh-nang.md) nút AI cho từng tính năng đã làm. Thứ tự dưới đây đã gom theo A1–A3.
+</div>
+
 ## Thứ tự: Web V1 → V9 → V10 → App Mac + Windows → V11 → V2–4, V12 · ⛔ KO LÀM
 
 <div class="nr-forms" markdown>

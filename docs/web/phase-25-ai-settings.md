@@ -5,6 +5,10 @@
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
 
+<div class="box box--star" markdown>
+**Gộp vào [Phase A2](../app/phase-a2-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.
+</div>
+
 <div class="box box--goal" markdown>
 **Hiện có (Phase 6).** Trang Cài đặt AI: bật Claude API, chọn model, trần chi phí mỗi lần tra; tuyến B job Claude.
 Bước 0 Phase 6: tuyến C (Gemini Nano trong Chrome) chưa thử vì cần tải model; tuyến D (Ollama llama3.1 8B) bỏ vì kém.

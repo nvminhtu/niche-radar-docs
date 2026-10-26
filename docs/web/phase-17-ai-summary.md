@@ -5,6 +5,10 @@
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
 
+<div class="box box--star" markdown>
+**Gộp vào [Phase A3](../app/phase-a3-ai-tinh-nang.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.
+</div>
+
 <div class="box box--goal" markdown>
 **Hiện có (Phase 6 + 9).** Tuyến B (job `.json` → Claude in Chrome / Claude Code → nhập lại) chạy thật 5 niche: 47 chủ
 đề, mọi câu khớp nguyên văn, tóm tắt 5 câu có trích dẫn. Tuyến A (Claude API) đã code, **chưa chạy thật — chờ key**.

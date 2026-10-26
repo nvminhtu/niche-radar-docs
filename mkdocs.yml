@@ -165,6 +165,11 @@ nav:
               - "Phase 58 · Kiểm + vá bảo mật": web/phase-58-security-audit.md
               - "Phase 60 · Refactor": web/phase-60-refactor.md
               - "Phase 61 · Review bảo mật + 8.0": web/phase-61-security-review-8.md
+  - "Plan bán app (A1–A3)":
+      - app/plan-ban-app.md
+      - "Phase A1 · Hoàn thiện Web": app/phase-a1-hoan-thien-web.md
+      - "Phase A2 · AI của bạn (Claude Code, Codex…)": app/phase-a2-ai-cua-ban.md
+      - "Phase A3 · AI cho từng tính năng": app/phase-a3-ai-tinh-nang.md
   - App Mac + Windows (sau Version 10):
       - app/index.md
       - Phase 74 · Local App 1.0: app/phase-74-local-app-1.md
