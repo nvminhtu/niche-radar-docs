@@ -3,7 +3,7 @@
 > Một MCP server nhỏ (`niche-radar-mcp`) để **Claude tự đọc DB** của tool: tìm niche đã tra, so nhiều niche, viết báo
 > cáo trong `research/*.md` — không phải xuất file rồi dán tay.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--done">Xong đợt 1 · 2026-10-26 — kết quả ở Phase 27 mục 26.3</span>
 
 <div class="box box--star" markdown>
 **Gộp vào [Phase 27](../app/phase-27-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.

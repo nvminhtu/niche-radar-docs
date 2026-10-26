@@ -60,6 +60,14 @@ Tab **GitHub**: bấm **Lấy App Mac menu bar** (hoặc App Mac · Chrome exten
 token chỉ đọc ở **Cài đặt → Token GitHub** thì 30 lệnh / phút. Bảng chỉ giữ **tính năng** bị từ chối hoặc còn mở ≥ 1 năm, xếp
 theo điểm; 2 khung gấp "Theo chủ đề", "Theo repo"; **Tải .md**. Tab này không cộng vào Gộp. Chi tiết: [Phase 13](web/phase-13-github-gap.md).
 
+## Cho Claude Code / Codex đọc dữ liệu (MCP)
+
+**Cài đặt → Cho AI của bạn đọc dữ liệu (MCP)** → bấm **Thêm vào Claude Code** hoặc **Thêm vào Codex** (trang hiện đúng lệnh
+sẽ chạy trước khi bấm). Mở phiên Claude Code / Codex mới rồi hỏi thẳng, ví dụ "So 3 niche tôi tra gần nhất trong Niche Radar —
+niche nào đáng làm nhất, trích nguồn từng số". AI chỉ **đọc**: niche đã tra, đối thủ, lời chê đã lưu, Explore, project, bàn
+quyết định, bảng gap. Claude Desktop / Cursor / Windsurf: mở mục "dán tay" ở cuối khối, copy JSON vào file cấu hình MCP của app đó.
+Dời repo hoặc cài app bản mới → khối báo "Đang trỏ bản cũ", bấm **Cập nhật**. Chi tiết: [Phase 27](app/phase-27-ai-cua-ban.md).
+
 ## Khi bị chặn
 
 Play, Trends, Google gợi ý không có API chính thức → gọi dồn dập sẽ bị chặn tạm (thường 10–30 phút).
@@ -74,6 +82,7 @@ Chạy ở gốc repo (lối tắt) hoặc trong `web/` / `app/`:
 | `npm run dev` | `web/` · `npm run dev` | chạy app (web 3200 + API 3201) |
 | `npm run check` | `web/` · `npm test` · `npm run typecheck` · `npm run lint` | kiểm code |
 | — | `web/` · `npm run smoke -- "<niche>" US` | gọi thật 4 nguồn, in số dòng lấy được |
+| — | `web/` · `npx tsx scripts/mcp-smoke.ts [niche.db]` | chạy niche-radar MCP như Claude Code gọi: liệt kê tool, gọi thử 3 tool |
 | `npm run mac` | `app/` · `npm run build` | build app Mac → `app/dist/*.dmg` (ký + notarize) |
 | `npm run docs` | — | mở trang tài liệu này ở http://127.0.0.1:3210 |
 | `npm run docs:build` | — | build tài liệu ra `site/` |

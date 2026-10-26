@@ -4,7 +4,7 @@
 > (gói Claude, ChatGPT / Codex) hoặc AI chạy trên máy (Ollama). Học đúng câu của Wow Keywords:
 > *"No second subscription — runs on the AI you already pay for."*
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-26 · gộp Phase 27.6, 27.3, 27.4, 27.7</span>
+<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.3 MCP xong 2026-10-26 · còn 26.2, 26.4–26.6</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được 70 % việc.**
@@ -164,6 +164,36 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
 - **Nút "Thêm vào …" 1 bấm** trong Cài đặt → AI: chạy `claude mcp add niche-radar …` / ghi `~/.codex/config.toml` /
   ghi file cấu hình Claude Desktop — hiện lệnh sẽ chạy trước, bấm mới ghi. Trang Cách dùng có lệnh tay cho Cursor,
   Windsurf
+
+
+<div class="box box--star" markdown>
+**Kết quả 26.3 (2026-10-26) — đợt 1 xong: 10 tool chỉ đọc + nút Thêm 1 bấm cho Claude Code, Codex**
+
+- **Server:** `web/src/mcp/server.ts` (stdio) + `web/src/mcp/tools.ts`. Tool: `search_niches` · `get_research` ·
+  `get_complaints` · `get_evidence_pack` · `list_explorations` · `get_explore` · `list_projects` · `get_project` ·
+  `get_decision` · `get_gaps` (reddit / qa / github). Dùng lại đúng hàm của web, không query thứ hai. Mọi kết quả có
+  `Research #id · niche · nước · ngày` + link store / Trends; quá 20 000 ký tự thì cắt + báo "còn X ký tự".
+- **Chỉ đọc thật:** mở `niche.db` read-only + `PRAGMA query_only`, không migrate. Test: lệnh ghi qua kết nối này → lỗi.
+  Ghi chú riêng của project chỉ trả khi gọi `includeNotes: true`. Chưa có tool ghi (để đợt 2)
+- **Nút Thêm:** Cài đặt → **Cho AI của bạn đọc dữ liệu (MCP)**. Mỗi CLI hiện trạng thái (Đã thêm · Chưa thêm · Đang trỏ
+  bản cũ · Máy chưa cài) và **đúng lệnh sẽ chạy** — bấm mới chạy `claude mcp add -s user …` / `codex mcp add …` (có bản cũ
+  thì gỡ trước). Claude Desktop / Cursor / Windsurf: khối JSON để dán tay — app không sửa file cấu hình của app khác
+- **Chạy ở đâu:** Web dev → Node + `tsx` chạy thẳng `src/mcp/server.ts`; app Mac → Node đi kèm + `server/mcp.cjs`
+  (`build-mac.sh` gói bằng esbuild và thử `tools/list` trước khi ký). Luôn kèm `NICHE_DB` tuyệt đối
+- **Chạy thật trên DB thật (2026-10-26):** bấm Thêm ở cả 2 → `mcp get` báo đúng; hỏi "So 3 niche tôi tra gần nhất — niche
+  nào đáng làm nhất, trích nguồn từng số":
+
+| | Claude Code 2.1.269 | Codex 0.162.0 |
+|---|---|---|
+| Thời gian | 56 giây · 12 lượt | 36 giây · 4 lần gọi tool |
+| Tool đã gọi | search_niches, list_explorations, get_explore, get_research… | search_niches, get_evidence_pack × 3 |
+| Số trích kiểm tay | Research #25 điểm 3.8 "yếu", Tiền 3.5, Cạnh tranh 4.7, Nhu cầu 5.0 · #13 điểm 5.7 — **khớp DB** | Research #30 Trends giảm, #32 Trends TB 5/100 — có link nguồn từng câu |
+
+- Hai AI hiểu "3 niche gần nhất" khác nhau (Claude Code lấy 3 lượt Explore, Codex lấy 3 Research) — mô tả tool nên nói rõ
+  hơn nếu thấy lặp lại. Thử 2 câu mẫu còn lại khi làm khung chat (26.4)
+- Test: `web/tests/mcp.test.ts` (14 test: từng tool, chặn ghi, cắt kết quả, lệnh add, gỡ bản cũ, API 403 khi Origin lạ);
+  thử tay: `npx tsx scripts/mcp-smoke.ts [niche.db]`
+</div>
 
 ### 26.4 · Khung chat (gộp Phase 27.4)
 

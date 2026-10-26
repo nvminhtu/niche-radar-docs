@@ -54,3 +54,6 @@
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-26: xong đợt 1, làm theo Phase 27 mục 26.3. Khác plan: code ở `web/src/mcp/` (luật repo: tính năng mới trong `web/`),
+  không folder `mcp/` riêng; 10 tool (bỏ `get_competitor`, `compare_niches` — đối thủ nằm trong `get_research`, so niche bằng
+  `search_niches` có điểm); thêm `get_evidence_pack`, `get_decision`, `get_gaps`; cài bằng nút trong Cài đặt thay vì chỉ lệnh tay.
