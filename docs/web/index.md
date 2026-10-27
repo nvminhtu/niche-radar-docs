@@ -3,11 +3,11 @@
 > Mọi tính năng làm và **test** ở **bản Web chạy local** (`web/`, `npm run dev` → `localhost:3200`). Khách nhận
 > **app Mac + Windows** bọc đúng giao diện này: [App Mac + Windows](../app/index.md).
 >
-> **Số phase = thứ tự làm (đánh số lại 2026-10-26):** đã xong 1–17 → Hoàn thiện Web trước bản bán 18–26 → AI 27–28 →
+> **Số phase = thứ tự làm (đánh số lại 2026-10-26):** đã xong 1–16 → Hoàn thiện Web trước bản bán 18–26 → AI 27–28 →
 > bán 29–37 (Version 9 + 10 + app) → Hoàn thiện Web sau bản bán 38–45 → Version 11 (46–49) → Version 2, 3, 4 (50–63).
 > Phase không làm bỏ số, thành **Backlog 01–21** dưới vạch ⛔ KO LÀM. Link số cũ vẫn mở được (tự chuyển trang).
 
-<span class="chip chip--doing">Hoàn thiện Web 18–26 xong 2026-10-26 (bản 0.10.0) · đang làm Phase 27 AI (MCP + khung chat xong) → 28 → bán 29–37</span>
+<span class="chip chip--doing">Hoàn thiện Web 18–26 xong 2026-10-26 (bản 0.10.0) · AI 27 + 28 xong 2026-10-27 (phần còn → Backlog 22–25) → bán 29–37</span>
 
 Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài plan → [Appendix](../appendix.md).
 
@@ -129,7 +129,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <div class="step" markdown>
 <span class="step__n">15</span>
 <div class="step__body">
-<h3>Export (CSV, JSON, gói cho LLM) <span class="chip chip--doing">Code xong · merge main 2026-10-26 · còn mở CSV bằng Google Sheets</span></h3>
+<h3>Export (CSV, JSON, gói cho LLM) <span class="chip chip--done">Xong 2026-10-27 · kiểm Google Sheets → Backlog 22</span></h3>
 <p>Một hộp Xuất chung: CSV mở đúng trên Excel / Sheets, JSON có schema, Markdown, gói LLM (brief + schema + prompt) cắt theo trần token.</p>
 <a class="go" href="phase-15-export/">Xem chi tiết →</a>
 </div>
@@ -140,14 +140,6 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <h3>Bàn quyết định long-tail + đo nhu cầu Pro <span class="chip chip--done">Xong 2026-10-26 · fake-door live trên demo</span></h3>
 <p>Chấm các keyword trong Project theo rubric 5 trục có dẫn chứng, Copy prompt cho AI rồi dán JSON ngược, ra BUILD / TEST THÊM / BỎ. Kèm 2 nút Pro giả (fake-door) đo có ai muốn trả tiền.</p>
 <a class="go" href="phase-16-decision-board/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">17</span>
-<div class="step__body">
-<h3>Local App 1.0 (app Mac) <span class="chip chip--doing">Code xong sớm · có .dmg · thử máy mới để sau</span></h3>
-<p>Vỏ Tauri + Node sidecar bọc đúng bản Web, .dmg ký + notarize.</p>
-<a class="go" href="../app/phase-17-local-app-1/">Xem chi tiết →</a>
 </div>
 </div>
 </div>
@@ -244,13 +236,13 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 
 AI là của người dùng (Claude Code, Codex, key riêng…), app không bán AI. Tắt AI vẫn chạy đủ phần không AI.
 Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ liệu · 27.6 Cài đặt AI · 27.7 AI của người dùng · 28.1 Tóm tắt niche.
-Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phép từng bước → 28.5 Brief + Spec + Plan (làm theo thứ tự này).
+Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và phần còn dời xuống [Backlog · làm sau](#backlog-lam-sau); 28.4 làm tiếp phần UI dễ.
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
 <span class="step__n">27</span>
 <div class="step__body">
-<h3>AI của bạn — Claude Code, Codex trong app <span class="chip chip--doing">Đang làm · MCP + khung chat xong</span></h3>
+<h3>AI của bạn — Claude Code, Codex trong app <span class="chip chip--done">Xong 2026-10-27 · Terminal nhúng + sổ dùng AI → Backlog 23</span></h3>
 <p>Cầu AI gọi AI người dùng đã có, thư mục AI có sẵn skill, MCP của app (27.3), khung chat (27.4), Cài đặt AI (27.6, 27.7), terminal nhúng.</p>
 <a class="go" href="../app/phase-27-ai-cua-ban/">Xem chi tiết →</a>
 </div>
@@ -264,22 +256,6 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">27.4</span>
-<div class="step__body">
-<h3>Hỏi dữ liệu (AI Cite) <span class="chip chip--skip">Backlog · 2026-10-27</span></h3>
-<p>Hỏi bằng lời, AI trả lời chỉ từ DB, mọi câu có trích dẫn — máy tự kiểm từng trích dẫn.</p>
-<a class="go" href="phase-27-4-ai-cite-ask/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">27.6</span>
-<div class="step__body">
-<h3>Cài đặt AI + tuyến miễn phí <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
-<p>Nhiều nhà cung cấp tự mang key, thử lại Gemini Nano trong Chrome + model trên máy, sổ chi phí, bài thử chuẩn 1 bấm.</p>
-<a class="go" href="phase-27-6-ai-settings/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
 <span class="step__n">27.7</span>
 <div class="step__body">
 <h3>AI của người dùng <span class="chip chip--done">Xong · 2026-10-27</span></h3>
@@ -290,49 +266,25 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">28</span>
 <div class="step__body">
-<h3>AI cho từng tính năng <span class="chip chip--doing">Đang làm · 2/4 nút đợt 1</span></h3>
+<h3>AI cho từng tính năng <span class="chip chip--done">Xong 2026-10-27 · 2/4 nút đợt 1 + AI Agent · phần còn → Backlog 24</span></h3>
 <p>Đợt 1: tóm tắt niche 1 bấm (28.1) · bàn quyết định 1 bấm · gap → ý tưởng app · Feature Gap tự điền; đợt 2 vào bằng bản cập nhật.</p>
 <a class="go" href="../app/phase-28-ai-tinh-nang/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">28.1</span>
-<div class="step__body">
-<h3>Tóm tắt niche + chủ đề than (AI) <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
-<p>Chạy tuyến A thật khi có key, tóm tắt khung 6 mục, trích dẫn đã kiểm, kiểm chéo với lời chê không AI, chỉ gửi review mới.</p>
-<a class="go" href="phase-28-1-ai-summary/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
 <span class="step__n">28.2</span>
 <div class="step__body">
-<h3>MCP đợt 2 — AI cập nhật niche, project, gap <span class="chip chip--doing">Đang làm · 6 tool mức Thêm code xong</span></h3>
+<h3>MCP đợt 2 — AI cập nhật niche, project, gap <span class="chip chip--done">Xong 2026-10-27 · 6 tool mức Thêm · phần còn → Backlog 25</span></h3>
 <p>AI bên ngoài tra niche mới, gom vào project, xếp gap (thêm có hoàn tác · đề xuất chờ Dùng) + nhóm việc health_niche_check, health_project_check, brief_pack.</p>
 <a class="go" href="phase-28-2-mcp-write/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
-<span class="step__n">28.3</span>
-<div class="step__body">
-<h3>Bộ skill Shotmatic <span class="chip chip--todo">Chưa plan · giữ số</span></h3>
-<p>Mỗi nút AI chạy 1 skill. Trang giữ số + danh sách skill các phase khác cần; nội dung skill plan riêng.</p>
-<a class="go" href="phase-28-3-skills/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
 <span class="step__n">28.4</span>
 <div class="step__body">
-<h3>Nút AI đũa phép ở từng bước <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
-<p>Icon đũa phép ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Bản đồ chỗ đặt: 10 chỗ đợt 1.</p>
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--doing">Đang làm · 2026-10-27 · chỗ UI dễ làm trước</span></h3>
+<p>Nút ✦ ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Làm trước các chỗ chỉ cần gắn nút vào khung có sẵn.</p>
 <a class="go" href="phase-28-4-ai-magic/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">28.5</span>
-<div class="step__body">
-<h3>Brief + Spec + Plan — đầu ra cuối của Project <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
-<p>Hồ sơ 19 mục có báo cáo sức khoẻ niche + project, code điền số, AI viết lời; hỏi lại AI theo bản, khoá mục, tới khi Chốt.</p>
-<a class="go" href="phase-28-5-brief-plan/">Xem chi tiết →</a>
 </div>
 </div>
 </div>
@@ -430,7 +382,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">40</span>
 <div class="step__body">
-<h3>Explore — cây keyword + bản đồ ngách <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Explore — cây keyword + bản đồ ngách <span class="chip chip--doing">Một phần · có bản đồ ngách</span></h3>
 <p>Lọc rác + thương hiệu, gộp keyword cùng nghĩa, thêm gợi ý App Store, điểm cơ hội giải thích được, chọn lá → Research hàng loạt.</p>
 <a class="go" href="phase-40-explore-tree/">Xem chi tiết →</a>
 </div>
@@ -438,7 +390,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">41</span>
 <div class="step__body">
-<h3>Hồ sơ đối thủ + cờ đối thủ yếu <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Hồ sơ đối thủ + cờ đối thủ yếu <span class="chip chip--doing">Chưa xong · có bảng đối thủ</span></h3>
 <p>Trang riêng mỗi đối thủ (2 store, nhịp cập nhật, giá, bị chê gì, doanh thu), cờ bỏ bê · bị chê · một store · thu tiền · mới vào.</p>
 <a class="go" href="phase-41-competitor-profile/">Xem chi tiết →</a>
 </div>
@@ -446,7 +398,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">42</span>
 <div class="step__body">
-<h3>Theo dõi niche định kỳ <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Theo dõi niche định kỳ <span class="chip chip--doing">Một phần · chụp lại bằng tay</span></h3>
 <p>Tự tra lại theo lịch khi server chạy, chỉ báo thay đổi đáng chú ý, hộp "Thay đổi tuần này", dòng thời gian project.</p>
 <a class="go" href="phase-42-tracking/">Xem chi tiết →</a>
 </div>
@@ -454,7 +406,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">43</span>
 <div class="step__body">
-<h3>Evidence pack + test bán trước <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>Evidence pack + test bán trước <span class="chip chip--doing">Một phần · có evidence pack</span></h3>
 <p>Chạy hết 1 vòng thật: evidence pack đủ khung → /app-demand → ngưỡng ghi trước → số thật → BUILD / TEST THÊM / BỎ.</p>
 <a class="go" href="phase-43-evidence-presell/">Xem chi tiết →</a>
 </div>
@@ -638,6 +590,20 @@ Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Ch
 </div>
 </div>
 </div>
+
+## Backlog · làm sau { #backlog-lam-sau }
+
+Việc còn dở của phase đã chốt xong, và phase dời ra sau để làm xong bản Web (2026-10-27). Chưa đánh số phase mới —
+lúc làm thì tách thành phase.
+
+- [Backlog 22 · Export: CSV trên Google Sheets](phase-backlog-22-export-sheets.md) — từ Phase 15
+- [Backlog 23 · Terminal nhúng + sổ dùng AI](phase-backlog-23-ai-terminal-usage.md) — từ Phase 27
+- [Backlog 24 · Nút AI còn lại](phase-backlog-24-ai-buttons-rest.md) — từ Phase 28
+- [Backlog 25 · MCP đợt 2 phần còn](phase-backlog-25-mcp-write-rest.md) — từ Phase 28.2
+- Phase dời nguyên trang: [27.4 Hỏi dữ liệu](phase-27-4-ai-cite-ask.md) · [27.6 Cài đặt AI](phase-27-6-ai-settings.md) ·
+  [28.1 Tóm tắt niche](phase-28-1-ai-summary.md) · [28.3 Bộ skill](phase-28-3-skills.md) ·
+  [28.5 Brief + Spec + Plan](phase-28-5-brief-plan.md)
+- [Phase 17 · Local App 1.0](../app/phase-17-local-app-1.md) — tạm dừng, lên plan phase mới khi bản Web xong
 
 <hr class="nr-skip-line">
 

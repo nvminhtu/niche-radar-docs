@@ -5,7 +5,7 @@
 > App không có tài khoản → mọi tool xoay quanh 3 thứ: **niche · project · gap**. AI không xoá, không đổi điểm,
 > không tự chốt — việc cần phán xét vào hộp **AI đề xuất** để người bấm Dùng.
 
-<span class="chip chip--doing">Đang làm · 2026-10-27 code xong đường ghi qua máy chủ + công tắc "Cho AI thêm dữ liệu" (mặc định tắt) + 6 tool mức Thêm · chưa chạy thật qua Claude Code · còn mức Đề xuất + nhóm việc</span>
+<span class="chip chip--done">Xong 2026-10-27 · đường ghi qua máy chủ + công tắc "Cho AI thêm dữ liệu" + 6 tool mức Thêm · mức Đề xuất, nhóm việc, chạy thật → Backlog 25</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (26.3, xong 2026-10-26).** `web/src/mcp/server.ts` + `tools.ts`: 10 tool chỉ đọc — `search_niches` ·

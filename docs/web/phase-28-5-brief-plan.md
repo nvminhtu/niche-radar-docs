@@ -4,7 +4,7 @@
 > làm) · **Spec** (làm gì) · **Plan** (làm thế nào, theo thứ tự) — có sẵn **báo cáo sức khoẻ niche + sức khoẻ project**
 > bên trong, mọi câu có mã nguồn. Người dùng **hỏi lại AI** để sửa tới khi bấm **Chốt**.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-27</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-27</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — rời rạc, chưa thành đầu ra.**

@@ -4,7 +4,7 @@
 > (gói Claude, ChatGPT / Codex) hoặc key riêng. Học đúng câu của Wow Keywords:
 > *"No second subscription — runs on the AI you already pay for."*
 
-<span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.2 Thư mục AI + 26.3 MCP + 26.4 Khung chat xong 2026-10-26 · 26.6 Cài đặt AI đang làm (nút AI chung + chọn AI từng việc + Gemini CLI code xong) · còn 26.5 Terminal (đợt 2)</span>
+<span class="chip chip--done">Xong 2026-10-27 · 26.1–26.4 + 26.6 phần đầu · Terminal nhúng, sổ dùng AI → Backlog 23</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được 70 % việc.**
@@ -18,7 +18,6 @@
   đã chạy `claude -p --output-format stream-json` bằng **login của người dùng, không key**, tìm `claude` ở mọi chỗ cài
   (kể cả app mở từ Dock không có PATH của Terminal, Windows `claude.exe` / `claude.cmd`), khung chat có resume phiên,
   báo lỗi chưa đăng nhập. **Copy cách làm này sang Node, không viết lại từ đầu.**
-- **CarMD Utils**: chạy skill Claude headless (`claude -p "/<skill>" --allowedTools …`) từ trong app.
 </div>
 
 **Cần xong trước:** không. Bước 0 làm song song với [Hoàn thiện Web](hoan-thien-web.md). Phase 27 xong thì

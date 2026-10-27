@@ -3,7 +3,7 @@
 > AI đọc review thay mình — đã chạy được qua job Claude (tuyến B). Phase này đưa nó lên mức **dùng hằng ngày**:
 > chạy 1 bấm khi có key, tóm tắt theo khung cố định, kiểm chéo với lời chê không AI, mọi câu có trích dẫn đã kiểm.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-27 · bản 5 câu đã có, khung 6 mục chưa</span>
 
 <div class="box box--star" markdown>
 **Gộp vào [Phase 28](../app/phase-28-ai-tinh-nang.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.

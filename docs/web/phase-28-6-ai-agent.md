@@ -5,7 +5,7 @@
 > đúng màn hình Research / Explore đã có, số vẫn từ collector. Học cách làm của [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) nhưng giải bài khó riêng của
 > mình: **dữ liệu không cố định, mỗi câu lệnh có thể sinh niche mới.**
 
-<span class="chip chip--doing">Code xong 2026-10-27 · nhánh phase28-6-ai-agent · chạy thật Claude Code + Codex · chờ anh review rồi merge</span>
+<span class="chip chip--done">Xong 2026-10-27 · đã merge main (c47067c) · chạy thật Claude Code + Codex</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được khoảng 60 % việc.**

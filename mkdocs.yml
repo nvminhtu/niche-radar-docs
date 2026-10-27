@@ -63,7 +63,7 @@ nav:
       - Quy trình build: quy-trinh-build.md
       - Setup máy: setup.md
       - "Plan bán app Mac + Windows": app/plan-ban-app.md
-      - "Đã xong (Phase 1–17)":
+      - "Đã xong (Phase 1–16)":
           - Phase 1 · Google Play: web/phase-1-google-play.md
           - Phase 2 · App Store: web/phase-2-app-store.md
           - Phase 3 · Google Trends: web/phase-3-google-trends.md
@@ -82,7 +82,6 @@ nav:
           - "Phase 15 · Export (CSV, JSON, gói LLM + brief tính năng)": web/phase-15-export.md
           - "Định dạng file xuất": export-schema.md
           - "Phase 16 · Bàn quyết định long-tail + đo nhu cầu Pro": web/phase-16-decision-board.md
-          - "Phase 17 · Local App 1.0 (app Mac)": app/phase-17-local-app-1.md
       - "Hoàn thiện Web · trước bản bán (Phase 18–26)":
           - "Tổng quan Hoàn thiện Web": app/hoan-thien-web.md
           - "Phase 18 · Đối thủ bị chê gì": web/phase-18-competitor-complaints.md
@@ -97,15 +96,10 @@ nav:
       - "AI (Phase 27–28)":
           - "Phase 27 · AI của bạn (Claude Code, Codex…)": app/phase-27-ai-cua-ban.md
           - "Phase 27.3 · MCP của app": web/phase-27-3-mcp.md
-          - "Phase 27.4 · Hỏi dữ liệu (AI Cite)": web/phase-27-4-ai-cite-ask.md
-          - "Phase 27.6 · Cài đặt AI + tuyến miễn phí": web/phase-27-6-ai-settings.md
           - "Phase 27.7 · AI của người dùng": web/phase-27-7-ai-cost-plans.md
           - "Phase 28 · AI cho từng tính năng": app/phase-28-ai-tinh-nang.md
-          - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
           - "Phase 28.2 · MCP đợt 2 — AI cập nhật niche, project, gap": web/phase-28-2-mcp-write.md
-          - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
           - "Phase 28.4 · Nút AI đũa phép ở từng bước": web/phase-28-4-ai-magic.md
-          - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
           - "Phase 28.6 · AI Agent (chat ra lệnh, app làm)": web/phase-28-6-ai-agent.md
           - "Phase 28.7 · AI Agent dễ nhìn": web/phase-28-7-ai-agent-ux.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
@@ -153,6 +147,16 @@ nav:
           - Phase 63 · Review Version 4: web/phase-63-review-4.md
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
+      - "Backlog · làm sau (22–25 + phase dời)":
+          - "Backlog 22 · Export: CSV trên Google Sheets": web/phase-backlog-22-export-sheets.md
+          - "Backlog 23 · Terminal nhúng + sổ dùng AI": web/phase-backlog-23-ai-terminal-usage.md
+          - "Backlog 24 · Nút AI còn lại": web/phase-backlog-24-ai-buttons-rest.md
+          - "Backlog 25 · MCP đợt 2 phần còn": web/phase-backlog-25-mcp-write-rest.md
+          - "Phase 27.4 · Hỏi dữ liệu (AI Cite)": web/phase-27-4-ai-cite-ask.md
+          - "Phase 27.6 · Cài đặt AI + tuyến miễn phí": web/phase-27-6-ai-settings.md
+          - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
+          - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
+          - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
       - Appendix · Chưa xếp / Không làm: appendix.md
       - "⛔ KO LÀM — Backlog 01–17":
           - "Account (bỏ 2026-10-26)":

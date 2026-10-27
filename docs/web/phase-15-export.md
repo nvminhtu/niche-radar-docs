@@ -4,7 +4,7 @@
 > và có **gói dành riêng cho LLM** — dán vào Claude / ChatGPT là nó hiểu ngay niche, không vượt giới hạn token,
 > rồi viết **brief tính năng** (khách · vấn đề · giải pháp khác · MVP · giá thử · 10 người đầu) dẫn nguồn từng ý.
 
-<span class="chip chip--doing">Code xong 2026-10-26 · Task 4b xong · còn mở CSV bằng Google Sheets</span>
+<span class="chip chip--done">Xong 2026-10-27 · kiểm CSV trên Google Sheets dời sang <a href="../phase-backlog-22-export-sheets/">Backlog 22</a></span>
 
 <div class="box box--goal" markdown>
 **Hiện có (rải rác ở Phase 1, 7, 8).** CSV keyword ở Explore · project `.md` / CSV / `.niche.json` · evidence pack `.md`.

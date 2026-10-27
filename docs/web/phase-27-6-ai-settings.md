@@ -3,7 +3,7 @@
 > Lớp AI chung đã có, nhưng mới chạy thật tuyến job Claude. Phase này cho chọn **nhiều nhà cung cấp** (tự mang key),
 > thử lại **tuyến miễn phí** (AI trong Chrome, model trên máy) và cho thấy rõ mỗi lần tra tốn bao nhiêu.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-27 · phần đã làm nằm ở Phase 27 (26.6)</span>
 
 <div class="box box--star" markdown>
 **Gộp vào [Phase 27](../app/phase-27-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.

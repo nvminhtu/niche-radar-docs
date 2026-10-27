@@ -4,7 +4,7 @@
 > Chạy trên AI của người dùng qua bộ máy [Phase 27](phase-27-ai-cua-ban.md). Số vẫn từ collector — AI chỉ đọc chữ,
 > gom, giải thích, viết nháp, và **mọi câu đều có mã nguồn đã kiểm bằng code**.
 
-<span class="chip chip--doing">Đang làm · đối chiếu code 2026-10-27: đợt 1 có 2/4 nút 1 bấm (tóm tắt niche bản 5 câu · Feature Gap "Điền bằng AI") · còn bàn quyết định 1 bấm, gap → ý tưởng app, khung 6 mục, đợt 2</span>
+<span class="chip chip--done">Xong 2026-10-27 · đợt 1 có 2/4 nút (tóm tắt niche 5 câu · Feature Gap "Điền bằng AI") + 28.2 + 28.6 AI Agent · phần còn → Backlog 24, 25</span>
 
 <div class="box box--goal" markdown>
 **Hiện có.** 4 việc AI đã code trong `web/src/lib/ai/tasks.ts`: `themes` (chủ đề than), `summary` (tóm tắt 5 câu),

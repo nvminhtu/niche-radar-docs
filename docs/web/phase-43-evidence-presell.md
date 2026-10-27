@@ -4,7 +4,7 @@
 > chạy. Phase này làm luồng đó trơn tru và **chạy hết 1 vòng thật**: niche → evidence pack → `/app-demand` → test bán
 > trước → số thật → BUILD / TEST THÊM / BỎ.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--doing">Một phần · soát code 2026-10-27: có evidence pack theo khuôn /app-demand · khối test bán trước đang tắt, chưa khoá ngưỡng + nhập số thật</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 7).** Evidence pack `.md` theo khung `templates/demand.md`; nháp test bán trước (hook · landing fake

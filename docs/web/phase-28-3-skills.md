@@ -5,7 +5,7 @@
 > trích nguồn). **Nội dung từng skill plan ở một lượt riêng.** Trang này chỉ ghi phase khác cần skill nào, nhận gì,
 > trả gì — để 28.2, 28.4, 28.5 làm được trước mà không phải đoán.
 
-<span class="chip chip--todo">Chưa plan · giữ số 2026-10-27</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-27 · chưa plan</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 27 · 26.2).** Thư mục AI có 2 skill tiếng Anh: `/app-demand` (niche này có đáng làm không → BUILD /

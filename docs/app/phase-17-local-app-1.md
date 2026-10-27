@@ -3,7 +3,7 @@
 > Đóng gói bản Web thành **app Mac bấm là mở** — không cần Node, không gõ lệnh. Trước là phần app của Phase 8; phần
 > Project + xuất / nhập + backup ở lại Web: [Phase 8](../web/phase-8-project-data.md). Thuộc mục App, làm khi bản Web xong Version 10.
 
-<span class="chip chip--doing">Code xong sớm 2026-10-25 · thử máy mới khi xong Version 10</span>
+<span class="chip chip--todo">Tạm dừng 2026-10-27 · dời khỏi bản Web, lên plan phase mới khi Web xong · code + .dmg 0.8.0 giữ nguyên</span>
 
 ## Chạy thế nào
 
