@@ -258,7 +258,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">27.3</span>
 <div class="step__body">
-<h3>MCP của app <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
+<h3>MCP của app <span class="chip chip--done">Xong đợt 1 · 2026-10-26</span></h3>
 <p>MCP server chỉ đọc để Claude tự đọc DB: tìm niche, so niche, đối thủ, lời chê, project — trả kèm nguồn.</p>
 <a class="go" href="phase-27-3-mcp/">Xem chi tiết →</a>
 </div>
@@ -266,7 +266,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">27.4</span>
 <div class="step__body">
-<h3>Hỏi dữ liệu (AI Cite) <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Hỏi dữ liệu (AI Cite) <span class="chip chip--skip">Backlog · 2026-10-27</span></h3>
 <p>Hỏi bằng lời, AI trả lời chỉ từ DB, mọi câu có trích dẫn — máy tự kiểm từng trích dẫn.</p>
 <a class="go" href="phase-27-4-ai-cite-ask/">Xem chi tiết →</a>
 </div>
@@ -282,7 +282,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">27.7</span>
 <div class="step__body">
-<h3>AI của người dùng <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>AI của người dùng <span class="chip chip--done">Xong · 2026-10-27</span></h3>
 <p>Gọi Claude Code / Codex / Ollama / key riêng; nút Kiểm tra hỏi thử 1 câu; mình không bán lượt AI.</p>
 <a class="go" href="phase-27-7-ai-cost-plans/">Xem chi tiết →</a>
 </div>
@@ -290,7 +290,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">28</span>
 <div class="step__body">
-<h3>AI cho từng tính năng <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>AI cho từng tính năng <span class="chip chip--doing">Đang làm · 2/4 nút đợt 1</span></h3>
 <p>Đợt 1: tóm tắt niche 1 bấm (28.1) · bàn quyết định 1 bấm · gap → ý tưởng app · Feature Gap tự điền; đợt 2 vào bằng bản cập nhật.</p>
 <a class="go" href="../app/phase-28-ai-tinh-nang/">Xem chi tiết →</a>
 </div>
@@ -306,7 +306,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">28.2</span>
 <div class="step__body">
-<h3>MCP đợt 2 — AI cập nhật niche, project, gap <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
+<h3>MCP đợt 2 — AI cập nhật niche, project, gap <span class="chip chip--doing">Đang làm · 6 tool mức Thêm code xong</span></h3>
 <p>AI bên ngoài tra niche mới, gom vào project, xếp gap (thêm có hoàn tác · đề xuất chờ Dùng) + nhóm việc health_niche_check, health_project_check, brief_pack.</p>
 <a class="go" href="phase-28-2-mcp-write/">Xem chi tiết →</a>
 </div>

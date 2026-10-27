@@ -5,7 +5,14 @@
 >
 > **Đổi 2026-10-26:** bỏ "gói lượt AI kèm Pro" và bộ đếm lượt — không cần nữa.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 31</span>
+<span class="chip chip--done">Xong · 2026-10-27 — đã có trong code Phase 27</span>
+
+<div class="box box--goal" markdown>
+**Đối chiếu code 2026-10-27** (`web/src/lib/ai/cli.ts`, `ready.ts`, `settings.ts`): tìm Claude Code / Codex / Gemini CLI
+trên máy · nút **Kiểm tra** hỏi thử 1 câu (`checkCli`) · lỗi gọi đúng tên (chưa cài, chưa đăng nhập, thiếu key) kèm nút
+đăng nhập · key riêng Claude / OpenAI / Gemini · AI tắt thì nút xám, phần khác chạy. **Khác plan:** bỏ Ollama khỏi danh sách
+chọn (Bước 0 Phase 6 đo thấy kém), thêm Gemini CLI; key lưu trong DB máy thay Keychain — dời sang Phase 35 (app bán).
+</div>
 
 <div class="box box--star" markdown>
 **Gộp vào [Phase 27](../app/phase-27-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.

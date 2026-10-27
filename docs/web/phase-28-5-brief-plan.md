@@ -152,6 +152,68 @@ trống kèm gợi ý.
 **Khuôn:** Niche Radar giữ bản sao khuôn trong `web/src/lib/build-pack/templates/` (ghim ngày) + test so heading với bản
 gốc, để khuôn bên app-AI-skills đổi thì test đỏ.
 
+## Đồng bộ sau khi chốt — kéo bản mới, sửa tiếp, không đè nhau
+
+Gói Build không phải xuất 1 lần rồi thôi. Sau khi chép vào thư mục app, người dùng (hoặc agent) vẫn **kéo bản mới
+nhất** từ Niche Radar và **sửa tiếp** được nhiều vòng. Hai đường: **MCP** (agent tự gọi) và **lệnh pull** (gõ tay /
+script). Không canh thư mục, không ghi thẳng vào thư mục app khi người dùng chưa gọi.
+
+### Ai giữ file nào
+
+| File | Nguồn sự thật | Chiều đồng bộ |
+|---|---|---|
+| `brief.md` · `evidence.md` | Niche Radar | NR → app (pull). Sửa ở app → đề xuất ngược, chờ **Dùng** |
+| `spec.md` | NR **tới khi** `Approved: yes` · sau đó là app | Trước CỔNG 2: như brief. Sau CỔNG 2: NR chỉ đọc |
+| `plan-mvp.md` | App (bước build tick `- [ ]`) | NR chỉ đọc để hiện tiến độ — không bao giờ ghi |
+
+Lý do chia: bản đang build mà NR đè `plan-mvp.md` là mất dòng đã tick. Nên phía nào giữ thì chỉ phía đó ghi; phía kia
+**đề xuất**.
+
+### Dấu trên từng file
+
+Mỗi file trong gói có frontmatter để hai bên biết đang ở bản nào:
+
+```yaml
+nr_project: 7
+nr_version: 3          # bản hồ sơ trong NR lúc xuất / pull
+nr_hash: 9f2c…         # hash nội dung lúc ghi — khác = người đã sửa trên đĩa
+nr_locked: [brief.mvp, spec.screens]   # mục 🔒, pull không đổi
+```
+
+### Đường 1 · MCP
+
+Thêm vào [Phase 28.2](phase-28-2-mcp-write.md):
+
+- **`get_build_pack(project)`** — trả gói bản chốt mới nhất (4 file + `nr_version`) + danh sách số đổi từ lúc chốt.
+  Chỉ đọc
+- **`propose_brief_revision(project, file, content, base_version)`** — đẩy bản sửa ở thư mục app về NR → vào thành **bản
+  nháp chờ Dùng** (ai làm = agent + model). `base_version` cũ hơn bản trong NR → vẫn nhận, đánh dấu "sửa từ bản 2",
+  hiện khác gì cạnh nhau. Mục khoá bị đổi → bỏ phần đó + báo
+- Chỉ nhận `brief.md` · `evidence.md`, và `spec.md` khi còn `Approved: no`. File khác → từ chối, nói rõ lý do
+- Skill `/app-spec` gọi `get_build_pack` lúc mở nếu file có `nr_project`: báo "NR có bản 4, đĩa đang bản 3"
+
+### Đường 2 · Lệnh pull
+
+`python3 scripts/brief_pull.py <slug>` (repo app-AI-skills) đọc API nội bộ của NR (cùng chỗ MCP đọc):
+
+- File chưa sửa trên đĩa (`nr_hash` khớp) → ghi bản mới, cập nhật `nr_version` · `nr_hash`
+- File đã sửa → **không ghi đè**: ghi `<file>.incoming.md` cạnh đó, tách theo từng mục `##`, in ra mục nào đổi; mục 🔒
+  giữ nguyên. Người dùng (hoặc agent) gộp tay rồi xoá `.incoming`
+- `spec.md` đã `Approved: yes` · `plan-mvp.md` → bỏ qua, in "app giữ file này"
+- `--push` → gửi bản trên đĩa về NR như `propose_brief_revision`
+- NR không mở → báo đúng câu "Mở Niche Radar rồi chạy lại", không đoán
+
+### Số đổi sau khi chốt
+
+Banner "3 số đổi từ lúc chốt" (mục trên) → **Cập nhật hồ sơ** tạo bản mới trong NR. Bản đó chỉ tới thư mục app khi người
+dùng pull / agent gọi `get_build_pack`. Sau CỔNG 2, số đổi dính `spec.md` → NR ghi thành **ghi chú** ở project
+("spec đã duyệt, số X đổi — cân nhắc `/app-feature`"), không sửa spec.
+
+### Tiến độ ngược về NR
+
+NR đọc `plan-mvp.md` khi pull / khi agent gọi MCP (đếm `- [x]` / tổng theo phase) → tab Brief & Plan hiện "P2 · 7/12
+việc". Chỉ đọc, không có nút sửa plan trong NR.
+
 ## Trên landing + demo — khách nhìn là hiểu khúc cuối có brief
 
 - **Landing ([Phase 46](phase-46-positioning-landing.md)):** dải 6 bước như sơ đồ hành trình, bước 6 nổi nhất (nháp:
@@ -186,6 +248,9 @@ gốc, để khuôn bên app-AI-skills đổi thì test đỏ.
 - Gói Build của 2 project thật chép vào app-AI-skills: `python3 scripts/app.py status <slug>` nhận bước 3 là `CHƯA · N tính
   năng · chưa Approved: yes`, không `invalid`; 100 % mã trong gói tra được ở `evidence.md`
 - Một agent mới (không lịch sử chat) đọc Gói Build và bắt đầu P1, hỏi lại ≤ 2 câu về màn hình / dữ liệu / phạm vi
+- Đồng bộ (test + chạy thật trên 1 app đã chép gói): pull khi đĩa chưa sửa → ghi bản mới; đĩa đã sửa → ra `.incoming`,
+  file gốc nguyên vẹn, mục 🔒 giữ; `plan-mvp.md` và `spec.md` đã Approved không bị chạm 3/3 lần;
+  `propose_brief_revision` → hiện bản nháp chờ Dùng trong NR; tab Brief & Plan hiện đúng số việc đã tick
 - Không nối AI → tab vẫn dùng được với phần số + viết tay, chốt được
 - Landing + demo có ảnh và hồ sơ mẫu thật (kiểm khi làm Phase 46, 50)
 </div>
@@ -197,6 +262,8 @@ gốc, để khuôn bên app-AI-skills đổi thì test đỏ.
 - Build app từ spec ngay trong tool; chạy `app.py init` hay tạo project thay người dùng
 - `design.md`, ảnh mockup, `money.md` đầy đủ trong Gói Build — để `/app-design`, `/app-mockup`, `/app-money`
 - AI đoán lượt tải / doanh thu cho app mới
+- Canh thư mục app (watch file) / tự ghi vào thư mục app khi người dùng chưa pull; sửa `plan-mvp.md` từ NR; tự gộp
+  `.incoming` — để sau nếu pull tay thấy phiền
 - Mẫu hồ sơ theo ngành (để sau khi có góp ý)
 - Hồ sơ có thuộc gói trả phí không — quyết ở [Phase 31](phase-31-money-model.md); trang này chỉ ghi là ứng viên
 </div>

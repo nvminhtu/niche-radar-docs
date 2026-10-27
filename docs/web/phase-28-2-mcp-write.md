@@ -62,7 +62,7 @@ flowchart LR
 | `add_project_note {projectId, text}` | Thêm | vào nhật ký, nhãn "AI viết" |
 | `propose_decision {projectId, rows[]}` | Đề xuất | điểm 5 trục bàn quyết định, đi qua đúng luật [Phase 16](phase-16-decision-board.md) |
 | `propose_verdict {projectId, conclusion, nextStep, refs}` | Đề xuất | nháp Kết luận + Bước tiếp |
-| `get_brief` · `propose_brief_revision` | Đọc · Đề xuất | hồ sơ Brief + Spec + Plan → [Phase 28.5](phase-28-5-brief-plan.md) |
+| `get_brief` · `get_build_pack` · `propose_brief_revision` | Đọc · Đọc · Đề xuất | hồ sơ Brief + Spec + Plan, kéo Gói Build mới nhất, đẩy bản sửa ở thư mục app về thành nháp → [Phase 28.5](phase-28-5-brief-plan.md) |
 
 ### Gap (Reddit · Q&A · GitHub)
 

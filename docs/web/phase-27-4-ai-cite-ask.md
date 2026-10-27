@@ -3,7 +3,13 @@
 > Gõ câu hỏi bằng lời thường. AI trả lời **chỉ từ dữ liệu đã cào**, câu nào cũng có **trích dẫn bấm được**.
 > Phase này cũng dựng **lớp kiểm trích dẫn** dùng chung cho Phase 39.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 56</span>
+<span class="chip chip--skip">Backlog · 2026-10-27</span>
+
+<div class="box box--danger" markdown>
+**Đẩy vào Backlog (chốt 2026-10-27):** hỏi dữ liệu bằng lời đã chạy được qua khung chat (Phase 27 mục 26.4) + MCP chỉ đọc
+(27.3) — mọi số kèm nguồn. Phần còn lại ở trang này (bài thử 20 câu, lớp kiểm trích dẫn riêng) chỉ là đo lại, không thêm
+gì cho người dùng → không làm trước bản bán. Trang giữ lại để tra.
+</div>
 
 <div class="box box--star" markdown>
 **Gộp vào [Phase 27](../app/phase-27-ai-cua-ban.md) (2026-10-26)** — làm theo trang đó; trang này giữ để tra chi tiết.
