@@ -25,7 +25,7 @@ Trang tải ghi rõ điều này, như Wow Keywords ghi "unsigned, so Windows ma
   (chốt ở plan, không dựng CI đầy đủ)
 - **Sidecar Node:** gói bản Node cho Windows, đường dẫn DB + backup dùng thư mục `%APPDATA%`
 - **Lưu key + ngày dùng thử:** Windows Credential Manager thay Keychain
-- **Tìm AI:** Claude Code / Codex / Ollama trên Windows (đường dẫn khác Mac)
+- **Tìm AI:** Claude Code / Codex trên Windows (đường dẫn khác Mac)
 - **Trang tải:** nút "Windows 11 · x64 · Beta" cạnh nút Mac, ghi cảnh báo SmartScreen + cách mở
 - **File:** cấu hình bundle Windows trong `app/` · chỗ lưu key theo hệ điều hành ở lớp license (Phase 35)
 

@@ -21,7 +21,7 @@
   `navigator.userAgentData` / `platform`; đoán không chắc → hiện cả 2 bộ bước.
 - Lớp 2: mỗi mục kiểm là 1 hàm trả `{ key, status: 'ok'|'missing'|'old', found, need, fix }`; Node tối thiểu **20.19** (Vite 8 đòi — đọc lại `engines` trong `web/package.json` lúc làm).
 - Kiểm mạng tới Play / App Store / Trends: 1 lượt nhỏ, timeout 5 giây, không lặp.
-- Link cài chỉ trang chính chủ (nodejs.org, developer.apple.com, ollama.com…), không gói lại đồ người khác.
+- Link cài chỉ trang chính chủ (nodejs.org, developer.apple.com…), không gói lại đồ người khác.
 - Câu hỏi AI chỉ có OS, phiên bản, dòng lỗi — hàm `scrub()` bỏ `/Users/...`, tên user, chuỗi giống key (`sk-`, `AIza`…). Test.
 - Link 4 AI: ChatGPT (`chatgpt.com/?q=`), Claude (`claude.ai/new?q=`), Perplexity (`perplexity.ai/search?q=`) — kiểm lại tham số lúc làm;
   Gemini không nhận qua link → copy clipboard rồi mở trang.
@@ -29,7 +29,7 @@
 ## File đụng tới
 
 - `docs/setup.md` (mới) + `docs/javascripts/setup-detect.js` + `mkdocs.yml` — lớp 1
-- `web/src/lib/setup-check.ts` (mới) — Node, npm, better-sqlite3 (mở DB thử), cổng 3200 / 3201, mạng 3 nguồn, key Claude, Ollama
+- `web/src/lib/setup-check.ts` (mới) — Node, npm, better-sqlite3 (mở DB thử), cổng 3200 / 3201, mạng 3 nguồn, key Claude
 - `web/src/server/app.ts` — `GET /api/setup/check`
 - `web/src/client/SetupPage.tsx` (mới) + `main.tsx` + `NavMenu.tsx` — `/setup`, nút Kiểm tra máy, bắt buộc / tuỳ chọn
 - `web/src/components/AskAi.tsx` (mới) — menu dọc 4 dòng, đóng khi bấm ngoài / Esc

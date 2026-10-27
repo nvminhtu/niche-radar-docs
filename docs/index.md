@@ -26,7 +26,7 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 </div>
 
 <div class="box box--goal" markdown>
-**Đánh số lại 2026-10-26 — số phase = thứ tự làm.** Đã xong 1–17 → [Hoàn thiện Web](app/hoan-thien-web.md) trước bản bán 18–26 → [Phase 27](app/phase-27-ai-cua-ban.md) AI của bạn (Claude Code, Codex, Ollama chạy trong app, MCP, khung chat) → [Phase 28](app/phase-28-ai-tinh-nang.md) nút AI cho từng tính năng → bán 29–37 → sau bản bán 38–45 → 45–62. Phase không làm thành **Backlog 01–21**. Bảng số cũ → mới: [Plan bán app](app/plan-ban-app.md#so-cu-so-moi-anh-so-lai-2026-10-26).
+**Đánh số lại 2026-10-26 — số phase = thứ tự làm.** Đã xong 1–17 → [Hoàn thiện Web](app/hoan-thien-web.md) trước bản bán 18–26 → [Phase 27](app/phase-27-ai-cua-ban.md) AI của bạn (Claude Code, Codex chạy trong app, MCP, khung chat) → [Phase 28](app/phase-28-ai-tinh-nang.md) nút AI cho từng tính năng → bán 29–37 → sau bản bán 38–45 → 45–62. Phase không làm thành **Backlog 01–21**. Bảng số cũ → mới: [Plan bán app](app/plan-ban-app.md#so-cu-so-moi-anh-so-lai-2026-10-26).
 </div>
 
 ## Thứ tự: Phase 1 → 63 · ⛔ KO LÀM = Backlog 01–21

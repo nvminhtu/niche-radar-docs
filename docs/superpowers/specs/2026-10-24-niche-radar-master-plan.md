@@ -194,15 +194,15 @@ Bản đọc nhanh từng phase (có sơ đồ, "Xong khi", "Không làm"): tran
 ### Phase 6 — Tích hợp AI (bản Web)
 
 - **Mục tiêu:** AI đọc thay mình review / Reddit / listing — có nguồn, tắt được, ưu tiên đường miễn phí.
-- **Bước 0 (thử, chưa chắc được):** một bài chuẩn (gom 200 review 1–2★ thành chủ đề có câu nguyên văn) chạy trên 4 tuyến:
+- **Bước 0 (thử, chưa chắc được):** một bài chuẩn (gom 200 review 1–2★ thành chủ đề có câu nguyên văn) chạy trên 3 tuyến:
   A API key (Claude, Gemini Flash) · B extension miễn phí (Claude in Chrome, Gemini in Chrome) qua file job · C AI trong
-  trình duyệt (Chrome built-in AI / Gemini Nano, WebLLM, Transformers.js) · D model trên máy (Ollama, LM Studio). Ghi chất
+  trình duyệt (Chrome built-in AI / Gemini Nano, WebLLM, Transformers.js). Ghi chất
   lượng · thời gian · tiền · máy cần gì → chọn ≤ 2 tuyến.
 - **Làm:** lớp AI chung (chọn tuyến, key, trần chi phí, cache, log) · chủ đề than · phân loại Reddit · Feature Gap Matrix
   tự động đủ · tóm tắt niche 5 dòng có nguồn.
 - **Luật:** AI không bịa số; không bật AI thì Phase 1–5 vẫn chạy.
-- **Không làm:** xây cả 4 tuyến (chỉ tuyến qua Bước 0) · gửi key lên server nào ngoài provider.
-- **Xong khi:** bảng Bước 0 đủ 4 tuyến · 3 niche chạy đủ với tuyến đã chọn, dưới trần chi phí, trích dẫn bấm được.
+- **Không làm:** xây cả 3 tuyến (chỉ tuyến qua Bước 0) · gửi key lên server nào ngoài provider.
+- **Xong khi:** bảng Bước 0 đủ 3 tuyến · 3 niche chạy đủ với tuyến đã chọn, dưới trần chi phí, trích dẫn bấm được.
 - Chi tiết: `docs/phase-6-ai-web.md`.
 
 ### Phase 7 — Review + Validate

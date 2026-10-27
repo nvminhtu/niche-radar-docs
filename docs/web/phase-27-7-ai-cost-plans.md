@@ -1,7 +1,7 @@
 # Phase 27.7 · AI theo gói — chạy trên AI người dùng đã có
 
 > Mình **không bán lượt AI, không trả tiền AI** cho người dùng. App gọi AI họ đã có: **Claude Code**, **Codex**,
-> **Ollama** (chạy trên máy) hoặc **key riêng** (BYOK). Học Wow Keywords ("runs on the AI you already pay for").
+> hoặc **key riêng** (BYOK). Học Wow Keywords ("runs on the AI you already pay for").
 >
 > **Đổi 2026-10-26:** bỏ "gói lượt AI kèm Pro" và bộ đếm lượt — không cần nữa.
 
@@ -10,8 +10,7 @@
 <div class="box box--goal" markdown>
 **Đối chiếu code 2026-10-27** (`web/src/lib/ai/cli.ts`, `ready.ts`, `settings.ts`): tìm Claude Code / Codex / Gemini CLI
 trên máy · nút **Kiểm tra** hỏi thử 1 câu (`checkCli`) · lỗi gọi đúng tên (chưa cài, chưa đăng nhập, thiếu key) kèm nút
-đăng nhập · key riêng Claude / OpenAI / Gemini · AI tắt thì nút xám, phần khác chạy. **Khác plan:** bỏ Ollama khỏi danh sách
-chọn (Bước 0 Phase 6 đo thấy kém), thêm Gemini CLI; key lưu trong DB máy thay Keychain — dời sang Phase 35 (app bán).
+đăng nhập · key riêng Claude / OpenAI / Gemini · AI tắt thì nút xám, phần khác chạy. **Khác plan:** thêm Gemini CLI; key lưu trong DB máy thay Keychain — dời sang Phase 35 (app bán).
 </div>
 
 <div class="box box--star" markdown>
@@ -22,7 +21,7 @@ chọn (Bước 0 Phase 6 đo thấy kém), thêm Gemini CLI; key lưu trong DB 
 
 ```mermaid
 flowchart LR
-  S[Setup lần đầu] --> F[Tìm AI trên máy<br/>Claude Code · Codex · Ollama]
+  S[Setup lần đầu] --> F[Tìm AI trên máy<br/>Claude Code · Codex]
   F --> T[Hỏi thử 1 câu<br/>Sẵn sàng = trả lời thật]
   T --> OK[Dùng AI đó<br/>cho tóm tắt · gói AI]
   F -- không có --> BY[Dán key riêng<br/>hoặc bỏ qua AI]
@@ -33,12 +32,12 @@ flowchart LR
 
 ## Làm gì
 
-- **Tìm AI trên máy:** Claude Code, Codex (kể cả bản trong app desktop), Ollama · hiện cái nào có, cái nào thiếu
+- **Tìm AI trên máy:** Claude Code, Codex (kể cả bản trong app desktop) · hiện cái nào có, cái nào thiếu
 - **Nút Kiểm tra:** hỏi thử 1 câu ngắn, "Sẵn sàng" chỉ khi trả lời thật
 - **Lỗi nói rõ:** chưa đăng nhập, hết lượt, key hết hạn — gọi đúng tên, kèm nút sửa
 - **BYOK:** ô dán key, key giữ trên máy (Keychain / Credential Manager ở app, `.env.local` ở Web local)
 - **Không AI vẫn chạy:** mọi phần không AI (Play, App Store, Trends, Reddit, Q&A…) chạy đủ khi không nối AI nào
-- **File:** sửa lớp AI chung hiện có (Phase 6) — thêm tuyến Claude Code / Codex CLI / Ollama (tên chốt ở plan)
+- **File:** sửa lớp AI chung hiện có (Phase 6) — thêm tuyến Claude Code / Codex CLI (tên chốt ở plan)
 
 <div class="box box--star" markdown>
 **Xong khi**

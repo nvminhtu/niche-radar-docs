@@ -13,7 +13,7 @@ lưu key theo hệ điều hành). **Sau:** Phase 37 phát hành cả `.dmg` + `
 - **Xong khi:** cài `.exe` trên máy Windows 11 sạch → mở được, dùng thử chạy, tra 1 niche ra số · nhập key test → Pro, máy Windows tính là
   1 trong 2 máy của license · gỡ cài đặt → không còn server chạy nền · screenshot app trên Windows đã Read.
 - **Làm:** lệnh `npm run win` ra `Niche-Radar-<version>-win-x64-setup.exe` (NSIS), sidecar Node Windows, đường dẫn dữ liệu `%APPDATA%`,
-  lưu key + ngày dùng thử bằng Windows Credential Manager, tìm Claude Code / Codex / Ollama trên Windows, nút tải trên trang tải.
+  lưu key + ngày dùng thử bằng Windows Credential Manager, tìm Claude Code / Codex trên Windows, nút tải trên trang tải.
 - **Không làm:** mua chứng chỉ ký Windows trước khi có đơn · Microsoft Store · Windows 10 / ARM / 32-bit · tính năng chỉ có trên Windows.
 
 ## Đo trước khi code (Task 0)
@@ -38,7 +38,7 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
   `secret_get/set/delete` của Phase 35, không viết lớp thứ hai.
 - **Sidecar không chạy nền khi tắt app:** Tauri giết tiến trình Node lúc cửa sổ đóng (`RunEvent::Exit`); NSIS uninstall chạy `taskkill` tiến trình
   `node.exe` trong thư mục cài trước khi xoá file.
-- **Tìm AI:** Claude Code / Codex / Ollama trên Windows — `where.exe`, `%LOCALAPPDATA%\Programs\`, `%APPDATA%\npm\`; Ollama gọi `http://127.0.0.1:11434`
+- **Tìm AI:** Claude Code / Codex trên Windows — `where.exe`, `%LOCALAPPDATA%\Programs\`, `%APPDATA%\npm\`
   như Mac. Không thấy → ẩn tuyến đó, như Backlog 19 đã ghi cho Mac.
 - **Chưa ký:** SmartScreen hiện "Windows protected your PC" → trang tải ghi rõ "More info → Run anyway" (học Wow Keywords:
   "unsigned, so Windows may show a security warning"). Tên file + version giữ ổn định để Phase 37 dùng làm link tải.
@@ -53,7 +53,7 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
 - `app/src-tauri/tauri.conf.json` — `bundle.windows` (NSIS, `installMode: currentUser`, icon `.ico` đã có), resources theo hệ điều hành
 - `app/src-tauri/src/main.rs` (+ `secrets.rs` của Phase 35) — tắt sidecar khi thoát, `keyring` chạy cả 2 nền tảng
 - `app/src-tauri/windows/hooks.nsh` (mới) — `taskkill` lúc gỡ cài
-- `web/src/lib/paths.ts`, `web/src/lib/geo/engines.ts` / chỗ tìm Claude Code · Codex · Ollama — nhánh Windows
+- `web/src/lib/paths.ts`, `web/src/lib/geo/engines.ts` / chỗ tìm Claude Code · Codex — nhánh Windows
 - `web/tests/paths-win.test.ts` (mới) — giả `process.platform = 'win32'`
 - trang tải (demo site Phase 50 / landing) — nút "Windows 11 · x64 · Beta" + cảnh báo SmartScreen
 - `app/README.md`, `README.md`, `CLAUDE.md`, `docs/cach-dung.md`, `CHANGELOG.md` (App) — lệnh `npm run win` (luật repo khi thêm lệnh)
@@ -76,7 +76,7 @@ Build chéo từ Mac trượt → đường dự phòng: build trên máy Window
 - [ ] Hết dùng thử (giả lập ngày) → về Free, dữ liệu còn đủ.
 
 ### Task 4: Tìm AI trên Windows
-- [ ] Đường tìm Claude Code / Codex / Ollama; không có → ẩn tuyến, phần không AI vẫn chạy.
+- [ ] Đường tìm Claude Code / Codex; không có → ẩn tuyến, phần không AI vẫn chạy.
 
 ### Task 5: Trang tải + soát
 - [ ] Nút "Windows 11 · x64 · Beta" cạnh nút Mac, ghi cách vượt SmartScreen.

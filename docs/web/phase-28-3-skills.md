@@ -19,7 +19,7 @@ mỗi lần mở ghi bản mới nếu file còn dòng `niche-radar:auto`.
 |---|---|
 | **Claude Code** (mặc định khi máy có) | `.claude/skills/<tên>/SKILL.md` trong thư mục AI → `/<tên>` chạy ở nút 1 bấm, khung chat, terminal nhúng, Claude Code người dùng tự mở trong thư mục AI |
 | **Claude Desktop · Cursor · Windsurf** (không đọc thư mục AI) | **MCP prompts** của niche-radar MCP — cùng chữ với SKILL.md |
-| **Tuyến không có skill** (Gemini CLI, Claude API, Ollama; Codex nếu Bước 0 đo ra không đọc) | app gửi kèm chữ skill trong prompt |
+| **Tuyến không có skill** (Gemini CLI, Claude API; Codex nếu Bước 0 đo ra không đọc) | app gửi kèm chữ skill trong prompt |
 
 ## Skill các phase khác cần (tên tạm)
 

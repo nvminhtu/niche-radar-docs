@@ -12,8 +12,7 @@
 <div class="box box--goal" markdown>
 **Hiện có (Phase 6 + 9).** Tuyến B (job `.json` → Claude in Chrome / Claude Code → nhập lại) chạy thật 5 niche: 47 chủ
 đề, mọi câu khớp nguyên văn, tóm tắt 5 câu có trích dẫn. Tuyến A (Claude API) đã code, **chưa chạy thật — chờ key**.
-Mức nặng chủ đề ×3 / ×2 / ×1 ở Phase 9. Code còn tuyến Ollama (model trên máy) nhưng Bước 0 Phase 6 đo thấy kém → **không
-dùng ở phase này**; thử lại tuyến miễn phí ở [Phase 27.6](phase-27-6-ai-settings.md).
+Mức nặng chủ đề ×3 / ×2 / ×1 ở Phase 9.
 </div>
 
 **Cần xong trước:** [Phase 6](phase-6-ai-web.md) (tuyến A / B) · [Phase 18](phase-18-competitor-complaints.md) (cụm để kiểm chéo + lịch sử review)
@@ -73,7 +72,7 @@ flowchart LR
 **Không làm ở phase này**
 
 - Hỏi dữ liệu bằng lời — [Phase 27.4](phase-27-4-ai-cite-ask.md)
-- Thêm / thử lại tuyến AI khác (Gemini, OpenAI, AI trong trình duyệt, Ollama) — [Phase 27.6](phase-27-6-ai-settings.md)
+- Thêm / thử lại tuyến AI khác (Gemini, OpenAI, AI trong trình duyệt) — [Phase 27.6](phase-27-6-ai-settings.md)
 </div>
 
 Plan code chi tiết: [Phase 28.1](../superpowers/plans/2026-10-25-niche-radar-phase17-ai-summary.md)

@@ -17,7 +17,7 @@ cũ tự chuyển trang. A1 cũ → Hoàn thiện Web (Phase 18–26 trước b�
 ```mermaid
 flowchart LR
   HW[Hoàn thiện Web<br/>chạy thật · Phase 18–26] --> P28
-  P27[Phase 27 · AI của bạn<br/>Claude Code · Codex · Ollama<br/>MCP · khung chat] --> P28[Phase 28 đợt 1<br/>4 nút AI mạnh nhất]
+  P27[Phase 27 · AI của bạn<br/>Claude Code · Codex<br/>MCP · khung chat] --> P28[Phase 28 đợt 1<br/>4 nút AI mạnh nhất]
   P28 --> SELL[Bán: Phase 29–30 analytics · 31–33 dùng thử + license<br/>App 34 → 35 → 36 → 37]
   SELL --> UPD[Bản cập nhật tự động<br/>Phase 38–45 · Phase 28 đợt 2 · Phase 27 terminal nhúng]
 ```
@@ -29,7 +29,7 @@ Hoàn thiện Web và Bước 0 của Phase 27 làm song song được.
 | Bước | Làm gì | Trạng thái |
 |---|---|---|
 | [Hoàn thiện Web](hoan-thien-web.md) | gom mọi việc Web dang dở: 5 việc chờ chạy thật · Phase 18–26 trước bán · Phase 38–45 vào bằng bản cập nhật | <span class="chip chip--doing">Đang làm</span> |
-| [Phase 27 · AI của bạn](phase-27-ai-cua-ban.md) | cầu AI gọi `claude` / `codex` / OpenCode / Ollama người dùng đã có (cách của Markdown Viewer), thư mục AI có sẵn skill, niche-radar MCP + nút thêm 1 bấm, khung chat, terminal nhúng | <span class="chip chip--doing">Đang làm · Bước 0, Cầu AI, MCP xong</span> |
+| [Phase 27 · AI của bạn](phase-27-ai-cua-ban.md) | cầu AI gọi `claude` / `codex` / OpenCode người dùng đã có (cách của Markdown Viewer), thư mục AI có sẵn skill, niche-radar MCP + nút thêm 1 bấm, khung chat, terminal nhúng | <span class="chip chip--doing">Đang làm · Bước 0, Cầu AI, MCP xong</span> |
 | [Phase 28 · AI cho từng tính năng](phase-28-ai-tinh-nang.md) | đợt 1: tóm tắt niche 1 bấm · bàn quyết định 1 bấm · gap → ý tưởng app · Feature Gap tự điền; đợt 2: 12 tính năng còn lại | <span class="chip chip--todo">Chưa làm</span> |
 | [Phase 28.6 · AI Agent](../web/phase-28-6-ai-agent.md) | trang Phiên săn: chat ghim bên phải ra lệnh (tra, long-tail, loại, gom niche) qua tool 28.2, dải ứng viên neo dữ liệu, hoàn tác từng hành động | <span class="chip chip--todo">Chưa làm</span> |
 | Bán | [Version 9](../web/version-9.md) analytics (Phase 29–30) · [Version 10](../web/version-10.md) dùng thử + license (Phase 31–33) · App [34](phase-34-local-app-2.md) → [35](phase-35-app-only.md) → [36](phase-36-windows-app.md) → [37](phase-37-release-auto-update.md) | <span class="chip chip--todo">Sau Phase 28 đợt 1</span> |

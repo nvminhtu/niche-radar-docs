@@ -10,7 +10,7 @@
 
 - **Tải → dùng được trong ≤ 2 phút:** bấm tải trên landing → cài → mở → dùng thử ngay, không đăng ký.
 - **Mua được trong ≤ 2 phút:** bấm Mua → checkout → nhận key qua email → dán vào app → Pro mở, không khởi động lại.
-- **Không lỗ tiền AI:** app gọi AI người dùng đã có (Claude Code, Codex, Ollama, key riêng), mình không bán lượt AI.
+- **Không lỗ tiền AI:** app gọi AI người dùng đã có (Claude Code, Codex, key riêng), mình không bán lượt AI.
 - **Đơn đầu tiên có nguồn:** 1 đơn thật từ người không quen.
 
 **Thước đo Version 10 xong:** mua bằng chế độ test → key kích hoạt trên 2 máy, máy thứ 3 bị báo · hoàn tiền → key tắt ·
@@ -52,7 +52,7 @@ flowchart LR
 - [Phase 31 · Mô hình tiền](phase-31-money-model.md) — mua đứt / bậc thang / dùng thử bao lâu, giá đo từ đối thủ + số fake-door, viết `money.md`
 - [Phase 32 · Thanh toán + license key](phase-32-payments.md) — Lemon Squeezy checkout, API license key: kích hoạt / kiểm / gỡ máy
 - [Phase 33 · Dùng thử + paywall](phase-33-paywall-trial.md) — đếm ngày dùng thử trên máy, màn nhập key, 2 máy, tìm lại key
-- [Phase 27.7 · AI theo gói](phase-27-7-ai-cost-plans.md) — chạy trên Claude Code / Codex / Ollama / key riêng, không bán lượt AI
+- [Phase 27.7 · AI theo gói](phase-27-7-ai-cost-plans.md) — chạy trên Claude Code / Codex / key riêng, không bán lượt AI
 
 Phần UI chung (màn dùng thử, nhập key) làm ở bản Web; phần chỉ app mới có (lưu key trong Keychain / Windows Credential
 Manager, mở checkout bằng trình duyệt ngoài) gắn ở [Phase 35](../app/phase-35-app-only.md).

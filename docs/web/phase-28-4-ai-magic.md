@@ -25,7 +25,7 @@ flowchart LR
   C --> P[Gói việc<br/>cùng hàm nhóm việc MCP 28.2]
   P --> R{AI mặc định}
   R -->|Claude Code · gói Claude| S1[claude -p /skill<br/>trong thư mục AI + JSON schema]
-  R -->|Codex · Gemini · key riêng · Ollama| S2[chữ skill + gói<br/>gửi trong prompt]
+  R -->|Codex · Gemini · key riêng| S2[chữ skill + gói<br/>gửi trong prompt]
   S1 --> K[Hàm kiểm<br/>mã có thật · trích khớp · không số]
   S2 --> K
   K --> D[Thẻ AI đề xuất<br/>Dùng · Bỏ · Hỏi lại]
@@ -141,7 +141,7 @@ Project #7 gõ `/health-project-check`).
 |---|---|---|
 | **Claude Code** (gói Claude) — mặc định khi máy có | `claude -p "/health-niche-check Research #25"`, cwd = thư mục AI, `--json-schema`, gói việc qua stdin | chỉ tool đọc niche-radar |
 | Codex (gói ChatGPT) | Bước 0 đo Codex có đọc skill trong thư mục AI không; không thì gửi chữ skill trong prompt | tool đọc, truyền bằng `-c` như khung chat |
-| Gemini CLI · Claude API (key) · Ollama | chữ skill + gói trong prompt | không |
+| Gemini CLI · Claude API (key) | chữ skill + gói trong prompt | không |
 | Không nối AI | icon xám | — |
 
 Nút 1 bấm **không có tool ghi** — giao diện ghi sau khi người bấm Dùng (giữ luật 26.4). Tool ghi chỉ dành cho AI bên

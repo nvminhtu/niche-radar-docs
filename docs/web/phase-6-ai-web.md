@@ -14,7 +14,6 @@ Bài thử: 110 review 1–2★ của `budget tracker` (6 app top) → chủ đ�
 | A · Claude API | chưa chạy — máy chưa có key | — | — | ước ~$0.05/lần (5,8k token vào, Opus 5.5) | **xây** (bật ở Cài đặt khi có key) |
 | B · Job cho Claude (Chrome / Code) | ✅ | 10 chủ đề, 22/22 câu khớp nguyên văn | vài phút, cần người đưa file | 0 đ thêm (gói Claude đang có) | **xây** |
 | C · AI trong Chrome (Gemini Nano) | Prompt API có, model ở trạng thái `downloadable` | — | — | 0 đ | chưa thử — cần tải model, chờ anh đồng ý |
-| D · Ollama llama3.1 8B (bản 0.3.10) | ✅ chạy | ❌ 1 chủ đề / 110 review, chép nhãn ví dụ | 30–53 giây | 0 đ | **bỏ** — thử lại khi có model mới hơn |
 
 ## Đã chạy thật (tuyến B)
 
@@ -34,9 +33,8 @@ flowchart LR
     A[A · API key<br/>Claude · Gemini Flash · OpenAI]
     B[B · Extension miễn phí<br/>Claude in Chrome · Gemini in Chrome]
     C[C · AI trong trình duyệt<br/>Chrome built-in AI · WebLLM · Transformers.js]
-    D[D · Model trên máy<br/>Ollama · LM Studio]
   end
-  A & B & C & D --> L[Lớp AI chung<br/>chọn tuyến · trần chi phí · cache]
+  A & B & C --> L[Lớp AI chung<br/>chọn tuyến · trần chi phí · cache]
   R[Review 1–2★<br/>Play + iOS] --> L
   RD[Bài Reddit] --> L
   LS[Mô tả · What's New] --> L
@@ -59,7 +57,6 @@ Tuyến nào không chạy được thì ghi lý do và bỏ, không cố.
 | **A · API key** | key riêng trong `.env.local` (Claude mặc định, Gemini Flash rẻ) | trả theo lượt | trần chi phí mỗi lần tra đủ thấp chưa? |
 | **B · Extension miễn phí** | tool xuất *job* `.json` → extension AI đọc trang / file → nhập kết quả lại (như tuyến B Phase 4) | gói đang có | extension nào nhận file / trả kết quả có cấu trúc được? |
 | **C · AI trong trình duyệt** | Chrome built-in AI (Gemini Nano: Summarizer, Prompt API) · WebLLM (model nhỏ trên WebGPU) · Transformers.js (gom chủ đề bằng embedding, không cần LLM) | 0 đ | Prompt API cho trang web đã mở chưa? model nhỏ có trả câu nguồn đúng không? máy cần GPU / bao nhiêu GB? |
-| **D · Model trên máy** | Ollama / LM Studio mở API ở `localhost` | 0 đ | model 7–8B trên Mac M-series đủ tốt + đủ nhanh cho 200 review không? |
 
 ## Làm gì (sau Bước 0)
 
@@ -83,7 +80,7 @@ Tuyến nào không chạy được thì ghi lý do và bỏ, không cố.
 <div class="box box--star" markdown>
 **Xong khi**
 
-- Bảng Bước 0 điền đủ 4 tuyến (chạy được / không, có số đo)
+- Bảng Bước 0 điền đủ 3 tuyến (chạy được / không, có số đo)
 - 3 niche thật chạy đủ với tuyến đã chọn, mỗi lần tra dưới trần chi phí
 - Mọi chủ đề / tóm tắt có trích dẫn bấm được; tắt AI thì app vẫn chạy
 </div>
@@ -91,6 +88,6 @@ Tuyến nào không chạy được thì ghi lý do và bỏ, không cố.
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Xây cả 4 tuyến — chỉ xây tuyến qua được Bước 0
+- Xây cả 3 tuyến — chỉ xây tuyến qua được Bước 0
 - Gửi key của mình lên server nào khác ngoài provider
 </div>

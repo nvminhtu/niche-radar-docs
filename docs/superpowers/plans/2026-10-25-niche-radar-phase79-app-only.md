@@ -15,7 +15,7 @@ Phase 24 (trang Setup). **Đổi 2026-10-26:** bỏ tài khoản → bỏ đăng
   không cần tài khoản · khôi phục mua (tìm lại key bằng email) chạy · dùng thử N ngày đếm đúng, xoá app cài lại không reset được · lượt AI / tuyến AI
   hiện đúng · test xanh, screenshot app đã Read.
 - **Làm:** Setup trong app, CSP + capability tối thiểu, lưu bí mật qua `keyring`, license key (activate / validate / deactivate, 2 máy), dùng thử,
-  checkout + khôi phục mua mở trình duyệt ngoài, BYOK + tìm Claude Code / Codex / Ollama.
+  checkout + khôi phục mua mở trình duyệt ngoài, BYOK + tìm Claude Code / Codex.
 - **Không làm:** tài khoản / đăng nhập / deep link (bỏ 2026-10-26) · tính năng không có ở Web · Mac App Store / IAP Apple · làm trước khi Web xong Version 10.
 
 ## Global Constraints
@@ -46,7 +46,7 @@ Phase 24 (trang Setup). **Đổi 2026-10-26:** bỏ tài khoản → bỏ đăng
 ## Tasks
 
 ### Task 1: Setup trong app
-- [ ] `/setup` khi chạy trong app: Node + SQLite đã gói → chỉ kiểm key AI, Ollama, Claude in Chrome.
+- [ ] `/setup` khi chạy trong app: Node + SQLite đã gói → chỉ kiểm key AI, Claude in Chrome.
 
 ### Task 2: Kho bí mật
 - [ ] `secrets.rs` + bridge + migrate key cũ; grep thư mục dữ liệu không còn chuỗi key.
@@ -57,7 +57,7 @@ Phase 24 (trang Setup). **Đổi 2026-10-26:** bỏ tài khoản → bỏ đăng
 
 ### Task 4: Checkout + khôi phục mua + AI
 - [ ] Nút mua mở trình duyệt ngoài; Khôi phục mua = nhập email → nhà bán gửi lại key.
-- [ ] BYOK trong kho bí mật; tìm Claude Code / Codex / Ollama; lượt AI / tuyến hiện đúng.
+- [ ] BYOK trong kho bí mật; tìm Claude Code / Codex; lượt AI / tuyến hiện đúng.
 
 ### Task 5: CSP + quyền + phát hành
 - [ ] Đo domain → CSP; capability tối thiểu; thử tiêm script → bị CSP chặn. Phiếu Backlog 15 phần app.

@@ -35,7 +35,7 @@
   cỡ nào, difficulty từ số rating của top 10. Họ tự ghi: không phải số lượt tìm hằng tháng
 - **MCP:** server chạy trong app, **53 tool**, thêm vào Claude Code / Codex / Cursor / Claude Desktop / Windsurf bằng 1 bấm.
   Agent làm được cả việc ghi (thêm app, chạy kiểm hạng, audit, đẩy lên App Store Connect khi được bảo)
-- **AI:** không bán credit AI — app gọi Claude Code, Codex, OpenCode hoặc Ollama của người dùng. Phải nối được 1 AI mới
+- **AI:** không bán credit AI — app gọi Claude Code, Codex hoặc OpenCode của người dùng. Phải nối được 1 AI mới
   qua bước setup (từ bản 1.0.6)
 
 #### Mô hình phân phối — thứ đáng học
@@ -77,7 +77,7 @@ Số tải lấy từ GitHub API ngày 2026-10-26, đếm file `.dmg` / `Setup.e
 - File cài trên GitHub Releases public, app tự cập nhật — [Phase 37](app/phase-37-release-auto-update.md)
 - Windows ra bản Beta chưa ký trước — [Phase 36](app/phase-36-windows-app.md)
 - License key + 2 máy + tìm lại key bằng email, giá mua đứt bậc thang; **khác họ: có dùng thử** — [Version 10](web/version-10.md)
-- AI chạy trên thứ người dùng đã trả (Claude Code, Codex, Ollama, key riêng), không bán lượt AI — [Phase 27.7](web/phase-27-7-ai-cost-plans.md)
+- AI chạy trên thứ người dùng đã trả (Claude Code, Codex, key riêng), không bán lượt AI — [Phase 27.7](web/phase-27-7-ai-cost-plans.md)
 - MCP là điểm bán ngay trên landing — [Phase 27.3](web/phase-27-3-mcp.md)
 
 ## Đối tác

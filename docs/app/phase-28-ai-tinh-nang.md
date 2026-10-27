@@ -38,7 +38,7 @@ năng đó (ghi ở cột "Gắn với").
 - **AI đề xuất, người duyệt.** AI không tự đổi điểm, kết luận, trạng thái Project — hiện bản nháp + nút **Dùng** / **Bỏ**
 - **Lưu lại:** mỗi kết quả lưu DB kèm tuyến, model, ngày; tra lại chỉ gửi phần mới (review mới, bài mới)
 - **Tắt AI vẫn chạy:** nút AI xám "Nối AI để dùng", phần không AI giữ nguyên
-- **Một khuôn JSON cho mọi tuyến** (Claude Code, Codex, Ollama, key) — dùng `--json-schema` / `--output-schema` khi
+- **Một khuôn JSON cho mọi tuyến** (Claude Code, Codex, key) — dùng `--json-schema` / `--output-schema` khi
   CLI có, không thì kiểm JSON bằng code + thử lại 1 lần
 </div>
 

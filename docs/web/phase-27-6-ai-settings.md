@@ -11,7 +11,7 @@
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 6).** Trang Cài đặt AI: bật Claude API, chọn model, trần chi phí mỗi lần tra; tuyến B job Claude.
-Bước 0 Phase 6: tuyến C (Gemini Nano trong Chrome) chưa thử vì cần tải model; tuyến D (Ollama llama3.1 8B) bỏ vì kém.
+Bước 0 Phase 6: tuyến C (Gemini Nano trong Chrome) chưa thử vì cần tải model.
 </div>
 
 ## Làm gì
@@ -20,7 +20,6 @@ Bước 0 Phase 6: tuyến C (Gemini Nano trong Chrome) chưa thử vì cần t�
 |---|---|
 | :material-key-chain: **Nhiều nhà cung cấp** | Claude (mặc định) · Gemini Flash · OpenAI — mỗi cái nhập key riêng, nút "thử key"; chọn tuyến cho từng việc (chủ đề than, Feature Gap, khớp tên doanh thu) |
 | :material-google-chrome: **Thử lại tuyến C** | khi anh đồng ý tải model: Gemini Nano (Prompt API) chạy bài thử chuẩn của Phase 6 (110 review → chủ đề + câu nguyên văn), ghi chất lượng · thời gian |
-| :material-laptop: **Thử lại tuyến D** | model trên máy mới hơn qua Ollama / LM Studio, cùng bài thử; đạt mới bật |
 | :material-cash-multiple: **Sổ chi phí** | mỗi lần gọi AI ghi token vào / ra, tiền ước, việc gì, niche nào; tổng theo ngày / tháng, trần tháng |
 | :material-test-tube: **Bài thử chuẩn 1 bấm** | chạy cùng 1 bài trên mọi tuyến đang bật → bảng so sánh, để chọn tuyến bằng số |
 

@@ -42,7 +42,7 @@
 <span class="step__n">35</span>
 <div class="step__body">
 <h3>Phần riêng của app <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Setup trong app (tìm Claude Code / Codex / Ollama), CSP + quyền Tauri, key + ngày dùng thử trong Keychain, license key, mở checkout bằng trình duyệt ngoài.</p>
+<p>Setup trong app (tìm Claude Code / Codex), CSP + quyền Tauri, key + ngày dùng thử trong Keychain, license key, mở checkout bằng trình duyệt ngoài.</p>
 <a class="go" href="phase-35-app-only/">Xem chi tiết →</a>
 </div>
 </div>

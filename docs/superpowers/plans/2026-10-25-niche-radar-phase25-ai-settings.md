@@ -12,7 +12,7 @@
 - **Xong khi:** bảng bài thử chuẩn điền đủ các tuyến đã thử (số đo + ngày) · ≥ 2 nhà cung cấp chạy với key thật · sổ chi phí
   khớp trang tính tiền nhà cung cấp (sai ≤ 10%) · tắt hết AI → tính năng không AI vẫn chạy.
 - **Làm:** Claude · Gemini Flash · OpenAI (key riêng, nút thử key), chọn tuyến theo việc, thử lại tuyến C (Gemini Nano trong
-  Chrome) + D (Ollama / LM Studio), sổ chi phí ngày / tháng + trần tháng, bài thử chuẩn 1 bấm.
+  Chrome), sổ chi phí ngày / tháng + trần tháng, bài thử chuẩn 1 bấm.
 - **Không làm:** gói lượt AI kèm Pro (Phase 27.7) · key trong Keychain (Phase 35).
 
 ## Global Constraints
@@ -49,7 +49,6 @@
 
 ### Task 4: Bài thử chuẩn + tuyến C, D
 - [ ] `benchmark.ts` + bảng so.
-- [ ] Tuyến D: Ollama / LM Studio model mới (anh chọn, ghi dung lượng trước khi tải).
 - [ ] Tuyến C: hỏi anh trước khi Chrome tải Gemini Nano; chạy bài thử ở trình duyệt.
 
 ### Task 5: Chạy thật + soát

@@ -22,11 +22,11 @@ flowchart LR
 ## Làm gì
 
 > Bản Web xong phần dùng thử + license ở Version 10 trước, phase này gắn phần chỉ app mới có: lưu key + ngày dùng thử
-> trong Keychain, mở checkout bằng trình duyệt ngoài, tìm Claude Code / Codex / Ollama trên máy.
+> trong Keychain, mở checkout bằng trình duyệt ngoài, tìm Claude Code / Codex trên máy.
 
 | Việc | Tách từ |
 |---|---|
-| **Setup trong app** — Node + SQLite đã gói sẵn, chỉ kiểm phần tuỳ chọn (key AI, Ollama, Claude in Chrome) | [Phase 24](../web/phase-24-setup.md) |
+| **Setup trong app** — Node + SQLite đã gói sẵn, chỉ kiểm phần tuỳ chọn (key AI, Claude in Chrome) | [Phase 24](../web/phase-24-setup.md) |
 | **CSP chặt** cho WebView Tauri · chỉ mở quyền Tauri cần · key AI giữ trong **Keychain** | [Backlog 15](../web/phase-backlog-15-security-audit.md) |
 | **License key** mẫu RAM Rescue — kích hoạt khi không đăng nhập · **checkout** mở từ app | [Phase 32](../web/phase-32-payments.md) |
 | Nút **Khôi phục mua** trong app | [Phase 33](../web/phase-33-paywall-trial.md) |

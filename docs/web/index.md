@@ -242,7 +242,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 
 ## AI (Phase 27–28)
 
-AI là của người dùng (Claude Code, Codex, Ollama…), app không bán AI. Tắt AI vẫn chạy đủ phần không AI.
+AI là của người dùng (Claude Code, Codex, key riêng…), app không bán AI. Tắt AI vẫn chạy đủ phần không AI.
 Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ liệu · 27.6 Cài đặt AI · 27.7 AI của người dùng · 28.1 Tóm tắt niche.
 Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phép từng bước → 28.5 Brief + Spec + Plan (làm theo thứ tự này).
 
@@ -250,7 +250,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <div class="step" markdown>
 <span class="step__n">27</span>
 <div class="step__body">
-<h3>AI của bạn — Claude Code, Codex, Ollama trong app <span class="chip chip--doing">Đang làm · MCP + khung chat xong</span></h3>
+<h3>AI của bạn — Claude Code, Codex trong app <span class="chip chip--doing">Đang làm · MCP + khung chat xong</span></h3>
 <p>Cầu AI gọi AI người dùng đã có, thư mục AI có sẵn skill, MCP của app (27.3), khung chat (27.4), Cài đặt AI (27.6, 27.7), terminal nhúng.</p>
 <a class="go" href="../app/phase-27-ai-cua-ban/">Xem chi tiết →</a>
 </div>
@@ -283,7 +283,7 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 <span class="step__n">27.7</span>
 <div class="step__body">
 <h3>AI của người dùng <span class="chip chip--done">Xong · 2026-10-27</span></h3>
-<p>Gọi Claude Code / Codex / Ollama / key riêng; nút Kiểm tra hỏi thử 1 câu; mình không bán lượt AI.</p>
+<p>Gọi Claude Code / Codex / key riêng; nút Kiểm tra hỏi thử 1 câu; mình không bán lượt AI.</p>
 <a class="go" href="phase-27-7-ai-cost-plans/">Xem chi tiết →</a>
 </div>
 </div>
@@ -349,16 +349,16 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">29</span>
 <div class="step__body">
-<h3>Analytics + báo lỗi <span class="chip chip--todo">Chưa làm</span></h3>
-<p>9 sự kiện phễu (thêm dùng thử, nhập license), chỉ loại + số đếm, có hỏi đồng ý; báo lỗi tự động không cần server riêng.</p>
+<h3>Analytics + báo lỗi <span class="chip chip--done">Xong</span></h3>
+<p>6 sự kiện phễu + báo lỗi qua GA4, hỏi đồng ý lần đầu, không gửi chữ gõ. Dùng thử / license thêm ở Version 10.</p>
 <a class="go" href="phase-29-analytics-errors/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>
 <span class="step__n">30</span>
 <div class="step__body">
-<h3>Trang Riêng tư <span class="chip chip--todo">Chưa làm</span></h3>
-<p>Privacy Policy ghi đúng từng thứ app gửi đi, link trong app. Phần xoá tài khoản bỏ.</p>
+<h3>Trang Riêng tư <span class="chip chip--done">Xong</span></h3>
+<p>shotmatic.app/privacy ghi đúng 6 sự kiện app gửi, link trong app. Phần xoá tài khoản bỏ.</p>
 <a class="go" href="phase-30-privacy-delete/">Xem chi tiết →</a>
 </div>
 </div>

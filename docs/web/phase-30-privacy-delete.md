@@ -1,45 +1,37 @@
 # Phase 30 · Trang Riêng tư
 
-> Người tải app đọc được **trang Privacy** ghi đúng thứ app gửi đi. Đây là điều kiện để mở bán ở Version 10.
+> Người tải app đọc được **trang Privacy** ghi đúng thứ app gửi đi. Điều kiện để mở bán ở Version 10.
 >
 > **Đổi 2026-10-26:** bỏ tài khoản nên bỏ luôn phần **xoá tài khoản** và **xuất dữ liệu cloud** — không còn gì trên
 > cloud để xoá. Dữ liệu trên máy đã xuất / xoá được từ [Phase 8](phase-8-project-data.md).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 29</span>
+<span class="chip chip--done">Xong 2026-10-27</span>
 
-## Chạy thế nào
+Trang đã có sẵn ở [shotmatic.app/privacy](https://shotmatic.app/privacy) (app chạy local, AI, GitHub token, email,
+GA4 trên web, thanh toán sau). Phase này chỉ sửa mục **2. The Niche Radar app**: thay "No tracking in the app" bằng
+**số đo tuỳ chọn** — hỏi đồng ý, đúng 6 sự kiện của [Phase 29](phase-29-analytics-errors.md), không gửi chữ gõ, tắt ở
+Settings → Data & backup; mục 6 ghi Google Analytics nhận cả số đo app nếu đồng ý.
 
-```mermaid
-flowchart LR
-  E[Danh sách sự kiện<br/>Phase 29] --> P[Privacy Policy<br/>trên landing]
-  ER[Báo lỗi tự động<br/>Phase 29] --> P
-  L[License key<br/>Version 10] --> P
-  AI[AI của người dùng<br/>Claude Code · Codex · Ollama · key riêng] --> P
-  P --> A[Trong app<br/>link Privacy ở Cài đặt + màn hỏi đồng ý]
-```
+## Đã làm
 
-## Làm gì
-
-- **Privacy Policy** ghi đúng từng thứ gửi đi: 9 sự kiện ở [Phase 29](phase-29-analytics-errors.md), báo lỗi, kiểm
-  license + cập nhật app, chữ gửi tới AI do người dùng tự chọn. Ghi rõ: dữ liệu niche, project, key ở lại máy
-- **Đặt trang** trên landing (cùng chỗ trang tải app) và link trong app: Cài đặt + màn hỏi đồng ý lần đầu mở
-- **File:** trang Privacy ở landing (chỗ đặt chốt ở plan) · link trong `web/src/client/`
+- **Landing** (repo `nvminhtu/shotmatic`, `pages/privacy.jsx`): commit `125c4ad` lên `main`, live 2026-10-27
+- **Trong app:** link Privacy ở thanh hỏi đồng ý + mục Cài đặt → Data & backup (`PRIVACY_URL` trong `analytics.ts`)
 
 <div class="box box--star" markdown>
 **Xong khi**
 
-- Privacy Policy khớp danh sách sự kiện Phase 29 (đối chiếu từng dòng)
-- Mở app lần đầu → màn hỏi đồng ý có link Privacy, bấm mở đúng trang
-- Kiểm network log 1 phiên dùng thử: không có request nào ngoài danh sách trong Privacy
+- Privacy khớp danh sách sự kiện Phase 29 — đối chiếu từng dòng: 6 tên sự kiện, `platform`, version, mã ngẫu nhiên,
+  tên loại lỗi ✓
+- Thanh hỏi đồng ý có link Privacy, mở đúng trang ✓
+- Network 1 phiên: không request nào ngoài danh sách (kiểm ở Phase 29) ✓
+- shotmatic.app/privacy hiện mục mới sau deploy ✓
 </div>
 
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
 - Tài khoản, xoá tài khoản, xuất dữ liệu cloud — bỏ 2026-10-26
-- Thanh toán, license: [Version 10](version-10.md)
+- Tên nhà thanh toán, license: [Version 10](version-10.md)
 </div>
 
-[Tổng quan Version 9](version-9.md)
-
-Plan code chi tiết: [Phase 30](../superpowers/plans/2026-10-25-niche-radar-phase65-privacy-delete.md) (bản cũ có phần tài khoản — bỏ phần đó khi code)
+[← Phase 29](phase-29-analytics-errors.md) · [Tổng quan Version 9](version-9.md)

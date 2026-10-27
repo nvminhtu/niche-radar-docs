@@ -1,6 +1,6 @@
 # Phase 24 · Setup ngay trong Web
 
-> Máy người dùng có thể **thiếu đồ cài** (Node, gói dịch, Ollama, key AI…). Thay vì bắt đọc README, tool có sẵn
+> Máy người dùng có thể **thiếu đồ cài** (Node, gói dịch, key AI…). Thay vì bắt đọc README, tool có sẵn
 > **trang Setup**: hướng dẫn đúng máy đó, **nút Kiểm tra máy** báo cái gì đủ / thiếu, kèm **gói cài phù hợp**.
 > Kẹt chỗ nào thì có nút nhỏ **Hỏi AI** — xổ ra ChatGPT · Gemini · Claude · Perplexity, câu hỏi soạn sẵn.
 
@@ -41,7 +41,6 @@ flowchart LR
 **Tuỳ chọn**
 
 - **Key Claude API** — gọi thử 1 câu rẻ nhất · dẫn sang Cài đặt AI (Phase 6)
-- **Ollama** — `127.0.0.1:11434` trả lời + có model · link tải Ollama + lệnh `ollama pull`
 - **Claude in Chrome** — chỉ hướng dẫn (tool không đọc được trình duyệt) · link cài extension
 
 ## Làm gì
@@ -49,7 +48,7 @@ flowchart LR
 | | |
 |---|---|
 | :material-monitor-cellphone: **Nhận diện máy** | hệ điều hành + chip từ trình duyệt (lớp 1) hoặc server (lớp 2) — không hỏi người dùng |
-| :material-package-down: **Gói cài phù hợp** | mỗi mục thiếu có đúng 1 link chính chủ cho máy đó (nodejs.org, ollama.com…), không gói lại đồ người khác |
+| :material-package-down: **Gói cài phù hợp** | mỗi mục thiếu có đúng 1 link chính chủ cho máy đó (nodejs.org, developer.apple.com…), không gói lại đồ người khác |
 | :material-check-decagram: **Nút Kiểm tra máy** | API `GET /api/setup/check` → danh sách mục `ok / thiếu / sai bản` + 1 dòng cách sửa; bấm lại sau khi cài |
 | :material-robot-outline: **Hỏi AI ▾** | nút nhỏ cạnh mỗi mục lỗi; bấm xổ ra ChatGPT · Gemini · Claude · Perplexity, mở tab mới với câu hỏi soạn sẵn (máy, phiên bản, dòng lỗi) |
 | :material-content-copy: **Copy câu hỏi** | AI nào không nhận câu hỏi qua link (Gemini) → copy sẵn vào clipboard rồi mở trang |

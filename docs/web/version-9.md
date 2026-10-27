@@ -32,9 +32,9 @@ flowchart LR
 
 ## Các phase
 
-- [Phase 29 · Analytics + báo lỗi](phase-29-analytics-errors.md) — sự kiện phễu (thêm `trial_start`, `license_activate`),
-  báo lỗi tự động, có hỏi đồng ý
-- [Phase 30 · Trang Riêng tư](phase-30-privacy-delete.md) — Privacy Policy ghi đúng thứ gửi đi; phần xoá tài khoản bỏ
+- [Phase 29 · Analytics + báo lỗi](phase-29-analytics-errors.md) — ✅ 2026-10-27: 6 sự kiện phễu + báo lỗi qua GA4, có hỏi
+  đồng ý (`trial_start`, `license_activate` để Version 10)
+- [Phase 30 · Trang Riêng tư](phase-30-privacy-delete.md) — ✅ 2026-10-27: Privacy ghi đúng thứ gửi đi; phần xoá tài khoản bỏ
 
 <div class="box box--rules" markdown>
 **Luật**

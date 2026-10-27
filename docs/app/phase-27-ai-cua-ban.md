@@ -1,7 +1,7 @@
-# Phase 27 · AI của bạn — Claude Code, Codex, Ollama chạy ngay trong app
+# Phase 27 · AI của bạn — Claude Code, Codex chạy ngay trong app
 
 > **Không bán AI, không tự build AI, không trả tiền AI thay người dùng.** App gọi AI người dùng **đã trả tiền sẵn**
-> (gói Claude, ChatGPT / Codex) hoặc AI chạy trên máy (Ollama). Học đúng câu của Wow Keywords:
+> (gói Claude, ChatGPT / Codex) hoặc key riêng. Học đúng câu của Wow Keywords:
 > *"No second subscription — runs on the AI you already pay for."*
 
 <span class="chip chip--doing">Đang làm · Bước 0 + 26.1 Cầu AI + 26.2 Thư mục AI + 26.3 MCP + 26.4 Khung chat xong 2026-10-26 · 26.6 Cài đặt AI đang làm (nút AI chung + chọn AI từng việc + Gemini CLI code xong) · còn 26.5 Terminal (đợt 2)</span>
@@ -10,7 +10,7 @@
 **Hiện có — đỡ được 70 % việc.**
 
 - **Lớp AI chung (Phase 6)** `web/src/lib/ai/providers.ts`: mọi việc AI đi qua 1 hàm `Ask(system, user, schema) → JSON + số đo`.
-  Đã có 2 tuyến: Claude API (key) và Ollama. Các việc AI hiện có (chủ đề than, tóm tắt, test bán trước, Feature Gap)
+  Đã có tuyến Claude API (key). Các việc AI hiện có (chủ đề than, tóm tắt, test bán trước, Feature Gap)
   **chỉ cần thêm tuyến mới là chạy**, không sửa việc nào.
 - **Job file (tuyến B)**: xuất `.json` → Claude in Chrome / Claude Code đọc → dán kết quả lại. Chạy thật 5 niche, mọi câu
   trích khớp nguyên văn — nhưng phải tay đưa file qua lại.
@@ -34,7 +34,7 @@ flowchart TB
     SV --> MCP[niche-radar MCP<br/>đọc DB · ghi có duyệt]
     DB[(niche.db)] --- MCP
   end
-  BR -->|1 · nút AI 1 bấm<br/>headless + JSON schema| CLI[claude -p · codex exec<br/>opencode run · Ollama · key riêng]
+  BR -->|1 · nút AI 1 bấm<br/>headless + JSON schema| CLI[claude -p · codex exec<br/>opencode run · key riêng]
   BR -->|2 · khung chat<br/>stream-json, resume| CLI
   BR -->|3 · terminal nhúng<br/>xterm.js + PTY| TTY[claude / codex tương tác thật<br/>trong thư mục AI của app]
   CLI -. gọi tool .-> MCP
@@ -63,7 +63,6 @@ một hàm) trên từng tuyến. Ghi: chạy được không · JSON đúng khu
 | Codex 0.162.0 | `codex exec --json --output-schema <file> --ephemeral --skip-git-repo-check -s read-only` | như trên · đọc được MCP không |
 | OpenCode | `opencode run …` — **máy chưa cài, chưa xem cờ** | cài thử, ghi cờ thật |
 | Gemini CLI | `gemini -p …` — máy có cài | có đáng thêm không (Wow Keywords không có) |
-| Ollama | HTTP `localhost:11434` — đã có code | thử model mới hơn llama3.1 8B (Phase 6 đo kém: 1 chủ đề / 110 review) |
 | Key riêng (BYOK) | Claude API — đã có code | chạy thật lần đầu khi có key |
 
 ### Kết quả Bước 0 (đo 2026-10-26, MacBook M1 Pro 16 GB)
@@ -111,7 +110,7 @@ tính năng"); Claude Code gộp thành 7–9.
 - Claude Code ra nhiều token hơn (8–14k vs 1,4–2,2k) vì model nghĩ lâu hơn → thử `--effort low` khi làm A2.1, đo lại cùng bài
 - `--json-schema` (Claude Code) và `--output-schema` (Codex) đều cho JSON đúng 10/10 lần → **không cần** thử lại / sửa JSON bằng prompt
 
-**Chưa đo ở Bước 0:** OpenCode (máy chưa cài) · Gemini CLI · Ollama model mới · key riêng · MCP + khung chat (đo khi
+**Chưa đo ở Bước 0:** OpenCode (máy chưa cài) · Gemini CLI · key riêng · MCP + khung chat (đo khi
 làm A2.3 / A2.4). Mới đo **1 niche** — chạy thêm 2 niche khi làm việc 1 bấm ở Phase AI cho từng tính năng.
 
 <div class="box box--rules" markdown>
@@ -119,7 +118,7 @@ làm A2.3 / A2.4). Mới đo **1 niche** — chạy thêm 2 niche khi làm việ
 
 - **Không dùng `--bare`** của Claude Code: chế độ này chỉ nhận `ANTHROPIC_API_KEY`, bỏ OAuth → người dùng gói Claude
   sẽ báo chưa đăng nhập
-- Tuyến nào JSON sai khuôn > 1/5 hoặc câu trích khớp < 95 % → không bật, ghi lý do (như Phase 6 đã bỏ Ollama)
+- Tuyến nào JSON sai khuôn > 1/5 hoặc câu trích khớp < 95 % → không bật, ghi lý do
 - Ghi bảng kết quả vào chính trang này kèm ngày, như Bước 0 Phase 6
 </div>
 
@@ -129,11 +128,11 @@ làm A2.3 / A2.4). Mới đo **1 niche** — chạy thêm 2 niche khi làm việ
 
 - **Dò AI trên máy:** cổng sang Node đúng thứ tự tìm của Markdown Viewer — chỗ cài thường gặp → `nvm` → shell đăng nhập
   (`$SHELL -lic "command -v claude"`); Windows: `claude.exe` native → `npm\claude.cmd` (chạy `node cli.js`, không qua
-  `.cmd`) → `where`. Làm tương tự cho `codex`, `opencode`, `ollama`
+  `.cmd`) → `where`. Làm tương tự cho `codex`, `opencode`
 - **Kiểm tra thật:** nút **Kiểm tra** hỏi 1 câu ngắn có schema; "Sẵn sàng" chỉ khi trả JSON đúng. Lỗi gọi đúng tên:
   *chưa cài* (kèm lệnh cài 1 dòng) · *chưa đăng nhập* (mở Terminal chạy `claude` 1 lần) · *hết lượt / rate limit*
   (kèm giờ thử lại nếu CLI báo) · *key sai*
-- **Tuyến mới = `Ask` mới:** `claudeCodeAsk`, `codexAsk`, `opencodeAsk` cùng chữ ký với `claudeAsk` / `ollamaAsk` → mọi
+- **Tuyến mới = `Ask` mới:** `claudeCodeAsk`, `codexAsk`, `opencodeAsk` cùng chữ ký với `claudeAsk` → mọi
   việc AI cũ chạy được ngay, test bằng `Ask` giả như hiện có
 - **Hàng đợi:** 1 việc AI chạy một lúc (không bắn 10 tiến trình `claude` làm cạn lượt của người dùng), nút **Dừng** giết
   tiến trình, thoát app thì dọn hết tiến trình con (đã có bài học "server mồ côi" ở Phase 17)

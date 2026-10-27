@@ -18,7 +18,7 @@ mọi câu có trích dẫn đã kiểm.
   báo giá trước khi bấm lệch ≤ 30% so với `ai_calls`.
 - **Làm:** khung 6 mục, tỉ lệ khớp trích dẫn (câu trượt bị gạch), kiểm chéo, review nhiều thứ tiếng, chỉ gửi review mới,
   lịch sử bản tóm tắt, báo giá trước khi bấm (tuyến A), đo tuyến A khi có key.
-- **Không làm:** hỏi dữ liệu bằng lời (Phase 27.4) · tuyến AI mới hay thử lại Ollama (Phase 27.6 — Bước 0 Phase 6 đo Ollama kém).
+- **Không làm:** hỏi dữ liệu bằng lời (Phase 27.4) · tuyến AI mới (Phase 27.6).
 
 ## Global Constraints
 
@@ -72,7 +72,7 @@ mọi câu có trích dẫn đã kiểm.
 
 - 2026-10-25: viết plan. Tuyến B đã chạy 5 niche (47 chủ đề, mọi câu khớp). Tuyến A chưa có key.
 - 2026-10-26: review plan — tách Xong khi phần 1 (tuyến B) / phần 2 (key) để không bị chặn; dùng `review_seen` của Phase 18
-  thay bảng `review_hashes`; thêm báo giá trước khi bấm; ghi rõ Ollama không dùng (sang Phase 27.6).
+  thay bảng `review_hashes`; thêm báo giá trước khi bấm.
 
 ## Kết quả chạy thật
 

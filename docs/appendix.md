@@ -31,7 +31,7 @@ Anh chốt: **bán app Mac + Windows tải về + dùng thử + license**, học
 | CI cho PR, quy trình nhánh, build app trên CI | V7: 54, 57 · App 80 | không ra tiền | build + ký trên máy (`npm run mac`) |
 | Security audit, refactor, review 8.0 | V8: 58, 60, 61 | không ra tiền | bảo mật tối thiểu cho app bán ở [Phase 35](app/phase-35-app-only.md) |
 | Local App 3.0, 4.0 | App 76, 77 | gói theo version chậm | bản cập nhật qua [Phase 37](app/phase-37-release-auto-update.md) |
-| Gói lượt AI kèm Pro | phần của 69 | mình gánh tiền AI | AI người dùng đã có (Claude Code, Codex, Ollama, key riêng) |
+| Gói lượt AI kèm Pro | phần của 69 | mình gánh tiền AI | AI người dùng đã có (Claude Code, Codex, key riêng) |
 
 ## Không làm (từ trước)
 
