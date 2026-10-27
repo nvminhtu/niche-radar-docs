@@ -35,6 +35,7 @@ Theo Pha 1 của `/app-gtm`. Anh duyệt 5 dòng này **trước** khi dựng la
 | :material-target: **Định vị** | 5 dòng ở bảng trên, ghi vào `marketing/gtm.md` qua `/app-gtm` (Pha 0 điểm xuất phát + Pha 1) |
 | :material-emoticon-sad-outline: **3 nỗi đau** | lấy từ chính dữ liệu Reddit / review mà tool đọc được về "app idea", "niche". Mỗi nỗi đau có link nguồn |
 | :material-web: **Landing riêng** | `/oneclicktool-landing` trên oneclicktool.app (tiếng Anh): hook · video demo quay từ app thật · 3 nỗi đau · tính năng · giá khớp [Version 10](version-10.md) · FAQ · CTA |
+| :material-file-document-check: **Khúc cuối = Brief + Spec** | dải các bước kết bằng hồ sơ Brief + Spec + Plan, ảnh tab Brief thật + hồ sơ mẫu `.md` thật của 1 niche dogfood ([Phase 28.5](phase-28-5-brief-plan.md#tren-landing-demo-khach-nhin-la-hieu-khuc-cuoi-co-brief)) |
 | :material-email-outline: **Form email** | form trên landing + mồi một dòng. Anh tự mở tài khoản dịch vụ email |
 | :material-chart-line: **GA4 sự kiện** | `download`, `checkout_click`, `generate_lead`. Link đo nguồn dạng `?utm_source=<kênh>&utm_campaign=niche-radar` |
 | :material-check-decagram: **Kiểm** | `check_landing.py` tới 0 lỗi, mở trang xem tận mắt ở 1280 và 375 |

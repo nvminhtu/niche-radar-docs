@@ -35,12 +35,12 @@ Chấm mỗi ứng viên: **số người xin** (đếm từ góp ý) · **tác 
 | ~~Product Brief Export~~ | review 2026-10-25 | **gộp vào [Phase 15](phase-15-export.md) (2026-10-26)** — phần brief tính năng nằm trong gói cho LLM |
 | **Decision Engine Pro** (AI chấm các long-tail ngay trong app, 1 bấm) | review sản phẩm 2026-10-26 | bản miễn phí Copy prompt + dán JSON ở [Phase 16](phase-16-decision-board.md); chỉ làm khi fake-door 16b đạt ngưỡng |
 | **Email báo khi niche đổi** | review sản phẩm 2026-10-26 | báo trong app ở [Phase 42](phase-42-tracking.md); email cần máy chủ (sau Version 9); fake-door đo ở 16b |
-| **Niche → Spec / ASO** (PRD tóm tắt, title / subtitle / keyword field, 5 tính năng đối thủ bị chê) | review sản phẩm 2026-10-26 | sau khi 16b ra keyword BUILD; nối với `/app-spec`, `/app-listing` |
+| ~~Niche → Spec / ASO~~ | review sản phẩm 2026-10-26 | **gộp vào [Phase 28.5](phase-28-5-brief-plan.md) Brief + Spec + Plan (2026-10-27)** |
 | **Báo cáo chia sẻ** (PDF / link) | review sản phẩm 2026-10-26 | cho người cần show co-founder; giá trị thấp hơn, làm sau |
 | **Search volume trả phí** (DataForSEO, Keyword Planner) | Phase 9, Version 4 | chỉ khi review kết quả cho thấy cần số lượt tìm thật |
 | **Nguồn Chrome Web Store** | Phase 9 | cho người làm extension |
 | **Giá IAP nhiều nước** | Phase 9 | so giá theo thị trường |
-| **MCP của app** (`niche-radar-mcp`) | Phase 9 | Claude đọc DB, so niche, viết báo cáo từ Claude Desktop |
+| ~~MCP của app~~ | Phase 9 | **đọc: Phase 27 · 26.3 (xong 2026-10-26) · ghi + nhóm việc: [Phase 28.2](phase-28-2-mcp-write.md)** |
 | **Chia sẻ project / team** | Version 9, 10 | nhiều người cùng project, gói team |
 | **Engine AI thêm**: Perplexity, Copilot | Version 4 | khi có đường đo tự động ổn định |
 | **Bản Windows** | Version 3–7 | khi có người dùng thật xin |

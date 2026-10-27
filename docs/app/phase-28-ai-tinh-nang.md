@@ -13,6 +13,19 @@
 dán JSON ngược, kiểm mã nguồn bịa. **Thiếu:** chạy 1 bấm (đang phải xuất job / copy-dán) và AI cho các tính năng còn lại.
 </div>
 
+<div class="box box--star" markdown>
+**Thêm 2026-10-27 — 4 trang con, làm theo thứ tự**
+
+1. [28.2 · MCP đợt 2](../web/phase-28-2-mcp-write.md) — AI bên ngoài thêm / đề xuất cho niche, project, gap; nhóm việc
+   `health_niche_check`, `health_project_check`, `brief_pack` (cũng là ngữ cảnh cho nút AI)
+2. [28.3 · Bộ skill Shotmatic](../web/phase-28-3-skills.md) — giữ số; mỗi nút AI chạy 1 skill, nội dung plan riêng
+3. [28.4 · Nút AI đũa phép ở từng bước](../web/phase-28-4-ai-magic.md) — **bản đồ chỗ đặt** theo các bước đi tay; 4 nút đợt 1
+   dưới đây + Mở rộng niche, Kiểm sức khoẻ niche, Kiểm sức khoẻ project, Brief chạy qua cùng khung này
+4. [28.5 · Brief + Spec + Plan](../web/phase-28-5-brief-plan.md) — đầu ra cuối của Project, hỏi lại AI tới khi Chốt
+5. [28.6 · AI Agent](../web/phase-28-6-ai-agent.md) — trang Phiên săn: gõ lệnh, AI tra / loại / gom niche bằng tool 28.2,
+   cột trái là khối có sẵn theo dải ứng viên
+</div>
+
 **Cần xong trước:** [Phase 27](phase-27-ai-cua-ban.md) 26.1 (cầu AI) + 26.2 (thư mục AI). Từng dòng còn cần phase gốc của tính
 năng đó (ghi ở cột "Gắn với").
 

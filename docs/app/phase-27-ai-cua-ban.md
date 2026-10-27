@@ -173,7 +173,7 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
   `list_projects` / `get_project` · `get_competitor` · `get_complaints` · `get_gaps` (Reddit / Q&A / GitHub) · `get_decision`.
   Mọi kết quả kèm mã nguồn (id lượt tra, ngày, link) để AI trích lại được; cắt bớt + báo "còn X dòng"
 - **Tool ghi — chỉ 3, đợt 2:** `collect_to_project`, `start_research` (chạy tra niche mới), `save_ai_result` (ghi kết
-  quả vào khối, đi qua cùng hàm kiểm trích dẫn của app). Không có tool xoá
+  quả vào khối, đi qua cùng hàm kiểm trích dẫn của app). Không có tool xoá. Bộ đủ: [Phase 28.2](../web/phase-28-2-mcp-write.md)
 - **Nút "Thêm vào …" 1 bấm** trong Cài đặt → AI: chạy `claude mcp add niche-radar …` / ghi `~/.codex/config.toml` /
   ghi file cấu hình Claude Desktop — hiện lệnh sẽ chạy trước, bấm mới ghi. Trang Cách dùng có lệnh tay cho Cursor,
   Windsurf

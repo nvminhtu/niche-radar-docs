@@ -102,6 +102,11 @@ nav:
           - "Phase 27.7 · AI của người dùng": web/phase-27-7-ai-cost-plans.md
           - "Phase 28 · AI cho từng tính năng": app/phase-28-ai-tinh-nang.md
           - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
+          - "Phase 28.2 · MCP đợt 2 — AI cập nhật niche, project, gap": web/phase-28-2-mcp-write.md
+          - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
+          - "Phase 28.4 · Nút AI đũa phép ở từng bước": web/phase-28-4-ai-magic.md
+          - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
+          - "Phase 28.6 · AI Agent (chat ra lệnh, app làm)": web/phase-28-6-ai-agent.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md

@@ -84,7 +84,7 @@ def patch_mkdocs() -> None:
     text = text.replace("site_name: niche-radar", "site_name: Niche Radar", 1)
     if "site_url:" not in text:
         text = text.replace("docs_dir: docs", f"site_url: {SITE_URL}\nrepo_url: {REPO_URL}\ndocs_dir: docs", 1)
-    if "skills.md" not in text:
+    if "Skills: skills.md" not in text:
         text = text.replace("  - Cách dùng: cach-dung.md\n", "  - Cách dùng: cach-dung.md\n  - Skills: skills.md\n", 1)
     f.write_text(text, encoding="utf-8")
 

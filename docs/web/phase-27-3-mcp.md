@@ -50,7 +50,7 @@ flowchart LR
 <div class="box box--danger" markdown>
 **Không làm ở phase này**
 
-- Tool ghi (tạo project, collect) qua MCP — xét sau khi dùng thật
+- Tool ghi (tạo project, collect) qua MCP — plan ở [Phase 28.2](phase-28-2-mcp-write.md)
 - Hỏi dữ liệu bằng lời ngay trong UI — [Phase 27.4](phase-27-4-ai-cite-ask.md)
 </div>
 

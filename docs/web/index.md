@@ -244,6 +244,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 
 AI là của người dùng (Claude Code, Codex, Ollama…), app không bán AI. Tắt AI vẫn chạy đủ phần không AI.
 Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ liệu · 27.6 Cài đặt AI · 27.7 AI của người dùng · 28.1 Tóm tắt niche.
+Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phép từng bước → 28.5 Brief + Spec + Plan (làm theo thứ tự này).
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -300,6 +301,38 @@ Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ
 <h3>Tóm tắt niche + chủ đề than (AI) <span class="chip chip--todo">Chưa làm · plan 2026-10-25</span></h3>
 <p>Chạy tuyến A thật khi có key, tóm tắt khung 6 mục, trích dẫn đã kiểm, kiểm chéo với lời chê không AI, chỉ gửi review mới.</p>
 <a class="go" href="phase-28-1-ai-summary/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">28.2</span>
+<div class="step__body">
+<h3>MCP đợt 2 — AI cập nhật niche, project, gap <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
+<p>AI bên ngoài tra niche mới, gom vào project, xếp gap (thêm có hoàn tác · đề xuất chờ Dùng) + nhóm việc health_niche_check, health_project_check, brief_pack.</p>
+<a class="go" href="phase-28-2-mcp-write/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">28.3</span>
+<div class="step__body">
+<h3>Bộ skill Shotmatic <span class="chip chip--todo">Chưa plan · giữ số</span></h3>
+<p>Mỗi nút AI chạy 1 skill. Trang giữ số + danh sách skill các phase khác cần; nội dung skill plan riêng.</p>
+<a class="go" href="phase-28-3-skills/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">28.4</span>
+<div class="step__body">
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
+<p>Icon đũa phép ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Bản đồ chỗ đặt: 10 chỗ đợt 1.</p>
+<a class="go" href="phase-28-4-ai-magic/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">28.5</span>
+<div class="step__body">
+<h3>Brief + Spec + Plan — đầu ra cuối của Project <span class="chip chip--todo">Chưa làm · plan 2026-10-27</span></h3>
+<p>Hồ sơ 19 mục có báo cáo sức khoẻ niche + project, code điền số, AI viết lời; hỏi lại AI theo bản, khoá mục, tới khi Chốt.</p>
+<a class="go" href="phase-28-5-brief-plan/">Xem chi tiết →</a>
 </div>
 </div>
 </div>

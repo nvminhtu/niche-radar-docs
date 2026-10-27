@@ -81,7 +81,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 |---|---|---|---|
 | Đã xong | Google Play, App Store, Trends, Feature Gap, AI, validate, Project, i18n, Reddit / Q&A / GitHub Gap, Export, Bàn quyết định, app Mac 1.0 | 1–17 | <span class="chip chip--doing">Xong · 7, 11, 15, 16, 17 chờ chạy thật</span> |
 | Hoàn thiện Web | lời chê, ai là khách hàng, sức khoẻ niche, collect, project, trang Research, setup, UI, review cụm | 18–26 | <span class="chip chip--done">Xong 2026-10-26 · 5 việc chờ anh</span> |
-| AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng | 27–28 | <span class="chip chip--doing">Đang làm · 27: Cầu AI, Thư mục AI, MCP, Khung chat xong 2026-10-26 · Cài đặt AI đang làm (nút Chạy bằng AI chung, Gemini CLI) · 28 chưa làm</span> |
+| AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng · MCP đợt 2 · bộ skill · nút đũa phép từng bước · Brief + Spec + Plan (28.2–28.5) | 27–28 | <span class="chip chip--doing">Đang làm · 27: Cầu AI, Thư mục AI, MCP, Khung chat xong 2026-10-26 · Cài đặt AI đang làm (nút Chạy bằng AI chung, Gemini CLI) · 28 chưa làm</span> |
 | Bán | Version 9 analytics · Version 10 dùng thử + license · app Mac + Windows + tự cập nhật | 29–37 | <span class="chip chip--todo">Chưa làm</span> |
 | Sau bản bán | doanh thu, backup tự động, Explore, hồ sơ đối thủ, theo dõi, evidence, so sánh niche, tutorial | 38–45 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 46–49 | <span class="chip chip--todo">Chưa làm</span> |
