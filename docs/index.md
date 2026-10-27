@@ -84,7 +84,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 | AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng · MCP đợt 2 · bộ skill · nút đũa phép từng bước · Brief + Spec + Plan (28.2–28.5) | 27–28 | <span class="chip chip--doing">Đang làm · 27: Cầu AI, Thư mục AI, MCP, Khung chat xong 2026-10-26 · Cài đặt AI đang làm (nút Chạy bằng AI chung, Gemini CLI) · 28 chưa làm</span> |
 | Bán | Version 9 analytics · Version 10 dùng thử + license · app Mac + Windows + tự cập nhật | 29–37 | <span class="chip chip--todo">Chưa làm</span> |
 | Sau bản bán | doanh thu, backup tự động, Explore, hồ sơ đối thủ, theo dõi, evidence, so sánh niche, tutorial | 38–45 | <span class="chip chip--todo">Chưa làm</span> |
-| Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 46–49 | <span class="chip chip--todo">Chưa làm</span> |
+| Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 46–49 | <span class="chip chip--doing">Đang làm · 46 + 46.1 xong (shotmatic.app)</span> |
 | Version 2 | Demo site + YouTube, Amazon, Google Maps | 50–55 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 3 | So sánh đối thủ + AI Cite | 56–58 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 4 | Kệ Google, kệ AI, gói GEO | 59–63 | <span class="chip chip--todo">Chưa làm</span> |

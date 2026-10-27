@@ -107,6 +107,7 @@ nav:
           - "Phase 28.4 · Nút AI đũa phép ở từng bước": web/phase-28-4-ai-magic.md
           - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
           - "Phase 28.6 · AI Agent (chat ra lệnh, app làm)": web/phase-28-6-ai-agent.md
+          - "Phase 28.7 · AI Agent dễ nhìn": web/phase-28-7-ai-agent-ux.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md
@@ -126,7 +127,7 @@ nav:
           - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
       - "Version 11 · Marketing (Phase 46–49)":
           - Tổng quan Version 11: web/version-11.md
-          - "Phase 46 · Định vị + landing + email": web/phase-46-positioning-landing.md
+          - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
           - "Phase 46.1 · Landing shotmatic.app — Blog (SEO · AEO · GEO)": web/phase-46-1-landing-blog.md
           - "Phase 47 · Chọn 2 kênh": web/phase-47-two-channels.md
           - "Phase 48 · Dogfood làm nội dung": web/phase-48-dogfood-content.md

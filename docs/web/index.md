@@ -97,7 +97,7 @@ Mỗi phase đi theo [Quy trình build](../quy-trinh-build.md). Việc ngoài pl
 <div class="step" markdown>
 <span class="step__n">11</span>
 <div class="step__body">
-<h3>Reddit Gap <span class="chip chip--doing">Code xong 2026-10-25 (tuyến C: nhập file) · chờ anh nhập ≥ 500 bài r/MacOS thật</span></h3>
+<h3>Reddit Gap <span class="chip chip--todo">Tạm dừng · Reddit tắt RSS 11/2026, đóng API 3/2027 → thay bằng Phase 12 + 13</span></h3>
 <p>Lưu trang Reddit bằng Chrome (JSON hoặc HTML), nhập vào trang Reddit Gap → xếp chuyên mục + chủ đề, đếm chủ đề hỏi nhiều, quan tâm nhiều, chưa ai giải, kèm link bài gốc và xuất .md.</p>
 <a class="go" href="phase-11-reddit-gap/">Xem chi tiết →</a>
 </div>
@@ -337,6 +337,16 @@ Thêm 2026-10-27: 28.2 MCP đợt 2 → 28.3 Bộ skill → 28.4 Nút đũa phé
 </div>
 </div>
 
+
+## Phase 28.7 · AI Agent dễ nhìn
+
+<span class="chip chip--todo">Chưa làm · plan 2026-10-27</span>
+
+Tiếp nối [Phase 28.6 · AI Agent](phase-28-6-ai-agent.md): hiện AI và model thật, đóng/mở hướng dẫn,
+menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ thống nhất.
+
+[Xem plan Phase 28.7 →](phase-28-7-ai-agent-ux.md)
+
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
 Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app
@@ -474,7 +484,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <span class="step__n">V11</span>
 <div class="step__body">
 <h3>Marketing Plan <span class="chip chip--todo">Phase 46–49</span></h3>
-<p>Định vị + landing + email · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<p><a href="phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
 <a class="go" href="version-11/">Xem chi tiết →</a>
 </div>
 </div>

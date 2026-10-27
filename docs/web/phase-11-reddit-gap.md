@@ -4,7 +4,12 @@
 > xin app · tìm thay thế) và **chủ đề** (Bluetooth, pin, Finder, quản lý cửa sổ…) → đếm chủ đề nào **hỏi nhiều nhất,
 > được quan tâm nhất, chưa ai giải** → bảng gap kèm link bài gốc.
 
-<span class="chip chip--doing">Code xong 2026-10-25 (tuyến C: nhập file) · chờ anh nhập ≥ 500 bài r/MacOS thật</span>
+<span class="chip chip--todo">Tạm dừng 2026-10-27 · code xong 2026-10-25 (tuyến C: nhập file) nhưng nguồn Reddit không giải được</span>
+
+!!! warning "Tạm bỏ (anh chốt 2026-10-27)"
+    Research 2026-10-27: Reddit **tắt RSS từ 13/11/2026** và **đóng API 3/2027** — không còn đường lấy bài thật đều đặn,
+    vòng "nhập ≥ 500 bài r/MacOS thật" chưa chạy. Gap hỏi đáp lấy từ [Phase 12 · Q&A Gap](phase-12-qa-gap.md) và
+    [Phase 13 · GitHub Feature Request Gap](phase-13-github-gap.md) thay thế. Code tuyến C (nhập file) giữ nguyên trong app.
 
 <div class="box box--goal" markdown>
 **Vì sao làm, vì sao gấp.** Review store (Phase 1–4) chỉ cho biết người ta than app **đã có**. Reddit hỏi đáp cho biết

@@ -5,7 +5,7 @@
 > đúng màn hình Research / Explore đã có, số vẫn từ collector. Học cách làm của [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) nhưng giải bài khó riêng của
 > mình: **dữ liệu không cố định, mỗi câu lệnh có thể sinh niche mới.**
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-27</span>
+<span class="chip chip--doing">Code xong 2026-10-27 · nhánh phase28-6-ai-agent · chạy thật Claude Code + Codex · chờ anh review rồi merge</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đỡ được khoảng 60 % việc.**
@@ -25,6 +25,38 @@
 **Cần xong trước:** Phase 27 · 26.1–26.4 (✅ xong 2026-10-26) · [Phase 28.2](phase-28-2-mcp-write.md) mức Thêm (tool
 ghi + đường ghi qua máy chủ — **phase này không viết lại**, chỉ thêm phần riêng của phiên săn) · skill đợt 1 của
 [Phase 28.3](phase-28-3-skills.md) cho `/find-niches`.
+
+<div class="box box--star" markdown>
+**Kết quả (2026-10-27) — code xong ở nhánh `phase28-6-ai-agent`, chưa merge main**
+
+- **Trang** `/hunt` (danh sách + mở phiên từ 1 ý tưởng, gõ sẵn `/find-niches …`) và `/hunt/:id`: dải chip ứng viên (điểm v2 +
+  chấm màu gợi ý, % khi đang tra, ★ đã giữ, "Đã loại (n)"), khối Câu trả lời + Sức khoẻ của ứng viên đang chọn (dùng lại
+  `AnswerRow`, `HealthBlock`), nút Tra / Mở trang đầy đủ / Giữ / Loại bỏ (bắt buộc lý do) / Đưa về ứng viên, ô "+ thêm
+  keyword", nút **Tra nốt N ứng viên**. Chat AI ghim bên phải (40 % chiều ngang, chữ 15px), ≤ 900px thành tab
+- **Lối vào:** mục **AI Agent** ở menu, ngay sau "Q&A Gap" (main từng đặt nhãn trang Gap là "AI Hunt" — đổi về "Q&A Gap"
+  2026-10-27 vì trang Gap không chạy AI, đứng cạnh AI Agent dễ nhầm). < 1000px nằm trong "More features". Link "Or let the AI Agent find niches for you →" ở trang chủ. Bản demo tĩnh không có
+- **Gộp main trên máy (2026-10-27):** lấy Phase 10 English + menu mới của main; giữ Cài đặt AI v2, tool ghi 28.2, Hoàn tác lô
+  của origin và bọc `tr()` lại chỗ còn sót; "More features" có cả So 2 project (main) lẫn So sánh niche `/compare` (Phase 44).
+  Menu ≤ 720px: Cài đặt vào "More features" (nhãn dài làm tràn ngang) — không tràn ở 360–1920px
+- **Dữ liệu:** không bảng mới — phiên = project `kind = 'hunt'` (migration 0021: `kind`, `chat_session`), ứng viên = item
+  keyword Phase 21/22 (`ứng viên · giữ · loại`). Dòng thời gian + Hoàn tác đọc từ nhật ký project (`by: AI · …`)
+- **Tool của phiên** (chỉ khi MCP chạy kèm `NR_HUNT_ID`): `propose_candidates` · `keep_candidate` · `drop_candidate` (lý do +
+  `Research #id` có thật) · `suggest_view` (nút "Open" + tô khối `answer` / `health` — gộp `highlight` vào đây).
+  `start_research` trong phiên tự thành ứng viên; `create_project` / `tag_project` bị chặn; collect chỉ vào project của phiên
+- **Chat:** Claude Code nhận file `.mcp.json` tạm có `NR_HUNT_ID` (xoá sau lượt); Codex nhận env qua `-c` + duyệt sẵn tool
+  niche-radar (`default_tools_approval_mode="approve"`) — không có thì Codex từ chối `start_research` ("requires approval").
+  Công tắc "Cho AI thêm dữ liệu" tắt → chat phiên chỉ đọc, có nút bật ngay trong khung chat
+- **3 skill mới** trong thư mục AI: `/find-niches`, `/long-tail`, `/kill-weak` + mục "Hunt sessions" trong CLAUDE.md / AGENTS.md
+- **Khác plan:** cập nhật bằng hỏi lại mỗi 1,5 giây khi AI đang chạy / còn ứng viên đang tra (không SSE — đủ dùng, ít code);
+  4 tool thay vì 5 (`highlight` gộp vào `suggest_view`, thêm `keep_candidate`)
+- **Chạy thật** trên bản sao DB thật (35 lượt tra): Claude Code `/find-niches mac file cleanup for designers` → 25 giây, 11 lần
+  gọi tool, 7 ứng viên, gửi tra 3 (trần 28.2), bấm Tra nốt 4; `/kill-weak` → 36 giây, 15 lần gọi tool, loại 6 kèm điểm + số
+  đo thật, giữ `cache cleaner mac` (5/10 TEST THÊM, Research #41), gợi ý Open. Codex: thêm 2 long-tail + tra 29 giây
+- **Test:** `tests/hunt.test.ts` 11 test (lib, tool MCP, chặn ngoài phiên, chat 2 tuyến, API) · 455 test xanh · typecheck,
+  lint sạch · header không tràn ở 375–1920px · 1340 + 375 đã xem
+- **Còn lại:** 320–340px menu còn tràn 16–36px (máy rất cũ); tên / kết luận project người dùng tự gõ tiếng Việt vẫn là tiếng Việt
+  (dữ liệu, không dịch)
+</div>
 
 ## Bài khó: Wow Keywords sửa 1 thứ cố định, mình thì không
 
@@ -57,6 +89,31 @@ ghi + đường ghi qua máy chủ — **phase này không viết lại**, chỉ
   Mất: vẽ lại mọi khối đã làm ở Phase 1–26, hai bản số dễ lệch nhau. → **bỏ**
 - **C · Trang Hunt ghép khối cũ + neo Project** — dải ứng viên + khối có sẵn + chat ghim. Được: dùng lại ~80 % UI, số chỉ
   1 nguồn, lưu được như Project, quyền ghi chỉ ở 1 trang. Mất: thêm 1 route + 1 kiểu Project. → **chọn**
+
+## Flow 6 bước — AI Agent chạy cùng người dùng (thêm 2026-10-27)
+
+Mục tiêu: không bắt người dùng tự nghĩ lệnh. Trang AI Agent gợi ý sẵn 1 luồng; mỗi bước người dùng bấm 1 nút, AI của họ làm.
+Tới bước 6 là xong flow — có brief + spec mang đi làm app.
+
+| # | Bước | AI / app làm gì | Xong khi (đọc từ dữ liệu phiên) |
+|---|---|---|---|
+| 1 | **Tìm niche** | `/find-niches <ý tưởng>` — AI đề xuất 5–8 keyword, gửi tra | phiên có ≥ 1 ứng viên |
+| 2 | **Gói BEST** | AI giữ tối đa 3 niche tốt nhất (BUILD trước, điểm cao, đo nhiều), loại cái yếu — lý do có Research #id | có ≥ 1 niche **giữ** |
+| 3 | **Collect thêm** | `/long-tail` các niche đã giữ → 3 long-tail ít đối thủ hơn mỗi cái, gửi tra | có ứng viên thêm **sau** niche đã giữ |
+| 4 | **Health check** | còn ứng viên chưa tra → nút **Tra nốt N** (không tốn lượt AI); tra xong → **bảng sức khoẻ** (điểm v2, gợi ý, đã giữ) + AI đọc bảng | bước 3 xong + mọi ứng viên còn sống đã tra |
+| 5 | **Brief tính năng** | AI viết brief (vấn đề · ai dùng · 5–7 tính năng MVP từ lời chê / gap · khác đối thủ · Free/Pro · rủi ro), lưu bằng `add_project_note` mở đầu `BRIEF:` | có ghi chú AI `BRIEF:` chưa hoàn tác |
+| 6 | **Spec đề xuất** | AI viết spec (màn hình · luồng · Free vs Pro · dữ liệu · quyền · ngoài phạm vi · stack), lưu `SPEC:` | có ghi chú AI `SPEC:` chưa hoàn tác |
+
+- **Không lưu trạng thái riêng** — `flowState()` (`web/src/lib/hunt-flow.ts`) tính lại từ ứng viên + nhật ký AI; Hoàn tác 1 việc
+  của AI thì bước tự lùi. Test: `web/tests/hunt-flow.test.ts`.
+- **Trang `/hunt`:** 6 bước xếp 1 cột, mỗi bước 1 hình SVG nhẹ (`HuntFlowArt.tsx`) + tên + 1 câu giải thích.
+- **Trang `/hunt/:id`:** thanh 6 bước (✓ xong · cam = đang ở đây, bấm để xem lại bước cũ) + thẻ bước có hình + 1 nút gửi lệnh
+  cho chat AI bên phải (điện thoại: tự chuyển sang tab AI). Brief / Spec hiện ngay trong thẻ, có nút Copy.
+- **Không tự chạy** — mỗi bước người bấm (luật Phase 28: AI không chạy khi người dùng không bấm).
+- Brief / Spec ở đây là **bản đề xuất trong phiên** (≤ 2000 ký tự / ghi chú). Bản đầy đủ có Chốt + Gói Build là việc của
+  [Phase 28.5](phase-28-5-brief-plan.md).
+- Cùng đợt: mục **Nâng cao** trên trang Research gỡ "Cần đo thêm gì" + "Tự chấm 2 trục" (người dùng thấy rối) — tắt bằng
+  comment trong `HealthBlock.tsx`, API `score-manual` giữ nguyên, bật lại được.
 
 ## Trang Phiên săn trông thế nào
 
@@ -149,7 +206,8 @@ Research 1 keyword ~1 phút, Explore ~6 phút (đo Phase 3). AI **không đứng
 - **`propose_candidates`** · mức Thêm — thêm chip ứng viên chưa tra, mỗi cái 1 câu lý do. Hoàn tác: bỏ chip
 - **`drop_candidate`** · mức Thêm — loại ứng viên, bắt buộc lý do + mã nguồn (lý do loại của Phase 22). Hoàn tác: khôi phục
 - **`suggest_view`** · mức Đọc — hiện nút "Mở ứng viên 2" trong chat, **không tự đổi** trang đang xem
-- **`highlight`** · mức Đọc — tô 1 khối trong ứng viên đang xem ("xem lời chê này"), tự tắt
+- **`keep_candidate`** · mức Thêm — đánh dấu giữ, lý do + mã nguồn. Hoàn tác: về ứng viên
+- `highlight` gộp vào `suggest_view` (tham số `block`) khi làm — 1 tool ít hơn cho AI chọn
 
 **Không có tool:** xoá research, đổi điểm, đổi kết luận / BUILD-BỎ, đổi trạng thái Project, sửa ghi chú, chạy lệnh máy.
 
