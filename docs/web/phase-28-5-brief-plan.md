@@ -118,9 +118,39 @@ flowchart TB
 
 - **`.md`** 1 file 3 phần, giữ mã nguồn + bảng nguồn cuối file (link store, Reddit, GitHub, ngày)
 - **`.json`** theo schema — thêm vào [Định dạng file xuất](../export-schema.md)
-- **`SPEC.md` cho AI code:** phần B + C, bỏ bằng chứng dài, viết để Claude Code / Codex đọc rồi build. Copy hoặc lưu vào
-  thư mục AI (`briefs/<project>.md`)
+- **Gói Build `.zip`** cho AI code — xem mục dưới. Copy hoặc lưu vào thư mục AI (`briefs/<project>/`)
 - PDF / link chia sẻ: để [Version 12](version-12.md) (Báo cáo chia sẻ)
+
+## Gói Build — đúng khuôn `app-spec`, đưa agent là code được
+
+Bản chốt xuất thêm **1 file .zip** theo đúng khuôn của dây chuyền `app-spec` (repo app-AI-skills): chép vào thư mục app,
+chạy `/app-spec` để duyệt rồi đi tiếp `/app-design` → dựng project. Không có repo đó thì dán cả gói cho Claude Code /
+Codex. Chỉ bật khi bàn quyết định có **đúng 1 BUILD** và hồ sơ đã **Chốt**.
+
+- **`brief.md`** — khuôn `context-ai/brief.md`: `# Tên — 1 câu` · Làm gì · Cho ai / lúc nào · Khác đối thủ · Thu tiền ·
+  Nền tảng · MVP · Research · `## Prompt — màn hình chính`. Lấy từ mục 1–5, 11, 14, 15 + 1 prompt mockup tiếng Anh
+- **`spec.md`** — khuôn `templates/spec.md`: `Approved: no` · `## App` · `## MVP` · `## Màn hình` · `## Dữ liệu` ·
+  `## Quyền` · `## Ngoài phạm vi v1`. Lấy từ mục 9, 10, 12, 15; Dữ liệu và Quyền AI viết thêm lúc dựng gói
+- **`plan-mvp.md`** — khuôn `plan/active/plan-mvp.md`: frontmatter + P1 màn tĩnh · P2 data/logic · P3 nối · P4 visual,
+  mỗi phase có **Xong khi**. Lấy từ mục 17, mỗi việc trỏ về 1 dòng MVP
+- **`evidence.md`** — gói Phase 15 phạm vi Project + bản chốt bàn quyết định. Mọi mã `[C] [P] [G] [S] [K] [T]` dùng ở 3
+  file trên tra được ở đây
+- **`README.md`** — chép file nào vào đâu, lệnh chạy tiếp
+
+**Khác `.md` hồ sơ ở chỗ nào:** MVP thành **lát cắt chạy được một mình** (màn hình + logic + dữ liệu + test), dòng
+`- [ ]` để bước build tick; stack chọn theo nền tảng (Mac → `macos`, điện thoại → `flutter`, SaaS → `web`); bundle id để
+trống kèm gợi ý.
+
+**Code kiểm trước khi dựng** (sai báo đúng chỗ, không xuất):
+
+- MVP 4–7 lát cắt, mỗi lát dẫn ≥ 1 mã `P` hoặc `G` có thật
+- Mô hình tiền khác Free → bắt buộc lát Paywall + màn Paywall; có đăng nhập → bắt buộc lát xoá tài khoản (Apple 5.1.1(v))
+- Mỗi quyền có lý do + lúc xin; mỗi màn có Free / Pro; ngoài phạm vi ≥ 3 dòng
+- Tên tạm không là tên loại app bão hoà, không chứa Apple / Mac / iPhone / iPad / iOS (Apple 4.3, 5.2.5)
+- Luôn `Approved: no` — CỔNG 2 là của người dùng
+
+**Khuôn:** Niche Radar giữ bản sao khuôn trong `web/src/lib/build-pack/templates/` (ghim ngày) + test so heading với bản
+gốc, để khuôn bên app-AI-skills đổi thì test đỏ.
 
 ## Trên landing + demo — khách nhìn là hiểu khúc cuối có brief
 
@@ -152,7 +182,10 @@ flowchart TB
 - 3 project thật có hồ sơ đủ 19 mục (hoặc ghi "chưa đủ dữ liệu" đúng chỗ), ≥ 95 % câu trích khớp, 0 số do AI đưa
 - Hỏi lại 3 vòng trên 1 project: mỗi vòng ra bản mới, xem được khác gì, mục khoá giữ nguyên (test + chạy thật)
 - Chốt → chụp số; giả lập số đổi → banner hiện đúng các số đổi
-- Xuất `.md` / `.json` / `SPEC.md` mở được; `.json` qua test schema
+- Xuất `.md` / `.json` mở được; `.json` qua test schema
+- Gói Build của 2 project thật chép vào app-AI-skills: `python3 scripts/app.py status <slug>` nhận bước 3 là `CHƯA · N tính
+  năng · chưa Approved: yes`, không `invalid`; 100 % mã trong gói tra được ở `evidence.md`
+- Một agent mới (không lịch sử chat) đọc Gói Build và bắt đầu P1, hỏi lại ≤ 2 câu về màn hình / dữ liệu / phạm vi
 - Không nối AI → tab vẫn dùng được với phần số + viết tay, chốt được
 - Landing + demo có ảnh và hồ sơ mẫu thật (kiểm khi làm Phase 46, 50)
 </div>
@@ -161,7 +194,8 @@ flowchart TB
 **Không làm ở phase này**
 
 - PDF / link chia sẻ / team (Version 12, Backlog)
-- Build app từ spec ngay trong tool
+- Build app từ spec ngay trong tool; chạy `app.py init` hay tạo project thay người dùng
+- `design.md`, ảnh mockup, `money.md` đầy đủ trong Gói Build — để `/app-design`, `/app-mockup`, `/app-money`
 - AI đoán lượt tải / doanh thu cho app mới
 - Mẫu hồ sơ theo ngành (để sau khi có góp ý)
 - Hồ sơ có thuộc gói trả phí không — quyết ở [Phase 31](phase-31-money-model.md); trang này chỉ ghi là ứng viên

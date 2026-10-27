@@ -36,19 +36,20 @@ Phase 18, 38 làm số Đau / Tiền tốt hơn nếu đã xong.
 ## Tasks
 
 ### Task 1: Hàng + luật
-- [ ] `compare-niche.ts`: Cơ hội (số keyword Top cơ hội, điểm cao nhất) · Đối thủ (số app, sao TB top 10, app bỏ bê) · Xu hướng
+- [x] `compare-niche.ts`: Cơ hội (số keyword Top cơ hội, điểm cao nhất) · Đối thủ (số app, sao TB top 10, app bỏ bê) · Xu hướng
       (Trends 12 tháng, mùa vụ) · Đau (số chủ đề than, review 1–2★) · Tiền (% app thu phí, khoảng giá, verified) · Nguồn mới (chưa tra).
-- [ ] Test: luật thắng từng hàng; ô `null` không tính.
+- [x] Test: luật thắng từng hàng; ô `null` không tính.
 
 ### Task 2: API + xuất
-- [ ] `GET /compare` 2–4 run (khác → 400). CSV (BOM, `csvCell`) + Markdown (bảng + link `/r/:id`).
+- [x] `GET /compare` 2–4 run (khác → 400). CSV (BOM, `csvCell`) + Markdown (bảng + link `/r/:id`).
 
 ### Task 3: Trang
-- [ ] Chọn niche từ lịch sử; bảng tô ô thắng, đếm hàng thắng; ô bấm mở chi tiết; "tra lại trước khi so" cho niche cũ.
+- [x] Chọn niche từ lịch sử; bảng tô ô thắng, đếm hàng thắng; ô bấm mở chi tiết; "tra lại trước khi so" cho niche cũ.
 
 ### Task 4: Soát
-- [ ] So 3 niche thật; kiểm tay 10 ô → ghi vào đây. Screenshot 1340 (4 niche) + 375, Read. Chip, ROADMAP, CHANGELOG.
+- [x] So 3 niche thật; kiểm tay 10 ô → ghi vào đây. Screenshot 1340 (4 niche) + 375, Read. Chip, ROADMAP, CHANGELOG.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-10-27: làm xong theo giao diện khối So sánh trên landing (thẻ niche + tab). Khác plan: không API riêng, xuất ở trình duyệt — ghi ở mục Đã làm của [trang phase](../../web/phase-44-compare-niche.md).

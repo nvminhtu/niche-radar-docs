@@ -452,7 +452,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">44</span>
 <div class="step__body">
-<h3>So sánh niche <span class="chip chip--todo">Chưa làm · sau Phase 26</span></h3>
+<h3>So sánh niche <span class="chip chip--done">Xong sớm 2026-10-27</span></h3>
 <p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
 <a class="go" href="phase-44-compare-niche/">Xem chi tiết →</a>
 </div>

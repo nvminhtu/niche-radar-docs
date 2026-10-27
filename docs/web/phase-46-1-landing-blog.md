@@ -5,7 +5,12 @@
 > (ChatGPT, Perplexity, Gemini, Claude) đọc được, trích được. Khuôn học từ blog oneclicktool.app và playbook
 > *AI Search Visibility* của Product Growth Hack.
 
-<span class="chip chip--doing">Đang làm · 2026-10-26 · tách khỏi Phase 46 (landing đã live trước)</span>
+<span class="chip chip--done">Xong · live 2026-10-27 · 7 bài · 5 chuyên mục · 2 trang</span>
+
+**Kết quả (2026-10-27):** [shotmatic.app/blog](https://shotmatic.app/blog) · trang 2 [/blog/page/2](https://shotmatic.app/blog/page/2) ·
+chuyên mục [SEO](https://shotmatic.app/blog/category/seo) · [AEO](https://shotmatic.app/blog/category/aeo) · [GEO](https://shotmatic.app/blog/category/geo) ·
+bản .md mỗi bài (`text/markdown`) · [llms.txt](https://shotmatic.app/llms.txt) · [llms-full.txt](https://shotmatic.app/llms-full.txt) · [rss.xml](https://shotmatic.app/blog/rss.xml).
+Thêm bài = thêm 1 file `content/blog/<slug>.md` ở repo shotmatic, push main (prebuild tự sinh .md, RSS, llms, sitemap).
 
 ## Chạy thế nào
 
