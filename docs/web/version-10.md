@@ -4,7 +4,7 @@
 > hết hạn thì nhập **license key** mua đứt. Không tài khoản, dữ liệu ở máy. Mô hình học từ
 > [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) (chốt 2026-10-26), khác ở chỗ **mình có dùng thử**.
 
-<span class="chip chip--todo">Chưa làm · sau Version 9</span>
+<span class="chip chip--doing">Code xong 2026-10-28 · Phase 31 + 32 + 33 · chờ sản phẩm Lemon Squeezy để mua thử + đơn đầu tiên</span>
 
 ## Mục tiêu
 

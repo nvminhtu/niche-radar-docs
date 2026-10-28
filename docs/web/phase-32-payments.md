@@ -6,7 +6,7 @@
 >
 > **Đổi 2026-10-26:** bỏ webhook + Cloud Functions + quyền Pro trên tài khoản Firebase. Học Wow Keywords: license key là đủ.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 31</span>
+<span class="chip chip--done">Xong 2026-10-28 · plan + checklist cửa hàng · code gắn ở Phase 33</span>
 
 ## Chạy thế nào
 
@@ -51,6 +51,34 @@ Lemon Squeezy tự đếm số máy và từ chối khi vượt giới hạn.
 - Claude tạo tài khoản Lemon Squeezy, nhập ngân hàng / thuế, bấm bán thật
 - Dùng thử, paywall (Phase 33)
 </div>
+
+## Kết quả (2026-10-28)
+
+Phase này chốt **cách nối** và **việc anh làm trên Lemon Squeezy**. Code license (activate / validate / deactivate) viết
+chung với màn mua ở [Phase 33](phase-33-paywall-trial.md) — tách ra thì không có màn nào để thử.
+
+### Việc của anh trên Lemon Squeezy (Claude không làm thay)
+
+Dùng lại cửa hàng **icecraft** đang bán RAM Rescue (ngân hàng, thuế đã xong).
+
+1. **Products → New product:** tên `ShotMatic Pro`, giá **$39.99**, *Single payment*
+2. Bật **Generate license keys** · *Activation limit* **2** · *License length* **Unlimited**
+3. Phần mô tả: "Lifetime license for ShotMatic for Mac · 2 Macs · free 1.x updates"
+4. Bật **Test mode** → mua thử 1 lần bằng thẻ test → giữ key để thử ở Phase 33
+5. Gửi Claude 2 thứ: **link checkout** (`https://icecraft.lemonsqueezy.com/checkout/buy/…`) và **Product ID** (số, ở trang sản phẩm)
+
+Chưa có 2 thứ trên thì app vẫn build được: nút **Mua** hiện xám "Sắp mở bán", ô nhập key vẫn chạy.
+
+### Hợp đồng code (Phase 33 làm theo)
+
+| | |
+|---|---|
+| API Lemon Squeezy | `POST https://api.lemonsqueezy.com/v1/licenses/activate` · `/validate` · `/deactivate` — không cần API key, không webhook |
+| Kiểm đúng sản phẩm | `meta.product_id` khớp Product ID đã cấu hình → key của RAM Rescue không mở được ShotMatic |
+| Lưu trên máy | `license.json` trong thư mục dữ liệu app (key, instance id, lần kiểm cuối) |
+| Kiểm lại | khi mở app, tối đa 1 lần / ngày · mất mạng vẫn Pro tới 14 ngày từ lần kiểm được cuối |
+| Hoàn tiền / tắt key | lần kiểm sau trả `valid: false` → về hết dùng thử, dữ liệu giữ nguyên |
+| Cấu hình | `web/src/lib/license/config.ts`: giá, số ngày thử, link checkout, Product ID |
 
 [Tổng quan Version 10](version-10.md)
 
