@@ -5,7 +5,7 @@
 > hoặc key riêng) nhận **đúng thứ đang xem** + chạy **đúng skill của việc đó** → trả bản nháp có mã nguồn → người bấm
 > **Dùng / Bỏ / Hỏi lại**.
 
-<span class="chip chip--doing">Đang làm · đợt 1a code xong 2026-10-28 trên nhánh phase28-4-ui-easy (5 nút ✦ mở Hỏi AI) · chờ anh review rồi merge</span>
+<span class="chip chip--doing">Đang làm · đợt 1a xong 2026-10-28 · đã merge main (5 nút ✦ mở Hỏi AI) · còn đợt 1b</span>
 
 <div class="box box--goal" markdown>
 **Hiện có.** `web/src/components/AiRunButton.tsx`: đũa phép + chữ "Chạy bằng AI" + ô chọn AI, gắn ở 4 khối (Chủ đề than,
