@@ -1,4 +1,4 @@
-# Niche Radar Backlog 14 — Quy trình nhánh — Implementation Plan
+# ShotMatic Backlog 14 — Quy trình nhánh — Implementation Plan
 
 > **For agentic workers:** phase về quy trình, ít code. Steps dùng checkbox (`- [ ]`). Claude không tự merge / gắn tag khi anh chưa đồng ý,
 > không tự đổi cài đặt bảo vệ nhánh.

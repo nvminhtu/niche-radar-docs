@@ -149,20 +149,20 @@ trống kèm gợi ý.
 - Tên tạm không là tên loại app bão hoà, không chứa Apple / Mac / iPhone / iPad / iOS (Apple 4.3, 5.2.5)
 - Luôn `Approved: no` — CỔNG 2 là của người dùng
 
-**Khuôn:** Niche Radar giữ bản sao khuôn trong `web/src/lib/build-pack/templates/` (ghim ngày) + test so heading với bản
+**Khuôn:** ShotMatic giữ bản sao khuôn trong `web/src/lib/build-pack/templates/` (ghim ngày) + test so heading với bản
 gốc, để khuôn bên app-AI-skills đổi thì test đỏ.
 
 ## Đồng bộ sau khi chốt — kéo bản mới, sửa tiếp, không đè nhau
 
 Gói Build không phải xuất 1 lần rồi thôi. Sau khi chép vào thư mục app, người dùng (hoặc agent) vẫn **kéo bản mới
-nhất** từ Niche Radar và **sửa tiếp** được nhiều vòng. Hai đường: **MCP** (agent tự gọi) và **lệnh pull** (gõ tay /
+nhất** từ ShotMatic và **sửa tiếp** được nhiều vòng. Hai đường: **MCP** (agent tự gọi) và **lệnh pull** (gõ tay /
 script). Không canh thư mục, không ghi thẳng vào thư mục app khi người dùng chưa gọi.
 
 ### Ai giữ file nào
 
 | File | Nguồn sự thật | Chiều đồng bộ |
 |---|---|---|
-| `brief.md` · `evidence.md` | Niche Radar | NR → app (pull). Sửa ở app → đề xuất ngược, chờ **Dùng** |
+| `brief.md` · `evidence.md` | ShotMatic | NR → app (pull). Sửa ở app → đề xuất ngược, chờ **Dùng** |
 | `spec.md` | NR **tới khi** `Approved: yes` · sau đó là app | Trước CỔNG 2: như brief. Sau CỔNG 2: NR chỉ đọc |
 | `plan-mvp.md` | App (bước build tick `- [ ]`) | NR chỉ đọc để hiện tiến độ — không bao giờ ghi |
 
@@ -201,7 +201,7 @@ Thêm vào [Phase 28.2](phase-28-2-mcp-write.md):
   giữ nguyên. Người dùng (hoặc agent) gộp tay rồi xoá `.incoming`
 - `spec.md` đã `Approved: yes` · `plan-mvp.md` → bỏ qua, in "app giữ file này"
 - `--push` → gửi bản trên đĩa về NR như `propose_brief_revision`
-- NR không mở → báo đúng câu "Mở Niche Radar rồi chạy lại", không đoán
+- NR không mở → báo đúng câu "Mở ShotMatic rồi chạy lại", không đoán
 
 ### Số đổi sau khi chốt
 

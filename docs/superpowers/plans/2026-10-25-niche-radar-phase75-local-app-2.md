@@ -1,4 +1,4 @@
-# Niche Radar Phase 34 — Local App 2.0 (bản bán đầu tiên) — Implementation Plan
+# ShotMatic Phase 34 — Local App 2.0 (bản bán đầu tiên) — Implementation Plan
 
 > **For agentic workers:** chỉ làm khi bản Web **xong Version 10** (dùng thử + license chạy ở Web). Chỉ gói thứ đã xong ở Web, không thêm tính năng.
 > Build chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`).

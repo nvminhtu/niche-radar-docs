@@ -1,4 +1,4 @@
-# Niche Radar Phase 27.4 — Hỏi dữ liệu (AI Cite) — Implementation Plan
+# ShotMatic Phase 27.4 — Hỏi dữ liệu (AI Cite) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).

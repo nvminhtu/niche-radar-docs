@@ -1,4 +1,4 @@
-# Niche Radar Backlog 07 — UI + DB nhanh — Implementation Plan
+# ShotMatic Backlog 07 — UI + DB nhanh — Implementation Plan
 
 > **For agentic workers:** chỉ sửa chỗ Backlog 05 **đo ra chậm**. Mỗi Task xong thì `npm run check` xanh + `bench:compare` không tệ đi rồi commit.
 > Steps dùng checkbox (`- [ ]`).

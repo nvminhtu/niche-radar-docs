@@ -1,4 +1,4 @@
-# Niche Radar Phase 35 — Phần riêng của app (license, dùng thử, bảo mật) — Implementation Plan
+# ShotMatic Phase 35 — Phần riêng của app (license, dùng thử, bảo mật) — Implementation Plan
 
 > **For agentic workers:** chỉ làm sau Phase 34 (bản bán đầu) và khi bản Web xong Version 10 (dùng thử + license chạy ở Web).
 > Build Mac chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`). Không nhập key / mật khẩu thay anh, không bấm bán thật.

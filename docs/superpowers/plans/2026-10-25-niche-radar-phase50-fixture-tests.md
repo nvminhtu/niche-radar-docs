@@ -1,4 +1,4 @@
-# Niche Radar Backlog 08 — Test collector bằng fixture — Implementation Plan
+# ShotMatic Backlog 08 — Test collector bằng fixture — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit. Không sửa test cho xanh khi code sai.
 > Steps dùng checkbox (`- [ ]`).

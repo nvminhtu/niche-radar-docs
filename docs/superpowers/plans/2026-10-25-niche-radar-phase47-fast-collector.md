@@ -1,4 +1,4 @@
-# Niche Radar Backlog 06 — Collector nhanh hơn — Implementation Plan
+# ShotMatic Backlog 06 — Collector nhanh hơn — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh + `npm run bench:compare` không tệ đi rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không gọi nhanh hơn giới hạn, không proxy.

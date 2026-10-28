@@ -1,4 +1,4 @@
-# Niche Radar Backlog 21 — Build app Mac trên CI — Implementation Plan
+# ShotMatic Backlog 21 — Build app Mac trên CI — Implementation Plan
 
 > **For agentic workers:** Claude viết workflow đọc secret **theo tên**, không bao giờ đọc, in hay đổi giá trị. Anh tạo chứng chỉ và nhập GitHub Secrets.
 > Steps dùng checkbox (`- [ ]`).

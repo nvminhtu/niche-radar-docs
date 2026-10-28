@@ -24,7 +24,7 @@ nút Thêm 1 bấm cho Claude Code · Codex · Claude Desktop · Cursor · Winds
 flowchart LR
   AI[Claude Code · Codex<br/>Claude Desktop · Cursor · Windsurf] -->|MCP stdio| M[niche-radar MCP]
   M -->|đọc| DB[(niche.db<br/>read-only)]
-  M -->|ghi · nhóm việc| SV[Máy chủ Niche Radar<br/>127.0.0.1 + token]
+  M -->|ghi · nhóm việc| SV[Máy chủ ShotMatic<br/>127.0.0.1 + token]
   SV --> K[Cùng hàm ghi + hàm kiểm<br/>của giao diện]
   K -->|thêm, hoàn tác được| DB2[(niche.db)]
   K -->|cần phán xét| Q[Hộp AI đề xuất<br/>Dùng / Bỏ]
@@ -107,11 +107,11 @@ Thiếu vẫn cho viết brief — brief ghi rõ mục thiếu ([Phase 28.5](pha
 
 ## Ghi đi đường nào
 
-- **Đọc:** như đợt 1 — mở DB read-only, không cần Niche Radar đang mở
-- **Ghi + nhóm việc:** MCP **không tự ghi SQLite**, mà gọi API máy chủ của Niche Radar (127.0.0.1 + token). Lý do: 1 chỗ
+- **Đọc:** như đợt 1 — mở DB read-only, không cần ShotMatic đang mở
+- **Ghi + nhóm việc:** MCP **không tự ghi SQLite**, mà gọi API máy chủ của ShotMatic (127.0.0.1 + token). Lý do: 1 chỗ
   ghi duy nhất, dùng lại hàm ghi + hàm kiểm của giao diện, tra niche mới đi chung hàng đợi collector, giao diện thấy ngay
-- **Token:** mỗi lần mở, Niche Radar ghi file token vào thư mục dữ liệu (chỉ người dùng đọc được); MCP đọc file đó.
-  Chưa mở → tool ghi trả "Mở Niche Radar để AI ghi được — tool đọc vẫn dùng được"
+- **Token:** mỗi lần mở, ShotMatic ghi file token vào thư mục dữ liệu (chỉ người dùng đọc được); MCP đọc file đó.
+  Chưa mở → tool ghi trả "Mở ShotMatic để AI ghi được — tool đọc vẫn dùng được"
 - **Gắn nhãn tool theo chuẩn MCP:** tool đọc `readOnlyHint: true`, tool thêm `destructiveHint: false` → Claude Code /
   Claude Desktop hỏi người dùng trước khi gọi tool ghi. Nút Thêm 1 bấm **không** tự cho tool ghi vào danh sách được phép
 
@@ -132,7 +132,7 @@ Thiếu vẫn cho viết brief — brief ghi rõ mục thiếu ([Phase 28.5](pha
 ## Bước 0 — đo trước khi xây
 
 - Thêm 1 tool ghi thử (`add_project_note`), gọi từ Claude Code, Codex, Claude Desktop: client có hỏi quyền không,
-  `clientInfo` có tên client không, Niche Radar tắt thì lỗi hiện ra sao
+  `clientInfo` có tên client không, ShotMatic tắt thì lỗi hiện ra sao
 - Cùng câu "kiểm sức khoẻ Research #25": `health_niche_check` 1 lần gọi vs AI tự gọi tool đọc → thời gian, token, số
   câu trích khớp. Ghi bảng vào trang này kèm ngày
 - Chốt ngưỡng bảng kiểm project trên 3 project thật
@@ -140,7 +140,7 @@ Thiếu vẫn cho viết brief — brief ghi rõ mục thiếu ([Phase 28.5](pha
 <div class="box box--star" markdown>
 **Xong khi**
 
-- Mọi tool có test trên fixture DB; quyền ghi tắt → tool ghi bị chặn; Niche Radar tắt → báo đúng câu trên
+- Mọi tool có test trên fixture DB; quyền ghi tắt → tool ghi bị chặn; ShotMatic tắt → báo đúng câu trên
 - Claude Code bên ngoài: "Tra niche `plant care`, gom 10 keyword điểm cao nhất vào project mới *Plant*" → chạy hết,
   nhật ký có đúng 1 lô, Hoàn tác xoá đúng lô đó
 - `health_niche_check` + `health_project_check` ra cùng số với giao diện trên 3 niche / 3 project thật

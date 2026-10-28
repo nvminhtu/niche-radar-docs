@@ -102,6 +102,9 @@ nav:
           - "Phase 28.4 · Nút AI đũa phép ở từng bước": web/phase-28-4-ai-magic.md
           - "Phase 28.6 · AI Agent (chat ra lệnh, app làm)": web/phase-28-6-ai-agent.md
           - "Phase 28.7 · AI Agent dễ nhìn": web/phase-28-7-ai-agent-ux.md
+          - "Phase 28.8 · Trang niche + Explorer": web/phase-28-8-niche-ui-polish.md
+          - "Phase 28.9 · AI Agent xịn — xuất .md, gợi ý gập, chat có nút": web/phase-28-9-ai-agent-pro.md
+          - "Phase 28.10 · Bàn quyết định nhìn là hiểu": web/phase-28-10-decision-board-easy.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md

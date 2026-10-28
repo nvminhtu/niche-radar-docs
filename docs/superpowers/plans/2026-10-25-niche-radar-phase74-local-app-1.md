@@ -1,4 +1,4 @@
-# Niche Radar Phase 17 — Local App 1.0 (app Mac) — Implementation Plan
+# ShotMatic Phase 17 — Local App 1.0 (app Mac) — Implementation Plan
 
 > **For agentic workers:** phần lớn đã xong (2026-10-25, `.dmg` ký + notarize). Còn lại là **kiểm trên máy sạch**. Build chỉ bằng `npm run mac`.
 > Steps dùng checkbox (`- [ ]`).

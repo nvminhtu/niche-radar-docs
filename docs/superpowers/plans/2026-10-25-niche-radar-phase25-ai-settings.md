@@ -1,4 +1,4 @@
-# Niche Radar Phase 27.6 — Cài đặt AI + tuyến miễn phí, sổ chi phí — Implementation Plan
+# ShotMatic Phase 27.6 — Cài đặt AI + tuyến miễn phí, sổ chi phí — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không nhập key thay anh, không tự tải model lớn.

@@ -1,4 +1,4 @@
-# Niche Radar Backlog 12 — Test chức năng thật + chụp màn kết quả — Implementation Plan
+# ShotMatic Backlog 12 — Test chức năng thật + chụp màn kết quả — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

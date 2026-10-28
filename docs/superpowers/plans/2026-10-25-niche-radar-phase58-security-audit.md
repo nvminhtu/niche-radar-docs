@@ -1,4 +1,4 @@
-# Niche Radar Backlog 15 — Kiểm + vá bảo mật — Implementation Plan
+# ShotMatic Backlog 15 — Kiểm + vá bảo mật — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi mục vá xong thì `npm run check` xanh (có test giữ lại) rồi commit.
 > Steps dùng checkbox (`- [ ]`). Claude không đọc, in hay đổi giá trị key của anh.

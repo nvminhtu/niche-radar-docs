@@ -19,7 +19,7 @@ Không cần tài khoản, không cần key. AI là tuỳ chọn.
     - Mac chip Apple (M1 trở lên): chọn **macOS Installer (ARM64)**
     - Mac chip Intel: chọn **macOS Installer (x64)**
 3. **Kiểm** — mở Terminal mới, chạy `node -v`. Ra `v20.19` trở lên là được.
-4. **Chạy tool** — trong thư mục Niche Radar bạn nhận được: `npm run setup` rồi `npm run dev`, mở `http://localhost:3200`.
+4. **Chạy tool** — trong thư mục ShotMatic bạn nhận được: `npm run setup` rồi `npm run dev`, mở `http://localhost:3200`.
 
 </div>
 
@@ -30,7 +30,7 @@ Không cần tài khoản, không cần key. AI là tuỳ chọn.
 1. **Node.js LTS** — tải bộ cài `.msi` ở [nodejs.org/en/download](https://nodejs.org/en/download) (Windows Installer x64; máy ARM chọn ARM64).
    Ở bước "Tools for Native Modules", **tick** ô cài thêm công cụ dịch (tự cài Visual Studio Build Tools + Python).
 2. **Kiểm** — mở PowerShell mới, chạy `node -v`. Ra `v20.19` trở lên là được.
-3. **Chạy tool** — trong thư mục Niche Radar bạn nhận được: `npm run setup` rồi `npm run dev`, mở `http://localhost:3200`.
+3. **Chạy tool** — trong thư mục ShotMatic bạn nhận được: `npm run setup` rồi `npm run dev`, mở `http://localhost:3200`.
 
 </div>
 

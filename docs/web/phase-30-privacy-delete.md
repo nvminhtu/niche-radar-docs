@@ -8,7 +8,7 @@
 <span class="chip chip--done">Xong 2026-10-27</span>
 
 Trang đã có sẵn ở [shotmatic.app/privacy](https://shotmatic.app/privacy) (app chạy local, AI, GitHub token, email,
-GA4 trên web, thanh toán sau). Phase này chỉ sửa mục **2. The Niche Radar app**: thay "No tracking in the app" bằng
+GA4 trên web, thanh toán sau). Phase này chỉ sửa mục **2. The ShotMatic app**: thay "No tracking in the app" bằng
 **số đo tuỳ chọn** — hỏi đồng ý, đúng 6 sự kiện của [Phase 29](phase-29-analytics-errors.md), không gửi chữ gõ, tắt ở
 Settings → Data & backup; mục 6 ghi Google Analytics nhận cả số đo app nếu đồng ý.
 

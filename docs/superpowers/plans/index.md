@@ -30,8 +30,8 @@ Plan cũ (đã code xong): [Phase 1](2026-10-24-niche-radar-phase1-explorer.md) 
 - [Backlog 01 — Account + Flow người dùng](2026-10-25-niche-radar-phase30-account.md)
 - [Phase 24 — Setup ngay trong Web](2026-10-25-niche-radar-phase30-1-setup.md)
 - [Phase 45 — Tutorial trong Web (nút ?)](2026-10-25-niche-radar-phase30-2-tutorial.md)
-- [Niche Radar Phase 12 — Q&A Gap (Stack Exchange + Hacker News)](2026-10-26-niche-radar-phase10b-qa-gap.md)
-- [Niche Radar Phase 13 — GitHub Feature Request Gap](2026-10-26-niche-radar-phase10c-github-gap.md)
+- [ShotMatic Phase 12 — Q&A Gap (Stack Exchange + Hacker News)](2026-10-26-niche-radar-phase10b-qa-gap.md)
+- [ShotMatic Phase 13 — GitHub Feature Request Gap](2026-10-26-niche-radar-phase10c-github-gap.md)
 
 ## Version 2
 

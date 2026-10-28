@@ -1,4 +1,4 @@
-# Niche Radar Phase 24 — Setup ngay trong Web — Implementation Plan
+# ShotMatic Phase 24 — Setup ngay trong Web — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` + `npm run docs:build` xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool chỉ hướng dẫn + kiểm, không tự cài, không `sudo`.

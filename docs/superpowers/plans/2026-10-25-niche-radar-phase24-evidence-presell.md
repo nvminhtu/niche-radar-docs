@@ -1,4 +1,4 @@
-# Niche Radar Phase 43 — Evidence pack + test bán trước — Implementation Plan
+# ShotMatic Phase 43 — Evidence pack + test bán trước — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Tool không tự đăng bài, không chạy quảng cáo, không thu tiền.

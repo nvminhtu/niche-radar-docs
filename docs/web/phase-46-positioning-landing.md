@@ -1,6 +1,6 @@
 # Phase 46 · Landing shotmatic.app — định vị + email
 
-> Viết **một câu** nói rõ Niche Radar cho ai, giải quyết gì, khác tool khác ở đâu. Rồi dựng **chỗ của mình**:
+> Viết **một câu** nói rõ ShotMatic cho ai, giải quyết gì, khác tool khác ở đâu. Rồi dựng **chỗ của mình**:
 > landing riêng **[shotmatic.app](https://shotmatic.app)** + form email + đo lượt bấm. Có chỗ này trước thì mọi bài đăng
 > sau mới đếm được người về.
 

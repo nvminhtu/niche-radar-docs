@@ -299,6 +299,33 @@ menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ 
 
 [Xem plan Phase 28.7 →](phase-28-7-ai-agent-ux.md)
 
+## Phase 28.8 · Trang niche + Explorer
+
+<span class="chip chip--doing">Đang làm · D + E xong 2026-10-28 · còn B, C, A</span>
+
+Ưu tiên sửa cuộn bảng/cây và trạng thái rỗng có nút; thu gọn giải thích, làm rõ điểm và độ phủ,
+biến TEST MORE / BUILD / SKIP thành bước tiếp có điều kiện. Không đổi công thức tính.
+
+[Xem plan Phase 28.8 →](phase-28-8-niche-ui-polish.md)
+
+## Phase 28.9 · AI Agent xịn — xuất .md, gợi ý gập, chat có nút
+
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7</span>
+
+Thêm bước Plan và tải Brief / Spec / Plan thành file `.md` (từng file + cả bộ, có bảng nguồn); gợi ý dài gập còn 1 câu
+có nút ⓘ; chat trả lời có format, nút hành động một bấm và ô nhập chọn model tại chỗ — học khung Wow Keywords.
+
+[Xem plan Phase 28.9 →](phase-28-9-ai-agent-pro.md)
+
+## Phase 28.10 · Bàn quyết định nhìn là hiểu
+
+<span class="chip chip--done">Xong 2026-10-28 · phương án B (2 đèn)</span>
+
+Mỗi keyword mở đầu bằng 2 dòng trả lời: **Nên làm không?** và **Độ phủ keyword dày hay thưa** (lấy từ điểm v2 sẵn có);
+mỗi trục 1 hàng icon · mức màu · 1 con số; dẫn chứng và chấm tay 1–5 gập vào Chi tiết. Không đổi công thức.
+
+[Xem plan Phase 28.10 →](phase-28-10-decision-board-easy.md)
+
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
 Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app
@@ -414,7 +441,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">44</span>
 <div class="step__body">
-<h3>So sánh niche <span class="chip chip--done">Xong sớm 2026-10-27</span></h3>
+<h3>So sánh niche <span class="chip chip--skip">Không làm · ẩn khỏi app (code giữ)</span></h3>
 <p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
 <a class="go" href="phase-44-compare-niche/">Xem chi tiết →</a>
 </div>
@@ -422,7 +449,7 @@ Vào app bằng bản cập nhật tự động (Phase 37), thứ tự từ trê
 <div class="step" markdown>
 <span class="step__n">45</span>
 <div class="step__body">
-<h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--skip">Không làm</span></h3>
 <p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
 <a class="go" href="phase-45-tutorial/">Xem chi tiết →</a>
 </div>

@@ -1,4 +1,4 @@
-# Niche Radar Phase 45 — Tutorial trong Web (nút ?) — Implementation Plan
+# ShotMatic Phase 45 — Tutorial trong Web (nút ?) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Hình do Codex sinh (`codex_image.sh`), Claude không tự vẽ.

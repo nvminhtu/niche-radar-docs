@@ -1,4 +1,4 @@
-# Niche Radar Phase 28.1 — Tóm tắt niche + chủ đề than (AI) — Implementation Plan
+# ShotMatic Phase 28.1 — Tóm tắt niche + chủ đề than (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không nhập key thay anh. **Task 1–4 + 6 làm bằng tuyến B, không cần key**; chỉ Task 5

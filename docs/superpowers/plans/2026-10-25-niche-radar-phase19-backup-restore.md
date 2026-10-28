@@ -1,4 +1,4 @@
-# Niche Radar Phase 39 — Backup / restore dữ liệu — Implementation Plan
+# ShotMatic Phase 39 — Backup / restore dữ liệu — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Test chạy trên thư mục tạm (`NR_DATA_DIR`), không đụng DB thật.

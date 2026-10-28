@@ -1,4 +1,4 @@
-# Niche Radar Backlog 02 — Lớp tài khoản trên máy — Implementation Plan
+# ShotMatic Backlog 02 — Lớp tài khoản trên máy — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Migration luôn backup trước, đếm dòng trước / sau.

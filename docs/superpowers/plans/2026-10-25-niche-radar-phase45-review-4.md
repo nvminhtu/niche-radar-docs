@@ -1,4 +1,4 @@
-# Niche Radar Phase 63 — Review Version 4 — Implementation Plan
+# ShotMatic Phase 63 — Review Version 4 — Implementation Plan
 
 > **For agentic workers:** phase **chỉ soát + sửa** Phase 59–44. Mỗi lỗi sửa xong `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

@@ -1,6 +1,6 @@
 # App Mac + Windows · sản phẩm để bán (Phase 17, 34–37)
 
-> **Chốt 2026-10-26:** Niche Radar đến tay khách bằng **app Mac + Windows tải về**, dùng thử rồi mua license — mô hình
+> **Chốt 2026-10-26:** ShotMatic đến tay khách bằng **app Mac + Windows tải về**, dùng thử rồi mua license — mô hình
 > học từ [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords). Bản Web vẫn chạy local (`npm run dev`) để **test tính năng**;
 > app **bọc lại đúng giao diện Web** bằng Tauri (code ở `app/`), không viết UI lần hai.
 > Mọi việc riêng của app (gói, ký, Keychain, license key, Windows, auto-update) chỉ nằm ở mục này.

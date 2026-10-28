@@ -1,4 +1,4 @@
-# Niche Radar Phase 41 — Hồ sơ đối thủ + cờ đối thủ yếu — Implementation Plan
+# ShotMatic Phase 41 — Hồ sơ đối thủ + cờ đối thủ yếu — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).

@@ -1,4 +1,4 @@
-# Niche Radar Backlog 17 — Review bảo mật + bản 8.0 — Implementation Plan
+# ShotMatic Backlog 17 — Review bảo mật + bản 8.0 — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Claude không tự gắn tag 8.0 khi anh chưa đồng ý.
 

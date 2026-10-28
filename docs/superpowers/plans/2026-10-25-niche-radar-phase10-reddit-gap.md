@@ -1,4 +1,4 @@
-# Niche Radar Phase 11 — Reddit Gap — Implementation Plan
+# ShotMatic Phase 11 — Reddit Gap — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 trượt → dừng cả phase, ghi lý do vào `docs/appendix.md`.

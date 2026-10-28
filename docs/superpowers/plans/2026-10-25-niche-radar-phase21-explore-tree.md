@@ -1,4 +1,4 @@
-# Niche Radar Phase 40 — Explore: cây keyword + bản đồ ngách — Implementation Plan
+# ShotMatic Phase 40 — Explore: cây keyword + bản đồ ngách — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`).

@@ -1,4 +1,4 @@
-# Niche Radar Phase 31 — Mô hình tiền — Implementation Plan
+# ShotMatic Phase 31 — Mô hình tiền — Implementation Plan
 
 > **For agentic workers:** phase **đo + viết**, không code thanh toán. Steps dùng checkbox (`- [ ]`). Không bịa giá, không hứa doanh thu.
 > Anh duyệt `money.md` — Claude không tự ghi `Approved`.

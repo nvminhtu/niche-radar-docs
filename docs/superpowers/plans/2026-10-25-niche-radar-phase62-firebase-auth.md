@@ -1,4 +1,4 @@
-# Niche Radar Backlog 03 — Firebase Auth — Implementation Plan
+# ShotMatic Backlog 03 — Firebase Auth — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Anh tạo project Firebase / Apple Developer cấu hình; Claude nối code, không nhập thanh toán.

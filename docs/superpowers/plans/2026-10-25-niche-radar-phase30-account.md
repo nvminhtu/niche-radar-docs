@@ -1,4 +1,4 @@
-# Niche Radar Backlog 01 — Account + Flow người dùng — Implementation Plan
+# ShotMatic Backlog 01 — Account + Flow người dùng — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). License key chỉ làm khi đã có quyết định bán (Version 10).

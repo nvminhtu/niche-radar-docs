@@ -58,7 +58,7 @@ flowchart LR
 
 - Nút nhỏ `Hỏi AI ▾` ở cuối dòng lỗi, không che nội dung.
 - Bấm → menu dọc 4 dòng, mỗi dòng logo + tên. Bấm lại hoặc bấm ra ngoài thì đóng.
-- Câu hỏi mẫu: *"Tôi dùng macOS 15 chip Apple. Cài Niche Radar báo: `<dòng lỗi>`. Node hiện tại 18.20. Sửa thế nào, từng bước?"*
+- Câu hỏi mẫu: *"Tôi dùng macOS 15 chip Apple. Cài ShotMatic báo: `<dòng lỗi>`. Node hiện tại 18.20. Sửa thế nào, từng bước?"*
 - Dùng chung một component `AskAi` để Phase 45 và các trang lỗi khác gắn lại được.
 
 <div class="box box--star" markdown>

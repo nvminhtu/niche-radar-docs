@@ -60,7 +60,7 @@ ghi + đường ghi qua máy chủ — **phase này không viết lại**, chỉ
 
 ## Bài khó: Wow Keywords sửa 1 thứ cố định, mình thì không
 
-| | Wow Keywords | Niche Radar |
+| | Wow Keywords | ShotMatic |
 |---|---|---|
 | Đang làm trên gì | **1 listing** của 1 app (tên, subtitle, keyword) | **nhiều niche**, mỗi câu lệnh có thể sinh niche mới |
 | AI thay đổi gì | chữ trong vài ô | cả danh sách niche + mỗi niche một trang dữ liệu riêng |

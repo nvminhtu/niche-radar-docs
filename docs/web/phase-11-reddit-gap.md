@@ -53,7 +53,7 @@ Xếp lúc đọc, sửa luật là bảng đổi ngay, không phải nhập l�
 |---|---|
 | Lấy dữ liệu bằng API chính thức? | **Khó.** Theo các blog bên thứ ba, từ 11/2025 Reddit đóng tự đăng ký API ("Responsible Builder Policy"): app mới phải xin duyệt, hay bị im lặng hoặc từ chối. Máy chưa có key cũ (`.env.local` không còn `REDDIT_*`). Chưa đọc được tài liệu chính chủ của Reddit — **chưa xác nhận** |
 | Lấy bằng `.json` công khai (không key)? | **Không tin được.** Một blog nói từ 30/05/2026 trả 403 — chưa kiểm chứng. Và trên máy này `www.reddit.com` bị DNS trả về `127.0.0.1` (bị chặn ở mạng) nên chưa đo tay được |
-| Lấy bằng Claude in Chrome (Chrome thật của anh, đã đăng nhập)? | **Khả thi nhất.** Cùng kiểu job TrustMRR ở [Phase 6](phase-6-ai-web.md): Claude mở trang top / search của subreddit, đọc tiêu đề + điểm + số comment + flair + comment top, ghi ra file `.json`, Niche Radar nhập vào. Chậm (≈ 100 bài / vài phút) nhưng không cần key. **Cần thử Chrome có vào được reddit.com không** (mạng đang chặn DNS) |
+| Lấy bằng Claude in Chrome (Chrome thật của anh, đã đăng nhập)? | **Khả thi nhất.** Cùng kiểu job TrustMRR ở [Phase 6](phase-6-ai-web.md): Claude mở trang top / search của subreddit, đọc tiêu đề + điểm + số comment + flair + comment top, ghi ra file `.json`, ShotMatic nhập vào. Chậm (≈ 100 bài / vài phút) nhưng không cần key. **Cần thử Chrome có vào được reddit.com không** (mạng đang chặn DNS) |
 | Có đủ dữ liệu để thống kê không? | r/MacOS rất đông và hỏi đáp mỗi ngày. Top năm + top tháng + 6–8 câu search mẫu ≈ 600–1.000 bài — đủ để đếm chủ đề. Số thật: **chưa đo** |
 | Phân loại không cần AI được không? | Được ở mức thô: chuyên mục bắt bằng mẫu câu ("how do I", "is there an app", "alternative to", "not working", "after updating") + flair. Chủ đề bắt bằng từ điển ~40 chủ đề Mac. Bài không khớp → thùng "khác", tuyến A (AI) gán sau nếu có key |
 
@@ -110,7 +110,7 @@ Claude in Chrome vẫn 0 trình duyệt nối với app → chưa đọc tự đ
 **Bước 0 qua một nửa.** Đã biết: Reddit vào được bằng Chrome. Chưa biết: đọc tự động được ≥ 100 bài / trang và đủ
 trường (điểm, comment, flair, ngày). Việc tiếp: sửa đường nối extension ↔ app (tắt hẳn Chrome mở lại, mở khung Claude,
 khởi động lại app Claude / session mới) rồi chạy job đọc 100 bài. Phương án dự phòng: tuyến C — anh lưu trang
-(hoặc dán `top.json?t=year&limit=100` mở trong Chrome) thành file, Niche Radar nhập vào.
+(hoặc dán `top.json?t=year&limit=100` mở trong Chrome) thành file, ShotMatic nhập vào.
 
 ### Bước 1 · Lấy bài
 

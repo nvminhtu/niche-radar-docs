@@ -1,4 +1,4 @@
-# Niche Radar Phase 47 — Chọn 2 kênh — Implementation Plan
+# ShotMatic Phase 47 — Chọn 2 kênh — Implementation Plan
 
 > **For agentic workers:** phase **chấm + chọn**, không code, không đăng. Steps dùng checkbox (`- [ ]`). Anh duyệt.
 

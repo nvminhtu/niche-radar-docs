@@ -1,4 +1,4 @@
-# Niche Radar Phase 46 — Định vị + landing + email — Implementation Plan
+# ShotMatic Phase 46 — Định vị + landing + email — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Steps dùng checkbox (`- [ ]`). Landing ở repo oneclicktool.app (tiếng Anh 100%),
 > media host ở repo `app-demo` (không để trong `public/`). Anh mở tài khoản email; Claude không đăng bài.
@@ -17,7 +17,7 @@ Phase 11 / 18 (dữ liệu nỗi đau).
 
 ## Global Constraints
 
-- File GTM: `marketing/gtm.md` của Niche Radar (tạo bằng `/app-gtm`, khung + checker `check_gtm.py` của App-AI-Skills).
+- File GTM: `marketing/gtm.md` của ShotMatic (tạo bằng `/app-gtm`, khung + checker `check_gtm.py` của App-AI-Skills).
 - 3 nỗi đau lấy bằng chính tool: Reddit Gap (Phase 11) / lời chê (Phase 18) về "app idea", "niche research" — mỗi nỗi đau 1 link nguồn.
 - Landing: skill `/oneclicktool-landing` (layout riêng, đủ khối bán hàng), đường dẫn `oneclicktool.app/niche-radar`; video demo quay từ app thật
   (`/app-video`), host ở `app-demo`. Giá lấy đúng `money.md`.

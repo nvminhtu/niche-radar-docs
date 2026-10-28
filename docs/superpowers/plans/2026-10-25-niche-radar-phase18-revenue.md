@@ -1,4 +1,4 @@
-# Niche Radar Phase 38 — Doanh thu thật: TrustMRR + nguồn khác + AI — Implementation Plan
+# ShotMatic Phase 38 — Doanh thu thật: TrustMRR + nguồn khác + AI — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Task 0 làm trước hết.

@@ -1,4 +1,4 @@
-# Niche Radar Phase 14 — Research nguồn tìm gap — Implementation Plan
+# ShotMatic Phase 14 — Research nguồn tìm gap — Implementation Plan
 
 > **For agentic workers:** phase **chỉ research, không code**. Mỗi Task xong thì `npm run docs:build` (strict) xanh rồi
 > commit. Steps dùng checkbox (`- [ ]`). Không đăng ký, không trả phí, không nhập key, không cài MCP chưa đọc code.
@@ -10,7 +10,7 @@
 ## Mục tiêu · làm · không làm
 
 - **Xong khi:** trang **Bản đồ nguồn gap** ≥ 30 nguồn đủ 6 tiêu chí + kết luận + link + ngày kiểm · ≥ 10 MCP và ≥ 10 repo
-  / tool đã kiểm · ≥ 8 phương pháp ghi Niche Radar đã có chưa · top 3 nguồn đề xuất kèm lý do + phase cũ nên gộp / đổi ·
+  / tool đã kiểm · ≥ 8 phương pháp ghi ShotMatic đã có chưa · top 3 nguồn đề xuất kèm lý do + phase cũ nên gộp / đổi ·
   phần kiến thức chung lên Product Growth Playbook (tiếng Anh).
 - **Làm:** 1 trang docs mới + bảng dữ liệu, đề xuất top 3.
 - **Không làm:** code collector · đăng ký / trả phí · cài MCP cộng đồng chưa đọc code · quét số lượng lớn · bịa số.
@@ -68,7 +68,7 @@
 - [x] SERP do diễn đàn chiếm · "X alternative / X vs Y / X free" · "I'd pay for / is there an app / wish there was" ·
       đợt đổi nền tảng (WWDC) · unbundling tool lớn · template bán chạy · extension nhiều dùng điểm thấp · JTBD từ review ·
       Upwork việc lặp lại · Search Console của mình.
-- [x] Mỗi cái: làm thế nào, nguồn nào, Niche Radar đã có chưa (link phase), nên thêm không.
+- [x] Mỗi cái: làm thế nào, nguồn nào, ShotMatic đã có chưa (link phase), nên thêm không.
 
 ### Task 6: Top 3 + đẩy kiến thức chung
 - [x] Chọn top 3 nguồn "Làm phase riêng": lý do, phase cũ nên gộp / đổi (so với YouTube 31–32, Amazon 33–34, Maps 35).

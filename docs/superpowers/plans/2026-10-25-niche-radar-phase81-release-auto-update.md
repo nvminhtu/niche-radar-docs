@@ -1,4 +1,4 @@
-# Niche Radar Phase 37 — Release + auto-update (Mac + Windows) — Implementation Plan
+# ShotMatic Phase 37 — Release + auto-update (Mac + Windows) — Implementation Plan
 
 > **For agentic workers:** Claude không tự gắn tag hay bấm phát hành khi anh chưa đồng ý. Khoá ký file cập nhật do anh tạo, lưu trên máy anh
 > (không vào repo). Steps dùng checkbox (`- [ ]`).

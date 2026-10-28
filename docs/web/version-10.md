@@ -1,6 +1,6 @@
 # Version 10 · Sell Pro — bán app tải về + dùng thử + license
 
-> Niche Radar bắt đầu **thu tiền** bằng **app Mac + Windows tải về**: tải miễn phí, **dùng thử** đủ tính năng N ngày,
+> ShotMatic bắt đầu **thu tiền** bằng **app Mac + Windows tải về**: tải miễn phí, **dùng thử** đủ tính năng N ngày,
 > hết hạn thì nhập **license key** mua đứt. Không tài khoản, dữ liệu ở máy. Mô hình học từ
 > [Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) (chốt 2026-10-26), khác ở chỗ **mình có dùng thử**.
 

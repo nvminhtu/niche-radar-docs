@@ -1,4 +1,4 @@
-# Niche Radar Backlog 10 — Canary nguồn thật — Implementation Plan
+# ShotMatic Backlog 10 — Canary nguồn thật — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Canary chỉ báo, không tự sửa collector.

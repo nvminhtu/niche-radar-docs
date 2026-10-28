@@ -1,4 +1,4 @@
-# Niche Radar Backlog 09 — Test giao diện (E2E) — Implementation Plan
+# ShotMatic Backlog 09 — Test giao diện (E2E) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` + `npm run e2e` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

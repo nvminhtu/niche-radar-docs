@@ -1,4 +1,4 @@
-# Niche Radar Backlog 13 — CI cho pull request — Implementation Plan
+# ShotMatic Backlog 13 — CI cho pull request — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự trên nhánh riêng, mở PR thử. Steps dùng checkbox (`- [ ]`).
 > Bật luật bảo vệ nhánh trên GitHub là việc của anh (quyền admin repo) — Claude ghi bước, không tự đổi cài đặt repo khi chưa được đồng ý.

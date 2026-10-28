@@ -1,4 +1,4 @@
-# Niche Radar Phase 50 — Demo Site (show hàng) — Implementation Plan
+# ShotMatic Phase 50 — Demo Site (show hàng) — Implementation Plan
 
 > **For agentic workers:** code đã xong ở bản 0.9.0 (tên cũ Phase 13a). Phần còn lại là **đưa lên + đo**. Claude không đăng
 > nhập Cloudflare / Mailchimp / GA, không trả phí — anh làm bước tài khoản, Claude chạy lệnh và kiểm. Steps dùng checkbox (`- [ ]`).

@@ -1,4 +1,4 @@
-# Niche Radar Phase 55 — Google Maps Research (AI) — Implementation Plan
+# ShotMatic Phase 55 — Google Maps Research (AI) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Không cào Google Maps bằng script / headless.

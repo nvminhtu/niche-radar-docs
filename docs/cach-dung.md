@@ -64,7 +64,7 @@ theo điểm; 2 khung gấp "Theo chủ đề", "Theo repo"; **Tải .md**. Tab 
 ## Cho Claude Code / Codex / Cursor đọc dữ liệu (MCP)
 
 **Cài đặt → Cho AI của bạn đọc dữ liệu (MCP)** → bấm **Thêm vào Claude Code**, **Codex**, **Claude Desktop**, **Cursor** hoặc
-**Windsurf** (trang hiện đúng lệnh / khối JSON sẽ ghi trước khi bấm). Mở phiên Claude Code / Codex mới rồi hỏi thẳng, ví dụ "So 3 niche tôi tra gần nhất trong Niche Radar —
+**Windsurf** (trang hiện đúng lệnh / khối JSON sẽ ghi trước khi bấm). Mở phiên Claude Code / Codex mới rồi hỏi thẳng, ví dụ "So 3 niche tôi tra gần nhất trong ShotMatic —
 niche nào đáng làm nhất, trích nguồn từng số". AI chỉ **đọc**: niche đã tra, đối thủ, lời chê đã lưu, Explore, project, bàn
 quyết định, bảng gap. Claude Desktop / Cursor / Windsurf: nút chỉ gộp khối `niche-radar` vào file cấu hình của app đó, giữ
 nguyên server khác, sao lưu file cũ thành `….bak-niche-radar`; file lỗi JSON thì không ghi. Thoát hẳn app đó rồi mở lại.

@@ -1,4 +1,4 @@
-# Niche Radar Phase 12 — Q&A Gap (Stack Exchange + Hacker News) — Implementation Plan
+# ShotMatic Phase 12 — Q&A Gap (Stack Exchange + Hacker News) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự. Mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [x]`). Không tạo key StackApps thay anh, không đăng gì lên Stack Exchange / HN.

@@ -1,4 +1,4 @@
-# Niche Radar Phase 30 — Riêng tư + xoá tài khoản — Implementation Plan
+# ShotMatic Phase 30 — Riêng tư + xoá tài khoản — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

@@ -1,4 +1,4 @@
-# Niche Radar Backlog 04 — Sync project — Implementation Plan
+# ShotMatic Backlog 04 — Sync project — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

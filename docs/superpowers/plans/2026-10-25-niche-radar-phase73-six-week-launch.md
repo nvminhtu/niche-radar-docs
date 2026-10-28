@@ -1,4 +1,4 @@
-# Niche Radar Phase 49 — Lịch 6 tuần + ra mắt — Implementation Plan
+# ShotMatic Phase 49 — Lịch 6 tuần + ra mắt — Implementation Plan
 
 > **For agentic workers:** Steps dùng checkbox (`- [ ]`). Claude soạn nháp + bảng số, **anh đăng**. Luật dừng viết trước tuần 1.
 > Không quảng cáo trả tiền trước 10 đơn tự nhiên, không mua review / follow, không gửi email hàng loạt thay anh.

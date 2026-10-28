@@ -3,7 +3,10 @@
 > Mỗi tính năng có nút nhỏ **ⓘ / ?** cạnh tiêu đề. Bấm vào hiện **vài hình đơn giản theo bước** và **một câu ghi chú**
 > tính năng đó làm gì — ngắn, ít chữ, xem 10 giây là hiểu.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 24</span>
+<span class="chip chip--skip">Không làm · anh chốt 2026-10-28</span>
+
+!!! note "Gạch bỏ (anh chốt 2026-10-28)"
+    Không làm nút ? / tutorial cho từng tính năng. Hướng dẫn dùng vẫn ở trang Guide (4 bước) và About.
 
 ## Chạy thế nào
 

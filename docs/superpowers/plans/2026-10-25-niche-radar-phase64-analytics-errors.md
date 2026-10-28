@@ -1,4 +1,4 @@
-# Niche Radar Phase 29 — Analytics + báo lỗi — Implementation Plan
+# ShotMatic Phase 29 — Analytics + báo lỗi — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không gửi chữ người dùng gõ.

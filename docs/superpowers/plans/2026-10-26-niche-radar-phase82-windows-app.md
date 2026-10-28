@@ -1,4 +1,4 @@
-# Niche Radar Phase 36 — App Windows (Beta) — Implementation Plan
+# ShotMatic Phase 36 — App Windows (Beta) — Implementation Plan
 
 > **For agentic workers:** chỉ làm sau Phase 35 (license + dùng thử đã chạy trên Mac). Cùng một app Tauri + cùng `web/` — **không** viết UI
 > riêng cho Windows. Steps dùng checkbox (`- [ ]`). Không mua chứng chỉ ký, không nộp Microsoft Store, không nhập key / mật khẩu thay anh.

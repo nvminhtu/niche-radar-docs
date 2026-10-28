@@ -1,4 +1,4 @@
-# Niche Radar Phase 27.7 — Chi phí AI theo gói — Implementation Plan
+# ShotMatic Phase 27.7 — Chi phí AI theo gói — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

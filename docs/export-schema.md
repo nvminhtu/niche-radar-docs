@@ -20,7 +20,7 @@ Bảng đủ cột có trong CSV / JSON cùng lần xuất.
 
 Keyword đã tra trong lượt Research (keyword gốc + gợi ý của Google Play) và số app hiện ra ở mỗi store.
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (K1, K2…)
@@ -37,7 +37,7 @@ Keyword đã tra trong lượt Research (keyword gốc + gợi ý của Google P
 
 Đối thủ: mọi app hiện ra cho các keyword, xếp theo số rating giảm dần. Không có doanh thu — chỉ số công khai của store.
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (C1, C2…)
@@ -63,7 +63,7 @@ Keyword đã tra trong lượt Research (keyword gốc + gợi ý của Google P
 
 Lời chê: chủ đề than AI (nếu đã chạy) + cụm lời chê theo luật từ khoá (Phase 12, gộp cùng ý) từ review 1–2★ của top đối thủ, kèm câu nguyên văn đã kiểm khớp review gốc.
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (P1, P2…) — một mã mỗi chủ đề
@@ -80,7 +80,7 @@ Lời chê: chủ đề than AI (nếu đã chạy) + cụm lời chê theo lu�
 
 Feature Gap: tính năng × top 5 app mỗi store, đếm bao nhiêu app có. Chỉ phần đã đọc trang store (không gọi mạng khi xuất).
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (G1, G2…)
@@ -99,7 +99,7 @@ Feature Gap: tính năng × top 5 app mỗi store, đếm bao nhiêu app có. Ch
 
 Google Trends 12 tháng của keyword gốc (chỉ số tương đối 0–100, không phải lượt tìm) + truy vấn liên quan.
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `kind`: point = điểm theo tuần · top = truy vấn liên quan nhiều nhất · rising = truy vấn đang lên
@@ -113,7 +113,7 @@ Google Trends 12 tháng của keyword gốc (chỉ số tương đối 0–100, 
 
 Điểm sức khoẻ niche v2: từng yếu tố 0–10, trọng số, độ tin, bằng chứng. Dòng factor = total là điểm tổng.
 
-- `run_id`: Mã lượt Research trong Niche Radar
+- `run_id`: Mã lượt Research trong ShotMatic
 - `niche`: Keyword gốc (seed) của lượt Research
 - `country`: Mã nước 2 chữ (store + Trends)
 - `code`: Mã dẫn nguồn trong brief (S1, S2…)

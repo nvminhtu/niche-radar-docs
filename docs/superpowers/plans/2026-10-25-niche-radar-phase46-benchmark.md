@@ -1,4 +1,4 @@
-# Niche Radar Backlog 05 — Đo mốc — Implementation Plan
+# ShotMatic Backlog 05 — Đo mốc — Implementation Plan
 
 > **For agentic workers:** phase **chỉ đo**, không sửa cho nhanh. Mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

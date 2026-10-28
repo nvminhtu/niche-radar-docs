@@ -1,7 +1,7 @@
 # Plan bán app Mac + Windows (2026-10-26)
 
 > Đã có người trả tiền cho loại tool này ([Wow Keywords](../doi-thu-tham-khao.md#wow-keywords) $79, Mac + Windows,
-> chạy trên AI của người dùng). Niche Radar đi đúng hướng đó: **app tải về, AI là của bạn, dữ liệu nằm trên máy bạn.**
+> chạy trên AI của người dùng). ShotMatic đi đúng hướng đó: **app tải về, AI là của bạn, dữ liệu nằm trên máy bạn.**
 > Trang này gom lộ trình còn lại thành **Hoàn thiện Web (Phase 18–26) → Phase 27 → Phase 28** rồi tới bán (Phase 29–37).
 
 <span class="chip chip--doing">Plan 2026-10-26 · đang làm Hoàn thiện Web · Phase 18</span>

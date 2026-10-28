@@ -1,4 +1,4 @@
-# Niche Radar Phase 15 — Export (CSV, JSON, gói cho LLM + brief tính năng) — Implementation Plan
+# ShotMatic Phase 15 — Export (CSV, JSON, gói cho LLM + brief tính năng) — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [x]`).

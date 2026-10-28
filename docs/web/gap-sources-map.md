@@ -14,7 +14,7 @@
   2. **GitHub Issues xếp theo 👍**: tính năng người dùng xin mà maintainer không làm. API miễn phí, điều khoản thoáng nhất trong các nguồn.
   3. **Hacker News Ask HN** (API Algolia): câu "is there an app / tool…" kèm điểm và số bình luận.
 - **Dự bị:** X search. Tín hiệu mạnh, nhưng API tính tiền theo bài đọc ($0.005 / bài), nên anh quyết.
-- **Đã có trong Niche Radar, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 18), Google Trends (Phase 3), TrustMRR (Phase 38), Reddit (Phase 11).
+- **Đã có trong ShotMatic, không cần phase mới:** Google / store autocomplete (Phase 1–2), review App Store (Phase 2, sẽ đào sâu ở Phase 18), Google Trends (Phase 3), TrustMRR (Phase 38), Reddit (Phase 11).
 - **Phần lớn chợ review lớn cấm quét** (G2, Trustpilot, Shopify, Upwork, VS Code, Gumroad…). Chỉ đọc tay khi đã chọn niche.
 - **Amazon (Phase 53–54) yếu:** gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm khai thác dữ liệu. Đề xuất hạ xuống ứng viên.
 </div>
@@ -37,7 +37,7 @@ Mỗi nguồn chấm 6 tiêu chí (chi tiết ở [Phase 14 · Thang chấm](pha
 - Gap Yếu → **Bỏ**.
 - Gap Vừa → chọn tay hoặc bỏ, có ghi lý do.
 
-Nguồn Niche Radar đã có thì ghi **Đã có**.
+Nguồn ShotMatic đã có thì ghi **Đã có**.
 
 ## Bảng tóm tắt
 
@@ -121,7 +121,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 1 · Google Autocomplete
 
-- **Kết luận: Đã có.** Niche Radar đã dùng để sinh keyword. Chỉ dùng để tìm keyword ứng viên, rồi kiểm gap ở nguồn khác.
+- **Kết luận: Đã có.** ShotMatic đã dùng để sinh keyword. Chỉ dùng để tìm keyword ứng viên, rồi kiểm gap ở nguồn khác.
 - **Gap:** Vừa. Cho thấy đúng việc người ta muốn làm ("mac app to hide menu bar icons", "…keep awake"), nhưng không cho biết họ đã hài lòng với app đang dùng chưa.
 - **Quan tâm:** Yếu. Không có số, chỉ có thứ tự gợi ý.
 - **Lấy được:** API miễn phí, không chính thức, không cần key. Rate limit không công bố.
@@ -146,7 +146,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 - **Kết luận: Đã có** ([Phase 3](phase-3-google-trends.md)). Dùng để đo độ quan tâm, không dùng để tìm gap.
 - **Gap:** Yếu. Chỉ cho đường xu hướng.
 - **Quan tâm:** Vừa. Số tương đối 0–100.
-- **Lấy được:** API miễn phí, không chính thức. Gói npm `google-trends-api` mà Niche Radar đang dùng không commit từ 2022-11 (xem mục Repo), nên dễ gãy.
+- **Lấy được:** API miễn phí, không chính thức. Gói npm `google-trends-api` mà ShotMatic đang dùng không commit từ 2022-11 (xem mục Repo), nên dễ gãy.
 - **Chi phí:** miễn phí.
 - **Điều khoản:** Vừa.
 - **Hợp app:** mọi loại.
@@ -741,10 +741,10 @@ Ghi chú từng cái (giá lấy từ trang giá của hãng, đo 2026-10-26):
 
 Đo bằng `gh api` ngày 2026-10-26. "Commit" là lần push gần nhất.
 
-- [facundoolano/google-play-scraper](https://github.com/facundoolano/google-play-scraper) — 2.988 sao · commit 2026-10-17 · MIT · Google Play (Niche Radar đang dùng)
+- [facundoolano/google-play-scraper](https://github.com/facundoolano/google-play-scraper) — 2.988 sao · commit 2026-10-17 · MIT · Google Play (ShotMatic đang dùng)
 - [JoMingyu/google-play-scraper](https://github.com/JoMingyu/google-play-scraper) — 1.021 sao · commit 2024-08-05 · MIT · Google Play, bản Python, ít bảo trì
 - [facundoolano/app-store-scraper](https://github.com/facundoolano/app-store-scraper) — 1.436 sao · commit 2025-07-27 · MIT · App Store
-- [pat310/google-trends-api](https://github.com/pat310/google-trends-api) — 975 sao · commit 2022-11-25 · MIT · Trends (Niche Radar đang dùng, **đứng yên 4 năm**)
+- [pat310/google-trends-api](https://github.com/pat310/google-trends-api) — 975 sao · commit 2022-11-25 · MIT · Trends (ShotMatic đang dùng, **đứng yên 4 năm**)
 - [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — 202.080 sao · commit 2026-10-23 · Unlicense · metadata YouTube
 - [apify/crawlee](https://github.com/apify/crawlee) — 26.263 sao · commit 2026-10-25 · Apache-2.0 · đọc trang JS
 - [microsoft/playwright](https://github.com/microsoft/playwright) — 98.502 sao · commit 2026-10-25 · Apache-2.0 · đọc trang JS
@@ -765,13 +765,13 @@ Ghi chú từng cái (giá lấy từ trang giá của hãng, đo 2026-10-26):
 
 Rút ra:
 
-- **Rủi ro đang có:** `google-trends-api` mà Niche Radar dùng không cập nhật từ 2022. Ghi vào [Backlog 10 · Canary nguồn thật](phase-backlog-10-source-canary.md) để báo khi gãy.
+- **Rủi ro đang có:** `google-trends-api` mà ShotMatic dùng không cập nhật từ 2022. Ghi vào [Backlog 10 · Canary nguồn thật](phase-backlog-10-source-canary.md) để báo khi gãy.
 - **Thay từ điển tay ở Phase 11:** BERTopic + sentence-transformers gom được hàng nghìn câu hỏi thành chủ đề. Đây là Python, nên nếu dùng thì chạy như bước tiền xử lý. Ghi vào Appendix làm ứng viên, chưa làm.
 - **Arctic Shift** là đường lấy Reddit số lượng lớn mà không cần API Reddit. Repo không ghi license, nên chỉ dùng để research nội bộ.
 
 ## Phương pháp tìm gap
 
-Mỗi phương pháp ghi cách làm, nguồn dùng và Niche Radar đã có chưa.
+Mỗi phương pháp ghi cách làm, nguồn dùng và ShotMatic đã có chưa.
 
 1. **SERP do diễn đàn chiếm.** Gõ câu hỏi lên Google. Nếu top 3 là Reddit, Quora hay Apple Community thì chưa có trang
    hay app tốt trả lời: vừa là gap nội dung, vừa là gap app. Nguồn: Google SERP (làm tay, hoặc SerpApi / DataForSEO).
@@ -830,7 +830,7 @@ gốc → xuất `.md`. Mỗi cái chỉ cần thêm một collector và một n
 - **YouTube (31–32):** giữ. YouTube suggest yếu, nhưng transcript video review đọc được miễn phí qua MCP. Giá trị của
   phase này nằm ở phần AI đọc video, không ở gợi ý tìm kiếm.
 - **Amazon (33–34):** đề xuất **hạ xuống ứng viên**. Gợi ý Amazon chỉ cho thấy hàng vật lý, còn điều khoản cấm data
-  mining. Niche Radar chọn app phần mềm.
+  mining. ShotMatic chọn app phần mềm.
 - **Google Maps (35):** chưa xét ở phase này, vì đây là nguồn cho business địa phương, không phải app. Giữ nguyên, xét
   khi tới.
 - **Thứ tự gợi ý:** A + C (gộp) và B làm ngay sau Phase 11, trước Phase 12. Lý do: cả hai dùng chung bảng gap vừa làm

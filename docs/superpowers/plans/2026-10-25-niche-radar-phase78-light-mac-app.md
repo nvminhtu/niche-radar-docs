@@ -1,4 +1,4 @@
-# Niche Radar Backlog 20 — App Mac nhẹ — Implementation Plan
+# ShotMatic Backlog 20 — App Mac nhẹ — Implementation Plan
 
 > **For agentic workers:** đo trước, sửa đúng chỗ đo ra nặng. Build chỉ bằng `npm run mac`. Steps dùng checkbox (`- [ ]`).
 

@@ -1,6 +1,6 @@
 # Phase 50 · Demo Site (show hàng)
 
-> Một trang web **tĩnh** để đi marketing: khách bấm thử **giao diện thật** của Niche Radar trên **dữ liệu chụp sẵn**
+> Một trang web **tĩnh** để đi marketing: khách bấm thử **giao diện thật** của ShotMatic trên **dữ liệu chụp sẵn**
 > từ vài niche đã tra, không cần server. Muốn xài thật → để lại email + tải app về máy. Host server để các phase sau.
 
 <span class="chip chip--todo">Chưa làm · plan 2026-10-25 · đầu Version 2, trước Phase 51</span>

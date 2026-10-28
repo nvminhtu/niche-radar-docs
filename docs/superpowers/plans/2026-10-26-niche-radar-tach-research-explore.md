@@ -1,4 +1,4 @@
-# Niche Radar — Tách rõ "Research 1 keyword" và "Explore niche" — Plan
+# ShotMatic — Tách rõ "Research 1 keyword" và "Explore niche" — Plan
 
 > Ứng viên **Phase 9 · Small Features Update** (1 file plan / tính năng). Chỉ sửa chữ, thứ tự, nối luồng trên giao diện —
 > **không** đổi cách thu dữ liệu. **Trạng thái: chờ anh duyệt, chưa code.** Ngày viết: 2026-10-26.

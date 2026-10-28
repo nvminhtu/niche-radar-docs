@@ -1,15 +1,15 @@
 # Đối thủ · Đối tác · Tham khảo
 
-> Sổ ghi các sản phẩm, công ty, trang web liên quan tới Niche Radar. Anh gửi link → Claude mở trang thật, ghi vào
+> Sổ ghi các sản phẩm, công ty, trang web liên quan tới ShotMatic. Anh gửi link → Claude mở trang thật, ghi vào
 > đúng nhóm. Mọi số (giá, lượt dùng) ghi nguyên văn kèm **ngày xem**; trang không ghi thì để `chưa đo`, không đoán.
 
 **Ba nhóm**
 
-- **Đối thủ** — làm cùng việc hoặc gần việc của Niche Radar (tìm niche, nghiên cứu keyword / app, đo đối thủ)
-- **Đối tác** — có thể nối, bán chung, dùng dữ liệu của nhau, hoặc là nơi đưa Niche Radar tới người dùng
+- **Đối thủ** — làm cùng việc hoặc gần việc của ShotMatic (tìm niche, nghiên cứu keyword / app, đo đối thủ)
+- **Đối tác** — có thể nối, bán chung, dùng dữ liệu của nhau, hoặc là nơi đưa ShotMatic tới người dùng
 - **Tham khảo** — học cách làm: giá, landing, tính năng, cách ra mắt, công cụ
 
-**Mỗi mục ghi:** link · làm gì · cho ai · giá (nguyên văn + ngày) · giống / khác Niche Radar ở đâu · học được gì
+**Mỗi mục ghi:** link · làm gì · cho ai · giá (nguyên văn + ngày) · giống / khác ShotMatic ở đâu · học được gì
 (trỏ về phase liên quan) · ngày thêm.
 
 ## Đối thủ
@@ -60,10 +60,10 @@ Số tải lấy từ GitHub API ngày 2026-10-26, đếm file `.dmg` / `Setup.e
 - *Suy đoán, chưa chắc:* nếu giá khởi điểm là $49 (số gạch trên trang) và tăng $10 mỗi 20 license thì tới $79 đã bán
   khoảng 65 license trong ~4 ngày. Không dùng số này làm bằng chứng
 
-#### So với Niche Radar
+#### So với ShotMatic
 
 - **Giống:** app chạy trên máy, dữ liệu ở máy, đọc App Store theo keyword, có MCP, AI tuỳ chọn
-- **Khác:** Wow Keywords tối ưu **app đã có** (hạng, listing, ghi App Store Connect). Niche Radar chọn **niche nên làm**
+- **Khác:** Wow Keywords tối ưu **app đã có** (hạng, listing, ghi App Store Connect). ShotMatic chọn **niche nên làm**
   từ nhiều nguồn (Play, App Store, Trends, Reddit, Q&A, lời chê đối thủ, ai đang thu tiền) rồi ra BUILD / TEST THÊM / BỎ
 - **Họ hơn:** volume + difficulty có công thức, đa quốc gia + tự dịch keyword, ghi thẳng App Store Connect, MCP 53 tool,
   có bản Windows
@@ -71,7 +71,7 @@ Số tải lấy từ GitHub API ngày 2026-10-26, đếm file `.dmg` / `Setup.e
   không. MCP của mình ([Phase 27.3](web/phase-27-3-mcp.md)) trả lời được "niche nào đáng build", không chỉ "mình đứng hạng mấy"
 - **Không có moat dữ liệu:** họ cũng chỉ đọc App Store công khai. Thứ bán được là luồng làm việc + cách phân phối
 
-#### Áp vào Niche Radar (chốt 2026-10-26)
+#### Áp vào ShotMatic (chốt 2026-10-26)
 
 - Bán **app Mac + Windows** tải về, dữ liệu trên máy, không tài khoản — [App Mac + Windows](app/index.md)
 - File cài trên GitHub Releases public, app tự cập nhật — [Phase 37](app/phase-37-release-auto-update.md)

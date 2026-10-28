@@ -10,7 +10,7 @@
 (thanhtungtnt, 2026-10-26): "Có nhiều loại khách hàng: nam, nữ, tuổi… Xác định được loại khách hàng cũng là cái user cần biết."
 
 **Vì sao đổi đề bài.** Google Play, App Store, Google Trends bản công khai **không công bố** giới tính hay độ tuổi người dùng.
-Số đó chỉ có ở tool trả phí (Sensor Tower, data.ai) và cũng là ước tính. Niche Radar không bịa số, nên phase này không ra
+Số đó chỉ có ở tool trả phí (Sensor Tower, data.ai) và cũng là ước tính. ShotMatic không bịa số, nên phase này không ra
 "62 % nữ, 25–34 tuổi". Thay vào đó: **loại khách theo vai / hoàn cảnh** ("phụ huynh có con nhỏ", "giáo viên", "người ADHD"),
 đo được từ keyword, review, đối thủ và cộng đồng.
 

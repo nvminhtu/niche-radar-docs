@@ -1,4 +1,4 @@
-# Niche Radar Backlog 16 — Refactor — Implementation Plan
+# ShotMatic Backlog 16 — Refactor — Implementation Plan
 
 > **For agentic workers:** mỗi bước là **1 PR nhỏ** (1 nguồn / 1 file to), không đổi API, không đổi giao diện. Mỗi PR: `npm run check` + `npm run e2e`
 > xanh và `npm run review` giữ nguyên điểm. Steps dùng checkbox (`- [ ]`).

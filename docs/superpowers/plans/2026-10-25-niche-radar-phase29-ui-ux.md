@@ -1,4 +1,4 @@
-# Niche Radar Phase 25 — UI / UX Improvement — Implementation Plan
+# ShotMatic Phase 25 — UI / UX Improvement — Implementation Plan
 
 > **For agentic workers:** chỉ sửa chỗ **vướng thật**, không thêm tính năng. Mỗi màn sửa xong thì `npm run check` xanh,
 > có screenshot trước / sau đã Read, rồi commit. Steps dùng checkbox (`- [ ]`).

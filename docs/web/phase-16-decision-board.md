@@ -133,7 +133,7 @@ trước khi làm thật.
 
 - Bản demo: GA4 `pro_interest_click` / `pro_interest_email` (chỉ chạy khi build có `VITE_GA_ID` — **chưa gắn**) + email vào
   Mailchimp. JSONP của Mailchimp không gắn được tag → tính năng + mức giá ghi vào trường PRODUCT dạng
-  `niche-radar|pro-ai-score|~$10/tháng`; lọc người Niche Radar bằng "PRODUCT contains niche-radar".
+  `niche-radar|pro-ai-score|~$10/tháng`; lọc người ShotMatic bằng "PRODUCT contains niche-radar".
 - Bản trên máy: chỉ đếm vào DB (`GET /api/pro-interest`), không gửi đi đâu.
 - Demo có project mẫu "Mẫu: app tiện ích cá nhân" (habit tracker · budget tracker · pomodoro timer), chưa chấm sẵn:
   [niche-radar-demo.pages.dev/projects/4](https://niche-radar-demo.pages.dev/projects/4).

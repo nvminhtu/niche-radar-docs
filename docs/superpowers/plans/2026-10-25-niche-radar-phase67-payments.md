@@ -1,4 +1,4 @@
-# Niche Radar Phase 32 — Thanh toán — Implementation Plan
+# ShotMatic Phase 32 — Thanh toán — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit. Steps dùng checkbox (`- [ ]`).
 > Anh tạo cửa hàng Lemon Squeezy, nhập ngân hàng / thuế, bấm bán thật. Claude chỉ nối code và test ở **test mode**.

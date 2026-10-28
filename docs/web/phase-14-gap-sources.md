@@ -2,7 +2,7 @@
 
 > Phase **chỉ research, không code**. Ngoài Reddit ([Phase 11](phase-11-reddit-gap.md)), dev và indie còn tìm gap,
 > keyword niche ở đâu nữa? Liệt kê **hết** các nơi đó, chấm từng nơi tìm được gì, mạnh hay yếu, có nên đưa vào
-> Niche Radar không. Đây cũng là chỗ gom **MCP**, **tool scrape / repo GitHub** dùng kèm được, và **phương pháp tìm
+> ShotMatic không. Đây cũng là chỗ gom **MCP**, **tool scrape / repo GitHub** dùng kèm được, và **phương pháp tìm
 > gap / niche** mà anh chưa biết để hỏi.
 
 <span class="chip chip--done">Xong 2026-10-26 · top 3 đã duyệt → Phase 12 + 13</span>
@@ -119,7 +119,7 @@ Ghi: repo, số sao + ngày commit gần nhất (đo, không đoán), license, c
 
 ### 4 · Phương pháp tìm gap / niche (gợi ý anh chưa hỏi)
 
-Mỗi phương pháp ghi: làm thế nào, nguồn nào, Niche Radar đã có chưa, nên thêm không.
+Mỗi phương pháp ghi: làm thế nào, nguồn nào, ShotMatic đã có chưa, nên thêm không.
 
 - **SERP do diễn đàn chiếm** — tìm một câu hỏi trên Google mà top 3 là Reddit / Quora / Apple Community → chưa có trang
   hay app tốt trả lời = gap nội dung + gap app
@@ -138,7 +138,7 @@ Mỗi phương pháp ghi: làm thế nào, nguồn nào, Niche Radar đã có ch
 
 - Trang **Bản đồ nguồn gap** có ≥ 30 nguồn, mỗi nguồn đủ 6 tiêu chí + kết luận + link + ngày kiểm
 - ≥ 10 MCP và ≥ 10 repo / tool đã kiểm (sao, ngày commit, license, giá đo thật — chỗ chưa đo ghi `chưa đo`)
-- ≥ 8 phương pháp, mỗi cái ghi Niche Radar đã có hay chưa
+- ≥ 8 phương pháp, mỗi cái ghi ShotMatic đã có hay chưa
 - Top 3 nguồn đề xuất thành phase mới, mỗi cái có lý do + phase cũ nào nên gộp / đổi (vd. so với YouTube / Amazon /
   Maps ở Phase 51–55) — anh duyệt mới đánh số
 - Phần kiến thức chung (cách đọc nguồn, phương pháp) đẩy lên Product Growth Playbook bằng tiếng Anh; danh sách niche

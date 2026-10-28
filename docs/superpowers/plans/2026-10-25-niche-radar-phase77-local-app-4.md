@@ -1,4 +1,4 @@
-# Niche Radar Backlog 19 — Local App 4.0 — Implementation Plan
+# ShotMatic Backlog 19 — Local App 4.0 — Implementation Plan
 
 > **For agentic workers:** chỉ làm khi bản Web **xong Version 9**. Chỉ gói Phase 59–62 đã xong ở Web. Build chỉ bằng `npm run mac`.
 > Steps dùng checkbox (`- [ ]`).

@@ -1,4 +1,4 @@
-# Niche Radar Phase 33 — Paywall + dùng thử — Implementation Plan
+# ShotMatic Phase 33 — Paywall + dùng thử — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`). Không đếm ngược giả, không giấu nút đóng, không gọi gói trả phí là quyên góp.

@@ -1,4 +1,4 @@
-# Niche Radar Phase 26 — Review cụm tính năng chính (12–26) — Implementation Plan
+# ShotMatic Phase 26 — Review cụm tính năng chính (12–26) — Implementation Plan
 
 > **For agentic workers:** phase **chỉ soát + sửa**, không thêm tính năng. Mỗi lỗi sửa xong thì `npm run check` xanh rồi commit.
 > Steps dùng checkbox (`- [ ]`).

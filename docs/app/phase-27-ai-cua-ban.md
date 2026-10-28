@@ -27,7 +27,7 @@
 
 ```mermaid
 flowchart TB
-  subgraph APP[Niche Radar — Web local / App Mac + Windows]
+  subgraph APP[ShotMatic — Web local / App Mac + Windows]
     UI[Giao diện] --> SV[Máy chủ Node<br/>127.0.0.1 + token]
     SV --> BR[Cầu AI<br/>dò · kiểm · chạy · huỷ]
     SV --> MCP[niche-radar MCP<br/>đọc DB · ghi có duyệt]
@@ -143,7 +143,7 @@ làm A2.3 / A2.4). Mới đo **1 niche** — chạy thêm 2 niche khi làm việ
 Một thư mục cố định cho mọi tiến trình AI làm việc (cwd): `~/Library/Application Support/niche-radar/ai/` (Windows:
 `%APPDATA%\niche-radar\ai\`), app tự tạo:
 
-- `CLAUDE.md` + `AGENTS.md` (Codex đọc file này): Niche Radar là gì, dữ liệu nằm đâu, luật "AI không đưa số, mọi câu
+- `CLAUDE.md` + `AGENTS.md` (Codex đọc file này): ShotMatic là gì, dữ liệu nằm đâu, luật "AI không đưa số, mọi câu
   phải có mã nguồn"
 - `.mcp.json`: trỏ tới niche-radar MCP
 - `.claude/skills/`: bộ skill chọn niche (đúng thứ đã hứa gửi kèm email dùng thử — `/app-demand`, quy trình chọn niche),
@@ -234,7 +234,7 @@ Nhờ vậy khung chat, terminal nhúng và Claude Code bên ngoài **cùng hi�
 - **Chạy thật (2026-10-26, Codex 0.162.0, `web/data/niche.db`):** "Có bao nhiêu niche đã tra? Kể 3 cái mới nhất, kèm nguồn" →
   16 giây, 1 lần gọi `search_niches`, trả "32 lượt tra" + Research #32 / #31 / #30 — **khớp DB** (đếm `runs` = 32)
 - **Lỗi bắt được khi chạy thật:** lần đầu DB chưa chạy migration 0019 → tool báo `no such column: apps.content_rating`. Sửa:
-  MCP so số migration lúc mở, DB cũ thì báo "dữ liệu cũ hơn bản app — mở app Niche Radar 1 lần rồi thử lại" (+ test)
+  MCP so số migration lúc mở, DB cũ thì báo "dữ liệu cũ hơn bản app — mở app ShotMatic 1 lần rồi thử lại" (+ test)
 - Test `tests/ai-chat.test.ts` (8 test chung với 26.2: tham số 2 tuyến, đọc luồng 2 kiểu, Dừng, lỗi đăng nhập, API 400/403, nhật ký không có nội dung)
 - **Chưa làm:** thử Claude Code qua khung chat trong UI + 2 câu mẫu còn lại; screenshot khung chat ở 1340 / 375
 </div>

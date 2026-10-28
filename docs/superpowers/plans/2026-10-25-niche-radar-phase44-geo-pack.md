@@ -1,4 +1,4 @@
-# Niche Radar Phase 62 — Gói GEO + trang cần viết — Implementation Plan
+# ShotMatic Phase 62 — Gói GEO + trang cần viết — Implementation Plan
 
 > **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` (gốc repo) xanh rồi mới commit.
 > Steps dùng checkbox (`- [ ]`). Chỉ xuất gói — không viết bài, không đăng, không tạo file trong repo App-AI-Skills thay người dùng.
