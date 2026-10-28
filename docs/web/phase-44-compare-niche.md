@@ -3,12 +3,11 @@
 > Đặt **2–4 niche đã tra** cạnh nhau trên một màn: niche nào nhiều keyword trống hơn, đối thủ yếu hơn, nhu cầu đang lên,
 > người dùng than nhiều hơn, có người trả tiền thật. **Không AI.**
 
-<span class="chip chip--skip">Không làm · anh chốt 2026-10-28 · code đã xong 2026-10-27, ẩn khỏi menu</span>
+<span class="chip chip--done">Xong sớm 2026-10-27 · trang /compare, 4 niche thật · màn hỏi trong app từ landing shotmatic.app</span>
 
-!!! note "Gạch bỏ (anh chốt 2026-10-28)"
-    Không đầu tư thêm cho So sánh niche. Code đã làm xong 2026-10-27 **giữ nguyên** (trang `/compare`, `lib/compare-niche.ts`)
-    nhưng **ẩn khỏi app**: bỏ mục "So sánh niche" trong menu More features, bỏ ô tick + nút "So sánh (N)" ở bảng Lịch sử.
-    Bật lại: thêm lại 2 chỗ đó (`AppShell.tsx`, `RunHistory.tsx`) và đổi chip về Xong.
+!!! note "Bật lại (anh chốt 2026-10-28)"
+    Sáng 28/10 từng ẩn khỏi app, chiều cùng ngày bật lại: mục "So sánh niche" trong menu More features, ô tick + nút
+    "So sánh (N)" ở bảng Lịch sử, dòng trong danh sách tính năng About. Công tắc `COMPARE_ON` ở `web/src/lib/features.ts`.
 
 <div class="box box--goal" markdown>
 **Vì sao dời lên Version 1.** Phase này chỉ đọc DB, không cần nguồn mới hay AI — chạy được ngay với dữ liệu Phase 1–9.

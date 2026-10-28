@@ -354,7 +354,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">31</span>
 <div class="step__body">
-<h3>Mô hình tiền <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Mô hình tiền <span class="chip chip--done">Xong 2026-10-28</span></h3>
 <p>Mua đứt, giá bậc thang có / không, dùng thử bao nhiêu ngày, hết hạn còn dùng được gì — giá đo từ đối thủ + số fake-door.</p>
 <a class="go" href="phase-31-money-model/">Xem chi tiết →</a>
 </div>
@@ -362,7 +362,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">32</span>
 <div class="step__body">
-<h3>Thanh toán + license key <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Thanh toán + license key <span class="chip chip--done">Xong 2026-10-28</span></h3>
 <p>Lemon Squeezy checkout + API license key: kích hoạt, kiểm lại, gỡ máy. Không webhook, không server riêng.</p>
 <a class="go" href="phase-32-payments/">Xem chi tiết →</a>
 </div>
@@ -370,7 +370,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">33</span>
 <div class="step__body">
-<h3>Dùng thử + paywall <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Dùng thử + paywall <span class="chip chip--done">Xong 2026-10-28 · chờ mua thử</span></h3>
 <p>Đếm ngày dùng thử trên máy, thanh "còn X ngày", màn mua + nhập key, tìm lại key bằng email, dữ liệu cũ vẫn xuất được.</p>
 <a class="go" href="phase-33-paywall-trial/">Xem chi tiết →</a>
 </div>
