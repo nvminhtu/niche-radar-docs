@@ -2,7 +2,7 @@
 
 > Dùng Version 4 **chọn niche thật 3 lần** có kệ Google + kệ AI ở bản Web, sửa lỗi.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 62</span>
 
 <div class="nr-review-stop" markdown>
 **⏸ REVIEW PHASE — dừng lại soát.** Đối chiếu "Xong khi" của các phase trước trên niche thật, sửa lỗi xong

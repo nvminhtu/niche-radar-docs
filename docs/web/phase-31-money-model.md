@@ -6,7 +6,7 @@
 > **Đổi 2026-10-26:** bán **app tải về + dùng thử + license key**, không tài khoản ([Version 10](version-10.md)).
 > Phase này chốt thêm: dùng thử bao nhiêu ngày, có làm giá bậc thang như Wow Keywords không.
 
-<span class="chip chip--done">Xong 2026-10-28 · plan chốt, chưa đo số bán</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 30</span>
 
 ## Chạy thế nào
 
@@ -61,30 +61,6 @@ Giá: **chưa đo**. Chỉ ghi số sau khi đo giá đối thủ và chi phí A
 - Khoá lại thành Pro tính năng đã Free với người đang dùng
 - Gói team / nhiều chỗ ngồi, mã giảm giá, affiliate
 </div>
-
-## Kết quả (2026-10-28)
-
-Chốt để làm bản bán đầu. Mọi số đối thủ có nguồn; số bán, chi phí AI thật, phễu GA4: **chưa đo** (chưa có bản bán nào).
-
-**Bản bán 1.0 = app Mac, chỉ tính năng Niche Research.** Tra 1 keyword (Research) + mở cây keyword (Explore) + trang kết
-quả. Các tính năng khác (Project, AI Agent, Q&A Gap, chat AI…) **xám + ghi "Bản đầy đủ"**, không xoá code — bật lại bằng 1
-biến lúc build. Lý do: bán 1 việc rõ ràng trước, đỡ lỗi, landing nói gọn được.
-
-| Quyết định | Chốt | Vì sao |
-|---|---|---|
-| Mô hình | **Mua đứt** (lifetime), không subscription | App chạy trên máy, AI dùng tài khoản của người dùng → mình không tốn chi phí hằng tháng. Wow Keywords bán mua đứt (sổ đối thủ, 2026-10-26) |
-| Giá | **$39.99 trả một lần**, cố định (anh chốt 2026-10-28) | Bằng khoảng nửa Wow Keywords **$79** (đủ tính năng, đo 2026-10-26) vì bản 1.0 chỉ có 1 tính năng. Không giảm giá, không bậc thang ở bản này |
-| Dùng thử | **14 ngày đủ tính năng**, không thẻ, không đăng ký | Tool chọn niche phải chạy trên niche của chính họ mới thấy giá trị. Cùng số với RAM Rescue (đã bán bằng Lemon Squeezy) |
-| Số máy | **1 license = 2 máy**, gỡ máy trong Cài đặt | Như Wow Keywords |
-| Hết dùng thử, chưa mua | **Không tra mới**; vẫn mở mọi kết quả cũ + tải CSV / xuất | Không khoá dữ liệu của người dùng (luật Version 10) |
-| Cập nhật | Miễn phí mọi bản **1.x** | Ghi rõ trên màn mua + landing |
-| Giá bậc thang | **Chưa làm** — xét lại sau đơn thứ 20, khi có số đơn thật để đếm | Đếm ngược "còn N license" chỉ được làm khi số đọc từ đơn thật |
-| Bản đầy đủ (Project, AI Agent…) | Giá mới khi bật lại, người đã mua $39.99 được nâng cấp — chốt sau | Không hứa trước |
-
-**Doanh thu — phép tính, không phải dự báo:** người mua × $39.99 × (1 − 5 %) − $0,50 / đơn (phí Lemon Squeezy) − thuế.
-Chưa có người mua.
-
-**Còn để đo sau khi bán:** chi phí AI trung bình mỗi niche (log Phase 27.4) · phễu GA4 tải → mở → tra → mua.
 
 [Tổng quan Version 10](version-10.md)
 

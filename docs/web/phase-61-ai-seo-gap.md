@@ -3,7 +3,7 @@
 > Gộp kệ Google (Phase 59) và kệ AI (Phase 60) thành **điểm "kệ yếu"** theo công thức cố định, rồi thêm vào
 > **bảng so sánh niche** (Phase 44). Niche kệ yếu = người dùng đang hỏi mà chưa ai trả lời tốt. **Không AI.**
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 60</span>
 
 ## Chạy thế nào
 

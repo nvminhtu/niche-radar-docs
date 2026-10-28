@@ -3,7 +3,7 @@
 > Niche đã chọn → xuất **gói GEO**: bộ câu hỏi + regex tên đối thủ đúng định dạng `scripts/geo.py` của App-AI-Skills,
 > kèm **danh sách trang cần viết** để được Google và AI nhắc. Đây là cầu nối từ "chọn niche" sang "ra mắt".
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 61</span>
 
 ## Chạy thế nào
 

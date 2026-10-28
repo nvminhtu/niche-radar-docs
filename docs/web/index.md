@@ -354,7 +354,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">31</span>
 <div class="step__body">
-<h3>Mô hình tiền <span class="chip chip--done">Xong 2026-10-28</span></h3>
+<h3>Mô hình tiền <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Mua đứt, giá bậc thang có / không, dùng thử bao nhiêu ngày, hết hạn còn dùng được gì — giá đo từ đối thủ + số fake-door.</p>
 <a class="go" href="phase-31-money-model/">Xem chi tiết →</a>
 </div>
@@ -362,7 +362,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">32</span>
 <div class="step__body">
-<h3>Thanh toán + license key <span class="chip chip--done">Xong 2026-10-28</span></h3>
+<h3>Thanh toán + license key <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Lemon Squeezy checkout + API license key: kích hoạt, kiểm lại, gỡ máy. Không webhook, không server riêng.</p>
 <a class="go" href="phase-32-payments/">Xem chi tiết →</a>
 </div>
@@ -370,7 +370,7 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 <div class="step" markdown>
 <span class="step__n">33</span>
 <div class="step__body">
-<h3>Dùng thử + paywall <span class="chip chip--done">Xong 2026-10-28 · chờ mua thử</span></h3>
+<h3>Dùng thử + paywall <span class="chip chip--todo">Chưa làm</span></h3>
 <p>Đếm ngày dùng thử trên máy, thanh "còn X ngày", màn mua + nhập key, tìm lại key bằng email, dữ liệu cũ vẫn xuất được.</p>
 <a class="go" href="phase-33-paywall-trial/">Xem chi tiết →</a>
 </div>
@@ -486,6 +486,54 @@ máy tự kiểm**. So sánh niche đã dời lên Phase 44, Hỏi dữ liệu g
 </div>
 </div>
 
+## Version 4 · LLM + AEO, GEO, SEO (Phase 59–63)
+
+Người dùng ngày càng hỏi Google và AI thay vì lên store. Thêm **kệ Google** (ai đứng top 10) và **kệ AI** (ChatGPT /
+Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Chi tiết: [Tổng quan Version 4](version-4.md).
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">59</span>
+<div class="step__body">
+<h3>Kệ Google (SEO) <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Top 10 Google của keyword chính, loại trang đứng top (forum, blog nhỏ = dễ chen), bộ câu hỏi người dùng — không AI.</p>
+<a class="go" href="phase-59-seo-shelf/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">60</span>
+<div class="step__body">
+<h3>Kệ AI (GEO / AEO) <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Hỏi Gemini · ChatGPT · Claude như người dùng, đếm app được nhắc và trang được trích bằng regex.</p>
+<a class="go" href="phase-60-ai-shelf/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">61</span>
+<div class="step__body">
+<h3>Chỗ trống AI + SEO <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Điểm kệ yếu theo công thức cố định, thêm cột Kệ Google + Kệ AI vào so sánh niche.</p>
+<a class="go" href="phase-61-ai-seo-gap/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">62</span>
+<div class="step__body">
+<h3>Gói GEO + trang cần viết <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Xuất questions.tsv + brands.tsv cho geo.py và danh sách trang cần viết — cầu nối sang ra mắt.</p>
+<a class="go" href="phase-62-geo-pack/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">63</span>
+<div class="step__body">
+<h3>Review Version 4 <span class="chip chip--todo">Chưa làm</span></h3>
+<p>Chọn niche thật 3 lần có kệ Google + kệ AI, sửa lỗi.</p>
+<a class="go" href="phase-63-review-4/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
 ## Version 12 · Tính năng mới
 
 <div class="steps nr-phases" markdown>
@@ -580,54 +628,6 @@ Anh chốt 2026-10-28: chưa làm, để Backlog. 40–43 đã có một phần 
 <h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--skip">Không làm</span></h3>
 <p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
 <a class="go" href="phase-45-tutorial/">Xem chi tiết →</a>
-</div>
-</div>
-</div>
-
-### Version 4 · LLM + AEO, GEO, SEO (Phase 59–63) — dời xuống 2026-10-28
-
-Người dùng ngày càng hỏi Google và AI thay vì lên store. Thêm **kệ Google** (ai đứng top 10) và **kệ AI** (ChatGPT /
-Gemini / Claude gợi ý app nào, trích trang nào) vào lúc chọn niche. Chi tiết: [Tổng quan Version 4](version-4.md).
-
-<div class="steps nr-phases" markdown>
-<div class="step" markdown>
-<span class="step__n">59</span>
-<div class="step__body">
-<h3>Kệ Google (SEO) <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Top 10 Google của keyword chính, loại trang đứng top (forum, blog nhỏ = dễ chen), bộ câu hỏi người dùng — không AI.</p>
-<a class="go" href="phase-59-seo-shelf/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">60</span>
-<div class="step__body">
-<h3>Kệ AI (GEO / AEO) <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Hỏi Gemini · ChatGPT · Claude như người dùng, đếm app được nhắc và trang được trích bằng regex.</p>
-<a class="go" href="phase-60-ai-shelf/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">61</span>
-<div class="step__body">
-<h3>Chỗ trống AI + SEO <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Điểm kệ yếu theo công thức cố định, thêm cột Kệ Google + Kệ AI vào so sánh niche.</p>
-<a class="go" href="phase-61-ai-seo-gap/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">62</span>
-<div class="step__body">
-<h3>Gói GEO + trang cần viết <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Xuất questions.tsv + brands.tsv cho geo.py và danh sách trang cần viết — cầu nối sang ra mắt.</p>
-<a class="go" href="phase-62-geo-pack/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">63</span>
-<div class="step__body">
-<h3>Review Version 4 <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Chọn niche thật 3 lần có kệ Google + kệ AI, sửa lỗi.</p>
-<a class="go" href="phase-63-review-4/">Xem chi tiết →</a>
 </div>
 </div>
 </div>

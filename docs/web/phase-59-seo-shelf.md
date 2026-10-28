@@ -3,7 +3,7 @@
 > Với keyword chính của niche: **top 10 Google là ai**, loại trang gì, còn chỗ chen không. Kèm **câu hỏi người dùng
 > hay gõ** (AEO). **Không AI.**
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--todo">Chưa làm · sau Phase 58</span>
 
 ## Chạy thế nào
 

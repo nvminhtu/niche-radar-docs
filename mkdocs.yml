@@ -132,6 +132,13 @@ nav:
           - Phase 56 · So sánh đối thủ: web/phase-56-compare-competitor.md
           - Phase 57 · Báo cáo so sánh (AI Cite): web/phase-57-ai-cite-report.md
           - Phase 58 · Review Version 3: web/phase-58-review-3.md
+      - "Version 4 · LLM + AEO, GEO, SEO (Phase 59–63)":
+          - Tổng quan Version 4: web/version-4.md
+          - Phase 59 · Kệ Google (SEO): web/phase-59-seo-shelf.md
+          - Phase 60 · Kệ AI (GEO / AEO): web/phase-60-ai-shelf.md
+          - Phase 61 · Chỗ trống AI + SEO: web/phase-61-ai-seo-gap.md
+          - Phase 62 · Gói GEO + trang cần viết: web/phase-62-geo-pack.md
+          - Phase 63 · Review Version 4: web/phase-63-review-4.md
       - "Version 12 (New Features — Just Planned)":
           - Tổng quan Version 12: web/version-12.md
       - "Backlog · làm sau (22–25 + phase dời)":
@@ -153,13 +160,6 @@ nav:
               - "Phase 43 · Evidence pack + test bán trước": web/phase-43-evidence-presell.md
               - "Phase 44 · So sánh niche": web/phase-44-compare-niche.md
               - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
-          - "Version 4 · LLM + AEO, GEO, SEO (Phase 59–63)":
-              - Tổng quan Version 4: web/version-4.md
-              - Phase 59 · Kệ Google (SEO): web/phase-59-seo-shelf.md
-              - Phase 60 · Kệ AI (GEO / AEO): web/phase-60-ai-shelf.md
-              - Phase 61 · Chỗ trống AI + SEO: web/phase-61-ai-seo-gap.md
-              - Phase 62 · Gói GEO + trang cần viết: web/phase-62-geo-pack.md
-              - Phase 63 · Review Version 4: web/phase-63-review-4.md
       - Appendix · Chưa xếp / Không làm: appendix.md
       - "⛔ KO LÀM — Backlog 01–17":
           - "Account (bỏ 2026-10-26)":

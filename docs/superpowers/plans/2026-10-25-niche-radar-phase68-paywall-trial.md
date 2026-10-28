@@ -1,34 +1,56 @@
-# ShotMatic Phase 33 — Bản Mac Niche Research + dùng thử + paywall — Implementation Plan
+# ShotMatic Phase 33 — Paywall + dùng thử — Implementation Plan
 
-> Viết lại 2026-10-28 (bản cũ gắn tài khoản Firebase — bỏ). Làm từng Task theo thứ tự, mỗi Task xong `npm run check` xanh.
-> Không đếm ngược giả, không giấu nút đóng, không khoá dữ liệu cũ, không gọi gói trả phí là quyên góp.
+> **For agentic workers:** làm từng Task theo thứ tự, mỗi Task xong thì `npm run check` xanh rồi commit.
+> Steps dùng checkbox (`- [ ]`). Không đếm ngược giả, không giấu nút đóng, không gọi gói trả phí là quyên góp.
 
-**Spec:** [Phase 33](../../web/phase-33-paywall-trial.md) · **Cần trước:** [Phase 31](../../web/phase-31-money-model.md) (giá $39.99, 14 ngày, 2 máy) ·
-[Phase 32](../../web/phase-32-payments.md) (hợp đồng Lemon Squeezy).
+**Goal:** bấm tính năng Pro → màn nâng cấp nói rõ được gì, có dùng thử, có Khôi phục mua; mua xong dùng ngay.
+
+**Spec:** [Phase 33 · Paywall + dùng thử](../../web/phase-33-paywall-trial.md) · **Cần trước:** Phase 31 (gói, N ngày, số máy), Phase 32 (`entitlement`).
 
 ## Mục tiêu · làm · không làm
 
-- **Mục tiêu:** `npm run mac` ra `.dmg` chỉ có Niche Research, cài mới dùng thử 14 ngày, hết hạn mua $39.99 → dán key → Pro ngay.
-- **Làm:** biến bản (edition) · trạng thái license trên máy · gọi API license Lemon Squeezy · chặn tra mới khi hết hạn ·
-  thanh dùng thử · màn `/license` · menu xám "Bản đầy đủ" · test.
-- **Không làm:** Keychain (Phase 35) · Windows (Phase 36) · tự cập nhật (Phase 37) · tài khoản · webhook · mã giảm giá ·
-  giá bậc thang · tạo sản phẩm Lemon Squeezy (việc của anh).
+- **Xong khi:** Free → bấm Pro → mua → dùng ngay, không khởi động lại · hết dùng thử → về Free, dữ liệu còn đủ (đếm project trước / sau) ·
+  "Khôi phục mua" trên máy mới mở lại Pro · vượt số máy → báo rõ, không khoá máy đang dùng · tính năng đã Free ở bản trước vẫn Free với người đang dùng.
+- **Làm:** khoá Pro đúng chỗ, màn nâng cấp (giá, chu kỳ, tự gia hạn, cách huỷ), dùng thử N ngày, Khôi phục mua, giới hạn số máy, khớp landing.
+- **Không làm:** mã giảm giá / affiliate · gói team · chi phí AI theo gói (Phase 27.7).
+
+## Global Constraints
+
+- Danh sách tính năng Pro ở **1 chỗ**: `features.ts` thêm `tier: 'free' | 'pro'` + `freeSince` (bản đã Free) — tính năng có `freeSince` ≤ bản người
+  dùng cài đầu (`users.firstVersion`) thì vẫn Free với người đó (grandfather).
+- Cổng: `requirePro(feature)` ở server (route Pro trả 402 kèm lý do) + `<ProGate>` ở client mở `PaywallModal`.
+- Dùng thử: `entitlement.trialEndsAt` do Function ghi lúc bấm "Dùng thử" lần đầu (1 lần / tài khoản); hết hạn → Free, không xoá gì.
+- Số máy: mỗi máy có `deviceId` (Backlog 04); `users/{uid}/devices/{deviceId}` lưu `lastSeen`; vượt giới hạn → màn báo + danh sách máy để tự gỡ máy cũ
+  — **không** khoá máy đang dùng giữa chừng.
+- Khôi phục mua: đọc lại `entitlement` từ Firestore sau đăng nhập + gọi Function `restore` tra Lemon Squeezy theo email nếu thiếu.
+- Mua xong: nghe `entitlement` thay đổi → mở khoá ngay (không reload).
+
+## File đụng tới
+
+- `web/src/lib/features.ts` — `tier`, `freeSince`
+- `web/src/lib/pro-gate.ts` (mới) + `web/src/server/app.ts` — `requirePro`
+- `web/src/components/PaywallModal.tsx`, `ProGate.tsx` (mới) — màn nâng cấp + cổng
+- `functions/src/trial.ts`, `restore.ts`, `devices.ts` (mới) — dùng thử, khôi phục, số máy
+- `web/src/client/SettingsPage.tsx` — mục Gói: trạng thái, Khôi phục mua, danh sách máy
+- `web/tests/pro-gate.test.ts`, `functions/test/*`
 
 ## Tasks
 
-- [x] **T1 · Biến bản** — `web/src/lib/edition.ts`: `EDITION` (client, `VITE_NR_EDITION`), `serverEdition()` (`NR_EDITION`),
-  `RESEARCH_ONLY`, `LICENSED`. `build-mac.sh`: `NR_EDITION` mặc định `research`, truyền vào vite + esbuild `--define`.
-- [x] **T2 · Trạng thái license** — `web/src/lib/license/state.ts`: đọc / ghi `license.json` + bản sao ngày bắt đầu thử;
-  hàm thuần `licenseStatus(file, now)` → `trial` (còn N ngày) · `expired` · `pro` · `pro-offline-expired`. Test bằng đồng hồ giả.
-- [x] **T3 · Lemon Squeezy** — `web/src/lib/license/lemon.ts`: activate / validate / deactivate, fetch truyền vào được (test giả),
-  kiểm `meta.product_id`, lỗi đổi sang câu thường (sai key, hết lượt máy, mất mạng).
-- [x] **T4 · API** — `GET /api/license`, `POST /api/license/activate`, `POST /api/license/deactivate`; chặn `POST /api/research`
-  và `POST /api/explore` bằng `402` khi `LICENSED` và hết hạn. Validate lại khi mở app ≤ 1 lần / ngày.
-- [x] **T5 · Giao diện** — `TrialBar` dưới header · trang `/license` (màn mua) · menu: mục ngoài Niche Research xám + "Bản đầy đủ" ·
-  route ngoài Niche Research → trang `FullEditionOnly` · form Tra / Explore gặp `402` → mở `/license?reason=expired`.
-- [x] **T6 · Kiểm** — `npm run check` xanh · `npm run mac:quick` · mở app: thanh "Còn 14 ngày" · sửa `license.json` lùi 15 ngày →
-  màn mua, kết quả cũ vẫn mở + CSV tải được · dán key test → Pro · screenshot đã Read ở 1340px.
+### Task 1: Danh sách Pro + cổng
+- [ ] `tier`, `freeSince`, `requirePro`, `ProGate`. Test grandfather: người cài bản cũ vẫn dùng tính năng đã Free.
 
-## Sau khi anh gửi link checkout + Product ID
+### Task 2: Màn nâng cấp
+- [ ] Được gì, giá + chu kỳ, "tự gia hạn, huỷ bất cứ lúc nào ở …", nút đóng rõ, Khôi phục mua. Đối chiếu luật store trong `money.md`.
 
-Điền vào `web/src/lib/license/config.ts` → build lại → mua test → kích hoạt máy 3 phải bị báo → hoàn tiền → app về hết hạn.
+### Task 3: Dùng thử + hết hạn
+- [ ] Function trial; hết hạn → Free; test đếm project trước / sau không đổi.
+
+### Task 4: Số máy + khôi phục
+- [ ] Devices + màn vượt giới hạn; restore trên máy mới. Test emulator.
+
+### Task 5: Soát
+- [ ] Luồng thật test mode: Free → Pro → dùng ngay. Giá khớp landing (Phase 46). Screenshot paywall 1340 + 375, sáng + tối, Read. CHANGELOG, chip, ROADMAP.
+
+## Tiến độ
+
+- 2026-10-25: viết plan.
