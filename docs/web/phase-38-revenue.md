@@ -4,7 +4,7 @@
 > **verified** từ TrustMRR và các nguồn công khai khác, dùng AI để khớp tên đối thủ và đọc trang — và tách bạch số thật
 > với số ước.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 2, 5, 6, 9).** Cột Tiền (giá, gói IAP) + nhãn mô hình tiền cho từng đối thủ. TrustMRR **cấm quét** →

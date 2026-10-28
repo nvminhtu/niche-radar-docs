@@ -3,7 +3,7 @@
 > Mở phiên săn là biết đang dùng AI nào và model nào; gọn bớt hướng dẫn; chọn lệnh có sẵn với đúng dữ liệu;
 > biết khi nào sang bước tiếp; nhìn dấu ✦ là nhận ra chức năng AI; luôn thấy AI đang làm gì và quay lại đúng phiên đang chạy.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-27</span>
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7 (bản gọn, xem Kết quả)</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đối chiếu code ngày 2026-10-27.**
@@ -365,6 +365,32 @@ Kiểm tên dài, đủ thông tin từng dòng, Guide một cột, bàn phím v
    Có thể đưa Recent lên trước Guide cùng T2, nhưng chưa coi T7 xong trước khi đối soát được badge.
 
 S/M/L là độ lớn tương đối, **chưa đo thời gian**, không phải cam kết ngày công.
+
+## Kết quả 2026-10-28
+
+- **T1 danh tính:** khảo sát CLI thật — Claude Code 2.1.269 trả model ở `system/init.model` + `assistant.message.model`
+  (vd `claude-haiku-4-5-20251001`); Codex 0.162.0 **không** có model trong `exec --json`, có ở dòng `turn_context` của file phiên
+  `$CODEX_HOME/sessions/**/rollout-*-<thread_id>.jsonl` (vd `gpt-6.1-sol`). Sự kiện NDJSON mới `identity`; `lib/ai/identity.ts`
+  cache bộ nhớ theo tuyến + model đã chọn; GET `/api/ai/chat` trả `identity`; header ghi "Claude Code · <model>" hoặc "model chưa rõ",
+  phụ "đã chọn …" khi CLI chưa xác nhận; mỗi câu trả lời ghi model của lượt đó. Đổi Claude Code ↔ Codex thì không resume phiên CLI kia.
+  Chạy thật trên bản sao DB: header nhận `claude-sonnet-4-6` sau lượt đầu. Chưa có icon hãng (chưa có asset được phép) — chỉ tên chữ.
+- **T2 hướng dẫn:** `DismissibleNotice` + `lib/hunt-notices.ts` (localStorage `nr.hunt.dismissed.v1:<phiên|index>`, storage hỏng → bộ nhớ);
+  đóng được lời chào chat, gợi ý lệnh, hướng dẫn `/find-niches`, banner xong flow; "Hiện lại hướng dẫn" ở ô chat. Lỗi, quyền, trạng thái không đóng được.
+- **T3 lệnh AI:** `lib/hunt-commands.ts` là nguồn chung cho menu, gợi ý và slash máy chủ nhận (`HUNT_SKILLS`); test khớp đúng 5 thư mục skill thật.
+  Menu "✦ Lệnh AI" (và gõ `/`): tên · làm gì · cần gì · lý do khoá · "Đưa vào ô chat · chưa chạy"; ↑ ↓ Enter Escape, Enter trong menu không gửi.
+  Lệnh 1 keyword dùng ứng viên đang chọn kèm Research #id. Chạy thật: ↓×4 Enter → `/app-demand pomodoro timer for study offline (Research #44)`, 0 tin gửi.
+- **T4 điều kiện bước:** `flowAccess()` chuỗi điều kiện theo bảng trên (lỗi không lọt qua health); thanh bước xám + lý do;
+  "Sang bước n →" chỉ đổi thẻ; không tự nhảy thẻ khi dữ liệu cập nhật; nút chạy khoá khi bước chưa mở / AI đang chạy.
+- **T5 ✦:** nút chạy AI ở Flow dùng variant `ai` + ✦ + tooltip "Dùng AI (<tên AI>)"; Tra nốt / Sang bước không mang ✦; nút Lệnh AI có ✦.
+  Chưa chuyển hết các chỗ khác (AiRunButton, AskAi, AiSection) sang component chung.
+- **T6 trạng thái:** `lib/hunt-activity.ts` + `HuntStatus` ở đầu Flow và dưới header chat: Rảnh (lần hoạt động cuối) · Đang trả lời · Đang làm việc
+  (tool gần nhất + ứng viên đang tra n/t nguồn) · Lỗi · Mất kết nối (poll lỗi không còn bị nuốt). Đồng hồ theo mốc lượt, `role=status` chỉ đọc khi chữ đổi.
+  Chạy thật: "Answering" → "Idle · last active 11:32 AM"; lỗi hiện ở cả hai chỗ.
+- **T7 phiên gần đây:** Recent đứng trước Guide; Guide thu sẵn khi đã có phiên, bấm tay thì nhớ; mỗi dòng có Bước n/7 (cùng `flowState`),
+  số ứng viên, Project #id, đang tra n (keyword) hoặc "không có việc đang tra · cập nhật …"; poll 3 giây khi có việc chạy; lỗi tải không thành "chưa có phiên".
+  `listHunts` đọc thẳng `source_jobs`, không dựng RunView, không ghi điểm.
+- **Chưa làm (ghi rõ):** registry chat phía server + vòng đời tool kết thúc (CLI không có sự kiện tool-end ổn định); đếm lại badge "n running" theo
+  source job + nhóm theo phiên ở AppShell; ✦ cho mọi nút AI còn lại; icon hãng. Kiểm: 513 test xanh, xem 1340 + 960px EN.
 
 ## Rủi ro
 

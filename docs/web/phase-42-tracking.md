@@ -3,7 +3,7 @@
 > Bản đầu (Phase 9) chụp số khi anh bấm. Phase này làm nó **tự chạy theo lịch** và **chỉ báo cái đáng chú ý**: đối thủ
 > mới vào top, đối thủ bỏ bê cập nhật lại, giá đổi, nhu cầu đổi mạnh.
 
-<span class="chip chip--doing">Một phần · soát code 2026-10-27: có chụp lại project bằng tay + lịch sử mốc 7/30/90 ngày · chưa tự chạy, chưa luật báo, chưa hộp "Thay đổi tuần này"</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có chụp lại project bằng tay + lịch sử mốc 7/30/90 ngày · chưa tự chạy, chưa luật báo, chưa hộp "Thay đổi tuần này"</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 9).** Trang Project: **Chụp số ngay** / **Tra lại tất cả + chụp số**, so với lần trước (đối thủ vào /

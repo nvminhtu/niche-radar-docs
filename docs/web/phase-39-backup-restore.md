@@ -3,7 +3,7 @@
 > Dữ liệu tra cứu tích luỹ hàng tháng — **không được mất**. Backup tự chạy, tự dọn, tự kiểm; restore xem trước được
 > và lấy lại được cả **một project** từ bản cũ mà không đè cả DB.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 8).** Cài đặt → Dữ liệu: **Backup ngay**, danh sách backup, **Restore** (luôn backup an toàn trước khi

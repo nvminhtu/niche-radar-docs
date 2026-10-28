@@ -3,7 +3,7 @@
 > Explore mở 1 niche thành ~100 keyword. Phase này làm cây **sạch hơn** (ít rác, ít trùng), **rộng hơn** (thêm nguồn
 > gợi ý), điểm cơ hội **giải thích được**, và từ cây đi thẳng sang Research hàng loạt.
 
-<span class="chip chip--doing">Một phần · soát code 2026-10-27: có bản đồ ngách theo nhóm + Research sâu nhiều lá · chưa lọc keyword rác, chưa gộp cùng nghĩa, chạy lá chưa nối lại được sau khi tắt server</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có bản đồ ngách theo nhóm + Research sâu nhiều lá · chưa lọc keyword rác, chưa gộp cùng nghĩa, chạy lá chưa nối lại được sau khi tắt server</span>
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 1).** Gợi ý Play + Google → cây ≤ 100 keyword → đếm đối thủ từng keyword → điểm cơ hội

@@ -3,7 +3,7 @@
 > Mỗi đối thủ có **một trang riêng** gom mọi thứ tool biết về nó, và bảng đối thủ có **cờ** để nhìn là thấy ai yếu:
 > bỏ bê, bị chê, chỉ một store, thu tiền mà làm dở.
 
-<span class="chip chip--doing">Chưa xong · soát code 2026-10-27: có bảng đối thủ + gom vào project · chưa có trang từng đối thủ, cờ đối thủ yếu, nối Play ↔ iOS</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có bảng đối thủ + gom vào project · chưa có trang từng đối thủ, cờ đối thủ yếu, nối Play ↔ iOS</span>
 
 <div class="box box--goal" markdown>
 **Hiện có.** Bảng đối thủ trong Research (tên, store, rating, số rating, giá, nhãn mô hình tiền — Phase 2, 9); lời chê

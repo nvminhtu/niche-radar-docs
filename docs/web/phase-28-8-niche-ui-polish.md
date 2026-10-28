@@ -3,7 +3,7 @@
 > Sửa bảng và cây bị cắt trước; biến trạng thái rỗng thành bước đi tiếp; đọc được điểm và giới hạn dữ liệu ngay,
 > rồi bấm gợi ý để biết cần đo, test hay research thêm điều gì.
 
-<span class="chip chip--doing">Đang làm · D + E xong 2026-10-28 · còn B, C, A</span>
+<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đối chiếu code ngày 2026-10-27.**
@@ -304,7 +304,19 @@ Với chính trang plan: mở MkDocs khoảng 1340px, xác nhận nội dung m�
   Sơ đồ nhánh rỗng → "Mở tiếp {keyword}" / "Chọn keyword"; FLOW rỗng → "Ghim ngách gợi ý: {keyword}" (chỉ khi có điểm) /
   "Chọn keyword để ghim"; bảng lọc rỗng → "Xoá bộ lọc"; bảng trống → "Mở rộng {seed}"; Đã research sâu rỗng → "Chọn keyword"
   (focus ô chọn đầu, không tự chọn); `post` chặn bấm lặp; HealthBlock phân biệt đang tải / lỗi (Thử lại) thay vì `null`.
-- **Chưa làm:** Branch map cây dọc khi hẹp, chữ rỗng Niche map / SourceBlock, B, C, A; zoom 125–150 % — **chưa đo**.
+- **B:** `lib/health-presentation.ts` — đúng 1 câu kết luận theo `decision` đã cap (thiếu yếu tố → "Test thêm: còn thiếu bằng chứng cho …";
+  đủ số giữa ngưỡng → "cần kiểm chứng giả thuyết"; BỎ nêu 2 yếu tố yếu nhất). Summary đầy đủ, cách tính 7 yếu tố, ngưỡng + link Cài đặt,
+  điểm Explorer v1 vào `details` "Xem cách tính" (đóng sẵn). Cờ chặn + lý do bị hạ vẫn ở ngoài; summary của evidence pack không đổi.
+- **C:** số `total/10` + thanh trung tính (`role=meter`), thanh **Trọng số đã có điểm** riêng, dòng **Đo trực tiếp + tự chấm** có ⓘ
+  ("không phải xác suất thành công"); null hiện "Chưa đủ dữ liệu", 0 là 0. Màu chỉ theo gợi ý đã cap.
+- **A:** `lib/health-actions.ts` — nút "{gợi ý} · Xem việc cần test / bước tiếp / lý do và hướng khác / dữ liệu còn thiếu" (`aria-expanded`)
+  mở panel một cột: yếu tố thiếu → cuộn tới khối có nút chạy lại (#trends · #competitors · #complaints); reach / fit → form tự chấm
+  (API `score-manual`, reach bắt buộc link, lỗi giữ chữ); Test bán trước khoá "Phase 43"; Brief + Spec khoá "Phase 28.5"; BUILD có Collect +
+  đọc cờ; BỎ có Explore; giao AI = **điền sẵn** ô Hỏi AI (sự kiện `prefillAi`, không tự gửi, không tạo phiên).
+  Lệch plan: chưa làm handoff sang phiên AI Agent (router state) — dùng ô Hỏi AI chỉ đọc thay thế.
+- Kiểm: `health-presentation.test.ts` 5 test; xem Research #44 ở 1340 + 960px EN, mở panel bằng Enter, "Điền vào Hỏi AI" điền đúng
+  Research #44 + 4 yếu tố thiếu (0 tin nhắn gửi), reach thiếu link bị chặn trước khi gọi server.
+- **Chưa làm:** Branch map cây dọc khi hẹp, chữ rỗng Niche map / SourceBlock, handoff sang AI Agent; zoom 125–150 % — **chưa đo**.
 
 ## Rủi ro
 

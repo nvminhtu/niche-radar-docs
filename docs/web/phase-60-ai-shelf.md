@@ -3,7 +3,7 @@
 > Hỏi **Gemini, ChatGPT, Claude** đúng câu người dùng hay hỏi về niche, như một người dùng thật. Đếm **app nào được
 > nhắc**, **trang nào được trích**. Ở đây LLM là **nguồn dữ liệu**, không phải người phân tích.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 59</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
 
 ## Chạy thế nào
 

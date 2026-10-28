@@ -4,7 +4,7 @@
 > Version 4 thêm **hai kệ mới** vào lúc chọn niche: **kệ Google** (SEO, ai đứng top 10) và **kệ AI**
 > (ChatGPT / Gemini / Claude đang gợi ý app nào, trích trang nào). Niche mà cả hai kệ còn yếu là niche dễ chen vào.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 58 (Local App 3.0)</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
 
 **Thuật ngữ:** **SEO** = lên top Google · **AEO** (Answer Engine Optimization) = được chọn làm câu trả lời
 (ô trả lời, People Also Ask, AI Overviews) · **GEO** (Generative Engine Optimization) = được ChatGPT / Gemini / Claude
