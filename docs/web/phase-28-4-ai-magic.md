@@ -5,7 +5,7 @@
 > hoặc key riêng) nhận **đúng thứ đang xem** + chạy **đúng skill của việc đó** → trả bản nháp có mã nguồn → người bấm
 > **Dùng / Bỏ / Hỏi lại**.
 
-<span class="chip chip--doing">Đang làm · 2026-10-27 · chỗ UI dễ làm trước, phần còn lại sau</span>
+<span class="chip chip--doing">Đang làm · đợt 1a code xong 2026-10-28 trên nhánh phase28-4-ui-easy (5 nút ✦ mở Hỏi AI) · chờ anh review rồi merge</span>
 
 <div class="box box--goal" markdown>
 **Hiện có.** `web/src/components/AiRunButton.tsx`: đũa phép + chữ "Chạy bằng AI" + ô chọn AI, gắn ở 4 khối (Chủ đề than,
@@ -16,6 +16,29 @@ chuẩn hoá (đang chọn dòng nào, lọc gì), chạy qua skill thay prompt 
 
 **Cần xong trước:** [Phase 28.2](phase-28-2-mcp-write.md) (gói nhóm việc) · [Phase 28.3](phase-28-3-skills.md) (skill
 đợt 1) · Phase 27 · 26.6 (AI mặc định + chọn AI từng việc).
+
+## Kết quả đợt 1a — chỗ UI dễ (2026-10-28)
+
+Làm trước những chỗ **chỉ cần gắn nút**: bấm ✦ → mở khung **Hỏi AI** đã có (Phase 27 · 26.4) và gửi luôn câu hỏi soạn sẵn
+cho đúng việc, ngữ cảnh trang (Research #id, Project #id, Explore #id, Gap) khung chat tự gửi kèm. AI đọc DB bằng tool
+MCP chỉ đọc (`get_research`, `get_explore`, `get_gaps`, `get_project`, `get_decision`…), **không ghi gì** — người dùng tự
+đọc rồi tự sửa. Chưa có skill riêng, chưa có thẻ Dùng / Bỏ / Hỏi lại trong khối (để đợt 1b).
+
+| Chỗ | Nút ✦ | Việc AI làm |
+|---|---|---|
+| Research · khối Sức khoẻ niche | Kiểm sức khoẻ niche bằng AI | giải thích từng yếu tố, phản biện, nên đo thêm gì — không đổi điểm |
+| Explore · Cây ngách | Mở rộng niche bằng AI | gộp keyword cùng nghĩa, chỉ tên thương hiệu / lạc đề, đặt tên cụm, 10 long-tail |
+| Gap hỏi đáp · đầu trang | Gap → ý tưởng app bằng AI | 3–5 ý tưởng: vấn đề · ai gặp · link bài · app thiếu gì · keyword nên tra |
+| Project · Tổng quan (Đánh giá) | Kiểm sức khoẻ project bằng AI | thiếu gì, mâu thuẫn, làm gì trước |
+| Project · Bàn quyết định | Chấm bàn quyết định bằng AI | 5 trục có dẫn chứng + BUILD / TEST THÊM / BỎ — chỉ đề xuất |
+
+- Code: `web/src/components/AiMagic.tsx` (nút + `askAi()`), `ChatPanel.tsx` nghe `askAi`, chữ tiếng Anh ở `locales/en-text-magic.ts`
+- Chưa nối AI → nút xám, tooltip "Nối AI để dùng", bấm đi tới Cài đặt → AI · bản demo → xám "Có trong app"
+- Kiểm 2026-10-28: 468 test xanh, typecheck + lint sạch · chạy thật trên bản sao DB: Research #51 bấm ✦ → Codex gọi
+  `get_research` + `get_evidence_pack`, trả lời từng yếu tố có mã `[Research #51]` · Claude Code trên máy đang **bị đăng xuất**
+  (OAuth token revoked) nên chưa chạy được tuyến Claude Code · 1340px + 375px không cuộn ngang, nút không đè tiêu đề
+- **Còn lại (đợt 1b):** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại), chạy qua skill ([28.3](phase-28-3-skills.md) —
+  backlog), 4 nút chữ "Chạy bằng AI" cũ đổi sang icon, gửi kèm dòng đang tick / bộ lọc
 
 ## Bấm icon thì chạy gì
 
