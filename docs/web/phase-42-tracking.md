@@ -3,7 +3,12 @@
 > Bản đầu (Phase 9) chụp số khi anh bấm. Phase này làm nó **tự chạy theo lịch** và **chỉ báo cái đáng chú ý**: đối thủ
 > mới vào top, đối thủ bỏ bê cập nhật lại, giá đổi, nhu cầu đổi mạnh.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có chụp lại project bằng tay + lịch sử mốc 7/30/90 ngày · chưa tự chạy, chưa luật báo, chưa hộp "Thay đổi tuần này"</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-28 · phần đã có trong app, phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (anh chốt 2026-10-28)"
+    Soát code 2026-10-28. **Giữ — đã có trong app:** trang Project: Chụp số ngay / Tra lại tất cả + chụp số · so với lần trước (đối thủ vào / rời top 10, rating, giá, keyword, Trends, điểm v2) · mốc 7 / 30 / 90 ngày hiện “đến hạn” (Phase 9).
+
+    **Không làm:** tự chạy theo lịch · luật chỉ báo thay đổi đáng chú ý · hộp “Thay đổi tuần này” · dòng thời gian điểm · theo dõi riêng đối thủ · chọn nhịp từng project. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 9).** Trang Project: **Chụp số ngay** / **Tra lại tất cả + chụp số**, so với lần trước (đối thủ vào /

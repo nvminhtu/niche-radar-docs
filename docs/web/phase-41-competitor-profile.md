@@ -3,7 +3,12 @@
 > Mỗi đối thủ có **một trang riêng** gom mọi thứ tool biết về nó, và bảng đối thủ có **cờ** để nhìn là thấy ai yếu:
 > bỏ bê, bị chê, chỉ một store, thu tiền mà làm dở.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có bảng đối thủ + gom vào project · chưa có trang từng đối thủ, cờ đối thủ yếu, nối Play ↔ iOS</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-28 · phần đã có trong app, phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (anh chốt 2026-10-28)"
+    Soát code 2026-10-28. **Giữ — đã có trong app:** bảng đối thủ trong Research (tên, store, rating, số rating, giá, nhãn mô hình tiền) · lời chê theo app (Phase 18) · collect đối thủ vào project (Phase 21).
+
+    **Không làm:** trang riêng từng đối thủ · cờ bỏ bê / bị chê / một store / thu tiền / mới vào · nối bản Play ↔ iOS · danh sách niche đối thủ xuất hiện. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có.** Bảng đối thủ trong Research (tên, store, rating, số rating, giá, nhãn mô hình tiền — Phase 2, 9); lời chê

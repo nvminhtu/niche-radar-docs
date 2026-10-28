@@ -3,7 +3,12 @@
 > Dữ liệu tra cứu tích luỹ hàng tháng — **không được mất**. Backup tự chạy, tự dọn, tự kiểm; restore xem trước được
 > và lấy lại được cả **một project** từ bản cũ mà không đè cả DB.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-28 · phần đã có trong app, phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (anh chốt 2026-10-28)"
+    Soát code 2026-10-28. **Giữ — đã có trong app:** Cài đặt → Dữ liệu: Backup ngay · danh sách backup · Restore (backup an toàn trước khi đè) · mở thư mục dữ liệu · tự backup trước mỗi lần nâng DB (Phase 8).
+
+    **Không làm:** backup tự chạy hằng ngày · luật giữ 7 ngày · 4 tuần · 6 tháng · kiểm toàn vẹn · chọn thư mục ngoài · restore xem trước · restore riêng 1 project. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 8).** Cài đặt → Dữ liệu: **Backup ngay**, danh sách backup, **Restore** (luôn backup an toàn trước khi

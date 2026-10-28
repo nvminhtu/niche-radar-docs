@@ -154,7 +154,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 <span class="step__n">HW</span>
 <div class="step__body">
 <h3>Tổng quan Hoàn thiện Web <span class="chip chip--doing">Đang làm</span></h3>
-<p>Gom mọi việc Web dang dở: việc chờ chạy thật · 9 phase trước bản bán (18–26) · 8 phase sau bản bán (38–45).</p>
+<p>Gom mọi việc Web dang dở: việc chờ chạy thật · 9 phase trước bản bán (18–26) · 8 phase sau bản bán (38–45, xong bản gọn 2026-10-28).</p>
 <a class="go" href="../app/hoan-thien-web/">Xem chi tiết →</a>
 </div>
 </div>
@@ -385,6 +385,77 @@ người dùng đã có. Chi tiết + bảng "họ làm gì → mình làm gì":
 </div>
 </div>
 
+## Hoàn thiện Web · sau bản bán (Phase 38–45) — xong bản gọn 2026-10-28
+
+Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app, phần còn lại của 38–43 không làm (liệt kê ở đầu từng trang). 44 xong, 45 không làm.
+
+<div class="steps nr-phases" markdown>
+<div class="step" markdown>
+<span class="step__n">38</span>
+<div class="step__body">
+<h3>Doanh thu thật: TrustMRR + nguồn khác + AI <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Bước 0 chọn nguồn doanh thu công khai, AI khớp tên đối thủ, dòng verified đủ trường, ước theo bậc tách riêng, bảng "Ai đang thu tiền".</p>
+<a class="go" href="phase-38-revenue/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">39</span>
+<div class="step__body">
+<h3>Backup / restore dữ liệu <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Backup tự động mỗi ngày, giữ 7 ngày · 4 tuần · 6 tháng, kiểm toàn vẹn, thư mục ngoài máy, restore xem trước, restore 1 project.</p>
+<a class="go" href="phase-39-backup-restore/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">40</span>
+<div class="step__body">
+<h3>Explore — cây keyword + bản đồ ngách <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Lọc rác + thương hiệu, gộp keyword cùng nghĩa, thêm gợi ý App Store, điểm cơ hội giải thích được, chọn lá → Research hàng loạt.</p>
+<a class="go" href="phase-40-explore-tree/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">41</span>
+<div class="step__body">
+<h3>Hồ sơ đối thủ + cờ đối thủ yếu <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Trang riêng mỗi đối thủ (2 store, nhịp cập nhật, giá, bị chê gì, doanh thu), cờ bỏ bê · bị chê · một store · thu tiền · mới vào.</p>
+<a class="go" href="phase-41-competitor-profile/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">42</span>
+<div class="step__body">
+<h3>Theo dõi niche định kỳ <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Tự tra lại theo lịch khi server chạy, chỉ báo thay đổi đáng chú ý, hộp "Thay đổi tuần này", dòng thời gian project.</p>
+<a class="go" href="phase-42-tracking/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">43</span>
+<div class="step__body">
+<h3>Evidence pack + test bán trước <span class="chip chip--done">Xong bản gọn</span></h3>
+<p>Chạy hết 1 vòng thật: evidence pack đủ khung → /app-demand → ngưỡng ghi trước → số thật → BUILD / TEST THÊM / BỎ.</p>
+<a class="go" href="phase-43-evidence-presell/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">44</span>
+<div class="step__body">
+<h3>So sánh niche <span class="chip chip--done">Xong 2026-10-27 · /compare</span></h3>
+<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
+<a class="go" href="phase-44-compare-niche/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">45</span>
+<div class="step__body">
+<h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--skip">Không làm</span></h3>
+<p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
+<a class="go" href="phase-45-tutorial/">Xem chi tiết →</a>
+</div>
+</div>
+</div>
+
 ## Version 11 · Marketing (Phase 46–49)
 
 <div class="steps nr-phases" markdown>
@@ -560,77 +631,6 @@ lúc làm thì tách thành phase.
   [28.1 Tóm tắt niche](phase-28-1-ai-summary.md) · [28.3 Bộ skill](phase-28-3-skills.md) ·
   [28.5 Brief + Spec + Plan](phase-28-5-brief-plan.md)
 - [Phase 17 · Local App 1.0](../app/phase-17-local-app-1.md) — tạm dừng, lên plan phase mới khi bản Web xong
-
-### Hoàn thiện Web · sau bản bán (Phase 38–45) — dời xuống 2026-10-28
-
-Anh chốt 2026-10-28: chưa làm, để Backlog. 40–43 đã có một phần trong app — giữ nguyên, không code tiếp.
-
-<div class="steps nr-phases" markdown>
-<div class="step" markdown>
-<span class="step__n">38</span>
-<div class="step__body">
-<h3>Doanh thu thật: TrustMRR + nguồn khác + AI <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Bước 0 chọn nguồn doanh thu công khai, AI khớp tên đối thủ, dòng verified đủ trường, ước theo bậc tách riêng, bảng "Ai đang thu tiền".</p>
-<a class="go" href="phase-38-revenue/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">39</span>
-<div class="step__body">
-<h3>Backup / restore dữ liệu <span class="chip chip--todo">Backlog · chưa làm</span></h3>
-<p>Backup tự động mỗi ngày, giữ 7 ngày · 4 tuần · 6 tháng, kiểm toàn vẹn, thư mục ngoài máy, restore xem trước, restore 1 project.</p>
-<a class="go" href="phase-39-backup-restore/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">40</span>
-<div class="step__body">
-<h3>Explore — cây keyword + bản đồ ngách <span class="chip chip--todo">Backlog · Một phần · có bản đồ ngách</span></h3>
-<p>Lọc rác + thương hiệu, gộp keyword cùng nghĩa, thêm gợi ý App Store, điểm cơ hội giải thích được, chọn lá → Research hàng loạt.</p>
-<a class="go" href="phase-40-explore-tree/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">41</span>
-<div class="step__body">
-<h3>Hồ sơ đối thủ + cờ đối thủ yếu <span class="chip chip--todo">Backlog · Chưa xong · có bảng đối thủ</span></h3>
-<p>Trang riêng mỗi đối thủ (2 store, nhịp cập nhật, giá, bị chê gì, doanh thu), cờ bỏ bê · bị chê · một store · thu tiền · mới vào.</p>
-<a class="go" href="phase-41-competitor-profile/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">42</span>
-<div class="step__body">
-<h3>Theo dõi niche định kỳ <span class="chip chip--todo">Backlog · Một phần · chụp lại bằng tay</span></h3>
-<p>Tự tra lại theo lịch khi server chạy, chỉ báo thay đổi đáng chú ý, hộp "Thay đổi tuần này", dòng thời gian project.</p>
-<a class="go" href="phase-42-tracking/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">43</span>
-<div class="step__body">
-<h3>Evidence pack + test bán trước <span class="chip chip--todo">Backlog · Một phần · có evidence pack</span></h3>
-<p>Chạy hết 1 vòng thật: evidence pack đủ khung → /app-demand → ngưỡng ghi trước → số thật → BUILD / TEST THÊM / BỎ.</p>
-<a class="go" href="phase-43-evidence-presell/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">44</span>
-<div class="step__body">
-<h3>So sánh niche <span class="chip chip--skip">Không làm · ẩn khỏi app (code giữ)</span></h3>
-<p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
-<a class="go" href="phase-44-compare-niche/">Xem chi tiết →</a>
-</div>
-</div>
-<div class="step" markdown>
-<span class="step__n">45</span>
-<div class="step__body">
-<h3>Tutorial — nút ? mỗi tính năng <span class="chip chip--skip">Không làm</span></h3>
-<p>Bấm ? cạnh tính năng: 1 câu làm gì + 2–4 hình bước đơn giản, ít chữ.</p>
-<a class="go" href="phase-45-tutorial/">Xem chi tiết →</a>
-</div>
-</div>
-</div>
 
 <hr class="nr-skip-line">
 

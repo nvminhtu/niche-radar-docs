@@ -4,7 +4,12 @@
 > chạy. Phase này làm luồng đó trơn tru và **chạy hết 1 vòng thật**: niche → evidence pack → `/app-demand` → test bán
 > trước → số thật → BUILD / TEST THÊM / BỎ.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · làm một phần · soát code 2026-10-27: có evidence pack theo khuôn /app-demand · khối test bán trước đang tắt, chưa khoá ngưỡng + nhập số thật</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-28 · phần đã có trong app, phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (anh chốt 2026-10-28)"
+    Soát code 2026-10-28. **Giữ — đã có trong app:** evidence pack .md đúng khuôn `/app-demand` (Phase 7) · skill app-demand trong thư mục AI đọc thẳng evidence pack.
+
+    **Không làm:** khối Test bán trước (đang tắt trong code, nút “Làm evidence pack →” để xám) · ngưỡng ghi trước · nhập số thật · chạy 1 vòng thật. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 7).** Evidence pack `.md` theo khung `templates/demand.md`; nháp test bán trước (hook · landing fake

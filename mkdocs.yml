@@ -113,6 +113,15 @@ nav:
           - "Phase 31 · Mô hình tiền": web/phase-31-money-model.md
           - "Phase 32 · Thanh toán + license key": web/phase-32-payments.md
           - "Phase 33 · Dùng thử + paywall": web/phase-33-paywall-trial.md
+      - "Hoàn thiện Web · sau bản bán (Phase 38–45) · xong bản gọn":
+          - "Phase 38 · Doanh thu thật (TrustMRR + AI)": web/phase-38-revenue.md
+          - "Phase 39 · Backup / restore tự động": web/phase-39-backup-restore.md
+          - "Phase 40 · Explore: cây keyword + bản đồ ngách": web/phase-40-explore-tree.md
+          - "Phase 41 · Hồ sơ đối thủ + cờ yếu": web/phase-41-competitor-profile.md
+          - "Phase 42 · Theo dõi niche định kỳ": web/phase-42-tracking.md
+          - "Phase 43 · Evidence pack + test bán trước": web/phase-43-evidence-presell.md
+          - "Phase 44 · So sánh niche": web/phase-44-compare-niche.md
+          - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
       - "Version 11 · Marketing (Phase 46–49)":
           - Tổng quan Version 11: web/version-11.md
           - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
@@ -151,15 +160,6 @@ nav:
           - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
           - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
           - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
-          - "Hoàn thiện Web · sau bản bán (Phase 38–45)":
-              - "Phase 38 · Doanh thu thật (TrustMRR + AI)": web/phase-38-revenue.md
-              - "Phase 39 · Backup / restore tự động": web/phase-39-backup-restore.md
-              - "Phase 40 · Explore: cây keyword + bản đồ ngách": web/phase-40-explore-tree.md
-              - "Phase 41 · Hồ sơ đối thủ + cờ yếu": web/phase-41-competitor-profile.md
-              - "Phase 42 · Theo dõi niche định kỳ": web/phase-42-tracking.md
-              - "Phase 43 · Evidence pack + test bán trước": web/phase-43-evidence-presell.md
-              - "Phase 44 · So sánh niche": web/phase-44-compare-niche.md
-              - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
       - Appendix · Chưa xếp / Không làm: appendix.md
       - "⛔ KO LÀM — Backlog 01–17":
           - "Account (bỏ 2026-10-26)":

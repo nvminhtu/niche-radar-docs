@@ -4,7 +4,12 @@
 > **verified** từ TrustMRR và các nguồn công khai khác, dùng AI để khớp tên đối thủ và đọc trang — và tách bạch số thật
 > với số ước.
 
-<span class="chip chip--todo">Backlog · làm sau · 2026-10-28 · chưa làm</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-28 · phần đã có trong app, phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (anh chốt 2026-10-28)"
+    Soát code 2026-10-28. **Giữ — đã có trong app:** cột Tiền + nhãn mô hình tiền mỗi đối thủ (Phase 9) · TrustMRR verified qua job Claude (Phase 6) · bảng TrustMRR trong evidence pack · yếu tố Tiền của điểm v2 dùng dòng verified.
+
+    **Không làm:** tuyến C nhập trang đã lưu · bảng Bước 0 chọn nguồn · ước doanh thu theo bậc · bảng “Ai đang thu tiền” tách verified / ước · back-test lại Phase 20. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có (Phase 2, 5, 6, 9).** Cột Tiền (giá, gói IAP) + nhãn mô hình tiền cho từng đối thủ. TrustMRR **cấm quét** →
