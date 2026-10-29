@@ -344,6 +344,15 @@ nhãn màu BRIEF / SPEC / PLAN + tên tài liệu + giờ, gợi ý bước ti�
 
 [Xem plan Phase 28.12 →](phase-28-12-ai-agent-stages.md)
 
+## Phase 28.14 · Mọi trang cùng một bề rộng
+
+<span class="chip chip--done">Xong 2026-10-29</span>
+
+AI Agent, Setup, Settings, Guide, License thôi tự bó lại 768px — mọi trang chạy hết khung chung, thẳng mép thanh menu.
+Làm trước khi build bản app.
+
+[Xem plan Phase 28.14 →](phase-28-14-full-width-pages.md)
+
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
 Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app

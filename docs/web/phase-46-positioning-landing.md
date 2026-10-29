@@ -6,23 +6,25 @@
 
 <span class="chip chip--done">Xong · landing live 2026-10-27 · shotmatic.app</span>
 
-**Kết quả (2026-10-27, kiểm trên trang live):** [shotmatic.app](https://shotmatic.app) (tiếng Anh) có đủ khối bán hàng:
+**Kết quả (cập nhật 2026-10-29, khớp trang live):** [shotmatic.app](https://shotmatic.app) (tiếng Anh) có đủ khối bán hàng:
 
 | | |
 |---|---|
-| :material-target: **Câu định vị** | hook "Find the app niche that is still open." · nỗi đau "Code is the cheap part. The wrong niche is expensive." · chạy trên AI anh đã trả tiền (không thêm subscription) |
-| :material-emoticon-sad-outline: **Nỗi đau + khác biệt** | so 3 niche cạnh nhau (màn Compare thật) · mọi thứ kiểm tay gom 1 màn · AI Hunt thay GummySearch (đóng 01/12) vì không cần Reddit API |
-| :material-play-circle-outline: **Demo** | khối "Click through real results" + nút sang demo site |
-| :material-tag-outline: **Giá** | $39 mua đứt, dùng trọn đời · dùng thử miễn phí trong lúc beta |
-| :material-email-outline: **Form email** | ô email "Get the trial, plus the playbook" → EmailOctopus (list One Click Tool) · thêm `/scorecard`, `/download` |
-| :material-chart-line: **GA4** | `G-58F6TSQ8M9`, sự kiện `generate_lead` khi gửi email · `file_download` (đo tự động của GA4) |
+| :material-target: **Câu định vị** | hero "From a niche idea to a brief your AI can build." · nỗi đau "Code is the cheap part. The wrong niche is expensive." · chạy trên AI anh đã trả tiền (không thêm subscription) |
+| :material-emoticon-sad-outline: **Nỗi đau + khác biệt** | tour 4 bước bấm được (Search · Keywords · Collect · AI Agent) trên số tra thật · khối AI Agent xuất brief + spec `.md` thật · khối AI + MCP. Khối AI Hunt, Compare, Sources đã gỡ khỏi trang chủ (2026-10-29) |
+| :material-play-circle-outline: **Demo / tải app** | **không có** từ 2026-10-28: demo site đóng, `/demo` + `/download` chuyển tạm 307 về `/#get` (bản build lỗi, chưa có key trial/license) |
+| :material-tag-outline: **Giá** | **$39.99 trả một lần**, cố định, không bậc thang ([Phase 31](phase-31-money-model.md)) · dùng thử 14 ngày · 2 máy · FAQ giá, hoàn tiền, Windows (Mac trước) |
+| :material-scale-balance: **Pháp lý** | [/privacy](https://shotmatic.app/privacy) (ghi Lemon Squeezy) · [/terms](https://shotmatic.app/terms) Terms + hoàn tiền 14 ngày (2026-10-29), link ở footer mọi trang |
+| :material-email-outline: **Form email** | waitlist "Get early access, plus the playbook" → EmailOctopus · thêm `/scorecard` |
+| :material-chart-line: **GA4** | `G-58F6TSQ8M9`, `generate_lead` khi gửi email · `buy_reserve` khi bấm nút giá lúc chưa mở bán · `checkout_click` tự bật khi dán `BUY_URL` |
 | :material-post-outline: **Blog** | [Phase 46.1](phase-46-1-landing-blog.md) — 7 bài, SEO · AEO · GEO |
 | :material-help-circle-outline: **FAQ + CTA cuối** | có |
 
 **Còn treo, chuyển sang phase sau (không làm ở 46):**
 
-- `checkout_click` — chưa có nút mua thật (đang beta dùng thử miễn phí). Gắn khi mở bán [Version 10](version-10.md).
-- Video demo quay từ app thật — trang đang dùng ảnh màn thật + demo site, chưa có video.
+- Nút mua thật — code `checkout_click` đã sẵn, chờ anh tạo sản phẩm Lemon Squeezy rồi dán `BUY_URL` ([Phase 33](phase-33-paywall-trial.md)).
+- Nút tải app — mở lại khi .dmg notarize + [Phase 34](../app/phase-34-local-app-2.md) xong.
+- Video demo quay từ app thật — trang đang dùng ảnh màn thật + tour bấm được, chưa có video.
 
 Bản plan gốc (giữ để đối chiếu):
 

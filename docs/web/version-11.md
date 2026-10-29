@@ -38,7 +38,7 @@ flowchart TB
 
 ## Phase 46 · Landing shotmatic.app — định vị + email ✅
 
-- **Kết quả 2026-10-27:** [shotmatic.app](https://shotmatic.app) live — hook, nỗi đau, Compare, giá $39 mua đứt, form email EmailOctopus, GA4 `generate_lead`, FAQ, blog ([46.1](phase-46-1-landing-blog.md)). Còn treo: `checkout_click` (chờ mở bán Version 10), video demo.
+- **Kết quả 2026-10-27:** [shotmatic.app](https://shotmatic.app) live — hook, nỗi đau, tour 4 bước, AI Agent, giá $39.99 trả một lần (cập nhật 2026-10-29), /terms hoàn tiền 14 ngày, form email EmailOctopus, GA4 `generate_lead`, FAQ, blog ([46.1](phase-46-1-landing-blog.md)). Còn treo: `BUY_URL` Lemon Squeezy, nút tải (sau Phase 34), video demo.
 
 - **Làm:** 1 câu định vị + 3 nỗi đau (lấy từ chính dữ liệu Reddit / review mà tool đọc được về "app idea", "niche") ·
   landing riêng trên shotmatic.app (video demo quay từ app thật, giá khớp Version 10, FAQ) · form email ·
