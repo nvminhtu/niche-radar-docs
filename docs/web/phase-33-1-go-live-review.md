@@ -5,7 +5,7 @@
 > free, tính năng nào phải mua. Đề xuất của anh (2026-10-29): Niche Research vẫn free nhưng giới hạn **10–15 lượt**, AI
 > phải trả phí hoặc free chỉ chạy được **1–2 bước**.
 
-<span class="chip chip--todo">Plan 2026-10-29 · chờ anh chốt 6 câu ở phần B</span>
+<span class="chip chip--todo">Plan 2026-10-29 · B2 chốt 15 lượt tổng · chờ anh chốt 5 câu còn lại ở phần B</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 
@@ -136,7 +136,8 @@ Claude đề xuất, anh sửa thẳng vào bảng:
 
 **Vì sao 15 lượt tổng, không reset theo tháng:** người tra 3–5 niche / tháng sẽ xài free mãi nếu reset — lượt là để thử
 cho thấy giá trị, giống dùng thử 14 ngày nhưng không bị "cài xong quên mở, mở lại đã hết hạn". 15 đủ tra 1 ý tưởng kỹ
-(5 keyword) + 1 Explore + vài lần thử. Nếu anh muốn có tầng free lâu dài thì phương án 2 là **10 lượt / tháng**.
+(5 keyword) + 1 Explore + vài lần thử. **Anh chốt 2026-10-29** (đã cân 10 lượt / tháng và 3 lượt / tuần: người tra niche
+theo đợt, reset thì phần lớn không cần mua).
 
 **Vì sao AI là phần PRO:** AI chạy bằng gói Claude / ChatGPT của chính người dùng — mình không tốn đồng nào, nên khoá AI là
 khoá theo **giá trị**, không phải theo chi phí. Hai bước đầu AI Agent cho người dùng thấy "AI tự tìm + tự chọn niche" —
@@ -158,7 +159,7 @@ khoá theo **giá trị**, không phải theo chi phí. Hai bước đầu AI Ag
 1. **B1 · Bản bán có gì:** giữ "chỉ Niche Research" như Phase 31, hay mở thêm **AI Agent** (cần cho luật AI ở dưới) — và
    Projects / Find Gaps / So sánh có mở không? Claude đề xuất: mở AI Agent + Projects (AI Agent gom niche vào project),
    Find Gaps + So sánh vẫn xám "Coming soon".
-2. **B2 · Số lượt Free:** 10 hay 15? Tổng hay theo tháng? Đề xuất: **15 tổng**.
+2. **B2 · Số lượt Free:** ✅ **anh chốt 2026-10-29: 15 lượt tổng**, không làm mới theo ngày / tuần / tháng — dùng hết là hết.
 3. **B3 · Explore:** tính 1 lượt như Research, hay 3 lượt (nặng gấp ~100 keyword)? Đề xuất: **1 lượt** — luật dễ hiểu hơn
    tiết kiệm.
 4. **B4 · AI lẻ (tóm tắt, Điền bằng AI, ✦):** khoá hẳn hay 3 lần dùng thử? Đề xuất: **3 lần dùng thử** — để người dùng thấy AI
