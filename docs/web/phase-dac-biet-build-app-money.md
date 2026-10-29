@@ -145,5 +145,16 @@ gì khác trong plan.
 - Đếm ngược giả, khoá dữ liệu cũ của người dùng
 </div>
 
+## Kết quả 29/10 — ra theo phương án B
+
+- `ShotMatic-1.0.0-mac-arm64.dmg` (build 12) ký Developer ID + notarize **Accepted**, `spctl` cho qua.
+- Chạy server đã gói với dữ liệu tạm: Free 15/15 → tra 1 niche còn 14/15 → hết lượt `402` + tự mở `/license` (bảng Free vs PRO).
+- Chưa có `checkoutUrl` → nút PRO trong app mở danh sách chờ Founding (`shotmatic.app/#get`).
+- Release `v1.0.0` **draft** trên `nvminhtu/niche-radar-docs` kèm `.dmg` + What's New — anh bấm Publish.
+- Landing nhánh `landing-1.0-download` (repo shotmatic, chưa merge): Download for Mac · free, Get PRO → PRO launch list,
+  14-day trial → 15 free searches ở giá / FAQ / `/terms` / blog, `/download` trỏ về file `.dmg`. Soát 1280 + 375.
+- Thứ tự lên sóng: **Publish release trước** (link Download mới sống) → merge `landing-1.0-download` vào `main`.
+- Còn lại: soát trên tài khoản macOS mới + chế độ tối · có `checkoutUrl` → bản 1.0.1 mở bán.
+
 Gom từ: [Phase 33.1 · Review trước GO LIVE](phase-33-1-go-live-review.md) · [Phase 34 · Local App 2.0](../app/phase-34-local-app-2.md) ·
 [Phase 31 · Mô hình tiền](phase-31-money-model.md) · [Phase 32 · Thanh toán + license key](phase-32-payments.md)
