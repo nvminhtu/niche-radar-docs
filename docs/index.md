@@ -85,7 +85,7 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 | Bán | Version 9 analytics · Version 10 dùng thử + license · app Mac + Windows + tự cập nhật | 29–37 | <span class="chip chip--doing">29–33 xong 2026-10-28 · 34–37 (gói app) chưa làm</span> |
 | Sau bản bán | doanh thu, backup tự động, Explore, hồ sơ đối thủ, theo dõi, evidence, so sánh niche, tutorial | 38–45 | <span class="chip chip--done">Xong bản gọn 2026-10-28 · 44 xong · 45 không làm</span> |
 | Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 46–49 | <span class="chip chip--doing">Đang làm · 46 + 46.1 xong (shotmatic.app) · 47–48 Backlog</span> |
-| ⭐ **Phase đặc biệt · Build App + Money** | **MONEY:** quyết định bán gói gì (gói nào, giá, dùng thử) · **Build app** Mac + Windows từ bản Web để bán (gom phần gói app 34–37) · plan riêng trước khi làm | Đặc biệt | <span class="chip chip--doing">Sắp plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026</span> |
+| ⭐ **[Phase đặc biệt · Build App + Money](web/phase-dac-biet-build-app-money.md)** | **MONEY:** quyết định bán gói gì (gói nào, giá, dùng thử) · **Build app** Mac + Windows từ bản Web để bán (gom phần gói app 34–37) · plan riêng trước khi làm | Đặc biệt | <span class="chip chip--doing">Plan xong 2026-10-29 · release trước Chủ nhật 01/11/2026 · chờ anh chốt 6 câu + Lemon Squeezy</span> |
 | Version 2 | Demo site + YouTube, Amazon, Google Maps | 50–55 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 3 | So sánh đối thủ + AI Cite | 56–58 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 4 | Kệ Google, kệ AI, gói GEO | 59–63 | <span class="chip chip--todo">Chưa làm</span> |
