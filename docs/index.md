@@ -81,10 +81,11 @@ Chi tiết: [Hệ thống chạy thế nào](he-thong.md).
 |---|---|---|---|
 | Đã xong | Google Play, App Store, Trends, Feature Gap, AI, validate, Project, i18n, Reddit / Q&A / GitHub Gap, Export, Bàn quyết định, app Mac 1.0 | 1–17 | <span class="chip chip--doing">Xong · 7, 11, 15, 16, 17 chờ chạy thật</span> |
 | Hoàn thiện Web | lời chê, ai là khách hàng, sức khoẻ niche, collect, project, trang Research, setup, UI, review cụm | 18–26 | <span class="chip chip--done">Xong 2026-10-26 · 5 việc chờ anh</span> |
-| AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng · MCP đợt 2 · bộ skill · nút đũa phép từng bước · Brief + Spec + Plan (28.2–28.5) | 27–28 | <span class="chip chip--done">Xong 2026-10-28 · 27, 28, 28.2, 28.6–28.10 · 28.4 đợt 1b còn · 27.4, 27.6, 28.1, 28.3, 28.5 → Backlog</span> |
+| AI | AI của bạn (MCP, khung chat, Cài đặt AI) · AI cho từng tính năng · MCP đợt 2 · bộ skill · nút đũa phép từng bước · Brief + Spec + Plan (28.2–28.5) | 27–28 | <span class="chip chip--done">Xong 2026-10-28 · 27, 28, 28.2, 28.6–28.10 · 28.4 xong bản gọn · 27.4, 27.6, 28.1, 28.3, 28.5 → Backlog</span> |
 | Bán | Version 9 analytics · Version 10 dùng thử + license · app Mac + Windows + tự cập nhật | 29–37 | <span class="chip chip--doing">29–33 xong 2026-10-28 · 34–37 (gói app) chưa làm</span> |
 | Sau bản bán | doanh thu, backup tự động, Explore, hồ sơ đối thủ, theo dõi, evidence, so sánh niche, tutorial | 38–45 | <span class="chip chip--done">Xong bản gọn 2026-10-28 · 44 xong · 45 không làm</span> |
 | Version 11 | Marketing: định vị, landing, kênh, lịch 6 tuần | 46–49 | <span class="chip chip--doing">Đang làm · 46 + 46.1 xong (shotmatic.app) · 47–48 Backlog</span> |
+| ⭐ **Phase đặc biệt · Build App + Money** | **MONEY:** quyết định bán gói gì (gói nào, giá, dùng thử) · **Build app** Mac + Windows từ bản Web để bán (gom phần gói app 34–37) · plan riêng trước khi làm | Đặc biệt | <span class="chip chip--doing">Sắp plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026</span> |
 | Version 2 | Demo site + YouTube, Amazon, Google Maps | 50–55 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 3 | So sánh đối thủ + AI Cite | 56–58 | <span class="chip chip--todo">Chưa làm</span> |
 | Version 4 | Kệ Google, kệ AI, gói GEO | 59–63 | <span class="chip chip--todo">Chưa làm</span> |

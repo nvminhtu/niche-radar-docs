@@ -116,6 +116,7 @@ nav:
           - "Phase 31 · Mô hình tiền": web/phase-31-money-model.md
           - "Phase 32 · Thanh toán + license key": web/phase-32-payments.md
           - "Phase 33 · Dùng thử + paywall": web/phase-33-paywall-trial.md
+          - "Phase 33.1 · Review trước GO LIVE (UI / UX + Free / PRO)": web/phase-33-1-go-live-review.md
       - "Hoàn thiện Web · sau bản bán (Phase 38–45) · xong bản gọn":
           - "Phase 38 · Doanh thu thật (TrustMRR + AI)": web/phase-38-revenue.md
           - "Phase 39 · Backup / restore tự động": web/phase-39-backup-restore.md
