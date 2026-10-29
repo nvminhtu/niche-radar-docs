@@ -107,6 +107,7 @@ nav:
           - "Phase 28.10 · Bàn quyết định nhìn là hiểu": web/phase-28-10-decision-board-easy.md
           - "Phase 28.11 · AI Agent — chọn model, biết AI nào đang chạy": web/phase-28-11-ai-agent.md
           - "Phase 28.12 · AI Agent — 2 chặng bước + nhật ký đọc được": web/phase-28-12-ai-agent-stages.md
+          - "Phase 28.14 · Mọi trang cùng một bề rộng": web/phase-28-14-full-width-pages.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md
