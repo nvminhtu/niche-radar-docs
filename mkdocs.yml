@@ -105,6 +105,8 @@ nav:
           - "Phase 28.8 · Trang niche + Explorer": web/phase-28-8-niche-ui-polish.md
           - "Phase 28.9 · AI Agent xịn — xuất .md, gợi ý gập, chat có nút": web/phase-28-9-ai-agent-pro.md
           - "Phase 28.10 · Bàn quyết định nhìn là hiểu": web/phase-28-10-decision-board-easy.md
+          - "Phase 28.11 · AI Agent — chọn model, biết AI nào đang chạy": web/phase-28-11-ai-agent.md
+          - "Phase 28.12 · AI Agent — 2 chặng bước + nhật ký đọc được": web/phase-28-12-ai-agent-stages.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md
@@ -126,8 +128,6 @@ nav:
           - Tổng quan Version 11: web/version-11.md
           - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
           - "Phase 46.1 · Landing shotmatic.app — Blog (SEO · AEO · GEO)": web/phase-46-1-landing-blog.md
-          - "Phase 47 · Chọn 2 kênh": web/phase-47-two-channels.md
-          - "Phase 48 · Dogfood làm nội dung": web/phase-48-dogfood-content.md
           - "Phase 49 · Lịch 6 tuần + ra mắt": web/phase-49-six-week-launch.md
       - "Version 2 · Demo + Nguồn mới + AI (Phase 50–55)":
           - Phase 50 · Demo Site: web/phase-50-demo-site.md
@@ -160,6 +160,8 @@ nav:
           - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
           - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
           - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
+          - "Phase 47 · Chọn 2 kênh": web/phase-47-two-channels.md
+          - "Phase 48 · Dogfood làm nội dung": web/phase-48-dogfood-content.md
       - Appendix · Chưa xếp / Không làm: appendix.md
       - "⛔ KO LÀM — Backlog 01–17":
           - "Account (bỏ 2026-10-26)":

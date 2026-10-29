@@ -5,7 +5,12 @@
 > hoặc key riêng) nhận **đúng thứ đang xem** + chạy **đúng skill của việc đó** → trả bản nháp có mã nguồn → người bấm
 > **Dùng / Bỏ / Hỏi lại**.
 
-<span class="chip chip--doing">Đang làm · đợt 1a xong 2026-10-28 · đã merge main (5 nút ✦ mở Hỏi AI) · còn đợt 1b</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-29 · đợt 1a (5 nút ✦ mở Hỏi AI) · phần còn lại không làm</span>
+
+!!! note "Xong bản gọn (2026-10-29)"
+    Soát code 2026-10-29. **Giữ — đã có trong app:** 5 nút ✦ `AiMagic` (Sức khoẻ niche · Explore mở rộng niche · Gap → ý tưởng app · Sức khoẻ project · Bàn quyết định) mở khung Hỏi AI với câu hỏi soạn sẵn + ngữ cảnh trang · 2 nút chữ cũ vẫn chạy (`AiRunButton`: Chủ đề than / Tóm tắt / Test bán trước qua `AiTaskBlock`, Feature Gap "Điền bằng AI") · chưa nối AI thì nút xám + link Cài đặt. Phần "Hỏi lại", nhật ký phiên, chọn model đã có ở AI Agent ([28.6](phase-28-6-ai-agent.md)–[28.12](phase-28-12-ai-agent-stages.md)).
+
+    **Không làm:** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại) · chạy qua skill (cần [28.3](phase-28-3-skills.md) — Backlog) · sổ việc chung `lib/ai/actions.ts` · đổi 2 nút chữ cũ sang icon · gửi kèm dòng đang tick / bộ lọc · Bước 0 đo skill vs prompt · các chỗ đợt 2. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có.** `web/src/components/AiRunButton.tsx`: đũa phép + chữ "Chạy bằng AI" + ô chọn AI, gắn ở 4 khối (Chủ đề than,
@@ -37,7 +42,7 @@ MCP chỉ đọc (`get_research`, `get_explore`, `get_gaps`, `get_project`, `get
 - Kiểm 2026-10-28: 468 test xanh, typecheck + lint sạch · chạy thật trên bản sao DB: Research #51 bấm ✦ → Codex gọi
   `get_research` + `get_evidence_pack`, trả lời từng yếu tố có mã `[Research #51]` · Claude Code trên máy đang **bị đăng xuất**
   (OAuth token revoked) nên chưa chạy được tuyến Claude Code · 1340px + 375px không cuộn ngang, nút không đè tiêu đề
-- **Còn lại (đợt 1b):** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại), chạy qua skill ([28.3](phase-28-3-skills.md) —
+- **Đợt 1b — không làm (2026-10-29):** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại), chạy qua skill ([28.3](phase-28-3-skills.md) —
   backlog), 4 nút chữ "Chạy bằng AI" cũ đổi sang icon, gửi kèm dòng đang tick / bộ lọc
 
 ## Bấm icon thì chạy gì

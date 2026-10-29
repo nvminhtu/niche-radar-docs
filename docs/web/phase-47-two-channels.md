@@ -3,7 +3,10 @@
 > Có nhiều chỗ để nói về niche-radar, nhưng sức có hạn. Chấm điểm từng kênh rồi **chọn đúng 2 kênh chính** để làm
 > đều tay 6 tuần — thay vì mỗi kênh một bài rồi bỏ.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 46</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-29</span>
+
+!!! note "Backlog (anh chốt 2026-10-29)"
+    Dời xuống Backlog · làm sau. Phase 49 chạy được không cần phase này.
 
 ## Chạy thế nào
 

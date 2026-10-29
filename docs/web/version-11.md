@@ -10,7 +10,7 @@
 
 - **Một câu định vị rõ:** cho ai, giải quyết gì, khác tool khác ở đâu (nhiều nguồn + AI có trích dẫn + chạy trên máy).
 - **Có chỗ của mình:** landing riêng + danh sách email, không phụ thuộc một mạng xã hội.
-- **2 kênh, đo được:** chọn bằng điểm ICE, chạy 6 tuần, mỗi tuần nhìn số.
+- **2 kênh, đo được:** anh chốt ở tuần 1 của Phase 49, chạy 6 tuần, mỗi tuần nhìn số.
 - **Ra đơn có nguồn:** biết đơn đến từ kênh nào.
 
 **Thước đo Version 11 xong:** landing có số lượt bấm tải / mua · ≥ 100 email · lịch 6 tuần chạy hết · bảng số mỗi kênh
@@ -21,9 +21,9 @@ có quyết định giữ / dừng. Số thật ghi ngày, chưa đo thì ghi `c
 ```mermaid
 flowchart TB
   P[Phase 46<br/>Landing shotmatic.app] --> BL[Phase 46.1<br/>Blog shotmatic.app<br/>SEO · AEO · GEO]
-  P[Phase 46<br/>Landing shotmatic.app] --> C[Phase 47<br/>Chọn 2 kênh · ICE]
-  P --> D[Phase 48<br/>Dogfood<br/>báo cáo niche công khai · gói GEO cho chính nó]
-  C & D --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
+  P --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
+  P -.-> C[Phase 47 · Chọn 2 kênh<br/>BACKLOG]
+  P -.-> D[Phase 48 · Dogfood<br/>BACKLOG]
 ```
 
 ## Các phase
@@ -32,8 +32,8 @@ flowchart TB
 |---|---|---|
 | [46 · Landing shotmatic.app — định vị + email](phase-46-positioning-landing.md) ✅ | 1 câu định vị, landing [shotmatic.app](https://shotmatic.app) live, form email EmailOctopus, GA4 `generate_lead` | `/app-gtm`, `/oneclicktool-landing` |
 | [46.1 · Landing shotmatic.app — Blog](phase-46-1-landing-blog.md) ✅ | blog riêng trên landing: phân trang, chuyên mục SEO · AEO · GEO, bản .md + llms.txt cho AI search | `/oneclicktool-blog`, `/app-geo` |
-| [69 · Chọn 2 kênh](phase-47-two-channels.md) | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
-| [70 · Dogfood làm nội dung](phase-48-dogfood-content.md) | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
+| [47 · Chọn 2 kênh](phase-47-two-channels.md) ⏸️ **Backlog** | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
+| [48 · Dogfood làm nội dung](phase-48-dogfood-content.md) ⏸️ **Backlog** | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
 | [71 · Lịch 6 tuần + ra mắt](phase-49-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
 
 ## Phase 46 · Landing shotmatic.app — định vị + email ✅
@@ -45,12 +45,16 @@ flowchart TB
   sự kiện GA4 `download`, `checkout_click`, `generate_lead`.
 - **Xong khi:** landing live, `check_landing.py` qua, xem ở 1280 + 375 · email test vào đúng danh sách.
 
-## Phase 47 · Chọn 2 kênh
+## Phase 47 · Chọn 2 kênh · Backlog
+
+- **Backlog · làm sau** (anh chốt 2026-10-29).
 
 - **Làm:** liệt kê kênh, chấm ICE (Impact · Confidence · Ease) có lý do · chọn 2 · mỗi kênh: tần suất, dạng bài, ai làm.
 - **Xong khi:** bảng ICE + 2 kênh được chọn, anh duyệt.
 
-## Phase 48 · Dogfood làm nội dung
+## Phase 48 · Dogfood làm nội dung · Backlog
+
+- **Backlog · làm sau** (anh chốt 2026-10-29).
 
 - **Làm:** mỗi tuần 1 **báo cáo niche công khai** (chạy tool thật, có trích dẫn) làm bài blog / thread / mồi email ·
   chạy Phase 59–62 cho chính từ khoá của niche-radar ("niche research tool", "app idea finder"…) → gói GEO → `/app-geo`
@@ -59,10 +63,10 @@ flowchart TB
 
 ## Phase 49 · Lịch 6 tuần + ra mắt
 
-- **Làm:** lịch 6 tuần thành file bài (theo khuôn Campaign của Promo Desk) · ngày ra mắt (Product Hunt / Indie Hackers
+- **Làm:** đầu tuần 1 anh chốt 2 kênh chính + đo mốc GEO (`/app-geo`) · lịch 6 tuần thành file bài (theo khuôn Campaign của Promo Desk) · ngày ra mắt (Product Hunt / Indie Hackers
   nếu kênh được chọn) · bảng số mỗi tuần: lượt vào landing, email, tải, dùng thử, đơn · **luật dừng**: kênh nào 3 tuần
   không đạt ngưỡng đặt trước → dừng, dồn sức kênh kia.
-- **Xong khi:** 6 tuần chạy xong, bảng số đủ 6 dòng · mỗi kênh có quyết định giữ / dừng · đo lại GEO so với mốc.
+- **Xong khi:** 6 tuần chạy xong, bảng số đủ 6 dòng · mỗi kênh có quyết định giữ / dừng · đo lại GEO so với mốc tuần 1.
 
 <div class="box box--rules" markdown>
 **Luật**

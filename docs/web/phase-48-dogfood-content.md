@@ -3,7 +3,10 @@
 > Dùng **chính niche-radar** làm marketing: mỗi tuần chạy tool thật ra một **báo cáo niche công khai** làm bài và mồi
 > email. Và chạy Version 4 cho chính từ khoá của niche-radar để biết Google + AI đang nói gì về nó trước ra mắt.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 46</span>
+<span class="chip chip--todo">Backlog · làm sau · 2026-10-29</span>
+
+!!! note "Backlog (anh chốt 2026-10-29)"
+    Dời xuống Backlog · làm sau. Phase 49 chạy được không cần phase này.
 
 ## Chạy thế nào
 

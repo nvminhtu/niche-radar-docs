@@ -236,7 +236,7 @@ phase ở đây làm kỹ: đủ dữ liệu, giải thích được, có "Xong 
 
 AI là của người dùng (Claude Code, Codex, key riêng…), app không bán AI. Tắt AI vẫn chạy đủ phần không AI.
 Các phase AI cũ gộp vào đây thành trang con: 27.3 MCP · 27.4 Hỏi dữ liệu · 27.6 Cài đặt AI · 27.7 AI của người dùng · 28.1 Tóm tắt niche.
-Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và phần còn dời xuống [Backlog · làm sau](#backlog-lam-sau); 28.4 làm tiếp phần UI dễ.
+Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và phần còn dời xuống [Backlog · làm sau](#backlog-lam-sau); 28.4 xong bản gọn 2026-10-29 (5 nút ✦).
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
@@ -282,7 +282,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 <div class="step" markdown>
 <span class="step__n">28.4</span>
 <div class="step__body">
-<h3>Nút AI đũa phép ở từng bước <span class="chip chip--doing">Đang làm · 2026-10-27 · chỗ UI dễ làm trước</span></h3>
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦</span></h3>
 <p>Nút ✦ ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Làm trước các chỗ chỉ cần gắn nút vào khung có sẵn.</p>
 <a class="go" href="phase-28-4-ai-magic/">Xem chi tiết →</a>
 </div>
@@ -325,6 +325,24 @@ Mỗi keyword mở đầu bằng 2 dòng trả lời: **Nên làm không?** và 
 mỗi trục 1 hàng icon · mức màu · 1 con số; dẫn chứng và chấm tay 1–5 gập vào Chi tiết. Không đổi công thức.
 
 [Xem plan Phase 28.10 →](phase-28-10-decision-board-easy.md)
+
+## Phase 28.11 · AI Agent — chọn model, biết AI nào đang chạy
+
+<span class="chip chip--done">Xong 2026-10-28</span>
+
+Chip chọn model kiểu menu Claude (✓ model đang dùng, 1 câu mô tả); tên AI tô đậm theo hãng **CLAUDE / CHATGPT / GEMINI**;
+chat bớt khung và chữ thừa; vòng xoay + đồng hồ khi AI đang trả lời. Kèm đổi menu Q&A Gap → Find Gaps.
+
+[Xem plan Phase 28.11 →](phase-28-11-ai-agent.md)
+
+## Phase 28.12 · AI Agent — 2 chặng bước + nhật ký đọc được
+
+<span class="chip chip--done">Xong 2026-10-28</span>
+
+7 bước chia 2 chặng: **Research niche** (tìm → health check) và **Plan the app** (Brief → Spec → Plan). Nhật ký phiên:
+nhãn màu BRIEF / SPEC / PLAN + tên tài liệu + giờ, gợi ý bước tiếp thành chip nhỏ.
+
+[Xem plan Phase 28.12 →](phase-28-12-ai-agent-stages.md)
 
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
@@ -463,7 +481,7 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 <span class="step__n">V11</span>
 <div class="step__body">
 <h3>Marketing Plan <span class="chip chip--todo">Phase 46–49</span></h3>
-<p><a href="phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · 2 kênh chọn bằng ICE, dogfood báo cáo niche công khai, lịch 6 tuần + luật dừng. Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<p><a href="phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · lịch 6 tuần + luật dừng (49). 47 Chọn 2 kênh · 48 Dogfood → Backlog (2026-10-29). Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
 <a class="go" href="version-11/">Xem chi tiết →</a>
 </div>
 </div>
@@ -630,6 +648,7 @@ lúc làm thì tách thành phase.
 - Phase dời nguyên trang: [27.4 Hỏi dữ liệu](phase-27-4-ai-cite-ask.md) · [27.6 Cài đặt AI](phase-27-6-ai-settings.md) ·
   [28.1 Tóm tắt niche](phase-28-1-ai-summary.md) · [28.3 Bộ skill](phase-28-3-skills.md) ·
   [28.5 Brief + Spec + Plan](phase-28-5-brief-plan.md)
+- Từ Version 11 (2026-10-29): [47 Chọn 2 kênh](phase-47-two-channels.md) · [48 Dogfood làm nội dung](phase-48-dogfood-content.md)
 - [Phase 17 · Local App 1.0](../app/phase-17-local-app-1.md) — tạm dừng, lên plan phase mới khi bản Web xong
 
 <hr class="nr-skip-line">
