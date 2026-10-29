@@ -5,7 +5,7 @@
 > free, tính năng nào phải mua. Đề xuất của anh (2026-10-29): Niche Research vẫn free nhưng giới hạn **10–15 lượt**, AI
 > phải trả phí hoặc free chỉ chạy được **1–2 bước**.
 
-<span class="chip chip--todo">Plan 2026-10-29 · B2 chốt 15 lượt tổng · chờ anh chốt 5 câu còn lại ở phần B</span>
+<span class="chip chip--doing">Phần B chốt đủ 6 câu 2026-10-29 · làm trong ⭐ Phase đặc biệt Build App + Money</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 
@@ -116,22 +116,24 @@ Phase 36 mới có `.exe`; phase này chỉ tìm trước chỗ sẽ vỡ để 
 Đề xuất của anh đổi hai chỗ: **dùng thử theo ngày → Free mãi mãi theo số lượt**, và **AI thành thứ chính để mua PRO**.
 Mà bản Mac hiện **không có AI** — nên phải chốt lại bản bán có gì trước (câu B1).
 
-### Bảng đề xuất
+### Bảng Free / PRO · anh chốt 2026-10-29
 
-Claude đề xuất, anh sửa thẳng vào bảng:
+Anh chốt cả 6 câu theo đề xuất (2026-10-29):
 
 | Tính năng | Free | PRO Lifetime |
 |---|---|---|
 | Research 1 keyword (Play + App Store + Trends + đối thủ + lời chê + khách hàng + Feature Gap luật từ khoá) | **15 lượt tổng** | không giới hạn |
-| Explore (cây ~100 keyword, bản đồ ngách) | tính chung vào 15 lượt | không giới hạn |
+| Explore (cây ~100 keyword, bản đồ ngách) | tính chung vào 15 lượt, **1 lượt / lần** (B3) | không giới hạn |
 | Mở lại kết quả cũ · Lịch sử tra cứu · chạy lại 1 nguồn lỗi của niche đã tra | ✅ không tính lượt | ✅ |
 | Tải CSV · Xuất .md / JSON | ✅ | ✅ |
 | Sức khoẻ niche + gợi ý BUILD / TEST THÊM / BỎ | ✅ | ✅ |
-| AI tóm tắt niche · Feature Gap "Điền bằng AI" · nút ✦ Hỏi AI | 🔒 hoặc 3 lần dùng thử (câu B4) | ✅ |
-| AI Agent chặng 1 · Research niche (Tìm → AI Suggest → Collect thêm → Health check) | **2 bước đầu**: Tìm niche + AI Suggest | ✅ đủ 4 bước |
+| AI tóm tắt niche · Feature Gap "Điền bằng AI" · nút ✦ Hỏi AI | **3 lần dùng thử** (B4) | ✅ |
+| AI Agent chặng 1 · Research niche (Tìm → AI Suggest → Collect thêm → Health check) | **2 bước đầu**: Tìm niche + AI Suggest, AI tra **≤ 3 keyword** mỗi lần (B5) | ✅ đủ 4 bước |
 | AI Agent chặng 2 · Lên kế hoạch app (Brief → Spec → Plan) + tải bộ .md | 🔒 | ✅ |
 | MCP cho Claude / Codex · khung chat Hỏi AI | 🔒 | ✅ |
-| Projects · Bàn quyết định · Find Gaps · So sánh niche | theo câu B1 | theo câu B1 |
+| Projects · Bàn quyết định | ✅ mở ở bản bán (B1) | ✅ |
+| Find Gaps · So sánh niche | xám "Coming soon" (B1) | xám "Coming soon" (B1) |
+| Dùng thử 14 ngày | **bỏ** (B6) — thay bằng 15 lượt Free | — |
 | Số máy | 1 | 2 |
 
 **Vì sao 15 lượt tổng, không reset theo tháng:** người tra 3–5 niche / tháng sẽ xài free mãi nếu reset — lượt là để thử
@@ -146,7 +148,7 @@ khoá theo **giá trị**, không phải theo chi phí. Hai bước đầu AI Ag
 ### Cái bẫy phải xử lý
 
 - **AI Agent bước "Tìm niche" gửi tra 5–8 keyword một lần** → 1 lần bấm ở Free ăn hết nửa số lượt. Phải chọn: (a) lượt do
-  AI Agent gửi cũng tính, báo trước "lần này dùng 6 lượt"; hoặc (b) Free chỉ cho AI tra tối đa 3 keyword. Claude đề xuất (b).
+  AI Agent gửi cũng tính, báo trước "lần này dùng 6 lượt"; hoặc (b) Free chỉ cho AI tra tối đa 3 keyword. **Chốt (b)** — câu B5, 2026-10-29.
 - **Xoá dữ liệu để được lượt mới:** đếm lượt lưu cùng chỗ với ngày dùng thử hiện có (`license.json` + bản sao ngoài thư mục
   dữ liệu, Keychain ở Phase 35) — không chặn tuyệt đối được trên app offline, chỉ cần không dễ.
 - **Người đã tải bản dùng thử 14 ngày:** chưa có người mua, chưa phát hành `.dmg` bán → đổi luật không ảnh hưởng ai. Vẫn ghi
@@ -154,19 +156,15 @@ khoá theo **giá trị**, không phải theo chi phí. Hai bước đầu AI Ag
 - **Landing đang ghi "14-day trial" / hoàn tiền 14 ngày:** đổi chữ trial thành "15 free searches"; hoàn tiền 14 ngày giữ
   nguyên (đó là chính sách hoàn tiền, không phải dùng thử).
 
-### 6 câu anh chốt
+### 6 câu anh chốt · ✅ đủ 6/6 (2026-10-29)
 
-1. **B1 · Bản bán có gì:** giữ "chỉ Niche Research" như Phase 31, hay mở thêm **AI Agent** (cần cho luật AI ở dưới) — và
-   Projects / Find Gaps / So sánh có mở không? Claude đề xuất: mở AI Agent + Projects (AI Agent gom niche vào project),
-   Find Gaps + So sánh vẫn xám "Coming soon".
+1. **B1 · Bản bán có gì:** ✅ **chốt 2026-10-29: mở AI Agent + Projects** (AI Agent gom niche vào project), Find Gaps +
+   So sánh niche vẫn xám "Coming soon".
 2. **B2 · Số lượt Free:** ✅ **anh chốt 2026-10-29: 15 lượt tổng**, không làm mới theo ngày / tuần / tháng — dùng hết là hết.
-3. **B3 · Explore:** tính 1 lượt như Research, hay 3 lượt (nặng gấp ~100 keyword)? Đề xuất: **1 lượt** — luật dễ hiểu hơn
-   tiết kiệm.
-4. **B4 · AI lẻ (tóm tắt, Điền bằng AI, ✦):** khoá hẳn hay 3 lần dùng thử? Đề xuất: **3 lần dùng thử** — để người dùng thấy AI
-   chạy được trên máy họ.
-5. **B5 · AI Agent ở Free:** 2 bước đầu (Tìm + AI Suggest), AI tra tối đa 3 keyword mỗi lần? Hay chỉ 1 bước?
-6. **B6 · Bỏ dùng thử 14 ngày** hoàn toàn (thay bằng lượt Free), hay giữ cả hai (14 ngày đủ PRO rồi rơi về Free 15 lượt)?
-   Đề xuất: **bỏ** — hai luật chồng nhau khó nói trên landing.
+3. **B3 · Explore:** ✅ **chốt 2026-10-29: 1 lượt** như Research — luật dễ hiểu hơn tiết kiệm.
+4. **B4 · AI lẻ (tóm tắt, Điền bằng AI, ✦):** ✅ **chốt 2026-10-29: 3 lần dùng thử** — để người dùng thấy AI chạy được trên máy họ.
+5. **B5 · AI Agent ở Free:** ✅ **chốt 2026-10-29: 2 bước đầu** (Tìm + AI Suggest), AI tra tối đa **3 keyword** mỗi lần.
+6. **B6 · Dùng thử 14 ngày:** ✅ **chốt 2026-10-29: bỏ hẳn**, thay bằng 15 lượt Free — hai luật chồng nhau khó nói trên landing.
 
 ### Code sau khi chốt
 

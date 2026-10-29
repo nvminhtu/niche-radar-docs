@@ -5,7 +5,7 @@
 > bản bán đầu từ [Phase 33.1](phase-33-1-go-live-review.md) (Free / PRO + soát UI) và [Phase 34](../app/phase-34-local-app-2.md)
 > (gói bản bán); phần còn lại để sau.
 
-<span class="chip chip--doing">Plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026 · B2 chốt 15 lượt · chờ 5 câu còn lại + sản phẩm Lemon Squeezy</span>
+<span class="chip chip--doing">Plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026 · MONEY chốt đủ 6 câu 2026-10-29 · chờ sản phẩm Lemon Squeezy</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 
@@ -36,7 +36,7 @@ flowchart TD
 
 ## MONEY · bán gói gì
 
-Bảng đầy đủ + lý do ở [Phase 33.1 phần B](phase-33-1-go-live-review.md#phan-b-free-pro-lifetime). Tóm lại đề xuất:
+Bảng đầy đủ + lý do ở [Phase 33.1 phần B](phase-33-1-go-live-review.md#phan-b-free-pro-lifetime). Anh chốt đủ 6 câu theo đề xuất (2026-10-29):
 
 - **Free mãi mãi, 15 lượt tra tổng** (B2 đã chốt) (Research hoặc Explore, mỗi lần 1 lượt; lượt lỗi nguồn không trừ). Mở lại kết quả cũ,
   Lịch sử, tải CSV, Sức khoẻ niche: không tính lượt.
@@ -45,22 +45,22 @@ Bảng đầy đủ + lý do ở [Phase 33.1 phần B](phase-33-1-go-live-review
   Điền bằng AI, ✦) cho 3 lần dùng thử · chặng 2 Brief / Spec / Plan là PRO.
 - **Bỏ dùng thử 14 ngày** — thay bằng 15 lượt Free, landing chỉ nói một luật.
 
-### 6 câu anh chốt (Thứ 5 29/10) · đã chốt 1/6
+### 6 câu anh chốt · ✅ đủ 6/6 (2026-10-29)
 
-1. **B1 · Bản bán có gì:** đề xuất mở AI Agent + Projects; Find Gaps + So sánh niche xám "Coming soon".
+1. **B1 · Bản bán có gì:** ✅ mở AI Agent + Projects; Find Gaps + So sánh niche xám "Coming soon".
 2. **B2 · Số lượt Free:** ✅ **đã chốt 2026-10-29: 15 lượt tra tổng**, không làm mới theo ngày / tuần / tháng.
-3. **B3 · Explore:** đề xuất **1 lượt** như Research.
-4. **B4 · AI lẻ ở Free:** đề xuất **3 lần dùng thử**.
-5. **B5 · AI Agent ở Free:** đề xuất **2 bước đầu**, AI tra ≤ 3 keyword mỗi lần.
-6. **B6 · Dùng thử 14 ngày:** đề xuất **bỏ**.
+3. **B3 · Explore:** ✅ **1 lượt** như Research.
+4. **B4 · AI lẻ ở Free:** ✅ **3 lần dùng thử**.
+5. **B5 · AI Agent ở Free:** ✅ **2 bước đầu**, AI tra ≤ 3 keyword mỗi lần.
+6. **B6 · Dùng thử 14 ngày:** ✅ **bỏ**.
 
-Anh trả lời "theo đề xuất" là đủ, hoặc sửa từng câu. Ghi ngày chốt vào đầu phần B của Phase 33.1.
+Đã ghi vào [Phase 33.1 phần B](phase-33-1-go-live-review.md#phan-b-free-pro-lifetime).
 
 ## Lịch 4 ngày
 
 ### Thứ 5 29/10 · MONEY
 
-- **Anh:** trả lời 6 câu ở trên.
+- ✅ **Anh:** chốt 6 câu (2026-10-29).
 - **Anh:** tạo store + sản phẩm **"ShotMatic Pro" $39.99 một lần** trên Lemon Squeezy, bật license key (2 lần kích hoạt),
   gửi Claude `checkoutUrl` + `productId`. Claude không đăng nhập, không nhập thuế / ngân hàng thay anh.
 - **Claude:** điền `web/src/lib/license/config.ts` (giá, số lượt, `checkoutUrl`, `productId`) — landing + app đọc cùng số.
@@ -115,7 +115,7 @@ gì khác trong plan.
 <div class="box box--star" markdown>
 **Xong khi**
 
-- 6 câu B1–B6 đã chốt, ghi ngày
+- ✅ 6 câu B1–B6 đã chốt, ghi ngày (2026-10-29)
 - `ShotMatic-1.0.0-mac-arm64.dmg` ký + notarize, cài trên tài khoản macOS mới mở không bị chặn
 - 4 hành trình đi hết, **0 lỗi mức Chặn**, ảnh trước / sau có trong bảng vướng
 - Hết 15 lượt → `402` + màn mua · mua test → key → PRO · AI Free dừng đúng giới hạn · `npm run check` xanh
