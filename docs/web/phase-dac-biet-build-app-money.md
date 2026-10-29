@@ -154,7 +154,9 @@ gì khác trong plan.
 - Landing nhánh `landing-1.0-download` (repo shotmatic, chưa merge): Download for Mac · free, Get PRO → PRO launch list,
   14-day trial → 15 free searches ở giá / FAQ / `/terms` / blog, `/download` trỏ về file `.dmg`. Soát 1280 + 375.
 - Thứ tự lên sóng: **Publish release trước** (link Download mới sống) → merge `landing-1.0-download` vào `main`.
-- Còn lại: soát trên tài khoản macOS mới + chế độ tối · có `checkoutUrl` → bản 1.0.1 mở bán.
+- **LIVE 29/10 21:05:** release [v1.0.0](https://github.com/nvminhtu/niche-radar-docs/releases/tag/v1.0.0) public ·
+  shotmatic.app có Download for Mac · `shotmatic.app/download` → `.dmg` 49 MB (200) · `/terms` ghi 15 free searches.
+- Còn lại: soát trên tài khoản macOS mới + chế độ tối · có `checkoutUrl` → bản 1.0.1 mở bán · anh gửi email cho waitlist.
 
 Gom từ: [Phase 33.1 · Review trước GO LIVE](phase-33-1-go-live-review.md) · [Phase 34 · Local App 2.0](../app/phase-34-local-app-2.md) ·
 [Phase 31 · Mô hình tiền](phase-31-money-model.md) · [Phase 32 · Thanh toán + license key](phase-32-payments.md)
