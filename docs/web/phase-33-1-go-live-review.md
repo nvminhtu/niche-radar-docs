@@ -168,6 +168,18 @@ khoá theo **giá trị**, không phải theo chi phí. Hai bước đầu AI Ag
 
 ### Code sau khi chốt
 
+!!! success "Đã code 2026-10-29 (làm sớm 1 ngày)"
+    - `license/config.ts`: `freeSearches 15` · `freeAiTries 3` · `freeAgentSteps 2` · `freeAgentKeywords 3`; bỏ `trialDays`.
+    - `state.ts` + `service.ts`: trạng thái `free` · `free_used_up` · `pro`; số đã dùng ghi ở `license.json` **và** bản sao
+      `~/Library/Preferences/com.oneclicktool.nicheradar.usage` (lấy số lớn hơn → xoá dữ liệu không ra lượt mới).
+    - Trừ lượt ở server: Research, Explore, tra sâu (N keyword = N lượt), tra lại Project, AI Agent / MCP `start_research`.
+      Mọi nguồn lỗi → trả lại lượt. Dùng lại lượt tra trong 24 giờ → không trừ.
+    - Khoá AI bằng `402`: Hỏi AI / tóm tắt / Điền bằng AI hết 3 lần thử · AI Agent qua bước 2 · AI tra keyword thứ 4 trong 1 lần chạy.
+    - Giao diện: thanh "12/15 free searches left · Get PRO $39.99" · `/license` bảng Free vs PRO · AI Agent bước 3–7 hiện 🔒 PRO + nút
+      Get PRO · mở AI Agent + Projects + khung Hỏi AI ở bản Mac; Find Gaps + So sánh niche xám "Coming soon".
+    - Kiểm: `npm run check` xanh (533 test) · xem tận mắt bản research ở 1340px: tra 1 niche 12 → 11, hết lượt → màn mua, AI Agent có ổ khoá.
+    - Còn chờ: `checkoutUrl` + `productId` từ Lemon Squeezy (nút Mua đang "On sale soon").
+
 - `web/src/lib/license/config.ts`: thêm `FREE_SEARCHES`, `FREE_AI_TRIES`, `FREE_AGENT_STEPS` — landing + màn License đọc
   cùng số.
 - `web/src/lib/license/state.ts` + `service.ts`: trạng thái `free` (còn N lượt) · `free_used_up` · `pro` thay cho

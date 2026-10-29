@@ -5,7 +5,7 @@
 > bản bán đầu từ [Phase 33.1](phase-33-1-go-live-review.md) (Free / PRO + soát UI) và [Phase 34](../app/phase-34-local-app-2.md)
 > (gói bản bán); phần còn lại để sau.
 
-<span class="chip chip--doing">Plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026 · MONEY chốt đủ 6 câu 2026-10-29 · chờ sản phẩm Lemon Squeezy</span>
+<span class="chip chip--doing">Plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026 · MONEY chốt đủ 6 câu 2026-10-29 · code Free / PRO xong 2026-10-29 · chờ sản phẩm Lemon Squeezy</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 
@@ -65,7 +65,19 @@ Bảng đầy đủ + lý do ở [Phase 33.1 phần B](phase-33-1-go-live-review
   gửi Claude `checkoutUrl` + `productId`. Claude không đăng nhập, không nhập thuế / ngân hàng thay anh.
 - **Claude:** điền `web/src/lib/license/config.ts` (giá, số lượt, `checkoutUrl`, `productId`) — landing + app đọc cùng số.
 
-### Thứ 6 30/10 · Code luật Free / PRO
+### Thứ 6 30/10 · Code luật Free / PRO · ✅ xong sớm 29/10
+
+!!! success "Đã code 2026-10-29 (làm sớm 1 ngày)"
+    - `license/config.ts`: `freeSearches 15` · `freeAiTries 3` · `freeAgentSteps 2` · `freeAgentKeywords 3`; bỏ `trialDays`.
+    - `state.ts` + `service.ts`: trạng thái `free` · `free_used_up` · `pro`; số đã dùng ghi ở `license.json` **và** bản sao
+      `~/Library/Preferences/com.oneclicktool.nicheradar.usage` (lấy số lớn hơn → xoá dữ liệu không ra lượt mới).
+    - Trừ lượt ở server: Research, Explore, tra sâu (N keyword = N lượt), tra lại Project, AI Agent / MCP `start_research`.
+      Mọi nguồn lỗi → trả lại lượt. Dùng lại lượt tra trong 24 giờ → không trừ.
+    - Khoá AI bằng `402`: Hỏi AI / tóm tắt / Điền bằng AI hết 3 lần thử · AI Agent qua bước 2 · AI tra keyword thứ 4 trong 1 lần chạy.
+    - Giao diện: thanh "12/15 free searches left · Get PRO $39.99" · `/license` bảng Free vs PRO · AI Agent bước 3–7 hiện 🔒 PRO + nút
+      Get PRO · mở AI Agent + Projects + khung Hỏi AI ở bản Mac; Find Gaps + So sánh niche xám "Coming soon".
+    - Kiểm: `npm run check` xanh (533 test) · xem tận mắt bản research ở 1340px: tra 1 niche 12 → 11, hết lượt → màn mua, AI Agent có ổ khoá.
+    - Còn chờ: `checkoutUrl` + `productId` từ Lemon Squeezy (nút Mua đang "On sale soon").
 
 Làm đúng mục "Code sau khi chốt" của [Phase 33.1](phase-33-1-go-live-review.md#code-sau-khi-chot):
 
@@ -118,7 +130,7 @@ gì khác trong plan.
 - ✅ 6 câu B1–B6 đã chốt, ghi ngày (2026-10-29)
 - `ShotMatic-1.0.0-mac-arm64.dmg` ký + notarize, cài trên tài khoản macOS mới mở không bị chặn
 - 4 hành trình đi hết, **0 lỗi mức Chặn**, ảnh trước / sau có trong bảng vướng
-- Hết 15 lượt → `402` + màn mua · mua test → key → PRO · AI Free dừng đúng giới hạn · `npm run check` xanh
+- ✅ Hết 15 lượt → `402` + màn mua · AI Free dừng đúng giới hạn · `npm run check` xanh (2026-10-29) · còn mua test → key → PRO (chờ Lemon Squeezy)
 - Giá · số lượt · số máy · hoàn tiền giống nhau ở app, landing, `/terms`, checkout
 - Release `v1.0.0` public + landing có nút Download + Get PRO (hoặc phương án B) — **trước hết Chủ nhật 01/11/2026**
 </div>
