@@ -446,6 +446,14 @@ body {
 .md-nav__link.nr-nav--doc { font-weight: 700; font-style: italic; }
 .md-nav__link.nr-nav--skipline { border-top: 3px solid #c0392b; margin-top: .9rem; padding-top: .35rem;
   color: #c0392b !important; font-weight: 900; letter-spacing: .06em; }
+/* nút gạch ngang từng plan trong Backlog + KO LÀM — javascripts/nav-strike.js */
+.md-nav__item.nr-strikeable { position: relative; }
+.md-nav__item.nr-strikeable > .md-nav__link { padding-right: 1.3rem; }
+.md-nav__item.nr-struck > .md-nav__link { opacity: .45; text-decoration: line-through 2px #c0392b; }
+.nr-strike { position: absolute; top: .05rem; right: 0; width: 1.1rem; height: 1.1rem; border-radius: 4px;
+  font-size: .7rem; line-height: 1; color: var(--ink-2); opacity: .45; cursor: pointer; }
+.nr-strike:hover, .nr-strike:focus-visible { opacity: 1; background: color-mix(in srgb, #c0392b 15%, transparent); color: #c0392b; }
+.nr-strike[aria-pressed="true"] { opacity: .8; color: #c0392b; }
 .md-typeset hr.nr-skip-line { border: 0; border-top: 4px solid #c0392b; margin: 2.8rem 0 .4rem; }
 .md-typeset hr.nr-skip-line + h2 { color: #c0392b; margin-top: .4rem; }
 .md-typeset .nr-skip .step { opacity: .62; border-style: dotted; }

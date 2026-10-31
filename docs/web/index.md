@@ -353,6 +353,34 @@ Làm trước khi build bản app.
 
 [Xem plan Phase 28.14 →](phase-28-14-full-width-pages.md)
 
+## Phase 28.15 · Hỏi AI — mỗi lượt tốn bao nhiêu token
+
+<span class="chip chip--done">Xong 2026-10-29</span>
+
+Mỗi câu trả lời của Hỏi AI / AI Agent hiện token vào · cache · ra, % khung nhớ của model và giá API ước tính; cuối khung có
+tổng cả phiên. Lượt bấm Dừng vẫn hiện phần đã tốn. Không đo được thì ghi "chưa đo".
+
+[Xem plan Phase 28.15 →](phase-28-15-ai-token-transparency.md)
+
+## Phase 28.16 · AI Agent — 2 chế độ: Mặc định · Tuỳ chỉnh
+
+<span class="chip chip--done">Xong 2026-10-30</span>
+
+Không phải ai cũng muốn chọn niche theo đúng khuôn 5–8 keyword → điểm v2 → giữ 3. Chế độ Tuỳ chỉnh cho người dùng lưu luật
+riêng (số keyword, tiêu chí chấm, ngưỡng cứng, giữ mấy niche, bước nào chạy, luật bằng lời) rồi AI theo luật đó. Luật dữ liệu
+(số phải có nguồn, không bịa) vẫn đứng trên mọi luật tuỳ chỉnh.
+
+[Xem plan Phase 28.16 →](phase-28-16-ai-agent-custom-mode.md)
+
+## Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app
+
+<span class="chip chip--todo">Plan 2026-10-31</span>
+
+Chọn / thêm / đổi account Claude Code (và Codex) ngay trong Cài đặt → AI, hết lượt thì 1 bấm chuyển account rồi chạy tiếp,
+AI Agent chạm thêm Compare, Theo dõi, Export. Kèm 2 sơ đồ: [Sơ đồ ShotMatic](../so-do-app.md).
+
+[Xem plan Phase 28.19 →](phase-28-19-ai-agent-full-flow.md)
+
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
 Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app
@@ -471,6 +499,14 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 <h3>So sánh niche <span class="chip chip--done">Xong 2026-10-27 · /compare</span></h3>
 <p>2–4 niche cạnh nhau: cơ hội, đối thủ, xu hướng, đau, tiền — tô ô thắng từng hàng, không AI.</p>
 <a class="go" href="phase-44-compare-niche/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">44.1</span>
+<div class="step__body">
+<h3>Tab Compare <span class="chip chip--done">Xong 2026-10-31</span></h3>
+<p>Gom so sánh vào 1 tab menu chính, menu con Niches · Projects · Competitors (Phase 56, xám) — gỡ khỏi More features.</p>
+<a class="go" href="phase-44-1-compare-tab/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>

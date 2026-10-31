@@ -8,6 +8,7 @@
 !!! note "Bật lại (anh chốt 2026-10-28)"
     Sáng 28/10 từng ẩn khỏi app, chiều cùng ngày bật lại: mục "So sánh niche" trong menu More features, ô tick + nút
     "So sánh (N)" ở bảng Lịch sử, dòng trong danh sách tính năng About. Công tắc `COMPARE_ON` ở `web/src/lib/features.ts`.
+    Từ 2026-10-31 nằm dưới tab **Compare** trên menu chính ([Phase 44.1](phase-44-1-compare-tab.md)), không còn ở More features.
 
 <div class="box box--goal" markdown>
 **Vì sao dời lên Version 1.** Phase này chỉ đọc DB, không cần nguồn mới hay AI — chạy được ngay với dữ liệu Phase 1–9.

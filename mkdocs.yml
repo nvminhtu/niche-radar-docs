@@ -39,6 +39,7 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/setup-detect.js
+  - javascripts/nav-strike.js
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -58,6 +59,7 @@ markdown_extensions:
   - pymdownx.tasklist: { custom_checkbox: true }
 nav:
   - Master Plan: index.md
+  - Sơ đồ ShotMatic: so-do-app.md
   - Web:
       - web/index.md
       - Quy trình build: quy-trinh-build.md
@@ -108,6 +110,9 @@ nav:
           - "Phase 28.11 · AI Agent — chọn model, biết AI nào đang chạy": web/phase-28-11-ai-agent.md
           - "Phase 28.12 · AI Agent — 2 chặng bước + nhật ký đọc được": web/phase-28-12-ai-agent-stages.md
           - "Phase 28.14 · Mọi trang cùng một bề rộng": web/phase-28-14-full-width-pages.md
+          - "Phase 28.15 · Hỏi AI — mỗi lượt tốn bao nhiêu token": web/phase-28-15-ai-token-transparency.md
+          - "Phase 28.16 · AI Agent — 2 chế độ: Mặc định · Tuỳ chỉnh": web/phase-28-16-ai-agent-custom-mode.md
+          - "Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app": web/phase-28-19-ai-agent-full-flow.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md
@@ -117,6 +122,7 @@ nav:
           - "Phase 32 · Thanh toán + license key": web/phase-32-payments.md
           - "Phase 33 · Dùng thử + paywall": web/phase-33-paywall-trial.md
           - "Phase 33.1 · Review trước GO LIVE (UI / UX + Free / PRO)": web/phase-33-1-go-live-review.md
+          - "Phase 33.2 · Chip PRO — bấm vào là ra bản PRO": web/phase-33-2-pro-chips.md
       - "⭐ Phase đặc biệt · Build App + Money (release trước CN 01/11)":
           - "Build App + Money · plan 4 ngày": web/phase-dac-biet-build-app-money.md
       - "Hoàn thiện Web · sau bản bán (Phase 38–45) · xong bản gọn":
@@ -127,6 +133,7 @@ nav:
           - "Phase 42 · Theo dõi niche định kỳ": web/phase-42-tracking.md
           - "Phase 43 · Evidence pack + test bán trước": web/phase-43-evidence-presell.md
           - "Phase 44 · So sánh niche": web/phase-44-compare-niche.md
+          - "Phase 44.1 · Tab Compare (Niches · Projects · Competitors)": web/phase-44-1-compare-tab.md
           - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
       - "Version 11 · Marketing (Phase 46–49)":
           - Tổng quan Version 11: web/version-11.md
