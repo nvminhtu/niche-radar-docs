@@ -4,7 +4,7 @@
 > Số nào cũng có nguồn + ngày. Tỉ lệ chuyển đổi ghi **giả định** là đoán để đặt mục tiêu, không phải số đo.
 > Bản gốc nằm ở repo App-AI-Skills: `apps/ACTIVE/web-apps/niche-radar/marketing/2026-11-01-ke-hoach-ban-shotmatic.md`.
 
-<span class="chip chip--doing">Plan 2026-11-01 · đang làm Tầng 0</span>
+<span class="chip chip--doing">Plan 2026-11-01 · Tầng 0: đã mở bán trên landing · còn notarize 1.1.0 + mua test</span>
 
 <div class="box box--goal" markdown>
 **Mục tiêu:** 10 đơn PRO đầu tiên trong 14 ngày bằng tay, rồi biến cách đã bán được thành kênh tự chạy, để có đơn mà
@@ -31,8 +31,8 @@ Chưa có cửa thu tiền và chưa ai biết tới sản phẩm. 9 người đ
 Chưa xong tầng này thì không làm tầng sau: người đọc bài, muốn mua mà không mua được là mất luôn người đó.
 
 - [x] **0.1** Chốt chính sách bán: $39.99 trả một lần, 2 Mac, hoàn tiền 14 ngày, Free 15 lượt tra — Tu chốt 2026-11-01
-- [ ] **0.2** Phát hành 1.1.0 có checkout: .dmg ký + notarize, release GitHub, `/download` trỏ bản mới — Claude build, **Tu bấm Publish release**
-- [ ] **0.3** Landing: thay "Checkout opens soon" bằng nút mua thật, link có `?ref=landing` — Claude
+- [ ] **0.2** Phát hành 1.1.0 có checkout: .dmg ký + notarize, release GitHub, `/download` trỏ bản mới — Claude build, **Tu bấm Publish release** · 2026-11-01: .dmg 1.1.0 (build 13) đã ký, **notarize chờ Tu lưu lại profile `server-hub`**
+- [x] **0.3** Landing: nút "Buy ShotMatic · $39.99" tới checkout Lemon Squeezy, bỏ chữ "Checkout opens soon" — live 2026-11-01 (key mua hôm nay dán vào bản 1.0.0 vẫn kích hoạt được)
 - [ ] **0.4** Mua thử bằng test mode Lemon Squeezy → nhận key → dán vào app → thành PRO — **Tu mua**, Claude kiểm app
 - [ ] **0.5** Bật Affiliates trong Lemon Squeezy (30 %) để dùng ở tầng 2 — **Tu**
 
