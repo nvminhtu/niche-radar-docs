@@ -65,6 +65,7 @@ nav:
       - Quy trình build: quy-trinh-build.md
       - Setup máy: setup.md
       - "Plan bán app Mac + Windows": app/plan-ban-app.md
+      - "Kế hoạch bán ShotMatic (làm tay → tự động)": app/ke-hoach-ban-shotmatic.md
       - "Đã xong (Phase 1–16)":
           - Phase 1 · Google Play: web/phase-1-google-play.md
           - Phase 2 · App Store: web/phase-2-app-store.md
