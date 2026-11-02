@@ -282,7 +282,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 <div class="step" markdown>
 <span class="step__n">28.4</span>
 <div class="step__body">
-<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦ · thẻ AI đề xuất 2026-11-01</span></h3>
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦</span></h3>
 <p>Nút ✦ ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Làm trước các chỗ chỉ cần gắn nút vào khung có sẵn.</p>
 <a class="go" href="phase-28-4-ai-magic/">Xem chi tiết →</a>
 </div>
@@ -292,7 +292,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 
 ## Phase 28.7 · AI Agent dễ nhìn
 
-<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn · làm nốt 2026-11-01 (badge theo việc)</span>
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn</span>
 
 Tiếp nối [Phase 28.6 · AI Agent](phase-28-6-ai-agent.md): hiện AI và model thật, đóng/mở hướng dẫn,
 menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ thống nhất.
@@ -301,7 +301,7 @@ menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ 
 
 ## Phase 28.8 · Trang niche + Explorer
 
-<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A · làm nốt 2026-11-02</span>
+<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A</span>
 
 Ưu tiên sửa cuộn bảng/cây và trạng thái rỗng có nút; thu gọn giải thích, làm rõ điểm và độ phủ,
 biến TEST MORE / BUILD / SKIP thành bước tiếp có điều kiện. Không đổi công thức tính.
@@ -719,6 +719,8 @@ lúc làm thì tách thành phase.
 - [Backlog 26 · Extension Chrome "ShotMatic Lite"](phase-backlog-26-chrome-extension-lite.md) — plan mới 2026-11-01, phễu về shotmatic.app
 - [Backlog 27 · YouTube + skill lái Chrome + repo có sẵn](phase-backlog-27-youtube-chrome-skill.md) — plan mới 2026-11-02, bổ sung Phase 51–52
 - [Backlog 28 · Extension Chrome "ShotMatic Scout" (Amazon)](phase-backlog-28-chrome-extension-amazon.md) — bản 0.1.0 2026-11-02, miễn phí hết, cửa vào thứ hai về shotmatic.app
+- [Backlog 29 · Skill Reddit Q&A](phase-backlog-29-reddit-qa-skill.md) — plan mới 2026-11-02, tìm câu hỏi Reddit → nháp câu trả lời, dùng chung mọi sản phẩm
+- [Backlog 30 · Skill X Q&A](phase-backlog-30-x-qa-skill.md) — plan mới 2026-11-02, như Backlog 29 nhưng tìm câu hỏi trên X, không tốn tiền API
 - Phase dời nguyên trang: [27.4 Hỏi dữ liệu](phase-27-4-ai-cite-ask.md) · [27.6 Cài đặt AI](phase-27-6-ai-settings.md) ·
   [28.1 Tóm tắt niche](phase-28-1-ai-summary.md) · [28.3 Bộ skill](phase-28-3-skills.md) ·
   [28.5 Brief + Spec + Plan](phase-28-5-brief-plan.md)

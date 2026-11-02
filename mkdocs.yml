@@ -167,6 +167,8 @@ nav:
           - "Backlog 26 · Extension Chrome Lite": web/phase-backlog-26-chrome-extension-lite.md
           - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
           - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
+          - "Backlog 29 · Skill Reddit Q&A": web/phase-backlog-29-reddit-qa-skill.md
+          - "Backlog 30 · Skill X Q&A": web/phase-backlog-30-x-qa-skill.md
           - "Phase 27.4 · Hỏi dữ liệu (AI Cite)": web/phase-27-4-ai-cite-ask.md
           - "Phase 27.6 · Cài đặt AI + tuyến miễn phí": web/phase-27-6-ai-settings.md
           - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
@@ -214,6 +216,8 @@ nav:
           - "Backlog 21 · Build app Mac trên CI": app/phase-backlog-21-mac-build-ci.md
   - MARKETING:
       - "Kế hoạch bán ShotMatic (làm tay → tự động)": app/ke-hoach-ban-shotmatic.md
+      - "Research · SaaS: traffic GA · event · blog · 10 kênh · tool": web/research-marketing-saas.md
+      - "Plan · Analytics 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
       - "Version 11 · Landing + SEO + Blog (Phase 46–49)":
           - Tổng quan Version 11: web/version-11.md
           - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md

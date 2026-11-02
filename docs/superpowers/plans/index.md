@@ -117,3 +117,4 @@ Làm theo thứ tự 74 → 75 → 79 → 82 → 81 (chốt 2026-10-26). 76, 77,
 - [Backlog 21 — Build app Mac trên CI · ⛔ không làm (2026-10-26)](2026-10-25-niche-radar-phase80-mac-build-ci.md)
 - [Phase 37 — Release + auto-update (Mac + Windows)](2026-10-25-niche-radar-phase81-release-auto-update.md)
 - [Phase 36 — App Windows (Beta)](2026-10-26-niche-radar-phase82-windows-app.md)
+- [Backlog 29 — Skill Reddit Q&A (skill dùng chung, lái Chrome)](2026-11-02-reddit-qa-skill.md)

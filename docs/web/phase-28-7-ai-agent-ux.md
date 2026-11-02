@@ -3,7 +3,7 @@
 > Mở phiên săn là biết đang dùng AI nào và model nào; gọn bớt hướng dẫn; chọn lệnh có sẵn với đúng dữ liệu;
 > biết khi nào sang bước tiếp; nhìn dấu ✦ là nhận ra chức năng AI; luôn thấy AI đang làm gì và quay lại đúng phiên đang chạy.
 
-<span class="chip chip--done">Xong 2026-10-28 · T1–T7 (bản gọn) · phần còn lại xong 2026-11-01 (badge theo việc, sổ chat server, ✦ còn lại)</span>
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7 (bản gọn, xem Kết quả)</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đối chiếu code ngày 2026-10-27.**
@@ -391,30 +391,6 @@ S/M/L là độ lớn tương đối, **chưa đo thời gian**, không phải c
   `listHunts` đọc thẳng `source_jobs`, không dựng RunView, không ghi điểm.
 - **Chưa làm (ghi rõ):** registry chat phía server + vòng đời tool kết thúc (CLI không có sự kiện tool-end ổn định); đếm lại badge "n running" theo
   source job + nhóm theo phiên ở AppShell; ✦ cho mọi nút AI còn lại; icon hãng. Kiểm: 513 test xanh, xem 1340 + 960px EN.
-
-## Kết quả 2026-11-01 — làm nốt phần còn dở
-
-- **Badge “n đang chạy” đếm theo việc (T7):** mỗi source job đang chạy = 1 việc, mỗi Explore đang chạy = 1, mỗi lượt chat AI = 1;
-  tool của lượt chat chỉ là chi tiết, không cộng. Đang chờ đếm riêng (“· n chờ”). Đọc thẳng `source_jobs` đang pending/running,
-  **không** còn giới hạn 24 giờ / 50 lượt. `lib/activity.ts` → `activeJobs()`; API `/api/activity` trả thêm `jobs`, `count`, `pending`
-  (`running` / `recent` giữ nguyên cho banner trang chủ).
-- **Bấm badge → menu một cột nhóm theo phiên:** “AI Agent · <tên phiên>” (link phiên, ghi “đã lưu trữ” nếu có) → từng việc:
-  nguồn · keyword · đang chạy / đang chờ · thời gian · “dùng chung n phiên”; bấm việc → `/hunt/:id?c=:itemId` (đúng ứng viên),
-  chat → `/hunt/:id`. Việc không thuộc phiên nào → nhóm **Ngoài phiên AI Agent** (link Research / Explore gốc). Run dùng chung
-  hiện ở mọi phiên liên quan nhưng tổng chỉ đếm 1. Esc / bấm ngoài để đóng. `components/ActivityMenu.tsx`, `lib/activity-jobs.ts`.
-- **Sổ lượt chat phía máy chủ (T6):** `lib/ai/chat-registry.ts` giữ trong bộ nhớ từng request `/api/ai/chat` từ lúc xếp hàng
-  (đang chờ) → chạy → done / lỗi / ngắt (dọn trong `finally`), kèm phiên AI Agent và **tool gần nhất** (chỉ tên, không input).
-  Restart server là mất — không phục hồi giả. CLI vẫn không báo tool xong ổn định nên không có “tool đang chạy bao lâu”.
-- **✦ còn lại (T5):** nút **Kiểm tra** ở Cài đặt → AI (gọi thử model thật) có ✦ + tooltip “Hỏi thử 1 câu bằng <AI> — tính vào gói / key”;
-  **Hỏi AI ▾** ở trang Setup có ✦ + tooltip “mở trang AI trên web — không chạy AI trên máy”; **Tải job cho AI** có ✦ +
-  “Chuẩn bị cho AI — chưa chạy”. Flow nhận tên AI thật cho tooltip “Dùng AI (<tên AI>)” (trước ghi “AI”).
-- **Icon hãng:** dùng `AiBrand` (chấm màu + tên hãng tô đậm, Phase 28.11) — không dùng logo hãng vì chưa có asset được phép.
-- Kiểm 2026-11-01: 572 test xanh (mới `tests/activity-jobs.test.ts`: 2 phiên × 3 nguồn = 6, run dùng chung đếm 1, việc ngoài
-  phiên, pending riêng, job cũ hơn 24 giờ vẫn đếm, chat = 1 việc + tool chỉ là chi tiết + dọn khi xong) · typecheck + lint sạch ·
-  chạy thật trên bản sao DB với 4 run giả đang chạy (2 phiên + 1 run dùng chung + 1 ngoài phiên): badge **12 running**, menu nhóm
-  đúng, bấm việc mở `/hunt/25?c=93` · gửi 1 lượt chat Codex thật: badge 12 → 13 trong lúc chạy, về 12 khi xong ·
-  960px menu nằm trong khung, không cuộn ngang.
-- **Vẫn chưa làm:** thời lượng từng tool (CLI không có sự kiện tool xong); chặn hai tab gửi chồng lượt chat ở server.
 
 ## Rủi ro
 

@@ -283,6 +283,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 - **Chi phí:** đọc $0.005 / bài, đếm $0.005–0.010 (đo 2026-10-26). Ví dụ 2.000 bài / tuần ≈ $10 / tuần.
 - **Điều khoản:** Thấp nếu qua API chính thức, Cao nếu cào.
 - **Hợp app:** mọi loại.
+- **Tuyến không tốn tiền:** skill Claude Code lái Chrome, ít lượt, có người ngồi cạnh: [Backlog 30](phase-backlog-30-x-qa-skill.md).
 - [Giá API](https://docs.x.com/x-api/getting-started/pricing)
 
 #### 16 · Apple Community (discussions.apple.com)

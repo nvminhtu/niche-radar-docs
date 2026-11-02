@@ -61,6 +61,9 @@ Tab **GitHub**: bấm **Lấy App Mac menu bar** (hoặc App Mac · Chrome exten
 token chỉ đọc ở **Cài đặt → Token GitHub** thì 30 lệnh / phút. Bảng chỉ giữ **tính năng** bị từ chối hoặc còn mở ≥ 1 năm, xếp
 theo điểm; 2 khung gấp "Theo chủ đề", "Theo repo"; **Tải .md**. Tab này không cộng vào Gộp. Chi tiết: [Phase 13](web/phase-13-github-gap.md).
 
+Muốn **trả lời** câu hỏi Reddit để kéo người dùng: skill `/reddit-qa` (Claude Code mở bằng `claude --chrome`) tìm câu hỏi,
+gom hàng chờ ở `marketing/reddit/queue.md` và viết nháp — bạn tự đăng. Chi tiết: [Backlog 29](web/phase-backlog-29-reddit-qa-skill.md).
+
 ## Cho Claude Code / Codex / Cursor đọc dữ liệu (MCP)
 
 **Cài đặt → Cho AI của bạn đọc dữ liệu (MCP)** → bấm **Thêm vào Claude Code**, **Codex**, **Claude Desktop**, **Cursor** hoặc

@@ -26,6 +26,8 @@ flowchart TB
 | **Gemini API đọc link YouTube** | cả hình + tiếng của video | trả theo lượt (rẻ với Flash) | hợp video không có phụ đề / demo app trên màn hình — kiểm giới hạn lúc làm |
 | **Claude in Chrome** | trang video + comment trong trình duyệt của anh | gói Claude đang có | tool xuất *job* `.json` (danh sách video + câu hỏi) → Claude đọc → nhập kết quả `.json` |
 
+**Đo 2026-11-02 ([Backlog 27](phase-backlog-27-youtube-chrome-skill.md#bang-thu-buoc-0-o-2026-11-02)):** comment lấy được (200 / video, 16 giây), **phụ đề không lấy được** bằng YouTube.js lẫn yt-dlp → tuyến chính tạm là **comment**, phụ đề đi qua Gemini hoặc vidIQ.
+
 Không biết tuyến nào tốt hơn → chạy cùng **bài thử chuẩn** trên 10 video của 1 niche (như Bước 0 Phase 6), ghi
 chất lượng · thời gian · tiền rồi chọn.
 

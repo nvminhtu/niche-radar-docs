@@ -3,7 +3,7 @@
 > Trả lời 3 câu: Claude Code lái Chrome bằng skill được không (cho YouTube và cho trang Play / App Store)?
 > vidIQ đã nằm trong plan rồi, kết hợp MCP thế nào? Có repo nào làm sẵn để gắn vào tool cho nhanh?
 
-<span class="chip chip--todo">Plan mới 2026-11-02 · chưa làm · bổ sung cho Phase 51–52 và Backlog 26</span>
+<span class="chip chip--doing">Plan mới 2026-11-02 · Bước 0 đo xong phần làm được (YouTube.js, trình duyệt) · còn vidIQ + Claude in Chrome thật</span>
 
 ## 1. Claude Code + Chrome có chạy skill được không? → Được
 
@@ -88,7 +88,7 @@ flowchart TB
 
 1. **Bước 0 · đo thử (½ ngày):** YouTube.js còn tìm / lấy comment / phụ đề được không trên 1 niche × 10 keyword;
    vidIQ: gói nào mở MCP, 10 keyword tốn bao nhiêu credit; Chrome: skill đọc 10 trang video mất bao lâu.
-   Ghi số + ngày vào bảng thử ở cuối trang này. Chưa đo → ghi `chưa đo`.
+   Ghi số + ngày vào bảng thử ở cuối trang này. Chưa đo → ghi `chưa đo`. **Đã đo 2026-11-02** — phụ đề không lấy được, xem bảng thử.
 2. **Phase 51 như plan cũ** (YouTube.js) — không đổi gì, chỉ ghi thêm link về trang này.
 3. **Skill `youtube-demand`** (tiếng Anh, chữ trong `web/src/lib/ai/ai-dir.ts`, theo luật [Phase 28.3](phase-28-3-skills.md)):
    đọc dữ liệu YouTube qua niche-radar MCP → nếu phiên có vidIQ thì thêm lượt tìm → nếu phiên có tool Chrome thì mở
@@ -125,13 +125,46 @@ flowchart TB
 - Tải video về máy
 </div>
 
-## Bảng thử (điền ở Bước 0)
+## Bảng thử (Bước 0, đo 2026-11-02)
 
-| Lớp | Đo gì | Kết quả | Ngày |
-|---|---|---|---|
-| YouTube.js | 1 niche × 10 keyword: tìm, comment, phụ đề chạy không, mất bao lâu | chưa đo | — |
-| vidIQ MCP | gói nào mở MCP, credit cho 10 keyword | chưa đo | — |
-| Claude in Chrome | đọc 10 trang video, thời gian, có bị chặn không | chưa đo | — |
+Niche thử: `habit tracker`. 10 keyword lấy từ gợi ý YouTube (`suggestqueries … ds=yt`, trả đủ 10 gợi ý):
+habit tracker · google sheet · google sheets · excel · journal · template · bullet journal · sheet · in notion · notion template.
+
+**YouTube.js 18.3.0** (Node 22, không key, mạng nhà ở VN, gọi `lang=en` `location=US`)
+
+- **Tìm video:** 10 / 10 keyword ra đủ 20 video mỗi keyword (tiêu đề, view, ngày đăng dạng "8mo ago", độ dài, kênh).
+  Mỗi lần tìm 0,7–1,1 giây. Cả lượt 10 keyword + 3 video chi tiết, nghỉ 2 giây giữa các lần gọi: **54 giây**. Không bị chặn.
+- **Kênh:** chạy — trả số sub dạng chữ ("37.4K subscribers | 213 videos"), 0,3–0,7 giây mỗi kênh. Phải tự đổi chữ sang số.
+- **Comment:** chạy — trang đầu 13–20 comment, 0,3 giây. Lấy **200 comment** của 1 video: 10 trang, 16 giây (nghỉ 1,5 giây / trang).
+- **Phụ đề: KHÔNG chạy.** `getTranscript()` trả lỗi 400 (3 / 3 video). Danh sách phụ đề có (18–20 thứ tiếng), nhưng tải link
+  phụ đề trả về rỗng. `yt-dlp 2026.08.19` cũng lỗi 429 (2 / 2 video). Lý do có vẻ là YouTube đòi token chống bot cho
+  phụ đề — **chưa kiểm**, chỉ là đoán.
+
+**vidIQ MCP** (chỉ đọc trang giá + trang Claude, chưa gọi thật)
+
+- Trang giá ngày 2026-11-02: MCP **có ở mọi gói, kể cả Free**. Free 150 credit / tháng · Boost 19 USD/tháng, 2.000 credit ·
+  MAX 49 USD/tháng, 6.000 credit (giá Mỹ, 1 kênh).
+- "Most research tools cost 5 credits per call" → 10 keyword × 1 lần `keyword_research` ≈ 50 credit, tức 1/3 gói Free.
+  Đây là **tính từ chữ trên trang**, số credit thật của `keyword_research`: `chưa đo`.
+- Chưa gọi thật vì cần tài khoản vidIQ. Claude không tạo tài khoản thay anh → anh tạo tài khoản Free + nối connector
+  `https://mcp.vidiq.com/mcp` vào Claude, rồi chạy lại dòng này.
+
+**Claude in Chrome:** `chưa đo` — extension chưa nối với phiên này (danh sách trình duyệt kết nối trống).
+Đo thay bằng **trình duyệt có sẵn trong app Claude** (Chromium), 10 video đầu của "habit tracker app":
+
+- 10 / 10 trang mở được, không hỏi cookie, không captcha, không bị chặn.
+- Trang hiện trên màn hình: đọc tiêu đề, view, số comment ("412 Comments") + **20 comment đầu**, mất ~10 giây / trang (gồm cuộn chờ tải).
+- Khung trình duyệt bị ẩn: YouTube **không vẽ trang** → không đọc được comment. Vẫn đọc được dữ liệu nhúng sẵn trong trang
+  (tiêu đề, view chính xác, kênh, mô tả, số thứ tiếng phụ đề): ~2 giây / trang.
+- Nút "Show transcript" bấm không mở được bảng phụ đề; video đang phát thì chữ phụ đề vẫn hiện trên hình.
+
+**Rút ra cho plan**
+
+1. Lớp 1 (YouTube.js) đủ cho Phase 51: tìm, top video, kênh, comment. Giữ nguyên lựa chọn.
+2. **Phụ đề là chỗ hỏng.** Phase 52 đang lấy "phụ đề + comment" làm tuyến chính → đổi thành **comment làm chính**,
+   phụ đề lấy qua tuyến khác: `video_transcript` của vidIQ, Gemini đọc link YouTube, hoặc đo lại sau khi YouTube.js / yt-dlp ra bản sửa.
+3. Tuyến Chrome chậm (~10 giây / trang) và cần cửa sổ hiện trên màn hình mới đọc được comment → chỉ để soi ≤ 10 video, đúng như luật ở trên.
+4. Còn phải đo: vidIQ gọi thật (cần tài khoản của anh) · Claude in Chrome thật (cần `claude --chrome` + extension đăng nhập).
 
 Nguồn: [Claude Code · dùng với Chrome](https://code.claude.com/docs/en/chrome) ·
 [vidIQ cho Claude](https://vidiq.com/claude/) · số sao lấy từ GitHub API ngày 2026-11-02.
