@@ -282,7 +282,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 <div class="step" markdown>
 <span class="step__n">28.4</span>
 <div class="step__body">
-<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦</span></h3>
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦ · thẻ AI đề xuất 2026-11-01</span></h3>
 <p>Nút ✦ ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Làm trước các chỗ chỉ cần gắn nút vào khung có sẵn.</p>
 <a class="go" href="phase-28-4-ai-magic/">Xem chi tiết →</a>
 </div>
@@ -292,7 +292,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 
 ## Phase 28.7 · AI Agent dễ nhìn
 
-<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn</span>
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn · làm nốt 2026-11-01 (badge theo việc)</span>
 
 Tiếp nối [Phase 28.6 · AI Agent](phase-28-6-ai-agent.md): hiện AI và model thật, đóng/mở hướng dẫn,
 menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ thống nhất.
@@ -301,7 +301,7 @@ menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ 
 
 ## Phase 28.8 · Trang niche + Explorer
 
-<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A</span>
+<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A · làm nốt 2026-11-02</span>
 
 Ưu tiên sửa cuộn bảng/cây và trạng thái rỗng có nút; thu gọn giải thích, làm rõ điểm và độ phủ,
 biến TEST MORE / BUILD / SKIP thành bước tiếp có điều kiện. Không đổi công thức tính.

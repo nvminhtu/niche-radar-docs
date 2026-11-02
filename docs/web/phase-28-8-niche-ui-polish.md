@@ -3,7 +3,7 @@
 > Sửa bảng và cây bị cắt trước; biến trạng thái rỗng thành bước đi tiếp; đọc được điểm và giới hạn dữ liệu ngay,
 > rồi bấm gợi ý để biết cần đo, test hay research thêm điều gì.
 
-<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A</span>
+<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A · làm nốt 2026-11-02 (cây dọc, chữ rỗng, mở trong AI Agent)</span>
 
 <div class="box box--goal" markdown>
 **Hiện có — đối chiếu code ngày 2026-10-27.**
@@ -316,7 +316,28 @@ Với chính trang plan: mở MkDocs khoảng 1340px, xác nhận nội dung m�
   Lệch plan: chưa làm handoff sang phiên AI Agent (router state) — dùng ô Hỏi AI chỉ đọc thay thế.
 - Kiểm: `health-presentation.test.ts` 5 test; xem Research #44 ở 1340 + 960px EN, mở panel bằng Enter, "Điền vào Hỏi AI" điền đúng
   Research #44 + 4 yếu tố thiếu (0 tin nhắn gửi), reach thiếu link bị chặn trước khi gọi server.
-- **Chưa làm:** Branch map cây dọc khi hẹp, chữ rỗng Niche map / SourceBlock, handoff sang AI Agent; zoom 125–150 % — **chưa đo**.
+- **Chưa làm (lúc 2026-10-28):** Branch map cây dọc khi hẹp, chữ rỗng Niche map / SourceBlock, handoff sang AI Agent; zoom 125–150 % — **chưa đo**.
+
+## Kết quả 2026-11-02 — làm nốt
+
+- **D · Sơ đồ nhánh cây dọc khi hẹp:** khung `.flow-map` là `@container`; rộng < 56rem thì nhánh con xếp **dưới** cha, thụt nhẹ,
+  ô node co theo khung (tối đa 26rem) — không còn cuộn ngang. Rộng hơn giữ cây ngang như cũ. Đo Explorer #14 (5 FLOW):
+  960px → `flex-direction: column`, khung 855px = scrollWidth 855 (không cuộn ngang); 1340px → `row`, 1062 = 1062.
+- **E · chữ rỗng SourceBlock:** nguồn **lỗi** → câu “Lấy dữ liệu nguồn này để đánh giá niche có dẫn chứng.” + nút **Thử lại {nguồn}**;
+  nguồn **xong mà rỗng** → “Đã tra xong {nguồn} nhưng không tìm thấy dữ liệu cho keyword này. Đây không phải lỗi, cũng không có nghĩa
+  là không ai cần.” + nút **Explore từ đây →** (khối Trends + Kết quả tìm store; không lặp ở khối Đối thủ), không có nút thử lại vô hạn.
+  Kiểm Research #105 (Trends rỗng, Google Play lỗi): đủ cả hai câu + nút, 0 lỗi console.
+- **E · Niche map / Top cơ hội thiếu số:** “Lấy số liệu keyword để so cơ hội trên bản đồ.” + nút **Xem trạng thái lấy dữ liệu**
+  (cuộn + focus bảng tiến độ `#explore-progress`). Chưa gặp được Explorer thật thiếu số để chụp — **chưa xem tận mắt**, chỉ typecheck.
+- **A · Mở trong AI Agent:** panel “Xem việc cần test” có thêm nút **Mở trong AI Agent →** cạnh “Điền vào Hỏi AI”. Bấm mới tạo
+  phiên (API `POST /api/hunt/from-research {runId}` → `huntFromResearch()`: tên phiên = keyword, gắn đúng Research đó làm ứng viên,
+  **không tra lại, không chạy AI**), rồi mở `/hunt/:id?c=:itemId` với câu nháp qua router state: ô chat điền sẵn, **không gửi**;
+  chỉ nhận khi Research gửi kèm đúng là ứng viên của phiên; dùng 1 lần rồi xoá state (tải lại không điền lại). Đang ở trang phiên
+  thì nút thành “Gửi vào chat phiên này” (trước đó `prefillAi` không có khung Hỏi AI để nhận ở trang phiên).
+  Kiểm Research #109 (TEST THÊM) → phiên #26 “micro niche finder”, ứng viên Research #109 được chọn, ô chat có câu nháp, 0 tin gửi.
+- Test: mới `tests/hunt-handoff.test.ts` (phiên đúng tên, 1 ứng viên đúng run/nước, không tạo run mới, collector không chạy, run lạ → 404);
+  573 test xanh, typecheck + lint sạch.
+- **Vẫn chưa đo:** zoom 125–150 %.
 
 ## Rủi ro
 
