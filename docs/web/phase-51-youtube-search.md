@@ -110,4 +110,6 @@ Các MCP đã tìm được (2026-10-24, tiền và giới hạn kiểm lại l�
 - Dùng tool tạo nội dung của MCP (`generate_titles`, `generate_thumbnail`, `generate_clips`) — ngoài việc chọn niche
 </div>
 
+Ghép thêm skill lái Chrome + repo / MCP có sẵn: [Backlog 27](phase-backlog-27-youtube-chrome-skill.md).
+
 Plan code chi tiết: [Phase 51](../superpowers/plans/2026-10-25-niche-radar-phase31-youtube-search.md)

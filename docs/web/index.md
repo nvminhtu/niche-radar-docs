@@ -372,6 +372,24 @@ riêng (số keyword, tiêu chí chấm, ngưỡng cứng, giữ mấy niche, b�
 
 [Xem plan Phase 28.16 →](phase-28-16-ai-agent-custom-mode.md)
 
+## Phase 28.17 · Quick Setup — nối Claude / ChatGPT trong 3 phút
+
+<span class="chip chip--done">Code xong 2026-10-31</span>
+
+Tour 4 bước cho người không rành Terminal: chọn gói (Claude / ChatGPT) → copy 1 lệnh cài → đăng nhập bằng trình duyệt →
+thử 1 câu. App tự tick xanh khi xong, mỗi bước có link hướng dẫn trên web (chưa có thì xám "sắp có").
+
+[Xem plan Phase 28.17 →](phase-28-17-quick-setup.md)
+
+## Phase 28.18 · AI Agent — Đã có app / web
+
+<span class="chip chip--doing">Đang làm · M1 code xong 2026-10-31</span>
+
+Hôm nay AI Agent chỉ phục vụ người chưa có app. Phase này cho người đã có app hoặc web đưa context vào (file mô tả, link store,
+link web, dán tay), xác nhận Hồ sơ app, rồi chọn Đánh giá app hiện tại, Mở rộng tìm niche, hoặc cả hai.
+
+[Xem plan Phase 28.18 →](phase-28-18-ai-agent-da-co-app.md)
+
 ## Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app
 
 <span class="chip chip--todo">Plan 2026-10-31</span>
@@ -517,6 +535,14 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 <a class="go" href="phase-45-tutorial/">Xem chi tiết →</a>
 </div>
 </div>
+<div class="step" markdown>
+<span class="step__n">45.1</span>
+<div class="step__body">
+<h3>Chế độ tối <span class="chip chip--done">Xong bản Web 2026-11-02</span></h3>
+<p>Cài đặt chọn Sáng · Tối · Theo máy. Gom màu thành token rồi đảo bảng màu (không sửa từng class), không chớp trắng, tương phản AA cả hai chế độ.</p>
+<a class="go" href="phase-45-1-dark-mode/">Xem chi tiết →</a>
+</div>
+</div>
 </div>
 
 ## Version 11 · Marketing (Phase 46–49)
@@ -526,7 +552,7 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 <span class="step__n">V11</span>
 <div class="step__body">
 <h3>Marketing Plan <span class="chip chip--todo">Phase 46–49</span></h3>
-<p><a href="phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · lịch 6 tuần + luật dừng (49). 47 Chọn 2 kênh · 48 Dogfood → Backlog (2026-10-29). Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<p><a href="phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · <a href="phase-46-2-seo-keyword-blog-gsc/">46.2 Từ khoá + Search Console</a> · <a href="phase-46-3-blog-founders/">46.3 Mục Indie founders</a> · <a href="phase-46-4-google-trends-guide/">46.4 Guide Google Trends</a> · lịch 6 tuần + luật dừng (49). 47 Chọn 2 kênh · 48 Dogfood → Backlog (2026-10-29). Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
 <a class="go" href="version-11/">Xem chi tiết →</a>
 </div>
 </div>
@@ -690,6 +716,9 @@ lúc làm thì tách thành phase.
 - [Backlog 23 · Terminal nhúng + sổ dùng AI](phase-backlog-23-ai-terminal-usage.md) — từ Phase 27
 - [Backlog 24 · Nút AI còn lại](phase-backlog-24-ai-buttons-rest.md) — từ Phase 28
 - [Backlog 25 · MCP đợt 2 phần còn](phase-backlog-25-mcp-write-rest.md) — từ Phase 28.2
+- [Backlog 26 · Extension Chrome "ShotMatic Lite"](phase-backlog-26-chrome-extension-lite.md) — plan mới 2026-11-01, phễu về shotmatic.app
+- [Backlog 27 · YouTube + skill lái Chrome + repo có sẵn](phase-backlog-27-youtube-chrome-skill.md) — plan mới 2026-11-02, bổ sung Phase 51–52
+- [Backlog 28 · Extension Chrome "ShotMatic Scout" (Amazon)](phase-backlog-28-chrome-extension-amazon.md) — bản 0.1.0 2026-11-02, miễn phí hết, cửa vào thứ hai về shotmatic.app
 - Phase dời nguyên trang: [27.4 Hỏi dữ liệu](phase-27-4-ai-cite-ask.md) · [27.6 Cài đặt AI](phase-27-6-ai-settings.md) ·
   [28.1 Tóm tắt niche](phase-28-1-ai-summary.md) · [28.3 Bộ skill](phase-28-3-skills.md) ·
   [28.5 Brief + Spec + Plan](phase-28-5-brief-plan.md)

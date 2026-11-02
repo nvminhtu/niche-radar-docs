@@ -88,6 +88,7 @@ Mỗi chỗ vướng 1 dòng, có ảnh ở `docs/images/phase-33-1/`:
 
 | # | Hành trình | Màn | Vướng gì | Mức | Sửa | Ảnh trước / sau |
 |---|---|---|---|---|---|---|
+| 1 | Research 1 keyword | Kết quả niche · khối Blocking flags + khối NEXT | Nút **Export niche research (.md)** vỡ: icon tải nằm 1 dòng, chữ rớt xuống dòng dưới (nút cao, lệch so với Export for AI / Explore from here cạnh bên). Gặp ở cả nút to dưới Blocking flags lẫn nút đỏ trong NEXT. Nghi: `Button` bọc children trong `<span>` thường, Tailwind preflight cho `svg` là `display:block` nên `SectionIcon` chiếm 1 dòng; `gap-1.5` đặt ở `<button>` không ăn vào span trong. | Khó chịu | ✅ Sửa 2026-10-31 — `globals.css`: nhãn nút (`.button-labels > span:first-child`) thành `inline-flex items-center gap 6px`, nút `truncate` giữ `display:block` để vẫn cắt "…". Soát 1340 + 960px trang kết quả niche và cây Explorer: không nút nào rớt dòng, nút cắt chữ vẫn đúng | [trước](../images/phase-33-1/01-export-button-icon-wrap-truoc.png) · [sau](../images/phase-33-1/01-export-button-icon-wrap-sau.jpg) |
 
 - **Chặn** — người mua kẹt, mất dữ liệu, mua không được, hoặc chữ / số sai sự thật → **phải sửa** trong phase này.
 - **Khó chịu** — đi được nhưng phải đoán, phải thử 2 lần → sửa trong phase này nếu sửa đúng chỗ, không đụng bố cục lớn.

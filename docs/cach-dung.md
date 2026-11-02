@@ -71,6 +71,19 @@ nguyên server khác, sao lưu file cũ thành `….bak-niche-radar`; file lỗi
 App khác (VS Code, Zed…): mục "dán tay" ở cuối khối.
 Dời repo hoặc cài app bản mới → khối báo "Đang trỏ bản cũ", bấm **Cập nhật**. Chi tiết: [Phase 27](app/phase-27-ai-cua-ban.md).
 
+## Extension Chrome (ShotMatic Lite)
+
+Thử trên máy: `chrome://extensions` → bật Developer mode → **Load unpacked** → chọn folder `extension/`. Mở app bất kỳ trên
+Google Play / App Store, card hiện góc phải dưới: số liệu app, keyword trong tên, Niche check (5 lần/ngày), Ask Claude.
+Chi tiết + chữ cho store: README trong folder `extension/` của repo. Plan: [Backlog 26](web/phase-backlog-26-chrome-extension-lite.md).
+
+## Extension Chrome Amazon (ShotMatic Scout)
+
+Thử trên máy: `chrome://extensions` → bật Developer mode → **Load unpacked** → chọn folder `extension-amazon/`. Tìm một keyword
+trên Amazon (10 chợ), card hiện góc phải dưới: kết luận cạnh tranh của trang 1, keyword dài a–z (Copy · CSV), số app App Store
+cho keyword đó. Mở trang sản phẩm → rating, bought tháng trước, BSR. Miễn phí hết, không giới hạn lượt.
+Chi tiết + chữ cho store: README trong folder `extension-amazon/` của repo. Plan: [Backlog 28](web/phase-backlog-28-chrome-extension-amazon.md).
+
 ## Khi bị chặn
 
 Play, Trends, Google gợi ý không có API chính thức → gọi dồn dập sẽ bị chặn tạm (thường 10–30 phút).
@@ -78,14 +91,18 @@ Một người, mạng nhà, **vài chục lần tra/ngày là ổn**. Bị ch�
 
 ## Lệnh hay dùng
 
-Chạy ở gốc repo (lối tắt) hoặc trong `web/` / `app/`:
+Chạy ở gốc repo (lối tắt) hoặc trong `web/` / `app/` / `extension/` / `extension-amazon/`:
 
 | Lệnh (gốc repo) | Trong folder | Làm gì |
 |---|---|---|
 | `npm run dev` | `web/` · `npm run dev` | chạy app (web 3200 + API 3201) |
 | `npm run check` | `web/` · `npm test` · `npm run typecheck` · `npm run lint` | kiểm code |
 | — | `web/` · `npm run smoke -- "<niche>" US` | gọi thật 4 nguồn, in số dòng lấy được |
+| — | `web/` · `npm run theme:dark` | sinh lại bộ màu chế độ tối sau khi sửa màu trong `globals.css` |
 | — | `web/` · `npx tsx scripts/mcp-smoke.ts [niche.db]` | chạy niche-radar MCP như Claude Code gọi: liệt kê tool, gọi thử 3 tool |
 | `npm run mac` | `app/` · `npm run build` | build app Mac → `app/dist/*.dmg` (ký + notarize) |
+| `npm run mini` | `app/` · `npm run mini` | build mini app bật server web bằng double-click, chỉ cho máy dev (không đóng gói, không ký Developer ID) |
+| `npm run ext:zip` | `extension/` · `bash scripts/zip.sh` | đóng gói extension Chrome ShotMatic Lite ra `.zip` để tải lên Chrome Web Store |
+| `npm run ext:amazon:zip` | `extension-amazon/` · `bash scripts/zip.sh` | đóng gói extension Amazon ShotMatic Scout ra `.zip` |
 | `npm run docs` | — | mở trang tài liệu này ở http://127.0.0.1:3210 |
 | `npm run docs:build` | — | build tài liệu ra `site/` |

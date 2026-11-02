@@ -21,6 +21,9 @@ có quyết định giữ / dừng. Số thật ghi ngày, chưa đo thì ghi `c
 ```mermaid
 flowchart TB
   P[Phase 46<br/>Landing shotmatic.app] --> BL[Phase 46.1<br/>Blog shotmatic.app<br/>SEO · AEO · GEO]
+  BL --> K[Phase 46.2<br/>Từ khoá · blog theo cụm ·<br/>Search Console]
+  K --> F[Phase 46.3<br/>Mục Indie founders]
+  K --> T[Phase 46.4<br/>Guide Google Trends]
   P --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
   P -.-> C[Phase 47 · Chọn 2 kênh<br/>BACKLOG]
   P -.-> D[Phase 48 · Dogfood<br/>BACKLOG]
@@ -32,6 +35,9 @@ flowchart TB
 |---|---|---|
 | [46 · Landing shotmatic.app — định vị + email](phase-46-positioning-landing.md) ✅ | 1 câu định vị, landing [shotmatic.app](https://shotmatic.app) live, form email EmailOctopus, GA4 `generate_lead` | `/app-gtm`, `/oneclicktool-landing` |
 | [46.1 · Landing shotmatic.app — Blog](phase-46-1-landing-blog.md) ✅ | blog riêng trên landing: phân trang, chuyên mục SEO · AEO · GEO, bản .md + llms.txt cho AI search | `/oneclicktool-blog`, `/app-geo` |
+| [46.2 · Từ khoá + blog theo cụm + Search Console](phase-46-2-seo-keyword-blog-gsc.md) | tối ưu từ khoá cho shotmatic.app (trụ `app idea validation`), 2 trang đích + 6 bài blog theo cụm từ khoá, Search Console: số mốc → đo lại sau 4 tuần | `/oneclicktool-blog`, `/app-geo` |
+| [46.3 · Blog mục Indie founders](phase-46-3-blog-founders.md) | chuyên mục `founders` trên blog: chọn market, micro SaaS, tìm niche ở tầm founder — 5 bài theo từ khoá đã đo | `/oneclicktool-blog`, `marketing-skills:content-strategy` |
+| [46.4 · Guide Google Trends](phase-46-4-google-trends-guide.md) | chuyên mục `trends`: bài trụ "how to use google trends to find a niche" + 4 bài cụm, 4 loại trend quyết định trend nào đưa được người từ web vào app | `/oneclicktool-blog`, `marketing-skills:seo-audit` |
 | [47 · Chọn 2 kênh](phase-47-two-channels.md) ⏸️ **Backlog** | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |
 | [48 · Dogfood làm nội dung](phase-48-dogfood-content.md) ⏸️ **Backlog** | báo cáo niche công khai làm mồi email, chạy Version 4 cho chính niche-radar | `/app-geo`, `/oneclicktool-blog` |
 | [71 · Lịch 6 tuần + ra mắt](phase-49-six-week-launch.md) | lịch bài, ngày ra mắt, bảng số mỗi tuần, luật dừng kênh | `/app-gtm`, `/app-marketing` |
