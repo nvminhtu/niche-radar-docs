@@ -3,7 +3,20 @@
 > Cho niche **phục vụ cửa hàng / dịch vụ địa phương** (salon, phòng gym, phòng khám, quán ăn…): ở một thành phố có
 > bao nhiêu chỗ, chủ quán và khách đang than gì — tìm chỗ một app nhỏ giải được.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 54</span>
+<span class="chip chip--done">Xong bản đầu 2026-11-02 · trang Social Search → tab Google Maps</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-02)** — tab Google Maps
+
+- 12 loại cửa hàng (salon, gym, nha khoa, phòng khám, thú y, nhà hàng, cà phê, sửa xe, giặt ủi, massage / spa, dạy thêm…) × tối đa 5 thành phố
+- Nominatim tìm ranh giới thành phố → Overpass đếm chỗ: số chỗ · % có website · % có điện thoại · % ghi giờ mở · % đặt lịch online; mẫu 20 chỗ mỗi thành phố có link mở Google Maps
+- Overpass quá tải (502) → đợi 5 giây thử lại 1 lần; vẫn lỗi thì báo trên UI, lần đếm thiếu thành phố không giữ cache
+- Nút ✦ so số đếm giữa các thành phố; **job Claude in Chrome** đọc review 1–3★ + câu chủ quán trả lời → ý tưởng app có ≥ 3 review làm bằng chứng
+- Đo 2026-11-02: hair salon · Denver, CO = 181 chỗ, 59 có website; Austin, TX = 168 chỗ (lần khác Overpass báo hết chỗ, 502)
+
+**Chưa làm:** Google Places API (cần key, tắt mặc định) · nhập kết quả job về app · đưa ý tưởng vào evidence pack Phase 7
+</div>
+
 
 ## Chạy thế nào
 

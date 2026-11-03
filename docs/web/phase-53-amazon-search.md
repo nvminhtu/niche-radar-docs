@@ -3,7 +3,21 @@
 > Gõ một niche → biết **người ta tìm gì trên Amazon**, sản phẩm nào bán chạy, đông tới đâu, giá bao nhiêu —
 > **không dùng AI**, chỉ cào số. Hợp niche sản phẩm số / vật lý đi kèm app (planner, template, journal…).
 
-<span class="chip chip--todo">Chưa làm · sau Phase 52</span>
+<span class="chip chip--done">Xong bản đầu 2026-11-02 · trang Social Search → tab Amazon</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-02)** — tab Amazon
+
+- Gợi ý Amazon keyword gốc + a–z (10 chợ: US, CA, MX, UK, DE, FR, IT, ES, AU, JP), nhãn `AMZ`
+- Trang kết quả của 3 keyword, cách nhau ≥ 5 giây: sản phẩm không tài trợ · giá · sao · số review · huy hiệu "bought in past month" · nhận xét từng keyword
+- Ô số: số sản phẩm · tổng review · review trung vị · giá thấp / giữa / cao · lính mới (< 100 review) · đã bán tháng trước
+- Đọc số dùng chung lib của extension ShotMatic Scout (`extension-amazon/lib/`) — một chỗ cho khuôn chữ Amazon
+- **Bị chặn** (503, captcha, trang thử thách `bm-verify`) → dừng phần trang tìm, báo trên UI, không vượt, không proxy; lần tra bị chặn không giữ cache
+- Đo 2026-11-02 từ máy dev: lúc ra đủ (80 sản phẩm, 3 trang), lúc ra trang thử thách → chặn đúng. Giá hiện theo tiền tệ Amazon đổi theo IP (VND ở Việt Nam)
+
+**Chưa làm:** BSR top 5 + ngày lên kệ (cần mở trang sản phẩm) — "lính mới" tạm tính theo số review, không theo ngày lên kệ
+</div>
+
 
 ## Chạy thế nào
 

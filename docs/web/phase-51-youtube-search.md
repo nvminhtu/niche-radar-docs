@@ -4,7 +4,21 @@
 > **không dùng AI**, chỉ cào số. Thêm tuỳ chọn lấy số từ **MCP bên thứ 3** (vidIQ…) để có lượt tìm + độ cạnh tranh
 > mà tự cào không có.
 
-<span class="chip chip--todo">Chưa làm · sau MVP (Phase 1–45)</span>
+<span class="chip chip--done">Xong bản đầu 2026-11-02 · trang Social Search → tab YouTube</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-02)** — menu **Tính năng khác → Social Search**, tab YouTube
+
+- Gợi ý YouTube (`suggestqueries` `ds=yt`) + top 20 video của 5 keyword (gốc + 4 gợi ý) bằng `youtubei.js` 18.3.0, không key
+- Số sub của 15 kênh nhiều view nhất → cột **view ÷ sub** (≥ 3× tô xanh = video vượt kênh)
+- Ô số: video đã xem · view trung vị · % đăng trong 12 tháng · số kênh nhỏ (< 10K sub) thắng · % video của kênh ≥ 1M sub · nhãn Còn chỗ / Lẫn lộn / Đông (ngưỡng là quy ước, ghi trong `web/src/lib/social.ts`)
+- Lưu mỗi lần tra (bảng `social_searches`), dùng lại trong 7 ngày; lần tra hỏng không giữ cache
+- Đo thật 2026-11-02, niche "habit tracker": 76 video, 300 comment, ~22 giây
+- Code: `web/src/collectors/youtube.ts` · test `web/tests/social.test.ts`
+
+**Chưa làm:** tuyến MCP bên thứ 3 (vidIQ) · Data API dự phòng · gộp keyword YouTube vào cây Explore (Phase 1)
+</div>
+
 
 ## Chạy thế nào
 

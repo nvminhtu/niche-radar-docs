@@ -3,7 +3,18 @@
 > Để AI **xem / đọc thay mình** video và comment của niche: người xem than gì, xin gì, đang dùng app / tool nào —
 > có trích dẫn kèm mốc thời gian.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 51</span>
+<span class="chip chip--done">Xong bản đầu 2026-11-02 · tuyến comment → khung Hỏi AI</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-02)** — khối "Người xem nói gì" trong tab YouTube
+
+- Lấy comment 5 video nhiều view nhất của keyword gốc (3 trang ≈ 60 comment / video), không lưu tên người comment
+- Nút ✦ gửi khung Hỏi AI một câu hỏi có sẵn comment (xếp theo lượt thích, ≤ 3.900 ký tự): gom chủ đề than · xin tính năng · tool được nhắc, mỗi ý kèm câu nguyên văn + nhãn video `[vN]`, rồi 3 ý tưởng app
+- Dùng lớp AI đang có (Claude Code / Codex trên máy) — tắt AI thì Phase 51 vẫn chạy
+
+**Chưa làm:** phụ đề (vẫn hỏng như đo ở Backlog 27) · tuyến Gemini đọc link · tóm tắt video có mốc giây · đẩy nhu cầu sang Feature Gap Matrix · bảng thử tuyến
+</div>
+
 
 ## Chạy thế nào
 

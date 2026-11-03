@@ -59,7 +59,6 @@ markdown_extensions:
   - pymdownx.tasklist: { custom_checkbox: true }
 nav:
   - Master Plan: index.md
-  - Sơ đồ ShotMatic: so-do-app.md
   - Web:
       - web/index.md
       - Quy trình build: quy-trinh-build.md
@@ -115,6 +114,7 @@ nav:
           - "Phase 28.17 · Quick Setup — nối Claude / ChatGPT trong 3 phút": web/phase-28-17-quick-setup.md
           - "Phase 28.18 · AI Agent — Đã có app / web": web/phase-28-18-ai-agent-da-co-app.md
           - "Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app": web/phase-28-19-ai-agent-full-flow.md
+          - "Phase 28.20 · AI Agent — 3 lối vào: Niche Search · Autopilot · Đã có app": web/phase-28-20-ai-agent-3-loi-vao.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
           - "Phase 29 · Analytics + báo lỗi": web/phase-29-analytics-errors.md
@@ -202,44 +202,47 @@ nav:
               - "Backlog 15 · Kiểm + vá bảo mật": web/phase-backlog-15-security-audit.md
               - "Backlog 16 · Refactor": web/phase-backlog-16-refactor.md
               - "Backlog 17 · Review bảo mật + 8.0": web/phase-backlog-17-security-review-8.md
-  - App Mac + Windows:
-      - app/index.md
-      - Phase 17 · Local App 1.0: app/phase-17-local-app-1.md
-      - "Phase 34 · Local App 2.0 (bản bán đầu)": app/phase-34-local-app-2.md
-      - "Phase 35 · Phần riêng của app": app/phase-35-app-only.md
-      - "Phase 36 · App Windows (Beta)": app/phase-36-windows-app.md
-      - "Phase 37 · Release + auto-update": app/phase-37-release-auto-update.md
-      - "⛔ KO LÀM — Backlog 18–21":
-          - Backlog 18 · Local App 3.0: app/phase-backlog-18-local-app-3.md
-          - Backlog 19 · Local App 4.0: app/phase-backlog-19-local-app-4.md
-          - "Backlog 20 · App Mac nhẹ": app/phase-backlog-20-light-mac-app.md
-          - "Backlog 21 · Build app Mac trên CI": app/phase-backlog-21-mac-build-ci.md
   - MARKETING:
-      - "Kế hoạch bán ShotMatic (làm tay → tự động)": app/ke-hoach-ban-shotmatic.md
-      - "Research · SaaS: traffic GA · event · blog · 10 kênh · tool": web/research-marketing-saas.md
       - "Plan · Analytics 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
-      - "Version 11 · Landing + SEO + Blog (Phase 46–49)":
-          - Tổng quan Version 11: web/version-11.md
-          - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
-          - "Phase 46.1 · Landing shotmatic.app — Blog (SEO · AEO · GEO)": web/phase-46-1-landing-blog.md
-          - "Phase 46.2 · Từ khoá + blog theo cụm + Search Console": web/phase-46-2-seo-keyword-blog-gsc.md
-          - "Phase 46.3 · Blog mục Indie founders": web/phase-46-3-blog-founders.md
-          - "Phase 46.4 · Guide Google Trends (trend → web → app)": web/phase-46-4-google-trends-guide.md
-          - "Phase 49 · Lịch 6 tuần + ra mắt": web/phase-49-six-week-launch.md
-      - "Backlog · làm sau (Phase 47–48)":
-          - "Phase 47 · Chọn 2 kênh": web/phase-47-two-channels.md
-          - "Phase 48 · Dogfood làm nội dung": web/phase-48-dogfood-content.md
-  - Hệ thống chạy thế nào: he-thong.md
-  - Đối thủ · Đối tác · Tham khảo: doi-thu-tham-khao.md
-  - Cách dùng: cach-dung.md
-  - Skills: skills.md
-  - Tài liệu chi tiết:
-      - Master Plan (bản đầy đủ): superpowers/specs/2026-10-24-niche-radar-master-plan.md
-      - Plan code từng phase: superpowers/plans/index.md
-      - Plan code Phase 1: superpowers/plans/2026-10-24-niche-radar-phase1-explorer.md
-      - Plan code Phase 2: superpowers/plans/2026-10-24-niche-radar-phase2-appstore-money.md
-      - Spec Phase 8 · Local App: superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md
-      - Plan code v1: superpowers/plans/2026-10-23-niche-radar-v1.md
-      - Spec v1: superpowers/specs/2026-10-23-niche-radar-design.md
-      - Nháp Explorer: superpowers/specs/2026-10-24-niche-radar-phase2-explorer.md
-      - Giới hạn nguồn & chia sẻ: superpowers/specs/2026-10-24-niche-radar-limits-and-sharing.md
+  - Others:
+      - Sơ đồ ShotMatic: so-do-app.md
+      - App Mac + Windows:
+          - app/index.md
+          - Phase 17 · Local App 1.0: app/phase-17-local-app-1.md
+          - "Phase 34 · Local App 2.0 (bản bán đầu)": app/phase-34-local-app-2.md
+          - "Phase 35 · Phần riêng của app": app/phase-35-app-only.md
+          - "Phase 36 · App Windows (Beta)": app/phase-36-windows-app.md
+          - "Phase 37 · Release + auto-update": app/phase-37-release-auto-update.md
+          - "⛔ KO LÀM — Backlog 18–21":
+              - Backlog 18 · Local App 3.0: app/phase-backlog-18-local-app-3.md
+              - Backlog 19 · Local App 4.0: app/phase-backlog-19-local-app-4.md
+              - "Backlog 20 · App Mac nhẹ": app/phase-backlog-20-light-mac-app.md
+              - "Backlog 21 · Build app Mac trên CI": app/phase-backlog-21-mac-build-ci.md
+      - "Marketing cũ (trước 2026-11-03)":
+          - "Kế hoạch bán ShotMatic (làm tay → tự động)": app/ke-hoach-ban-shotmatic.md
+          - "Research · SaaS: traffic GA · event · blog · 10 kênh · tool": web/research-marketing-saas.md
+          - "Version 11 · Landing + SEO + Blog (Phase 46–49)":
+              - Tổng quan Version 11: web/version-11.md
+              - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
+              - "Phase 46.1 · Landing shotmatic.app — Blog (SEO · AEO · GEO)": web/phase-46-1-landing-blog.md
+              - "Phase 46.2 · Từ khoá + blog theo cụm + Search Console": web/phase-46-2-seo-keyword-blog-gsc.md
+              - "Phase 46.3 · Blog mục Indie founders": web/phase-46-3-blog-founders.md
+              - "Phase 46.4 · Guide Google Trends (trend → web → app)": web/phase-46-4-google-trends-guide.md
+              - "Phase 49 · Lịch 6 tuần + ra mắt": web/phase-49-six-week-launch.md
+          - "Backlog · làm sau (Phase 47–48)":
+              - "Phase 47 · Chọn 2 kênh": web/phase-47-two-channels.md
+              - "Phase 48 · Dogfood làm nội dung": web/phase-48-dogfood-content.md
+      - Hệ thống chạy thế nào: he-thong.md
+      - Đối thủ · Đối tác · Tham khảo: doi-thu-tham-khao.md
+      - Cách dùng: cach-dung.md
+      - Skills: skills.md
+      - Tài liệu chi tiết:
+          - Master Plan (bản đầy đủ): superpowers/specs/2026-10-24-niche-radar-master-plan.md
+          - Plan code từng phase: superpowers/plans/index.md
+          - Plan code Phase 1: superpowers/plans/2026-10-24-niche-radar-phase1-explorer.md
+          - Plan code Phase 2: superpowers/plans/2026-10-24-niche-radar-phase2-appstore-money.md
+          - Spec Phase 8 · Local App: superpowers/specs/2026-10-24-niche-radar-phase8-local-app.md
+          - Plan code v1: superpowers/plans/2026-10-23-niche-radar-v1.md
+          - Spec v1: superpowers/specs/2026-10-23-niche-radar-design.md
+          - Nháp Explorer: superpowers/specs/2026-10-24-niche-radar-phase2-explorer.md
+          - Giới hạn nguồn & chia sẻ: superpowers/specs/2026-10-24-niche-radar-limits-and-sharing.md

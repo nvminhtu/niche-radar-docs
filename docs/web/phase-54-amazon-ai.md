@@ -3,7 +3,17 @@
 > Để AI **đọc review Amazon** thay mình: người mua chê gì, ước gì, so với sản phẩm nào — ra danh sách điểm yếu đối thủ
 > có trích dẫn.
 
-<span class="chip chip--todo">Chưa làm · sau Phase 53</span>
+<span class="chip chip--done">Xong bản đầu 2026-11-02 · ✦ AI + job Claude in Chrome</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-02)** — khối "AI đọc review thay bạn" trong tab Amazon
+
+- Nút ✦: khung Hỏi AI đọc tên · giá · sao · số review đã lấy → nhu cầu, chỗ trống, app nào phục vụ người mua tốt hơn (không cần trình duyệt)
+- **Job Claude in Chrome**: nút "Chép job" — link review 1–3★ (`filterByStar=critical`) của top 5 sản phẩm + câu hỏi chuẩn (chủ đề chê · ước gì · so với ai · chỗ app làm tốt hơn). Claude chỉ đọc trong phiên anh tự đăng nhập, không mua, không viết review
+
+**Chưa làm:** nhập kết quả `.json` về app · cột Amazon trong Feature Gap Matrix · bảng thử tuyến
+</div>
+
 
 ## Chạy thế nào
 

@@ -85,7 +85,12 @@ def patch_mkdocs() -> None:
     if "site_url:" not in text:
         text = text.replace("docs_dir: docs", f"site_url: {SITE_URL}\nrepo_url: {REPO_URL}\ndocs_dir: docs", 1)
     if "Skills: skills.md" not in text:
-        text = text.replace("  - Cách dùng: cach-dung.md\n", "  - Cách dùng: cach-dung.md\n  - Skills: skills.md\n", 1)
+        # Cách dùng nằm trong tab "Tài liệu phụ" (thụt 6) hoặc ở gốc nav (thụt 2)
+        for pad in ("      ", "  "):
+            line = f"{pad}- Cách dùng: cach-dung.md\n"
+            if line in text:
+                text = text.replace(line, f"{line}{pad}- Skills: skills.md\n", 1)
+                break
     f.write_text(text, encoding="utf-8")
 
 

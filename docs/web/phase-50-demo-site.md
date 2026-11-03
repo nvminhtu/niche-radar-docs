@@ -3,7 +3,17 @@
 > Một trang web **tĩnh** để đi marketing: khách bấm thử **giao diện thật** của ShotMatic trên **dữ liệu chụp sẵn**
 > từ vài niche đã tra, không cần server. Muốn xài thật → để lại email + tải app về máy. Host server để các phase sau.
 
-<span class="chip chip--todo">Chưa làm · plan 2026-10-25 · đầu Version 2, trước Phase 51</span>
+<span class="chip chip--doing">Code đã có (làm sớm dưới tên Phase 13a cũ) · soát lại 2026-11-02</span>
+
+<div class="box box--star" markdown>
+**Đã có trong code**
+
+- Lớp chặn fetch `web/src/demo/` (GET đọc file JSON, POST báo "bản demo"), thanh demo, lệnh `npm run demo:export` · `demo:build` · `demo:deploy` ở `web/`
+- Bản demo build dưới `/demo/` để nhúng vào shotmatic.app; form email đi EmailOctopus chung list với landing
+- Trang Social Search (Phase 51–55) trong demo hiện "Có trong app" — demo không tra nguồn mới
+- Chưa soát lại ở đợt này: các mục "Xong khi" bên dưới (đo GA4, screenshot 375) — giữ chip "Code đã có" tới khi soát xong
+</div>
+
 
 ## Vì sao làm trước
 

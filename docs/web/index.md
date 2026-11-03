@@ -399,6 +399,15 @@ AI Agent chạm thêm Compare, Theo dõi, Export. Kèm 2 sơ đồ: [Sơ đồ S
 
 [Xem plan Phase 28.19 →](phase-28-19-ai-agent-full-flow.md)
 
+## Phase 28.20 · AI Agent — 3 lối vào: Niche Search · Autopilot · Đã có app
+
+<span class="chip chip--doing">Đang làm · M1 + M2 xong 2026-11-03</span>
+
+Trang AI Agent tách thành 3 thẻ có hình minh hoạ: **Niche Search** (tự bấm từng bước), **Niche Autopilot** cho người chưa biết gì
+(AI tự chạy 4 bước Research rồi dừng ở Health check), và **Đã có app / web** cho builder (Phase 28.18).
+
+[Xem plan Phase 28.20 →](phase-28-20-ai-agent-3-loi-vao.md)
+
 ## Bán · Version 9 + 10 + app (Phase 29–37)
 
 Đo người tải app đi tới đâu (mở → dùng thử → tra niche → nhập license) và biết khi app lỗi. **Không tài khoản**: app
@@ -561,13 +570,13 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 ## Version 2 · Demo + nguồn mới + AI (Phase 50–55)
 
 Làm sau khi app đã bán (Version 10 + App + Version 11), vào app qua bản cập nhật. Version 2 mở đầu bằng **trang demo tĩnh** để đi show hàng (Phase 50), rồi thêm nguồn
-YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)** rồi một phase **AI đọc chữ**.
+YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không AI)** rồi một phase **AI đọc chữ**. Bản đầu 51–55 nằm chung một trang: **Tính năng khác → Social Search** (2026-11-02).
 
 <div class="steps nr-phases" markdown>
 <div class="step" markdown>
 <span class="step__n">50</span>
 <div class="step__body">
-<h3>Demo Site — show hàng <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Demo Site — show hàng <span class="chip chip--doing">Code đã có</span></h3>
 <p>UI thật trên dữ liệu chụp sẵn, trang tĩnh Cloudflare Pages, không server. Muốn xài thật → để email + tải app. Host server để phase sau.</p>
 <a class="go" href="phase-50-demo-site/">Xem chi tiết →</a>
 </div>
@@ -575,7 +584,7 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <div class="step" markdown>
 <span class="step__n">51</span>
 <div class="step__body">
-<h3>YouTube Search <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>YouTube Search <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>Cào gợi ý YouTube + top video mỗi keyword: view, độ mới, kênh nhỏ thắng kênh to — không AI. Tuỳ chọn: MCP bên thứ 3 (vidIQ…) cho lượt tìm + độ cạnh tranh.</p>
 <a class="go" href="phase-51-youtube-search/">Xem chi tiết →</a>
 </div>
@@ -583,7 +592,7 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <div class="step" markdown>
 <span class="step__n">52</span>
 <div class="step__body">
-<h3>YouTube Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>YouTube Research (AI) <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>AI đọc phụ đề + comment: người xem than gì, xin gì, dùng tool nào — trích dẫn kèm mốc giây.</p>
 <a class="go" href="phase-52-youtube-ai/">Xem chi tiết →</a>
 </div>
@@ -591,7 +600,7 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <div class="step" markdown>
 <span class="step__n">53</span>
 <div class="step__body">
-<h3>Amazon Search <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Amazon Search <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>Cào gợi ý Amazon + top sản phẩm: giá, sao, số review, BSR — không AI, gọi rất thưa.</p>
 <a class="go" href="phase-53-amazon-search/">Xem chi tiết →</a>
 </div>
@@ -599,7 +608,7 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <div class="step" markdown>
 <span class="step__n">54</span>
 <div class="step__body">
-<h3>Amazon Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Amazon Research (AI) <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>Claude in Chrome đọc review 1–3★: người mua chê gì, ước gì, chỗ một app làm tốt hơn.</p>
 <a class="go" href="phase-54-amazon-ai/">Xem chi tiết →</a>
 </div>
@@ -607,7 +616,7 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <div class="step" markdown>
 <span class="step__n">55</span>
 <div class="step__body">
-<h3>Google Maps Research (AI) <span class="chip chip--todo">Chưa làm</span></h3>
+<h3>Google Maps Research (AI) <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>Đếm cửa hàng theo loại × thành phố, AI đọc review → việc chủ quán đang làm tay, app làm thay được.</p>
 <a class="go" href="phase-55-google-maps/">Xem chi tiết →</a>
 </div>
