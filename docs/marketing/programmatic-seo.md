@@ -1,4 +1,4 @@
-# Programmatic SEO
+# Marketing 5 · Programmatic SEO
 
 > Tạo nhiều trang từ một khuôn chung, mỗi trang có **số thật riêng** chứ không chỉ đổi chữ. Chỉ làm khi blog đã có
 > tín hiệu.

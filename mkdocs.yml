@@ -149,13 +149,14 @@ nav:
           - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
           - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
   - MARKETING:
-      - "Tổng quan · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
-      - "Google Analytics + Search Console (đo số)": marketing/google-analytics.md
-      - "Google Search Suggestion → Blog": marketing/google-search-suggestion.md
-      - "Reddit Q&A": marketing/reddit.md
-      - "Free tool trên shotmatic.app": marketing/free-tool.md
-      - "Programmatic SEO": marketing/programmatic-seo.md
-      - "AEO / GEO (AI search trích)": marketing/aeo-geo.md
+      - "0 · Tổng quan · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
+      - "1 · Google Analytics + Search Console (đo số)": marketing/google-analytics.md
+      - "2 · Google Search Suggestion → Blog": marketing/google-search-suggestion.md
+      - "3 · Free tool trên shotmatic.app": marketing/free-tool.md
+      - "4 · Reddit Q&A": marketing/reddit.md
+      - "5 · Programmatic SEO": marketing/programmatic-seo.md
+      - "6 · AEO / GEO (AI search trích)": marketing/aeo-geo.md
+      - "7 · Đối thủ (14 tool phân tích thị trường)": marketing/doi-thu.md
   - BACKLOG:
       - "Backlog · Version 3 · So sánh + AI Cite (Phase 56–58)":
           - Tổng quan Version 3: web/version-3.md

@@ -1,4 +1,4 @@
-# Marketing · 2.000 active user / tháng cho shotmatic.app
+# Marketing 0 · 2.000 active user / tháng cho shotmatic.app
 
 > Kéo shotmatic.app lên **2.000 active user / tháng** trên GA4 bằng các kênh "im lặng": SEO blog, free tool,
 > programmatic SEO, AEO / GEO. **Không launch Product Hunt / Show HN** khi app chưa được chứng minh. Số mục tiêu là
@@ -38,6 +38,8 @@ có số chuyển đổi thật (xem [Phase 47 · Chọn 2 kênh](phase-47-two-c
 4. **[Reddit Q&A](../marketing/reddit.md)** · kênh phụ. Trả lời câu hỏi thật bằng `/reddit-qa`, anh tự đăng.
 5. **[Programmatic SEO](../marketing/programmatic-seo.md)** · tháng 2–3, chỉ khi blog có tín hiệu.
 6. **[AEO / GEO](../marketing/aeo-geo.md)** · được AI search trích, song song mọi kênh.
+
+Trước khi viết câu định vị hay bài so sánh: đọc [Đối thủ · tool phân tích thị trường](../marketing/doi-thu.md) (14 sản phẩm, đọc 2026-11-05).
 
 Kênh phụ chưa có trang: **video ngắn demo** (15–30 giây, quay cảnh ShotMatic giải một nỗi đau, không lộ toàn bộ cách làm).
 

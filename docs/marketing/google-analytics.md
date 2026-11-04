@@ -1,4 +1,4 @@
-# Google Analytics + Search Console — đo số
+# Marketing 1 · Google Analytics + Search Console — đo số
 
 > Kênh đo, không phải kênh kéo khách. Chưa có số mốc thì không biết blog, free tool hay Reddit có đang chạy. Làm phần
 > này **trước mọi kênh khác**.

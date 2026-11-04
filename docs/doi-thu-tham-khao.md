@@ -14,6 +14,8 @@
 
 ## Đối thủ
 
+14 tool phân tích thị trường khác (ASO, tìm niche, soi review, AI validate ý tưởng — đọc 2026-11-05): [Marketing · Đối thủ](marketing/doi-thu.md).
+
 ### Wow Keywords
 
 - **Link:** [wowkeywords.com](https://wowkeywords.com/) · tải bản cài: [GitHub Releases](https://github.com/Kronop/wowkeywords-releases/releases) · [MCP docs](https://wowkeywords.com/docs/mcp)

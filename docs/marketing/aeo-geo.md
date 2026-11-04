@@ -1,4 +1,4 @@
-# AEO / GEO — được AI search trích
+# Marketing 6 · AEO / GEO — được AI search trích
 
 > Làm cho ChatGPT / Perplexity / Gemini và Google AI Overviews trích bài của shotmatic.app khi người ta hỏi về chọn
 > niche app. Chạy song song mọi kênh.
