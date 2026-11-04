@@ -401,7 +401,7 @@ AI Agent chạm thêm Compare, Theo dõi, Export. Kèm 2 sơ đồ: [Sơ đồ S
 
 ## Phase 28.20 · AI Agent — 3 lối vào: Niche Search · Autopilot · Đã có app
 
-<span class="chip chip--doing">Đang làm · M1 + M2 xong 2026-11-03</span>
+<span class="chip chip--done">Xong 2026-11-03</span>
 
 Trang AI Agent tách thành 3 thẻ có hình minh hoạ: **Niche Search** (tự bấm từng bước), **Niche Autopilot** cho người chưa biết gì
 (AI tự chạy 4 bước Research rồi dừng ở Health check), và **Đã có app / web** cho builder (Phase 28.18).

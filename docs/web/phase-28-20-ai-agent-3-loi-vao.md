@@ -5,7 +5,29 @@
 > "Health check" là gì nên dừng ngay ở bước 1. Phase này tách thành **3 lối vào rõ ràng**, mỗi lối có hình minh hoạ, và thêm
 > lối **Autopilot**: AI tự chạy hết chặng Research rồi dừng ở Health check chờ người xem.
 
-<span class="chip chip--doing">Đang làm · M1 xong 2026-11-02 · M2 xong 2026-11-03 · M3–M4 chưa làm</span>
+<span class="chip chip--done">Xong 2026-11-03 · M1 → M4</span>
+
+!!! note "Tiến độ M3 — dễ hiểu cho người mới (2026-11-03)"
+    - **Đã có:** Autopilot xong thì thanh đổi thành thẻ **Research done**: tối đa 3 niche đã giữ xếp theo điểm (gợi ý nói bằng
+      lời: "Thử thêm trước khi làm"…, câu "vì sao vào danh sách", link `Research #id`), "còn N niche khác", khối gập **Đã loại N
+      niche — vì sao** (lý do có mã nguồn), nút **Lên kế hoạch app (Brief → Spec → Plan)** (gửi bước Brief như bấm tay) và
+      **Xem bảng sức khoẻ** (thanh 7 bước nhảy tới Health check). Không niche nào đạt BUILD thì thẻ nói thẳng "nên đo thêm
+      trước khi build". Chip 4 bước có tooltip 1 câu cho người mới (`AUTO_PLAIN`, dùng chung với form ở `/hunt`).
+    - **Khác plan:** lý do *giữ* không được lưu (chỉ lý do loại có), nên dòng "vì sao" lấy câu AI ghi lúc đề xuất ứng viên + điểm
+      đo được, không thêm lượt AI viết lại.
+    - **Đã soát:** test `autoSummary` · `npm run check` xanh · phiên chạy thật #28: thẻ hiện đúng 3 niche (5.9 · 5.1 · 4.8), 7 đã
+      loại, nút Xem bảng sức khoẻ nhảy đúng · 960px + 1340px, sáng + tối, không cuộn ngang. Nút Lên kế hoạch app chưa bấm thật
+      (sẽ gửi AI viết Brief); nó đi cùng đường với nút bước Brief đã có.
+
+!!! note "Chạy thật (2026-11-03) — T8"
+    - **Claude Code (Opus 5.5), ý tưởng "meal prep planner for busy parents":** 4 bước chạy hết trong **8 phút 4 giây**, tự dừng
+      ở Health check, không viết Brief. Tìm niche 4 phút 42 giây (AI đề xuất 7 keyword, tra từng đợt 3) · AI Suggest ~20 giây
+      (giữ 2) · Collect thêm ~2 phút 30 giây (thêm 4 long-tail, Autopilot tự tra nốt) · Health check ~30 giây (giữ thêm 2, loại 2
+      kèm `Research #id`). Kết quả: 4 niche giữ, 7 đã loại. Số phút này là **1 lần đo**, ghi trên thẻ 02 là "khoảng 8 phút".
+    - **Lỗi tìm ra + đã sửa:** Health check giữ thêm long-tail làm thanh 7 bước lùi về "Collect thêm" dù Autopilot đã xong. Sửa
+      `flowState`: AI thêm ứng viên sau lần giữ đầu tiên (nhật ký) cũng tính là đã mở rộng. Có test.
+    - **Đã có thêm:** lần chạy trước bấm Dừng ở bước 1 → Chạy tiếp được. Chưa thử đóng tab giữa chừng bằng trình duyệt
+      (bộ chạy ở máy chủ nên không phụ thuộc tab; lần đo trên chạy bằng lệnh `curl`, không mở tab nào).
 
 !!! note "Tiến độ M2 — Autopilot chạy được (2026-11-03)"
     - **Đã có:** cột `projects.pilot` (`manual` · `auto`, migration `0024_autopilot`) · bộ chạy `web/src/lib/hunt-autopilot.ts`
@@ -94,8 +116,7 @@
 - Thẻ 02 có chip nhỏ **Recommended for beginners**.
 - Form dưới thẻ đổi theo thẻ chọn:
     - 01 → form hiện tại (ô ý tưởng, để trống được) + nút **Start a new session**.
-    - 02 → ô ý tưởng bắt buộc + 1 dòng "AI chạy 4 bước, khoảng N phút, dừng ở Health check để bạn xem" (N = `chưa đo`,
-      đo ở T8 rồi mới ghi) + nút **Start autopilot**.
+    - 02 → ô ý tưởng bắt buộc + 1 dòng "AI chạy 4 bước, khoảng N phút, dừng ở Health check để bạn xem" (đo ở T8: khoảng 8 phút, 1 lần) + nút **Start autopilot**.
     - 03 → form Phase 28.18 như cũ.
 - Phiên săn gần đây: chip **Autopilot** (đang chạy thì chip có chấm cam nhấp nháy + "Bước n/4").
 
@@ -135,8 +156,8 @@
 | T4 ✓ | `hunt-autopilot.ts`: vòng lặp, chờ Research, thử lại, dừng | `lib/hunt-autopilot.ts` | test `nextAutoStep` từng trạng thái; không bao giờ trả `brief` |
 | T5 ✓ | API Dừng + trạng thái, chạy tiếp sau khi server khởi động lại | `hunt-api.ts`, server boot | test: dừng giữa bước 2 → phiên thành `manual`, dữ liệu còn |
 | T6 ✓ | Thanh tiến độ, nút Dừng, khoá nút bước khi đang chạy | `HuntFlow.tsx` | bấm Dừng → nút bước mở lại |
-| T7 | Thẻ "Xong phần research" + tooltip từ ngữ cho người mới + chip Autopilot ở danh sách | `HuntChat.tsx`, `HuntIndexPage.tsx` | mọi lý do có `Research #id` |
-| T8 | Chạy thật Claude Code 1 ý tưởng từ đầu tới Health check; giả lập hết lượt giữa chừng | — | ghi số phút thật vào dòng mô tả thẻ 02 |
+| T7 ✓ | Thẻ "Xong phần research" + tooltip từ ngữ cho người mới + chip Autopilot ở danh sách | `HuntChat.tsx`, `HuntIndexPage.tsx` | mọi lý do có `Research #id` |
+| T8 ✓ | Chạy thật Claude Code 1 ý tưởng từ đầu tới Health check; giả lập hết lượt giữa chừng | — | ghi số phút thật vào dòng mô tả thẻ 02 |
 
 Thứ tự theo mốc:
 
@@ -148,10 +169,10 @@ Thứ tự theo mốc:
 ## Xong khi
 
 - [x] Trang `/hunt` có 3 thẻ có hình, liếc là phân biệt; 960px + 1340px, sáng + tối, không cuộn ngang, screenshot đã Read.
-- [ ] Niche Search chạy y như "Find a new idea" cũ; phiên cũ mở lại không đổi.
-- [ ] Autopilot: gõ 1 câu → AI tự chạy 4 bước → dừng ở Health check, không tự viết Brief.
-- [ ] Đóng tab giữa chừng, mở lại thấy đúng bước đang chạy.
+- [x] Niche Search chạy y như "Find a new idea" cũ; phiên cũ mở lại không đổi (test flow cũ giữ nguyên, phiên #26 mở bình thường).
+- [x] Autopilot: gõ 1 câu → AI tự chạy 4 bước → dừng ở Health check, không tự viết Brief (chạy thật 8 phút).
+- [x] Không cần mở tab: lần chạy thật được khởi động bằng API, không có trình duyệt nào mở, vẫn chạy hết.
 - [x] Bấm Dừng giữa chừng → phiên thành tay, bấm tiếp được (test + chạy thật ở bước 1).
 - [x] Hết lượt CLI giữa chừng → dừng + báo rõ, không kẹt im lặng (test).
-- [ ] Thẻ "Xong phần research" có 3 niche + lý do có `Research #id`.
-- [ ] `npm run check` xanh · `npm run docs:build` xanh.
+- [x] Thẻ "Xong phần research" có 3 niche + `Research #id` (phiên chạy thật #28).
+- [x] `npm run check` xanh · `npm run docs:build` xanh.

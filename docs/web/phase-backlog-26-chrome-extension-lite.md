@@ -63,6 +63,73 @@ Code ở folder `extension/` của repo (README trong đó có cách chạy th�
 - **Mọi link** về shotmatic.app có UTM `utm_source=chrome_extension`, `utm_campaign=shotmatic_lite`, `utm_content=<chỗ bấm>`.
 - **Chưa có:** lời chê từ review 1–2★ (RSS review App Store đã chết, Play cần API riêng) → để bản đầy đủ; link `shotmatic://`; MCP bản nhẹ.
 
+## Bản 0.2 · Hỏi thẳng trong Claude in Chrome (plan 2026-11-03)
+
+<span class="chip chip--doing">Bản 0.2.0 code xong 2026-11-03 · chưa chạy thử trong khung Claude in Chrome thật</span>
+
+**Đã làm (0.2.0):** nút **Set up /aso-niche in Claude** trên card + popup (chép chữ shortcut, hiện 3 bước); khối
+**ShotMatic data · read by Claude** trên card (nằm ở light DOM nên có trong chữ của trang, đã kiểm `document.body.innerText`);
+sửa đoán keyword "FPS Strike Ops" → "fps strike ops"; nút cũ đổi tên "Ask Claude in a new tab". Chữ shortcut: `extension/lib/claude.js`.
+
+**Đo khi làm (2026-11-03), đã sửa vào chữ shortcut:**
+
+- Trang tìm kiếm Play hiện số sao, **không** hiện số lượt rating.
+- Trang tìm kiếm App Store chạy ở `apps.apple.com/us/iphone/search?term=…` (200), hiện số lượt rating, **không** hiện số sao.
+  Bản `apps.apple.com/us/search?term=…` thì 404.
+- iTunes Search API trả `content-disposition: attachment` → mở trong tab là Chrome tải file, Claude không đọc được → bỏ khỏi shortcut.
+- Vì vậy shortcut bảo Claude: số nào trang tìm kiếm không có thì mở trang app của tối đa 3 app đầu, không thì ghi "not visible".
+
+**Mục tiêu:** người dùng mở 1 app trên Google Play / App Store → mở khung Claude in Chrome → gõ `/aso-niche` → Claude tự đọc trang,
+tự rút keyword, tự mở kết quả tìm kiếm của từng keyword trên store rồi chat với người dùng về kết quả. Không tốn lượt Niche check
+của extension (Claude tự đi đọc store), cuối câu trả lời có link về shotmatic.app.
+
+### Giới hạn phải chấp nhận (soát 2026-11-03)
+
+- Extension của mình **không mở được** khung Claude và **không gõ hộ** vào đó: Claude in Chrome không có API cho extension khác.
+  Người dùng tự bấm icon Claude.
+- Không tạo shortcut trong tài khoản Claude hộ người dùng được. Shortcut là của từng người: gõ `/` trong khung Claude để tạo,
+  sửa ở Settings → Shortcuts ([Anthropic Help](https://support.claude.com/en/articles/12012173)).
+- Chưa thấy tài liệu chính thức nói khung Claude in Chrome dùng được connector / MCP → MCP bản nhẹ để sau, không dựa vào nó ở bản 0.2.
+- Claude in Chrome không có ở gói Free (theo hướng dẫn bên thứ ba, `chưa kiểm` với Anthropic) → nút cũ "Ask Claude" (chép prompt,
+  mở claude.ai) vẫn giữ cho người không có extension Claude.
+- Trang tìm kiếm web của App Store `apps.apple.com/us/search?term=…` trả 404 (đo 2026-11-03) → dùng bản `/us/iphone/search?term=…`
+  (xem phần "Đo khi làm" ở trên).
+
+### Luồng người dùng
+
+1. Cài ShotMatic Lite. Card hiện như bản 0.1, có thêm nút **Set up in Claude** (lần đầu).
+2. Bấm nút → chép sẵn chữ của shortcut `/aso-niche` + hiện 3 bước: mở khung Claude → gõ `/` → tạo shortcut tên `aso-niche`, dán chữ, lưu.
+3. Từ đó, ở bất kỳ trang app nào: mở khung Claude → gõ `/aso-niche` (có thể thêm ý, vd. "`/aso-niche` thị trường Đức").
+4. Claude đọc trang + đọc card ShotMatic → đưa ra 5–8 keyword → mở tìm kiếm 3 keyword mạnh nhất trên cả 2 store → trả bảng
+   + kết luận + gợi ý ngách hẹp hơn → hỏi người dùng muốn đào keyword nào tiếp.
+5. Người dùng chat tiếp ("so sánh với keyword X", "app nào yếu nhất?"); Claude tự mở thêm trang store để trả lời.
+
+### Việc phải làm
+
+1. **Chữ shortcut `/aso-niche`** (tiếng Anh, để trong `extension/lib/claude-shortcut.js` + test): bảo Claude
+   - đọc trang app đang mở (tên, phụ đề, mô tả ngắn, thể loại) và khối "ShotMatic data" trong card nếu có;
+   - đề xuất 5–8 keyword ASO, ghi rõ keyword lấy từ đâu (tên / phụ đề / mô tả);
+   - với 3 keyword mạnh nhất: mở `play.google.com/store/search?q=<kw>&c=apps&hl=en` và
+     `apps.apple.com/<cc>/iphone/search?term=<kw>`, đọc top 10;
+   - trả bảng: keyword · top 3 app · số app nhiều rating · số app dưới 4★ hoặc bỏ rơi · số app có đúng keyword trong tên · kết luận;
+   - **chỉ dùng số đọc được trên trang**, không đoán lượt tải / doanh thu, chỗ nào không đọc được thì ghi "not visible";
+   - kết thúc bằng 1 câu hỏi đào tiếp + link `shotmatic.app` có `utm_content=claude_shortcut`.
+2. **Khối "ShotMatic data" trong card** (thấy được, gập sẵn): keyword đoán được, số liệu app, kết quả Niche check gần nhất, viết
+   thành chữ rõ ràng để Claude đọc đúng số thay vì tự đoán. Không giấu chữ dành riêng cho AI (dễ bị coi là chèn lệnh).
+3. **Nút Set up in Claude** trong card + popup: chép chữ shortcut, hiện 3 bước. Bấm xong lần đầu thì đổi thành "Use /aso-niche in Claude".
+4. **Sửa đoán keyword** thấy trên ảnh chụp ngày 2026-11-03: app "FPS Strike Ops : Modern Arena" của nhà phát triển
+   "FPS Shooter & Action Game" bị mất chữ "fps" (bị coi là tên nhà phát triển) nên ra "strike ops". Chỉ bỏ chữ trùng tên nhà
+   phát triển khi nó đứng đầu tên app (đúng kiểu thương hiệu), thêm test.
+5. **Trang store + ảnh:** thêm 1 đoạn mô tả "Works with Claude in Chrome: type /aso-niche…" và screenshot 6 chụp khung Claude
+   đang trả lời. Ghi rõ là dùng được cùng Claude in Chrome, không ngụ ý Anthropic làm hay xác nhận extension.
+6. **Đo:** UTM `utm_content=claude_shortcut` trên GA4; đếm số lần bấm Set up in Claude bằng bộ đếm trên máy (không gửi đi).
+
+### Chạy thử trước khi xong
+
+- Trên Chrome có Claude in Chrome: 3 app (FPS Strike Ops, Streaks, Duolingo) × 2 store, chạy `/aso-niche`, chụp câu trả lời.
+- Soát: keyword đúng ý nghĩa app, số trong bảng khớp trang store, không có số bịa, có link UTM ở cuối.
+- Test tự động chỉ cho phần code (chữ shortcut, khối ShotMatic data, đoán keyword); phần Claude trả lời thì chạy tay rồi ghi kết quả + ngày vào trang này.
+
 ## Plan ban đầu (giữ để so)
 
 1. **Thẻ nhanh trên trang app:** rating, số review, lần cập nhật cuối, keyword nằm trong title.

@@ -113,7 +113,6 @@ nav:
           - "Phase 28.16 · AI Agent — 2 chế độ: Mặc định · Tuỳ chỉnh": web/phase-28-16-ai-agent-custom-mode.md
           - "Phase 28.17 · Quick Setup — nối Claude / ChatGPT trong 3 phút": web/phase-28-17-quick-setup.md
           - "Phase 28.18 · AI Agent — Đã có app / web": web/phase-28-18-ai-agent-da-co-app.md
-          - "Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app": web/phase-28-19-ai-agent-full-flow.md
           - "Phase 28.20 · AI Agent — 3 lối vào: Niche Search · Autopilot · Đã có app": web/phase-28-20-ai-agent-3-loi-vao.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
@@ -145,28 +144,38 @@ nav:
           - Phase 53 · Amazon Search: web/phase-53-amazon-search.md
           - Phase 54 · Amazon Research (AI): web/phase-54-amazon-ai.md
           - Phase 55 · Google Maps Research (AI): web/phase-55-google-maps.md
-      - "Version 3 · So sánh + AI Cite (Phase 56–58)":
+      - "Đang làm · Extension Chrome (26–28)":
+          - "Backlog 26 · Extension Chrome Lite": web/phase-backlog-26-chrome-extension-lite.md
+          - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
+          - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
+  - MARKETING:
+      - "Tổng quan · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
+      - "Google Analytics + Search Console (đo số)": marketing/google-analytics.md
+      - "Google Search Suggestion → Blog": marketing/google-search-suggestion.md
+      - "Reddit Q&A": marketing/reddit.md
+      - "Free tool trên shotmatic.app": marketing/free-tool.md
+      - "Programmatic SEO": marketing/programmatic-seo.md
+      - "AEO / GEO (AI search trích)": marketing/aeo-geo.md
+  - BACKLOG:
+      - "Backlog · Version 3 · So sánh + AI Cite (Phase 56–58)":
           - Tổng quan Version 3: web/version-3.md
           - Phase 56 · So sánh đối thủ: web/phase-56-compare-competitor.md
           - Phase 57 · Báo cáo so sánh (AI Cite): web/phase-57-ai-cite-report.md
           - Phase 58 · Review Version 3: web/phase-58-review-3.md
-      - "Version 4 · LLM + AEO, GEO, SEO (Phase 59–63)":
+      - "Backlog · Version 4 · LLM + AEO, GEO, SEO (Phase 59–63)":
           - Tổng quan Version 4: web/version-4.md
           - Phase 59 · Kệ Google (SEO): web/phase-59-seo-shelf.md
           - Phase 60 · Kệ AI (GEO / AEO): web/phase-60-ai-shelf.md
           - Phase 61 · Chỗ trống AI + SEO: web/phase-61-ai-seo-gap.md
           - Phase 62 · Gói GEO + trang cần viết: web/phase-62-geo-pack.md
           - Phase 63 · Review Version 4: web/phase-63-review-4.md
-      - "Version 12 (New Features — Just Planned)":
+      - "Backlog · Version 12 (mới lên plan)":
           - Tổng quan Version 12: web/version-12.md
-      - "Backlog · làm sau (22–28 + phase dời)":
+      - "Backlog · làm sau (22–25, 29–30 + phase dời)":
           - "Backlog 22 · Export: CSV trên Google Sheets": web/phase-backlog-22-export-sheets.md
           - "Backlog 23 · Terminal nhúng + sổ dùng AI": web/phase-backlog-23-ai-terminal-usage.md
           - "Backlog 24 · Nút AI còn lại": web/phase-backlog-24-ai-buttons-rest.md
           - "Backlog 25 · MCP đợt 2 phần còn": web/phase-backlog-25-mcp-write-rest.md
-          - "Backlog 26 · Extension Chrome Lite": web/phase-backlog-26-chrome-extension-lite.md
-          - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
-          - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
           - "Backlog 29 · Skill Reddit Q&A": web/phase-backlog-29-reddit-qa-skill.md
           - "Backlog 30 · Skill X Q&A": web/phase-backlog-30-x-qa-skill.md
           - "Phase 27.4 · Hỏi dữ liệu (AI Cite)": web/phase-27-4-ai-cite-ask.md
@@ -174,6 +183,7 @@ nav:
           - "Phase 28.1 · Tóm tắt niche + chủ đề than (AI)": web/phase-28-1-ai-summary.md
           - "Phase 28.3 · Bộ skill Shotmatic (plan riêng)": web/phase-28-3-skills.md
           - "Phase 28.5 · Brief + Spec + Plan (đầu ra cuối)": web/phase-28-5-brief-plan.md
+          - "Phase 28.19 · AI Agent full flow — chọn account + AI chạm toàn app": web/phase-28-19-ai-agent-full-flow.md
       - Appendix · Chưa xếp / Không làm: appendix.md
       - "⛔ KO LÀM — Backlog 01–17":
           - "Account (bỏ 2026-10-26)":
@@ -202,8 +212,6 @@ nav:
               - "Backlog 15 · Kiểm + vá bảo mật": web/phase-backlog-15-security-audit.md
               - "Backlog 16 · Refactor": web/phase-backlog-16-refactor.md
               - "Backlog 17 · Review bảo mật + 8.0": web/phase-backlog-17-security-review-8.md
-  - MARKETING:
-      - "Plan · Analytics 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
   - Others:
       - Sơ đồ ShotMatic: so-do-app.md
       - App Mac + Windows:

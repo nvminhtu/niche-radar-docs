@@ -7,7 +7,7 @@ hide:
 # Sơ đồ ShotMatic
 
 > Hai sơ đồ, trang rộng hết màn hình: **① toàn app** (mọi phần chạy trong máy bạn) và **② AI Agent** (AI bấm nút thay
-> người dùng qua MCP). Cập nhật 2026-10-31. Plan phần còn thiếu của AI Agent: [Phase 28.19](web/phase-28-19-ai-agent-full-flow.md).
+> người dùng qua MCP). Cập nhật 2026-11-03. Plan phần còn thiếu của AI Agent: [Phase 28.19](web/phase-28-19-ai-agent-full-flow.md).
 
 ## ① Toàn app
 
@@ -124,6 +124,11 @@ flowchart TB
     F1[Tìm niche<br/>5–8 keyword] --> F2[AI Suggest<br/>giữ 3 tốt nhất] --> F3[Collect thêm<br/>long-tail] --> F4[Health check<br/>BUILD / TEST THÊM / BỎ]
   end
 
+  subgraph AUTO[" Niche Autopilot — máy chủ tự bấm 4 bước, dừng ở Health check "]
+    direction LR
+    A1[Gõ 1 ý tưởng<br/>Start autopilot] --> A2[Mỗi bước 1 lượt chat<br/>tự tra nốt ứng viên] --> A3[Thẻ Xong phần research<br/>3 niche + lý do có số]
+  end
+
   subgraph S2[" ② Lên kế hoạch app — 3 tài liệu "]
     direction LR
     D1[BRIEF<br/>vấn đề + tính năng] --> D2[SPEC<br/>màn hình · Free / Pro] --> D3[PLAN<br/>việc theo mốc] --> D4[Tải bộ .md<br/>mang đi build]
@@ -133,10 +138,14 @@ flowchart TB
   TURN -.->|lỗi| ERR
   ERR -.-> TURN
   TURN --> S1
+  AUTO -.->|thay người bấm| S1
   S1 --> S2
 ```
 
 **Đã có:** chat ra lệnh, 7 bước 2 chặng, tool đọc + ghi, Hồ sơ app cho người đã có app (Phase 28.6 → 28.18).
+Trang AI Agent có 3 lối vào: **Niche Search** (tự bấm từng bước) · **Niche Autopilot** (máy chủ tự chạy chặng ① rồi dừng ở
+Health check, có nút Dừng / Chạy tiếp; chạy thử 2026-11-03 mất khoảng 8 phút) · **Đã có app / web** —
+[Phase 28.20](web/phase-28-20-ai-agent-3-loi-vao.md).
 **Còn thiếu:** chọn / đổi account ngay trong app, tự gợi ý đổi account khi hết lượt, AI chạm tới các màn còn lại
 (Compare, Theo dõi, Export) — plan ở [Phase 28.19](web/phase-28-19-ai-agent-full-flow.md). Trong sơ đồ, ô
 **Dùng account nào?** và khối **Khi lỗi giữa chừng** là phần của 28.19, hôm nay app luôn dùng account mặc định của máy.
