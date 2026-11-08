@@ -1,4 +1,4 @@
-# Marketing 4 · Reddit Q&A
+# Reddit Q&A
 
 > Tìm câu hỏi thật trên Reddit về chọn niche app, soi đối thủ Google Play / App Store, Google Trends, keyword cạnh
 > tranh. Claude viết nháp câu trả lời, **anh tự đăng**. Chỉ nhắc ShotMatic khi hợp với câu hỏi.

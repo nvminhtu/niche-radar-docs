@@ -1,4 +1,4 @@
-# Marketing 2 · Google Search Suggestion → Blog
+# Google Search Suggestion → Blog
 
 > Lấy cụm người ta **đang gõ thật** trong ô tìm Google (gợi ý Autocomplete), lọc cụm có chữ "đau", rồi viết bài blog
 > trả lời đúng cụm đó. Kênh chính để kéo khách im lặng từ Google.

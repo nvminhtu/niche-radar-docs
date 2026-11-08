@@ -1,4 +1,4 @@
-# Marketing 0 · 2.000 active user / tháng cho shotmatic.app
+# 2.000 active user / tháng cho shotmatic.app
 
 > Kéo shotmatic.app lên **2.000 active user / tháng** trên GA4 bằng các kênh "im lặng": SEO blog, free tool,
 > programmatic SEO, AEO / GEO. **Không launch Product Hunt / Show HN** khi app chưa được chứng minh. Số mục tiêu là

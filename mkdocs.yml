@@ -149,14 +149,27 @@ nav:
           - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
           - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
   - MARKETING:
-      - "0 · Tổng quan · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
-      - "1 · Google Analytics + Search Console (đo số)": marketing/google-analytics.md
-      - "2 · Google Search Suggestion → Blog": marketing/google-search-suggestion.md
-      - "3 · Free tool trên shotmatic.app": marketing/free-tool.md
-      - "4 · Reddit Q&A": marketing/reddit.md
-      - "5 · Programmatic SEO": marketing/programmatic-seo.md
-      - "6 · AEO / GEO (AI search trích)": marketing/aeo-geo.md
-      - "7 · Đối thủ (14 tool phân tích thị trường)": marketing/doi-thu.md
+      - marketing/index.md
+      - "1 · Google Search Console": marketing/google-search-console.md
+      - "2 · Google Analytics": marketing/ga4.md
+      - "2.1 · Plan gắn event GA4 cho các cửa vào": marketing/plan-ga4-events-2026-11-07.md
+      - "3 · AEO (Google AI Overview, AI Mode)": marketing/aeo.md
+      - "4 · SEO (bài, từ khoá, link)": marketing/seo.md
+      - "5 · GEO (ChatGPT, Perplexity, Gemini, Copilot)": marketing/geo.md
+      - "5.1 · Plan Data research: 10 bài từ Google Trends (2026-11-08)": marketing/plan-data-research-2026-11-08.md
+      - "Others · làm sau hoặc chỉ tham khảo":
+          - "Tổng quan cũ · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
+          - "Audit bán hàng + SEO / GEO (2026-11-07)": marketing/audit-2026-11-07.md
+          - "Plan blog SEO + GEO từ Google Trends (2026-11-07)": marketing/plan-blog-seo-geo-2026-11-07.md
+          - "Plan dựng lại trang Blog (2026-11-07)": marketing/plan-blog-hub-2026-11-07.md
+          - "Google Analytics + Search Console (bản cũ)": marketing/google-analytics.md
+          - "Google Search Suggestion → Blog": marketing/google-search-suggestion.md
+          - "Free tool trên shotmatic.app": marketing/free-tool.md
+          - "Reddit Q&A": marketing/reddit.md
+          - "Programmatic SEO": marketing/programmatic-seo.md
+          - "AEO / GEO (bản cũ)": marketing/aeo-geo.md
+          - "Đối thủ (15 tool phân tích thị trường)": marketing/doi-thu.md
+          - "Đánh giá AppKittie + Appfigures (2026-11-07)": marketing/danh-gia-appkittie-appfigures-2026-11-07.md
   - BACKLOG:
       - "Backlog · Version 3 · So sánh + AI Cite (Phase 56–58)":
           - Tổng quan Version 3: web/version-3.md

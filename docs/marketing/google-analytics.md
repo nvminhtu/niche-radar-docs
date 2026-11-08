@@ -1,4 +1,4 @@
-# Marketing 1 · Google Analytics + Search Console — đo số
+# Google Analytics + Search Console — đo số
 
 > Kênh đo, không phải kênh kéo khách. Chưa có số mốc thì không biết blog, free tool hay Reddit có đang chạy. Làm phần
 > này **trước mọi kênh khác**.
@@ -23,7 +23,7 @@
 
 ## Đợt 0 · Mở lại bảng đo + ghi số mốc (tuần 0)
 
-- [ ] **(Anh)** đặt khoá service account vào đúng `~/.config/gcp/oneclicktool-sa.json` (MCP `google-analytics` và `search-console` cùng dùng file này; 2026-11-02 cả hai báo thiếu file)
+- [ ] **(Anh)** đặt khoá service account vào đúng `/Users/tucarmd/.config/gcp/oneclicktool-sa.json` (MCP `google-analytics` và `search-console` cùng dùng file này; 2026-11-02 cả hai báo thiếu file)
 - [ ] **(Anh)** thêm email service account vào property GA4 của shotmatic.app (quyền Viewer) và vào Search Console (quyền Đọc)
 - [ ] Claude ghi **số mốc GA4 28 ngày**: active user · new user · sessions · kênh (Organic Search, Direct, Referral, Social) · top 20 trang vào đầu tiên
 - [ ] Claude ghi **số mốc Search Console 28 ngày**: impressions · click · CTR · vị trí TB · số bài đã index / bị loại

@@ -1,10 +1,10 @@
-# Marketing 7 · Đối thủ — tool phân tích thị trường
+# Đối thủ — tool phân tích thị trường
 
-> 14 sản phẩm người dùng có thể dùng thay **một phần** việc ShotMatic làm, chia 4 nhóm. Codex tìm bằng web search
+> 15 sản phẩm người dùng có thể dùng thay **một phần** việc ShotMatic làm, chia 4 nhóm. Codex tìm bằng web search
 > và mở trang chính thức từng cái; Claude mở lại 10 link để kiểm. Mô tả lấy từ trang của nhà cung cấp, **chưa dùng thử**.
 > Giá chỉ ghi khi đọc thấy trên trang giá chính thức, không thấy thì ghi `chưa rõ`.
 
-<span class="chip chip--todo">Đọc 2026-11-05 · chưa dùng thử sản phẩm nào</span>
+<span class="chip chip--todo">Đọc 2026-11-05 · thêm AppKittie 2026-11-07 · chưa dùng thử sản phẩm nào</span>
 
 <div class="box box--goal" markdown>
 **Dùng trang này để**
@@ -16,8 +16,9 @@
 Sổ đầy đủ (gồm Wow Keywords, đối tác, tham khảo): [Đối thủ · Đối tác · Tham khảo](../doi-thu-tham-khao.md).
 </div>
 
-## Mở 5 cái này trước
+## Mở 6 cái này trước
 
+1. **[AppKittie](https://www.appkittie.com/)** — landing và cách bán làm tốt: cùng khách người làm app, ChatGPT đang gợi ý họ (thêm 2026-11-07).
 1. **[Preuve AI](https://preuve.ai/)** — gần ShotMatic nhất: nhập ý tưởng → AI agent tra nguồn → chấm điểm → báo cáo, và chuyển báo cáo sang Claude Code / Codex để xây MVP.
 2. **[Astro](https://tryastro.app/)** — app Mac nghiên cứu keyword App Store, cùng kiểu "tool desktop cho developer" như ShotMatic.
 3. **[PainOnSocial](https://painonsocial.com/)** — biến thảo luận Reddit thành pain point có trích dẫn link gốc.
@@ -44,6 +45,7 @@ Sổ đầy đủ (gồm Wow Keywords, đối tác, tham khảo): [Đối thủ 
 - **Làm gì:** analytics app + ASO + theo dõi đối thủ + dữ liệu thị trường app.
 - **Giống:** tìm cơ hội từ keyword, xu hướng, app cạnh tranh. **Khác:** nối số liệu app của chính người dùng (doanh thu, subscription); quyền nghiên cứu đối thủ chia theo gói.
 - **Nên học:** tách rõ số của app mình với số ước của đối thủ, để người đọc không coi chúng chắc như nhau.
+- **Đã ghi vào plan:** Competitors report + Competitor Keywords (so 1–8 app, bảng keyword × hạng từng app) → [Phase 56 · So sánh đối thủ](../web/phase-56-compare-competitor.md#hoc-tu-appfigures) (đọc 2026-11-06).
 
 ### Astro
 
@@ -83,6 +85,15 @@ Sổ đầy đủ (gồm Wow Keywords, đối tác, tham khảo): [Đối thủ 
 - **Nên học:** gói mỗi niche thành 1 brief ngắn: cơ hội + câu hỏi cần kiểm tiếp.
 
 ## 3. Soi review / market intelligence
+
+### AppKittie
+
+> Đánh giá nhận định của ChatGPT về AppKittie + Appfigures và plan cho ShotMatic: [trang riêng](danh-gia-appkittie-appfigures-2026-11-07.md).
+
+- **Link:** [appkittie.com](https://www.appkittie.com/) · **Giá:** 1 gói mở hết, 79 USD/tháng, hoặc 49 USD/tháng khi trả năm (bảng giá trên trang chủ, đọc 2026-11-07)
+- **Làm gì:** kho app iOS + Android lọc theo doanh thu ước tính, lượt tải, ngày ra mắt; xem quảng cáo đang chạy + chi tiêu quảng cáo theo nước, video viral trên TikTok / Instagram / Shorts, keyword ASO, màn onboarding + paywall; nối ChatGPT / Claude để hỏi. Có trang [free tools](https://www.appkittie.com/tools) (1 tool tính giá theo nước) và affiliate 30% định kỳ.
+- **Giống:** cùng nhóm khách (người làm app tìm cái đang thắng để làm theo), cùng cho hỏi bằng AI của mình. **Khác:** SaaS trả tháng, số doanh thu / quảng cáo là ước tính trên server của họ; ShotMatic chạy trên máy, trả 1 lần, chấm sức khoẻ niche từ keyword + review + Trends.
+- **Nên học:** màn đầu landing là thẻ app có số; lời khen ghi rõ tên app + doanh thu của người nói; trang tool không cần đăng ký, có FAQ, cuối trang dẫn về sản phẩm. Link anh gặp có `utm_source=chatgpt.com`, tức ChatGPT đang gợi ý họ. Áp dụng ở [Plan 2 · mục 2](../web/phase-plan2-02-landing-guide-free-tool.md).
 
 ### Appbot
 

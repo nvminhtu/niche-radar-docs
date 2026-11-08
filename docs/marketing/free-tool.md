@@ -1,9 +1,9 @@
-# Marketing 3 · Free tool trên shotmatic.app
+# Free tool trên shotmatic.app
 
 > Free tool thường kéo traffic nhanh hơn blog, vì người ta tìm "X checker / X generator" rất nhiều, và trang tool tự có
 > backlink. Logic đã chạy được trong 2 extension, chỉ cần đưa lên web.
 
-<span class="chip chip--todo">Chưa làm · tuần 3–8 · chờ anh chọn tool</span>
+<span class="chip chip--doing">Đã lên [App Idea Checker](https://shotmatic.app/app-idea-checker) 2026-11-07 · chưa có số đo · chi tiết ở [Audit](audit-2026-11-07.md)</span>
 
 <div class="box box--goal" markdown>
 **Đích**
