@@ -39,7 +39,7 @@ trái (xanh = xong, vàng = đang làm) là trạng thái thật.
 - Hoàn thiện Web 18–26 (xong) → AI 27–28 (xong · 28.4 xong bản gọn 2026-10-29) → **Version 9** analytics (29–30, xong) → **Version 10** dùng thử + license (31–33, code xong)
 - Sau App: Version 11 marketing (46–49) → Version 2, 3, 4 (50–63), 12; 38–45 xong bản gọn (2026-10-28)
 - <span class="chip chip--doing">Web 18–33 code xong 2026-10-28 · chờ chạy thật: 7, 11, 15, 16, 17, 20, 23, 24 · chờ sản phẩm Lemon Squeezy</span>
-- [Mở lộ trình Web →](web/index.md)
+- [Mở WEB · Plan 2 (đang làm) →](web/index.md) · [Plan 1 (đã xong) →](web/plan-1/index.md)
 </div>
 <div class="nr-app" markdown>
 ### :material-laptop: 2 · App Mac + Windows — thứ để bán

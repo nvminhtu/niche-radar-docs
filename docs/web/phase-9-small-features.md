@@ -16,7 +16,7 @@ flowchart LR
 
 Mỗi tính năng: mục tiêu · làm · không làm · xong khi — **1 file plan**, đi đúng [Quy trình build](../quy-trinh-build.md).
 Tính năng to hơn ~1 tuần → tách thành phase riêng, sửa Master Plan trước. Các tính năng chính đã tách thành
-[Phase 18–26 · Làm kỹ tính năng chính](index.md#version-1-lam-ky-tinh-nang-chinh-phase-1025) (2026-10-25).
+[Phase 18–26 · Làm kỹ tính năng chính](plan-1/index.md#hoan-thien-web-truoc-ban-ban-phase-1826) (2026-10-25).
 
 ## Ứng viên ưu tiên (review 2026-10-25)
 

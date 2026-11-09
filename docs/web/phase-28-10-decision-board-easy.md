@@ -170,4 +170,4 @@ S/M/L là độ lớn tương đối, **chưa đo thời gian**.
 - Dòng "Độ phủ keyword" dùng yếu tố **cạnh tranh** (tổng rating top 10). Anh muốn "độ phủ" nghĩa là **nhiều app chiếm
   keyword** (đúng cái này) hay **nhiều người tìm keyword** (Nhu cầu)? Mặc định: nhiều app chiếm.
 
-[← Phase 28.9 · AI Agent xịn](phase-28-9-ai-agent-pro.md) · [Mục lục Web](index.md)
+[← Phase 28.9 · AI Agent xịn](phase-28-9-ai-agent-pro.md) · [Mục lục Plan 1](plan-1/index.md)

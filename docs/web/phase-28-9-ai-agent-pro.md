@@ -354,4 +354,4 @@ S/M/L là độ lớn tương đối, **chưa đo thời gian**.
 - Chip model: chỉ model của tuyến đang bật, hay cho đổi luôn tuyến (Claude Code ↔ Codex) ngay ở chip? Mặc định chỉ model,
   đổi tuyến vẫn ở Settings.
 
-[← Phase 28.8 · Trang niche + Explorer](phase-28-8-niche-ui-polish.md) · [Phase 28.10 · Bàn quyết định →](phase-28-10-decision-board-easy.md) · [Mục lục Web](index.md)
+[← Phase 28.8 · Trang niche + Explorer](phase-28-8-niche-ui-polish.md) · [Phase 28.10 · Bàn quyết định →](phase-28-10-decision-board-easy.md) · [Mục lục Plan 1](plan-1/index.md)

@@ -337,4 +337,4 @@ Với chính trang plan: mở MkDocs khoảng 1340px, xác nhận nội dung m�
   chỉ giữ sticky nếu kiểm được chiều cao thực và focus hàng cuối.
 - Handoff AI mặc định chọn phiên hay tạo mới? Đề xuất chọn phiên trước, tạo mới là thao tác riêng có nhãn rõ.
 
-[← Phase 28.7 · AI Agent dễ nhìn](phase-28-7-ai-agent-ux.md) · [Mục lục Web](index.md)
+[← Phase 28.7 · AI Agent dễ nhìn](phase-28-7-ai-agent-ux.md) · [Mục lục Plan 1](plan-1/index.md)

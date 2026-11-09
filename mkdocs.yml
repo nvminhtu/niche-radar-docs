@@ -59,10 +59,28 @@ markdown_extensions:
   - pymdownx.tasklist: { custom_checkbox: true }
 nav:
   - Master Plan: index.md
-  - Web:
+  - WEB:
       - web/index.md
       - Quy trình build: quy-trinh-build.md
       - Setup máy: setup.md
+      - "1 · Extension Chrome":
+          - "1.1 · ShotMatic Lite (Play + App Store)": web/phase-backlog-26-chrome-extension-lite.md
+          - "1.2 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
+          - "1.3 · ShotMatic Scout (Amazon)": web/phase-backlog-28-chrome-extension-amazon.md
+      - "2 · Landing page · Guide · Free tool":
+          - "2 · Plan tối ưu Landing, Guide, Free tool": web/phase-plan2-02-landing-guide-free-tool.md
+      - "3 · AI Agent + giao diện (còn dở)":
+          - "3.1 · AI Agent — Đã có app / web": web/phase-28-18-ai-agent-da-co-app.md
+          - "3.2 · Giao diện mới: sidebar · màu · bớt chữ": web/phase-28-21-sidebar-mau-bot-chu.md
+          - "3.3 · Phiên AI Agent: kết quả lên đầu": web/phase-28-22-hunt-ket-qua-truoc.md
+      - "4 · Demo + YouTube · Amazon · Maps (còn dở)":
+          - "4.1 · Demo Site": web/phase-50-demo-site.md
+          - "4.2 · YouTube · Amazon · Maps: tách trang + có hình": web/phase-55-1-nguon-ngoai-store.md
+          - "4.3 · Amazon Books (Kindle · Paperback · Hardcover)": web/phase-55-2-amazon-books.md
+      - "5 · Bán (còn dở)":
+          - "5.1 · Review + Validate (test bán trước)": web/phase-7-review-validate.md
+  - PLAN 1 · XONG:
+      - web/plan-1/index.md
       - "Plan bán app Mac + Windows": app/plan-ban-app.md
       - "Đã xong (Phase 1–16)":
           - Phase 1 · Google Play: web/phase-1-google-play.md
@@ -71,7 +89,6 @@ nav:
           - Phase 4 · Feature Gap Matrix: web/phase-4-feature-gap.md
           - Phase 5 · Verified Sites: web/phase-5-verified.md
           - Phase 6 · Tích hợp AI (Web): web/phase-6-ai-web.md
-          - Phase 7 · Review + Validate: web/phase-7-review-validate.md
           - Phase 8 · Project + dữ liệu: web/phase-8-project-data.md
           - Phase 9 · Small Features Update: web/phase-9-small-features.md
           - Phase 10 · Đa ngôn ngữ: web/phase-10-i18n.md
@@ -112,7 +129,6 @@ nav:
           - "Phase 28.15 · Hỏi AI — mỗi lượt tốn bao nhiêu token": web/phase-28-15-ai-token-transparency.md
           - "Phase 28.16 · AI Agent — 2 chế độ: Mặc định · Tuỳ chỉnh": web/phase-28-16-ai-agent-custom-mode.md
           - "Phase 28.17 · Quick Setup — nối Claude / ChatGPT trong 3 phút": web/phase-28-17-quick-setup.md
-          - "Phase 28.18 · AI Agent — Đã có app / web": web/phase-28-18-ai-agent-da-co-app.md
           - "Phase 28.20 · AI Agent — 3 lối vào: Niche Search · Autopilot · Đã có app": web/phase-28-20-ai-agent-3-loi-vao.md
       - "Bán · Version 9 + 10 (Phase 29–33, app 34–37)":
           - Tổng quan Version 9: web/version-9.md
@@ -124,7 +140,7 @@ nav:
           - "Phase 33 · Dùng thử + paywall": web/phase-33-paywall-trial.md
           - "Phase 33.1 · Review trước GO LIVE (UI / UX + Free / PRO)": web/phase-33-1-go-live-review.md
           - "Phase 33.2 · Chip PRO — bấm vào là ra bản PRO": web/phase-33-2-pro-chips.md
-      - "⭐ Phase đặc biệt · Build App + Money (release trước CN 01/11)":
+      - "⭐ Phase đặc biệt · Build App + Money (release 1.1.0)":
           - "Build App + Money · plan 4 ngày": web/phase-dac-biet-build-app-money.md
       - "Hoàn thiện Web · sau bản bán (Phase 38–45) · xong bản gọn":
           - "Phase 38 · Doanh thu thật (TrustMRR + AI)": web/phase-38-revenue.md
@@ -138,16 +154,11 @@ nav:
           - "Phase 45 · Tutorial (nút ?)": web/phase-45-tutorial.md
           - "Phase 45.1 · Chế độ tối (Sáng · Tối · Theo máy)": web/phase-45-1-dark-mode.md
       - "Version 2 · Demo + Nguồn mới + AI (Phase 50–55)":
-          - Phase 50 · Demo Site: web/phase-50-demo-site.md
           - Phase 51 · YouTube Search: web/phase-51-youtube-search.md
           - Phase 52 · YouTube Research (AI): web/phase-52-youtube-ai.md
           - Phase 53 · Amazon Search: web/phase-53-amazon-search.md
           - Phase 54 · Amazon Research (AI): web/phase-54-amazon-ai.md
           - Phase 55 · Google Maps Research (AI): web/phase-55-google-maps.md
-      - "Đang làm · Extension Chrome (26–28)":
-          - "Backlog 26 · Extension Chrome Lite": web/phase-backlog-26-chrome-extension-lite.md
-          - "Backlog 27 · YouTube + skill lái Chrome": web/phase-backlog-27-youtube-chrome-skill.md
-          - "Backlog 28 · Extension Chrome Amazon": web/phase-backlog-28-chrome-extension-amazon.md
   - MARKETING:
       - marketing/index.md
       - "1 · Google Search Console": marketing/google-search-console.md

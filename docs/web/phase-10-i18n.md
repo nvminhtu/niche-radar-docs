@@ -75,4 +75,4 @@ flowchart LR
 - Thư viện i18n ngoài (react-i18next…) — khung tự viết ~60 dòng là đủ; khi cần số nhiều phức tạp thì thêm `Intl.PluralRules`
 </div>
 
-[Tổng quan Web](index.md)
+[Mục lục Plan 1](plan-1/index.md)

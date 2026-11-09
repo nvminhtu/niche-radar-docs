@@ -1,4 +1,4 @@
-# Phase 28.18 · AI Agent — Đã có app / web
+# 3.1 · AI Agent — Đã có app / web (Phase 28.18)
 
 > Hôm nay mọi phiên AI Agent đều giả định **chưa có app**: gõ 1 ý tưởng → tìm niche → Brief → Spec → Plan để build app mới.
 > Người đã có app hoặc web không có đường đi nào: AI không biết app của họ là gì, và kết quả cuối vẫn là bản kế hoạch cho một

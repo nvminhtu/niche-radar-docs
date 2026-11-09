@@ -1,4 +1,4 @@
-# Backlog 28 · Extension Chrome "ShotMatic Scout" (Amazon)
+# 1.3 · Extension Chrome "ShotMatic Scout" cho Amazon (Backlog 28)
 
 > Extension miễn phí hoàn toàn cho người bán Amazon / KDP: keyword dài từ ô tìm kiếm Amazon, chấm độ cạnh tranh ngay
 > trên trang kết quả, BSR trên trang sản phẩm. Mục tiêu: thêm một cửa vào shotmatic.app từ nhóm người tìm "amazon keyword tool".

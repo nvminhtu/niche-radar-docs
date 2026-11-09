@@ -378,6 +378,33 @@ S/M/L là độ lớn tương đối, **chưa đo thời gian**, không phải c
   đóng được lời chào chat, gợi ý lệnh, hướng dẫn `/find-niches`, banner xong flow; "Hiện lại hướng dẫn" ở ô chat. Lỗi, quyền, trạng thái không đóng được.
 - **T3 lệnh AI:** `lib/hunt-commands.ts` là nguồn chung cho menu, gợi ý và slash máy chủ nhận (`HUNT_SKILLS`); test khớp đúng 5 thư mục skill thật.
   Menu "✦ Lệnh AI" (và gõ `/`): tên · làm gì · cần gì · lý do khoá · "Đưa vào ô chat · chưa chạy"; ↑ ↓ Enter Escape, Enter trong menu không gửi.
+- **Cập nhật 2026-11-05 (tiết kiệm token + tên dễ hiểu):** menu còn 8 lệnh, tên theo việc + icon, slash hiện nhỏ bên cạnh:
+  🔍 Tìm niche `/find-niches` · 🌿 Đào hẹp hơn `/long-tail` · 🧹 Lọc niche yếu `/kill-weak` · ⚖️ So & chọn `/compare-niches` ·
+  ✅ Có nên làm? `/app-demand` · 📝 Viết Brief · 📐 Viết Spec · 🗺️ Viết Plan. Bỏ khỏi menu 3 lệnh trùng (AI Suggest, Collect thêm,
+  Health check — vẫn còn ở thanh Flow). `/long-tail` lấy keyword hẹp từ Research đã xong, không bắt chờ Explore.
+  Tiết kiệm token: tool MCP `get_niche_card` (1–8 niche / lần gọi, ~1k ký tự / niche; trước đó AI đọc ~25k ký tự / niche
+  qua 3 tool, đo trên DB dev 2026-11-05), trần kết quả tool 20k → 8k ký tự (evidence pack 14k), skill không chép lại luật dữ liệu,
+  lượt `--resume` chỉ gửi dòng ngữ cảnh đã đổi, phiên vượt 120k token vào thì mở phiên mới.
+  Đo thật 2026-11-05 (Claude Code · opus-5-5, phiên săn 12 ứng viên, bản sao DB dev): lượt mới "so các niche và chọn 1" = 59.958 token vào
+  (1 lần gọi `get_niche_card` cho 8 niche), lượt hỏi tiếp `--resume` = 22.405 token vào, 0 tool. Trước đó 19 lượt chat cùng model
+  trung bình 92.846 token vào (câu hỏi khác nhau, không phải cùng kịch bản) — mới 1 lần đo, chưa đủ để chốt % giảm.
+- **Cập nhật 2026-11-05 (đợt B — đúng ý người dùng):** ngữ cảnh chat có thêm dòng `[Your past decisions …]`: niche đã giữ ở
+  Phiên săn khác, niche đã loại kèm lý do ngắn + `Research #id`, kết luận của project thường — chỉ lấy cái trùng chữ riêng với
+  phiên đang săn ("mac", "planner", "tracker"… chỉ tính 0,3), tối đa 6 giữ / 10 loại / 3 kết luận (`lib/past-decisions.ts`).
+  Ứng viên đã loại trong phiên hiện kèm lý do. CLAUDE.md của AI có mục "Fit the user": thứ tự nghe theo (lời người dùng → hồ sơ
+  app → tên phiên → quyết định cũ), không đề xuất lại niche đã loại, mỗi niche nói 1 vế vì sao hợp người này; ý chưa rõ thì hỏi
+  1 câu 2–3 lựa chọn + nút `insert_prompt` (bấm là điền sẵn vào ô chat). Chạy thật 2026-11-05 trên bản sao DB: "Tìm thêm 5 niche
+  về dock cho Mac" → 5 keyword mới, tránh floating dock / dock manager / mac dock hider đã loại, nêu "gần focus mode mac app bạn đã
+  giữ"; "/find-niches money" → hỏi 1 câu, 3 lựa chọn dựa trên niche đã giữ, gọi `suggest_actions` 3 nút. Dòng mới thêm
+  ~1,5–2,5k ký tự, chỉ gửi lần đầu của phiên (lượt `--resume` chỉ gửi dòng đã đổi).
+- **Cập nhật 2026-11-05 (đợt C — chat dễ nhìn):** bước tool hiện nhãn người đọc hiểu + icon (`lib/tool-labels.ts`):
+  "📇 Đọc thẻ 4 niche", "🔎 Tra “dock spacer mac”", "➕ Thêm 5 ứng viên", "🔍 Làm theo bước: Tìm niche" — tên tool + input thô
+  để trong tooltip; dòng "đang làm" và thanh trạng thái phiên dùng cùng nhãn. Dưới câu trả lời có thẻ các niche AI nhắc tới
+  (`Research #id` thuộc phiên, tối đa 4, theo thứ tự nhắc — `NicheMentions`): tên · đã giữ / đã loại · gợi ý · thanh điểm /10,
+  bấm mở ứng viên. Thẻ lấy dữ liệu đã có trên trang nên không tốn token, AI không phải gọi tool vẽ thẻ. Thẻ 2 dòng để nhãn EN dài
+  ("RESEARCH MORE") không đẩy mất tên niche trong khung chat hẹp. Soát 1340px + 960px, sáng + tối, không cuộn ngang.
+  Sửa kèm: khung chat báo "rảnh" bằng `new Date()` mỗi lần render → trang render lại vô hạn ("Maximum update depth exceeded"
+  sau mỗi câu trả lời) — giờ dùng mốc cố định (giờ gửi + thời lượng lượt).
   Lệnh 1 keyword dùng ứng viên đang chọn kèm Research #id. Chạy thật: ↓×4 Enter → `/app-demand pomodoro timer for study offline (Research #44)`, 0 tin gửi.
 - **T4 điều kiện bước:** `flowAccess()` chuỗi điều kiện theo bảng trên (lỗi không lọt qua health); thanh bước xám + lý do;
   "Sang bước n →" chỉ đổi thẻ; không tự nhảy thẻ khi dữ liệu cập nhật; nút chạy khoá khi bước chưa mở / AI đang chạy.
@@ -422,4 +449,4 @@ S/M/L là độ lớn tương đối, **chưa đo thời gian**, không phải c
 - Đơn vị badge đề xuất là source job + lượt chat, pending riêng; giữ cách đếm Research cũ sẽ không khớp yêu cầu thấy từng
   nguồn đang searching. Mặc định triển khai cách đếm mới T7 và giải thích ngay trong danh sách việc.
 
-[← Phase 28.6 · AI Agent](phase-28-6-ai-agent.md) · [Mục lục Web](index.md)
+[← Phase 28.6 · AI Agent](phase-28-6-ai-agent.md) · [Mục lục Plan 1](plan-1/index.md)

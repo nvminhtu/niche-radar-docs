@@ -1,4 +1,4 @@
-# Phase 7 · Review + Validate
+# 5.1 · Review + Validate (Phase 7)
 
 > **Soát lại Phase 1–6** trên niche thật — từng phase có đạt "Xong khi" không, số có nguồn không — rồi kiểm
 > cả hệ thống bằng một vòng thật: **chấm điểm niche → evidence pack → test bán trước**.

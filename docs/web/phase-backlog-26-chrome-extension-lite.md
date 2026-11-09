@@ -1,4 +1,4 @@
-# Backlog 26 · Extension Chrome "ShotMatic Lite"
+# 1.1 · Extension Chrome "ShotMatic Lite" (Backlog 26)
 
 > Extension miễn phí chạy ngay trên trang app của Google Play / App Store: kiểm nhanh keyword + niche, rồi kéo người
 > dùng về shotmatic.app và bản tải về đầy đủ. Kèm một MCP bản nhẹ để người dùng hỏi bằng chính Claude.

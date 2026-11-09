@@ -5,7 +5,7 @@
 > free, tính năng nào phải mua. Đề xuất của anh (2026-10-29): Niche Research vẫn free nhưng giới hạn **10–15 lượt**, AI
 > phải trả phí hoặc free chỉ chạy được **1–2 bước**.
 
-<span class="chip chip--doing">Phần B chốt đủ 6 câu 2026-10-29 · làm trong ⭐ Phase đặc biệt Build App + Money</span>
+<span class="chip chip--done">Xong · anh chốt 2026-11-07 · phần B chốt đủ 6 câu 2026-10-29 · ra cùng bản 1.1.0 (⭐ Phase đặc biệt Build App + Money)</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 

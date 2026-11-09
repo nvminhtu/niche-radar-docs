@@ -1,4 +1,4 @@
-# Phase 50 · Demo Site (show hàng)
+# 4.1 · Demo Site — show hàng (Phase 50)
 
 > Một trang web **tĩnh** để đi marketing: khách bấm thử **giao diện thật** của ShotMatic trên **dữ liệu chụp sẵn**
 > từ vài niche đã tra, không cần server. Muốn xài thật → để lại email + tải app về máy. Host server để các phase sau.
@@ -89,6 +89,6 @@ flowchart LR
 - Đăng bài kênh nào — Version 11
 </div>
 
-[Tổng quan Web](index.md)
+[WEB · Plan 2](index.md)
 
 Plan code chi tiết: [Phase 50](../superpowers/plans/2026-10-25-niche-radar-phase31a-demo-site.md)

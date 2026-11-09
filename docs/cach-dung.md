@@ -84,7 +84,8 @@ Chi tiết + chữ cho store: README trong folder `extension/` của repo. Plan:
 
 Thử trên máy: `chrome://extensions` → bật Developer mode → **Load unpacked** → chọn folder `extension-amazon/`. Tìm một keyword
 trên Amazon (10 chợ), card hiện góc phải dưới: kết luận cạnh tranh của trang 1, keyword dài a–z (Copy · CSV), số app App Store
-cho keyword đó. Mở trang sản phẩm → rating, bought tháng trước, BSR. Miễn phí hết, không giới hạn lượt.
+cho keyword đó. Mở trang sản phẩm → rating, bought tháng trước, BSR. Trang tìm mục Books / Kindle Store và trang 1 cuốn sách có nút
+**Copy for Niche Radar** → dán vào trang Amazon của Niche Radar (chế độ *Sách · Kindle · Hardcover*). Miễn phí hết, không giới hạn lượt.
 Chi tiết + chữ cho store: README trong folder `extension-amazon/` của repo. Plan: [Backlog 28](web/phase-backlog-28-chrome-extension-amazon.md).
 
 ## Khi bị chặn

@@ -31,22 +31,38 @@
 - `web/src/client/CompareAppsPage.tsx` (mới) + route — trang so đối thủ; ô tick trong `CompetitorBlock`
 - `web/src/lib/features.ts` — "So sánh đối thủ" → done
 - `web/tests/compare-competitor.test.ts`
+- `web/src/db/schema.ts` + migration — bảng `node_hits` (node · store · app · hạng) cho tab Keyword
+- `web/src/collectors/explore-metrics.ts` — giữ id app top 30 Play / App Store thay vì chỉ đếm (không thêm request)
+- `web/src/lib/compare-keywords.ts` (mới) — gộp `keyword_hits` + `node_hits` thành bảng keyword × app, lọc app mốc
 
 ## Tasks
 
+### Task 0: Lưu app mỗi keyword lúc Explore
+- [ ] Migration `node_hits`; `collectLightMetrics` trả thêm danh sách `{ store, storeAppId, rank }` (top 30 mỗi store), ghi vào
+      `node_hits` + upsert `apps`. Test: số đếm cũ (`playCount`, `appstoreCount`) không đổi, số request không đổi.
+
 ### Task 1: Hàng + gợi ý
-- [ ] `compare-competitor.ts`: Tiền (free / trả phí / IAP, giá từng gói, tháng / năm) · Chất lượng (sao, số rating, % 1–2★, cập nhật cuối,
-      2 store) · Tính năng (từ matrix, link listing) · Bị chê gì (3 chủ đề, số lần, 1 câu + link) · Chỗ trống. Test.
+- [ ] `compare-competitor.ts`: Tiền (free / trả phí / IAP, giá từng gói, tháng / năm) · Chất lượng (sao, số rating, mức lượt cài Play,
+      % 1–2★, ngày ra mắt, cập nhật cuối, 2 store) · Tính năng (từ matrix, link listing) · Bị chê gì (3 chủ đề, số lần, 1 câu + link)
+      · Chỗ trống. Test.
+
+### Task 1b: Bảng keyword × app
+- [ ] `compare-keywords.ts`: hàng = keyword (ngày đo, điểm phổ biến, mức chen chúc, số app), cột = hạng từng app hoặc "—" kèm N
+      đã lưu; đếm số keyword mỗi app có hạng; lọc mức hạng 1–10 / 11–25 / 26+, app mốc là "—" mà ≥ 1 app khác có hạng. Test.
 
 ### Task 2: API + xuất
-- [ ] 2–5 id (khác → 400); CSV (BOM) + Markdown.
+- [ ] 2–5 id (khác → 400); CSV (BOM) + Markdown theo tab; tab Keyword thêm danh sách keyword dạng text.
 
 ### Task 3: Trang
-- [ ] Tick trong bảng đối thủ → "So sánh (N)"; bảng dùng `CompareTable`; ô thiếu "chưa có".
+- [ ] Tick trong bảng đối thủ → "So sánh (N)" + nút Compare trên dòng app (Research, Keyword search); thẻ app có màu + menu ⋮;
+      4 tab Tổng quan · Keyword · Tính năng · Lời chê (`?tab=`); bảng dùng `CompareTable`; ô thiếu "chưa có".
 
 ### Task 4: Soát
-- [ ] 2 niche × 4 đối thủ; kiểm tay 10 câu than. Screenshot 1340 + 375, Read. Chip, ROADMAP, CHANGELOG.
+- [ ] 2 niche × 4 đối thủ; kiểm tay 10 câu than + 10 ô hạng tab Keyword. Screenshot 960 + 1340, sáng + tối, Read. Chip, ROADMAP,
+      CHANGELOG.
 
 ## Tiến độ
 
 - 2026-10-25: viết plan.
+- 2026-11-06: thêm Task 0 + 1b (tab Keyword, học Competitor Keywords của Appfigures), thẻ app + nút Compare, 4 tab — xem
+  [Học từ Appfigures](../../web/phase-56-compare-competitor.md#hoc-tu-appfigures).

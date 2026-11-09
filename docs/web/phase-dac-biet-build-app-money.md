@@ -5,7 +5,7 @@
 > bản bán đầu từ [Phase 33.1](phase-33-1-go-live-review.md) (Free / PRO + soát UI) và [Phase 34](../app/phase-34-local-app-2.md)
 > (gói bản bán); phần còn lại để sau.
 
-<span class="chip chip--doing">Plan 2026-10-29 · mục tiêu release trước Chủ nhật 01/11/2026 · MONEY chốt đủ 6 câu 2026-10-29 · code Free / PRO xong 2026-10-29 · chờ sản phẩm Lemon Squeezy</span>
+<span class="chip chip--done">Xong · anh chốt 2026-11-07 · bản 1.1.0 public từ 01/11, đã notarize · mua thử đã chạy · số đơn thật theo dõi ở Marketing</span>
 
 ## Mục tiêu · cần làm · KHÔNG làm
 

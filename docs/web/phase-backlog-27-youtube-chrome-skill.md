@@ -1,4 +1,4 @@
-# Backlog 27 · YouTube + skill lái Chrome + repo có sẵn
+# 1.2 · YouTube + skill lái Chrome + repo có sẵn (Backlog 27)
 
 > Trả lời 3 câu: Claude Code lái Chrome bằng skill được không (cho YouTube và cho trang Play / App Store)?
 > vidIQ đã nằm trong plan rồi, kết hợp MCP thế nào? Có repo nào làm sẵn để gắn vào tool cho nhanh?
