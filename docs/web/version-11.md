@@ -21,7 +21,8 @@ có quyết định giữ / dừng. Số thật ghi ngày, chưa đo thì ghi `c
 ```mermaid
 flowchart TB
   P[Phase 46<br/>Landing shotmatic.app] --> BL[Phase 46.1<br/>Blog shotmatic.app<br/>SEO · AEO · GEO]
-  BL --> K[Phase 46.2<br/>Từ khoá · blog theo cụm ·<br/>Search Console]
+  BL --> NR[Phase 46.2<br/>Niche Reports<br/>dữ liệu thật · đuôi dài]
+  BL --> K[Phase 46.2b<br/>Từ khoá · blog theo cụm ·<br/>Search Console]
   K --> F[Phase 46.3<br/>Mục Indie founders]
   K --> T[Phase 46.4<br/>Guide Google Trends]
   P --> S[Phase 49<br/>Lịch 6 tuần · ra mắt ·<br/>bảng số + luật dừng]
@@ -35,7 +36,8 @@ flowchart TB
 |---|---|---|
 | [46 · Landing shotmatic.app — định vị + email](phase-46-positioning-landing.md) ✅ | 1 câu định vị, landing [shotmatic.app](https://shotmatic.app) live, form email EmailOctopus, GA4 `generate_lead` | `/app-gtm`, `/oneclicktool-landing` |
 | [46.1 · Landing shotmatic.app — Blog](phase-46-1-landing-blog.md) ✅ | blog riêng trên landing: phân trang, chuyên mục SEO · AEO · GEO, bản .md + llms.txt cho AI search | `/oneclicktool-blog`, `/app-geo` |
-| [46.2 · Từ khoá + blog theo cụm + Search Console](phase-46-2-seo-keyword-blog-gsc.md) | tối ưu từ khoá cho shotmatic.app (trụ `app idea validation`), 2 trang đích + 6 bài blog theo cụm từ khoá, Search Console: số mốc → đo lại sau 4 tuần | `/oneclicktool-blog`, `/app-geo` |
+| [46.2 · Niche Reports — dữ liệu research thật](phase-46-2-niche-reports.md) ⚪ Plan | chạy tool cho hàng loạt niche → trang báo cáo `/niches/<slug>` (bảng đối thủ, keyword đuôi dài, lời chê, gap, Trends) + CSV / JSON, cổng LEGIT chặn số không nguồn · pilot 5 → 25 → 100 | `/oneclicktool-blog`, `/app-geo` |
+| [46.2b · Từ khoá + blog theo cụm + Search Console](phase-46-2-seo-keyword-blog-gsc.md) | tối ưu từ khoá cho shotmatic.app (trụ `app idea validation`), 2 trang đích + 6 bài blog theo cụm từ khoá, Search Console: số mốc → đo lại sau 4 tuần | `/oneclicktool-blog`, `/app-geo` |
 | [46.3 · Blog mục Indie founders](phase-46-3-blog-founders.md) | chuyên mục `founders` trên blog: chọn market, micro SaaS, tìm niche ở tầm founder — 5 bài theo từ khoá đã đo | `/oneclicktool-blog`, `marketing-skills:content-strategy` |
 | [46.4 · Guide Google Trends](phase-46-4-google-trends-guide.md) | chuyên mục `trends`: bài trụ "how to use google trends to find a niche" + 4 bài cụm, 4 loại trend quyết định trend nào đưa được người từ web vào app | `/oneclicktool-blog`, `marketing-skills:seo-audit` |
 | [47 · Chọn 2 kênh](phase-47-two-channels.md) ⏸️ **Backlog** | chấm ICE các kênh (X build in public, Reddit, Indie Hackers, Product Hunt, YouTube, SEO blog) | `/app-gtm`, `/app-reddit` |

@@ -5,12 +5,14 @@
 > hoặc key riêng) nhận **đúng thứ đang xem** + chạy **đúng skill của việc đó** → trả bản nháp có mã nguồn → người bấm
 > **Dùng / Bỏ / Hỏi lại**.
 
-<span class="chip chip--done">Xong bản gọn 2026-10-29 · đợt 1a (5 nút ✦ mở Hỏi AI) · phần còn lại không làm</span>
+<span class="chip chip--done">Xong bản gọn 2026-10-29 · đợt 1a (5 nút ✦ mở Hỏi AI) · đợt 1b bản UI xong 2026-11-01 (thẻ AI đề xuất Dùng / Bỏ / Hỏi lại)</span>
 
 !!! note "Xong bản gọn (2026-10-29)"
     Soát code 2026-10-29. **Giữ — đã có trong app:** 5 nút ✦ `AiMagic` (Sức khoẻ niche · Explore mở rộng niche · Gap → ý tưởng app · Sức khoẻ project · Bàn quyết định) mở khung Hỏi AI với câu hỏi soạn sẵn + ngữ cảnh trang · 2 nút chữ cũ vẫn chạy (`AiRunButton`: Chủ đề than / Tóm tắt / Test bán trước qua `AiTaskBlock`, Feature Gap "Điền bằng AI") · chưa nối AI thì nút xám + link Cài đặt. Phần "Hỏi lại", nhật ký phiên, chọn model đã có ở AI Agent ([28.6](phase-28-6-ai-agent.md)–[28.12](phase-28-12-ai-agent-stages.md)).
 
-    **Không làm:** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại) · chạy qua skill (cần [28.3](phase-28-3-skills.md) — Backlog) · sổ việc chung `lib/ai/actions.ts` · đổi 2 nút chữ cũ sang icon · gửi kèm dòng đang tick / bộ lọc · Bước 0 đo skill vs prompt · các chỗ đợt 2. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
+    **Đợt 1b bản UI (2026-11-01):** thẻ AI đề xuất trong khối (Dùng / Bỏ / Hỏi lại), chấm trên ✦ khi đã có ghi chú, gửi kèm keyword đang tick ở Explore, tooltip ✦ ghi tên AI — xem mục "Kết quả đợt 1b" bên dưới.
+
+    **Không làm:** chạy qua skill (cần [28.3](phase-28-3-skills.md) — Backlog) · sổ việc chung `lib/ai/actions.ts` · đổi 2 nút chữ cũ sang icon · gửi kèm dòng đang tick / bộ lọc · Bước 0 đo skill vs prompt · các chỗ đợt 2. Mục “Xong khi” bên dưới là plan cũ, không còn là điều kiện xong.
 
 <div class="box box--goal" markdown>
 **Hiện có.** `web/src/components/AiRunButton.tsx`: đũa phép + chữ "Chạy bằng AI" + ô chọn AI, gắn ở 4 khối (Chủ đề than,
@@ -21,6 +23,31 @@ chuẩn hoá (đang chọn dòng nào, lọc gì), chạy qua skill thay prompt 
 
 **Cần xong trước:** [Phase 28.2](phase-28-2-mcp-write.md) (gói nhóm việc) · [Phase 28.3](phase-28-3-skills.md) (skill
 đợt 1) · Phase 27 · 26.6 (AI mặc định + chọn AI từng việc).
+
+## Kết quả đợt 1b bản UI (2026-11-01)
+
+Câu trả lời của nút ✦ không còn chỉ nằm trong khung chat: trả lời xong thì **thẻ AI đề xuất** hiện ngay trong khối đã bấm.
+Vẫn chạy qua khung Hỏi AI (cùng phiên chat, cùng tool MCP chỉ đọc), chưa có skill riêng.
+
+- **Thẻ AI đề xuất · chưa lưu** (viền cam) ngay dưới tiêu đề khối: nội dung (dài thì gập, "Xem hết") · tên AI + model · giờ ·
+  "chỉ là gợi ý — không đổi điểm" · nút **Dùng — lưu vào khối** · **Hỏi lại…** · **Bỏ**
+- **Dùng** → thành **Ghi chú AI** (viền xám), còn sau khi tải lại trang; nút **Hỏi lại…** · **Xoá ghi chú**. Không đổi điểm,
+  trạng thái hay kết luận — người dùng tự đọc rồi tự sửa
+- **Hỏi lại…** → điền sẵn câu gốc + "Sửa bản trước: " vào ô chat, **không gửi**; người dùng gõ cần sửa gì rồi Gửi. Cùng phiên
+  chat nên AI còn thấy bản trước; hỏi lại nhiều lần không dồn chữ. Bản mới về khi đã có ghi chú → thẻ có mục
+  "So với bản đã lưu (ngày)" để xem khác gì, nút **Dùng bản mới**
+- ✦ có **chấm xanh** khi khối đã có ghi chú / bản nháp; tooltip ghi việc · "Dùng AI (Claude Code · model)" · "đã có ghi chú AI"
+- **Explore:** tick keyword ở bảng → nút ✦ "Mở rộng niche bằng AI — chỉ n keyword đang tick", câu hỏi gửi kèm đúng các keyword đó
+- 5 khối: Sức khoẻ niche (`run:<id>`) · Mở rộng niche (`explore:<id>`) · Gap → ý tưởng (`gap`) · Sức khoẻ project + Bàn quyết định (`project:<id>`)
+- Code: `web/src/lib/ai/magic-notes.ts` (lưu ở bảng `ai_history`, task `note:<việc>` — giữ mọi bản, khối hiện bản mới nhất) ·
+  API `GET/DELETE /api/ai/notes/:task?scope=` + `POST /api/ai/notes` · `web/src/lib/magic-notes-client.ts` (kho nháp, `withPicked`) ·
+  `AiMagic.tsx` (`origin`, `AiMagicNote`) · `ChatPanel.tsx` gửi nháp về khối khi trả lời xong
+- Kiểm 2026-11-01: 562 test xanh (gồm `tests/magic-notes.test.ts`), typecheck + lint sạch · chạy thật trên bản sao DB ở
+  1340px + 960px: Research #111 bấm ✦ → Codex trả lời → thẻ về đúng khối, chấm xanh hiện · Dùng → tải lại trang vẫn còn ·
+  Hỏi lại điền đúng câu, 0 tin bị gửi · Xoá → thẻ + chấm mất, API trả `null` · Explore tick 2 keyword → ✦ ghi "chỉ 2 keyword
+  đang tick" · không cuộn ngang · Claude Code trên máy đang lỗi 401 nên lượt đó báo lỗi trong chat và không tạo thẻ (đúng)
+- **Còn lại:** hộp nhỏ trước khi chạy (gửi gì · tốn bao nhiêu) · chạy qua skill ([28.3](phase-28-3-skills.md)) · ✦ ở hộp
+  Collect / bảng keyword đã tick (`collect-suggest`) · các chỗ đợt 2
 
 ## Kết quả đợt 1a — chỗ UI dễ (2026-10-28)
 

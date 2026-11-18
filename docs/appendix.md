@@ -55,6 +55,7 @@ Chấm ở [Bản đồ nguồn gap](web/gap-sources-map.md). Đừng xét lại
 | Indie Hackers · Quora · Discord · nhóm Facebook · MacRumors | gap của founder / nhiễu / cấm quét / không mở được |
 | Setapp · Raycast Store · VS Code · WordPress · Figma · G2 · Capterra · Trustpilot · SaaSHub | không có chỗ chê, lệch tệp, hoặc cấm quét kể cả nội dung công khai |
 | Acquire · Flippa · Indie Hackers products · Starter Story · Gumroad · Notion / Excel template · CodeCanyon | bằng chứng tiền yếu hoặc cấm quét; TrustMRR đã thay |
+| Pinterest Trends API v5 + skill `pinterest-seeds` (xét lại 2026-11-02) | anh chốt không làm, ưu tiên đi bán · [Research](web/pinterest-trends-research.md) |
 | producthunt-mcp-server | không license, bỏ từ 2025-04, API Product Hunt cấm dùng thương mại |
 
 **Ứng viên (chưa xếp phase):** gom chủ đề bằng BERTopic + sentence-transformers thay từ điển tay ở Phase 11 · cờ "top 3

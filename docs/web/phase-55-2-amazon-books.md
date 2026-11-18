@@ -425,7 +425,7 @@ Khi có BSR (M3) thì thay phần Cầu bằng BSR trung vị top 5, sau khi đ�
 
 ## 8 · Không làm
 
-- Không ước doanh thu từ BSR khi chưa có nguồn đo.
+- Không ước doanh thu từ BSR khi chưa có nguồn đo. *Đổi 2026-11-11:* cho hiện khoảng thấp–cao có ghi nguồn, xem [6 · Bộ tool KDP](phase-plan2-06-bo-tool-kdp.md).
 - Không tự động cào hàng loạt trang tìm hoặc trang sách từ máy chủ.
 - Không làm thiết kế cover / nội dung sách (đó là việc của Book Bolt; dự án sách của anh có skill `ebook-publishing` riêng).
 - Không làm Amazon Ads (AMS) keyword ở phase này.

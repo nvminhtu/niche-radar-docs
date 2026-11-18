@@ -53,7 +53,7 @@ có đáng làm không + bản brief đưa thẳng cho Claude Code". Ở tầng 
 ### 1.2 "Gửi ý tưởng, nhận báo cáo miễn phí" — 20 bản (ngày 2–14)
 
 - [ ] **X** (Tu đăng): mời người đang build app bằng Claude Code reply ý tưởng → nhận số thật (đối thủ Play + App Store, lời chê 1★, xu hướng) + brief. Chỉ 20 người đầu
-- [ ] **Reddit:** không đăng lời mời riêng (dễ bị coi là spam). Trả lời thẳng các thread "what app should I build" / "is my app idea good" trên r/SideProject, r/indiehackers, r/ClaudeCode, r/iOSProgramming bằng **số thật đã chạy** cho ý tưởng của người đó (luật `/app-reddit`)
+- [ ] **Reddit:** bài nhật ký + câu trả lời mẫu ở [Plan Reddit](ke-hoach-reddit.md). Không đăng lời mời riêng (dễ bị coi là spam). Trả lời thẳng các thread "what app should I build" / "is my app idea good" trên r/SideProject, r/indiehackers, r/ClaudeCode, r/iOSProgramming bằng **số thật đã chạy** cho ý tưởng của người đó (luật `/app-reddit`)
 - [ ] **Indie Hackers / Discord indie:** cùng lời mời như X
 - [ ] Mỗi báo cáo gửi đi kèm 1 ảnh chụp kết quả (xin phép dùng lại) + 1 dòng mời mua PRO, link `?ref=report`
 

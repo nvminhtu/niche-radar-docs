@@ -3,7 +3,30 @@
 > Trả lời 3 câu: Claude Code lái Chrome bằng skill được không (cho YouTube và cho trang Play / App Store)?
 > vidIQ đã nằm trong plan rồi, kết hợp MCP thế nào? Có repo nào làm sẵn để gắn vào tool cho nhanh?
 
-<span class="chip chip--doing">Plan mới 2026-11-02 · Bước 0 đo xong phần làm được (YouTube.js, trình duyệt) · còn vidIQ + Claude in Chrome thật</span>
+<span class="chip chip--doing">Code xong 2026-11-05 · tool MCP get_youtube + 2 skill · còn chạy thật 3 kiểu phiên (cần vidIQ + Claude in Chrome của anh)</span>
+
+<div class="box box--star" markdown>
+**Đã làm (2026-11-05)**
+
+- **Tool MCP `get_youtube`** (chỉ đọc, `web/src/mcp/tools.ts` → `youtubeForAi` trong `web/src/lib/social.ts`): đọc lần tra YouTube
+  đã lưu ở Social Search. Không tham số → danh sách lần tra; `keyword` → lần mới nhất; `searchId` → đúng lần đó. Trả dòng nguồn
+  `YouTube #id · keyword · ngày · youtubei.js`, ô tóm tắt, keyword, top video kèm view ÷ sub, comment nhiều like nhất, ngưỡng quy ước,
+  và câu "phụ đề chưa lấy được". Keyword chưa tra → `empty` + cách tra, không báo lỗi.
+- **Skill `youtube-demand`**: Lớp 1 `get_youtube` (bắt buộc) → Lớp 2 vidIQ nếu phiên có tool (≤ 10 lần gọi) → Lớp 3 Chrome nếu phiên có
+  tool (≤ 10 trang video, ưu tiên video vượt kênh). Cuối bài ghi lớp nào chạy, lớp nào bỏ; kèm một khối JSON để người dùng lưu.
+- **Skill `store-page-check`**: mở trang Play / App Store trong Chrome, đọc tên · sao · số đánh giá · ngày cập nhật · review thấp →
+  `search_niches` + `get_evidence_pack` + `get_complaints` → WEAK / SOLID / STRONG + một chỗ hở có trích dẫn. Không có Chrome → chỉ dùng số ShotMatic.
+- `CLAUDE.md` / `AGENTS.md` của thư mục AI thêm 2 skill + mục luật Chrome / MCP khác (chỉ đọc, dừng ở trang đăng nhập / captcha, ≤ 10 trang,
+  số vidIQ dòng riêng). Thư mục AI lên v4 → app tự ghi lại file khi mở.
+- 2 skill **không** vào sổ lệnh của Phiên săn (cần phiên `claude --chrome` của người dùng, không phải khung chat trong app).
+- Test: `web/tests/youtube-skill.test.ts`.
+
+**Chưa làm:**
+
+- Chạy thật 3 kiểu phiên + 1 trang Play + 1 trang App Store (mục **Xong khi**) — cần anh nối vidIQ (`/mcp` → vidiq) và mở `claude --chrome`.
+- Bước 5 · nhập lại JSON vào tool + cột riêng — cần màn hình mới (mockup Codex trước), để sau khi 3 kiểu phiên chạy ổn.
+- Mốc giây trong kết luận: chưa có vì phụ đề hỏng; skill chỉ trả link video.
+</div>
 
 ## 1. Claude Code + Chrome có chạy skill được không? → Được
 

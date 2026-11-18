@@ -38,5 +38,6 @@ Dữ liệu ở `marketing/reddit/` (không sync ra trang này): `profile.md` h�
 
 ## Liên quan
 
+[Bài nháp Reddit + Show HN (2026-11-12)](bai-nhap-reddit-2026-11-12.md) ·
 [Backlog 29 · Skill Reddit Q&A](../web/phase-backlog-29-reddit-qa-skill.md) ·
 [Phase 11 · Reddit Gap](../web/phase-11-reddit-gap.md) · Skill: `/reddit-qa`

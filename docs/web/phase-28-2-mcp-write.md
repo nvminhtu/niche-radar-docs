@@ -61,6 +61,7 @@ flowchart LR
 | `tag_project {projectId, add[], remove[]}` | Thêm | thẻ project |
 | `add_project_note {projectId, text}` | Thêm | vào nhật ký, nhãn "AI viết" |
 | `score_factor {runId, factor: reach\|fit, value, reason, refs, links?}` | Chấm (Phase 28.13) | chỉ 2 yếu tố tool không đo được; lý do + ≥ 1 Research #id, reach cần link kênh; nhãn "AI chấm" ở khối Sức khoẻ; không ghi đè điểm người dùng tự chấm |
+| `youtube_outliers` · `youtube_hunt` · `youtube_channel` · `youtube_transcript` · `youtube_job` | Tra YouTube (Plan 2 · mục 15.7) | tra mới trên YouTube như tự bấm ở trang YouTube, lưu thành lượt tra; chạy nền, quá 20 giây trả mã việc → `youtube_job`; mỗi loại 1 lượt một lúc |
 | `propose_decision {projectId, rows[]}` | Đề xuất | điểm 5 trục bàn quyết định, đi qua đúng luật [Phase 16](phase-16-decision-board.md) |
 | `propose_verdict {projectId, conclusion, nextStep, refs}` | Đề xuất | nháp Kết luận + Bước tiếp |
 | `get_brief` · `get_build_pack` · `propose_brief_revision` | Đọc · Đọc · Đề xuất | hồ sơ Brief + Spec + Plan, kéo Gói Build mới nhất, đẩy bản sửa ở thư mục app về thành nháp → [Phase 28.5](phase-28-5-brief-plan.md) |

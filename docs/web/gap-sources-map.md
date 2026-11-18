@@ -176,7 +176,7 @@ Mỗi nguồn có kết luận, 6 tiêu chí và link đã mở. Tất cả ki�
 
 #### 6 · Pinterest Trends
 
-- **Kết luận: Bỏ.** Lệch khỏi app Mac / SaaS.
+- **Kết luận: Bỏ.** Lệch khỏi app Mac / SaaS. Xét lại 2026-11-02 (có API Trends chính thức lọc giới tính / tuổi) — anh chốt **vẫn không làm**, ưu tiên bán: [Research Pinterest Trends](pinterest-trends-research.md).
 - **Gap:** Yếu. Chỉ có chủ đề đang lên (trang trí, công thức nấu ăn).
 - **Quan tâm:** Vừa. Có % tăng theo tuần.
 - **Lấy được:** đọc qua trình duyệt. Trang dựng bằng JS, không có API công khai.

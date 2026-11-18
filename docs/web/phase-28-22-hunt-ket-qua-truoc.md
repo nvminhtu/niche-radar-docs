@@ -151,3 +151,22 @@ Phiên 2 dừng ở bước 2 vì AI chấm mọi ứng viên là BỎ, lúc đ�
 - **Không ép giữ:** vẫn không đáng làm thì AI không giữ. Autopilot dừng và báo "AI chưa thấy niche nào đáng giữ", kèm 2 việc người dùng làm được: giữ tay 1 niche rồi Chạy tiếp, hoặc thử ý tưởng khác.
 
 Kiểm bằng test với AI giả. Đã chạy thật phiên 3 ("a flashlight app for android", dừng ở Health check, 13 ứng viên, 2026-11-06) nhưng AI giữ được niche ngay nên nhánh này chưa chạy thật. Phiên 3 mất khoảng 14 phút tới Health check, chủ yếu vì tra 13 ứng viên.
+
+### Gom về 1 nút, tài liệu bám niche đang xem (2026-11-07)
+
+Soát lại trang phiên sau bản trên: phiên xong research có 4 chỗ dẫn tới cùng 1 việc ("Chạy tiếp tới Plan", "Chọn niche này, lên
+kế hoạch app", nút "AI viết cả bộ" và khối Các bước làm tay mở sẵn có nút "AI viết brief"). Link "Chọn niche này" còn hứa sai:
+Autopilot luôn viết cho niche giữ điểm cao nhất, không phải niche đang xem.
+
+- **1 nút duy nhất:** nút "AI viết cả bộ Brief → Spec → Plan" ở thẻ Bộ tài liệu. Link trên thẻ niche đổi thành "Lên Brief + Spec +
+  Plan cho niche này ↓", dòng Autopilot đổi thành "Bước tiếp: Brief + Spec + Plan ↓", cả hai chỉ cuộn xuống thẻ Bộ tài liệu.
+  Khối Các bước làm tay gập sẵn, bấm Xem 1 tài liệu thì mở.
+- **Ghi rõ niche:** thẻ Bộ tài liệu có dòng "Cho niche: …" (đang chạy thì "Đang viết cho niche: …"). Niche = niche đang xem nếu đã
+  tra xong và còn sống, không thì niche giữ điểm cao nhất (`docTargets` ở `web/src/lib/hunt-pick.ts`).
+- **Autopilot nhận `focus`:** `POST /api/hunt/:id/autopilot/start` thêm `focus` (id ứng viên). Niche đó đứng đầu danh sách đọc review
+  và được chỉ đích danh trong câu Brief. Chạy tiếp giữ niche cũ; niche cũ đã bị loại thì quay về niche giữ điểm cao nhất; chọn
+  đích danh niche chưa tra xong / đã loại thì trả 400, không chạy gì.
+- **Xong cả bộ:** thẻ Bộ tài liệu lên đầu (trên thẻ niche), nút trên thẻ niche thành "Xem Brief + Spec + Plan ↓".
+- **Form Autopilot:** thêm 5 chip ý tưởng mẫu ("Thử nhanh"), bấm là điền vào ô, vẫn sửa được trước khi bắt đầu.
+- Test: `docTargets` (`hunt-pick.test.ts`), Autopilot có `focus` + Chạy tiếp giữ / bỏ `focus` (`hunt-autopilot.test.ts`).
+  `npm run check` xanh. Soát 1340px + 960px, sáng + tối: không cuộn ngang. Chưa chạy thật `focus` với AI thật.

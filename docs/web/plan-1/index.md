@@ -285,7 +285,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 <div class="step" markdown>
 <span class="step__n">28.4</span>
 <div class="step__body">
-<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦</span></h3>
+<h3>Nút AI đũa phép ở từng bước <span class="chip chip--done">Xong bản gọn 2026-10-29 · 5 nút ✦ · thẻ AI đề xuất 2026-11-01</span></h3>
 <p>Nút ✦ ở mỗi bước đi tay: AI mặc định nhận đúng ngữ cảnh đang xem + chạy đúng skill. Làm trước các chỗ chỉ cần gắn nút vào khung có sẵn.</p>
 <a class="go" href="../phase-28-4-ai-magic/">Xem chi tiết →</a>
 </div>
@@ -295,7 +295,7 @@ Chốt 2026-10-27: 27, 28, 28.2, 28.6 xong; 27.4, 27.6, 28.1, 28.3, 28.5 và ph�
 
 ## Phase 28.7 · AI Agent dễ nhìn
 
-<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn</span>
+<span class="chip chip--done">Xong 2026-10-28 · T1–T7 bản gọn · làm nốt 2026-11-01 (badge theo việc)</span>
 
 Tiếp nối [Phase 28.6 · AI Agent](../phase-28-6-ai-agent.md): hiện AI và model thật, đóng/mở hướng dẫn,
 menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ thống nhất.
@@ -304,7 +304,7 @@ menu lệnh theo dữ liệu, chuyển bước có điều kiện và dấu ✦ 
 
 ## Phase 28.8 · Trang niche + Explorer
 
-<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A</span>
+<span class="chip chip--done">Xong 2026-10-28 · D · E · B · C · A · làm nốt 2026-11-02</span>
 
 Ưu tiên sửa cuộn bảng/cây và trạng thái rỗng có nút; thu gọn giải thích, làm rõ điểm và độ phủ,
 biến TEST MORE / BUILD / SKIP thành bước tiếp có điều kiện. Không đổi công thức tính.
@@ -554,7 +554,7 @@ Anh chốt 2026-10-28: **xong bản gọn** — giữ phần đã có trong app,
 <span class="step__n">V11</span>
 <div class="step__body">
 <h3>Marketing Plan <span class="chip chip--todo">Phase 46–49</span></h3>
-<p><a href="../phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="../phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · <a href="../phase-46-2-seo-keyword-blog-gsc/">46.2 Từ khoá + Search Console</a> · <a href="../phase-46-3-blog-founders/">46.3 Mục Indie founders</a> · <a href="../phase-46-4-google-trends-guide/">46.4 Guide Google Trends</a> · lịch 6 tuần + luật dừng (49). 47 Chọn 2 kênh · 48 Dogfood → Backlog (2026-10-29). Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
+<p><a href="../phase-46-positioning-landing/">46 Landing shotmatic.app ✅</a> (định vị + email) · <a href="../phase-46-1-landing-blog/">46.1 Blog shotmatic.app (SEO · AEO · GEO)</a> · <a href="../phase-46-2-niche-reports/">46.2 Niche Reports (dữ liệu research thật, đuôi dài)</a> · <a href="../phase-46-2-seo-keyword-blog-gsc/">46.2b Từ khoá + Search Console</a> · <a href="../phase-46-3-blog-founders/">46.3 Mục Indie founders</a> · <a href="../phase-46-4-google-trends-guide/">46.4 Guide Google Trends</a> · lịch 6 tuần + luật dừng (49). 47 Chọn 2 kênh · 48 Dogfood → Backlog (2026-10-29). Landing có nút tải Mac + Windows, MCP là điểm bán.</p>
 <a class="go" href="../version-11/">Xem chi tiết →</a>
 </div>
 </div>
@@ -572,6 +572,14 @@ YouTube, Amazon, Google Maps — mỗi nguồn một phase **cào số (không A
 <h3>YouTube Search <span class="chip chip--done">Bản đầu 2026-11-02</span></h3>
 <p>Cào gợi ý YouTube + top video mỗi keyword: view, độ mới, kênh nhỏ thắng kênh to — không AI. Tuỳ chọn: MCP bên thứ 3 (vidIQ…) cho lượt tìm + độ cạnh tranh.</p>
 <a class="go" href="../phase-51-youtube-search/">Xem chi tiết →</a>
+</div>
+</div>
+<div class="step" markdown>
+<span class="step__n">51.1</span>
+<div class="step__body">
+<h3>YouTube Research Pro <span class="chip chip--done">Xong 2026-11-06 · chưa thử với MCP thật</span></h3>
+<p>Làm theo cách vidIQ, 1of10, OutlierKit, TubeLab đang làm: video vượt kênh tính theo nền của chính kênh, video thắng trong 12 tháng, YouTube Trends, kênh mới đang lên, tín hiệu cho app, điểm Cầu + Chỗ, số lượt tìm từ MCP qua tuyến job.</p>
+<a class="go" href="../phase-51-1-youtube-pro/">Xem chi tiết →</a>
 </div>
 </div>
 <div class="step" markdown>

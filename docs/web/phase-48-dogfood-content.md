@@ -7,6 +7,7 @@
 
 !!! note "Backlog (anh chốt 2026-10-29)"
     Dời xuống Backlog · làm sau. Phase 49 chạy được không cần phase này.
+    Phần "báo cáo niche công khai" chuyển sang [Phase 46.2 · Niche Reports](phase-46-2-niche-reports.md) (2026-11-02).
 
 ## Chạy thế nào
 

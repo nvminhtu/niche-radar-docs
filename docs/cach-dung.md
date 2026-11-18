@@ -84,14 +84,20 @@ Chi tiết + chữ cho store: README trong folder `extension/` của repo. Plan:
 
 Thử trên máy: `chrome://extensions` → bật Developer mode → **Load unpacked** → chọn folder `extension-amazon/`. Tìm một keyword
 trên Amazon (10 chợ), card hiện góc phải dưới: kết luận cạnh tranh của trang 1, keyword dài a–z (Copy · CSV), số app App Store
-cho keyword đó. Mở trang sản phẩm → rating, bought tháng trước, BSR. Trang tìm mục Books / Kindle Store và trang 1 cuốn sách có nút
-**Copy for Niche Radar** → dán vào trang Amazon của Niche Radar (chế độ *Sách · Kindle · Hardcover*). Miễn phí hết, không giới hạn lượt.
+cho keyword đó. Mở trang sản phẩm → rating, bought tháng trước, BSR. Miễn phí hết, không giới hạn lượt.
+Từ 2026-11-14 app **không cần Scout**: trang Amazon của app tự đọc bảng xếp hạng, trang sách, trang tìm (Săn sách, Soi 1 cuốn bằng link / ASIN);
+nút *Copy for Niche Radar* của Scout chỉ còn là đường dự phòng.
 Chi tiết + chữ cho store: README trong folder `extension-amazon/` của repo. Plan: [Backlog 28](web/phase-backlog-28-chrome-extension-amazon.md).
 
 ## Khi bị chặn
 
 Play, Trends, Google gợi ý không có API chính thức → gọi dồn dập sẽ bị chặn tạm (thường 10–30 phút).
 Một người, mạng nhà, **vài chục lần tra/ngày là ổn**. Bị chặn thì đợi rồi bấm Thử lại.
+
+## Bài blog cho shotmatic.app
+
+Bản sao các bài blog tiếng Anh đã đăng nằm ở folder `marketing/blog/` của repo (bản đồ từ khoá ở `marketing/README.md`).
+Bản gốc là `content/blog/` của repo landing: thêm hoặc sửa bài ở đó rồi push là lên blog.
 
 ## Lệnh hay dùng
 
@@ -103,9 +109,10 @@ Chạy ở gốc repo (lối tắt) hoặc trong `web/` / `app/` / `extension/` 
 | `npm run check` | `web/` · `npm test` · `npm run typecheck` · `npm run lint` | kiểm code |
 | — | `web/` · `npm run smoke -- "<niche>" US` | gọi thật 4 nguồn, in số dòng lấy được |
 | — | `web/` · `npm run theme:dark` | sinh lại bộ màu chế độ tối sau khi sửa màu trong `globals.css` |
+| — | `web/` · `npm run blog:research -- "<keyword>" --country US` | gọi thật Play, App Store, Trends; ghi số liệu + ảnh SVG + khối "Data sources" cho bài blog vào `marketing/blog/` |
 | — | `web/` · `npx tsx scripts/mcp-smoke.ts [niche.db]` | chạy niche-radar MCP như Claude Code gọi: liệt kê tool, gọi thử 3 tool |
 | `npm run mac` | `app/` · `npm run build` | build app Mac → `app/dist/*.dmg` (ký + notarize) |
-| `npm run mini` | `app/` · `npm run mini` | build mini app bật server web bằng double-click, chỉ cho máy dev (không đóng gói, không ký Developer ID) |
+| `npm run mini` | `app/` · `npm run mini` | build mini app *ShotMatic Server* trên thanh menu: bật / tắt server web + link dự án, chỉ cho máy dev (không đóng gói, không ký Developer ID). Windows: bấm đúp `app/mini/ShotMatic Server.cmd` (icon khay hệ thống, không cần build) |
 | `npm run ext:zip` | `extension/` · `bash scripts/zip.sh` | đóng gói extension Chrome ShotMatic Lite ra `.zip` để tải lên Chrome Web Store |
 | `npm run ext:amazon:zip` | `extension-amazon/` · `bash scripts/zip.sh` | đóng gói extension Amazon ShotMatic Scout ra `.zip` |
 | `npm run docs` | — | mở trang tài liệu này ở http://127.0.0.1:3210 |

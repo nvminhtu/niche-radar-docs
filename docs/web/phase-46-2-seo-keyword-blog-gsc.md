@@ -1,4 +1,4 @@
-# Phase 46.2 · shotmatic.app — Từ khoá + blog theo cụm + Search Console
+# Phase 46.2b · shotmatic.app — Từ khoá + blog theo cụm + Search Console
 
 > Một phase gộp 3 việc cho **chính ShotMatic**: (1) tối ưu từ khoá cho site shotmatic.app, (2) viết blog kéo người
 > tìm đúng các từ khoá đó, (3) dựng Search Console làm bảng đo của marketing. Đích: người gõ "app idea validation",

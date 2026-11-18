@@ -61,6 +61,10 @@ nav:
   - Master Plan: index.md
   - WEB:
       - web/index.md
+      - "Launch · Phân tích thị trường app": web/launch-app-market.md
+      - "Launch · Bước 0 hiểu sâu": web/launch-app-hieu-sau.md
+      - "Launch · Brief": web/launch-app-brief.md
+      - "Launch · Spec": web/launch-app-spec.md
       - Quy trình build: quy-trinh-build.md
       - Setup máy: setup.md
       - "1 · Extension Chrome":
@@ -79,6 +83,64 @@ nav:
           - "4.3 · Amazon Books (Kindle · Paperback · Hardcover)": web/phase-55-2-amazon-books.md
       - "5 · Bán (còn dở)":
           - "5.1 · Review + Validate (test bán trước)": web/phase-7-review-validate.md
+      - "6 · Bộ tool KDP":
+          - "6 · Bộ tool KDP (plan chung)": web/phase-plan2-06-bo-tool-kdp.md
+          - "6.1 · Từ khoá + cạnh tranh": web/phase-plan2-07-kdp-nang-cap.md
+          - "6.3 · Chuyên mục đang lên + thu nhập": web/phase-plan2-06-book-discover.md
+      - "7 · Audit kênh YouTube":
+          - "7 · Audit kênh YouTube": web/phase-plan2-07-audit-kenh-youtube.md
+      - "8 · YouTube theo quốc gia":
+          - "8 · YouTube theo quốc gia + Kênh trend": web/phase-plan2-08-youtube-theo-nuoc.md
+      - "9 · Học từ tool YouTube":
+          - "9 · Học từ tool YouTube: ý tưởng, đối thủ, gom số": web/phase-plan2-09-youtube-hoc-tu-tool.md
+      - "10 · Keyword Intelligence":
+          - "10 · Keyword Intelligence": web/phase-plan2-10-keyword-engine.md
+          - "10.1 · Nghiên cứu": web/phase-plan2-10-nghien-cuu.md
+      - "11 · Săn kênh nhỏ view nổ":
+          - "11 · Săn kênh nhỏ view nổ": web/phase-plan2-11-san-kenh-nho.md
+          - "12 · Săn sách cầu > cung": web/phase-plan2-12-san-sach.md
+      - "13 · Nút Bắt đầu build":
+          - "13 · Nút Bắt đầu build": web/phase-plan2-13-bat-dau-build.md
+      - "15 · Theo dõi ngách YouTube":
+          - "15 · Theo dõi ngách + giai đoạn video": web/phase-plan2-15-theo-doi-ngach.md
+      - "16 · Trang Project dễ xài":
+          - "16 · Trang Project dễ xài": web/phase-plan2-16-trang-project.md
+      - "17 · Soi kênh: Trends, keyword, so kênh":
+          - "17 · Google Trends, keyword dễ hiểu, so 3 kênh": web/phase-plan2-17-trend-keyword-so-kenh.md
+      - "18 · Soi kênh: kênh đối thủ":
+          - "18 · Kênh đối thủ liên quan": web/phase-plan2-18-kenh-doi-thu.md
+      - "19 · Soi kênh: mẫu kịch bản":
+          - "19 · Làm theo kênh bằng mẫu kịch bản": web/phase-plan2-19-mau-kich-ban.md
+      - "20 · So sánh đối thủ app":
+          - "20 · So sánh đối thủ app": web/phase-plan2-20-so-sanh-doi-thu.md
+      - "21 · YouTube trend: keyword đang tìm":
+          - "21 · Keyword đang được tìm + Google Trends": web/phase-plan2-21-keyword-dang-tim.md
+      - "22 · So sánh app → nên có gì":
+          - "22 · So sánh app → app mới nên có gì": web/phase-plan2-22-so-app-ra-viec-can-lam.md
+      - "23 · YouTube: gom nhóm + chạy nhiều":
+          - "23 · Gom 3 nhóm + chạy nhiều lượt cùng lúc": web/phase-plan2-23-youtube-gom-nhom-chay-nhieu.md
+      - "24 · Săn app cầu > cung":
+          - "24 · Săn app cầu > cung + gom nhóm App": web/phase-plan2-24-san-app-cau-cung.md
+      - "25 · Học AppTweak + Appfigures":
+          - "25 · Học AppTweak + Appfigures, giữ chất riêng": web/phase-plan2-25-hoc-apptweak-appfigures.md
+      - "26 · Săn app tìm điểm yếu":
+          - "26 · Săn app tìm ra điểm yếu đối thủ": web/phase-plan2-26-san-app-diem-yeu.md
+      - "27 · Review Mining":
+          - "27 · Review Mining: đào review chê ra cơ hội": web/phase-plan2-27-review-mining.md
+      - "29 · Săn việc làm tay":
+          - "29 · Săn việc làm tay: chỗ người ta còn chắp vá": web/phase-plan2-29-san-viec-lam-tay.md
+      - "30 · Audit 1 app":
+          - "30 · Audit 1 app: chấm ASO app đã có, sửa gì trước": web/phase-plan2-30-audit-app.md
+      - "31 · Trending Apps":
+          - "31 · Trending Apps: bảng xếp hạng theo nước, thiết bị, nhóm app": web/phase-plan2-31-trending-apps.md
+      - "32 · Săn app theo app":
+          - "32 · Săn app theo app: ra 1 app đáng bắt chước": web/phase-plan2-32-san-app-theo-app.md
+      - "33 · So đối thủ theo lời chê":
+          - "33 · So đối thủ theo lời chê: ai tốt, ai hỏng, chỗ trống": web/phase-plan2-33-so-doi-thu-theo-loi-che.md
+      - "34 · Đào review theo nghĩa":
+          - "34 · Đào review: gom theo nghĩa + chấm nỗi đau đúng hơn": web/phase-plan2-34-gom-review-theo-nghia.md
+      - "35 · Xin tính năng":
+          - "35 · Xin tính năng: người dùng muốn có gì, app nào còn thiếu": web/phase-plan2-35-xin-tinh-nang.md
   - PLAN 1 · XONG:
       - web/plan-1/index.md
       - "Plan bán app Mac + Windows": app/plan-ban-app.md
@@ -155,6 +217,7 @@ nav:
           - "Phase 45.1 · Chế độ tối (Sáng · Tối · Theo máy)": web/phase-45-1-dark-mode.md
       - "Version 2 · Demo + Nguồn mới + AI (Phase 50–55)":
           - Phase 51 · YouTube Search: web/phase-51-youtube-search.md
+          - "Phase 51.1 · YouTube Research Pro": web/phase-51-1-youtube-pro.md
           - Phase 52 · YouTube Research (AI): web/phase-52-youtube-ai.md
           - Phase 53 · Amazon Search: web/phase-53-amazon-search.md
           - Phase 54 · Amazon Research (AI): web/phase-54-amazon-ai.md
@@ -168,9 +231,16 @@ nav:
       - "4 · SEO (bài, từ khoá, link)": marketing/seo.md
       - "5 · GEO (ChatGPT, Perplexity, Gemini, Copilot)": marketing/geo.md
       - "5.1 · Plan Data research: 10 bài từ Google Trends (2026-11-08)": marketing/plan-data-research-2026-11-08.md
+      - "5.2 · Plan blog AI search: 30 keyword · 100 bài (2026-11-09)": marketing/plan-blog-ai-search-30-keywords-2026-11-09.md
+      - "5.3 · Bộ SEO founders: nỗi đau → ý tưởng app (2026-11-15)": marketing/plan-blog-founders-pain-ideas-2026-11-15.md
+      - "6 · Plan phân phối ngoài site: Reddit, thư mục tool (2026-11-11)": marketing/plan-phan-phoi-ngoai-site-2026-11-11.md
+      - "6.1 · Bài nháp Reddit + Show HN (2026-11-12)": marketing/bai-nhap-reddit-2026-11-12.md
+      - "7 · Plan ra đơn đầu tiên: 5 việc (2026-11-11)": marketing/plan-don-dau-tien-2026-11-11.md
+      - "7.1 · Plan làm giúp rồi mới bán: 30 người (2026-11-11)": marketing/plan-lam-giup-roi-ban-2026-11-11.md
       - "Others · làm sau hoặc chỉ tham khảo":
           - "Tổng quan cũ · 2.000 active user / tháng": web/PLAN-ANALYTICS-2000-active-users-per-month.md
           - "Audit bán hàng + SEO / GEO (2026-11-07)": marketing/audit-2026-11-07.md
+          - "Audit bài blog SEO + GEO (2026-11-09)": marketing/audit-blog-seo-geo-2026-11-09.md
           - "Plan blog SEO + GEO từ Google Trends (2026-11-07)": marketing/plan-blog-seo-geo-2026-11-07.md
           - "Plan dựng lại trang Blog (2026-11-07)": marketing/plan-blog-hub-2026-11-07.md
           - "Google Analytics + Search Console (bản cũ)": marketing/google-analytics.md
@@ -254,11 +324,15 @@ nav:
       - "Marketing cũ (trước 2026-11-03)":
           - "Kế hoạch bán ShotMatic (làm tay → tự động)": app/ke-hoach-ban-shotmatic.md
           - "Research · SaaS: traffic GA · event · blog · 10 kênh · tool": web/research-marketing-saas.md
+          - "Plan Reddit: chia sẻ hành trình (8 bài)": app/ke-hoach-reddit.md
+          - "Blog đã đăng (59 bài)": web/marketing-blog.md
+          - "Research Pinterest Trends (KO LÀM)": web/pinterest-trends-research.md
           - "Version 11 · Landing + SEO + Blog (Phase 46–49)":
               - Tổng quan Version 11: web/version-11.md
               - "Phase 46 · Landing shotmatic.app — định vị + email": web/phase-46-positioning-landing.md
               - "Phase 46.1 · Landing shotmatic.app — Blog (SEO · AEO · GEO)": web/phase-46-1-landing-blog.md
-              - "Phase 46.2 · Từ khoá + blog theo cụm + Search Console": web/phase-46-2-seo-keyword-blog-gsc.md
+              - "Phase 46.2 · Niche Reports — dữ liệu research thật lên shotmatic.app": web/phase-46-2-niche-reports.md
+              - "Phase 46.2b · Từ khoá + blog theo cụm + Search Console": web/phase-46-2-seo-keyword-blog-gsc.md
               - "Phase 46.3 · Blog mục Indie founders": web/phase-46-3-blog-founders.md
               - "Phase 46.4 · Guide Google Trends (trend → web → app)": web/phase-46-4-google-trends-guide.md
               - "Phase 49 · Lịch 6 tuần + ra mắt": web/phase-49-six-week-launch.md

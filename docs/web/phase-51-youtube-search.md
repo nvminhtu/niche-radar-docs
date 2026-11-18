@@ -16,7 +16,9 @@
 - Đo thật 2026-11-02, niche "habit tracker": 76 video, 300 comment, ~22 giây
 - Code: `web/src/collectors/youtube.ts` · test `web/tests/social.test.ts`
 
-**Chưa làm:** tuyến MCP bên thứ 3 (vidIQ) · Data API dự phòng · gộp keyword YouTube vào cây Explore (Phase 1)
+**Chưa làm:** Data API dự phòng · gộp keyword YouTube vào cây Explore (Phase 1).
+Tuyến MCP bên thứ 3 (vidIQ / OutlierKit / TubeLab), video vượt kênh theo nền kênh, điểm Cầu + Chỗ: làm ở
+[Phase 51.1](phase-51-1-youtube-pro.md).
 </div>
 
 

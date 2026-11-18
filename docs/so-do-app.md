@@ -106,8 +106,8 @@ flowchart TB
     Q[Người dùng gõ<br/>ý tưởng / lệnh /<br/>bấm nút bước] --> CTX[App ghép câu gửi<br/>+ ngữ cảnh phiên<br/>+ luật Tuỳ chỉnh]
     CTX --> RUN[Chạy CLI<br/>claude -p --mcp-config<br/>bằng account đang chọn]
     RUN --> T{AI gọi<br/>tool MCP}
-    T -->|đọc| RT[get_research · get_explore<br/>get_project · get_gaps<br/>get_app_context …]
-    T -->|ghi — khi bật<br/>Cho AI thêm dữ liệu| WT[propose_candidates<br/>start_research · keep / drop<br/>add_project_note …]
+    T -->|đọc| RT[get_research · get_explore<br/>get_project · get_gaps<br/>get_youtube · get_app_context …]
+    T -->|ghi — khi bật<br/>Cho AI thêm dữ liệu| WT[propose_candidates<br/>start_research · keep / drop<br/>youtube_outliers · youtube_hunt<br/>add_project_note …]
     WT --> SV[Máy chủ ShotMatic<br/>kiểm token + Free / PRO<br/>→ collector tra số thật]
     SV --> DBX[(niche.db)]
     RT --> DBX

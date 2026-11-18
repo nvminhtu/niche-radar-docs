@@ -34,6 +34,17 @@ Target tháng 6: được nhắc ở 4 trong 10 câu, đứng đầu ở 1 câu.
 
 **[5.1 · Data research](plan-data-research-2026-11-08.md).** Mục `/research` trên shotmatic.app: 10 bài từ keyword đang lên trên Google Trends, mỗi bài kèm ảnh kết quả thật của ShotMatic.
 
+**[6 · Phân phối ngoài site](plan-phan-phoi-ngoai-site-2026-11-11.md).** Đưa site ra Reddit, thư mục tool, Indie Hackers rồi mới tới launch lớn. Plan chờ duyệt.
+
+**[6.1 · Bài nháp Reddit + Show HN](bai-nhap-reddit-2026-11-12.md).** Bài tiếng Anh soạn sẵn để bạn tự đăng: bài Reddit số 1 và bài Show HN. Chưa đăng.
+Target tuần 8: 10 site thật link về, 100 lượt vào từ site ngoài trong 28 ngày.
+
+**[7 · Ra đơn đầu tiên](plan-don-dau-tien-2026-11-11.md).** 5 việc để có đơn PRO thật: làm giúp rồi mới bán, hỏi người đã tải, extension, ưu đãi có hạn, blog lùi xuống. Duyệt 2026-11-11, làm trước các mục khác.
+Target 14 ngày: 1 đơn PRO từ người lạ.
+
+**[7.1 · Làm giúp rồi mới bán](plan-lam-giup-roi-ban-2026-11-11.md).** Mỗi ngày trả lời 3 người đang hỏi về ý tưởng app, bằng số chạy từ ShotMatic.
+Target 14 ngày: 30 người được trả lời, 10 người trả lời lại.
+
 ## Thứ tự làm
 
 1. **Mở đo:** đặt khoá service account, ghi số mốc Search Console + GA4 (mục 1, 2).

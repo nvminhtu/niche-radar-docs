@@ -3,6 +3,8 @@
 > Mỗi phase chưa làm có một file plan thi công: mục tiêu · làm · không làm, luật chung, file đụng tới, Task có checkbox.
 > Trang phase (bản tóm tắt cho người đọc) nằm ở mục Web / App; file plan ở đây là bản cho người / agent bắt tay code.
 
+**Launch (2026-11-17):** [1 điểm cơ hội /100 · Cửa vào · Độ khó · Tiền](2026-11-17-launch-1-diem-co-hoi.md) — chờ anh duyệt.
+
 Plan cũ (đã code xong): [Phase 1](2026-10-24-niche-radar-phase1-explorer.md) · [Phase 2](2026-10-24-niche-radar-phase2-appstore-money.md) · [Phase 3](2026-10-24-niche-radar-phase3-trends.md) · [Phase 4](2026-10-24-niche-radar-phase4-feature-gap.md) · [v1](2026-10-23-niche-radar-v1.md).
 
 ## Version 1
