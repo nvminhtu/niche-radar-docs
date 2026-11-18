@@ -4,7 +4,7 @@
 > trên máy, nên "Too many ads" và "Ads keep interrupting me" vào chung một nhóm. Mỗi nhóm có tên đọc được, có đủ 9 thông tin,
 > và điểm nỗi đau /100 không bị lệch khi nhóm nhỏ hay app quá to. Không cần AI trả phí.
 
-<span class="chip chip--todo">Spec 2026-11-18 · đã chốt model nhiều tiếng · chờ 2 câu · chưa code</span>
+<span class="chip chip--todo">Spec 2026-11-18 · spike xong 2026-11-18 · chốt MiniLM-L12 nhiều tiếng · chưa code</span>
 
 <div class="box box--danger" markdown>
 **Ngoài quyết định 2026-11-07:** ShotMatic đang dừng thêm tính năng để dồn sức cho [Marketing](../marketing/index.md).
@@ -72,16 +72,68 @@ Các số độ đúng dưới đây là hãng tự công bố, chưa ai kiểm 
 - **Theo dõi theo lịch, báo động.** Giữ như mục 27: chỉ so với lần đọc trước khi anh bấm đọc lại.
 - **Cảm xúc nhiều mức** (giận, buồn…). Sao + mức nặng đã đủ để chấm điểm.
 
-## 34.0 · Thử trước 1 ngày (spike): model có chạy trong app Mac không
+## 34.0 · Thử trước (spike): đã làm 2026-11-18
 
-App Mac gói server bằng esbuild và chạy Node đi kèm (`app/scripts/build-mac.sh`). `better-sqlite3` đã phải chép tay file
-native. Transformers.js trong Node cần `onnxruntime-node` (cũng native), hoặc chạy bản WASM.
+App Mac gói server bằng esbuild và chạy Node đi kèm (`app/scripts/build-mac.sh`). Spike chạy trong thư mục nháp, **chưa thêm
+thư viện nào vào repo**. Máy: Mac arm64, Node 22.19, `@huggingface/transformers` 3.x, `onnxruntime-node` 1.21, model bản int8 (`q8`).
 
-- Thử cả 2 đường trên `npm run mini` và trên bản `.app` build thử: native và WASM.
-- Đo 3 thứ trên 1.000 câu review thật (Habitica, Đọc sâu): cỡ file model, thời gian nạp model, thời gian embed.
-- Model **không nhét vào `.dmg`**. Lần đầu bấm "Gom theo nghĩa" thì tải về thư mục dữ liệu (`NR_DATA_DIR`), có thanh tiến độ
+**Đo 2 model** trên 1.803 câu chê thật (1.500 review 1–3★ trong `review_seen`, nhiều app):
+
+| Đo | `multilingual-e5-small` | `paraphrase-multilingual-MiniLM-L12-v2` |
+|---|---|---|
+| Model trên đĩa | 129 MB | 145 MB |
+| Nạp model (đã có trên máy) | — | 0,5 giây |
+| Embed 1.000 câu | 4,0 giây | 3,7 giây |
+| RAM cả tiến trình | 951 MB | 974 MB |
+| 4 câu "ads" của bản đề xuất, giống nhau | 0,85 – 0,90 | 0,45 – 0,64 |
+| "Too many ads" ↔ cùng ý tiếng Nhật / tiếng Việt | 0,87 / 0,90 | 0,95 / 0,95 |
+| "Too many ads" ↔ câu khác ý (crash, mất ghi chú) | 0,82 / 0,82 | 0,15 / 0,14 |
+
+**Chốt model: `paraphrase-multilingual-MiniLM-L12-v2`.** Cả 2 đều dưới ngưỡng anh đặt (150 MB, 30 giây cho 1.000 câu). Nhưng e5-small
+cho mọi cặp câu gần như cùng điểm (0,82–0,90), nên không tách được câu cùng ý với câu khác ý. MiniLM tách rõ, và câu cùng ý khác
+tiếng ra 0,95.
+
+**Đường chạy:**
+- Bản Node của Transformers.js **chỉ có đường native** (`cpu` qua `onnxruntime-node`). Đường WASM báo lỗi `Unsupported device`, nên bỏ.
+- **Gói thử kiểu app Mac chạy được.** Gói bằng esbuild `--format=cjs`, để `onnxruntime-node` ở ngoài (external) giống `better-sqlite3`,
+  và chỉ chép bản Mac arm64.
+  - App nặng thêm khoảng **33 MB**: 31 MB `onnxruntime-node` arm64 (`onnxruntime_binding.node` + `libonnxruntime.1.21.0.dylib`),
+    1,1 MB `onnxruntime-common`, server.cjs thêm khoảng 1,5 MB.
+  - Bản gói đọc model đã tải sẵn, nạp xong và embed 3 câu trong 0,55 giây.
+- **Chưa thử:** ký + notarize với file `.dylib` mới (`npm run mac`), và bản Windows (cần file `win32-x64`).
+- **Model không nhét vào `.dmg`.** Lần đầu bấm "Gom theo nghĩa" thì tải về thư mục dữ liệu (`NR_DATA_DIR`), có thanh tiến độ
   và nút Huỷ. Không có mạng hoặc tải hỏng thì dùng lại cách gom chữ của mục 27, và ghi rõ đang dùng cách nào.
-- Ghi số đo vào trang này rồi mới chốt model.
+
+**Nhận ngôn ngữ (`eld`, bộ dữ liệu `medium`, 1,9 MB):** chạy trên 80 review chê thật mỗi nước (Evernote, Play):
+
+| Nước | Đúng tiếng | Ra tiếng Anh | Khác |
+|---|---|---|---|
+| JP (`ja`) | 80 / 80 | 0 | 0 |
+| VN (`vi`) | 69 / 80 | 10 | 1 |
+| BR (`pt`) | 73 / 80 | 6 | 1 |
+| DE (`de`) | 73 / 80 | 7 | 0 |
+
+Phần "ra tiếng Anh" phần lớn có thể là review viết bằng tiếng Anh ở store nước đó (chưa đọc từng câu để chắc).
+
+**Đọc tiếng địa phương đáng làm:** Evernote, 150 review mới nhất mỗi lượt.
+- Đọc bằng `lang=en` thì Play trả **đúng cùng 121 review chê** cho cả JP, VN, BR, DE.
+- Đọc bằng tiếng nước đó thì ra 137 / 103 / 111 / 131 review chê **khác hẳn nhau**.
+- Nghĩa là trước giờ chọn nhiều nước mà vẫn đọc `en` thì gần như chỉ đọc lại 1 bộ review.
+
+**Gom thử** (liên kết trung bình, 1.165 câu: Habitica tiếng Anh + Evernote JP + VN):
+
+| Ngưỡng | Nhóm ≥ 3 câu | Câu ngoài nhóm | Thời gian gom |
+|---|---|---|---|
+| 0,55 | 116 | 49% | 2,6 giây |
+| 0,50 | 135 | 34% | 2,7 giây |
+
+- **Đúng:** review chê quảng cáo tiếng Nhật và tiếng Việt vào **chung 1 nhóm** (25 câu). Các câu "muốn dùng offline" vào 1 nhóm.
+- **Lộ 4 lỗi phải sửa trong code:**
+  1. Câu trùng y hệt lặp lại do Habitica được đọc ở nhiều nước. Phải bỏ trùng trước khi gom (34.3 bước 1).
+  2. **Câu khen nằm trong review 1–3★** ("Great app", "fantastic app") thành nhóm to nhất. Phải lọc câu khen trước (34.3 bước 0).
+  3. Câu quá chung ("làm gì đi chứ") gom thành nhóm vô nghĩa. Bỏ câu không có danh từ / quá ngắn sau khi chuẩn hoá.
+  4. Cách gom thử đơn giản chạy O(n³). Với 1.165 câu mất 2,6 giây, ước chừng 5.000 câu sẽ mất vài phút. Code thật dùng
+     NN-chain (O(n²)) hoặc chặn số câu.
 
 ## 34.1 · Tách câu, chuẩn hoá, nhận ngôn ngữ
 
@@ -92,21 +144,40 @@ native. Transformers.js trong Node cần `onnxruntime-node` (cũng native), ho�
 - **Đọc review tiếng địa phương:** store đọc theo `lang` của nước (JP → `ja`, VN → `vi`…) thay vì luôn `en`. Model nhiều tiếng
   đặt câu khác tiếng vào chung không gian, nên review Nhật và Anh cùng ý sẽ vào cùng nhóm. 9 loại chê theo luật vẫn chỉ
   hiểu tiếng Anh. Câu không phải tiếng Anh lấy loại chê theo **nhóm nghĩa** nó rơi vào (đa số câu trong nhóm thuộc loại nào).
+- **Tiếng theo nước** (anh chốt làm luôn 2026-11-18):
+
+  | Nước | Tiếng đọc |
+  |---|---|
+  | US · GB · CA · AU · IN · PH | `en` |
+  | DE · FR · ES · IT | `de` · `fr` · `es` · `it` |
+  | BR · MX | `pt` · `es` |
+  | JP · KR · VN · TH · ID | `ja` · `ko` · `vi` · `th` · `id` |
+
+  Play đọc bằng `lang` của bảng trên. App Store trả review theo storefront của nước, vốn đã là tiếng địa phương, nên chỉ cần
+  ghi `lang` nhận được bằng `eld`. Ô chọn nước có thêm 1 nút **"Chỉ đọc tiếng Anh"** cho ai muốn như cũ.
+- **Phần chấm điểm với câu không phải tiếng Anh:** chữ "bỏ app" ở 34.7 (refund, uninstall…) chỉ có tiếng Anh. Câu tiếng khác
+  không cộng phần này, chỉ dùng sao + loại chê của nhóm. Ghi rõ "chưa đo chữ bỏ app với tiếng x" trong ⓘ, không dịch đoán.
+- **Câu trích + tên nhóm:** giữ chữ gốc. Tên nhóm bằng c-TF-IDF lấy theo tiếng chiếm nhiều nhất trong nhóm. ✦ AI đặt tên lại
+  (tuỳ chọn) thì đặt theo ngôn ngữ giao diện, kèm bản dịch câu trích có nhãn **AI dịch**.
+- **Bỏ trùng giữa các nước** (mục 27) vẫn giữ: Play có thể trả cùng review ở nhiều nước cùng tiếng (vd. US và GB), đếm 1 lần.
+- **Kiểm ở 34.9:** lượt chạy thật thêm 1 app ở JP hoặc VN, đếm số review đọc được bằng `en` so với tiếng địa phương.
 
 ## 34.2 · Embedding trên máy
 
-- Model chốt ở 34.0: ưu tiên bản nhiều tiếng. Nếu quá nặng hoặc quá chậm thì dùng `all-MiniLM-L6-v2` (23 MB, tiếng Anh).
+- Model chốt ở 34.0: `Xenova/paraphrase-multilingual-MiniLM-L12-v2`, bản int8, 145 MB, 384 chiều.
 - Lưu vector vào bảng mới `review_vectors` (khoá: hash câu + tên model). Đọc lại hay thêm app thì chỉ embed câu mới.
   Đổi model thì embed lại từ đầu.
 - Chạy trong worker riêng để server không đứng. Có tiến độ "đã xử lý x / y câu".
 
 ## 34.3 · Gom theo nghĩa
 
+0. **Lọc câu khen:** trong review 1–3★ vẫn có câu khen ("Great app, but…"). Câu có cosine với tâm của bộ câu khen mẫu
+   cao hơn tâm câu chê mẫu thì bỏ khỏi phần gom chê (bộ mẫu khoảng 20 câu mỗi bên, nhiều tiếng, đặt trong code).
 1. **Bỏ trùng gần giống:** 2 câu cùng app có cosine ≥ 0,95 thì coi là trùng (copy, spam, review dán lại). Mỗi người vẫn đếm 1.
-2. **Gom phân cấp** (agglomerative, liên kết trung bình, cosine), cắt cây ở ngưỡng mặc định 0,75 (chỉnh ở 34.10).
+2. **Gom phân cấp** (agglomerative, liên kết trung bình, cosine), cắt cây ở ngưỡng mặc định **0,5** (spike: 0,5 → 34% câu ngoài nhóm, 0,55 → 49%; chỉnh ở 34.10).
 3. **Có dẫn hướng:** 9 loại chê của mục 27 làm "hạt mầm". Một nhóm có ≥ 60% câu thuộc 1 loại thì gắn loại đó, để thanh loại chê
    và mức nặng vẫn dùng được.
-4. **Câu lẻ:** câu không vào nhóm ≥ 3 người thì gán vào nhóm có tâm gần nhất nếu cosine ≥ 0,6. Còn lại đưa vào "Khác".
+4. **Câu lẻ:** câu không vào nhóm ≥ 3 người thì gán vào nhóm có tâm gần nhất nếu cosine ≥ 0,45. Còn lại đưa vào "Khác".
    Số câu ở "Khác" hiện ra, không giấu.
 5. **Sửa tay sống sót qua lần đọc lại:** nhóm anh đã gộp, đổi tên hay tách được giữ theo **tâm nhóm** (vector trung bình).
    Lần đọc sau, câu mới gần tâm nào thì vào nhóm đó. Nhóm mới chỉ được thêm, không xoá nhóm cũ (học Thematic).
@@ -175,12 +246,12 @@ mẫu số. Sửa cách đo từng phần:
 
 ## 34.10 · Chỉnh ngưỡng
 
-Ngưỡng 0,75 / 0,6 / 0,85 / 0,95 ở trên là **điểm bắt đầu**, chưa đo. Sau 34.9, chọn ngưỡng cho % ở "Khác" dưới 25% mà độ thuần
+Ngưỡng 0,5 / 0,45 / 0,85 / 0,95 ở trên là **điểm bắt đầu**. Chỉ 0,5 có số từ spike 34.0, còn lại chưa đo. Sau 34.9, chọn ngưỡng cho % ở "Khác" dưới 25% mà độ thuần
 vẫn ≥ 80%. Không cho người dùng tự kéo ngưỡng ở bản đầu, chỉ có nút "Gom chặt hơn / lỏng hơn" (3 nấc).
 
 ## Chia việc
 
-1. 34.0 spike: model + đường chạy trong app Mac, ghi số đo.
+1. ~~34.0 spike~~ (xong 2026-11-18). Còn lại của phần này: ký + notarize với `.dylib`, bản Windows.
 2. DB: cột `lang` cho `review_seen`, bảng `review_vectors`, thêm kiểu `split` cho `review_group_edits`.
 3. `web/src/lib/review-text.ts` (hàm thuần): tách câu, chuẩn hoá, nhận ngôn ngữ. Test kèm.
 4. `web/src/lib/review-embed.ts`: tải model, worker, cache vector.
@@ -198,7 +269,6 @@ vẫn ≥ 80%. Không cho người dùng tự kéo ngưỡng ở bản đầu, c
    `paraphrase-multilingual-MiniLM-L12-v2`. Spike 34.0 đo cỡ file, thời gian nạp model và thời gian embed 1.000 câu rồi chọn 1.
    Nếu cả 2 đều quá 150 MB hoặc embed 1.000 câu quá 30 giây thì báo lại anh, không tự lùi về model tiếng Anh.
 
-Còn chờ:
+2. **Đọc review tiếng địa phương: làm luôn đợt này** (anh chốt 2026-11-18). Cách làm ở 34.1.
 
-2. **Đọc review tiếng địa phương** (34.1) làm cùng đợt này, hay để sau và chỉ gom theo nghĩa cho tiếng Anh trước?
-3. **Thứ tự:** commit mục 27 rồi làm 34.0 spike trước (1 ngày), có số rồi mới code tiếp? Hay chờ hết đợt dừng tính năng?
+3. **Thứ tự: commit mục 27 rồi spike ngay** (anh chốt 2026-11-18). Mục 27.6 đã commit (`5e0c362`), spike 34.0 xong cùng ngày.

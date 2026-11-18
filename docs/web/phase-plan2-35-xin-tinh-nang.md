@@ -5,7 +5,7 @@
 > **muốn có gì**: gom câu "I wish… / please add… / bring back…" thành danh sách tính năng, đếm người xin, xem app nào đã có,
 > và chấm xem có đáng làm không.
 
-<span class="chip chip--todo">Viết 2026-11-18 · chờ anh chốt 4 câu · chưa code</span>
+<span class="chip chip--todo">Anh duyệt 2026-11-18 · chưa code · làm sau mục 33</span>
 
 ## Có gì sẵn rồi
 
@@ -212,10 +212,9 @@ Theo skill `tool-chart`, 1 cột từ trên xuống:
 - Embedding (để mục 34)
 </div>
 
-## Anh chốt (4 câu)
+## Anh chốt 2026-11-18 (duyệt theo đề xuất)
 
-1. **Tab Xin tính năng của Đào review** (không làm trang riêng)? Đề xuất: **có**.
-2. Đọc lời xin ở **cả 1–5★** (thêm ~30% lời xin, tốn thêm 1 lần đọc review khen)? Đề xuất: **có**.
-3. **Cỡ việc S / M / L** bằng bảng tra tay, nhãn Ước tính? Hay bỏ hẳn cột này? Đề xuất: **giữ, nhưng không vào điểm**.
-4. Làm **sau mục 33 (So app)** vì dùng chung cách đọc 1–5★ + khoảng tin, hay trước? Đề xuất: **sau 33**, và như 33 thì
-   commit 24–27 trước.
+1. Làm ở **tab Xin tính năng của Đào review**, không làm trang riêng.
+2. Đọc lời xin ở **cả 1–5★** (lời chê vẫn 1–3★).
+3. **Giữ chip Cỡ việc S / M / L** bằng bảng tra tay, nhãn Ước tính, **không vào điểm** Đáng làm.
+4. Làm **sau mục 33 (So app)**, dùng chung cách đọc 1–5★ + khoảng tin. Commit mục 24–27 trước.

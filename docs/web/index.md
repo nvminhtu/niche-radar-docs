@@ -611,7 +611,7 @@ Nâng mục 27: gom review theo nghĩa bằng model chạy trên máy, nên câu
 <div class="step" markdown>
 <span class="step__n">34</span>
 <div class="step__body">
-<h3>Spike model trong app Mac · tách câu + nhận ngôn ngữ · embedding trên máy · gom phân cấp · tên c-TF-IDF · gộp / tách · điểm Wilson <span class="chip chip--todo">Spec 2026-11-18 · đã chốt model nhiều tiếng · chờ 2 câu · chưa code</span></h3>
+<h3>Spike model trong app Mac · tách câu + nhận ngôn ngữ · embedding trên máy · gom phân cấp · tên c-TF-IDF · gộp / tách · điểm Wilson <span class="chip chip--todo">Spec 2026-11-18 · spike xong 2026-11-18 · chốt MiniLM-L12 nhiều tiếng · chưa code</span></h3>
 <p>Học Appbot, AppFollow, Thematic, Enterpret, BERTopic, FeClustRE. Giữ công thức 30·30·20·20 của mục 27, sửa cách đo Tần suất (trừ hao cỡ mẫu, cân app to / nhỏ). Không UMAP / HDBSCAN, không API trả phí.</p>
 <a class="go" href="phase-plan2-34-gom-review-theo-nghia/">Xem chi tiết →</a>
 </div>
@@ -627,7 +627,7 @@ Làm thật tab Xin tính năng của Đào review (Module 06 · Feature Request
 <div class="step" markdown>
 <span class="step__n">35</span>
 <div class="step__body">
-<h3>Bảng lời xin · app đã có / thiếu · tín hiệu tiền · điểm Đáng làm /100 <span class="chip chip--todo">Viết 2026-11-18 · chờ anh chốt 4 câu · chưa code</span></h3>
+<h3>Bảng lời xin · app đã có / thiếu · tín hiệu tiền · điểm Đáng làm /100 <span class="chip chip--todo">Anh duyệt 2026-11-18 · chưa code · làm sau mục 33</span></h3>
 <p>Đo 2026-11-18: 394 / 15.956 review có mẫu câu xin, ở 140 app, nhưng 30% nằm ở review 4–5★ mà code hiện bỏ qua; chỉ 6 app có ≥ 10 lời xin nên phải gom cả niche. Không ra số tiền, không có "unique reviewers" (DB không lưu người viết). Học Pendo, Canny, AppFollow, Appbot, bộ dữ liệu Maalej, SAFE / MARA.</p>
 <a class="go" href="phase-plan2-35-xin-tinh-nang/">Xem chi tiết →</a>
 </div>
